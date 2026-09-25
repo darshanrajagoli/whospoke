@@ -1,0 +1,2100 @@
+{
+ "reference": [
+  {
+   "speaker": "S1",
+   "start": 0.766,
+   "end": 1.315,
+   "text": "हाँ हैलो"
+  },
+  {
+   "speaker": "S1",
+   "start": 1.422,
+   "end": 2.772,
+   "text": "हाँ बोलिए"
+  },
+  {
+   "speaker": "S3",
+   "start": 2.791,
+   "end": 3.731,
+   "text": "हाँ जी नमस्ते"
+  },
+  {
+   "speaker": "S1",
+   "start": 2.964,
+   "end": 3.734,
+   "text": "हाँ जी बोलिए"
+  },
+  {
+   "speaker": "S3",
+   "start": 4.077,
+   "end": 4.678,
+   "text": "हाँ बोलो"
+  },
+  {
+   "speaker": "S1",
+   "start": 4.915,
+   "end": 12.756,
+   "text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है"
+  },
+  {
+   "speaker": "S2",
+   "start": 11.639,
+   "end": 12.086,
+   "text": "हेलो"
+  },
+  {
+   "speaker": "S2",
+   "start": 12.327,
+   "end": 14.835,
+   "text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप"
+  },
+  {
+   "speaker": "S1",
+   "start": 13.103,
+   "end": 14.213,
+   "text": "आपको कौनसा कराने है"
+  },
+  {
+   "speaker": "S2",
+   "start": 14.978,
+   "end": 16.788,
+   "text": "जी जी ये तो हमारी इस्पेशिलिटी है सर"
+  },
+  {
+   "speaker": "S3",
+   "start": 16.03,
+   "end": 16.511,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S3",
+   "start": 16.765,
+   "end": 17.545,
+   "text": "हाँ आ जाना"
+  },
+  {
+   "speaker": "S1",
+   "start": 17.966,
+   "end": 29.652,
+   "text": "ओके ठीक है उसकी फीस बता देती हूँ मैं यह मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उस एकॉर्डिंग ही कटानी है या फिर सामने से ही हेयरकट कटाना है"
+  },
+  {
+   "speaker": "S1",
+   "start": 29.849,
+   "end": 33.466,
+   "text": "ओके हाँ तो फिर थ्री हंड्रेड तीन सौ समथिंग"
+  },
+  {
+   "speaker": "S3",
+   "start": 33.236,
+   "end": 33.696,
+   "text": "हलो"
+  },
+  {
+   "speaker": "S1",
+   "start": 33.516,
+   "end": 33.956,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S1",
+   "start": 34.205,
+   "end": 37.915,
+   "text": "तीन सौ समथिंग हाँ चार्ज है इसका यू शेप करानी है ना आपको"
+  },
+  {
+   "speaker": "S1",
+   "start": 38.099,
+   "end": 38.523,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S2",
+   "start": 38.856,
+   "end": 39.186,
+   "text": "बिल"
+  },
+  {
+   "speaker": "S1",
+   "start": 39.021,
+   "end": 44.081,
+   "text": "आईब्रो का कौन फोरहेड अपर हेड मतलब फूल के फूल चार्ज तीस रुपये पचास रुपये का"
+  },
+  {
+   "speaker": "S3",
+   "start": 41.855,
+   "end": 42.815,
+   "text": "प्रियांस"
+  },
+  {
+   "speaker": "S3",
+   "start": 42.946,
+   "end": 44.826,
+   "text": "हाँ दिखा देंगे"
+  },
+  {
+   "speaker": "S2",
+   "start": 44.932,
+   "end": 55.938,
+   "text": "आपको बता दें अगर आप सादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो"
+  },
+  {
+   "speaker": "S3",
+   "start": 45.167,
+   "end": 46.307,
+   "text": "दो चार दिन लगेंगे"
+  },
+  {
+   "speaker": "S2",
+   "start": 56.276,
+   "end": 64.346,
+   "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं"
+  },
+  {
+   "speaker": "S2",
+   "start": 64.693,
+   "end": 70.376,
+   "text": "तो आप सॉप पे एक बार आ जाऍं तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S1",
+    "start": 0.77,
+    "end": 3.73,
+    "text": "हाँ हेलो हाँ बोलिए हाँ जी बोलिए",
+    "hinglish": "haan hello haan bolie haan ji bolie",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 2.79,
+    "end": 4.68,
+    "text": "हाँ जी नमस्ते हाँ बोलो",
+    "hinglish": "haan ji namaste haan bolo",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 4.92,
+    "end": 14.21,
+    "text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है",
+    "hinglish": "mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V V seb hai aur yu seb bhi hai aapko kaun si karani hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 11.64,
+    "end": 16.79,
+    "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 16.03,
+    "end": 17.55,
+    "text": "हाँ हाँ जन",
+    "hinglish": "haan haan jan",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 17.97,
+    "end": 44.08,
+    "text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग हाँ तीन सौ समथिंग हाँ चार्ज है उसका यू सेफ करानी ना आपको हाँ आईब्रो का कौन साड अपर हेड मतलब फुल फुल चार्ज तीस रुपये पचास रुपये का",
+    "hinglish": "okay theek hai uski phees bata deti hoon meri meri yu cutting ke liye jo aapko saam matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay haan to uske three hundred teen sau something haan teen sau something haan charge hai uska yu seph karani na aapko haan aaibro ka kaun saad apar head matlab full full charge tees rupye pachas rupye ka",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 33.24,
+    "end": 33.7,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 38.86,
+    "end": 39.19,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 41.85,
+    "end": 46.31,
+    "text": "राम सेगर चौरा हाँ ठीक देंगे दो चार दिन लगेंगे",
+    "hinglish": "raam segar chaura haan theek denge do chaar din lagenge",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 44.93,
+    "end": 70.38,
+    "text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं तो आप सॉफ्टवेयर एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
+    "hinglish": "aapko bata den agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aap use trai karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki zarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain to aap sophtaveyar ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S1",
+    "start": 0.77,
+    "end": 3.73,
+    "text": "हेलो हाँ बोलिए हाँ जी बोलिए",
+    "hinglish": "hello haan bolie haan ji bolie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 2.79,
+    "end": 4.68,
+    "text": "हाँ जी न बोलिए हाँ बोलो",
+    "hinglish": "haan ji na bolie haan bolo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 4.92,
+    "end": 14.21,
+    "text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी बनी है",
+    "hinglish": "mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V V seb hai aur yu seb bhi hai aapko kaun si bani hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 11.64,
+    "end": 16.79,
+    "text": "हेलो नमस्कार रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "hello namaskar restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 16.03,
+    "end": 17.55,
+    "text": "हाँ हाँ जन",
+    "hinglish": "haan haan jan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 17.97,
+    "end": 44.08,
+    "text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ हम कर लो हाँ तीन सौ समथिंग हाँ चार्ज है उसका यू सेफ करानी ना आपको हाँ आईब्रो का कौन सा फॉर हेड अपर हेड मतलब फुल फुल चार्ज पीस रुपये पचास रुपये का",
+    "hinglish": "okay theek hai uski phees bata deti hoon meri meri yu cutting ke liye jo aapko saam matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay haan to uske three hundred teen sau hum kar lo haan teen sau something haan charge hai uska yu seph karani na aapko haan aaibro ka kaun sa phor head apar head matlab full full charge piece rupye pachas rupye ka",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 33.24,
+    "end": 33.7,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 38.86,
+    "end": 39.19,
+    "text": "बना",
+    "hinglish": "bana",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 41.85,
+    "end": 46.31,
+    "text": "चार तीस रुपए पचास रूपए तक ही कर देंगे आपको बता जाएगा",
+    "hinglish": "chaar tees rupae pachas rupae tak hi kar denge aapko bata jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 44.93,
+    "end": 70.38,
+    "text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं तो आप सॉफ्टवेयर एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
+    "hinglish": "aapko bata den agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aap use trai karva ke ya sabji banva ke le jaoge to aapko sadhe chaar sau rupye ki pad jaegi to haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki zarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain to aap sophtaveyar ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S1",
+    "start": 0.77,
+    "end": 3.73,
+    "text": "हाँ हेलो हाँ बोलिए हाँ जी बोलिए",
+    "hinglish": "haan hello haan bolie haan ji bolie",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S3",
+    "start": 2.79,
+    "end": 4.68,
+    "text": "हाँ जी नमस्ते हाँ बोलो",
+    "hinglish": "haan ji namaste haan bolo",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 4.92,
+    "end": 14.21,
+    "text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है",
+    "hinglish": "mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V V seb hai aur yu seb bhi hai aapko kaun si karani hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 11.64,
+    "end": 16.79,
+    "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S3",
+    "start": 16.03,
+    "end": 17.55,
+    "text": "हाँ हाँ जन",
+    "hinglish": "haan haan jan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 17.97,
+    "end": 44.08,
+    "text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटने हैं ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग हाँ तीन सौ समथिंग हाँ चार्ज है उसका यू सेफ करानी ना आपको हाँ आईब्रो का कौन सा फोर हेड अपर हेड मतलब फुल फुल चार्ज तीस रुपये पचास रुपये का",
+    "hinglish": "okay theek hai uski phees bata deti hoon meri meri yu cutting ke liye jo aapko saam matlab face uske according katani hai ya phir samne se bhi hair kat katne hain okay haan to uske three hundred teen sau something haan teen sau something haan charge hai uska yu seph karani na aapko haan aaibro ka kaun sa four head apar head matlab full full charge tees rupye pachas rupye ka",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S3",
+    "start": 33.24,
+    "end": 33.7,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 38.86,
+    "end": 39.19,
+    "text": "बिल्ली",
+    "hinglish": "billi",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S3",
+    "start": 41.85,
+    "end": 46.31,
+    "text": "हाँ ठीक कर देंगे वो चार दिन लगेंगे",
+    "hinglish": "haan theek kar denge wo chaar din lagenge",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 44.93,
+    "end": 70.38,
+    "text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं तो आप सॉफ्टवेयर एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
+    "hinglish": "aapko bata den agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aap use trai karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki zarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain to aap sophtaveyar ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai",
+    "audio": "separated"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.7,
+    "end": 1.9,
+    "text": "हाँ हेलो हाँ",
+    "hinglish": "haan hello haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 2.3,
+    "end": 3.75,
+    "text": "बोलिए हाँ बोलिए",
+    "hinglish": "bolie haan bolie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.05,
+    "end": 4.65,
+    "text": "हाँ बोलो",
+    "hinglish": "haan bolo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.9,
+    "end": 10.2,
+    "text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी",
+    "hinglish": "mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.65,
+    "end": 14.05,
+    "text": "वी सेब है और यू सेब भी है आपको कौन सी करी है",
+    "hinglish": "V seb hai aur yu seb bhi hai aapko kaun si kari hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.05,
+    "end": 16.15,
+    "text": "से बात करता हूँ आप जी जी ये तो हमारे स्पेशल",
+    "hinglish": "se baat karta hoon aap ji ji ye to hamare special",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.15,
+    "end": 17.55,
+    "text": "हाँ हाँ जन",
+    "hinglish": "haan haan jan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.9,
+    "end": 18.8,
+    "text": "ओके",
+    "hinglish": "okay",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.55,
+    "end": 20.15,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.85,
+    "end": 21.55,
+    "text": "कि",
+    "hinglish": "ki",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.95,
+    "end": 24.7,
+    "text": "फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए",
+    "hinglish": "phees bata deti hoon meri meri yu cutting ke liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.95,
+    "end": 30.45,
+    "text": "जो आपको सामने मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके",
+    "hinglish": "jo aapko samne matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.65,
+    "end": 33.95,
+    "text": "हाँ तो थ्री हंड्रेड तीन सौ हम कर लो हाँ",
+    "hinglish": "haan to three hundred teen sau hum kar lo haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 34.1,
+    "end": 36.15,
+    "text": "तीन सौ समथिंग हाँ चार्ज है इसका",
+    "hinglish": "teen sau something haan charge hai iska",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.75,
+    "end": 38.55,
+    "text": "यू सेफ पर आनी ना आपको हाँ",
+    "hinglish": "yu seph par aani na aapko haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.85,
+    "end": 41.6,
+    "text": "आईब्रो का कौन सा फॉर हेड अपर हेड मतलब",
+    "hinglish": "aaibro ka kaun sa phor head apar head matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.75,
+    "end": 45.15,
+    "text": "चार पीस रुपए पचास रुपए का ही कर देंगे आप",
+    "hinglish": "chaar piece rupae pachas rupae ka hi kar denge aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 45.15,
+    "end": 50.85,
+    "text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे कि ट्राई करवा के या सब्जी बनवा के लिए जाओगे",
+    "hinglish": "aapko bata den agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aap use ki trai karva ke ya sabji banva ke liye jaoge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 51.75,
+    "end": 53.7,
+    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
+    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 55.75,
+    "end": 56.0,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.2,
+    "end": 58.9,
+    "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको",
+    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 59.25,
+    "end": 62.1,
+    "text": "किसी चीज़ की ज़रूरत मतलब किसी अलग तरीके की ज़रूरत है",
+    "hinglish": "kisi cheez ki zarurat matlab kisi alag tarike ki zarurat hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 62.25,
+    "end": 64.1,
+    "text": "समोसे बाहर से बुलवा के भी आपको दे सकते",
+    "hinglish": "samose bahar se bulva ke bhi aapko de sakte",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 64.65,
+    "end": 67.0,
+    "text": "तो आप सॉफ्ट एक बार आ जाएँ",
+    "hinglish": "to aap soft ek baar aa jaen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 67.3,
+    "end": 68.25,
+    "text": "तुम आपको बता दें",
+    "hinglish": "tum aapko bata den",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 68.9,
+    "end": 70.4,
+    "text": "क्या चाहिए कैसा लग रहा है",
+    "hinglish": "kya chahiye kaisa lag raha hai",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.7,
+    "end": 1.9,
+    "text": "हाँ हेलो हाँ",
+    "hinglish": "haan hello haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 2.3,
+    "end": 3.75,
+    "text": "बोलिए हाँ जी बोलिए",
+    "hinglish": "bolie haan ji bolie",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.05,
+    "end": 4.65,
+    "text": "हाँ बोलो",
+    "hinglish": "haan bolo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.9,
+    "end": 10.2,
+    "text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी",
+    "hinglish": "mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.65,
+    "end": 14.05,
+    "text": "वी सेव है और यू सेव भी है आपको कौन से कराने",
+    "hinglish": "V sev hai aur yu sev bhi hai aapko kaun se karane",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.05,
+    "end": 16.15,
+    "text": "से बात कर रहा हूं आप जी जी ये तो हमारे स्पेशल",
+    "hinglish": "se baat kar raha hoon aap ji ji ye to hamare special",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.15,
+    "end": 17.55,
+    "text": "हाँ हाँ जन",
+    "hinglish": "haan haan jan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.9,
+    "end": 18.8,
+    "text": "ओके",
+    "hinglish": "okay",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.55,
+    "end": 20.15,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.85,
+    "end": 21.55,
+    "text": "कि",
+    "hinglish": "ki",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.95,
+    "end": 24.7,
+    "text": "फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए",
+    "hinglish": "phees bata deti hoon meri meri yu cutting ke liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.95,
+    "end": 30.45,
+    "text": "जो आपको सामने मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके",
+    "hinglish": "jo aapko samne matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.65,
+    "end": 33.95,
+    "text": "हाँ तो थ्री हंड्रेड तीन सौ समथिंग हाँ",
+    "hinglish": "haan to three hundred teen sau something haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 34.1,
+    "end": 36.15,
+    "text": "तीन सौ समथिंग हाँ चार्ज है इसका",
+    "hinglish": "teen sau something haan charge hai iska",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.75,
+    "end": 38.55,
+    "text": "यू सेफ पर आनी ना आपको हाँ",
+    "hinglish": "yu seph par aani na aapko haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.85,
+    "end": 41.6,
+    "text": "आईब्रो का कौन फोर हेड अपर हेड मतलब",
+    "hinglish": "aaibro ka kaun four head apar head matlab",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.75,
+    "end": 45.15,
+    "text": "फुल फुल चारीस रुपये पचास रुपये तक ही कर देंगे आप",
+    "hinglish": "full full charis rupye pachas rupye tak hi kar denge aap",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 45.15,
+    "end": 50.85,
+    "text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे कि ट्राई करवा के या सब्जी बनवा के लिए जाओगे",
+    "hinglish": "aapko bata den agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aap use ki trai karva ke ya sabji banva ke liye jaoge",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 51.75,
+    "end": 53.7,
+    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
+    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 55.75,
+    "end": 56.0,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.2,
+    "end": 58.9,
+    "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको",
+    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 59.25,
+    "end": 62.1,
+    "text": "किसी चीज़ की ज़रूरत मतलब किसी अलग तरीके की ज़रूरत है",
+    "hinglish": "kisi cheez ki zarurat matlab kisi alag tarike ki zarurat hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 62.25,
+    "end": 64.1,
+    "text": "समोसे बाहर से बुलवा के भी आपको दे सकते",
+    "hinglish": "samose bahar se bulva ke bhi aapko de sakte",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 64.65,
+    "end": 67.0,
+    "text": "तो आप सॉफ्ट एक बार आ जाएँ",
+    "hinglish": "to aap soft ek baar aa jaen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 67.3,
+    "end": 68.25,
+    "text": "तुम आपको बता दें",
+    "hinglish": "tum aapko bata den",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 68.9,
+    "end": 70.4,
+    "text": "क्या चाहिए कैसा लग रहा है",
+    "hinglish": "kya chahiye kaisa lag raha hai",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.7,
+    "end": 1.9,
+    "text": "हाँ हेलो हाँ",
+    "hinglish": "haan hello haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.3,
+    "end": 3.75,
+    "text": "बोलिए हाँ जी बोलिए",
+    "hinglish": "bolie haan ji bolie",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 2.77,
+    "end": 3.71,
+    "text": "हाँ जी नमस्ते",
+    "hinglish": "haan ji namaste",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.05,
+    "end": 4.65,
+    "text": "हाँ बोलो",
+    "hinglish": "haan bolo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 4.9,
+    "end": 10.2,
+    "text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी",
+    "hinglish": "mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.65,
+    "end": 14.05,
+    "text": "वी सेव है और यू सेव भी है आपको कौन से कराने",
+    "hinglish": "V sev hai aur yu sev bhi hai aapko kaun se karane",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 11.61,
+    "end": 12.8,
+    "text": "हलो नमस्कार",
+    "hinglish": "hello namaskar",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.99,
+    "end": 14.58,
+    "text": "नहीं सर रेट से बात करें",
+    "hinglish": "nahi sir rate se baat karen",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 14.05,
+    "end": 16.15,
+    "text": "से बात कर रहा हूं आप जी जी ये तो हमारे स्पेशल",
+    "hinglish": "se baat kar raha hoon aap ji ji ye to hamare special",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.05,
+    "end": 16.62,
+    "text": "फैसिलिटी है",
+    "hinglish": "facility hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.15,
+    "end": 17.55,
+    "text": "हाँ हाँ जन",
+    "hinglish": "haan haan jan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 16.7,
+    "end": 16.82,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.9,
+    "end": 18.8,
+    "text": "ओके",
+    "hinglish": "okay",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.55,
+    "end": 20.15,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.85,
+    "end": 21.55,
+    "text": "कि",
+    "hinglish": "ki",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.95,
+    "end": 24.7,
+    "text": "फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए",
+    "hinglish": "phees bata deti hoon meri meri yu cutting ke liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.95,
+    "end": 30.45,
+    "text": "जो आपको सामने मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके",
+    "hinglish": "jo aapko samne matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.65,
+    "end": 33.95,
+    "text": "हाँ तो थ्री हंड्रेड तीन सौ समथिंग हाँ",
+    "hinglish": "haan to three hundred teen sau something haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.27,
+    "end": 33.7,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 34.1,
+    "end": 36.15,
+    "text": "तीन सौ समथिंग हाँ चार्ज है इसका",
+    "hinglish": "teen sau something haan charge hai iska",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.75,
+    "end": 38.55,
+    "text": "यू सेफ पर आनी ना आपको हाँ",
+    "hinglish": "yu seph par aani na aapko haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.85,
+    "end": 41.6,
+    "text": "लिब्रो का कौन फॉर हेड अपर हेड मतलब",
+    "hinglish": "libro ka kaun phor head apar head matlab",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 38.88,
+    "end": 39.33,
+    "text": "आ",
+    "hinglish": "aa",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 41.75,
+    "end": 45.9,
+    "text": "फुल फुल चारीस रुपए पचास रुपये तक ही कर देंगे आपको बता दें अगर आप",
+    "hinglish": "full full charis rupae pachas rupye tak hi kar denge aapko bata den agar aap",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 41.91,
+    "end": 42.76,
+    "text": "या चोरी",
+    "hinglish": "ya chori",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 42.96,
+    "end": 43.43,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.12,
+    "end": 46.3,
+    "text": "दो चार दिन लगे होंगे",
+    "hinglish": "do chaar din lage honge",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 45.9,
+    "end": 50.85,
+    "text": "शादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के लिए आओगे",
+    "hinglish": "shadi le jaoge to teen sau rupae milegi aapko aur agar aap use trai karva ke ya sabji banva ke liye aaoge",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 51.75,
+    "end": 53.7,
+    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
+    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 55.75,
+    "end": 56.0,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 56.2,
+    "end": 58.9,
+    "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको",
+    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 59.25,
+    "end": 62.1,
+    "text": "किसी चीज़ की ज़रूरत मतलब किसी अलग तरीके की ज़रूरत है",
+    "hinglish": "kisi cheez ki zarurat matlab kisi alag tarike ki zarurat hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 62.25,
+    "end": 64.1,
+    "text": "समोसे बाहर से बुलवा के भी आपको दे सकते",
+    "hinglish": "samose bahar se bulva ke bhi aapko de sakte",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 64.65,
+    "end": 67.0,
+    "text": "तो आप सॉफ्ट एक बार आ जाएँ",
+    "hinglish": "to aap soft ek baar aa jaen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 67.3,
+    "end": 68.25,
+    "text": "तुम आपको बता दें",
+    "hinglish": "tum aapko bata den",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 68.9,
+    "end": 70.4,
+    "text": "क्या चाहिए कैसा लग रहा है",
+    "hinglish": "kya chahiye kaisa lag raha hai",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.74,
+    "end": 1.89,
+    "text": "हाँ हेलो हाँ",
+    "hinglish": "haan hello haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 2.33,
+    "end": 3.74,
+    "text": "बोलिए हाँ जी बोलिए",
+    "hinglish": "bolie haan ji bolie",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.78,
+    "end": 3.76,
+    "text": "हाँ जी नमस्ते",
+    "hinglish": "haan ji namaste",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 4.08,
+    "end": 4.66,
+    "text": "हाँ बोलो",
+    "hinglish": "haan bolo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.91,
+    "end": 10.17,
+    "text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप होती है और फेजल होती है वी",
+    "hinglish": "mere parlour mein three step hote hain four step hoti hai aur phejal hoti hai V",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.66,
+    "end": 12.8,
+    "text": "वी सेव है और यू सेब भी है",
+    "hinglish": "V sev hai aur yu seb bhi hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.61,
+    "end": 16.82,
+    "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 13.01,
+    "end": 14.58,
+    "text": "आपको कौन सी करानी है",
+    "hinglish": "aapko kaun si karani hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.05,
+    "end": 16.62,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.7,
+    "end": 17.53,
+    "text": "हाँ जन",
+    "hinglish": "haan jan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.92,
+    "end": 18.76,
+    "text": "ओके",
+    "hinglish": "okay",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.59,
+    "end": 20.11,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.86,
+    "end": 21.55,
+    "text": "कि",
+    "hinglish": "ki",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.97,
+    "end": 24.65,
+    "text": "फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए",
+    "hinglish": "phees bata deti hoon meri meri yu cutting ke liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.95,
+    "end": 30.41,
+    "text": "जो आपको सामने मतलब फेस के अकॉर्डिंग कटानी है या फिर सामने से भी हेरकट कटाना है ओके",
+    "hinglish": "jo aapko samne matlab face ke according katani hai ya phir samne se bhi herkat katana hai okay",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.69,
+    "end": 33.93,
+    "text": "हाँ ती थ्री हंड्रेड तीन सौ हम चलो हाँ",
+    "hinglish": "haan ti three hundred teen sau hum chalo haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 33.27,
+    "end": 33.7,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 34.1,
+    "end": 36.11,
+    "text": "तीन सौ समथिंग हाँ चार्ज है इसका",
+    "hinglish": "teen sau something haan charge hai iska",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.75,
+    "end": 38.54,
+    "text": "यू सेफ पर आनी ना आपको हाँ",
+    "hinglish": "yu seph par aani na aapko haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.86,
+    "end": 41.54,
+    "text": "आईब्रो का कौन सा फोर हेड अपर हेड मतलब",
+    "hinglish": "aaibro ka kaun sa four head apar head matlab",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.88,
+    "end": 39.33,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.76,
+    "end": 44.9,
+    "text": "फुल फुल चारीस रुपये पचास रुपये तक ही कर देंगे",
+    "hinglish": "full full charis rupye pachas rupye tak hi kar denge",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 41.91,
+    "end": 42.88,
+    "text": "या चोर",
+    "hinglish": "ya chor",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.96,
+    "end": 43.43,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 44.9,
+    "end": 50.81,
+    "text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के लिए आओगे",
+    "hinglish": "aapko bata den agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aap use trai karva ke ya sabji banva ke liye aaoge",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.1,
+    "end": 46.3,
+    "text": "वो चार दिन लगे होंगे",
+    "hinglish": "wo chaar din lage honge",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 51.77,
+    "end": 53.68,
+    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
+    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 55.79,
+    "end": 55.97,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.23,
+    "end": 58.87,
+    "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किस",
+    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kis",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 59.26,
+    "end": 62.06,
+    "text": "किसी चीज़ की ज़रूरत मतलब किसी अलग तरीके की ज़रूरत है",
+    "hinglish": "kisi cheez ki zarurat matlab kisi alag tarike ki zarurat hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 62.3,
+    "end": 64.09,
+    "text": "समस्त बाहर से बुबके आपको दे",
+    "hinglish": "samast bahar se bubke aapko de",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 64.66,
+    "end": 66.99,
+    "text": "तो आप शॉप पर एक बार आ जाएँ",
+    "hinglish": "to aap shop par ek baar aa jaen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 67.31,
+    "end": 68.21,
+    "text": "तो हम आपको बता दें",
+    "hinglish": "to hum aapko bata den",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 68.92,
+    "end": 70.37,
+    "text": "क्या चाहिए कैसा लग रहा है",
+    "hinglish": "kya chahiye kaisa lag raha hai",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 1.0,
+    "end": 1.45,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.45,
+    "end": 1.75,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.2,
+    "end": 2.8,
+    "text": "बोलिए",
+    "hinglish": "bolie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 3.05,
+    "end": 3.4,
+    "text": "नमस्कार",
+    "hinglish": "namaskar",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.05,
+    "end": 4.65,
+    "text": "हाँ बोलो",
+    "hinglish": "haan bolo",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 4.85,
+    "end": 5.5,
+    "text": "मेरे पास",
+    "hinglish": "mere paas",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 5.9,
+    "end": 7.9,
+    "text": "थ्री स्टेप होते हैं फोर स्टेप",
+    "hinglish": "three step hote hain four step",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.3,
+    "end": 9.1,
+    "text": "यह और",
+    "hinglish": "yeh aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 9.2,
+    "end": 10.2,
+    "text": "होती है वी",
+    "hinglish": "hoti hai V",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.65,
+    "end": 12.7,
+    "text": "जी सेव है और यू सेव भी है",
+    "hinglish": "ji sev hai aur yu sev bhi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 11.75,
+    "end": 12.05,
+    "text": "लोग",
+    "hinglish": "log",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 12.7,
+    "end": 13.1,
+    "text": "क्या",
+    "hinglish": "kya",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 13.35,
+    "end": 14.15,
+    "text": "को",
+    "hinglish": "ko",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 14.15,
+    "end": 16.1,
+    "text": "बात करता हूं आप जी जी ये तो हमारी स्पेशल",
+    "hinglish": "baat karta hoon aap ji ji ye to hamari special",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.05,
+    "end": 16.4,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 16.4,
+    "end": 16.8,
+    "text": "ठीक है सर",
+    "hinglish": "theek hai sir",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.8,
+    "end": 17.25,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.15,
+    "end": 17.55,
+    "text": "ज",
+    "hinglish": "ja",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.9,
+    "end": 18.8,
+    "text": "ओके",
+    "hinglish": "okay",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.6,
+    "end": 20.15,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.85,
+    "end": 21.55,
+    "text": "अ",
+    "hinglish": "a",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.95,
+    "end": 24.7,
+    "text": "फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए",
+    "hinglish": "phees bata deti hoon meri meri yu cutting ke liye",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.95,
+    "end": 30.45,
+    "text": "जो आपको सामने मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके",
+    "hinglish": "jo aapko samne matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.7,
+    "end": 33.95,
+    "text": "हाँ ते थ्री हंड्रेड तीन सौ हम खालू हाँ",
+    "hinglish": "haan te three hundred teen sau hum khalu haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 34.1,
+    "end": 36.1,
+    "text": "तीन सौ समथिंग हाँ चार्ज है इसका",
+    "hinglish": "teen sau something haan charge hai iska",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.75,
+    "end": 38.55,
+    "text": "यू से करानी ना आपको हाँ",
+    "hinglish": "yu se karani na aapko haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 39.1,
+    "end": 41.5,
+    "text": "आईब्रो का कौन फॉर हेड अपर हेड मतलब",
+    "hinglish": "aaibro ka kaun phor head apar head matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.2,
+    "end": 42.55,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.65,
+    "end": 43.05,
+    "text": "चार पीस",
+    "hinglish": "chaar piece",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 43.3,
+    "end": 44.1,
+    "text": "पचास रुपये का",
+    "hinglish": "pachas rupye ka",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 44.1,
+    "end": 44.9,
+    "text": "कि कर देंगे",
+    "hinglish": "ki kar denge",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 44.85,
+    "end": 45.3,
+    "text": "आपको बता",
+    "hinglish": "aapko bata",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 45.45,
+    "end": 46.25,
+    "text": "चार दिन लगेंगे",
+    "hinglish": "chaar din lagenge",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 45.5,
+    "end": 45.9,
+    "text": "कर",
+    "hinglish": "kar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 46.25,
+    "end": 50.85,
+    "text": "ले जाओगे तो तीन सौ रुपए मिलेंगे आपको और अगर आप उसे ट्राई करवा के सब्जी बनवा के ले आओगे",
+    "hinglish": "le jaoge to teen sau rupae milenge aapko aur agar aap use trai karva ke sabji banva ke le aaoge",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 51.75,
+    "end": 53.7,
+    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
+    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 56.2,
+    "end": 58.9,
+    "text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको",
+    "hinglish": "haan verayti to dher hai aap aake dekh sakte ho jaise aapko",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 59.25,
+    "end": 62.1,
+    "text": "किसी चीज़ की जरूरत मतलब किसी अगर तरीके की ज़रूरत है",
+    "hinglish": "kisi cheez ki jarurat matlab kisi agar tarike ki zarurat hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 62.3,
+    "end": 64.0,
+    "text": "समस्त बाहर से बुबके आपको दे",
+    "hinglish": "samast bahar se bubke aapko de",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 63.95,
+    "end": 64.45,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 64.65,
+    "end": 67.0,
+    "text": "तो आप सॉफ्ट एक बार आ जाएँ",
+    "hinglish": "to aap soft ek baar aa jaen",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 67.3,
+    "end": 68.25,
+    "text": "तुम आपको बता दें",
+    "hinglish": "tum aapko bata den",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 68.9,
+    "end": 69.3,
+    "text": "क्या",
+    "hinglish": "kya",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 69.35,
+    "end": 70.35,
+    "text": "तो ये कैसा लग रहा है",
+    "hinglish": "to ye kaisa lag raha hai",
+    "audio": "track-1"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 1.0,
+    "end": 1.45,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.45,
+    "end": 1.75,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.2,
+    "end": 2.8,
+    "text": "बोलिए",
+    "hinglish": "bolie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 3.05,
+    "end": 3.4,
+    "text": "नमस्कार",
+    "hinglish": "namaskar",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.05,
+    "end": 4.65,
+    "text": "हाँ बोलो",
+    "hinglish": "haan bolo",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 4.85,
+    "end": 5.5,
+    "text": "मेरे पास",
+    "hinglish": "mere paas",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 5.9,
+    "end": 7.9,
+    "text": "थ्री स्टेप होते हैं फोर स्टेप",
+    "hinglish": "three step hote hain four step",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.3,
+    "end": 9.1,
+    "text": "यह और",
+    "hinglish": "yeh aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 9.2,
+    "end": 10.2,
+    "text": "होती है वी",
+    "hinglish": "hoti hai V",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.65,
+    "end": 12.7,
+    "text": "जी सेव है और यू सेव भी है",
+    "hinglish": "ji sev hai aur yu sev bhi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 11.75,
+    "end": 12.05,
+    "text": "लोग",
+    "hinglish": "log",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 12.7,
+    "end": 13.1,
+    "text": "क्या",
+    "hinglish": "kya",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 13.35,
+    "end": 14.15,
+    "text": "को",
+    "hinglish": "ko",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 14.15,
+    "end": 16.1,
+    "text": "बात करता हूं आप जी जी ये तो हमारी स्पेशल",
+    "hinglish": "baat karta hoon aap ji ji ye to hamari special",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.05,
+    "end": 16.4,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.4,
+    "end": 16.8,
+    "text": "ठीक है सर",
+    "hinglish": "theek hai sir",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.8,
+    "end": 17.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.2,
+    "end": 17.55,
+    "text": "जन",
+    "hinglish": "jan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.9,
+    "end": 18.8,
+    "text": "ओके",
+    "hinglish": "okay",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.6,
+    "end": 20.15,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.85,
+    "end": 21.55,
+    "text": "अ",
+    "hinglish": "a",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.95,
+    "end": 24.7,
+    "text": "फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए",
+    "hinglish": "phees bata deti hoon meri meri yu cutting ke liye",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.95,
+    "end": 30.45,
+    "text": "जो आपको सामने मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके",
+    "hinglish": "jo aapko samne matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.7,
+    "end": 33.95,
+    "text": "हाँ ते थ्री हंड्रेड तीन सौ हम खालू हाँ",
+    "hinglish": "haan te three hundred teen sau hum khalu haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 34.1,
+    "end": 36.1,
+    "text": "तीन सौ समथिंग हाँ चार्ज है इसका",
+    "hinglish": "teen sau something haan charge hai iska",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.75,
+    "end": 38.55,
+    "text": "यू से करानी ना आपको हाँ",
+    "hinglish": "yu se karani na aapko haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 39.1,
+    "end": 41.5,
+    "text": "आईब्रो का कौन फॉर हेड अपर हेड मतलब",
+    "hinglish": "aaibro ka kaun phor head apar head matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.2,
+    "end": 42.55,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.65,
+    "end": 43.05,
+    "text": "चार पीस",
+    "hinglish": "chaar piece",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 43.3,
+    "end": 44.1,
+    "text": "पचास रुपये का",
+    "hinglish": "pachas rupye ka",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 44.1,
+    "end": 44.9,
+    "text": "कि कर देंगे",
+    "hinglish": "ki kar denge",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 44.85,
+    "end": 45.3,
+    "text": "आपको बता",
+    "hinglish": "aapko bata",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 45.45,
+    "end": 46.25,
+    "text": "चार दिन लगेंगे",
+    "hinglish": "chaar din lagenge",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 45.5,
+    "end": 45.9,
+    "text": "कर",
+    "hinglish": "kar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 46.25,
+    "end": 50.85,
+    "text": "ले जाओगे तो तीन सौ रुपए मिलेंगे आपको और अगर आप उसे ट्राई करवा के सब्जी बनवा के ले आओगे",
+    "hinglish": "le jaoge to teen sau rupae milenge aapko aur agar aap use trai karva ke sabji banva ke le aaoge",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 51.75,
+    "end": 53.7,
+    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
+    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 56.2,
+    "end": 58.9,
+    "text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको",
+    "hinglish": "haan verayti to dher hai aap aake dekh sakte ho jaise aapko",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 59.25,
+    "end": 62.1,
+    "text": "किसी चीज़ की जरूरत मतलब किसी अगर तरीके की ज़रूरत है",
+    "hinglish": "kisi cheez ki jarurat matlab kisi agar tarike ki zarurat hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 62.3,
+    "end": 64.0,
+    "text": "समस्त बाहर से बुबके आपको दे",
+    "hinglish": "samast bahar se bubke aapko de",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 63.95,
+    "end": 64.45,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 64.65,
+    "end": 67.0,
+    "text": "तो आप सॉफ्ट एक बार आ जाएँ",
+    "hinglish": "to aap soft ek baar aa jaen",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 67.3,
+    "end": 68.25,
+    "text": "तुम आपको बता दें",
+    "hinglish": "tum aapko bata den",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 68.9,
+    "end": 69.3,
+    "text": "क्या",
+    "hinglish": "kya",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 69.35,
+    "end": 70.35,
+    "text": "तो ये कैसा लग रहा है",
+    "hinglish": "to ye kaisa lag raha hai",
+    "audio": "track-1"
+   }
+  ]
+ }
+}

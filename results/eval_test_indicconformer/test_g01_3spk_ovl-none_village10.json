@@ -1,0 +1,1938 @@
+{
+ "reference": [
+  {
+   "speaker": "S3",
+   "start": 0.608,
+   "end": 1.548,
+   "text": "हाँ जी नमस्ते"
+  },
+  {
+   "speaker": "S3",
+   "start": 1.881,
+   "end": 2.481,
+   "text": "हाँ बोलो"
+  },
+  {
+   "speaker": "S1",
+   "start": 2.866,
+   "end": 3.415,
+   "text": "हाँ हैलो"
+  },
+  {
+   "speaker": "S1",
+   "start": 3.547,
+   "end": 4.897,
+   "text": "हाँ बोलिए"
+  },
+  {
+   "speaker": "S2",
+   "start": 5.576,
+   "end": 6.023,
+   "text": "हेलो"
+  },
+  {
+   "speaker": "S2",
+   "start": 6.272,
+   "end": 8.78,
+   "text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप"
+  },
+  {
+   "speaker": "S2",
+   "start": 9.048,
+   "end": 10.858,
+   "text": "जी जी ये तो हमारी इस्पेशिलिटी है सर"
+  },
+  {
+   "speaker": "S3",
+   "start": 11.479,
+   "end": 11.959,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S3",
+   "start": 12.243,
+   "end": 13.023,
+   "text": "हाँ आ जाना"
+  },
+  {
+   "speaker": "S2",
+   "start": 13.759,
+   "end": 14.089,
+   "text": "बिल"
+  },
+  {
+   "speaker": "S2",
+   "start": 14.366,
+   "end": 25.372,
+   "text": "आपको बता दें अगर आप सादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो"
+  },
+  {
+   "speaker": "S3",
+   "start": 25.844,
+   "end": 26.304,
+   "text": "हलो"
+  },
+  {
+   "speaker": "S1",
+   "start": 27.082,
+   "end": 27.852,
+   "text": "हाँ जी बोलिए"
+  },
+  {
+   "speaker": "S1",
+   "start": 27.955,
+   "end": 35.796,
+   "text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है"
+  },
+  {
+   "speaker": "S3",
+   "start": 36.393,
+   "end": 37.353,
+   "text": "प्रियांस"
+  },
+  {
+   "speaker": "S3",
+   "start": 37.599,
+   "end": 39.479,
+   "text": "हाँ दिखा देंगे"
+  },
+  {
+   "speaker": "S2",
+   "start": 40.127,
+   "end": 48.197,
+   "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं"
+  },
+  {
+   "speaker": "S2",
+   "start": 48.3,
+   "end": 53.983,
+   "text": "तो आप सॉप पे एक बार आ जाऍं तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है"
+  },
+  {
+   "speaker": "S3",
+   "start": 54.523,
+   "end": 55.663,
+   "text": "दो चार दिन लगेंगे"
+  },
+  {
+   "speaker": "S3",
+   "start": 55.772,
+   "end": 56.225,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S2",
+   "start": 56.838,
+   "end": 57.198,
+   "text": "है ना"
+  },
+  {
+   "speaker": "S2",
+   "start": 57.378,
+   "end": 63.785,
+   "text": "हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज़्यादा मतलब हमारे सॉप का बोले तो सबसे पसंदीदा चीज"
+  },
+  {
+   "speaker": "S2",
+   "start": 64.097,
+   "end": 65.158,
+   "text": "केवल और केवल यही है"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S3",
+    "start": 0.61,
+    "end": 2.48,
+    "text": "हाँ जी नमस्ते हाँ बोलो",
+    "hinglish": "haan ji namaste haan bolo",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 2.87,
+    "end": 4.9,
+    "text": "हाँ हेलो हाँ बोलिए",
+    "hinglish": "haan hello haan bolie",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 5.58,
+    "end": 10.86,
+    "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 11.48,
+    "end": 13.02,
+    "text": "हाँ हाँ जना",
+    "hinglish": "haan haan jana",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 13.76,
+    "end": 25.37,
+    "text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो",
+    "hinglish": "aapko bata den agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aap use trai karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 25.84,
+    "end": 26.3,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 27.08,
+    "end": 35.8,
+    "text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है",
+    "hinglish": "haan ji bolie mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V V seb hai aur yu seb bhi hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 36.39,
+    "end": 39.48,
+    "text": "राम सेगर चौरा हाँ ठीक देंगे",
+    "hinglish": "raam segar chaura haan theek denge",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 40.13,
+    "end": 53.98,
+    "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की ज़रूरत मतलब किसी अलग तरीके की ज़रूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं तो आप सॉफ्ट पर एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
+    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki zarurat matlab kisi alag tarike ki zarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain to aap soft par ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 54.52,
+    "end": 56.23,
+    "text": "दो चार दिन लगेंगे हाँ",
+    "hinglish": "do chaar din lagenge haan",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 56.84,
+    "end": 65.16,
+    "text": "है न हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज़्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज़ केवल और केवल यही",
+    "hinglish": "hai na haan ab market hai aapke yahan vaise to hamare yahan sabse zyada matlab hamare shop ka bole to sabse pasandida cheez keval aur keval yahi",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S3",
+    "start": 0.61,
+    "end": 2.48,
+    "text": "हाँ जी नमस्ते हाँ बोलो",
+    "hinglish": "haan ji namaste haan bolo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 2.87,
+    "end": 4.9,
+    "text": "हेलो हाँ बोलिए",
+    "hinglish": "hello haan bolie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 5.58,
+    "end": 10.86,
+    "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 11.48,
+    "end": 13.02,
+    "text": "हाँ हाँ जन",
+    "hinglish": "haan haan jan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 13.76,
+    "end": 25.37,
+    "text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रूपये मिलेगी आपको और अगर आप फ्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रूपये की पड़ जाएगी तो",
+    "hinglish": "aapko bata de agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aap fry karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 25.84,
+    "end": 26.3,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 27.08,
+    "end": 35.8,
+    "text": "हाँ जी बोलिए मेरे पार्लर में थ्री सेब होते हैं फोर स्ट्रोक होती है और फेजल होती है वी वी सेब है और यू सेब भी है",
+    "hinglish": "haan ji bolie mere parlour mein three seb hote hain four strok hoti hai aur phejal hoti hai V V seb hai aur yu seb bhi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 36.39,
+    "end": 39.48,
+    "text": "राम सेगर चौरा हाँ ठीक कर देंगे",
+    "hinglish": "raam segar chaura haan theek kar denge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 40.13,
+    "end": 53.98,
+    "text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है हम उसे बाहर से बुलवा के भी आपको देख सकते हैं तो आप सॉफ्ट एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
+    "hinglish": "haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai hum use bahar se bulva ke bhi aapko dekh sakte hain to aap soft ek baar aa jae to hum aapko bata den ki kya chahiye kaisa lag raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 54.52,
+    "end": 56.23,
+    "text": "दो चार दिन लगेंगे हाँ",
+    "hinglish": "do chaar din lagenge haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 56.84,
+    "end": 65.16,
+    "text": "है ना हाँ मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज केवल और केवल यही",
+    "hinglish": "hai na haan market hai aapke yahan vaise to hamare yahan sabse zyada matlab hamare shop ka bole to sabse pasandida cheej keval aur keval yahi",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S3",
+    "start": 0.61,
+    "end": 2.48,
+    "text": "हाँ जी नमस्ते हाँ बोलो",
+    "hinglish": "haan ji namaste haan bolo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 2.87,
+    "end": 4.9,
+    "text": "हेलो हाँ बोलिए",
+    "hinglish": "hello haan bolie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 5.58,
+    "end": 10.86,
+    "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 11.48,
+    "end": 13.02,
+    "text": "हाँ हाँ जन",
+    "hinglish": "haan haan jan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 13.76,
+    "end": 25.37,
+    "text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रूपये मिलेगी आपको और अगर आप फ्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रूपये की पड़ जाएगी तो",
+    "hinglish": "aapko bata de agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aap fry karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 25.84,
+    "end": 26.3,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 27.08,
+    "end": 35.8,
+    "text": "हाँ जी बोलिए मेरे पार्लर में थ्री सेब होते हैं फोर स्ट्रोक होती है और फेजल होती है वी वी सेब है और यू सेब भी है",
+    "hinglish": "haan ji bolie mere parlour mein three seb hote hain four strok hoti hai aur phejal hoti hai V V seb hai aur yu seb bhi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 36.39,
+    "end": 39.48,
+    "text": "राम सेगर चौरा हाँ ठीक कर देंगे",
+    "hinglish": "raam segar chaura haan theek kar denge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 40.13,
+    "end": 53.98,
+    "text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है हम उसे बाहर से बुलवा के भी आपको देख सकते हैं तो आप सॉफ्ट एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
+    "hinglish": "haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai hum use bahar se bulva ke bhi aapko dekh sakte hain to aap soft ek baar aa jae to hum aapko bata den ki kya chahiye kaisa lag raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 54.52,
+    "end": 56.23,
+    "text": "दो चार दिन लगेंगे हाँ",
+    "hinglish": "do chaar din lagenge haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 56.84,
+    "end": 65.16,
+    "text": "है ना हाँ मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज केवल और केवल यही",
+    "hinglish": "hai na haan market hai aapke yahan vaise to hamare yahan sabse zyada matlab hamare shop ka bole to sabse pasandida cheej keval aur keval yahi",
+    "audio": "mixture"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.55,
+    "end": 2.45,
+    "text": "हाँ जी नमस्ते हाँ बोलो",
+    "hinglish": "haan ji namaste haan bolo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.45,
+    "end": 4.2,
+    "text": "आरोप हाँ",
+    "hinglish": "aarop haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.25,
+    "end": 5.0,
+    "text": "बोलिए",
+    "hinglish": "bolie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 5.5,
+    "end": 6.1,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 6.2,
+    "end": 10.9,
+    "text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.45,
+    "end": 11.95,
+    "text": "हां",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.15,
+    "end": 13.05,
+    "text": "हाँ जन",
+    "hinglish": "haan jan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 13.85,
+    "end": 14.1,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 14.25,
+    "end": 20.25,
+    "text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आपकी फ्राई करवा के या सब्जी बनवा के ले जाओगे",
+    "hinglish": "aapko bata den agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aapki fry karva ke ya sabji banva ke le jaoge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.2,
+    "end": 23.15,
+    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
+    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.2,
+    "end": 25.4,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.8,
+    "end": 26.3,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 26.95,
+    "end": 33.25,
+    "text": "हाँ जी बोलिए मेरे पार्लर में स्टेप होते हैं फोर होती है और खेजल होती है बीज",
+    "hinglish": "haan ji bolie mere parlour mein step hote hain four hoti hai aur khejal hoti hai beej",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 33.65,
+    "end": 35.85,
+    "text": "जी सेम है और यू सेम भी है",
+    "hinglish": "ji same hai aur yu same bhi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.4,
+    "end": 37.45,
+    "text": "राशोरे",
+    "hinglish": "rashore",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.5,
+    "end": 38.15,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.8,
+    "end": 39.55,
+    "text": "कि कर देंगे",
+    "hinglish": "ki kar denge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 40.05,
+    "end": 42.85,
+    "text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको कुछ",
+    "hinglish": "haan verayti to dher hai aap aake dekh sakte ho jaise aapko kuch",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 43.0,
+    "end": 48.05,
+    "text": "किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
+    "hinglish": "kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai hum use bahar se bulva ke bhi aapko de sakte hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 48.2,
+    "end": 50.65,
+    "text": "तो आप सॉफ्टवेयर एक बार आ जाए",
+    "hinglish": "to aap sophtaveyar ek baar aa jae",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.9,
+    "end": 51.9,
+    "text": "तुम आपको बता दें",
+    "hinglish": "tum aapko bata den",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 52.5,
+    "end": 54.0,
+    "text": "कि क्या चाहिए कैसा लग रहा है",
+    "hinglish": "ki kya chahiye kaisa lag raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.5,
+    "end": 56.2,
+    "text": "दो चार दिन लगेंगे हाँ",
+    "hinglish": "do chaar din lagenge haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 56.85,
+    "end": 57.15,
+    "text": "है ना",
+    "hinglish": "hai na",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 57.35,
+    "end": 61.2,
+    "text": "हाँ मार्केट है आपके यहाँ बेटे तो हमारे यहाँ सबसे ज्यादा मतलब",
+    "hinglish": "haan market hai aapke yahan bete to hamare yahan sabse zyada matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 61.6,
+    "end": 65.2,
+    "text": "हमारे शॉप का बोले तो सबसे पसंदीदा चीज केवल और केवल यही",
+    "hinglish": "hamare shop ka bole to sabse pasandida cheej keval aur keval yahi",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.55,
+    "end": 2.45,
+    "text": "हाँ जी नमस्ते हाँ बोलो",
+    "hinglish": "haan ji namaste haan bolo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.45,
+    "end": 4.2,
+    "text": "आरोप हाँ",
+    "hinglish": "aarop haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.25,
+    "end": 5.0,
+    "text": "बोलिए",
+    "hinglish": "bolie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 5.5,
+    "end": 6.1,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 6.2,
+    "end": 10.9,
+    "text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.45,
+    "end": 11.95,
+    "text": "हां",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.15,
+    "end": 13.05,
+    "text": "हाँ जन",
+    "hinglish": "haan jan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 13.85,
+    "end": 14.1,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 14.25,
+    "end": 20.25,
+    "text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आपकी फ्राई करवा के या सब्जी बनवा के ले जाओगे",
+    "hinglish": "aapko bata den agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aapki fry karva ke ya sabji banva ke le jaoge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.2,
+    "end": 23.15,
+    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
+    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.2,
+    "end": 25.4,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.8,
+    "end": 26.3,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 26.95,
+    "end": 33.25,
+    "text": "हाँ जी बोलिए मेरे पार्लर में स्टेप होते हैं फोर होती है और खेजल होती है बीज",
+    "hinglish": "haan ji bolie mere parlour mein step hote hain four hoti hai aur khejal hoti hai beej",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 33.65,
+    "end": 35.85,
+    "text": "जी सेम है और यू सेम भी है",
+    "hinglish": "ji same hai aur yu same bhi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.4,
+    "end": 37.45,
+    "text": "राशोरे",
+    "hinglish": "rashore",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.5,
+    "end": 38.15,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.8,
+    "end": 39.55,
+    "text": "कि कर देंगे",
+    "hinglish": "ki kar denge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 40.05,
+    "end": 42.85,
+    "text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको कुछ",
+    "hinglish": "haan verayti to dher hai aap aake dekh sakte ho jaise aapko kuch",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 43.0,
+    "end": 48.05,
+    "text": "किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
+    "hinglish": "kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai hum use bahar se bulva ke bhi aapko de sakte hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 48.2,
+    "end": 50.65,
+    "text": "तो आप सॉफ्टवेयर एक बार आ जाए",
+    "hinglish": "to aap sophtaveyar ek baar aa jae",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.9,
+    "end": 51.9,
+    "text": "तुम आपको बता दें",
+    "hinglish": "tum aapko bata den",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 52.5,
+    "end": 54.0,
+    "text": "कि क्या चाहिए कैसा लग रहा है",
+    "hinglish": "ki kya chahiye kaisa lag raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.5,
+    "end": 56.2,
+    "text": "दो चार दिन लगेंगे हाँ",
+    "hinglish": "do chaar din lagenge haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 56.85,
+    "end": 57.15,
+    "text": "है ना",
+    "hinglish": "hai na",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 57.35,
+    "end": 61.2,
+    "text": "हाँ मार्केट है आपके यहाँ बेटे तो हमारे यहाँ सबसे ज्यादा मतलब",
+    "hinglish": "haan market hai aapke yahan bete to hamare yahan sabse zyada matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 61.6,
+    "end": 65.2,
+    "text": "हमारे शॉप का बोले तो सबसे पसंदीदा चीज केवल और केवल यही",
+    "hinglish": "hamare shop ka bole to sabse pasandida cheej keval aur keval yahi",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.55,
+    "end": 4.2,
+    "text": "हाँ जी नमस्ते हाँ बोलो हेलो हाँ",
+    "hinglish": "haan ji namaste haan bolo hello haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 4.25,
+    "end": 5.0,
+    "text": "बोलिए",
+    "hinglish": "bolie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 5.5,
+    "end": 6.1,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 6.2,
+    "end": 10.9,
+    "text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.45,
+    "end": 11.95,
+    "text": "हां",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 12.15,
+    "end": 13.05,
+    "text": "हाँ जन",
+    "hinglish": "haan jan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 13.85,
+    "end": 14.1,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 14.25,
+    "end": 20.25,
+    "text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आपकी फ्राई करवा के या सब्जी बनवा के ले जाओगे",
+    "hinglish": "aapko bata den agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aapki fry karva ke ya sabji banva ke le jaoge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.2,
+    "end": 23.15,
+    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
+    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 25.2,
+    "end": 25.4,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 25.8,
+    "end": 26.3,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.95,
+    "end": 29.6,
+    "text": "हाँ जी बोलिए मेरे पार्लर में",
+    "hinglish": "haan ji bolie mere parlour mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 29.6,
+    "end": 33.25,
+    "text": "होते हैं फोर स्टेब होती है और खेजल होती है बी",
+    "hinglish": "hote hain four steb hoti hai aur khejal hoti hai B",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 33.65,
+    "end": 35.85,
+    "text": "जी सेम है और यू सेम भी है",
+    "hinglish": "ji same hai aur yu same bhi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.4,
+    "end": 37.45,
+    "text": "राशोरे",
+    "hinglish": "rashore",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.5,
+    "end": 38.15,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.8,
+    "end": 39.55,
+    "text": "कि कर देंगे",
+    "hinglish": "ki kar denge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 40.05,
+    "end": 42.85,
+    "text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको कुछ",
+    "hinglish": "haan verayti to dher hai aap aake dekh sakte ho jaise aapko kuch",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 43.0,
+    "end": 48.05,
+    "text": "किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
+    "hinglish": "kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai hum use bahar se bulva ke bhi aapko de sakte hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 48.2,
+    "end": 50.65,
+    "text": "तो आप सॉफ्टवेयर एक बार आ जाए",
+    "hinglish": "to aap sophtaveyar ek baar aa jae",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 50.9,
+    "end": 51.9,
+    "text": "तुम आपको बता दें",
+    "hinglish": "tum aapko bata den",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 52.5,
+    "end": 54.0,
+    "text": "कि क्या चाहिए कैसा लग रहा है",
+    "hinglish": "ki kya chahiye kaisa lag raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.5,
+    "end": 56.2,
+    "text": "दो चार दिन लगेंगे हाँ",
+    "hinglish": "do chaar din lagenge haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 56.85,
+    "end": 57.15,
+    "text": "है ना",
+    "hinglish": "hai na",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 57.35,
+    "end": 61.2,
+    "text": "हाँ मार्केट है आपके यहाँ बेटे तो हमारे यहाँ सबसे ज्यादा मतलब",
+    "hinglish": "haan market hai aapke yahan bete to hamare yahan sabse zyada matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 61.6,
+    "end": 65.2,
+    "text": "हमारे शॉप का बोले तो सबसे पसंदीदा चीज केवल और केवल यही",
+    "hinglish": "hamare shop ka bole to sabse pasandida cheej keval aur keval yahi",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.59,
+    "end": 1.7,
+    "text": "हाँ जी नमस्ते",
+    "hinglish": "haan ji namaste",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.8,
+    "end": 4.12,
+    "text": "हाँ बोलो हेलो हाँ",
+    "hinglish": "haan bolo hello haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.42,
+    "end": 4.99,
+    "text": "बोलिए",
+    "hinglish": "bolie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 4.99,
+    "end": 5.01,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 5.57,
+    "end": 6.09,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 6.26,
+    "end": 10.88,
+    "text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.49,
+    "end": 11.93,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 12.21,
+    "end": 13.01,
+    "text": "हाँ जन",
+    "hinglish": "haan jan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 13.85,
+    "end": 14.07,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 14.26,
+    "end": 20.25,
+    "text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे फ्राई करवा के या सब्जी बनवा के ले जाओगे",
+    "hinglish": "aapko bata den agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aap use fry karva ke ya sabji banva ke le jaoge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.21,
+    "end": 23.12,
+    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
+    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 25.24,
+    "end": 25.38,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.83,
+    "end": 25.87,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 25.87,
+    "end": 26.27,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.0,
+    "end": 33.22,
+    "text": "हाँ जी बोलिए मेरे पार्लर में स्टेप होते हैं फोर स्टेक होती है और खेजल होती है बी",
+    "hinglish": "haan ji bolie mere parlour mein step hote hain four stek hoti hai aur khejal hoti hai B",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.7,
+    "end": 35.03,
+    "text": "भी सेफ है और",
+    "hinglish": "bhi seph hai aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.03,
+    "end": 35.81,
+    "text": "यू से भी है",
+    "hinglish": "yu se bhi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.81,
+    "end": 35.82,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.43,
+    "end": 37.44,
+    "text": "व्यांसा कचोरे",
+    "hinglish": "vyansa kachore",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.54,
+    "end": 38.08,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.81,
+    "end": 39.52,
+    "text": "कि कर देंगे",
+    "hinglish": "ki kar denge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 40.08,
+    "end": 42.84,
+    "text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपसे कुछ",
+    "hinglish": "haan verayti to dher hai aap aake dekh sakte ho jaise aapse kuch",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 43.03,
+    "end": 48.02,
+    "text": "किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
+    "hinglish": "kisi cheej ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 48.24,
+    "end": 50.62,
+    "text": "तो आप सॉफ्ट एक बार आ जाए",
+    "hinglish": "to aap soft ek baar aa jae",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 50.91,
+    "end": 51.85,
+    "text": "तुम आपको बता दे",
+    "hinglish": "tum aapko bata de",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 52.51,
+    "end": 54.0,
+    "text": "कि क्या चाहिए कैसा लग रहा है",
+    "hinglish": "ki kya chahiye kaisa lag raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.52,
+    "end": 56.19,
+    "text": "दो चार दिन लगेंगे हाँ",
+    "hinglish": "do chaar din lagenge haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 56.87,
+    "end": 57.14,
+    "text": "है ना",
+    "hinglish": "hai na",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 57.37,
+    "end": 61.15,
+    "text": "हाँ मार्केट है आपके यहाँ बेटे तो हमारे यहाँ सबसे ज्यादा मतलब",
+    "hinglish": "haan market hai aapke yahan bete to hamare yahan sabse zyada matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 61.62,
+    "end": 65.19,
+    "text": "हमारे शॉप का बोले तो सबसे पसंदीदा चीज केवल और केवल यही",
+    "hinglish": "hamare shop ka bole to sabse pasandida cheej keval aur keval yahi",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_D",
+    "start": 0.55,
+    "end": 1.2,
+    "text": "हाँ जी नमस्कार",
+    "hinglish": "haan ji namaskar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.0,
+    "end": 1.7,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 1.7,
+    "end": 3.15,
+    "text": "हाँ बोलो",
+    "hinglish": "haan bolo",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 3.15,
+    "end": 5.15,
+    "text": "हेलो हाँ बोलिए",
+    "hinglish": "hello haan bolie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 5.5,
+    "end": 6.1,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 6.2,
+    "end": 10.9,
+    "text": "नमस्कार मैं रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "namaskar main restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 11.45,
+    "end": 12.75,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 12.7,
+    "end": 13.0,
+    "text": "जाना",
+    "hinglish": "jana",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 12.95,
+    "end": 13.35,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.3,
+    "end": 16.6,
+    "text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन",
+    "hinglish": "aapko bata de agar aap shadi le jaoge to teen",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.65,
+    "end": 17.25,
+    "text": "रुपये मिली गा",
+    "hinglish": "rupye mili ga",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.4,
+    "end": 17.9,
+    "text": "हो रखा",
+    "hinglish": "ho rakha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.95,
+    "end": 18.35,
+    "text": "खुशी के",
+    "hinglish": "khushi ke",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 18.4,
+    "end": 19.1,
+    "text": "शाही करवाते हैं",
+    "hinglish": "shahi karvate hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 19.15,
+    "end": 20.2,
+    "text": "जीवन हाथी यहां",
+    "hinglish": "jivan hathi yahan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.2,
+    "end": 21.8,
+    "text": "तो वो आप",
+    "hinglish": "to wo aap",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.85,
+    "end": 23.15,
+    "text": "साढ़े चार सौ",
+    "hinglish": "sadhe chaar sau",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.2,
+    "end": 25.55,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.85,
+    "end": 26.45,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 27.0,
+    "end": 32.05,
+    "text": "हाँ जी बोलिए मेरे पार्लर में मछली होते हैं फॉरस्ट्रोथ होती है और",
+    "hinglish": "haan ji bolie mere parlour mein machhli hote hain phorastroth hoti hai aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 32.15,
+    "end": 32.55,
+    "text": "मैं जान",
+    "hinglish": "main jaan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 32.65,
+    "end": 33.35,
+    "text": "केवी",
+    "hinglish": "kevi",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 33.65,
+    "end": 35.95,
+    "text": "जी सेम है और यू सेव भी है",
+    "hinglish": "ji same hai aur yu sev bhi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 36.25,
+    "end": 39.65,
+    "text": "रामशेखर चौरे हाँ ठीक देंगे",
+    "hinglish": "ramshekhar chaure haan theek denge",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.05,
+    "end": 42.85,
+    "text": "हाँ वैराइटी तो ढेर है आप आशे देख सकते हो जैसे आपको कुछ",
+    "hinglish": "haan vairaiti to dher hai aap aashe dekh sakte ho jaise aapko kuch",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 43.0,
+    "end": 47.8,
+    "text": "किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है हम उसको बाहर से बुलवा के भी आपकी",
+    "hinglish": "kisi cheej ki jarurat matlab kisi alag tarike ki jarurat hai hum usko bahar se bulva ke bhi aapki",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 47.8,
+    "end": 48.3,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 48.3,
+    "end": 51.8,
+    "text": "तो आप सॉफ्टवेयर एक बार आ जाए तो हम आपको बता दें",
+    "hinglish": "to aap sophtaveyar ek baar aa jae to hum aapko bata den",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.8,
+    "end": 52.2,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 52.55,
+    "end": 54.15,
+    "text": "क्या कही कैसा लग रहा है",
+    "hinglish": "kya kahi kaisa lag raha hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 54.5,
+    "end": 56.25,
+    "text": "दो चार दिन लगेंगे हाँ",
+    "hinglish": "do chaar din lagenge haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.9,
+    "end": 57.2,
+    "text": "है ना",
+    "hinglish": "hai na",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 57.1,
+    "end": 57.6,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 57.7,
+    "end": 58.15,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.95,
+    "end": 58.3,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 58.65,
+    "end": 60.35,
+    "text": "आपके यहाँ देते तो हमारे यहाँ",
+    "hinglish": "aapke yahan dete to hamare yahan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 60.4,
+    "end": 61.0,
+    "text": "ज्यादा मतलब",
+    "hinglish": "zyada matlab",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 61.0,
+    "end": 61.7,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 61.7,
+    "end": 63.75,
+    "text": "हमारे शॉप का बोलते तो सबसे पसंदीदा चीज",
+    "hinglish": "hamare shop ka bolte to sabse pasandida cheej",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 64.0,
+    "end": 65.2,
+    "text": "केवल और केवल ही यही",
+    "hinglish": "keval aur keval hi yahi",
+    "audio": "track-0"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_C",
+    "start": 0.55,
+    "end": 1.2,
+    "text": "हाँ जी नमस्कार",
+    "hinglish": "haan ji namaskar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.0,
+    "end": 1.7,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 1.7,
+    "end": 3.2,
+    "text": "हाँ बोलो",
+    "hinglish": "haan bolo",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 3.2,
+    "end": 3.8,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 3.8,
+    "end": 5.15,
+    "text": "हाँ बोलिए",
+    "hinglish": "haan bolie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 5.5,
+    "end": 6.1,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 6.2,
+    "end": 10.9,
+    "text": "नमस्कार मैं रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+    "hinglish": "namaskar main restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 11.45,
+    "end": 12.75,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 12.7,
+    "end": 13.0,
+    "text": "जाना",
+    "hinglish": "jana",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 12.95,
+    "end": 13.35,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.3,
+    "end": 16.6,
+    "text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन",
+    "hinglish": "aapko bata de agar aap shadi le jaoge to teen",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.65,
+    "end": 17.25,
+    "text": "रुपये मिली गा",
+    "hinglish": "rupye mili ga",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.4,
+    "end": 17.9,
+    "text": "हो रखा",
+    "hinglish": "ho rakha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.95,
+    "end": 18.35,
+    "text": "खुशी के",
+    "hinglish": "khushi ke",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 18.4,
+    "end": 19.1,
+    "text": "शाही करवाते हैं",
+    "hinglish": "shahi karvate hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 19.15,
+    "end": 20.2,
+    "text": "जीवन हाथी यहां",
+    "hinglish": "jivan hathi yahan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.2,
+    "end": 21.8,
+    "text": "तो वो आप",
+    "hinglish": "to wo aap",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.85,
+    "end": 23.15,
+    "text": "साढ़े चार सौ",
+    "hinglish": "sadhe chaar sau",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.2,
+    "end": 25.55,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.85,
+    "end": 26.45,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 27.0,
+    "end": 32.05,
+    "text": "हाँ जी बोलिए मेरे पार्लर में मछली होते हैं फॉरस्ट्रोथ होती है और",
+    "hinglish": "haan ji bolie mere parlour mein machhli hote hain phorastroth hoti hai aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 32.15,
+    "end": 32.55,
+    "text": "मैं जान",
+    "hinglish": "main jaan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 32.65,
+    "end": 33.35,
+    "text": "केवी",
+    "hinglish": "kevi",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 33.65,
+    "end": 35.95,
+    "text": "जी सेम है और यू सेव भी है",
+    "hinglish": "ji same hai aur yu sev bhi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 36.25,
+    "end": 39.65,
+    "text": "रामशेखर चौरे हाँ ठीक देंगे",
+    "hinglish": "ramshekhar chaure haan theek denge",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.05,
+    "end": 42.85,
+    "text": "हाँ वैराइटी तो ढेर है आप आशे देख सकते हो जैसे आपको कुछ",
+    "hinglish": "haan vairaiti to dher hai aap aashe dekh sakte ho jaise aapko kuch",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 43.0,
+    "end": 47.8,
+    "text": "किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है हम उसको बाहर से बुलवा के भी आपकी",
+    "hinglish": "kisi cheej ki jarurat matlab kisi alag tarike ki jarurat hai hum usko bahar se bulva ke bhi aapki",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 47.8,
+    "end": 48.3,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 48.3,
+    "end": 51.8,
+    "text": "तो आप सॉफ्टवेयर एक बार आ जाए तो हम आपको बता दें",
+    "hinglish": "to aap sophtaveyar ek baar aa jae to hum aapko bata den",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.8,
+    "end": 52.2,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 52.55,
+    "end": 54.15,
+    "text": "क्या कही कैसा लग रहा है",
+    "hinglish": "kya kahi kaisa lag raha hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 54.5,
+    "end": 56.25,
+    "text": "दो चार दिन लगेंगे हाँ",
+    "hinglish": "do chaar din lagenge haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.9,
+    "end": 57.2,
+    "text": "है ना",
+    "hinglish": "hai na",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 57.1,
+    "end": 57.6,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 57.7,
+    "end": 58.15,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.95,
+    "end": 58.3,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 58.65,
+    "end": 60.35,
+    "text": "आपके यहाँ देते तो हमारे यहाँ",
+    "hinglish": "aapke yahan dete to hamare yahan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 60.4,
+    "end": 61.0,
+    "text": "ज्यादा मतलब",
+    "hinglish": "zyada matlab",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 61.0,
+    "end": 61.7,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 61.7,
+    "end": 63.75,
+    "text": "हमारे शॉप का बोलते तो सबसे पसंदीदा चीज",
+    "hinglish": "hamare shop ka bolte to sabse pasandida cheej",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 64.0,
+    "end": 65.2,
+    "text": "केवल और केवल ही यही",
+    "hinglish": "keval aur keval hi yahi",
+    "audio": "track-0"
+   }
+  ]
+ }
+}

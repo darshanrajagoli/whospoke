@@ -1,0 +1,7 @@
+view,model,clean,market5,village10,all,n,rtf
+overlap-region,convtasnet,10.64,9.83,8.34,9.62,245,0.0184
+overlap-region,convtasnet-clean,10.28,5.05,6.52,7.27,245,0.0157
+overlap-region,sepformer,1.62,2.83,2.22,2.23,245,0.1029
+whole-recording,convtasnet,9.71,1.99,1.66,4.45,24,0.0177
+whole-recording,convtasnet-clean,8.88,-0.84,0.39,2.81,24,0.0176
+whole-recording,sepformer,-1.34,1.32,0.05,0.01,24,0.137

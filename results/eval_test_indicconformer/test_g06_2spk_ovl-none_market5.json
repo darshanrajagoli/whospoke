@@ -1,0 +1,1646 @@
+{
+ "reference": [
+  {
+   "speaker": "S1",
+   "start": 0.733,
+   "end": 1.712,
+   "text": "प्रणाम दीदी"
+  },
+  {
+   "speaker": "S1",
+   "start": 1.958,
+   "end": 3.788,
+   "text": "और सब तो ठीक है अपना बताइए"
+  },
+  {
+   "speaker": "S2",
+   "start": 4.087,
+   "end": 10.801,
+   "text": "हाँ मैम प्रणाम प्रणाम मैम यह दो"
+  },
+  {
+   "speaker": "S2",
+   "start": 10.919,
+   "end": 12.299,
+   "text": "दो रूम चाहिए था"
+  },
+  {
+   "speaker": "S1",
+   "start": 12.558,
+   "end": 13.295,
+   "text": "का चाहिएगा"
+  },
+  {
+   "speaker": "S1",
+   "start": 13.555,
+   "end": 14.674,
+   "text": "साड़ी लेना है"
+  },
+  {
+   "speaker": "S1",
+   "start": 14.915,
+   "end": 16.435,
+   "text": "हाँ साड़ी चाहिएगा"
+  },
+  {
+   "speaker": "S2",
+   "start": 16.842,
+   "end": 23.222,
+   "text": "वह ट्रस्ट तो कंप्यूटर का है है हमारा"
+  },
+  {
+   "speaker": "S1",
+   "start": 23.492,
+   "end": 24.722,
+   "text": "पूनम साड़ी"
+  },
+  {
+   "speaker": "S1",
+   "start": 24.917,
+   "end": 25.227,
+   "text": "और"
+  },
+  {
+   "speaker": "S2",
+   "start": 25.459,
+   "end": 27.799,
+   "text": "यह"
+  },
+  {
+   "speaker": "S2",
+   "start": 27.953,
+   "end": 34.093,
+   "text": "अरे हमको मतलब कि रिंग रोड पर शहर में चाहिए हमको शहर में"
+  },
+  {
+   "speaker": "S2",
+   "start": 34.198,
+   "end": 35.778,
+   "text": "हाँ हाँ मेन रोड चल जाएगा"
+  },
+  {
+   "speaker": "S1",
+   "start": 36.032,
+   "end": 37.141,
+   "text": "हाँ हाँ"
+  },
+  {
+   "speaker": "S1",
+   "start": 37.373,
+   "end": 37.962,
+   "text": "अच्छा"
+  },
+  {
+   "speaker": "S1",
+   "start": 38.106,
+   "end": 41.716,
+   "text": "हाँ अरे नया फैसन में तो निकला है बनारसी साड़ी"
+  },
+  {
+   "speaker": "S2",
+   "start": 42.476,
+   "end": 44.796,
+   "text": "मेन रोड पर मेन रोड पर"
+  },
+  {
+   "speaker": "S1",
+   "start": 45.516,
+   "end": 45.926,
+   "text": "हाँ तो"
+  },
+  {
+   "speaker": "S1",
+   "start": 46.094,
+   "end": 46.532,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S1",
+   "start": 46.716,
+   "end": 49.586,
+   "text": "रेड कलर का रेड कलर का चाहिएगा"
+  },
+  {
+   "speaker": "S2",
+   "start": 49.855,
+   "end": 55.195,
+   "text": "हाँ दो लोग रहेंगे हम लोग"
+  },
+  {
+   "speaker": "S2",
+   "start": 55.436,
+   "end": 59.896,
+   "text": "हाँ दो लोग रहेंगे और वह रूम में कंप्यूटर"
+  },
+  {
+   "speaker": "S1",
+   "start": 60.51,
+   "end": 62.1,
+   "text": "हाँ हाँ शादी है"
+  },
+  {
+   "speaker": "S1",
+   "start": 62.435,
+   "end": 63.599,
+   "text": "ननद का"
+  },
+  {
+   "speaker": "S1",
+   "start": 63.845,
+   "end": 64.774,
+   "text": "ननद का शादी"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S1",
+    "start": 0.73,
+    "end": 3.79,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 4.09,
+    "end": 12.3,
+    "text": "मैम दो रूम चाहिए था",
+    "hinglish": "ma'am do room chahiye tha",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 12.56,
+    "end": 16.43,
+    "text": "क्या चाहिएगा साड़ी लेना है हाँ साड़ी चाहिएगा",
+    "hinglish": "kya chahiega sadi lena hai haan sadi chahiega",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 16.84,
+    "end": 23.22,
+    "text": "ट्रस्ट टू कंप्यूटर का है हमारा",
+    "hinglish": "trast two computer ka hai hamara",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 23.49,
+    "end": 25.23,
+    "text": "पूनम कर और",
+    "hinglish": "punam kar aur",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 25.46,
+    "end": 35.78,
+    "text": "अरे हमको मतलब कि लेंगे रोड पर शहर में चाहिए हमको शहर में हाँ निकल जाएगा",
+    "hinglish": "are hamko matlab ki lenge road par shahar mein chahiye hamko shahar mein haan nikal jaega",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 36.03,
+    "end": 41.72,
+    "text": "हाँ हाँ अच्छा हाँ अरे नया फैशन में तो निकला है बनारसी साड़ी",
+    "hinglish": "haan haan achha haan are naya fashion mein to nikla hai banarsi sadi",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 42.48,
+    "end": 44.8,
+    "text": "मिलो सर मिल ल",
+    "hinglish": "milo sir mil la",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 45.52,
+    "end": 49.59,
+    "text": "हाँ तो हाँ रेड कलर को रेड कलर का चाहिएगा",
+    "hinglish": "haan to haan red colour ko red colour ka chahiega",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 49.85,
+    "end": 59.9,
+    "text": "हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और कंप्यूटर काम से काम चल करेंगे",
+    "hinglish": "haan do log rahenge hum log haan do log rahenge aur computer kaam se kaam chal karenge",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 60.51,
+    "end": 64.77,
+    "text": "हाँ हाँ शादी है ननद का ननद का शादी",
+    "hinglish": "haan haan shadi hai nanad ka nanad ka shadi",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S1",
+    "start": 0.73,
+    "end": 3.79,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 4.09,
+    "end": 12.3,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 12.56,
+    "end": 16.43,
+    "text": "क्या चाहिएगा साड़ी लेना है हाँ साड़ी चाहिएगा",
+    "hinglish": "kya chahiega sadi lena hai haan sadi chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 16.84,
+    "end": 23.22,
+    "text": "टूटा का",
+    "hinglish": "tuta ka",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 23.49,
+    "end": 25.23,
+    "text": "पूनम आ",
+    "hinglish": "punam aa",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 25.46,
+    "end": 35.78,
+    "text": "अरे हमको ले",
+    "hinglish": "are hamko le",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 36.03,
+    "end": 41.72,
+    "text": "हाँ हाँ अच्छा हाँ अरे नया फैशन में तो निकला है बनारसी साड़ी",
+    "hinglish": "haan haan achha haan are naya fashion mein to nikla hai banarsi sadi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 42.48,
+    "end": 44.8,
+    "text": "मिलते मिले",
+    "hinglish": "milte mile",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 45.52,
+    "end": 49.59,
+    "text": "हाँ तो हाँ रेड कलर को रेड कलर का चाहिए",
+    "hinglish": "haan to haan red colour ko red colour ka chahiye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 49.85,
+    "end": 59.9,
+    "text": "हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और मैं आपकी",
+    "hinglish": "haan do log rahenge hum log haan do log rahenge aur main aapki",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 60.51,
+    "end": 64.77,
+    "text": "हाँ हाँ साधी है ना ना सादी",
+    "hinglish": "haan haan sadhi hai na na sadi",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S1",
+    "start": 0.73,
+    "end": 3.79,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 4.09,
+    "end": 12.3,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 12.56,
+    "end": 16.43,
+    "text": "क्या चाहिएगा साड़ी लेना है हाँ साड़ी चाहिएगा",
+    "hinglish": "kya chahiega sadi lena hai haan sadi chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 16.84,
+    "end": 23.22,
+    "text": "टूटा का",
+    "hinglish": "tuta ka",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 23.49,
+    "end": 25.23,
+    "text": "पूनम आ",
+    "hinglish": "punam aa",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 25.46,
+    "end": 35.78,
+    "text": "अरे हमको ले",
+    "hinglish": "are hamko le",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 36.03,
+    "end": 41.72,
+    "text": "हाँ हाँ अच्छा अरे नया फैशन में तो निकला है बनारसी साड़ी",
+    "hinglish": "haan haan achha are naya fashion mein to nikla hai banarsi sadi",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 42.48,
+    "end": 44.8,
+    "text": "मिलते मिले",
+    "hinglish": "milte mile",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 45.52,
+    "end": 49.59,
+    "text": "हाँ तो हाँ रेड कलर को रेड कलर का चाहिए",
+    "hinglish": "haan to haan red colour ko red colour ka chahiye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 49.85,
+    "end": 59.9,
+    "text": "हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और मैं आपकी",
+    "hinglish": "haan do log rahenge hum log haan do log rahenge aur main aapki",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 60.51,
+    "end": 64.77,
+    "text": "हाँ हाँ साधी है ना ना सादी",
+    "hinglish": "haan haan sadhi hai na na sadi",
+    "audio": "mixture"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.75,
+    "end": 3.8,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 6.05,
+    "end": 7.4,
+    "text": "हम्म प्राण प्राण",
+    "hinglish": "hamm praan praan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 7.8,
+    "end": 9.4,
+    "text": "वहीं",
+    "hinglish": "wahin",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.0,
+    "end": 12.15,
+    "text": "दो रूम चाहिए था",
+    "hinglish": "do room chahiye tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.5,
+    "end": 16.55,
+    "text": "क्या चाहिएगा साड़ी लेना है हाँ साड़ी चाहिएगा",
+    "hinglish": "kya chahiega sadi lena hai haan sadi chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.3,
+    "end": 19.85,
+    "text": "टस्ट कंप्यूटर",
+    "hinglish": "tast computer",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 19.85,
+    "end": 21.35,
+    "text": "क्या मैडम",
+    "hinglish": "kya madam",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.4,
+    "end": 24.1,
+    "text": "पूलम",
+    "hinglish": "pulam",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.85,
+    "end": 25.3,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 25.9,
+    "end": 26.4,
+    "text": "ये",
+    "hinglish": "ye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 27.9,
+    "end": 31.4,
+    "text": "अरे हमको मतलब टीवी नहीं बहुत है सार में सही हमको",
+    "hinglish": "are hamko matlab tivi nahi bahut hai saar mein sahi hamko",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 31.95,
+    "end": 32.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.2,
+    "end": 35.8,
+    "text": "हाँ हम विचार देखा",
+    "hinglish": "haan hum vichar dekha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.95,
+    "end": 38.3,
+    "text": "हाँ हाँ अच्छा हाँ",
+    "hinglish": "haan haan achha haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.55,
+    "end": 41.9,
+    "text": "अरे नया फैशन में तो निकलाया है बनारसी साड़ी",
+    "hinglish": "are naya fashion mein to niklaya hai banarsi sadi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.55,
+    "end": 43.8,
+    "text": "नहीं हो तो नहीं",
+    "hinglish": "nahi ho to nahi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.5,
+    "end": 45.85,
+    "text": "आज",
+    "hinglish": "aaj",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 46.0,
+    "end": 47.65,
+    "text": "हाँ रेड किलॉ",
+    "hinglish": "haan red kilo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.35,
+    "end": 49.6,
+    "text": "रेड कलर का चाहिएगा",
+    "hinglish": "red colour ka chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 50.35,
+    "end": 51.2,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 51.85,
+    "end": 53.2,
+    "text": "हाँ दो लोग रहेंड नाम लोग",
+    "hinglish": "haan do log rahend naam log",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 55.4,
+    "end": 60.0,
+    "text": "हाँ दो लोग रहेंगे और",
+    "hinglish": "haan do log rahenge aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 60.45,
+    "end": 64.95,
+    "text": "हाँ हाँ साधी है ना ना सा",
+    "hinglish": "haan haan sadhi hai na na sa",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.75,
+    "end": 3.8,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 6.05,
+    "end": 7.4,
+    "text": "हम्म प्राण प्राण",
+    "hinglish": "hamm praan praan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 7.8,
+    "end": 9.4,
+    "text": "वहीं",
+    "hinglish": "wahin",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.0,
+    "end": 12.15,
+    "text": "दो रूम चाहिए था",
+    "hinglish": "do room chahiye tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.5,
+    "end": 16.55,
+    "text": "क्या चाहिएगा साड़ी लेना है हाँ साड़ी चाहिएगा",
+    "hinglish": "kya chahiega sadi lena hai haan sadi chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.3,
+    "end": 19.85,
+    "text": "टस्ट कंप्यूटर",
+    "hinglish": "tast computer",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 19.85,
+    "end": 21.35,
+    "text": "क्या मैडम",
+    "hinglish": "kya madam",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.4,
+    "end": 24.1,
+    "text": "पूलम",
+    "hinglish": "pulam",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.85,
+    "end": 25.3,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 25.9,
+    "end": 26.4,
+    "text": "ये",
+    "hinglish": "ye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 27.9,
+    "end": 31.4,
+    "text": "अरे हमको मतलब टीवी नहीं बहुत है सार में सही हमको",
+    "hinglish": "are hamko matlab tivi nahi bahut hai saar mein sahi hamko",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 31.95,
+    "end": 32.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.2,
+    "end": 35.8,
+    "text": "हाँ हम विचार देखा",
+    "hinglish": "haan hum vichar dekha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.95,
+    "end": 38.3,
+    "text": "हाँ हाँ अच्छा हाँ",
+    "hinglish": "haan haan achha haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.55,
+    "end": 41.9,
+    "text": "अरे नया फैशन में तो निकला है बनारसी साड़ी",
+    "hinglish": "are naya fashion mein to nikla hai banarsi sadi",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.55,
+    "end": 43.8,
+    "text": "नहीं हो तो नहीं",
+    "hinglish": "nahi ho to nahi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.5,
+    "end": 45.85,
+    "text": "आज",
+    "hinglish": "aaj",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 46.0,
+    "end": 47.65,
+    "text": "हाँ रेड किलॉ",
+    "hinglish": "haan red kilo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.35,
+    "end": 49.6,
+    "text": "रेड कलर का चाहिएगा",
+    "hinglish": "red colour ka chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 50.35,
+    "end": 51.2,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 51.85,
+    "end": 53.2,
+    "text": "हाँ दो लोग रहेंड नाम लोग",
+    "hinglish": "haan do log rahend naam log",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 55.4,
+    "end": 60.0,
+    "text": "हाँ दो लोग रहेंगे और",
+    "hinglish": "haan do log rahenge aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 60.45,
+    "end": 64.95,
+    "text": "हाँ हाँ साधी है ना ना सा",
+    "hinglish": "haan haan sadhi hai na na sa",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.75,
+    "end": 3.8,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 6.05,
+    "end": 7.4,
+    "text": "हम्म प्राण प्राण",
+    "hinglish": "hamm praan praan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 7.8,
+    "end": 9.4,
+    "text": "वहीं",
+    "hinglish": "wahin",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.0,
+    "end": 12.15,
+    "text": "दो रूम चाहिए था",
+    "hinglish": "do room chahiye tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.5,
+    "end": 16.55,
+    "text": "क्या चाहिएगा साड़ी लेना है हाँ साड़ी चाहिएगा",
+    "hinglish": "kya chahiega sadi lena hai haan sadi chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.3,
+    "end": 19.85,
+    "text": "टस्ट कंप्यूटर",
+    "hinglish": "tast computer",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 19.85,
+    "end": 21.35,
+    "text": "क्या मैडम",
+    "hinglish": "kya madam",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 23.4,
+    "end": 24.1,
+    "text": "पूलम",
+    "hinglish": "pulam",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 24.85,
+    "end": 25.3,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 25.9,
+    "end": 26.4,
+    "text": "ये",
+    "hinglish": "ye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 27.9,
+    "end": 29.75,
+    "text": "अरे हमको मतलब टीवी लेंगे बहुत",
+    "hinglish": "are hamko matlab tivi lenge bahut",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 29.75,
+    "end": 31.4,
+    "text": "चार में सहीको",
+    "hinglish": "chaar mein sahiko",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 31.95,
+    "end": 32.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.2,
+    "end": 35.8,
+    "text": "हाँ हम विचार देखा",
+    "hinglish": "haan hum vichar dekha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.95,
+    "end": 38.3,
+    "text": "हाँ हाँ अच्छा हाँ",
+    "hinglish": "haan haan achha haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.55,
+    "end": 41.9,
+    "text": "अरे नया फैशन में तो निकला है बनारसी साड़ी",
+    "hinglish": "are naya fashion mein to nikla hai banarsi sadi",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.3,
+    "end": 40.77,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.55,
+    "end": 43.8,
+    "text": "नहीं हो तो नहीं",
+    "hinglish": "nahi ho to nahi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.5,
+    "end": 45.85,
+    "text": "आज",
+    "hinglish": "aaj",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 46.0,
+    "end": 47.65,
+    "text": "हाँ रेड किलॉ",
+    "hinglish": "haan red kilo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.35,
+    "end": 49.6,
+    "text": "रेड कलर का चाहिएगा",
+    "hinglish": "red colour ka chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 50.35,
+    "end": 51.2,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 51.85,
+    "end": 53.2,
+    "text": "हाँ दो लोग रहेंड नाम लोग",
+    "hinglish": "haan do log rahend naam log",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 55.4,
+    "end": 57.25,
+    "text": "हाँ दो लोग रहेंगे और",
+    "hinglish": "haan do log rahenge aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 57.25,
+    "end": 60.0,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 60.45,
+    "end": 64.95,
+    "text": "हाँ हाँ साधी है ना ना सा",
+    "hinglish": "haan haan sadhi hai na na sa",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.77,
+    "end": 1.03,
+    "text": "प्रणा",
+    "hinglish": "prana",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.16,
+    "end": 3.76,
+    "text": "दीदी आओ सब तो ठीक है अपना बताइए",
+    "hinglish": "didi aao sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.09,
+    "end": 7.37,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 7.83,
+    "end": 9.4,
+    "text": "नहीं तो",
+    "hinglish": "nahi to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.0,
+    "end": 12.1,
+    "text": "दो रूम चाहिए था",
+    "hinglish": "do room chahiye tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.5,
+    "end": 16.47,
+    "text": "क्या चाहिएगा साड़ी लेना है हाँ साड़ी चाहिएगा",
+    "hinglish": "kya chahiega sadi lena hai haan sadi chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.34,
+    "end": 21.26,
+    "text": "टू बैम है",
+    "hinglish": "two baim hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 23.44,
+    "end": 24.04,
+    "text": "पूर्ण",
+    "hinglish": "poorn",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.91,
+    "end": 25.28,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.93,
+    "end": 26.37,
+    "text": "यह",
+    "hinglish": "yeh",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.96,
+    "end": 31.37,
+    "text": "अरे हमको मतलब टी वी लेते चार्ज में सही है हमको",
+    "hinglish": "are hamko matlab ti V lete charge mein sahi hai hamko",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.96,
+    "end": 32.48,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 34.22,
+    "end": 35.74,
+    "text": "हाँ मेरे चल रहा है",
+    "hinglish": "haan mere chal raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.99,
+    "end": 38.2,
+    "text": "हाँ हाँ अच्छा",
+    "hinglish": "haan haan achha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.59,
+    "end": 41.86,
+    "text": "अरे नया फैशन में तो निकला है बनार",
+    "hinglish": "are naya fashion mein to nikla hai banar",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.3,
+    "end": 40.73,
+    "text": "ल",
+    "hinglish": "la",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 42.57,
+    "end": 43.77,
+    "text": "नहीं होती है",
+    "hinglish": "nahi hoti hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.54,
+    "end": 45.73,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 46.02,
+    "end": 47.6,
+    "text": "हाँ रेट के लिए",
+    "hinglish": "haan rate ke liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.36,
+    "end": 49.56,
+    "text": "रेड कलर का चाहिए",
+    "hinglish": "red colour ka chahiye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.37,
+    "end": 51.18,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.89,
+    "end": 53.19,
+    "text": "हाँ दोनों वह लोग",
+    "hinglish": "haan donon woh log",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.45,
+    "end": 59.94,
+    "text": "हाँ दो लोग रहेंगे और",
+    "hinglish": "haan do log rahenge aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.56,
+    "end": 56.58,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.65,
+    "end": 56.71,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 60.46,
+    "end": 61.29,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 61.41,
+    "end": 64.93,
+    "text": "साधी हम्म ना ना सा",
+    "hinglish": "sadhi hamm na na sa",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_C",
+    "start": 0.75,
+    "end": 3.95,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.0,
+    "end": 6.4,
+    "text": "बहुत",
+    "hinglish": "bahut",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 6.4,
+    "end": 6.85,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.75,
+    "end": 9.4,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.9,
+    "end": 12.15,
+    "text": "दो चाहिए था",
+    "hinglish": "do chahiye tha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 12.5,
+    "end": 15.8,
+    "text": "हाँ चाहिएगा साड़ी लेना है हाँ साड़ी",
+    "hinglish": "haan chahiega sadi lena hai haan sadi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 15.85,
+    "end": 16.35,
+    "text": "संगी",
+    "hinglish": "sangi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.25,
+    "end": 21.3,
+    "text": "अः",
+    "hinglish": "ah",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 23.25,
+    "end": 23.55,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.5,
+    "end": 24.0,
+    "text": "पूर्ण",
+    "hinglish": "poorn",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 23.9,
+    "end": 24.4,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 24.4,
+    "end": 26.5,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.95,
+    "end": 31.25,
+    "text": "खाले हमको सही उं",
+    "hinglish": "khale hamko sahi un",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 31.9,
+    "end": 32.5,
+    "text": "हम",
+    "hinglish": "hum",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 34.2,
+    "end": 35.7,
+    "text": "हाँ नहीं चाहिएगा",
+    "hinglish": "haan nahi chahiega",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.0,
+    "end": 36.65,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.8,
+    "end": 37.3,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.3,
+    "end": 38.55,
+    "text": "अच्छा हाँ",
+    "hinglish": "achha haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 38.65,
+    "end": 41.6,
+    "text": "अरे नया फैशन में तो निकला है बनारसी साड़ी",
+    "hinglish": "are naya fashion mein to nikla hai banarsi sadi",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 45.5,
+    "end": 47.7,
+    "text": "हाँ तो हाँ रेड कलर को",
+    "hinglish": "haan to haan red colour ko",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 48.35,
+    "end": 49.6,
+    "text": "रेड कलर का चाहिए",
+    "hinglish": "red colour ka chahiye",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.3,
+    "end": 53.3,
+    "text": "हम्म हम्म हम्म नवर हे",
+    "hinglish": "hamm hamm hamm navar he",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.4,
+    "end": 58.4,
+    "text": "हाँ दो लोग रहेंगे और",
+    "hinglish": "haan do log rahenge aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 60.45,
+    "end": 61.05,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 61.45,
+    "end": 62.05,
+    "text": "खादी हो",
+    "hinglish": "khadi ho",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 63.1,
+    "end": 64.9,
+    "text": "ना ननुक्सारी",
+    "hinglish": "na nanuksari",
+    "audio": "track-1"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.75,
+    "end": 3.95,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.0,
+    "end": 6.4,
+    "text": "बहुत",
+    "hinglish": "bahut",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.75,
+    "end": 9.4,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.9,
+    "end": 12.15,
+    "text": "दो चाहिए था",
+    "hinglish": "do chahiye tha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.5,
+    "end": 15.8,
+    "text": "हाँ चाहिएगा साड़ी लेना है हाँ साड़ी",
+    "hinglish": "haan chahiega sadi lena hai haan sadi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.85,
+    "end": 16.35,
+    "text": "संगी",
+    "hinglish": "sangi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.25,
+    "end": 21.3,
+    "text": "अः",
+    "hinglish": "ah",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 23.25,
+    "end": 23.55,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.5,
+    "end": 24.0,
+    "text": "पूर्ण",
+    "hinglish": "poorn",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 23.9,
+    "end": 26.5,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 27.95,
+    "end": 31.25,
+    "text": "खाले हमको सही उं",
+    "hinglish": "khale hamko sahi un",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 31.9,
+    "end": 32.5,
+    "text": "हम",
+    "hinglish": "hum",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.2,
+    "end": 35.7,
+    "text": "हाँ नहीं चाहिएगा",
+    "hinglish": "haan nahi chahiega",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.0,
+    "end": 36.65,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.8,
+    "end": 37.3,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.3,
+    "end": 37.7,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.8,
+    "end": 38.55,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.65,
+    "end": 41.6,
+    "text": "अरे नया फैशन में तो निकला है बनारसी साड़ी",
+    "hinglish": "are naya fashion mein to nikla hai banarsi sadi",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.5,
+    "end": 47.7,
+    "text": "हाँ तो हाँ रेड कलर को",
+    "hinglish": "haan to haan red colour ko",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.35,
+    "end": 49.6,
+    "text": "रेड कलर का चाहिए",
+    "hinglish": "red colour ka chahiye",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.3,
+    "end": 51.45,
+    "text": "हाँ हाँ हम्म",
+    "hinglish": "haan haan hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 51.45,
+    "end": 53.3,
+    "text": "हाँ दोनों रहेंगे",
+    "hinglish": "haan donon rahenge",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 55.4,
+    "end": 58.4,
+    "text": "हाँ दो लोग रहेंगे और",
+    "hinglish": "haan do log rahenge aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 60.45,
+    "end": 61.05,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 61.45,
+    "end": 62.05,
+    "text": "खादी हो",
+    "hinglish": "khadi ho",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 63.1,
+    "end": 64.9,
+    "text": "ना ननुक्सारी",
+    "hinglish": "na nanuksari",
+    "audio": "track-1"
+   }
+  ]
+ }
+}

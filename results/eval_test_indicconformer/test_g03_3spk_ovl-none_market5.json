@@ -1,0 +1,1834 @@
+{
+ "reference": [
+  {
+   "speaker": "S1",
+   "start": 0.48,
+   "end": 5.97,
+   "text": "हाँ हलो सर नमस ठीक है हाँ"
+  },
+  {
+   "speaker": "S1",
+   "start": 6.096,
+   "end": 6.606,
+   "text": "जी"
+  },
+  {
+   "speaker": "S3",
+   "start": 6.998,
+   "end": 7.452,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S3",
+   "start": 7.79,
+   "end": 14.665,
+   "text": "वोट इस बार तो देना है न कोई छाप पर भी देना है अब तो वोट अथि हो गया तो"
+  },
+  {
+   "speaker": "S1",
+   "start": 14.827,
+   "end": 20.17,
+   "text": "जी देखते हैं कि बहुत अच्छे से देखते हैं और कितना अच्छा बनाते हैं"
+  },
+  {
+   "speaker": "S1",
+   "start": 20.303,
+   "end": 23.813,
+   "text": "हाँ जी तो फिर"
+  },
+  {
+   "speaker": "S2",
+   "start": 24.093,
+   "end": 24.763,
+   "text": "हैलो"
+  },
+  {
+   "speaker": "S1",
+   "start": 24.991,
+   "end": 30.133,
+   "text": "रात को तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं"
+  },
+  {
+   "speaker": "S2",
+   "start": 30.871,
+   "end": 32.671,
+   "text": "हम बिहार से बोल रहे हैं"
+  },
+  {
+   "speaker": "S2",
+   "start": 32.912,
+   "end": 41.892,
+   "text": "हमारे देश में छत्त पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए"
+  },
+  {
+   "speaker": "S2",
+   "start": 42.001,
+   "end": 42.521,
+   "text": "छत्त पू"
+  },
+  {
+   "speaker": "S3",
+   "start": 42.821,
+   "end": 44.127,
+   "text": "यही बार तो सरकार कौन"
+  },
+  {
+   "speaker": "S1",
+   "start": 44.626,
+   "end": 46.776,
+   "text": "पारिवारिक और जी"
+  },
+  {
+   "speaker": "S1",
+   "start": 46.917,
+   "end": 57.857,
+   "text": "बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से हम देखने में भी ख़ूब अच्छा लगता है हम लोग तो दूसरो को भी बुला बुला के ले जाते हैं"
+  },
+  {
+   "speaker": "S2",
+   "start": 58.171,
+   "end": 76.318,
+   "text": "छत्त पूजन छत्त पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नए वस्त्र ख़रीद के लाते हैं वह पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं यह सब बनाते हैं पूजा करने के लिए"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S1",
+    "start": 0.48,
+    "end": 6.61,
+    "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी",
+    "hinglish": "hello haan hello sir namas theek hai haan ji",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 7.0,
+    "end": 14.66,
+    "text": "हाँ वोट इस बात तो देना है ना कोई छाप पर भी देना है अब तो वोट अच्छी हो गया तो",
+    "hinglish": "haan vote is baat to dena hai na koi chhaap par bhi dena hai ab to vote achhi ho gaya to",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 14.83,
+    "end": 23.81,
+    "text": "जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं जी",
+    "hinglish": "ji dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain ji",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 24.09,
+    "end": 24.76,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 24.99,
+    "end": 30.13,
+    "text": "हम्म गाँव के तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
+    "hinglish": "hamm gaanv ke to sabhi log dekhte hain bahut sundar banate hain",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 30.87,
+    "end": 42.52,
+    "text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+    "hinglish": "hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie chhath",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 42.82,
+    "end": 44.13,
+    "text": "एक बार तो सरकार को",
+    "hinglish": "ek baar to sarkar ko",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 44.63,
+    "end": 57.86,
+    "text": "परिवार सब जी बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से और देखने में भी खूब अच्छा लगता है हम लोग तो दूसरों को भी बुला बुला के ले जाते हैं",
+    "hinglish": "parivar sab ji bahut achha bahut achha dekhte hain bahut achha se aur dekhne mein bhi khoob achha lagta hai hum log to dusron ko bhi bula bula ke le jate hain",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 58.17,
+    "end": 76.32,
+    "text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "chhath puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S1",
+    "start": 0.48,
+    "end": 6.61,
+    "text": "हेलो हाँ हेलो सर नमस्ते ठीक है हाँ जी",
+    "hinglish": "hello haan hello sir namaste theek hai haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 7.0,
+    "end": 14.66,
+    "text": "हाँ वो बात देना है ना कोई छाप पर भी देना है आपको बहुत अभी हो गया",
+    "hinglish": "haan wo baat dena hai na koi chhaap par bhi dena hai aapko bahut abhi ho gaya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 14.83,
+    "end": 23.81,
+    "text": "देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं ये",
+    "hinglish": "dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain ye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 24.09,
+    "end": 24.76,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 24.99,
+    "end": 30.13,
+    "text": "बाहर से खुशहूल लोग देखते हैं बहुत सुंदर बताते हैं",
+    "hinglish": "bahar se khushhul log dekhte hain bahut sundar batate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 30.87,
+    "end": 42.52,
+    "text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+    "hinglish": "hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie chhath",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 42.82,
+    "end": 44.13,
+    "text": "संसार हम",
+    "hinglish": "sansar hum",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 44.63,
+    "end": 57.86,
+    "text": "परिवार सब बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से और देखने में भी खूब अच्छा लगता है हम लोग तो दूसरों को भी बुला बुला के ले जाते हैं",
+    "hinglish": "parivar sab bahut achha bahut achha dekhte hain bahut achha se aur dekhne mein bhi khoob achha lagta hai hum log to dusron ko bhi bula bula ke le jate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 58.17,
+    "end": 76.32,
+    "text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो वर्ष करते हैं उसके लिए नया व्रत खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "chhath puja chhath puja mein hum log naya sab saman late hain jo warsh karte hain uske liye naya vrat kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S1",
+    "start": 0.48,
+    "end": 6.61,
+    "text": "हेलो हाँ हेलो सर नमस्ते ठीक है हाँ जी",
+    "hinglish": "hello haan hello sir namaste theek hai haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 7.0,
+    "end": 14.66,
+    "text": "हाँ वो बात देना है ना कोई छाप पर भी देना है आपको बहुत अभी हो गया",
+    "hinglish": "haan wo baat dena hai na koi chhaap par bhi dena hai aapko bahut abhi ho gaya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 14.83,
+    "end": 23.81,
+    "text": "देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं ये",
+    "hinglish": "dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain ye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 24.09,
+    "end": 24.76,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 24.99,
+    "end": 30.13,
+    "text": "यहाँ से खुशहूल देखते हैं बहुत सुंदर बनाते हैं",
+    "hinglish": "yahan se khushhul dekhte hain bahut sundar banate hain",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 30.87,
+    "end": 42.52,
+    "text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+    "hinglish": "hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie chhath",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 42.82,
+    "end": 44.13,
+    "text": "संसार हम",
+    "hinglish": "sansar hum",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 44.63,
+    "end": 57.86,
+    "text": "परिवार सब बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से और देखने में भी खूब अच्छा लगता है हम लोग तो दूसरों को भी बुला बुला के ले जाते हैं",
+    "hinglish": "parivar sab bahut achha bahut achha dekhte hain bahut achha se aur dekhne mein bhi khoob achha lagta hai hum log to dusron ko bhi bula bula ke le jate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 58.17,
+    "end": 76.32,
+    "text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो वर्ष करते हैं उसके लिए नया व्रत खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "chhath puja chhath puja mein hum log naya sab saman late hain jo warsh karte hain uske liye naya vrat kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye",
+    "audio": "mixture"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 2.8,
+    "text": "हाँ हेलो सर",
+    "hinglish": "haan hello sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.95,
+    "end": 3.95,
+    "text": "मना",
+    "hinglish": "mana",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 4.2,
+    "end": 5.05,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 5.5,
+    "end": 6.6,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.95,
+    "end": 13.1,
+    "text": "हाँ वो इस बात देना है ना कोई छापड़ भी देना है आपको अभी हो गया",
+    "hinglish": "haan wo is baat dena hai na koi chhapad bhi dena hai aapko abhi ho gaya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.95,
+    "end": 20.8,
+    "text": "देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+    "hinglish": "dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.4,
+    "end": 22.1,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.0,
+    "end": 23.9,
+    "text": "बहुत सभी",
+    "hinglish": "bahut sabhi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.05,
+    "end": 25.65,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.0,
+    "end": 30.15,
+    "text": "यहाँ से भी लोग बोलते हैं बहुत सुंदर बताते हैं",
+    "hinglish": "yahan se bhi log bolte hain bahut sundar batate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 30.85,
+    "end": 32.65,
+    "text": "हम बिहार से बोल रहे हैं",
+    "hinglish": "hum bihar se bol rahe hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 32.9,
+    "end": 38.75,
+    "text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
+    "hinglish": "hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 39.25,
+    "end": 39.7,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 40.8,
+    "end": 41.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 41.4,
+    "end": 42.5,
+    "text": "बोलिए सा",
+    "hinglish": "bolie sa",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 42.5,
+    "end": 45.75,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 46.15,
+    "end": 47.45,
+    "text": "वे",
+    "hinglish": "ve",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.25,
+    "end": 54.25,
+    "text": "बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से और देखने में भी खूब अच्छा लगता है",
+    "hinglish": "bahut achha bahut achha dekhte hain bahut achha se aur dekhne mein bhi khoob achha lagta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.45,
+    "end": 57.7,
+    "text": "हम लोग तो दूसरों को भी बुला बुला के ले जाते हैं",
+    "hinglish": "hum log to dusron ko bhi bula bula ke le jate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 57.7,
+    "end": 59.1,
+    "text": "बैठा",
+    "hinglish": "baitha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 59.3,
+    "end": 64.7,
+    "text": "छठ पूजा में हम लोग नया सब सामान लाते हैं जो",
+    "hinglish": "chhath puja mein hum log naya sab saman late hain jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 65.25,
+    "end": 67.0,
+    "text": "वर्त करते हैं उसके लिए",
+    "hinglish": "wart karte hain uske liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 67.45,
+    "end": 76.25,
+    "text": "नया व खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "naya wa kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 2.8,
+    "text": "हाँ हेलो सर",
+    "hinglish": "haan hello sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.95,
+    "end": 3.95,
+    "text": "मना",
+    "hinglish": "mana",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 4.2,
+    "end": 5.05,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 5.5,
+    "end": 6.6,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.95,
+    "end": 13.1,
+    "text": "हाँ वो इस बात देना है ना कोई छापड़ भी देना है आपको अभी हो गया",
+    "hinglish": "haan wo is baat dena hai na koi chhapad bhi dena hai aapko abhi ho gaya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.95,
+    "end": 20.8,
+    "text": "देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+    "hinglish": "dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.4,
+    "end": 22.1,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.0,
+    "end": 23.9,
+    "text": "बहुत सभी",
+    "hinglish": "bahut sabhi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.05,
+    "end": 25.65,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.0,
+    "end": 30.15,
+    "text": "यहाँ से तो सभी लोग बोलते हैं बहुत सुंदर बताते हैं",
+    "hinglish": "yahan se to sabhi log bolte hain bahut sundar batate hain",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 30.85,
+    "end": 32.65,
+    "text": "हम बिहार से बोल रहे हैं",
+    "hinglish": "hum bihar se bol rahe hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 32.9,
+    "end": 38.75,
+    "text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
+    "hinglish": "hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 39.25,
+    "end": 39.7,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 40.8,
+    "end": 41.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 41.4,
+    "end": 42.5,
+    "text": "बोलिए सा",
+    "hinglish": "bolie sa",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 42.5,
+    "end": 45.75,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 46.15,
+    "end": 47.45,
+    "text": "वे",
+    "hinglish": "ve",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.25,
+    "end": 54.25,
+    "text": "बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से और देखने में भी खूब अच्छा लगता है",
+    "hinglish": "bahut achha bahut achha dekhte hain bahut achha se aur dekhne mein bhi khoob achha lagta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.45,
+    "end": 57.7,
+    "text": "हम लोग तो दूसरों को भी बुला बुला के ले जाते हैं",
+    "hinglish": "hum log to dusron ko bhi bula bula ke le jate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 57.7,
+    "end": 59.1,
+    "text": "बैठा",
+    "hinglish": "baitha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 59.3,
+    "end": 64.7,
+    "text": "छठ पूजा में हम लोग नया सब सामान लाते हैं जो",
+    "hinglish": "chhath puja mein hum log naya sab saman late hain jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 65.25,
+    "end": 67.0,
+    "text": "वर्त करते हैं उसके लिए",
+    "hinglish": "wart karte hain uske liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 67.45,
+    "end": 76.25,
+    "text": "नया व खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "naya wa kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 2.8,
+    "text": "हाँ हेलो सर",
+    "hinglish": "haan hello sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.95,
+    "end": 3.95,
+    "text": "मना",
+    "hinglish": "mana",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 4.2,
+    "end": 5.05,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 5.5,
+    "end": 6.6,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 6.95,
+    "end": 13.1,
+    "text": "हाँ वो इस बात देना है ना कोई छापड़ भी देना है आपको अभी हो गया",
+    "hinglish": "haan wo is baat dena hai na koi chhapad bhi dena hai aapko abhi ho gaya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.95,
+    "end": 20.8,
+    "text": "देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+    "hinglish": "dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.4,
+    "end": 22.1,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.0,
+    "end": 23.9,
+    "text": "बहुत सभी",
+    "hinglish": "bahut sabhi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 24.05,
+    "end": 25.65,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.0,
+    "end": 30.15,
+    "text": "यहाँ से तो सभी लोग बोलते हैं बहुत सुंदर बताते हैं",
+    "hinglish": "yahan se to sabhi log bolte hain bahut sundar batate hain",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 29.23,
+    "end": 29.36,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 30.85,
+    "end": 32.65,
+    "text": "हम बिहार से बोल रहे हैं",
+    "hinglish": "hum bihar se bol rahe hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 32.9,
+    "end": 38.75,
+    "text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
+    "hinglish": "hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 39.25,
+    "end": 39.7,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 40.8,
+    "end": 41.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 41.4,
+    "end": 42.5,
+    "text": "बोलिए सा",
+    "hinglish": "bolie sa",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 42.5,
+    "end": 44.0,
+    "text": "तीन बात सं",
+    "hinglish": "teen baat san",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 44.0,
+    "end": 45.75,
+    "text": "परिवार",
+    "hinglish": "parivar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 46.15,
+    "end": 47.45,
+    "text": "वे",
+    "hinglish": "ve",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.25,
+    "end": 54.25,
+    "text": "बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से और देखने में भी खूब अच्छा लगता है",
+    "hinglish": "bahut achha bahut achha dekhte hain bahut achha se aur dekhne mein bhi khoob achha lagta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.45,
+    "end": 57.7,
+    "text": "हम लोग तो दूसरों को भी बुला बुला के ले जाते हैं",
+    "hinglish": "hum log to dusron ko bhi bula bula ke le jate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 57.7,
+    "end": 59.1,
+    "text": "बैठा",
+    "hinglish": "baitha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 59.3,
+    "end": 64.7,
+    "text": "छठ पूजा में हम लोग नया सब सामान लाते हैं जो",
+    "hinglish": "chhath puja mein hum log naya sab saman late hain jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 65.25,
+    "end": 67.0,
+    "text": "वर्त करते हैं उसके लिए",
+    "hinglish": "wart karte hain uske liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 67.45,
+    "end": 76.25,
+    "text": "नया व खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "naya wa kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.32,
+    "end": 1.03,
+    "text": "आम",
+    "hinglish": "aam",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 1.03,
+    "end": 2.04,
+    "text": "हाँ हालास",
+    "hinglish": "haan halas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 2.04,
+    "end": 2.56,
+    "text": "बात",
+    "hinglish": "baat",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.56,
+    "end": 2.78,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 3.04,
+    "end": 3.29,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 3.29,
+    "end": 3.39,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 3.39,
+    "end": 3.58,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 3.58,
+    "end": 3.66,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 3.66,
+    "end": 3.9,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.22,
+    "end": 5.03,
+    "text": "जीविका",
+    "hinglish": "jivika",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 5.51,
+    "end": 6.59,
+    "text": "हाँ दे",
+    "hinglish": "haan de",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 6.95,
+    "end": 13.09,
+    "text": "हाँ वो इस बात देना है ना कोई छापड़ भी देना है आपको अभी हो गया",
+    "hinglish": "haan wo is baat dena hai na koi chhapad bhi dena hai aapko abhi ho gaya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 15.0,
+    "end": 20.77,
+    "text": "हम लोग देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+    "hinglish": "hum log dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.41,
+    "end": 22.09,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 23.05,
+    "end": 23.89,
+    "text": "जो",
+    "hinglish": "jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 24.08,
+    "end": 24.09,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 24.09,
+    "end": 24.13,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 24.13,
+    "end": 24.2,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 24.2,
+    "end": 25.63,
+    "text": "कैल",
+    "hinglish": "kail",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 26.04,
+    "end": 28.03,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 28.03,
+    "end": 28.21,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 28.21,
+    "end": 28.45,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 28.45,
+    "end": 30.14,
+    "text": "बहुत सुंदर बताते हैं",
+    "hinglish": "bahut sundar batate hain",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 30.86,
+    "end": 32.63,
+    "text": "हम बिहार से बोल रहे हैं",
+    "hinglish": "hum bihar se bol rahe hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 32.94,
+    "end": 38.71,
+    "text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
+    "hinglish": "hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 39.27,
+    "end": 39.67,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 40.82,
+    "end": 41.19,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 41.42,
+    "end": 41.97,
+    "text": "बोलिए",
+    "hinglish": "bolie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.97,
+    "end": 45.73,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 46.18,
+    "end": 47.45,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.28,
+    "end": 54.23,
+    "text": "बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से अब देखने में भी खूब अच्छा लगता है",
+    "hinglish": "bahut achha bahut achha dekhte hain bahut achha se ab dekhne mein bhi khoob achha lagta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.47,
+    "end": 58.13,
+    "text": "हम लोग तो दूसरों को भी बुला बुला के ले जाते हैं",
+    "hinglish": "hum log to dusron ko bhi bula bula ke le jate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 58.13,
+    "end": 59.09,
+    "text": "बैठन",
+    "hinglish": "baithan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 59.09,
+    "end": 59.11,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 59.33,
+    "end": 59.36,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 59.36,
+    "end": 64.7,
+    "text": "छठ पूजा में हम लोग नया सब सामान लाते हैं जो",
+    "hinglish": "chhath puja mein hum log naya sab saman late hain jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 65.29,
+    "end": 66.96,
+    "text": "वर्त कटने के लिए",
+    "hinglish": "wart katne ke liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 67.46,
+    "end": 70.97,
+    "text": "नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें",
+    "hinglish": "naya wastr kharid ke late hain pahante hain usmen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 71.09,
+    "end": 76.22,
+    "text": "और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.35,
+    "end": 2.7,
+    "text": "हा हा हेलो सर",
+    "hinglish": "ha ha hello sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 3.2,
+    "end": 4.0,
+    "text": "बात",
+    "hinglish": "baat",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.05,
+    "end": 6.65,
+    "text": "ठीक है हाँ जी",
+    "hinglish": "theek hai haan ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.95,
+    "end": 13.15,
+    "text": "हाँ वो बात तो देना है ना कोई छापड़ भी देना है आप तो अभी हो गया",
+    "hinglish": "haan wo baat to dena hai na koi chhapad bhi dena hai aap to abhi ho gaya",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.3,
+    "end": 14.75,
+    "text": "सर",
+    "hinglish": "sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.1,
+    "end": 15.55,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 15.55,
+    "end": 15.95,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.95,
+    "end": 20.2,
+    "text": "ये बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+    "hinglish": "ye bahut achha se dekhte hain aur kitna achha banate hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 20.25,
+    "end": 20.9,
+    "text": "बताओ",
+    "hinglish": "batao",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.4,
+    "end": 22.1,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.05,
+    "end": 23.8,
+    "text": "बहुत खेल",
+    "hinglish": "bahut khel",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.05,
+    "end": 24.85,
+    "text": "हेलो है",
+    "hinglish": "hello hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.95,
+    "end": 25.65,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.05,
+    "end": 28.1,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.25,
+    "end": 30.25,
+    "text": "बहुत सुंदर बनाते हैं",
+    "hinglish": "bahut sundar banate hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 30.85,
+    "end": 32.35,
+    "text": "हम बिहार से बोल रहे हैं",
+    "hinglish": "hum bihar se bol rahe hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.2,
+    "end": 32.75,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 32.9,
+    "end": 34.35,
+    "text": "हमारे देश में छठ",
+    "hinglish": "hamare desh mein chhath",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.45,
+    "end": 38.75,
+    "text": "मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
+    "hinglish": "manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.75,
+    "end": 37.1,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 39.25,
+    "end": 39.75,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.75,
+    "end": 41.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 41.4,
+    "end": 42.5,
+    "text": "बोलिए शायद",
+    "hinglish": "bolie shayad",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 42.75,
+    "end": 44.35,
+    "text": "तेरती है",
+    "hinglish": "terti hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 44.55,
+    "end": 45.7,
+    "text": "परिवार सब",
+    "hinglish": "parivar sab",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 46.2,
+    "end": 46.85,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 46.85,
+    "end": 47.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.25,
+    "end": 54.25,
+    "text": "बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से और देखने में भी खूब अच्छा लगता है",
+    "hinglish": "bahut achha bahut achha dekhte hain bahut achha se aur dekhne mein bhi khoob achha lagta hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.5,
+    "end": 56.55,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.5,
+    "end": 56.95,
+    "text": "अपना",
+    "hinglish": "apna",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 56.95,
+    "end": 57.4,
+    "text": "जा",
+    "hinglish": "ja",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.35,
+    "end": 57.9,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 57.9,
+    "end": 59.1,
+    "text": "जान",
+    "hinglish": "jaan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 59.5,
+    "end": 61.4,
+    "text": "छठ पूजा में हम लोग",
+    "hinglish": "chhath puja mein hum log",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 62.25,
+    "end": 64.65,
+    "text": "नया स्वच्छ माल लाते मैं",
+    "hinglish": "naya svachh maal late main",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 65.3,
+    "end": 66.95,
+    "text": "बर्त सकते हैं उसके लिए",
+    "hinglish": "bart sakte hain uske liye",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 67.5,
+    "end": 70.95,
+    "text": "नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें",
+    "hinglish": "naya wastr kharid ke late hain pahante hain usmen",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 71.05,
+    "end": 75.75,
+    "text": "और सकुआ बनाते हैं कसार बनाते हैं इसे बनाते हैं पूजा करने के",
+    "hinglish": "aur sakua banate hain kasar banate hain ise banate hain puja karne ke",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 75.75,
+    "end": 76.1,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "track-1"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.35,
+    "end": 2.7,
+    "text": "हा हा हेलो सर",
+    "hinglish": "ha ha hello sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 3.2,
+    "end": 4.0,
+    "text": "बात",
+    "hinglish": "baat",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.05,
+    "end": 6.65,
+    "text": "ठीक है हाँ जी",
+    "hinglish": "theek hai haan ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.95,
+    "end": 13.15,
+    "text": "हाँ वो बात तो देना है ना कोई छापड़ भी देना है आप तो अभी हो गया",
+    "hinglish": "haan wo baat to dena hai na koi chhapad bhi dena hai aap to abhi ho gaya",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.3,
+    "end": 14.75,
+    "text": "सर",
+    "hinglish": "sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.1,
+    "end": 15.55,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 15.55,
+    "end": 15.95,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.95,
+    "end": 20.2,
+    "text": "ये बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+    "hinglish": "ye bahut achha se dekhte hain aur kitna achha banate hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 20.25,
+    "end": 20.9,
+    "text": "बताओ",
+    "hinglish": "batao",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.4,
+    "end": 22.1,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.05,
+    "end": 23.8,
+    "text": "बहुत खेल",
+    "hinglish": "bahut khel",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.05,
+    "end": 24.85,
+    "text": "हेलो है",
+    "hinglish": "hello hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.95,
+    "end": 25.65,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.05,
+    "end": 28.1,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.25,
+    "end": 30.25,
+    "text": "बहुत सुंदर बनाते हैं",
+    "hinglish": "bahut sundar banate hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 30.85,
+    "end": 32.35,
+    "text": "हम बिहार से बोल रहे हैं",
+    "hinglish": "hum bihar se bol rahe hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.2,
+    "end": 32.75,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 32.9,
+    "end": 34.35,
+    "text": "हमारे देश में छठ",
+    "hinglish": "hamare desh mein chhath",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.45,
+    "end": 38.75,
+    "text": "मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
+    "hinglish": "manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.75,
+    "end": 37.1,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 39.25,
+    "end": 39.75,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.75,
+    "end": 41.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 41.4,
+    "end": 42.5,
+    "text": "बोलिए शायद",
+    "hinglish": "bolie shayad",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 42.75,
+    "end": 44.35,
+    "text": "तेरती है",
+    "hinglish": "terti hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 44.55,
+    "end": 45.7,
+    "text": "परिवार सब",
+    "hinglish": "parivar sab",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 46.2,
+    "end": 46.85,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 46.85,
+    "end": 47.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.25,
+    "end": 54.25,
+    "text": "बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से और देखने में भी खूब अच्छा लगता है",
+    "hinglish": "bahut achha bahut achha dekhte hain bahut achha se aur dekhne mein bhi khoob achha lagta hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.5,
+    "end": 56.55,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.5,
+    "end": 56.95,
+    "text": "अपना",
+    "hinglish": "apna",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 56.95,
+    "end": 57.4,
+    "text": "जा",
+    "hinglish": "ja",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.35,
+    "end": 57.9,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 57.9,
+    "end": 59.1,
+    "text": "जान",
+    "hinglish": "jaan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 59.5,
+    "end": 61.4,
+    "text": "छठ पूजा में हम लोग",
+    "hinglish": "chhath puja mein hum log",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 62.25,
+    "end": 64.65,
+    "text": "नया स्वच्छ माल लाते मैं",
+    "hinglish": "naya svachh maal late main",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 65.3,
+    "end": 66.95,
+    "text": "बर्त सकते हैं उसके लिए",
+    "hinglish": "bart sakte hain uske liye",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 67.5,
+    "end": 70.95,
+    "text": "नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें",
+    "hinglish": "naya wastr kharid ke late hain pahante hain usmen",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 71.05,
+    "end": 75.75,
+    "text": "और सकुआ बनाते हैं कसार बनाते हैं इसे बनाते हैं पूजा करने के",
+    "hinglish": "aur sakua banate hain kasar banate hain ise banate hain puja karne ke",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 75.75,
+    "end": 76.1,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "track-1"
+   }
+  ]
+ }
+}

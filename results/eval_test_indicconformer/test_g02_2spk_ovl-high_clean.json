@@ -1,0 +1,1622 @@
+{
+ "reference": [
+  {
+   "speaker": "S1",
+   "start": 0.288,
+   "end": 1.208,
+   "text": "नमस्ते"
+  },
+  {
+   "speaker": "S2",
+   "start": 0.748,
+   "end": 1.788,
+   "text": "नमस्ते सर"
+  },
+  {
+   "speaker": "S1",
+   "start": 2.089,
+   "end": 10.529,
+   "text": "बोल रहे थे के आप आप बाबू मान संकई इंटर कालेज के जो प्रधानाचार्य हैं"
+  },
+  {
+   "speaker": "S1",
+   "start": 10.71,
+   "end": 26.4,
+   "text": "तो हम बी ए का पेपर देने गए थे आपके इस्कूल में मेरे पर्स वहीं छूट गया था उसमें सामान हैं जरूरत की ओ ओ मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए"
+  },
+  {
+   "speaker": "S1",
+   "start": 26.679,
+   "end": 28.649,
+   "text": "कमरा नम्बर तीन में छूटा था"
+  },
+  {
+   "speaker": "S2",
+   "start": 27.25,
+   "end": 30.048,
+   "text": "हाँ सर मेरे कोई गलती हो गई है मेरे हाथ से"
+  },
+  {
+   "speaker": "S1",
+   "start": 28.699,
+   "end": 29.113,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S1",
+   "start": 29.328,
+   "end": 31.791,
+   "text": "मेरा था ओ पॉकिट मेरा था"
+  },
+  {
+   "speaker": "S2",
+   "start": 30.245,
+   "end": 31.985,
+   "text": "वह मेरा आई डी कार्ड गुम हो गया है सर"
+  },
+  {
+   "speaker": "S2",
+   "start": 32.247,
+   "end": 35.007,
+   "text": "हाँ सर वह एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर"
+  },
+  {
+   "speaker": "S1",
+   "start": 34.187,
+   "end": 35.097,
+   "text": "संगीता जी"
+  },
+  {
+   "speaker": "S2",
+   "start": 35.057,
+   "end": 37.117,
+   "text": "आधार कार्ड की फोटोकॉपी और क्या क्या लाना है सर"
+  },
+  {
+   "speaker": "S1",
+   "start": 35.409,
+   "end": 35.826,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S2",
+   "start": 37.416,
+   "end": 39.206,
+   "text": "एक ख़ुद का फ़ोटो एक आधार कार्ड और"
+  },
+  {
+   "speaker": "S1",
+   "start": 39.96,
+   "end": 43.55,
+   "text": "अपने कैमरे सी सी टी वी कैमरे से चेक करवा लीजिए"
+  },
+  {
+   "speaker": "S1",
+   "start": 43.851,
+   "end": 44.081,
+   "text": "हम्म"
+  },
+  {
+   "speaker": "S2",
+   "start": 44.502,
+   "end": 45.816,
+   "text": "ठीक है यह कहाँ आनी पड़ेगी"
+  },
+  {
+   "speaker": "S1",
+   "start": 46.433,
+   "end": 49.303,
+   "text": "हाँ पैसा भी था डॉकोमेंट भी था उसमें"
+  },
+  {
+   "speaker": "S1",
+   "start": 49.535,
+   "end": 51.423,
+   "text": "पैसा भी डॉकोमेंट भी था"
+  },
+  {
+   "speaker": "S2",
+   "start": 52.034,
+   "end": 55.594,
+   "text": "ऑफिस तो अब तो ऑफिस आप कब तक कितने बजे तक ऑफिस खुला है सर अपना"
+  },
+  {
+   "speaker": "S1",
+   "start": 53.814,
+   "end": 62.284,
+   "text": "तीन हजार था और अधार काड था और उसमें पेपर देने वाला जो होता है जो मिलता है प्रेस पत्र था"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S1",
+    "start": 0.29,
+    "end": 1.21,
+    "text": "नमस्ते",
+    "hinglish": "namaste",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 0.75,
+    "end": 1.79,
+    "text": "नमस्ते सर",
+    "hinglish": "namaste sir",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 2.09,
+    "end": 31.79,
+    "text": "बोल रहे थे कि आप आप बाबू मतंका इंटर कॉलेज के प्रधानाचार हैं तो हम बी एड का पेपर देने गए थे आपके स्कूल में मेरा पर्स वहीं छूट गया था उसमें कुछ सामान हैं ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था हाँ मेरा था वो पॉकिट मेरा था",
+    "hinglish": "bol rahe the ki aap aap babu matanka intar college ke pradhanachar hain to hum B ed ka paper dene gaye the aapke school mein mera pars wahin chhoot gaya tha usmen kuch saman hain zarurat ki to wo mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein chhuta tha haan mera tha wo pokit mera tha",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 27.25,
+    "end": 39.21,
+    "text": "सर मेरे कोई गलती हो गई है मेरे हाथ से वो मेरा आई डी कार्ड घुम हो गया है सर हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फ़ोटो एक आधार कार्ड एक और",
+    "hinglish": "sir mere koi galti ho gayi hai mere haath se wo mera aai D card ghum ho gaya hai sir haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir ek khud ka photo ek aadhar card ek aur",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 34.19,
+    "end": 35.83,
+    "text": "संगीता जी हाँ",
+    "hinglish": "sangita ji haan",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 39.96,
+    "end": 44.08,
+    "text": "अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+    "hinglish": "apne camera si si ti V camera check karva lijie",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 44.5,
+    "end": 45.82,
+    "text": "ठीक है सर कहाँ करनी पड़ेगी",
+    "hinglish": "theek hai sir kahan karni padegi",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 46.43,
+    "end": 51.42,
+    "text": "हाँ पैसा भी था डॉक्यूमेंट भी था उसमें पैसा भी था डॉक्यूमेंट भी था",
+    "hinglish": "haan paisa bhi tha dokyument bhi tha usmen paisa bhi tha dokyument bhi tha",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 52.03,
+    "end": 55.59,
+    "text": "तो ऑफिस का तो कि अब कब तक कितने बजे तक ऑफिस खुला है सर अपना",
+    "hinglish": "to office ka to ki ab kab tak kitne baje tak office khula hai sir apna",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 53.81,
+    "end": 62.28,
+    "text": "तीन हज़ार था और आधार कार्ड था और उसमें पेपर देने वाला जो होता है जो मिलता है प्रेस पत्र था",
+    "hinglish": "teen hazar tha aur aadhar card tha aur usmen paper dene wala jo hota hai jo milta hai press patr tha",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S1",
+    "start": 0.29,
+    "end": 1.21,
+    "text": "मैं मंस",
+    "hinglish": "main mans",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 0.75,
+    "end": 1.79,
+    "text": "नमस्ते सर",
+    "hinglish": "namaste sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 2.09,
+    "end": 31.79,
+    "text": "बोल रहे थे कि आप आप बाबू मतंका इंटर कॉलेज के प्रधानाचार हैं तो हम बी एड का पेपर देने गए थे आपके स्कूल में मेरा पर्स वहीं छूट गया था उसमें कुछ सामान हैं ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन कोई गलती हुई मेरे हाथ पे मेरा आई डी कार्ड",
+    "hinglish": "bol rahe the ki aap aap babu matanka intar college ke pradhanachar hain to hum B ed ka paper dene gaye the aapke school mein mera pars wahin chhoot gaya tha usmen kuch saman hain zarurat ki to wo mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen koi galti hui mere haath pe mera aai D card",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 27.25,
+    "end": 39.21,
+    "text": "सर मेरे कोई गलती हो गई है मेरे हाथ से वो मेरा आई डी कार्ड नहीं हो गया है सर हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फ़ोटो एक आधार कार्ड एक और",
+    "hinglish": "sir mere koi galti ho gayi hai mere haath se wo mera aai D card nahi ho gaya hai sir haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir ek khud ka photo ek aadhar card ek aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 34.19,
+    "end": 35.83,
+    "text": "आधार कार्ड की",
+    "hinglish": "aadhar card ki",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 39.96,
+    "end": 44.08,
+    "text": "अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+    "hinglish": "apne camera si si ti V camera check karva lijie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 44.5,
+    "end": 45.82,
+    "text": "ठीक है सर कहाँ करनी पड़ेगी",
+    "hinglish": "theek hai sir kahan karni padegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 46.43,
+    "end": 51.42,
+    "text": "हाँ पैसा भी था डॉक्यूमेंट भी था उसमें पैसा भी था डॉक्यूमेंट भी था",
+    "hinglish": "haan paisa bhi tha dokyument bhi tha usmen paisa bhi tha dokyument bhi tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 52.03,
+    "end": 55.59,
+    "text": "तो ऑफिस तो आपको बजे तक ऑफिस खुला है सर",
+    "hinglish": "to office to aapko baje tak office khula hai sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 53.81,
+    "end": 62.28,
+    "text": "तीन हज़ार था और आधार कार्ड था और उसमें पेपर देने वाला जो होता है जो मिलता है प्रेस पत्र था",
+    "hinglish": "teen hazar tha aur aadhar card tha aur usmen paper dene wala jo hota hai jo milta hai press patr tha",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S1",
+    "start": 0.29,
+    "end": 1.21,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 0.75,
+    "end": 1.79,
+    "text": "नमस्ते सर",
+    "hinglish": "namaste sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 2.09,
+    "end": 31.79,
+    "text": "बोल रहे थे कि आप आप बाबू मतंका इंटर कॉलेज के प्रधानाचार हैं तो हम बी एड का पेपर देने गए थे आपके स्कूल में मेरा पर्स वहीं छूट गया था उसमें कुछ सामान हैं ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में सूझा था हाँ मेरा था उप मेरा था",
+    "hinglish": "bol rahe the ki aap aap babu matanka intar college ke pradhanachar hain to hum B ed ka paper dene gaye the aapke school mein mera pars wahin chhoot gaya tha usmen kuch saman hain zarurat ki to wo mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein sujha tha haan mera tha up mera tha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 27.25,
+    "end": 39.21,
+    "text": "सर मेरे कोई गलती हो गई है मेरे हाथ से और मेरा आई डी कार्ड घूम हो गया है सर हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक उसका फ़ोटो एक आधार कार्ड यह और",
+    "hinglish": "sir mere koi galti ho gayi hai mere haath se aur mera aai D card ghoom ho gaya hai sir haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir ek uska photo ek aadhar card yeh aur",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 34.19,
+    "end": 35.83,
+    "text": "जीता जी हाँ",
+    "hinglish": "jita ji haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 39.96,
+    "end": 44.08,
+    "text": "अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+    "hinglish": "apne camera si si ti V camera check karva lijie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 44.5,
+    "end": 45.82,
+    "text": "ठीक है सर कहाँ करनी पड़ेगी",
+    "hinglish": "theek hai sir kahan karni padegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 46.43,
+    "end": 51.42,
+    "text": "हाँ पैसा भी था डॉक्यूमेंट भी था उसमें पैसा भी था डॉक्यूमेंट भी था",
+    "hinglish": "haan paisa bhi tha dokyument bhi tha usmen paisa bhi tha dokyument bhi tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 52.03,
+    "end": 55.59,
+    "text": "तो ऑफिस का चौकी आप कब तक कितने बजे तक ऑफ़िस खुला है सर अपने",
+    "hinglish": "to office ka chauki aap kab tak kitne baje tak ofis khula hai sir apne",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 53.81,
+    "end": 62.28,
+    "text": "तीन हज़ार था और आधार कार्ड था और उसमें पेपर देने वाला जो होता है जो मिलता है प्रेस पत्र था",
+    "hinglish": "teen hazar tha aur aadhar card tha aur usmen paper dene wala jo hota hai jo milta hai press patr tha",
+    "audio": "separated"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 1.65,
+    "text": "नमस्ते सर",
+    "hinglish": "namaste sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 2.1,
+    "end": 3.15,
+    "text": "बोल रहे थे",
+    "hinglish": "bol rahe the",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 3.45,
+    "end": 5.05,
+    "text": "कि आप आप",
+    "hinglish": "ki aap aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.3,
+    "end": 15.6,
+    "text": "बाबू मातंकर इंटर कॉलेज के प्रधानाचार हैं तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा फर्स्ट",
+    "hinglish": "babu matankar intar college ke pradhanachar hain to hum B e ka paper dene gaye the aapke school mein mera first",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.35,
+    "end": 20.0,
+    "text": "वहीं टूट गया था उसमें कुछ सामान है ज़रूरत की",
+    "hinglish": "wahin toot gaya tha usmen kuch saman hai zarurat ki",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.8,
+    "end": 27.95,
+    "text": "ओह मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में",
+    "hinglish": "oh mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.95,
+    "end": 32.05,
+    "text": "कोई गलती हुई मेरे हाथ से वो मेरा आई डी कार्ड नहीं गया सर",
+    "hinglish": "koi galti hui mere haath se wo mera aai D card nahi gaya sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.25,
+    "end": 37.1,
+    "text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर",
+    "hinglish": "haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.35,
+    "end": 39.2,
+    "text": "एक उसका फोटो एक आधार कार्ड ही और",
+    "hinglish": "ek uska photo ek aadhar card hi aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 39.9,
+    "end": 41.15,
+    "text": "तो अपने एक कैमरे",
+    "hinglish": "to apne ek camera",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.25,
+    "end": 43.55,
+    "text": "सी सी टी वी कैमरे चेक करवा लीजिए",
+    "hinglish": "si si ti V camera check karva lijie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 44.5,
+    "end": 45.75,
+    "text": "ठीक है सर कहाँ करनी पड़ेगी",
+    "hinglish": "theek hai sir kahan karni padegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 46.45,
+    "end": 49.3,
+    "text": "हाँ पैसा भी था डॉक्यूमेंट भी था उसमें",
+    "hinglish": "haan paisa bhi tha dokyument bhi tha usmen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 49.45,
+    "end": 51.4,
+    "text": "पैसा भी था डॉक्यूमेंट भी था",
+    "hinglish": "paisa bhi tha dokyument bhi tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 52.0,
+    "end": 55.2,
+    "text": "ऑफिस तो ऑफिस आपको कितने बजे तक ऑफिस खुला है",
+    "hinglish": "office to office aapko kitne baje tak office khula hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.2,
+    "end": 56.25,
+    "text": "आधार कार्ड था",
+    "hinglish": "aadhar card tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 56.6,
+    "end": 59.45,
+    "text": "और उसमें पेपर देने वाला जो होता है",
+    "hinglish": "aur usmen paper dene wala jo hota hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 60.15,
+    "end": 62.25,
+    "text": "जो मिलता है प्रेस पता था",
+    "hinglish": "jo milta hai press pata tha",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 1.65,
+    "text": "नमस्ते सर",
+    "hinglish": "namaste sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 2.1,
+    "end": 3.15,
+    "text": "बोल रहे थे",
+    "hinglish": "bol rahe the",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 3.45,
+    "end": 5.05,
+    "text": "कि आप आप",
+    "hinglish": "ki aap aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.3,
+    "end": 15.6,
+    "text": "बाबू मातंकर इंटर कॉलेज के प्रधानाचार हैं तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा फर्स्ट",
+    "hinglish": "babu matankar intar college ke pradhanachar hain to hum B e ka paper dene gaye the aapke school mein mera first",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.35,
+    "end": 20.0,
+    "text": "वहीं टूट गया था उसमें कुछ सामान है ज़रूरत की",
+    "hinglish": "wahin toot gaya tha usmen kuch saman hai zarurat ki",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.8,
+    "end": 27.95,
+    "text": "ओह मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में",
+    "hinglish": "oh mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.95,
+    "end": 32.05,
+    "text": "कोई गलती हो गई मेरे हाथ से और मेरा आई डी कार्ड घूम गया है सर",
+    "hinglish": "koi galti ho gayi mere haath se aur mera aai D card ghoom gaya hai sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.25,
+    "end": 37.1,
+    "text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर",
+    "hinglish": "haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.35,
+    "end": 39.2,
+    "text": "एक उसका फोटो एक आधार कार्ड ही और",
+    "hinglish": "ek uska photo ek aadhar card hi aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 39.9,
+    "end": 41.15,
+    "text": "तो अपने एक कैमरे",
+    "hinglish": "to apne ek camera",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.25,
+    "end": 43.55,
+    "text": "सी सी टी वी कैमरे चेक करवा लीजिए",
+    "hinglish": "si si ti V camera check karva lijie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 44.5,
+    "end": 45.75,
+    "text": "ठीक है सर कहाँ करनी पड़ेगी",
+    "hinglish": "theek hai sir kahan karni padegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 46.45,
+    "end": 49.3,
+    "text": "हाँ पैसा भी था डॉक्यूमेंट भी था उसमें",
+    "hinglish": "haan paisa bhi tha dokyument bhi tha usmen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 49.45,
+    "end": 51.4,
+    "text": "पैसा भी था डॉक्यूमेंट भी था",
+    "hinglish": "paisa bhi tha dokyument bhi tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 52.0,
+    "end": 55.2,
+    "text": "तो ऑफिस तो कब तक कितने बजे तक ऑफ़िस खुला है सर",
+    "hinglish": "to office to kab tak kitne baje tak ofis khula hai sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.2,
+    "end": 56.25,
+    "text": "आधार कार्ड था",
+    "hinglish": "aadhar card tha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 56.6,
+    "end": 59.45,
+    "text": "और उसमें पेपर देने वाला जो होता है",
+    "hinglish": "aur usmen paper dene wala jo hota hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 60.15,
+    "end": 62.25,
+    "text": "जो मिलता है प्रेस पता था",
+    "hinglish": "jo milta hai press pata tha",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 1.65,
+    "text": "नमस्ते सर",
+    "hinglish": "namaste sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 0.34,
+    "end": 1.57,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.1,
+    "end": 3.15,
+    "text": "बोल रहे थे",
+    "hinglish": "bol rahe the",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 3.45,
+    "end": 5.05,
+    "text": "कि आप आप",
+    "hinglish": "ki aap aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 6.3,
+    "end": 15.6,
+    "text": "बाबू मातंकर इंटर कॉलेज के प्रधानाचार हैं तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा फर्स्ट",
+    "hinglish": "babu matankar intar college ke pradhanachar hain to hum B e ka paper dene gaye the aapke school mein mera first",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.35,
+    "end": 20.0,
+    "text": "वहीं टूट गया था उसमें कुछ सामान है ज़रूरत की",
+    "hinglish": "wahin toot gaya tha usmen kuch saman hai zarurat ki",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 20.8,
+    "end": 27.9,
+    "text": "ओह मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में",
+    "hinglish": "oh mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.9,
+    "end": 32.05,
+    "text": "कोई गलती हो गई मेरे हाथ से और मेरा आई डी कार्ड घुम हो गया सर",
+    "hinglish": "koi galti ho gayi mere haath se aur mera aai D card ghum ho gaya sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 32.25,
+    "end": 37.1,
+    "text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर",
+    "hinglish": "haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 34.19,
+    "end": 34.84,
+    "text": "जी भाज",
+    "hinglish": "ji bhaaj",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.4,
+    "end": 35.72,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.35,
+    "end": 39.2,
+    "text": "एक उसका फोटो एक आधार कार्ड ही और",
+    "hinglish": "ek uska photo ek aadhar card hi aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 39.9,
+    "end": 41.15,
+    "text": "तो अपने एक कैमरे",
+    "hinglish": "to apne ek camera",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 41.25,
+    "end": 43.55,
+    "text": "सी सी टी वी कैमरे चेक करवा लीजिए",
+    "hinglish": "si si ti V camera check karva lijie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 44.5,
+    "end": 45.75,
+    "text": "ठीक है सर कहाँ करनी पड़ेगी",
+    "hinglish": "theek hai sir kahan karni padegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 46.45,
+    "end": 49.3,
+    "text": "हाँ पैसा भी था डॉक्यूमेंट भी था उसमें",
+    "hinglish": "haan paisa bhi tha dokyument bhi tha usmen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 49.45,
+    "end": 51.4,
+    "text": "पैसा भी था डॉक्यूमेंट भी था",
+    "hinglish": "paisa bhi tha dokyument bhi tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.0,
+    "end": 55.25,
+    "text": "तो ऑफिस तो ऑफिस अब कब तक कितने बजे तक ऑफ़िस खुला है सर",
+    "hinglish": "to office to office ab kab tak kitne baje tak ofis khula hai sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 55.25,
+    "end": 56.25,
+    "text": "आधार कार्ड था",
+    "hinglish": "aadhar card tha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.6,
+    "end": 59.45,
+    "text": "और उसमें पेपर देने वाला जो होता है",
+    "hinglish": "aur usmen paper dene wala jo hota hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 60.15,
+    "end": 62.25,
+    "text": "जो मिलता है प्रेस पता था",
+    "hinglish": "jo milta hai press pata tha",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.32,
+    "end": 1.62,
+    "text": "नमस्ते सर",
+    "hinglish": "namaste sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 0.34,
+    "end": 1.03,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 1.03,
+    "end": 1.57,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 2.11,
+    "end": 3.14,
+    "text": "बोल रहे थे",
+    "hinglish": "bol rahe the",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 3.46,
+    "end": 5.04,
+    "text": "कि आप आप",
+    "hinglish": "ki aap aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.34,
+    "end": 11.15,
+    "text": "बाबू मशंकर इंटर कॉलेज के प्रधानाचार्य हैं तो",
+    "hinglish": "babu mashankar intar college ke pradhanachary hain to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.22,
+    "end": 15.59,
+    "text": "हम बी एड का पेपर देने गए थे आपके स्कूल में मेरा फर्श",
+    "hinglish": "hum B ed ka paper dene gaye the aapke school mein mera pharsh",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.38,
+    "end": 19.99,
+    "text": "वहीं छूट गया था उसमें कुछ सामान है ज़रूरत की",
+    "hinglish": "wahin chhoot gaya tha usmen kuch saman hai zarurat ki",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.84,
+    "end": 31.6,
+    "text": "तो वो मुझे चाहिए था पैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में पूजा था हाँ मेरा था वो प्रॉफिट मेरा था",
+    "hinglish": "to wo mujhe chahiye tha paise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein puja tha haan mera tha wo prophit mera tha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.25,
+    "end": 32.03,
+    "text": "सर मेरे कोई गलती हो गई मेरे हाथ से और मेरा आई डी कार्ड घुम हो गया है सर",
+    "hinglish": "sir mere koi galti ho gayi mere haath se aur mera aai D card ghum ho gaya hai sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.26,
+    "end": 34.88,
+    "text": "पाँच सर वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
+    "hinglish": "paanch sir wo exam paas aa rahe hain to aai D card chahiye sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 34.19,
+    "end": 35.06,
+    "text": "जीता जी",
+    "hinglish": "jita ji",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.06,
+    "end": 37.07,
+    "text": "आधार कार्ड की फ़ोटोकॉपी और क्या क्या ला",
+    "hinglish": "aadhar card ki fotokopi aur kya kya la",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.4,
+    "end": 35.72,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.43,
+    "end": 39.16,
+    "text": "एक उसका फोटो एक आधार कार्ड ही हो",
+    "hinglish": "ek uska photo ek aadhar card hi ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 39.16,
+    "end": 39.2,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 39.94,
+    "end": 41.14,
+    "text": "तो अपने एक कैमरे",
+    "hinglish": "to apne ek camera",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.29,
+    "end": 43.52,
+    "text": "सी सी टी वी कैमरे चेक करवा लीजिए",
+    "hinglish": "si si ti V camera check karva lijie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 44.51,
+    "end": 45.74,
+    "text": "ठीक है सर कहाँ करनी पड़ेगी",
+    "hinglish": "theek hai sir kahan karni padegi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 46.47,
+    "end": 49.26,
+    "text": "हाँ पैसा भी था डॉक्यूमेंट भी था उसमें",
+    "hinglish": "haan paisa bhi tha dokyument bhi tha usmen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 49.49,
+    "end": 51.4,
+    "text": "पैसा भी था डॉक्यूमेंट भी था",
+    "hinglish": "paisa bhi tha dokyument bhi tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 52.04,
+    "end": 55.58,
+    "text": "तो ऑफिस तो ऑफिस आप कब तक कितने बजे तक ऑफिस खुला है सर अपने",
+    "hinglish": "to office to office aap kab tak kitne baje tak office khula hai sir apne",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.73,
+    "end": 56.24,
+    "text": "तीन हजार था और आधार कार्ड था",
+    "hinglish": "teen hajar tha aur aadhar card tha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 56.63,
+    "end": 59.41,
+    "text": "और उसमें पेपर देने वाला जो होता है",
+    "hinglish": "aur usmen paper dene wala jo hota hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 60.14,
+    "end": 62.25,
+    "text": "जो मिलता है प्रेज पता था",
+    "hinglish": "jo milta hai prej pata tha",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 1.7,
+    "text": "नमस्ते सर",
+    "hinglish": "namaste sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.1,
+    "end": 3.15,
+    "text": "बोलते",
+    "hinglish": "bolte",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 3.4,
+    "end": 5.1,
+    "text": "के आप आप",
+    "hinglish": "ke aap aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 6.3,
+    "end": 11.0,
+    "text": "बाबू मतंकर इंटर कॉलेज के प्रधानाचार्य हैं तो",
+    "hinglish": "babu matankar intar college ke pradhanachary hain to",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.9,
+    "end": 11.4,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 11.4,
+    "end": 15.65,
+    "text": "हम बी एड का पेपर देने गए थे आपके स्कूल में मेरे फर्स्ट",
+    "hinglish": "hum B ed ka paper dene gaye the aapke school mein mere first",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 16.35,
+    "end": 20.0,
+    "text": "वहीं टूट गया था उसमें कुछ सामान है ज़रूरत की",
+    "hinglish": "wahin toot gaya tha usmen kuch saman hai zarurat ki",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.45,
+    "end": 25.45,
+    "text": "वो मुझे चाहिए था कैसे मिल सकता है अब हमने कर्मचारी से चेक करा",
+    "hinglish": "wo mujhe chahiye tha kaise mil sakta hai ab hamne karmachari se check kara",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 25.7,
+    "end": 27.35,
+    "text": "पूछिए कमरा नंबर",
+    "hinglish": "puchhie kamra number",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 27.45,
+    "end": 27.85,
+    "text": "तीन में",
+    "hinglish": "teen mein",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.6,
+    "end": 28.15,
+    "text": "मेरे",
+    "hinglish": "mere",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 28.1,
+    "end": 28.6,
+    "text": "था",
+    "hinglish": "tha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.95,
+    "end": 29.55,
+    "text": "हुई मेरे आ",
+    "hinglish": "hui mere aa",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 29.45,
+    "end": 30.35,
+    "text": "मेला था",
+    "hinglish": "mela tha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.3,
+    "end": 31.2,
+    "text": "मेरा आई डी कार्ड",
+    "hinglish": "mera aai D card",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 31.15,
+    "end": 31.55,
+    "text": "मेरा",
+    "hinglish": "mera",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.3,
+    "end": 31.95,
+    "text": "जैसे",
+    "hinglish": "jaise",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 32.3,
+    "end": 34.35,
+    "text": "पास वो एग्जाम पास आ रहे हैं तो आई डी कार्ड",
+    "hinglish": "paas wo exam paas aa rahe hain to aai D card",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 34.6,
+    "end": 35.05,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.05,
+    "end": 35.6,
+    "text": "आधार कार्ड",
+    "hinglish": "aadhar card",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.65,
+    "end": 37.1,
+    "text": "फोटो कॉपी और क्या क्या लाना है",
+    "hinglish": "photo copy aur kya kya lana hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.4,
+    "end": 39.2,
+    "text": "एक खुद का फोटो एक आधार कार्ड यो",
+    "hinglish": "ek khud ka photo ek aadhar card yo",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 39.9,
+    "end": 43.55,
+    "text": "तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+    "hinglish": "to apne camera si si ti V camera check karva lijie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 44.45,
+    "end": 45.8,
+    "text": "ठीक है कहाँ करनी पड़ेगी",
+    "hinglish": "theek hai kahan karni padegi",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 46.5,
+    "end": 48.85,
+    "text": "हाँ पैसा भी था डाक्यूमेंट भी था",
+    "hinglish": "haan paisa bhi tha dakyument bhi tha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 48.7,
+    "end": 49.3,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 49.5,
+    "end": 50.95,
+    "text": "पैसा भी था डॉक्यूमेंट",
+    "hinglish": "paisa bhi tha dokyument",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 50.8,
+    "end": 51.45,
+    "text": "सभी था",
+    "hinglish": "sabhi tha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.05,
+    "end": 53.8,
+    "text": "ऑफिस तो फिर आपका",
+    "hinglish": "office to phir aapka",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 53.8,
+    "end": 54.35,
+    "text": "तीन हजार",
+    "hinglish": "teen hajar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.25,
+    "end": 54.65,
+    "text": "बिंदु",
+    "hinglish": "bindu",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 54.55,
+    "end": 56.3,
+    "text": "हाँ और आधार कार्ड था",
+    "hinglish": "haan aur aadhar card tha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.9,
+    "end": 55.3,
+    "text": "तुलास",
+    "hinglish": "tulas",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 56.55,
+    "end": 59.45,
+    "text": "और उसमें पेपर देने वाला जो होता है",
+    "hinglish": "aur usmen paper dene wala jo hota hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 60.15,
+    "end": 60.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 60.5,
+    "end": 62.25,
+    "text": "जमीनता है तो इस पर",
+    "hinglish": "jaminta hai to is par",
+    "audio": "track-1"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 1.7,
+    "text": "नमस्ते सर",
+    "hinglish": "namaste sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 2.1,
+    "end": 3.15,
+    "text": "बोलते",
+    "hinglish": "bolte",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 3.4,
+    "end": 5.1,
+    "text": "के आप आप",
+    "hinglish": "ke aap aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 6.3,
+    "end": 11.0,
+    "text": "बाबू मतंकर इंटर कॉलेज के प्रधानाचार्य हैं तो",
+    "hinglish": "babu matankar intar college ke pradhanachary hain to",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.9,
+    "end": 11.4,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 11.4,
+    "end": 15.65,
+    "text": "हम बी एड का पेपर देने गए थे आपके स्कूल में मेरे फर्स्ट",
+    "hinglish": "hum B ed ka paper dene gaye the aapke school mein mere first",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 16.35,
+    "end": 20.0,
+    "text": "वहीं टूट गया था उसमें कुछ सामान है ज़रूरत की",
+    "hinglish": "wahin toot gaya tha usmen kuch saman hai zarurat ki",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 21.45,
+    "end": 25.45,
+    "text": "वो मुझे चाहिए था कैसे मिल सकता है अब हमने कर्मचारी से चेक करा",
+    "hinglish": "wo mujhe chahiye tha kaise mil sakta hai ab hamne karmachari se check kara",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 25.7,
+    "end": 27.35,
+    "text": "पूछिए कमरा नंबर",
+    "hinglish": "puchhie kamra number",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 27.45,
+    "end": 27.85,
+    "text": "तीन में",
+    "hinglish": "teen mein",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.6,
+    "end": 28.15,
+    "text": "मेरे",
+    "hinglish": "mere",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 28.1,
+    "end": 28.6,
+    "text": "था",
+    "hinglish": "tha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.95,
+    "end": 29.55,
+    "text": "हुई मेरे आ",
+    "hinglish": "hui mere aa",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 29.45,
+    "end": 30.35,
+    "text": "मेला था",
+    "hinglish": "mela tha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.3,
+    "end": 31.2,
+    "text": "मेरा आई डी कार्ड",
+    "hinglish": "mera aai D card",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 31.15,
+    "end": 31.55,
+    "text": "मेरा",
+    "hinglish": "mera",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.3,
+    "end": 31.95,
+    "text": "जैसे",
+    "hinglish": "jaise",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 32.3,
+    "end": 34.35,
+    "text": "पास वो एग्जाम पास आ रहे हैं तो आई डी कार्ड",
+    "hinglish": "paas wo exam paas aa rahe hain to aai D card",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.6,
+    "end": 35.05,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.05,
+    "end": 35.6,
+    "text": "आधार कार्ड",
+    "hinglish": "aadhar card",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.65,
+    "end": 37.1,
+    "text": "फोटो कॉपी और क्या क्या लाना है",
+    "hinglish": "photo copy aur kya kya lana hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.4,
+    "end": 39.2,
+    "text": "एक खुद का फोटो एक आधार कार्ड यो",
+    "hinglish": "ek khud ka photo ek aadhar card yo",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 39.9,
+    "end": 43.55,
+    "text": "तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+    "hinglish": "to apne camera si si ti V camera check karva lijie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 44.45,
+    "end": 45.8,
+    "text": "ठीक है कहाँ करनी पड़ेगी",
+    "hinglish": "theek hai kahan karni padegi",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 46.5,
+    "end": 48.85,
+    "text": "हाँ पैसा भी था डाक्यूमेंट भी था",
+    "hinglish": "haan paisa bhi tha dakyument bhi tha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 48.7,
+    "end": 49.3,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 49.5,
+    "end": 50.95,
+    "text": "पैसा भी था डॉक्यूमेंट",
+    "hinglish": "paisa bhi tha dokyument",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 50.8,
+    "end": 51.45,
+    "text": "सभी था",
+    "hinglish": "sabhi tha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.05,
+    "end": 53.8,
+    "text": "ऑफिस तो फिर आपका",
+    "hinglish": "office to phir aapka",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 53.8,
+    "end": 54.35,
+    "text": "तीन हजार",
+    "hinglish": "teen hajar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.25,
+    "end": 54.65,
+    "text": "बिंदु",
+    "hinglish": "bindu",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 54.55,
+    "end": 56.3,
+    "text": "हाँ और आधार कार्ड था",
+    "hinglish": "haan aur aadhar card tha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.9,
+    "end": 55.3,
+    "text": "तुलास",
+    "hinglish": "tulas",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 56.55,
+    "end": 59.45,
+    "text": "और उसमें पेपर देने वाला जो होता है",
+    "hinglish": "aur usmen paper dene wala jo hota hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 60.15,
+    "end": 60.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 60.5,
+    "end": 62.25,
+    "text": "जमीनता है तो इस पर",
+    "hinglish": "jaminta hai to is par",
+    "audio": "track-1"
+   }
+  ]
+ }
+}

@@ -1,0 +1,1802 @@
+{
+ "reference": [
+  {
+   "speaker": "S2",
+   "start": 0.333,
+   "end": 1.291,
+   "text": "नमस्कार सर"
+  },
+  {
+   "speaker": "S3",
+   "start": 1.974,
+   "end": 5.826,
+   "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको"
+  },
+  {
+   "speaker": "S3",
+   "start": 6.166,
+   "end": 8.959,
+   "text": "नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको"
+  },
+  {
+   "speaker": "S3",
+   "start": 9.117,
+   "end": 10.806,
+   "text": "क्या मैम आपकी आवाज़ साफ नहीं आ रही है"
+  },
+  {
+   "speaker": "S1",
+   "start": 11.382,
+   "end": 11.792,
+   "text": "हलो"
+  },
+  {
+   "speaker": "S1",
+   "start": 11.934,
+   "end": 13.924,
+   "text": "हलो सर नमस्कार मैं हरीश चौरसिया बोल रहा था"
+  },
+  {
+   "speaker": "S1",
+   "start": 14.082,
+   "end": 16.489,
+   "text": "जी मेरी क्या आप की बात फोटोग्राफर से हो रही है"
+  },
+  {
+   "speaker": "S3",
+   "start": 15.607,
+   "end": 17.371,
+   "text": "हमारी डाक्टरी लखनऊ में है"
+  },
+  {
+   "speaker": "S2",
+   "start": 17.737,
+   "end": 22.982,
+   "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी"
+  },
+  {
+   "speaker": "S1",
+   "start": 23.158,
+   "end": 25.558,
+   "text": "जी सर यह मेरे यहाँ दस जून की शादी है"
+  },
+  {
+   "speaker": "S3",
+   "start": 26.291,
+   "end": 26.624,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S2",
+   "start": 26.457,
+   "end": 28.857,
+   "text": "पाँच लोगों के लिए चाहिए था सर्व हो पाएगा"
+  },
+  {
+   "speaker": "S1",
+   "start": 27.657,
+   "end": 30.459,
+   "text": "तो मेरे को प्री वेडिंग फोटोशूट कराना था"
+  },
+  {
+   "speaker": "S3",
+   "start": 30.568,
+   "end": 34.547,
+   "text": "सबका इलाज है मैम आप कब से हो रहा है आपको यह सब"
+  },
+  {
+   "speaker": "S1",
+   "start": 30.728,
+   "end": 32.558,
+   "text": "तो सर उसका कैसा क्या रहता है"
+  },
+  {
+   "speaker": "S1",
+   "start": 32.87,
+   "end": 37.44,
+   "text": "दस जून को मतलब मेरे जो है प्री वेडिंग फोटोशूट उससे पहले होगा आपको"
+  },
+  {
+   "speaker": "S1",
+   "start": 37.723,
+   "end": 41.861,
+   "text": "तो कब टाइम है मतलब फोटोशूट करने के लिए आप वही दूसरी डेट में आप"
+  },
+  {
+   "speaker": "S2",
+   "start": 42.389,
+   "end": 49.519,
+   "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फ़ी छेना वोना समोसा वमोसा यह सब"
+  },
+  {
+   "speaker": "S3",
+   "start": 50.06,
+   "end": 52.34,
+   "text": "कब से आपको दिक्कत आ रहा है पैर का"
+  },
+  {
+   "speaker": "S3",
+   "start": 52.593,
+   "end": 55.944,
+   "text": "आपके पैर में सूजन है क्या क्या दिक्कत है पैर में"
+  },
+  {
+   "speaker": "S3",
+   "start": 56.191,
+   "end": 57.599,
+   "text": "आपको खाँसी भी आ रही हे"
+  },
+  {
+   "speaker": "S1",
+   "start": 58.228,
+   "end": 64.578,
+   "text": "तो प्री वेडिंग शूट देखो तो शूट कम से कम अच्छी लोकेशन पर चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएँगे आपको"
+  },
+  {
+   "speaker": "S1",
+   "start": 64.695,
+   "end": 65.025,
+   "text": "हम"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S2",
+    "start": 0.33,
+    "end": 1.29,
+    "text": "नमस्कार सर",
+    "hinglish": "namaskar sir",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 1.97,
+    "end": 10.81,
+    "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+    "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 11.38,
+    "end": 16.49,
+    "text": "हेलो हलो सर नमस्कार मैं अजीत ही बोल रहा था जी मेरे ग्राफ़ बात फोटोग्राफर से हो रही है",
+    "hinglish": "hello hello sir namaskar main ajit hi bol raha tha ji mere graaf baat photographer se ho rahi hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 15.61,
+    "end": 17.37,
+    "text": "हमारी डाक्टरी लखनऊ में है",
+    "hinglish": "hamari daktari lakhnau mein hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 17.74,
+    "end": 22.98,
+    "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
+    "hinglish": "sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 23.16,
+    "end": 25.56,
+    "text": "जी सर यह मेरे यहाँ दस जून की शादी है",
+    "hinglish": "ji sir yeh mere yahan das joon ki shadi hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 26.29,
+    "end": 26.62,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 26.46,
+    "end": 28.86,
+    "text": "पाँच लोगों के लिए चाहिए था सर्व हो पाएगा",
+    "hinglish": "paanch logon ke liye chahiye tha sarv ho paega",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 27.66,
+    "end": 41.86,
+    "text": "तो मेरे को प्री वेडिंग फ़ोटोशूट कराना तो सर उसका कैसा क्या रहता है दस चून को मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगा आप तो कब टाइम है मतलब फ़ोटोशूट करने के लिए आप दूसरी डेटें आप",
+    "hinglish": "to mere ko pri wedding fotoshut karana to sir uska kaisa kya rahta hai das choon ko matlab meri jo pri wedding fotoshut usse pahle hoga aap to kab time hai matlab fotoshut karne ke liye aap dusri deten aap",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 30.57,
+    "end": 34.55,
+    "text": "सब का इलाज है मैम आप कब से हो रहा है आपको यह सब",
+    "hinglish": "sab ka ilaj hai ma'am aap kab se ho raha hai aapko yeh sab",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 42.39,
+    "end": 49.52,
+    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा वमोसा ये सब",
+    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa wamosa ye sab",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 50.06,
+    "end": 57.6,
+    "text": "कब से आपको दिक्कत आ रहा है पैर आपके पैर में सूजन है क्या क्या दिक्कत है पैर में आपको खाँसी भी आ रहा है",
+    "hinglish": "kab se aapko dikkat aa raha hai pair aapke pair mein sujan hai kya kya dikkat hai pair mein aapko khansi bhi aa raha hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 58.23,
+    "end": 65.03,
+    "text": "सर प्री वेडिंग सूट फोटोशूट कम से कम अच्छी लोकेशन पर चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको हाँ जी",
+    "hinglish": "sir pri wedding suit photoshoot kam se kam achhi location par chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko haan ji",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S2",
+    "start": 0.33,
+    "end": 1.29,
+    "text": "नमस्कार सर",
+    "hinglish": "namaskar sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 1.97,
+    "end": 10.81,
+    "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+    "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 11.38,
+    "end": 16.49,
+    "text": "हेलो हेलो सर नमस्कार मैं अजीत बोल रहा था जी मेरे ग्राफ बात फोटो",
+    "hinglish": "hello hello sir namaskar main ajit bol raha tha ji mere graaph baat photo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 15.61,
+    "end": 17.37,
+    "text": "लखनऊ में है",
+    "hinglish": "lakhnau mein hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 17.74,
+    "end": 22.98,
+    "text": "बिरयानी चाहिए थी",
+    "hinglish": "biryani chahiye thi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 23.16,
+    "end": 25.56,
+    "text": "जी सर ये मेरे यहाँ दस दूर की शादी है",
+    "hinglish": "ji sir ye mere yahan das door ki shadi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 26.29,
+    "end": 26.62,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 26.46,
+    "end": 28.86,
+    "text": "पाँच बजे के लिए चाहिए",
+    "hinglish": "paanch baje ke liye chahiye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 27.66,
+    "end": 41.86,
+    "text": "फोटोशूट करने के लिए आप जूस भी देते",
+    "hinglish": "photoshoot karne ke liye aap juice bhi dete",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 30.57,
+    "end": 34.55,
+    "text": "कैसा क्या रहता है मतलब मेरे जो श्री",
+    "hinglish": "kaisa kya rahta hai matlab mere jo shri",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 42.39,
+    "end": 49.52,
+    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खाना वाना समोसा मोटा ये सब",
+    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khana wana samosa mota ye sab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 50.06,
+    "end": 57.6,
+    "text": "कब से आपको दिक्कत आ रहा है पैर का आपके पैर में सूजन है क्या क्या दिक्कत है पैर में आपको खा भी आ रहा है",
+    "hinglish": "kab se aapko dikkat aa raha hai pair ka aapke pair mein sujan hai kya kya dikkat hai pair mein aapko kha bhi aa raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 58.23,
+    "end": 65.03,
+    "text": "तो प्री वेडिंग शूट गया फोटोशूट कम से कम अच्छी लोकेशन पे चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको हाँ",
+    "hinglish": "to pri wedding shoot gaya photoshoot kam se kam achhi location pe chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko haan",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S2",
+    "start": 0.33,
+    "end": 1.29,
+    "text": "नमस्कार सर",
+    "hinglish": "namaskar sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 1.97,
+    "end": 10.81,
+    "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+    "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 11.38,
+    "end": 16.49,
+    "text": "हेलो हेलो सर नमस्कार मैं अजीत बोल रहा था जी मेरे ग्राफ़ बात फोटोग्राफर से हो रही है",
+    "hinglish": "hello hello sir namaskar main ajit bol raha tha ji mere graaf baat photographer se ho rahi hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S3",
+    "start": 15.61,
+    "end": 17.37,
+    "text": "मैं जाती लखनऊ",
+    "hinglish": "main jati lakhnau",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 17.74,
+    "end": 22.98,
+    "text": "बिरयानी चाहिए थी",
+    "hinglish": "biryani chahiye thi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 23.16,
+    "end": 25.56,
+    "text": "जी सर ये मेरे यहाँ दस दूर की शादी है",
+    "hinglish": "ji sir ye mere yahan das door ki shadi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 26.29,
+    "end": 26.62,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 26.46,
+    "end": 28.86,
+    "text": "पाँच बजे के लिए चाहिए सरकार खूब",
+    "hinglish": "paanch baje ke liye chahiye sarkar khoob",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 27.66,
+    "end": 41.86,
+    "text": "तो मेरे को प्री वेडिंग फोटोशूट कराना था तो सर उसका कैसा क्या रहता है मतलब मेरे जब प्री वेडिंग फोटोशूट उससे पहले होगा आपको तो कब फोटोशूट करने का देखेगा",
+    "hinglish": "to mere ko pri wedding photoshoot karana tha to sir uska kaisa kya rahta hai matlab mere jab pri wedding photoshoot usse pahle hoga aapko to kab photoshoot karne ka dekhega",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S3",
+    "start": 30.57,
+    "end": 34.55,
+    "text": "सबका इलाज है मैम आप कब तक कर आए हैं आपके साथ",
+    "hinglish": "sabka ilaj hai ma'am aap kab tak kar aae hain aapke saath",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 42.39,
+    "end": 49.52,
+    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खाना वाना समोसा मोटा ये सब",
+    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khana wana samosa mota ye sab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 50.06,
+    "end": 57.6,
+    "text": "कब से आपको दिक्कत आ रहा है पैर का आपके पैर में सूजन है क्या क्या दिक्कत है पैर में आपको खा भी आ रहा है",
+    "hinglish": "kab se aapko dikkat aa raha hai pair ka aapke pair mein sujan hai kya kya dikkat hai pair mein aapko kha bhi aa raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 58.23,
+    "end": 65.03,
+    "text": "तो प्री वेडिंग शूट गया फोटोशूट कम से कम अच्छी लोकेशन पर चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको हाँ जी",
+    "hinglish": "to pri wedding shoot gaya photoshoot kam se kam achhi location par chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko haan ji",
+    "audio": "separated"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.35,
+    "end": 1.45,
+    "text": "नमस्कार सर",
+    "hinglish": "namaskar sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.9,
+    "end": 3.6,
+    "text": "नमस्ते मैम",
+    "hinglish": "namaste ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.05,
+    "end": 10.85,
+    "text": "बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+    "hinglish": "bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.35,
+    "end": 15.45,
+    "text": "हेलो हेलो सर नमस्कार मैं अजीत बोल रहा था जी मेरे गिरफ़ात",
+    "hinglish": "hello hello sir namaskar main ajit bol raha tha ji mere girfat",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.45,
+    "end": 17.0,
+    "text": "लखनऊ में",
+    "hinglish": "lakhnau mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.0,
+    "end": 18.95,
+    "text": "कर",
+    "hinglish": "kar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.05,
+    "end": 23.2,
+    "text": "बोला लखनऊ बिरयानी चाहिए",
+    "hinglish": "bola lakhnau biryani chahiye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.2,
+    "end": 25.65,
+    "text": "जी सर ये मेरे यहाँ दफूर की शादी है",
+    "hinglish": "ji sir ye mere yahan daphur ki shadi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.25,
+    "end": 28.15,
+    "text": "पाँच जगह तो ये चाहिए",
+    "hinglish": "paanch jagah to ye chahiye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 28.15,
+    "end": 42.35,
+    "text": "मेरे को प्री वेडिंग फोटोशूट कराना कैसा क्या रहता है मतलब मेरी जो प्री वेडिंग फोटोशूट उससे पहले होगा आप कब टाइम है मतलब फोटोशूट करने के लिए दूसरी देखें आप",
+    "hinglish": "mere ko pri wedding photoshoot karana kaisa kya rahta hai matlab meri jo pri wedding photoshoot usse pahle hoga aap kab time hai matlab photoshoot karne ke liye dusri dekhen aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 42.35,
+    "end": 49.65,
+    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खाना वना समोसा वोसा ये सब",
+    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khana wana samosa wosa ye sab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.0,
+    "end": 54.15,
+    "text": "कब से आपको दिक्कत आ रहा है पैर आपके पैर में सूजन है",
+    "hinglish": "kab se aapko dikkat aa raha hai pair aapke pair mein sujan hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.45,
+    "end": 57.85,
+    "text": "क्या क्या दिक्कत है पैर में आपको खा भी है",
+    "hinglish": "kya kya dikkat hai pair mein aapko kha bhi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.85,
+    "end": 65.05,
+    "text": "तो प्री वेडिंग छूट देखो तो छूट कम से कम अच्छी लोकेशन पे चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको हाँ",
+    "hinglish": "to pri wedding chhoot dekho to chhoot kam se kam achhi location pe chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko haan",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.35,
+    "end": 1.45,
+    "text": "नमस्कार सर",
+    "hinglish": "namaskar sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.9,
+    "end": 3.6,
+    "text": "नमस्ते मैम",
+    "hinglish": "namaste ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.05,
+    "end": 10.85,
+    "text": "बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+    "hinglish": "bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.35,
+    "end": 15.45,
+    "text": "हेलो हेलो सर नमस्कार मैं अजीत बोल रहा था जी मेरे गिरफ़ात",
+    "hinglish": "hello hello sir namaskar main ajit bol raha tha ji mere girfat",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.45,
+    "end": 17.0,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.0,
+    "end": 18.95,
+    "text": "कर",
+    "hinglish": "kar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.05,
+    "end": 23.2,
+    "text": "बोला लखनऊ बिरयानी चाहिए",
+    "hinglish": "bola lakhnau biryani chahiye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.2,
+    "end": 25.65,
+    "text": "जी सर ये मेरे यहाँ दफूर की शादी है",
+    "hinglish": "ji sir ye mere yahan daphur ki shadi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.25,
+    "end": 28.15,
+    "text": "पाँच जगह के लिए चाहिए सबका",
+    "hinglish": "paanch jagah ke liye chahiye sabka",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 28.15,
+    "end": 42.35,
+    "text": "मेरे को प्री वेडिंग फोटोशूट कराना था तो सर उसका कैसा क्या रहता है मतलब मेरे जब प्री वेडिंग फोटोशूट उससे पहले होगा आप तो कब टाइम है मतलब फोटोशूट करने के लिए",
+    "hinglish": "mere ko pri wedding photoshoot karana tha to sir uska kaisa kya rahta hai matlab mere jab pri wedding photoshoot usse pahle hoga aap to kab time hai matlab photoshoot karne ke liye",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 42.35,
+    "end": 49.65,
+    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खाना वना समोसा वोसा ये सब",
+    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khana wana samosa wosa ye sab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.0,
+    "end": 54.15,
+    "text": "कब से आपको दिक्कत आ रहा है पैर आपके पैर में सूजन है",
+    "hinglish": "kab se aapko dikkat aa raha hai pair aapke pair mein sujan hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.45,
+    "end": 57.85,
+    "text": "क्या क्या दिक्कत है पैर में आपको खा भी है",
+    "hinglish": "kya kya dikkat hai pair mein aapko kha bhi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.85,
+    "end": 65.05,
+    "text": "तो प्री वेडिंग छूट देखो तो छूट कम से कम अच्छी लोकेशन पे चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको हाँ",
+    "hinglish": "to pri wedding chhoot dekho to chhoot kam se kam achhi location pe chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko haan",
+    "audio": "separated"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.35,
+    "end": 1.45,
+    "text": "नमस्कार सर",
+    "hinglish": "namaskar sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.9,
+    "end": 3.6,
+    "text": "नमस्ते मैम",
+    "hinglish": "namaste ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.05,
+    "end": 10.85,
+    "text": "बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+    "hinglish": "bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.35,
+    "end": 15.45,
+    "text": "हेलो हेलो सर नमस्कार मैं अजीत बोल रहा था जी मेरे गिरफ़ात",
+    "hinglish": "hello hello sir namaskar main ajit bol raha tha ji mere girfat",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.45,
+    "end": 18.95,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 15.64,
+    "end": 16.3,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.05,
+    "end": 23.2,
+    "text": "बोला लखनऊ बिरयानी चाहिए",
+    "hinglish": "bola lakhnau biryani chahiye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.2,
+    "end": 25.65,
+    "text": "जी सर ये मेरे यहाँ दफूर की शादी है",
+    "hinglish": "ji sir ye mere yahan daphur ki shadi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 23.55,
+    "end": 23.64,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.25,
+    "end": 28.9,
+    "text": "पाँच जगह तो ये चाहिए सब",
+    "hinglish": "paanch jagah to ye chahiye sab",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.64,
+    "end": 28.57,
+    "text": "तो मेरे को",
+    "hinglish": "to mere ko",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 28.9,
+    "end": 30.35,
+    "text": "प्ीवेटिंग फोटोक",
+    "hinglish": "pveting photok",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.35,
+    "end": 31.15,
+    "text": "दर्क",
+    "hinglish": "dark",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 31.15,
+    "end": 31.85,
+    "text": "उसका क्या था",
+    "hinglish": "uska kya tha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.85,
+    "end": 33.4,
+    "text": "आप कब",
+    "hinglish": "aap kab",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 33.4,
+    "end": 38.6,
+    "text": "मतलब मेरे जब प्री वेडिंग फोटोशूट उससे पहले होगा आप तो सब टाइम है",
+    "hinglish": "matlab mere jab pri wedding photoshoot usse pahle hoga aap to sab time hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.6,
+    "end": 39.4,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 39.4,
+    "end": 41.6,
+    "text": "सब कुछ करने के लिए आपकी बेटा",
+    "hinglish": "sab kuch karne ke liye aapki beta",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 40.01,
+    "end": 40.46,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.6,
+    "end": 49.65,
+    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा उमोसा ये सब",
+    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa umosa ye sab",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 41.68,
+    "end": 42.05,
+    "text": "हादसा",
+    "hinglish": "hadsa",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.0,
+    "end": 54.15,
+    "text": "कब से आपको दिक्कत आ रहा है पैर आपके पैर में सूजन है",
+    "hinglish": "kab se aapko dikkat aa raha hai pair aapke pair mein sujan hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.45,
+    "end": 57.85,
+    "text": "क्या क्या दिक्कत है पैर में आपको खा भी है",
+    "hinglish": "kya kya dikkat hai pair mein aapko kha bhi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.85,
+    "end": 65.05,
+    "text": "तो प्री वेडिंग छूट देखो तो छूट कम से कम अच्छी लोकेशन पे चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको हाँ",
+    "hinglish": "to pri wedding chhoot dekho to chhoot kam se kam achhi location pe chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.73,
+    "end": 64.97,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.35,
+    "end": 1.42,
+    "text": "नमस्कार सर",
+    "hinglish": "namaskar sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.94,
+    "end": 3.56,
+    "text": "नमस्ते मैम",
+    "hinglish": "namaste ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.06,
+    "end": 10.85,
+    "text": "बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+    "hinglish": "bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.4,
+    "end": 16.3,
+    "text": "हेलो हेलो सर नमस्कार मैं अजीत चोरी से बोल रहा था जी मेरे ग्राम बात फोटोग्राफर चोरी",
+    "hinglish": "hello hello sir namaskar main ajit chori se bol raha tha ji mere graam baat photographer chori",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.62,
+    "end": 18.91,
+    "text": "मेरी डाक लखनऊ में है",
+    "hinglish": "meri daak lakhnau mein hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.08,
+    "end": 23.15,
+    "text": "बोला लखनऊ बिरयानी क्योंकि हमें चाहिए थी",
+    "hinglish": "bola lakhnau biryani kyonki hamen chahiye thi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.15,
+    "end": 25.65,
+    "text": "जी सर ये मेरे यहाँ दफूर की शादी है",
+    "hinglish": "ji sir ye mere yahan daphur ki shadi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 23.57,
+    "end": 23.61,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.25,
+    "end": 28.57,
+    "text": "पाँच जगह के लिए चाहिए सरकार खोल",
+    "hinglish": "paanch jagah ke liye chahiye sarkar khol",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.66,
+    "end": 42.0,
+    "text": "तो मेरे को प्री वेडिंग फोटोशूट कराना था तो सर उसका कैसा क्या रहता है मतलब मेरी जब प्री वेडिंग फोटोशूट उससे पहले होगा आपको तो कब टाइम है मतलब फोटोशूट करने के लिए आप चूस भी देते",
+    "hinglish": "to mere ko pri wedding photoshoot karana tha to sir uska kaisa kya rahta hai matlab meri jab pri wedding photoshoot usse pahle hoga aapko to kab time hai matlab photoshoot karne ke liye aap choos bhi dete",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.54,
+    "end": 34.61,
+    "text": "सबका इलाज है मैम आप कब तक कर आ रहे हैं आपके साथ",
+    "hinglish": "sabka ilaj hai ma'am aap kab tak kar aa rahe hain aapke saath",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.07,
+    "end": 39.42,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 40.01,
+    "end": 40.46,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.68,
+    "end": 49.58,
+    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा उमोसा ये सब",
+    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa umosa ye sab",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.03,
+    "end": 54.12,
+    "text": "कब से आपको दिक्कत आ रहा है आपके पैर में सूजन है",
+    "hinglish": "kab se aapko dikkat aa raha hai aapke pair mein sujan hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.49,
+    "end": 58.06,
+    "text": "क्या क्या दिक्कत है पैर में आप खा भी है",
+    "hinglish": "kya kya dikkat hai pair mein aap kha bhi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 58.16,
+    "end": 64.97,
+    "text": "तो प्री वेडिंग सूट देखो तो शूट कम से कम अच्छी लोकेशन पे चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको हाँ",
+    "hinglish": "to pri wedding suit dekho to shoot kam se kam achhi location pe chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.7,
+    "end": 65.02,
+    "text": "धन्यवाद",
+    "hinglish": "dhanyavad",
+    "audio": "separated"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.35,
+    "end": 1.6,
+    "text": "नमस्कार सर",
+    "hinglish": "namaskar sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.9,
+    "end": 3.45,
+    "text": "नम",
+    "hinglish": "nam",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.1,
+    "end": 5.15,
+    "text": "बताइए क्या शिक्षा",
+    "hinglish": "bataie kya shiksha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 5.6,
+    "end": 6.0,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.55,
+    "end": 6.9,
+    "text": "मैं",
+    "hinglish": "main",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 7.0,
+    "end": 7.5,
+    "text": "ना",
+    "hinglish": "na",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 8.25,
+    "end": 8.6,
+    "text": "सच",
+    "hinglish": "sach",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 9.1,
+    "end": 10.85,
+    "text": "मैम आपकी बात साफ नहीं आ रही है",
+    "hinglish": "ma'am aapki baat saaph nahi aa rahi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.4,
+    "end": 15.55,
+    "text": "हेलो हेलो सर नमस्कार मैं अजीत बोल रहा था जी मेरे गिरफ़ात",
+    "hinglish": "hello hello sir namaskar main ajit bol raha tha ji mere girfat",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 15.95,
+    "end": 16.25,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.5,
+    "end": 16.9,
+    "text": "नव",
+    "hinglish": "nav",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 16.8,
+    "end": 17.35,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.95,
+    "end": 18.7,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.2,
+    "end": 23.0,
+    "text": "बोल रहा है नवी स्टाइल बिरयानी नहीं थी हमें चाहिए थी",
+    "hinglish": "bol raha hai navi style biryani nahi thi hamen chahiye thi",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.35,
+    "end": 23.85,
+    "text": "सही है",
+    "hinglish": "sahi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.85,
+    "end": 25.65,
+    "text": "मेरे यहाँ दर्शन की शादी है",
+    "hinglish": "mere yahan darshan ki shadi hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 26.2,
+    "end": 26.5,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.5,
+    "end": 27.7,
+    "text": "पाँच बजे से लिए चाहिए",
+    "hinglish": "paanch baje se liye chahiye",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.6,
+    "end": 28.35,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 28.45,
+    "end": 30.9,
+    "text": "तो प्री वेडिंग फोटो क्लिक कराना बहुत",
+    "hinglish": "to pri wedding photo click karana bahut",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 29.35,
+    "end": 29.95,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.45,
+    "end": 30.8,
+    "text": "सब",
+    "hinglish": "sab",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.85,
+    "end": 31.65,
+    "text": "सबका इलाज में",
+    "hinglish": "sabka ilaj mein",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 31.6,
+    "end": 33.0,
+    "text": "कैसा क्या रहता है आप",
+    "hinglish": "kaisa kya rahta hai aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 33.75,
+    "end": 36.3,
+    "text": "मैरिज और प्री वेडिंग फोटोशूट उससे पहले होगा",
+    "hinglish": "marriage aur pri wedding photoshoot usse pahle hoga",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 36.2,
+    "end": 36.7,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.5,
+    "end": 38.45,
+    "text": "आप",
+    "hinglish": "aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.6,
+    "end": 39.2,
+    "text": "मतलब",
+    "hinglish": "matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 39.3,
+    "end": 40.05,
+    "text": "बहुत सब ठीक करने",
+    "hinglish": "bahut sab theek karne",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.15,
+    "end": 41.0,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 40.9,
+    "end": 41.25,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 41.1,
+    "end": 41.65,
+    "text": "बेटा",
+    "hinglish": "beta",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 41.5,
+    "end": 41.95,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.15,
+    "end": 43.25,
+    "text": "हाँ और",
+    "hinglish": "haan aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 43.25,
+    "end": 46.3,
+    "text": "कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन",
+    "hinglish": "kuch mitha mein bhi chahiye tha jaise gulab jamun",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 46.3,
+    "end": 47.0,
+    "text": "परस",
+    "hinglish": "paras",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 47.0,
+    "end": 48.5,
+    "text": "क्या होना",
+    "hinglish": "kya hona",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.5,
+    "end": 50.0,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.0,
+    "end": 50.7,
+    "text": "कब पे आप",
+    "hinglish": "kab pe aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.75,
+    "end": 52.05,
+    "text": "दिक्कत आ रहा है पाए",
+    "hinglish": "dikkat aa raha hai pae",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 52.0,
+    "end": 52.35,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.5,
+    "end": 54.1,
+    "text": "आपके पैर में तूजन है",
+    "hinglish": "aapke pair mein tujan hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.5,
+    "end": 54.85,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 54.9,
+    "end": 55.35,
+    "text": "दिक्कत है",
+    "hinglish": "dikkat hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.4,
+    "end": 55.95,
+    "text": "पर्यर में",
+    "hinglish": "paryar mein",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 56.0,
+    "end": 57.2,
+    "text": "आप खा भी आ रहा है",
+    "hinglish": "aap kha bhi aa raha hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 57.2,
+    "end": 58.25,
+    "text": "है",
+    "hinglish": "hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 58.45,
+    "end": 63.45,
+    "text": "प्री वेडिंग छूप कम तो कम अच्छी लोकेशन पे चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग",
+    "hinglish": "pri wedding chhoop kam to kam achhi location pe chahiye to kam se kam do se teen din to pri wedding",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 64.55,
+    "end": 65.0,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.35,
+    "end": 1.6,
+    "text": "नमस्कार सर",
+    "hinglish": "namaskar sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 1.9,
+    "end": 3.45,
+    "text": "नम",
+    "hinglish": "nam",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 4.1,
+    "end": 5.15,
+    "text": "बताइए क्या शिक्षा",
+    "hinglish": "bataie kya shiksha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 5.6,
+    "end": 6.0,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 7.0,
+    "end": 7.5,
+    "text": "ना",
+    "hinglish": "na",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.25,
+    "end": 8.6,
+    "text": "सच",
+    "hinglish": "sach",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 9.1,
+    "end": 10.85,
+    "text": "मैम आपकी बात साफ नहीं आ रही है",
+    "hinglish": "ma'am aapki baat saaph nahi aa rahi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 11.4,
+    "end": 15.55,
+    "text": "हेलो हेलो सर नमस्कार मैं अजीत बोल रहा था जी मेरे गिरफ़ात",
+    "hinglish": "hello hello sir namaskar main ajit bol raha tha ji mere girfat",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 15.95,
+    "end": 16.25,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.5,
+    "end": 16.9,
+    "text": "नव",
+    "hinglish": "nav",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 16.8,
+    "end": 17.35,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 17.95,
+    "end": 18.7,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 19.2,
+    "end": 20.3,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.3,
+    "end": 23.0,
+    "text": "नई सारी बिगड़ी थी हमें चाहिए थी",
+    "hinglish": "nai sari bigdi thi hamen chahiye thi",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 23.35,
+    "end": 23.85,
+    "text": "सही है",
+    "hinglish": "sahi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 23.85,
+    "end": 25.65,
+    "text": "मेरे यहाँ दर्शन की शादी है",
+    "hinglish": "mere yahan darshan ki shadi hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 26.2,
+    "end": 26.5,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.5,
+    "end": 27.7,
+    "text": "पाँच बजे से लिए चाहिए",
+    "hinglish": "paanch baje se liye chahiye",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 27.6,
+    "end": 28.35,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 28.45,
+    "end": 30.9,
+    "text": "तो प्री वेडिंग फोटो क्लिक कराना बहुत",
+    "hinglish": "to pri wedding photo click karana bahut",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 29.35,
+    "end": 29.95,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.45,
+    "end": 30.8,
+    "text": "सब",
+    "hinglish": "sab",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.85,
+    "end": 31.65,
+    "text": "सबका इलाज में",
+    "hinglish": "sabka ilaj mein",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 31.6,
+    "end": 33.0,
+    "text": "कैसा क्या रहता है आप",
+    "hinglish": "kaisa kya rahta hai aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 33.75,
+    "end": 36.25,
+    "text": "मैरिज और प्री वेडिंग फोटोशूट उससे पहले होगा",
+    "hinglish": "marriage aur pri wedding photoshoot usse pahle hoga",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 36.65,
+    "end": 38.45,
+    "text": "आप तो सब टाइम है",
+    "hinglish": "aap to sab time hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 38.6,
+    "end": 39.2,
+    "text": "मतलब",
+    "hinglish": "matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 39.3,
+    "end": 40.05,
+    "text": "बहुत सब ठीक करने",
+    "hinglish": "bahut sab theek karne",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 40.15,
+    "end": 40.95,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 41.15,
+    "end": 41.5,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 41.6,
+    "end": 41.95,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 42.15,
+    "end": 46.3,
+    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन",
+    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 46.3,
+    "end": 47.0,
+    "text": "परस",
+    "hinglish": "paras",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 47.0,
+    "end": 47.75,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 47.75,
+    "end": 50.0,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 50.0,
+    "end": 50.7,
+    "text": "कब पे आप",
+    "hinglish": "kab pe aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 50.75,
+    "end": 52.05,
+    "text": "दिक्कत आ रहा है पाए",
+    "hinglish": "dikkat aa raha hai pae",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 52.0,
+    "end": 52.35,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 52.5,
+    "end": 54.1,
+    "text": "आपके पैर में तूजन है",
+    "hinglish": "aapke pair mein tujan hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.5,
+    "end": 54.85,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.9,
+    "end": 55.35,
+    "text": "दिक्कत है",
+    "hinglish": "dikkat hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 55.4,
+    "end": 55.95,
+    "text": "पर्यर में",
+    "hinglish": "paryar mein",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.0,
+    "end": 57.2,
+    "text": "आप खा भी आ रहा है",
+    "hinglish": "aap kha bhi aa raha hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.2,
+    "end": 58.25,
+    "text": "है",
+    "hinglish": "hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 58.45,
+    "end": 63.45,
+    "text": "प्री वेडिंग छूप कम तो कम अच्छी लोकेशन पे चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग",
+    "hinglish": "pri wedding chhoop kam to kam achhi location pe chahiye to kam se kam do se teen din to pri wedding",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 64.55,
+    "end": 65.0,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   }
+  ]
+ }
+}

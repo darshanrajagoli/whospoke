@@ -1,0 +1,63 @@
+1
+00:00:00,400 --> 00:00:01,900
+Speaker_A: masti sir
+
+2
+00:00:02,400 --> 00:00:05,500
+Speaker_B: bol rahe the ki aap aap
+
+3
+00:00:05,950 --> 00:00:06,300
+Speaker_B: achha
+
+4
+00:00:06,600 --> 00:00:20,400
+Speaker_B: babu mashankar intar college ke to B e ka paper dene ke liye taiyar hai
+
+5
+00:00:21,100 --> 00:00:26,750
+Speaker_B: to apne
+
+6
+00:00:26,850 --> 00:00:31,750
+Speaker_A: sir mere koi galti hui mere haath se wo mera aai D card gum ho gaya hai sir
+
+7
+00:00:31,750 --> 00:00:33,200
+Speaker_B: haan aur baki sun
+
+8
+00:00:33,200 --> 00:00:40,200
+Speaker_A: haan chalo exam paas aa rahe hain to aai D card chahiye aadhar card ki photo kapi aur kya kya lana hai sir ek khud ka photo ek aadhar card ki aur
+
+9
+00:00:40,600 --> 00:00:44,300
+Speaker_B: apne camera si si ti V camera check karva lijie
+
+10
+00:00:44,900 --> 00:00:47,350
+Speaker_B: haan paisa bhi thoda
+
+11
+00:00:48,300 --> 00:00:49,750
+Speaker_A: theek hai ghar aani padegi
+
+12
+00:00:49,900 --> 00:00:51,000
+Speaker_B: bahut
+
+13
+00:00:51,000 --> 00:00:53,650
+Speaker_A: to ab kab tak kitne baje tak office khula hai sir apna
+
+14
+00:00:53,750 --> 00:00:57,750
+Speaker_A: aaiti ka do saman lo to hamen sabse pahle kiske paas jana padega
+
+15
+00:00:57,750 --> 00:00:59,150
+Speaker_B: dokument batao
+
+16
+00:00:59,450 --> 00:01:01,950
+Speaker_A: achha uske baad achha eplikeshan bhi likhni padegi

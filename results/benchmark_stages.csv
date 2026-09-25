@@ -1,0 +1,73 @@
+pipeline,conversation,stage,audio_s,seconds,gpu_peak_mb,rtf
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_clean,separation,62.065,1.306,3585.5,0.021042455490211876
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_clean,diarization,62.065,4.323,4259.5,0.06965278337227102
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_clean,asr,62.065,6.312,4295.5,0.10169983082252478
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_clean,total,62.065,11.946,4295.5,0.192475630387497
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_village10,separation,78.507,1.623,4295.5,0.020673315755282966
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_village10,diarization,78.507,0.792,4295.5,0.01008827238335435
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_village10,asr,78.507,6.139,4329.5,0.07819684868865197
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_village10,total,78.507,8.558,4329.5,0.10900938769791228
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_market5,separation,67.026,1.396,4329.5,0.02082773848954137
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_market5,diarization,67.026,0.882,4329.5,0.013159072598693046
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_market5,asr,67.026,6.199,4329.5,0.09248649777698206
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-none_market5,total,67.026,8.509,4329.5,0.12695073553546385
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_clean,separation,74.065,1.692,4329.5,0.022844798487814757
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_clean,diarization,74.065,0.782,4331.5,0.010558293390940391
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_clean,asr,74.065,5.294,4331.5,0.07147775602511307
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_clean,total,74.065,7.789,4331.5,0.10516438263687301
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_village10,separation,71.14,1.483,4331.5,0.02084621872364352
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_village10,diarization,71.14,0.628,4331.5,0.008827663761596851
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_village10,asr,71.14,3.843,4333.5,0.05402024177677818
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_village10,total,71.14,5.963,4333.5,0.08382063536688221
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_market5,separation,64.185,1.296,4333.5,0.020191633559242812
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_market5,diarization,64.185,0.624,4333.5,0.009721897639635428
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_market5,asr,64.185,4.737,4333.5,0.07380229025473241
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-low_market5,total,64.185,6.663,4333.5,0.10380930123860715
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_clean,separation,70.59,1.419,4333.5,0.020101997450063747
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_clean,diarization,70.59,0.616,4333.5,0.00872644850545403
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_clean,asr,70.59,3.943,4365.5,0.055857770222411104
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_clean,total,70.59,5.982,4365.5,0.0847428814279643
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_village10,separation,61.995,1.308,4365.5,0.021098475683522865
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_village10,diarization,61.995,0.634,4365.5,0.010226631179933866
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_village10,asr,61.995,5.015,4365.5,0.08089362045326236
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_village10,total,61.995,6.967,4365.5,0.11238003064763287
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_market5,separation,78.168,1.584,4365.5,0.02026404666871354
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_market5,diarization,78.168,0.693,4365.5,0.008865520417562172
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_market5,asr,78.168,5.571,4367.5,0.07126957322689591
+Order A (separate → diarize → ASR),test_g00_2spk_ovl-high_market5,total,78.168,7.853,4367.5,0.10046310510694913
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_clean,separation,62.065,0.0,4367.5,0.0
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_clean,diarization,62.065,0.506,4367.5,0.008152743091919762
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_clean,asr,62.065,3.203,4367.5,0.05160718601466205
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_clean,total,62.065,3.713,4367.5,0.05982437766857327
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_village10,separation,78.507,0.118,4367.5,0.001503050683378552
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_village10,diarization,78.507,0.752,4367.5,0.009578763677124333
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_village10,asr,78.507,3.417,4419.5,0.04352478122969926
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_village10,total,78.507,4.301,4419.5,0.05478492363738265
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_market5,separation,67.026,0.0,4419.5,0.0
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_market5,diarization,67.026,0.56,4419.5,0.008354966729328919
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_market5,asr,67.026,3.513,4419.5,0.05241249664309373
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-none_market5,total,67.026,4.087,4419.5,0.060976337540655866
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_clean,separation,74.065,0.947,4419.5,0.012786066293120906
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_clean,diarization,74.065,0.787,4419.5,0.010625801660703437
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_clean,asr,74.065,4.742,4419.5,0.0640248430432728
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_clean,total,74.065,6.497,4419.5,0.08772024573010194
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_village10,separation,71.14,0.0,4419.5,0.0
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_village10,diarization,71.14,0.663,4419.5,0.009319651391622153
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_village10,asr,71.14,3.947,4419.5,0.055482147877424795
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_village10,total,71.14,4.621,4419.5,0.0649564239527692
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_market5,separation,64.185,0.249,4419.5,0.003879411077354522
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_market5,diarization,64.185,0.54,4419.5,0.008413180649684505
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_market5,asr,64.185,2.42,4419.5,0.03770351328191945
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-low_market5,total,64.185,3.218,4419.5,0.05013632468645322
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_clean,separation,70.59,0.684,4419.5,0.009689757756056098
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_clean,diarization,70.59,0.61,4419.5,0.008641450630400905
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_clean,asr,70.59,3.193,4419.5,0.045233035840770645
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_clean,total,70.59,4.499,4419.5,0.06373423997733389
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_village10,separation,61.995,0.546,4419.5,0.008807161867892573
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_village10,diarization,61.995,0.531,4419.5,0.008565206871521897
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_village10,asr,61.995,2.647,4419.5,0.04269699169287846
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_village10,total,61.995,3.731,4419.5,0.06018227276393258
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_market5,separation,78.168,0.757,4419.5,0.009684269777914235
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_market5,diarization,78.168,0.72,4419.5,0.0092109303039607
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_market5,asr,78.168,3.057,4479.5,0.03910807491556647
+Order B (diarize → separate overlaps → ASR),test_g00_2spk_ovl-high_market5,total,78.168,4.549,4479.5,0.05819516937877392

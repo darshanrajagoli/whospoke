@@ -1,0 +1,50 @@
+{
+ "A-gmm": {
+  "clustering": "gmm",
+  "cluster_kwargs": {
+   "pca_dims": 8
+  },
+  "merge_sim": 0.6,
+  "min_cluster_frac": 0.06,
+  "overlap_aware": true,
+  "dev_der": 0.2616,
+  "dev_spk_count_err": 1.278,
+  "dev_der_without_cleanup": 0.3075
+ },
+ "A-spectral": {
+  "clustering": "spectral",
+  "cluster_kwargs": {
+   "p_percentile": 0.1
+  },
+  "merge_sim": 0.6,
+  "min_cluster_frac": 0.03,
+  "overlap_aware": true,
+  "dev_der": 0.2403,
+  "dev_spk_count_err": 1.25,
+  "dev_der_without_cleanup": 0.247
+ },
+ "B-gmm": {
+  "clustering": "gmm",
+  "cluster_kwargs": {
+   "pca_dims": 4
+  },
+  "merge_sim": 0.5,
+  "min_cluster_frac": 0.0,
+  "overlap_aware": true,
+  "dev_der": 0.1844,
+  "dev_spk_count_err": 0.833,
+  "dev_der_without_cleanup": 0.2771
+ },
+ "B-spectral": {
+  "clustering": "spectral",
+  "cluster_kwargs": {
+   "p_percentile": 0.2
+  },
+  "merge_sim": 0.6,
+  "min_cluster_frac": 0.06,
+  "overlap_aware": false,
+  "dev_der": 0.1628,
+  "dev_spk_count_err": 0.833,
+  "dev_der_without_cleanup": 0.173
+ }
+}

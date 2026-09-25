@@ -1,0 +1,1934 @@
+{
+ "reference": [
+  {
+   "speaker": "S1",
+   "start": 0.721,
+   "end": 1.7,
+   "text": "प्रणाम दीदी"
+  },
+  {
+   "speaker": "S1",
+   "start": 2.038,
+   "end": 3.868,
+   "text": "और सब तो ठीक है अपना बताइए"
+  },
+  {
+   "speaker": "S2",
+   "start": 4.067,
+   "end": 10.781,
+   "text": "हाँ मैम प्रणाम प्रणाम मैम यह दो"
+  },
+  {
+   "speaker": "S1",
+   "start": 11.073,
+   "end": 11.81,
+   "text": "का चाहिएगा"
+  },
+  {
+   "speaker": "S2",
+   "start": 12.047,
+   "end": 13.427,
+   "text": "दो रूम चाहिए था"
+  },
+  {
+   "speaker": "S2",
+   "start": 13.755,
+   "end": 20.135,
+   "text": "वह ट्रस्ट तो कंप्यूटर का है है हमारा"
+  },
+  {
+   "speaker": "S2",
+   "start": 20.287,
+   "end": 22.627,
+   "text": "यह"
+  },
+  {
+   "speaker": "S1",
+   "start": 22.999,
+   "end": 24.118,
+   "text": "साड़ी लेना है"
+  },
+  {
+   "speaker": "S2",
+   "start": 24.751,
+   "end": 30.891,
+   "text": "अरे हमको मतलब कि रिंग रोड पर शहर में चाहिए हमको शहर में"
+  },
+  {
+   "speaker": "S2",
+   "start": 31.035,
+   "end": 32.615,
+   "text": "हाँ हाँ मेन रोड चल जाएगा"
+  },
+  {
+   "speaker": "S1",
+   "start": 33.143,
+   "end": 34.663,
+   "text": "हाँ साड़ी चाहिएगा"
+  },
+  {
+   "speaker": "S2",
+   "start": 35.08,
+   "end": 37.4,
+   "text": "मेन रोड पर मेन रोड पर"
+  },
+  {
+   "speaker": "S2",
+   "start": 37.501,
+   "end": 42.841,
+   "text": "हाँ दो लोग रहेंगे हम लोग"
+  },
+  {
+   "speaker": "S1",
+   "start": 43.332,
+   "end": 44.562,
+   "text": "पूनम साड़ी"
+  },
+  {
+   "speaker": "S1",
+   "start": 44.683,
+   "end": 44.993,
+   "text": "और"
+  },
+  {
+   "speaker": "S2",
+   "start": 45.368,
+   "end": 49.828,
+   "text": "हाँ दो लोग रहेंगे और वह रूम में कंप्यूटर"
+  },
+  {
+   "speaker": "S2",
+   "start": 50.097,
+   "end": 52.437,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S2",
+   "start": 52.709,
+   "end": 57.689,
+   "text": "नहीं नहीं यही पास में बस नैनी में दिला दीजिए अगर हो तो बताओ फिर"
+  },
+  {
+   "speaker": "S1",
+   "start": 58.084,
+   "end": 59.193,
+   "text": "हाँ हाँ"
+  },
+  {
+   "speaker": "S2",
+   "start": 59.89,
+   "end": 72.39,
+   "text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम वाम काम है बस"
+  },
+  {
+   "speaker": "S2",
+   "start": 72.59,
+   "end": 75.71,
+   "text": "जैसा कहो कैश कर देंगे नहीं चेक कर देंगे जैसा कहोगे"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S1",
+    "start": 0.72,
+    "end": 3.87,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 4.07,
+    "end": 10.78,
+    "text": "मैं दो",
+    "hinglish": "main do",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 11.07,
+    "end": 11.81,
+    "text": "क्या चाहिएगा",
+    "hinglish": "kya chahiega",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 12.05,
+    "end": 22.63,
+    "text": "दो रूम चाहिए था टू कंप्यूटर का है हमारा",
+    "hinglish": "do room chahiye tha two computer ka hai hamara",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 23.0,
+    "end": 24.12,
+    "text": "साड़ी लेना है",
+    "hinglish": "sadi lena hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 24.75,
+    "end": 32.62,
+    "text": "अरे हमको मतलब कि लेंगे रोड पर शहर में चाहिए हमको शहर में हाँ ऑनलाइन चल जाएगा",
+    "hinglish": "are hamko matlab ki lenge road par shahar mein chahiye hamko shahar mein haan online chal jaega",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 33.14,
+    "end": 34.66,
+    "text": "हाँ साड़ी चाहिएगा",
+    "hinglish": "haan sadi chahiega",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 35.08,
+    "end": 42.84,
+    "text": "नहीं लो तो नहीं लो सर हूँ हूँ हाँ दो लोग रहेंगे हम लोग",
+    "hinglish": "nahi lo to nahi lo sir hoon hoon haan do log rahenge hum log",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 43.33,
+    "end": 44.99,
+    "text": "पूनम कर और",
+    "hinglish": "punam kar aur",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 45.37,
+    "end": 57.69,
+    "text": "हाँ आप दो लोग रहेंगे और कंप्यूटर काम से काम चलिए करेंगे हाँ हाँ नहीं यही पास में बस नैनी में दिला दीजिए अगर हो तो बताओ के",
+    "hinglish": "haan aap do log rahenge aur computer kaam se kaam chalie karenge haan haan nahi yahi paas mein bas naini mein dila dijie agar ho to batao ke",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 58.08,
+    "end": 59.19,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 59.89,
+    "end": 75.71,
+    "text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस जैसा कहोग कैप कर देंगे नहीं चेक कर देंगे जैसा कहोगे",
+    "hinglish": "haan bas do log do log rahenge aur computer hamara kaam kaam hai bas jaisa kahog cap kar denge nahi check kar denge jaisa kahoge",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S1",
+    "start": 0.72,
+    "end": 3.87,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 4.07,
+    "end": 10.78,
+    "text": "मैं दो",
+    "hinglish": "main do",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 11.07,
+    "end": 11.81,
+    "text": "हाँ चाहिएगा",
+    "hinglish": "haan chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 12.05,
+    "end": 22.63,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 23.0,
+    "end": 24.12,
+    "text": "साड़ी लेना है",
+    "hinglish": "sadi lena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 24.75,
+    "end": 32.62,
+    "text": "अरे हमको मतलब की लेंगे रोड पे शहर में चाहिए हमको शहर में हाँ ऑनलाइन चल जाएगा",
+    "hinglish": "are hamko matlab ki lenge road pe shahar mein chahiye hamko shahar mein haan online chal jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 33.14,
+    "end": 34.66,
+    "text": "हाँ साड़ी चाहिएगा",
+    "hinglish": "haan sadi chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 35.08,
+    "end": 42.84,
+    "text": "मेल होते मेल हम्म दो",
+    "hinglish": "mail hote mail hamm do",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 43.33,
+    "end": 44.99,
+    "text": "पूनम आ",
+    "hinglish": "punam aa",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 45.37,
+    "end": 57.69,
+    "text": "हाँ दो लोग रहेंगे और कंप्यूटर काम करेंगे हाँ नहीं यही पास में बस नैनी मिलती बिला भी अगर हो तो बताओ",
+    "hinglish": "haan do log rahenge aur computer kaam karenge haan nahi yahi paas mein bas naini milti bila bhi agar ho to batao",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 58.08,
+    "end": 59.19,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 59.89,
+    "end": 75.71,
+    "text": "हाँ बस दो लोग कंप्यूटर हमारा काम काम है बस जैसा कहू कैस कर देंगे नहीं चेक कर देंगे जैसा कहोगे",
+    "hinglish": "haan bas do log computer hamara kaam kaam hai bas jaisa kahu kais kar denge nahi check kar denge jaisa kahoge",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S1",
+    "start": 0.72,
+    "end": 3.87,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 4.07,
+    "end": 10.78,
+    "text": "मैं दो",
+    "hinglish": "main do",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 11.07,
+    "end": 11.81,
+    "text": "हाँ चाहिएगा",
+    "hinglish": "haan chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 12.05,
+    "end": 22.63,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 23.0,
+    "end": 24.12,
+    "text": "साड़ी लेना है",
+    "hinglish": "sadi lena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 24.75,
+    "end": 32.62,
+    "text": "अरे हमको मतलब की लेंगे रोड पे शहर में चाहिए हमको शहर में हाँ ऑनलाइन चल जाएगा",
+    "hinglish": "are hamko matlab ki lenge road pe shahar mein chahiye hamko shahar mein haan online chal jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 33.14,
+    "end": 34.66,
+    "text": "हाँ साड़ी चाहिएगा",
+    "hinglish": "haan sadi chahiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 35.08,
+    "end": 42.84,
+    "text": "हाँ दोनों",
+    "hinglish": "haan donon",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 43.33,
+    "end": 44.99,
+    "text": "पूनम आ",
+    "hinglish": "punam aa",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 45.37,
+    "end": 57.69,
+    "text": "हाँ दो लोग रहेंगे और काम करेंगे हाँ नहीं यही पास में बस नैनी मिलती गुलाओ",
+    "hinglish": "haan do log rahenge aur kaam karenge haan nahi yahi paas mein bas naini milti gulao",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 58.08,
+    "end": 59.19,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 59.89,
+    "end": 75.71,
+    "text": "हाँ बस दो लोग कंप्यूटर हमारा काम काम है बस जैसा कहू कैस कर देंगे नहीं चेक कर देंगे जैसा कहोगे",
+    "hinglish": "haan bas do log computer hamara kaam kaam hai bas jaisa kahu kais kar denge nahi check kar denge jaisa kahoge",
+    "audio": "mixture"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.7,
+    "end": 3.9,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.0,
+    "end": 7.5,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 7.7,
+    "end": 9.45,
+    "text": "नहीं दो",
+    "hinglish": "nahi do",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.0,
+    "end": 11.8,
+    "text": "हाँ चलिएगा",
+    "hinglish": "haan chaliega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.05,
+    "end": 13.35,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.0,
+    "end": 18.15,
+    "text": "है मारा",
+    "hinglish": "hai mara",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.3,
+    "end": 20.6,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.7,
+    "end": 21.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.85,
+    "end": 24.1,
+    "text": "साड़ी लेना है",
+    "hinglish": "sadi lena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.75,
+    "end": 29.7,
+    "text": "अरे हमको मतलब की लेंगे रोड में शहर में चाहिए हमको शहर में",
+    "hinglish": "are hamko matlab ki lenge road mein shahar mein chahiye hamko shahar mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.95,
+    "end": 32.5,
+    "text": "हाँ ना चल रहेगा",
+    "hinglish": "haan na chal rahega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.1,
+    "end": 36.3,
+    "text": "हाँ साड़ी चाहिएगा लू",
+    "hinglish": "haan sadi chahiega lu",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.55,
+    "end": 37.65,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.0,
+    "end": 40.9,
+    "text": "हम्म हम्म हम्म हाँ दो लोग रहे हैं हम लोग",
+    "hinglish": "hamm hamm hamm haan do log rahe hain hum log",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 43.25,
+    "end": 43.85,
+    "text": "पूर्ण",
+    "hinglish": "poorn",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 44.25,
+    "end": 45.05,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.35,
+    "end": 50.7,
+    "text": "हाँ दो लोग रहेंगे और काम करेंगे",
+    "hinglish": "haan do log rahenge aur kaam karenge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.5,
+    "end": 52.35,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.7,
+    "end": 55.05,
+    "text": "नहीं यही पास में बस",
+    "hinglish": "nahi yahi paas mein bas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.35,
+    "end": 57.7,
+    "text": "नहीं नहीं मजबाइ अगर हो तुमता हो",
+    "hinglish": "nahi nahi majbai agar ho tumta ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.05,
+    "end": 58.65,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.8,
+    "end": 59.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 61.85,
+    "end": 63.3,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.2,
+    "end": 68.15,
+    "text": "हाँ बस दो लोगों दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस",
+    "hinglish": "haan bas do logon do log rahenge aur computer hamara kaam kaam hai bas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 72.55,
+    "end": 75.65,
+    "text": "जैसा कहू कैस कर देंगे नहीं चेक कर देंगे जैसा कहोगे",
+    "hinglish": "jaisa kahu kais kar denge nahi check kar denge jaisa kahoge",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.7,
+    "end": 3.9,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.0,
+    "end": 7.5,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 7.7,
+    "end": 9.45,
+    "text": "नहीं दो",
+    "hinglish": "nahi do",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.0,
+    "end": 11.8,
+    "text": "हाँ चलिएगा",
+    "hinglish": "haan chaliega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.05,
+    "end": 13.35,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.0,
+    "end": 18.15,
+    "text": "है मारा",
+    "hinglish": "hai mara",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.3,
+    "end": 20.6,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.7,
+    "end": 21.5,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.85,
+    "end": 24.1,
+    "text": "साड़ी लेना है",
+    "hinglish": "sadi lena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.75,
+    "end": 29.7,
+    "text": "अरे हमको मतलब की लेंगे रोड में शहर में चाहिए हमको शहर में",
+    "hinglish": "are hamko matlab ki lenge road mein shahar mein chahiye hamko shahar mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.95,
+    "end": 32.5,
+    "text": "हाँ ना चल रहेगा",
+    "hinglish": "haan na chal rahega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.1,
+    "end": 36.3,
+    "text": "हाँ साड़ी चाहिएगा",
+    "hinglish": "haan sadi chahiega",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.55,
+    "end": 37.65,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.0,
+    "end": 40.9,
+    "text": "हम्म हम्म हम्म हाँ दो लोग रहेंगे हम लोग",
+    "hinglish": "hamm hamm hamm haan do log rahenge hum log",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 43.25,
+    "end": 43.85,
+    "text": "पूर्ण",
+    "hinglish": "poorn",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 44.25,
+    "end": 45.05,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.35,
+    "end": 50.7,
+    "text": "हाँ दो लोग रहेंगे और काम करेंगे",
+    "hinglish": "haan do log rahenge aur kaam karenge",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.5,
+    "end": 52.35,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.7,
+    "end": 55.05,
+    "text": "नहीं यही पास में बस",
+    "hinglish": "nahi yahi paas mein bas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.35,
+    "end": 57.7,
+    "text": "नहीं नहीं मजबाइ अगर हो तुमता हो",
+    "hinglish": "nahi nahi majbai agar ho tumta ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.05,
+    "end": 58.65,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.8,
+    "end": 59.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 61.85,
+    "end": 63.3,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.2,
+    "end": 68.15,
+    "text": "हाँ बस दो लोगों दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस",
+    "hinglish": "haan bas do logon do log rahenge aur computer hamara kaam kaam hai bas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 72.55,
+    "end": 75.65,
+    "text": "जैसा कहू कैस कर देंगे नहीं चेक कर देंगे जैसा कहोगे",
+    "hinglish": "jaisa kahu kais kar denge nahi check kar denge jaisa kahoge",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.7,
+    "end": 3.9,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.0,
+    "end": 7.5,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 7.7,
+    "end": 9.45,
+    "text": "नहीं दो",
+    "hinglish": "nahi do",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.0,
+    "end": 11.8,
+    "text": "हाँ चलिएगा",
+    "hinglish": "haan chaliega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.05,
+    "end": 13.35,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.0,
+    "end": 18.15,
+    "text": "है मारा",
+    "hinglish": "hai mara",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 20.3,
+    "end": 20.6,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 20.7,
+    "end": 21.5,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.82,
+    "end": 21.09,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.85,
+    "end": 24.1,
+    "text": "साड़ी लेना है",
+    "hinglish": "sadi lena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.75,
+    "end": 29.7,
+    "text": "अरे हमको मतलब की लेंगे रोड में शहर में चाहिए हमको शहर में",
+    "hinglish": "are hamko matlab ki lenge road mein shahar mein chahiye hamko shahar mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.95,
+    "end": 32.5,
+    "text": "हाँ ना चल रहेगा",
+    "hinglish": "haan na chal rahega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.1,
+    "end": 36.3,
+    "text": "हाँ साड़ी चाहिएगा",
+    "hinglish": "haan sadi chahiega",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.16,
+    "end": 35.57,
+    "text": "मैं",
+    "hinglish": "main",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.55,
+    "end": 37.65,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.0,
+    "end": 40.9,
+    "text": "हम्म हम्म हम्म हाँ दो लोग रहेंगे हम लोग",
+    "hinglish": "hamm hamm hamm haan do log rahenge hum log",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.13,
+    "end": 40.67,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 43.25,
+    "end": 43.85,
+    "text": "पूर्ण",
+    "hinglish": "poorn",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 44.25,
+    "end": 45.05,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.35,
+    "end": 50.7,
+    "text": "हाँ दो लोग रहेंगे और काम करेंगे",
+    "hinglish": "haan do log rahenge aur kaam karenge",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 45.59,
+    "end": 47.37,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 51.5,
+    "end": 52.35,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.7,
+    "end": 55.05,
+    "text": "नहीं यही पास में बस",
+    "hinglish": "nahi yahi paas mein bas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.35,
+    "end": 57.7,
+    "text": "नहीं नहीं मजबाइ अगर हो तुमता हो",
+    "hinglish": "nahi nahi majbai agar ho tumta ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 58.05,
+    "end": 58.65,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.8,
+    "end": 59.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 61.85,
+    "end": 63.3,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.2,
+    "end": 68.15,
+    "text": "हाँ बस दो लोगों दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस",
+    "hinglish": "haan bas do logon do log rahenge aur computer hamara kaam kaam hai bas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 72.55,
+    "end": 75.65,
+    "text": "जैसा कहू कैस कर देंगे नहीं चेक कर देंगे जैसा कहोगे",
+    "hinglish": "jaisa kahu kais kar denge nahi check kar denge jaisa kahoge",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.72,
+    "end": 3.88,
+    "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "pranam didi aur sab to theek hai apna bataie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.02,
+    "end": 7.49,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 7.73,
+    "end": 9.41,
+    "text": "नहीं दो",
+    "hinglish": "nahi do",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.03,
+    "end": 11.78,
+    "text": "आप जाइएगा",
+    "hinglish": "aap jaiega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.08,
+    "end": 13.35,
+    "text": "चलिए सर",
+    "hinglish": "chalie sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.11,
+    "end": 18.12,
+    "text": "अः टू कंप्यूटर का है मारा",
+    "hinglish": "ah two computer ka hai mara",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.33,
+    "end": 20.57,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.69,
+    "end": 21.46,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 20.75,
+    "end": 21.18,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.88,
+    "end": 24.06,
+    "text": "साड़ी लेना है",
+    "hinglish": "sadi lena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.75,
+    "end": 29.65,
+    "text": "अरे हमको मतलब की लेंगे रोड में शहर में चाहिए हमको शहर में",
+    "hinglish": "are hamko matlab ki lenge road mein shahar mein chahiye hamko shahar mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.01,
+    "end": 32.48,
+    "text": "हाँ ऑनलाइन चल रहेगा",
+    "hinglish": "haan online chal rahega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.11,
+    "end": 36.3,
+    "text": "हाँ साड़ी चाहिएगा",
+    "hinglish": "haan sadi chahiega",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.16,
+    "end": 35.55,
+    "text": "मेलूर",
+    "hinglish": "melur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.02,
+    "end": 39.03,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 39.1,
+    "end": 40.87,
+    "text": "हाँ दोनों रहेंगे हम लोग",
+    "hinglish": "haan donon rahenge hum log",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.13,
+    "end": 40.62,
+    "text": "पूरे",
+    "hinglish": "pure",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 43.28,
+    "end": 43.84,
+    "text": "पूर्ण",
+    "hinglish": "poorn",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 44.28,
+    "end": 45.04,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.37,
+    "end": 50.55,
+    "text": "हाँ दो लोग रहेंगे और काम काेंगे",
+    "hinglish": "haan do log rahenge aur kaam kange",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 45.59,
+    "end": 47.37,
+    "text": "आप दो लोग रहेंगे और वो लोग",
+    "hinglish": "aap do log rahenge aur wo log",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.55,
+    "end": 52.33,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.73,
+    "end": 55.01,
+    "text": "नहीं यही पास में बस",
+    "hinglish": "nahi yahi paas mein bas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.36,
+    "end": 57.66,
+    "text": "नहीं नहीं मजबूत दिया भी ओवर हो",
+    "hinglish": "nahi nahi majbut diya bhi ovar ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.06,
+    "end": 58.59,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.81,
+    "end": 59.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 61.95,
+    "end": 63.13,
+    "text": "ह",
+    "hinglish": "ha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.24,
+    "end": 68.11,
+    "text": "हाँ बस दो लोग दो लोग रहेंगे वो कंप्यूटर हमारा काम काम है बस",
+    "hinglish": "haan bas do log do log rahenge wo computer hamara kaam kaam hai bas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 72.59,
+    "end": 75.61,
+    "text": "जैसा कहूँ कैस कर देंगे नहीं चेक कर देंगे जैसा कहूंगी",
+    "hinglish": "jaisa kahun kais kar denge nahi check kar denge jaisa kahungi",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.75,
+    "end": 3.95,
+    "text": "राम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "raam didi aur sab to theek hai apna bataie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.0,
+    "end": 9.5,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.7,
+    "end": 12.05,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.0,
+    "end": 13.5,
+    "text": "दो इंच",
+    "hinglish": "do inch",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 13.3,
+    "end": 14.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.25,
+    "end": 15.05,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.3,
+    "end": 16.65,
+    "text": "तो कंप्यूटर का",
+    "hinglish": "to computer ka",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.6,
+    "end": 17.25,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.5,
+    "end": 18.15,
+    "text": "हाँ महाराज",
+    "hinglish": "haan maharaj",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.95,
+    "end": 18.6,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 20.75,
+    "end": 21.3,
+    "text": "वो",
+    "hinglish": "wo",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.3,
+    "end": 22.35,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.85,
+    "end": 24.15,
+    "text": "सारी लेना है",
+    "hinglish": "sari lena hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.75,
+    "end": 27.9,
+    "text": "अरे हमको मतलब कि शहर में चाहिए हमको",
+    "hinglish": "are hamko matlab ki shahar mein chahiye hamko",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 28.65,
+    "end": 29.3,
+    "text": "शहर में",
+    "hinglish": "shahar mein",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.0,
+    "end": 32.45,
+    "text": "हाँ ऑनलाइन चल रहेगा",
+    "hinglish": "haan online chal rahega",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.1,
+    "end": 34.85,
+    "text": "हाँ साड़ी चाहिएगा",
+    "hinglish": "haan sadi chahiega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.1,
+    "end": 36.05,
+    "text": "मेल उठा मेल उठाई",
+    "hinglish": "mail utha mail uthai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.5,
+    "end": 37.95,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.0,
+    "end": 38.95,
+    "text": "हम्म हम्म हम्म",
+    "hinglish": "hamm hamm hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 39.4,
+    "end": 40.8,
+    "text": "हाँ दो लोग रहेंगे हम लोग",
+    "hinglish": "haan do log rahenge hum log",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.8,
+    "end": 41.1,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 43.25,
+    "end": 43.85,
+    "text": "पूर्ण",
+    "hinglish": "poorn",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 44.65,
+    "end": 45.0,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.35,
+    "end": 47.65,
+    "text": "हाँ दो लोग रहेंगे और वो लोग है",
+    "hinglish": "haan do log rahenge aur wo log hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 47.7,
+    "end": 48.1,
+    "text": "पूरा",
+    "hinglish": "pura",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 48.1,
+    "end": 50.65,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 49.65,
+    "end": 49.95,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 51.85,
+    "end": 52.65,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.65,
+    "end": 55.0,
+    "text": "नहीं यही बात नहीं बजे",
+    "hinglish": "nahi yahi baat nahi baje",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.3,
+    "end": 57.5,
+    "text": "नहीं नहीं मैं बिला भी अगर हो चलता हो",
+    "hinglish": "nahi nahi main bila bhi agar ho chalta ho",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.45,
+    "end": 57.8,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.0,
+    "end": 58.9,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 59.1,
+    "end": 59.85,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 60.0,
+    "end": 61.0,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 61.9,
+    "end": 62.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.2,
+    "end": 68.05,
+    "text": "हाँ बस दो कंप्यूटर हमारा काम काम है बस",
+    "hinglish": "haan bas do computer hamara kaam kaam hai bas",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 72.8,
+    "end": 74.35,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 74.55,
+    "end": 75.4,
+    "text": "कर रहेगा",
+    "hinglish": "kar rahega",
+    "audio": "track-0"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.75,
+    "end": 3.95,
+    "text": "राम दीदी और सब तो ठीक है अपना बताइए",
+    "hinglish": "raam didi aur sab to theek hai apna bataie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.0,
+    "end": 9.5,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.1,
+    "end": 11.7,
+    "text": "हाँ चाहिए",
+    "hinglish": "haan chahiye",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 11.35,
+    "end": 12.05,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.0,
+    "end": 13.5,
+    "text": "दो इंच",
+    "hinglish": "do inch",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 13.3,
+    "end": 14.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.25,
+    "end": 15.05,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.3,
+    "end": 16.65,
+    "text": "तो कंप्यूटर का",
+    "hinglish": "to computer ka",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 16.6,
+    "end": 17.25,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.5,
+    "end": 18.15,
+    "text": "हाँ महाराज",
+    "hinglish": "haan maharaj",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 17.95,
+    "end": 18.6,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 20.75,
+    "end": 21.3,
+    "text": "वो",
+    "hinglish": "wo",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.25,
+    "end": 22.35,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.85,
+    "end": 24.15,
+    "text": "सारी लेना है",
+    "hinglish": "sari lena hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.75,
+    "end": 27.9,
+    "text": "अरे हमको मतलब कि शहर में चाहिए हमको",
+    "hinglish": "are hamko matlab ki shahar mein chahiye hamko",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 28.65,
+    "end": 29.3,
+    "text": "शहर में",
+    "hinglish": "shahar mein",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.0,
+    "end": 32.45,
+    "text": "हाँ ऑनलाइन चल रहेगा",
+    "hinglish": "haan online chal rahega",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.1,
+    "end": 34.85,
+    "text": "हाँ साड़ी चाहिएगा",
+    "hinglish": "haan sadi chahiega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.1,
+    "end": 36.05,
+    "text": "मेल उठा मेल उठाई",
+    "hinglish": "mail utha mail uthai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.5,
+    "end": 37.95,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.0,
+    "end": 38.95,
+    "text": "हम्म हम्म हम्म",
+    "hinglish": "hamm hamm hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 39.4,
+    "end": 40.8,
+    "text": "हाँ दो लोग रहेंगे हम लोग",
+    "hinglish": "haan do log rahenge hum log",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 40.8,
+    "end": 41.1,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 43.25,
+    "end": 43.85,
+    "text": "पूर्ण",
+    "hinglish": "poorn",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 44.65,
+    "end": 45.0,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.35,
+    "end": 47.15,
+    "text": "हाँ दो लोग रहेंगे और",
+    "hinglish": "haan do log rahenge aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 47.15,
+    "end": 47.5,
+    "text": "मैं",
+    "hinglish": "main",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 48.1,
+    "end": 50.2,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 49.65,
+    "end": 49.95,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 51.55,
+    "end": 52.65,
+    "text": "हाँ हाँ",
+    "hinglish": "haan haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.65,
+    "end": 55.0,
+    "text": "नहीं यही बात नहीं बजे",
+    "hinglish": "nahi yahi baat nahi baje",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.3,
+    "end": 57.5,
+    "text": "नहीं नहीं मैं बिला भी अगर हो चलता हो",
+    "hinglish": "nahi nahi main bila bhi agar ho chalta ho",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.45,
+    "end": 57.8,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.0,
+    "end": 58.9,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 59.1,
+    "end": 59.95,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 60.0,
+    "end": 61.0,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 61.9,
+    "end": 62.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.2,
+    "end": 68.05,
+    "text": "हाँ बस दो कंप्यूटर हमारा काम काम है बस",
+    "hinglish": "haan bas do computer hamara kaam kaam hai bas",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 72.8,
+    "end": 74.35,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 74.55,
+    "end": 75.4,
+    "text": "कर रहेगा",
+    "hinglish": "kar rahega",
+    "audio": "track-0"
+   }
+  ]
+ }
+}

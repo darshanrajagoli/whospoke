@@ -1,0 +1,1336 @@
+{
+ "reference": [
+  {
+   "speaker": "S2",
+   "start": 0.251,
+   "end": 0.699,
+   "text": "हलो"
+  },
+  {
+   "speaker": "S2",
+   "start": 0.986,
+   "end": 3.929,
+   "text": "जी ट्रैवलिंग ट्रैवल एजेंसी से बोल रहे हैं सर"
+  },
+  {
+   "speaker": "S3",
+   "start": 4.492,
+   "end": 4.94,
+   "text": "हेलो"
+  },
+  {
+   "speaker": "S1",
+   "start": 5.488,
+   "end": 7.297,
+   "text": "हेल्लो मैम नमस्कार"
+  },
+  {
+   "speaker": "S3",
+   "start": 7.979,
+   "end": 10.579,
+   "text": "हाँ क्या मेरी बात किराना स्टोर में हो रही है"
+  },
+  {
+   "speaker": "S2",
+   "start": 11.271,
+   "end": 15.021,
+   "text": "मुझे सर ओंकारेश्वर के लिए सेवेन सीटर गाड़ी चाहिए थी"
+  },
+  {
+   "speaker": "S2",
+   "start": 15.338,
+   "end": 16.188,
+   "text": "ग्वालियर से"
+  },
+  {
+   "speaker": "S2",
+   "start": 16.537,
+   "end": 17.547,
+   "text": "ये अमन कुशवाहा"
+  },
+  {
+   "speaker": "S1",
+   "start": 17.804,
+   "end": 21.518,
+   "text": "मैम आपने कॉल किया था कोई काम था क्या हॉस्पिटल में"
+  },
+  {
+   "speaker": "S1",
+   "start": 21.741,
+   "end": 22.262,
+   "text": "येस मैम"
+  },
+  {
+   "speaker": "S1",
+   "start": 22.597,
+   "end": 23.767,
+   "text": "अच्छा ठीक है मैम आई"
+  },
+  {
+   "speaker": "S3",
+   "start": 23.976,
+   "end": 26.152,
+   "text": "हाँ मैम आप लोग चावल रखते हो"
+  },
+  {
+   "speaker": "S3",
+   "start": 26.447,
+   "end": 27.759,
+   "text": "हाँ मतलब"
+  },
+  {
+   "speaker": "S2",
+   "start": 28.052,
+   "end": 28.788,
+   "text": "सेवेन सीटर"
+  },
+  {
+   "speaker": "S2",
+   "start": 29.019,
+   "end": 29.916,
+   "text": "ए सी ए सी"
+  },
+  {
+   "speaker": "S3",
+   "start": 30.367,
+   "end": 33.507,
+   "text": "जो अभी नया कुछ चल रहा होगा वह सब रखते हो आप"
+  },
+  {
+   "speaker": "S1",
+   "start": 34.139,
+   "end": 44.849,
+   "text": "आप है ना एक बार हॉस्पिटल आ के दिखा दीजिए अपने पापा को और आई ऑपरेशन हो जाेगा कन्फर्म और आराम से हो जाएगा पूरी तरह का प्रोसेस पूरा प्रोसेस के थ्रू हो जाएगा"
+  },
+  {
+   "speaker": "S3",
+   "start": 45.072,
+   "end": 53.094,
+   "text": "मैम अभी एक नया चावल चल रहा है अभी नया में नया मैंने नाम सुना है बहुत तारीफ़ सुनी है उस चावल के बारे में डीलक्स पौनी राइस कर के कोई चावल है"
+  },
+  {
+   "speaker": "S3",
+   "start": 53.365,
+   "end": 53.909,
+   "text": "हाँ मैं"
+  },
+  {
+   "speaker": "S3",
+   "start": 54.242,
+   "end": 60.772,
+   "text": "हाँ मैंने भी बहुत सुना है इस चावल के बारे में तो मैंने सोचा एक बार आपसे पूछ लूँ क्योंकि आप ही के दुकान पर ऐसा नया नया चावल मिलता है"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S2",
+    "start": 0.25,
+    "end": 3.93,
+    "text": "हलो जी ट्रैवल ट्रैवल एजेंसी से बोल रहे हैं सर",
+    "hinglish": "hello ji travel travel agency se bol rahe hain sir",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 4.49,
+    "end": 4.94,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 5.49,
+    "end": 7.3,
+    "text": "हेलो मैम नमस्कार",
+    "hinglish": "hello ma'am namaskar",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 7.98,
+    "end": 10.58,
+    "text": "हाँ क्या मेरी बात किराना इस्टोर में हो रही है",
+    "hinglish": "haan kya meri baat kirana istor mein ho rahi hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 11.27,
+    "end": 17.55,
+    "text": "मुझे सर ओमकारेश्वर के लिए सेवन सीटर गाड़ी चाहिए थी ग्वालियर से ये अमन कुशवा",
+    "hinglish": "mujhe sir omkareshvar ke liye seven seater gadi chahiye thi gvaliyar se ye aman kushva",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 17.8,
+    "end": 23.77,
+    "text": "मैम आपने कॉल किया था कोई काम था क्या हॉस्पिटल में यस मैम अच्छा ठीक है मैम आई",
+    "hinglish": "ma'am aapne call kiya tha koi kaam tha kya hospital mein yas ma'am achha theek hai ma'am aai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 23.98,
+    "end": 27.76,
+    "text": "हाँ मैम आप लोग चावल रखते हो हाँ मतलब",
+    "hinglish": "haan ma'am aap log chaval rakhte ho haan matlab",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 28.05,
+    "end": 29.92,
+    "text": "सेवन सीटर एसी एसी",
+    "hinglish": "seven seater a.c a.c",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 30.37,
+    "end": 33.51,
+    "text": "जो अभी नया कुछ चल रहा होगा वो सब रखते हो आप",
+    "hinglish": "jo abhi naya kuch chal raha hoga wo sab rakhte ho aap",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 34.14,
+    "end": 44.85,
+    "text": "आप है ना एक बार हॉस्पिटल आके दिखा दीजिए अपने पपा को और आइए ऑपरेशन हो जाएगा कन्फर्म और आराम से हो जाएगा पूरी तरह का प्रोसेस पूरा प्रोसेस के थ्रू हो जाएगा",
+    "hinglish": "aap hai na ek baar hospital aake dikha dijie apne papa ko aur aaie operation ho jaega kanpharm aur aaram se ho jaega puri tarah ka process pura process ke through ho jaega",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 45.07,
+    "end": 60.77,
+    "text": "मैम अभी एक नया चावल चल रहा है अभी नया मैं नया मैंने नाम सुना है बहुत तारीफ़ सुनी हुई उस चावल के बारे में डिलक्स पोनीइस करके कोई चावल है हाँ मैं हाँ मैंने भी बहुत सुना इस चावल के बारे में तो मैंने सोचा एक बार आपसे पूछ लूँ क्योंकि आप ही की दुकान पर ऐसा नया नया चावल मिलता है",
+    "hinglish": "ma'am abhi ek naya chaval chal raha hai abhi naya main naya mainne naam suna hai bahut tarif suni hui us chaval ke bare mein dilaks poniis karke koi chaval hai haan main haan mainne bhi bahut suna is chaval ke bare mein to mainne socha ek baar aapse poochh lun kyonki aap hi ki dukan par aisa naya naya chaval milta hai",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S2",
+    "start": 0.25,
+    "end": 3.93,
+    "text": "हलो जी ट्रैवलिंग ट्रैवल एजेंसी से बोल रहे हैं सर",
+    "hinglish": "hello ji traivling travel agency se bol rahe hain sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 4.49,
+    "end": 4.94,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 5.49,
+    "end": 7.3,
+    "text": "हेलो मैम नमस्कार",
+    "hinglish": "hello ma'am namaskar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 7.98,
+    "end": 10.58,
+    "text": "हाँ क्या मेरी बात किराना इस्टोर में हो रही है",
+    "hinglish": "haan kya meri baat kirana istor mein ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 11.27,
+    "end": 17.55,
+    "text": "जी सर ओमकारेश्वर के लिए सेवन सीटर गाड़ी चाहिए थी ग्वालियर से ये अमन कुशवा",
+    "hinglish": "ji sir omkareshvar ke liye seven seater gadi chahiye thi gvaliyar se ye aman kushva",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 17.8,
+    "end": 23.77,
+    "text": "मैम आपने कॉल किया था कोई काम था क्या हॉस्पिटल में यस मैम सर ठीक है मैम आई",
+    "hinglish": "ma'am aapne call kiya tha koi kaam tha kya hospital mein yas ma'am sir theek hai ma'am aai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 23.98,
+    "end": 27.76,
+    "text": "अः मैम आप लोग चावल रखते हो अः मतलब",
+    "hinglish": "ah ma'am aap log chaval rakhte ho ah matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 28.05,
+    "end": 29.92,
+    "text": "सेवन सीटर एसी एसी",
+    "hinglish": "seven seater a.c a.c",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 30.37,
+    "end": 33.51,
+    "text": "जो अभी नया कुछ चल रहा होगा वो सब रखते हो आप",
+    "hinglish": "jo abhi naya kuch chal raha hoga wo sab rakhte ho aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 34.14,
+    "end": 44.85,
+    "text": "आप है ना एक बार हॉस्पिटल आके दिखा दीजिए अपने पपा को और आई ऑपरेशन हो जाएगा कन्फर्म और आराम से हो जाएगा पूरी तरह प्रोसेस पूरा प्रोसेस हो जाएगा",
+    "hinglish": "aap hai na ek baar hospital aake dikha dijie apne papa ko aur aai operation ho jaega kanpharm aur aaram se ho jaega puri tarah process pura process ho jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 45.07,
+    "end": 60.77,
+    "text": "मैम अभी एक नया चावल चल रहा है अभी नया मैं नया मैंने नाम सुना है बहुत तारीफ़ सुनी उस चावल के बारे में डिलक्स पोनी राइज करके कोई चावल है हाँ मैम हाँ मैंने भी बहुत सुना इस चावल के बारे में फिर मैंने सोचा एक बार आपसे पूछ लू क्योंकि आप ही की दुकान पर ऐसा नया नया चावल मिलता है",
+    "hinglish": "ma'am abhi ek naya chaval chal raha hai abhi naya main naya mainne naam suna hai bahut tarif suni us chaval ke bare mein dilaks poni rise karke koi chaval hai haan ma'am haan mainne bhi bahut suna is chaval ke bare mein phir mainne socha ek baar aapse poochh lu kyonki aap hi ki dukan par aisa naya naya chaval milta hai",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S2",
+    "start": 0.25,
+    "end": 3.93,
+    "text": "हलो जी ट्रैवलिंग ट्रैवल एजेंसी से बोल रहे हैं सर",
+    "hinglish": "hello ji traivling travel agency se bol rahe hain sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 4.49,
+    "end": 4.94,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 5.49,
+    "end": 7.3,
+    "text": "हेलो मैम नमस्कार",
+    "hinglish": "hello ma'am namaskar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 7.98,
+    "end": 10.58,
+    "text": "हाँ क्या मेरी बात किराना इस्टोर में हो रही है",
+    "hinglish": "haan kya meri baat kirana istor mein ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 11.27,
+    "end": 17.55,
+    "text": "जी सर ओमकारेश्वर के लिए सेवन सीटर गाड़ी चाहिए थी ग्वालियर से ये अमन कुशवा",
+    "hinglish": "ji sir omkareshvar ke liye seven seater gadi chahiye thi gvaliyar se ye aman kushva",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 17.8,
+    "end": 23.77,
+    "text": "मैम आपने कॉल किया था कोई काम था क्या हॉस्पिटल में यस मैम सर ठीक है मैम आई",
+    "hinglish": "ma'am aapne call kiya tha koi kaam tha kya hospital mein yas ma'am sir theek hai ma'am aai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 23.98,
+    "end": 27.76,
+    "text": "अः मैम आप लोग चावल रखते हो अः मतलब",
+    "hinglish": "ah ma'am aap log chaval rakhte ho ah matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 28.05,
+    "end": 29.92,
+    "text": "सेवन सीटर एसी एसी",
+    "hinglish": "seven seater a.c a.c",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 30.37,
+    "end": 33.51,
+    "text": "जो अभी नया कुछ चल रहा होगा वो सब रखते हो आप",
+    "hinglish": "jo abhi naya kuch chal raha hoga wo sab rakhte ho aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 34.14,
+    "end": 44.85,
+    "text": "आप है ना एक बार हॉस्पिटल आके दिखा दीजिए अपने पपा को और आई ऑपरेशन हो जाएगा कन्फर्म और आराम से हो जाएगा पूरी तरह प्रोसेस पूरा प्रोसेस हो जाएगा",
+    "hinglish": "aap hai na ek baar hospital aake dikha dijie apne papa ko aur aai operation ho jaega kanpharm aur aaram se ho jaega puri tarah process pura process ho jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 45.07,
+    "end": 60.77,
+    "text": "मैम अभी एक नया चावल चल रहा है अभी नया मैं नया मैंने नाम सुना है बहुत तारीफ़ सुनी उस चावल के बारे में डिलक्स पोनी राइज करके कोई चावल है हाँ मैम हाँ मैंने भी बहुत सुना इस चावल के बारे में फिर मैंने सोचा एक बार आपसे पूछ लू क्योंकि आप ही की दुकान पर ऐसा नया नया चावल मिलता है",
+    "hinglish": "ma'am abhi ek naya chaval chal raha hai abhi naya main naya mainne naam suna hai bahut tarif suni us chaval ke bare mein dilaks poni rise karke koi chaval hai haan ma'am haan mainne bhi bahut suna is chaval ke bare mein phir mainne socha ek baar aapse poochh lu kyonki aap hi ki dukan par aisa naya naya chaval milta hai",
+    "audio": "mixture"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.2,
+    "end": 0.75,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 1.0,
+    "end": 3.95,
+    "text": "जी ट्रैवल ट्रैवल एजेंसी से बोल रहे हैं सर",
+    "hinglish": "ji travel travel agency se bol rahe hain sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.4,
+    "end": 4.95,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 5.45,
+    "end": 7.25,
+    "text": "हलो मैम नमस्कार",
+    "hinglish": "hello ma'am namaskar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 7.95,
+    "end": 10.7,
+    "text": "हाँ क्या मेरी बात किराना इस्टोर में हो रही है",
+    "hinglish": "haan kya meri baat kirana istor mein ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.4,
+    "end": 16.15,
+    "text": "मुझे सर ओंकालेश्वर के लिए सेवन सीटर गाड़ी चाहिए थी ग्वालियर से",
+    "hinglish": "mujhe sir onkaleshvar ke liye seven seater gadi chahiye thi gvaliyar se",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.55,
+    "end": 17.55,
+    "text": "ये अमन कुशवाहा",
+    "hinglish": "ye aman kushvaha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.8,
+    "end": 19.1,
+    "text": "मैम आपने कॉल किया था",
+    "hinglish": "ma'am aapne call kiya tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 20.15,
+    "end": 21.55,
+    "text": "कोई काम था क्या हॉस्पिटल में",
+    "hinglish": "koi kaam tha kya hospital mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.7,
+    "end": 22.35,
+    "text": "यस मैम",
+    "hinglish": "yas ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 22.45,
+    "end": 23.85,
+    "text": "तो ठीक है मैम आई",
+    "hinglish": "to theek hai ma'am aai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 23.95,
+    "end": 26.15,
+    "text": "मैम आप लोग चावल रखते हो",
+    "hinglish": "ma'am aap log chaval rakhte ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 26.4,
+    "end": 27.65,
+    "text": "हाँ मतलब",
+    "hinglish": "haan matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.0,
+    "end": 28.9,
+    "text": "सेवन सीटर",
+    "hinglish": "seven seater",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.95,
+    "end": 29.85,
+    "text": "एसी एसी",
+    "hinglish": "a.c a.c",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 30.35,
+    "end": 33.45,
+    "text": "जो अभी नया कुछ चल रहा होगा वो सब रखते हो आप",
+    "hinglish": "jo abhi naya kuch chal raha hoga wo sab rakhte ho aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.15,
+    "end": 44.85,
+    "text": "आप है ना एक बार हॉस्पिटल आके दिखा दीजिए अपने पपा को और आई ऑपरेशन हो जाएगा कन्फर्म और आराम से हो जाएगा पूरी तरह प्रोसेस पूरा प्रोसेस हो जाएगा",
+    "hinglish": "aap hai na ek baar hospital aake dikha dijie apne papa ko aur aai operation ho jaega kanpharm aur aaram se ho jaega puri tarah process pura process ho jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 45.05,
+    "end": 53.9,
+    "text": "मैम अभी एक नया चावल चल रहा है अभी नया मैं नया मैंने नाम सुना है बहुत तारीफ़ सुनी हुई उस चावल के बारे में डिलक्स पोनी राइस करके कोई चावल है हाँ मैम",
+    "hinglish": "ma'am abhi ek naya chaval chal raha hai abhi naya main naya mainne naam suna hai bahut tarif suni hui us chaval ke bare mein dilaks poni rice karke koi chaval hai haan ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 54.05,
+    "end": 60.9,
+    "text": "हाँ मैंने भी बहुत सुना इस चावल के बारे में तो मैंने सोचा एक बार आपसे पूछ लू क्योंकि आप ही की दुकान पे ऐसा नया नया चावल मिलता है",
+    "hinglish": "haan mainne bhi bahut suna is chaval ke bare mein to mainne socha ek baar aapse poochh lu kyonki aap hi ki dukan pe aisa naya naya chaval milta hai",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.2,
+    "end": 0.75,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 1.0,
+    "end": 3.95,
+    "text": "जी ट्रैवल ट्रैवल एजेंसी से बोल रहे हैं सर",
+    "hinglish": "ji travel travel agency se bol rahe hain sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.4,
+    "end": 4.95,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 5.45,
+    "end": 7.25,
+    "text": "हलो मैम नमस्कार",
+    "hinglish": "hello ma'am namaskar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 7.95,
+    "end": 10.7,
+    "text": "हाँ क्या मेरी बात किराना इस्टोर में हो रही है",
+    "hinglish": "haan kya meri baat kirana istor mein ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.4,
+    "end": 16.15,
+    "text": "मुझे सर ओंकालेश्वर के लिए सेवन सीटर गाड़ी चाहिए थी ग्वालियर से",
+    "hinglish": "mujhe sir onkaleshvar ke liye seven seater gadi chahiye thi gvaliyar se",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.55,
+    "end": 17.55,
+    "text": "ये अमन कुशवाहा",
+    "hinglish": "ye aman kushvaha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.8,
+    "end": 19.1,
+    "text": "मैम आपने कॉल किया था",
+    "hinglish": "ma'am aapne call kiya tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 20.15,
+    "end": 21.55,
+    "text": "कोई काम था क्या हॉस्पिटल में",
+    "hinglish": "koi kaam tha kya hospital mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.7,
+    "end": 22.35,
+    "text": "यस मैम",
+    "hinglish": "yas ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 22.45,
+    "end": 23.85,
+    "text": "तो ठीक है मैम आई",
+    "hinglish": "to theek hai ma'am aai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 23.95,
+    "end": 26.15,
+    "text": "मैम आप लोग चावल रखते हो",
+    "hinglish": "ma'am aap log chaval rakhte ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 26.4,
+    "end": 27.65,
+    "text": "हाँ मतलब",
+    "hinglish": "haan matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.0,
+    "end": 28.9,
+    "text": "सेवन सीटर",
+    "hinglish": "seven seater",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.95,
+    "end": 29.85,
+    "text": "एसी एसी",
+    "hinglish": "a.c a.c",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 30.35,
+    "end": 33.45,
+    "text": "जो अभी नया कुछ चल रहा होगा वो सब रखते हो आप",
+    "hinglish": "jo abhi naya kuch chal raha hoga wo sab rakhte ho aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.15,
+    "end": 44.85,
+    "text": "आप है ना एक बार हॉस्पिटल आके दिखा दीजिए अपने पपा को और आई ऑपरेशन हो जाएगा कन्फर्म और आराम से हो जाएगा पूरी तरह प्रोसेस पूरा प्रोसेस हो जाएगा",
+    "hinglish": "aap hai na ek baar hospital aake dikha dijie apne papa ko aur aai operation ho jaega kanpharm aur aaram se ho jaega puri tarah process pura process ho jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 45.05,
+    "end": 53.9,
+    "text": "मैम अभी एक नया चावल चल रहा है अभी नया मैं नया मैंने नाम सुना है बहुत तारीफ़ सुनी हुई उस चावल के बारे में डिलक्स पोनी राइस करके कोई चावल है हाँ मैम",
+    "hinglish": "ma'am abhi ek naya chaval chal raha hai abhi naya main naya mainne naam suna hai bahut tarif suni hui us chaval ke bare mein dilaks poni rice karke koi chaval hai haan ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 54.05,
+    "end": 60.9,
+    "text": "हाँ मैंने भी बहुत सुना इस चावल के बारे में तो मैंने सोचा एक बार आपसे पूछ लू क्योंकि आप ही की दुकान पे ऐसा नया नया चावल मिलता है",
+    "hinglish": "haan mainne bhi bahut suna is chaval ke bare mein to mainne socha ek baar aapse poochh lu kyonki aap hi ki dukan pe aisa naya naya chaval milta hai",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.2,
+    "end": 0.75,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 1.0,
+    "end": 3.95,
+    "text": "जी ट्रैवल ट्रैवल एजेंसी से बोल रहे हैं सर",
+    "hinglish": "ji travel travel agency se bol rahe hain sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.4,
+    "end": 4.95,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 5.45,
+    "end": 7.25,
+    "text": "हलो मैम नमस्कार",
+    "hinglish": "hello ma'am namaskar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 7.95,
+    "end": 10.7,
+    "text": "हाँ क्या मेरी बात किराना इस्टोर में हो रही है",
+    "hinglish": "haan kya meri baat kirana istor mein ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.4,
+    "end": 16.15,
+    "text": "मुझे सर ओंकालेश्वर के लिए सेवन सीटर गाड़ी चाहिए थी ग्वालियर से",
+    "hinglish": "mujhe sir onkaleshvar ke liye seven seater gadi chahiye thi gvaliyar se",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 16.55,
+    "end": 17.55,
+    "text": "ये अमन कुशवाहा",
+    "hinglish": "ye aman kushvaha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.8,
+    "end": 19.1,
+    "text": "मैम आपने कॉल किया था",
+    "hinglish": "ma'am aapne call kiya tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 20.15,
+    "end": 21.55,
+    "text": "कोई काम था क्या हॉस्पिटल में",
+    "hinglish": "koi kaam tha kya hospital mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.7,
+    "end": 22.35,
+    "text": "यस मैम",
+    "hinglish": "yas ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 22.45,
+    "end": 23.85,
+    "text": "तो ठीक है मैम आई",
+    "hinglish": "to theek hai ma'am aai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 23.95,
+    "end": 26.15,
+    "text": "मैम आप लोग चावल रखते हो",
+    "hinglish": "ma'am aap log chaval rakhte ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 26.4,
+    "end": 27.65,
+    "text": "हाँ मतलब",
+    "hinglish": "haan matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.0,
+    "end": 28.9,
+    "text": "सेवन सीटर",
+    "hinglish": "seven seater",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.95,
+    "end": 29.85,
+    "text": "एसी एसी",
+    "hinglish": "a.c a.c",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 30.35,
+    "end": 33.45,
+    "text": "जो अभी नया कुछ चल रहा होगा वो सब रखते हो आप",
+    "hinglish": "jo abhi naya kuch chal raha hoga wo sab rakhte ho aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.15,
+    "end": 44.85,
+    "text": "आप है ना एक बार हॉस्पिटल आके दिखा दीजिए अपने पपा को और आई ऑपरेशन हो जाएगा कन्फर्म और आराम से हो जाएगा पूरी तरह प्रोसेस पूरा प्रोसेस हो जाएगा",
+    "hinglish": "aap hai na ek baar hospital aake dikha dijie apne papa ko aur aai operation ho jaega kanpharm aur aaram se ho jaega puri tarah process pura process ho jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 45.05,
+    "end": 53.9,
+    "text": "मैम अभी एक नया चावल चल रहा है अभी नया मैं नया मैंने नाम सुना है बहुत तारीफ़ सुनी हुई उस चावल के बारे में डिलक्स पोनी राइस करके कोई चावल है हाँ मैम",
+    "hinglish": "ma'am abhi ek naya chaval chal raha hai abhi naya main naya mainne naam suna hai bahut tarif suni hui us chaval ke bare mein dilaks poni rice karke koi chaval hai haan ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 54.05,
+    "end": 60.9,
+    "text": "हाँ मैंने भी बहुत सुना इस चावल के बारे में तो मैंने सोचा एक बार आपसे पूछ लू क्योंकि आप ही की दुकान पे ऐसा नया नया चावल मिलता है",
+    "hinglish": "haan mainne bhi bahut suna is chaval ke bare mein to mainne socha ek baar aapse poochh lu kyonki aap hi ki dukan pe aisa naya naya chaval milta hai",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.23,
+    "end": 0.71,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.03,
+    "end": 3.93,
+    "text": "जी ट्रैवल ट्रैवल एजेंसी से बोल रहे हैं सर",
+    "hinglish": "ji travel travel agency se bol rahe hain sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 4.43,
+    "end": 4.96,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 5.46,
+    "end": 7.22,
+    "text": "हलो मैम नमस्कार",
+    "hinglish": "hello ma'am namaskar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.0,
+    "end": 10.7,
+    "text": "हाँ क्या मेरी बात किराना इस्टोर में हो रही है",
+    "hinglish": "haan kya meri baat kirana istor mein ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.4,
+    "end": 15.17,
+    "text": "मुझे सर ओंकालेश्वर के लिए सेवन सीटर गाड़ी चाहिए थी",
+    "hinglish": "mujhe sir onkaleshvar ke liye seven seater gadi chahiye thi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.23,
+    "end": 16.13,
+    "text": "ग्वालियर से",
+    "hinglish": "gvaliyar se",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.59,
+    "end": 17.55,
+    "text": "ये अमन कुशवाहा",
+    "hinglish": "ye aman kushvaha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.82,
+    "end": 19.1,
+    "text": "मैम आपने कॉल किया था",
+    "hinglish": "ma'am aapne call kiya tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.15,
+    "end": 21.45,
+    "text": "कोई काम था क्या हॉस्पिटल में",
+    "hinglish": "koi kaam tha kya hospital mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.73,
+    "end": 22.27,
+    "text": "से",
+    "hinglish": "se",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.48,
+    "end": 23.82,
+    "text": "तो ठीक है मैम आई",
+    "hinglish": "to theek hai ma'am aai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.96,
+    "end": 26.12,
+    "text": "मैम आप लोग चावल रखते हो",
+    "hinglish": "ma'am aap log chaval rakhte ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 26.41,
+    "end": 27.03,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.18,
+    "end": 27.64,
+    "text": "मतलब",
+    "hinglish": "matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.06,
+    "end": 28.79,
+    "text": "सेवन सीटर",
+    "hinglish": "seven seater",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.02,
+    "end": 29.83,
+    "text": "एसी एसी",
+    "hinglish": "a.c a.c",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.39,
+    "end": 33.41,
+    "text": "जो अभी नया कुछ चल रहा होगा वो सब रखते हो आप",
+    "hinglish": "jo abhi naya kuch chal raha hoga wo sab rakhte ho aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 34.15,
+    "end": 44.83,
+    "text": "आप है ना एक बार हॉस्पिटल आके दिखा दीजिए अपने पपा को और आई ऑपरेशन हो जाएगा कन्फर्म और आराम से हो जाएगा पूरी तरह प्रोसेस पूरा प्रोसेस हो जाएगा",
+    "hinglish": "aap hai na ek baar hospital aake dikha dijie apne papa ko aur aai operation ho jaega kanpharm aur aaram se ho jaega puri tarah process pura process ho jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 45.07,
+    "end": 53.91,
+    "text": "मैम अभी एक नया चावल चल रहा है अभी नया मैं नया मैंने नाम सुना है बहुत तारीफ़ सुनी हुई उस चावल के बारे में डिलक्स पोनीइस करके कोई चावल है हाँ मैं",
+    "hinglish": "ma'am abhi ek naya chaval chal raha hai abhi naya main naya mainne naam suna hai bahut tarif suni hui us chaval ke bare mein dilaks poniis karke koi chaval hai haan main",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.06,
+    "end": 60.88,
+    "text": "हाँ मैंने भी बहुत सुना इस चावल के बारे में तो मैंने सोचा एक बार आपसे पूछ लू क्योंकि आप ही की दुकान पे ऐसा नया नया चावल मिलता है",
+    "hinglish": "haan mainne bhi bahut suna is chaval ke bare mein to mainne socha ek baar aapse poochh lu kyonki aap hi ki dukan pe aisa naya naya chaval milta hai",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.15,
+    "end": 3.9,
+    "text": "हलो जी ट्रैवलिंग ट्रैवल एजेंसी से बोल रहे हैं सर",
+    "hinglish": "hello ji traivling travel agency se bol rahe hain sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 4.4,
+    "end": 4.95,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 5.4,
+    "end": 7.25,
+    "text": "हेलो मैम नमस्कार",
+    "hinglish": "hello ma'am namaskar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 7.95,
+    "end": 10.6,
+    "text": "हाँ क्या मेरी बात किराना स्टोर में हो रही है",
+    "hinglish": "haan kya meri baat kirana store mein ho rahi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.3,
+    "end": 14.4,
+    "text": "मुझे सर ओमकारेश्वर के लिए सेवन सीटर गाड़ी",
+    "hinglish": "mujhe sir omkareshvar ke liye seven seater gadi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.45,
+    "end": 17.55,
+    "text": "ग्वालियर से ये अमन कुशवा",
+    "hinglish": "gvaliyar se ye aman kushva",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 17.8,
+    "end": 19.15,
+    "text": "मैम आपने कॉल किया था",
+    "hinglish": "ma'am aapne call kiya tha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 20.15,
+    "end": 21.5,
+    "text": "कोई काम था क्या हॉस्पिटल में",
+    "hinglish": "koi kaam tha kya hospital mein",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.7,
+    "end": 22.3,
+    "text": "यस मैम",
+    "hinglish": "yas ma'am",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 22.5,
+    "end": 23.9,
+    "text": "तो ठीक है मैम आई",
+    "hinglish": "to theek hai ma'am aai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.9,
+    "end": 27.75,
+    "text": "हाँ मैम आप लोग चावल रखते हो हाँ मतलब",
+    "hinglish": "haan ma'am aap log chaval rakhte ho haan matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.0,
+    "end": 29.9,
+    "text": "सेवन सीटर एसी एसी",
+    "hinglish": "seven seater a.c a.c",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.35,
+    "end": 33.65,
+    "text": "जो अभी नया कुछ चल रहा होगा वो सब रखते हो आप",
+    "hinglish": "jo abhi naya kuch chal raha hoga wo sab rakhte ho aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 34.15,
+    "end": 42.6,
+    "text": "आप है ना एक बार हॉस्पिटल आके दिखा दीजिए अपने पापा को और आई ऑपरेशन हो जाएगा कन्फर्म आराम से हो जाएगा पूरी तरह",
+    "hinglish": "aap hai na ek baar hospital aake dikha dijie apne papa ko aur aai operation ho jaega kanpharm aaram se ho jaega puri tarah",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 42.9,
+    "end": 44.9,
+    "text": "पूरा प्रोसेस्ट्रो हो जाएगा",
+    "hinglish": "pura prosestro ho jaega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 45.05,
+    "end": 50.35,
+    "text": "मैम अभी एक नया चावल चल रहा है अभी नया मैं नया मैंने नाम सुना है बहुत तारीफ सुनी हुई",
+    "hinglish": "ma'am abhi ek naya chaval chal raha hai abhi naya main naya mainne naam suna hai bahut tariph suni hui",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 50.4,
+    "end": 53.85,
+    "text": "के बारे में डिलक्स पोनी राइस करके कोई चावल है हाँ",
+    "hinglish": "ke bare mein dilaks poni rice karke koi chaval hai haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.1,
+    "end": 60.8,
+    "text": "हाँ मैंने भी बहुत सुनाई चावल के बारे में तो मैंने सोचा एक बार आपसे पूछ लू क्योंकि आपकी की दुकान पे ऐसा नया नया चावल मिलता है",
+    "hinglish": "haan mainne bhi bahut sunai chaval ke bare mein to mainne socha ek baar aapse poochh lu kyonki aapki ki dukan pe aisa naya naya chaval milta hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 60.65,
+    "end": 61.1,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.15,
+    "end": 3.9,
+    "text": "हलो जी ट्रैवलिंग ट्रैवल एजेंसी से बोल रहे हैं सर",
+    "hinglish": "hello ji traivling travel agency se bol rahe hain sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 4.4,
+    "end": 4.95,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 5.4,
+    "end": 7.25,
+    "text": "हेलो मैम नमस्कार",
+    "hinglish": "hello ma'am namaskar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 7.95,
+    "end": 10.6,
+    "text": "हाँ क्या मेरी बात किराना स्टोर में हो रही है",
+    "hinglish": "haan kya meri baat kirana store mein ho rahi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.3,
+    "end": 14.4,
+    "text": "मुझे सर ओमकारेश्वर के लिए सेवन सीटर गाड़ी",
+    "hinglish": "mujhe sir omkareshvar ke liye seven seater gadi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.45,
+    "end": 17.55,
+    "text": "ग्वालियर से ये अमन कुशवा",
+    "hinglish": "gvaliyar se ye aman kushva",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 17.8,
+    "end": 19.15,
+    "text": "मैम आपने कॉल किया था",
+    "hinglish": "ma'am aapne call kiya tha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 20.15,
+    "end": 21.5,
+    "text": "कोई काम था क्या हॉस्पिटल में",
+    "hinglish": "koi kaam tha kya hospital mein",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.7,
+    "end": 22.3,
+    "text": "यस मैम",
+    "hinglish": "yas ma'am",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 22.5,
+    "end": 23.9,
+    "text": "तो ठीक है मैम आई",
+    "hinglish": "to theek hai ma'am aai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 23.9,
+    "end": 27.75,
+    "text": "हाँ मैम आप लोग चावल रखते हो हाँ मतलब",
+    "hinglish": "haan ma'am aap log chaval rakhte ho haan matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.0,
+    "end": 29.9,
+    "text": "सेवन सीटर एसी एसी",
+    "hinglish": "seven seater a.c a.c",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.35,
+    "end": 33.65,
+    "text": "जो अभी नया कुछ चल रहा होगा वो सब रखते हो आप",
+    "hinglish": "jo abhi naya kuch chal raha hoga wo sab rakhte ho aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 34.15,
+    "end": 42.6,
+    "text": "आप है ना एक बार हॉस्पिटल आके दिखा दीजिए अपने पापा को और आई ऑपरेशन हो जाएगा कन्फर्म आराम से हो जाएगा पूरी तरह",
+    "hinglish": "aap hai na ek baar hospital aake dikha dijie apne papa ko aur aai operation ho jaega kanpharm aaram se ho jaega puri tarah",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 42.9,
+    "end": 44.9,
+    "text": "पूरा प्रोसेस्ट्रो हो जाएगा",
+    "hinglish": "pura prosestro ho jaega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 45.05,
+    "end": 50.35,
+    "text": "मैम अभी एक नया चावल चल रहा है अभी नया मैं नया मैंने नाम सुना है बहुत तारीफ सुनी हुई",
+    "hinglish": "ma'am abhi ek naya chaval chal raha hai abhi naya main naya mainne naam suna hai bahut tariph suni hui",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 50.4,
+    "end": 53.85,
+    "text": "के बारे में डिलक्स पोनी राइस करके कोई चावल है हाँ",
+    "hinglish": "ke bare mein dilaks poni rice karke koi chaval hai haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.1,
+    "end": 60.8,
+    "text": "हाँ मैंने भी बहुत सुनाई चावल के बारे में तो मैंने सोचा एक बार आपसे पूछ लू क्योंकि आपकी की दुकान पे ऐसा नया नया चावल मिलता है",
+    "hinglish": "haan mainne bhi bahut sunai chaval ke bare mein to mainne socha ek baar aapse poochh lu kyonki aapki ki dukan pe aisa naya naya chaval milta hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 60.65,
+    "end": 61.1,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   }
+  ]
+ }
+}

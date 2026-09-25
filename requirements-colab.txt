@@ -1,0 +1,9 @@
+# Google Colab (Linux, T4 GPU). Colab already provides torch/torchaudio/numpy/pandas/scipy/sklearn/transformers.
+pyannote.audio==3.3.2
+speechbrain==1.1.1
+asteroid-filterbanks==0.4.0
+onnxruntime-gpu
+soundfile
+huggingface_hub
+hf_xet
+jiwer

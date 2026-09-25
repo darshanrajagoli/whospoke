@@ -1,0 +1,22 @@
+# Deviations from the project proposal
+
+Every place where this project differs from `Audio_Engineering_AI_Project_Proposal.docx`, why, and what
+evidence backs the change. Anything not listed here is implemented as the proposal describes.
+Decision numbers (D#) point to the full reasoning in [DECISIONS.md](DECISIONS.md).
+
+**Scope for the mid-semester review:** Milestones 1–3 (separation, diarization, regional & code-switched
+transcription) plus the benchmark notebook. Milestone 4 (LLM post-processing with Airavata/OpenHathi) is
+scheduled after the review; the Stage-3 transcript JSON is already the input format it will consume.
+
+| # | Proposal says | We did | Why | Severity |
+|---|---|---|---|---|
+| 1 | Milestone 1 → 2: separate the whole recording, then diarize | Built **both** orders. Order A (proposal) and Order B (diarize first, separate only overlapping turns) run on identical test audio | Pretrained separators are trained on short, fully-overlapped 2-speaker clips; on long real conversations they help far less. On the test set, Order A has cpWER 55.8 % vs 49.5 % and DER 26.2 % vs 20.3 %, i.e. 6.7 more cpWER points per conversation (95 % CI +4.0 to +9.4); it is worse in 50 of 72 conversations. Separation quality is +9.6 dB SI-SDR on overlap regions vs +4.5 dB on whole recordings (D18, D26, [docs/RESULTS.md](docs/RESULTS.md)) | The proposal's order is fully implemented and reported; the recommendation is backed by data |
+| 2 | Use IndicVoices, Project Vaani, Nirantar and AIR-RS-DB | **IndicVoices** (test conversations are built from its real conversational Hindi) and **Project Vaani** (real-world test set for choosing the ASR model, and its code-switch annotations for measuring English-word recognition and building the Hinglish lexicon) | **Nirantar** is distributed only as one ≈200 GB archive (5 × 40 GB parts) — Hindi cannot be extracted without downloading all of it. **AIR-RS-DB**: no public source exists under this name (the proposal's citation for it is blank) (D7) | Should be mentioned to the professor |
+| 3 | Input: "a multi-speaker radio broadcast wave file" | Scored on simulated conversations built from real IndicVoices phone conversations + real field-recorded village/market noise; the pipeline itself accepts any WAV/FLAC/MP3 | A real broadcast has no ground truth, so it cannot be *measured*. Simulation gives exact labels for every stage (D3, D12) | Low — standard practice (e.g. LibriCSS, AMI-style simulation) |
+| 4 | "Training and validation pipelines" | No neural network is (re)trained. The data is used to *tune* the clustering settings on a dev split and to *evaluate* on a speaker-disjoint test split | The proposal itself says "instead of building a model from scratch … focus on system engineering" and asks to *deploy* fine-tuned models in Stage 3. A 6 GB laptop GPU cannot fine-tune 600 M-parameter models (D5, D13) | Low |
+| 5 | "Conv-TasNet **or** Demucs" | Conv-TasNet (noise-trained checkpoint), SepFormer as a reference row | Public Demucs checkpoints separate music (vocals vs instruments), not speakers (D8) | None — an allowed option |
+| 6 | "a framework like pyannote.audio" + "Spectral Clustering **or** GMMs" | pyannote models for VAD/overlap detection and speaker embeddings; **both** clustering methods implemented from scratch and compared; pyannote's full pipeline as a reference | Implementing the clustering ourselves is what the proposal asks students to learn; comparing both options costs little (D2, D17) | None |
+| 7 | "IndicASR **or** IndicWav2Vec" | **Both** evaluated; the better one on independent real-world audio (Vaani) is the default | (D9) | None |
+| 8 | "native scripts **or** standardized Latin representations" | Both: Devanagari transcript (scored) **and** a Hinglish (Latin) transcript | (D10, D19) | None |
+| 9 | Background noise (not specified) | "Village" and "market" soundscapes from DEMAND + ESC-50 | Vaani recordings contain almost no speech-free audio to harvest noise from (D11) | None — the proposal names no noise source |
+| 10 | Stage 4: LLM post-processing | Not built yet | Planned after the mid-semester review, as agreed within the team | Timing only |

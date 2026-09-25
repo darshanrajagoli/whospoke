@@ -1,0 +1,56 @@
+{
+ "chosen_model": "indicconformer",
+ "selection_set": "vaani-test",
+ "romaniser_english_spelling_acc": 0.8199304750869062,
+ "romaniser_pairs": 8630,
+ "table": [
+  {
+   "model": "indicconformer",
+   "set": "vaani-test",
+   "n": 400,
+   "hours": 0.747,
+   "wer": 0.20984390735146022,
+   "cer": 0.0996402196553683,
+   "english_word_recall": 0.7819354838709678,
+   "english_words": 775,
+   "rtf": 0.05410205984225718,
+   "gpu_device_peak_mb": 3707.5
+  },
+  {
+   "model": "indicconformer",
+   "set": "indicvoices-valid",
+   "n": 400,
+   "hours": 0.75,
+   "wer": 0.13876040703052728,
+   "cer": 0.0654950249704548,
+   "english_word_recall": NaN,
+   "english_words": 0,
+   "rtf": 0.04133810626086689,
+   "gpu_device_peak_mb": 3793.5
+  },
+  {
+   "model": "indicwav2vec",
+   "set": "vaani-test",
+   "n": 400,
+   "hours": 0.747,
+   "wer": 0.3800352467270896,
+   "cer": 0.16837720128763492,
+   "english_word_recall": 0.48258064516129034,
+   "english_words": 775,
+   "rtf": 0.007397357393792288,
+   "gpu_device_peak_mb": 4995.5
+  },
+  {
+   "model": "indicwav2vec",
+   "set": "indicvoices-valid",
+   "n": 400,
+   "hours": 0.75,
+   "wer": 0.361041363816572,
+   "cer": 0.15622736456864017,
+   "english_word_recall": NaN,
+   "english_words": 0,
+   "rtf": 0.008232039140887961,
+   "gpu_device_peak_mb": 5375.5
+  }
+ ]
+}

@@ -1,0 +1,1240 @@
+{
+ "reference": [
+  {
+   "speaker": "S3",
+   "start": 0.35,
+   "end": 0.803,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S2",
+   "start": 0.973,
+   "end": 1.643,
+   "text": "हैलो"
+  },
+  {
+   "speaker": "S2",
+   "start": 1.816,
+   "end": 3.616,
+   "text": "हम बिहार से बोल रहे हैं"
+  },
+  {
+   "speaker": "S3",
+   "start": 4.302,
+   "end": 11.177,
+   "text": "वोट इस बार तो देना है न कोई छाप पर भी देना है अब तो वोट अथि हो गया तो"
+  },
+  {
+   "speaker": "S3",
+   "start": 11.302,
+   "end": 12.608,
+   "text": "यही बार तो सरकार कौन"
+  },
+  {
+   "speaker": "S3",
+   "start": 12.936,
+   "end": 21.168,
+   "text": "वोट देना है भोट देना है अब देना है देखिए न वो ही छाप को छाप पर देना है वोट"
+  },
+  {
+   "speaker": "S1",
+   "start": 21.382,
+   "end": 26.872,
+   "text": "हाँ हलो सर नमस ठीक है हाँ"
+  },
+  {
+   "speaker": "S1",
+   "start": 27.066,
+   "end": 27.576,
+   "text": "जी"
+  },
+  {
+   "speaker": "S3",
+   "start": 27.732,
+   "end": 46.822,
+   "text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ न दिया सरकार के खिलाफ नहीं दिया तो अब अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इन्द्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारा हो उसी का व्होट दिया जाएगा"
+  },
+  {
+   "speaker": "S3",
+   "start": 46.924,
+   "end": 53.541,
+   "text": "फिर भी देना है नहीं दिया गया है लेकिन फिर भी व्होट देना है होट नहीं देना है चलो होट देना है"
+  },
+  {
+   "speaker": "S1",
+   "start": 51.956,
+   "end": 57.299,
+   "text": "जी देखते हैं कि बहुत अच्छे से देखते हैं और कितना अच्छा बनाते हैं"
+  },
+  {
+   "speaker": "S1",
+   "start": 57.52,
+   "end": 61.031,
+   "text": "हाँ जी तो फिर"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S3",
+    "start": 0.35,
+    "end": 0.8,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 0.97,
+    "end": 3.62,
+    "text": "हेलो हम बिहार के बोल रहे हैं",
+    "hinglish": "hello hum bihar ke bol rahe hain",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 4.3,
+    "end": 21.17,
+    "text": "वोट इस बार तो देना है ना कोई छापर भी देना है अब तो वोट अभी हो गया तो सरकार को भोट देना है वोट देना है अब देना है देखिए ना कोई छाप छापर देना है वोट",
+    "hinglish": "vote is baar to dena hai na koi chhapar bhi dena hai ab to vote abhi ho gaya to sarkar ko bhot dena hai vote dena hai ab dena hai dekhie na koi chhaap chhapar dena hai vote",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 21.38,
+    "end": 27.58,
+    "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी",
+    "hinglish": "hello haan hello sir namas theek hai haan ji",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 27.73,
+    "end": 53.54,
+    "text": "अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो अब किसका देना है जे उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना ये भी ठीक है सहारा हो उसी का वोट दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी वोट देना है वोट नहीं देना है उसे में वोट देना है",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega to kuch na diya sarkar kuch laabh nahi diya to ab kiska dena hai je usi ka vote dena hai je aage mein badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana ye bhi theek hai sahara ho usi ka vote diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi vote dena hai vote nahi dena hai use mein vote dena hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 51.96,
+    "end": 61.03,
+    "text": "जी देखते है की बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं जी",
+    "hinglish": "ji dekhte hai ki bahut achha se dekhte hai aur kitna achha banate hain ji",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S3",
+    "start": 0.35,
+    "end": 0.8,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 0.97,
+    "end": 3.62,
+    "text": "हेलो मैम बिहार को तो बोल रहा है",
+    "hinglish": "hello ma'am bihar ko to bol raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 4.3,
+    "end": 21.17,
+    "text": "देना है ना कोई छापड़ भी देना है अब तो बहुत अच्छी हो गया तो सरकार को वोट देना वोट देना है अब देना है देखिए ना कोई छाप कोई छापड़ देना है तो",
+    "hinglish": "dena hai na koi chhapad bhi dena hai ab to bahut achhi ho gaya to sarkar ko vote dena vote dena hai ab dena hai dekhie na koi chhaap koi chhapad dena hai to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 21.38,
+    "end": 27.58,
+    "text": "हेलो हाँ हेलो सर हम ठीक है हाँ जी",
+    "hinglish": "hello haan hello sir hum theek hai haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 27.73,
+    "end": 53.54,
+    "text": "अब तो वोट खत्म हो गया वोट आएगा तो पूछना दिया सरकार के खिलाफ नहीं दिया तो आपका देना है जी उसी का वोट देना है जो आगे उन्हें बताएगा विकास कराएगा हम लोग का जिंदाबाद होगा सहारा हो मैंने जो भी चीज़ का सहारा हो उसकी का घोस दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी घूस देना है",
+    "hinglish": "ab to vote khatm ho gaya vote aaega to puchhna diya sarkar ke khilaph nahi diya to aapka dena hai ji usi ka vote dena hai jo aage unhen bataega vikas karaega hum log ka jindabad hoga sahara ho mainne jo bhi cheez ka sahara ho uski ka ghos diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi ghoos dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 51.96,
+    "end": 61.03,
+    "text": "देखते है की बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं ये",
+    "hinglish": "dekhte hai ki bahut achha se dekhte hain aur kitna achha banate hain ye",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S3",
+    "start": 0.35,
+    "end": 0.8,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 0.97,
+    "end": 3.62,
+    "text": "हलो कार",
+    "hinglish": "hello car",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S3",
+    "start": 4.3,
+    "end": 21.17,
+    "text": "देना है ना कोई छापड़ भी देना है अब तो बहुत अच्छी हो गया तो सरकार को वोट देना वोट देना है अब देना है देखिए ना कोई छाप कोई छापड़ देना है तो",
+    "hinglish": "dena hai na koi chhapad bhi dena hai ab to bahut achhi ho gaya to sarkar ko vote dena vote dena hai ab dena hai dekhie na koi chhaap koi chhapad dena hai to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 21.38,
+    "end": 27.58,
+    "text": "हेलो हाँ हेलो सर हम ठीक है हाँ जी",
+    "hinglish": "hello haan hello sir hum theek hai haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 27.73,
+    "end": 53.54,
+    "text": "अब तो वोट खत्म हो गया अब वोट आएगा तो पूछना दिया सरकार के खिलाफ नहीं दिया तो आपका देना है जी उसी का वोट देना है जी आगे उन्हें बताएगा विकास कराएगा हम लोग का जिंदाबाद होगा सहारा हो मैंने जो भी चीज़ का सहारा हो उसी का घूस दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी घूस देना वोट नहीं",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega to puchhna diya sarkar ke khilaph nahi diya to aapka dena hai ji usi ka vote dena hai ji aage unhen bataega vikas karaega hum log ka jindabad hoga sahara ho mainne jo bhi cheez ka sahara ho usi ka ghoos diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi ghoos dena vote nahi",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 51.96,
+    "end": 61.03,
+    "text": "देखते हैं कितना अच्छा से देखते है और कितना अच्छा बनाते हैं ये",
+    "hinglish": "dekhte hain kitna achha se dekhte hai aur kitna achha banate hain ye",
+    "audio": "separated"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.6,
+    "end": 0.85,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 0.95,
+    "end": 3.7,
+    "text": "हेलो हम बिहार से बोल रहे हैं",
+    "hinglish": "hello hum bihar se bol rahe hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.25,
+    "end": 9.6,
+    "text": "एक बार तो देना है ना कोई छापड़ भी देना है अब तो बहुत अठी हो गया",
+    "hinglish": "ek baar to dena hai na koi chhapad bhi dena hai ab to bahut athi ho gaya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.8,
+    "end": 13.7,
+    "text": "तब तुम तो सरकार वोट देना",
+    "hinglish": "tab tum to sarkar vote dena",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.0,
+    "end": 21.25,
+    "text": "हो तो देना है अब देना है देखिए न कोई छापा कोई छापा पर देना है तो",
+    "hinglish": "ho to dena hai ab dena hai dekhie na koi chhapa koi chhapa par dena hai to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.3,
+    "end": 23.2,
+    "text": "हेम हाँ हेलो सर",
+    "hinglish": "hem haan hello sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.05,
+    "end": 24.6,
+    "text": "नमस्कार",
+    "hinglish": "namaskar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.2,
+    "end": 25.85,
+    "text": "जीविक है",
+    "hinglish": "jivik hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.4,
+    "end": 27.6,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.65,
+    "end": 30.5,
+    "text": "अब तो वोट खत्म हो गया अब वोट आएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.0,
+    "end": 31.85,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.95,
+    "end": 34.5,
+    "text": "निया सरकार कुछ लाभ नहीं दिया",
+    "hinglish": "niya sarkar kuch laabh nahi diya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.1,
+    "end": 51.05,
+    "text": "तो आप उसका देना है जी उसी का भूस देना है जी आगे उन्हें बताएगा विकास कराएगा हम लोग का जिंदाबाद को बच्चों सहारा हो मैंने ये भी चीज़ का सहारा हो उसी का घूस दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी घूस देना है",
+    "hinglish": "to aap uska dena hai ji usi ka bhoos dena hai ji aage unhen bataega vikas karaega hum log ka jindabad ko bacchon sahara ho mainne ye bhi cheez ka sahara ho usi ka ghoos diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi ghoos dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.65,
+    "end": 54.9,
+    "text": "देखते हैं की बहुत अच्छा से देखते हैं",
+    "hinglish": "dekhte hain ki bahut achha se dekhte hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.2,
+    "end": 59.55,
+    "text": "और कितना अच्छा बनाते हैं ये",
+    "hinglish": "aur kitna achha banate hain ye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 59.9,
+    "end": 61.35,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.6,
+    "end": 0.85,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 0.95,
+    "end": 3.7,
+    "text": "हेलो हर कुछ",
+    "hinglish": "hello har kuch",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.25,
+    "end": 9.6,
+    "text": "एक बार तो देना है ना कोई छापड़ भी देना है अब तो बहुत अठी हो गया",
+    "hinglish": "ek baar to dena hai na koi chhapad bhi dena hai ab to bahut athi ho gaya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.8,
+    "end": 13.7,
+    "text": "तब तुम तो सरकार वोट देना",
+    "hinglish": "tab tum to sarkar vote dena",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.0,
+    "end": 21.25,
+    "text": "हो तो देना है अब देना है देखिए न कोई छापा कोई छापा पर देना है तो",
+    "hinglish": "ho to dena hai ab dena hai dekhie na koi chhapa koi chhapa par dena hai to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.3,
+    "end": 23.2,
+    "text": "हेम हाँ हेलो सर",
+    "hinglish": "hem haan hello sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.05,
+    "end": 24.6,
+    "text": "नमस्कार",
+    "hinglish": "namaskar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.2,
+    "end": 25.85,
+    "text": "जीविक है",
+    "hinglish": "jivik hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.4,
+    "end": 27.6,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.65,
+    "end": 30.5,
+    "text": "अब तो वोट खत्म हो गया अब वोट आएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.0,
+    "end": 31.85,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.95,
+    "end": 34.5,
+    "text": "निया सरकार कुछ लाभ नहीं दिया",
+    "hinglish": "niya sarkar kuch laabh nahi diya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.1,
+    "end": 51.05,
+    "text": "तो आप उसका देना है जी उसी का भूस देना है जी आगे उन्हें बताएगा विकास कराएगा हम लोग का जिंदाबाद को बच्चों सहारा हो मैंने ये भी चीज़ का सहारा हो उसी का घूस दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी घूस देना है",
+    "hinglish": "to aap uska dena hai ji usi ka bhoos dena hai ji aage unhen bataega vikas karaega hum log ka jindabad ko bacchon sahara ho mainne ye bhi cheez ka sahara ho usi ka ghoos diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi ghoos dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.65,
+    "end": 54.9,
+    "text": "बहुत अच्छा देखते हैं",
+    "hinglish": "bahut achha dekhte hain",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 55.2,
+    "end": 59.55,
+    "text": "और कितना अच्छा बनाते हैं ये",
+    "hinglish": "aur kitna achha banate hain ye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 59.9,
+    "end": 61.35,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.6,
+    "end": 0.85,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 0.95,
+    "end": 2.1,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 1.85,
+    "end": 2.56,
+    "text": "कौन थी",
+    "hinglish": "kaun thi",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.1,
+    "end": 3.7,
+    "text": "हर कुछ हमने",
+    "hinglish": "har kuch hamne",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.25,
+    "end": 9.6,
+    "text": "एक बार तो देना है ना कोई छापड़ भी देना है अब तो बहुत अठी हो गया",
+    "hinglish": "ek baar to dena hai na koi chhapad bhi dena hai ab to bahut athi ho gaya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.8,
+    "end": 13.7,
+    "text": "तब तुम तो सरकार वोट देना",
+    "hinglish": "tab tum to sarkar vote dena",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.0,
+    "end": 21.25,
+    "text": "हो तो देना है अब देना है देखिए न कोई छापा कोई छापा पर देना है तो",
+    "hinglish": "ho to dena hai ab dena hai dekhie na koi chhapa koi chhapa par dena hai to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.3,
+    "end": 21.9,
+    "text": "होना",
+    "hinglish": "hona",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.9,
+    "end": 23.2,
+    "text": "हाँ हेलो सर",
+    "hinglish": "haan hello sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 24.05,
+    "end": 24.6,
+    "text": "नमस्कार",
+    "hinglish": "namaskar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 25.2,
+    "end": 25.85,
+    "text": "जीविक है",
+    "hinglish": "jivik hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.4,
+    "end": 27.6,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.65,
+    "end": 30.5,
+    "text": "अब तो वोट खत्म हो गया अब वोट आएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 31.0,
+    "end": 31.85,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.95,
+    "end": 34.5,
+    "text": "निया सरकार कुछ लाभ नहीं दिया",
+    "hinglish": "niya sarkar kuch laabh nahi diya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.1,
+    "end": 51.05,
+    "text": "तो आप उसका देना है जी उसी का भूस देना है जी आगे उन्हें बताएगा विकास कराएगा हम लोग का जिंदाबाद को बच्चों सहारा हो मैंने ये भी चीज़ का सहारा हो उसी का घूस दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी घूस देना है",
+    "hinglish": "to aap uska dena hai ji usi ka bhoos dena hai ji aage unhen bataega vikas karaega hum log ka jindabad ko bacchon sahara ho mainne ye bhi cheez ka sahara ho usi ka ghoos diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi ghoos dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.65,
+    "end": 52.8,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 52.14,
+    "end": 53.22,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 52.8,
+    "end": 54.9,
+    "text": "बहुत अच्छा से देखते हैं",
+    "hinglish": "bahut achha se dekhte hain",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 55.2,
+    "end": 58.45,
+    "text": "और कितना अच्छा बनाते हैं",
+    "hinglish": "aur kitna achha banate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.45,
+    "end": 59.55,
+    "text": "यह",
+    "hinglish": "yeh",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 59.9,
+    "end": 61.35,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.62,
+    "end": 0.81,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 0.96,
+    "end": 3.58,
+    "text": "हेलो हाँ जी",
+    "hinglish": "hello haan ji",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 1.85,
+    "end": 2.43,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.25,
+    "end": 9.58,
+    "text": "एक बार तो देना है ना कोई छापड़ भी देना है अब तो बहुत अच्छी हो गया",
+    "hinglish": "ek baar to dena hai na koi chhapad bhi dena hai ab to bahut achhi ho gaya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.85,
+    "end": 13.7,
+    "text": "तो सरकार वोट देना",
+    "hinglish": "to sarkar vote dena",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.03,
+    "end": 21.24,
+    "text": "हो तो देना है अब देना है देखिए ना अब कोई और देना है तो",
+    "hinglish": "ho to dena hai ab dena hai dekhie na ab koi aur dena hai to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.31,
+    "end": 21.83,
+    "text": "हम",
+    "hinglish": "hum",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 22.02,
+    "end": 23.15,
+    "text": "हाँ हेलो सर",
+    "hinglish": "haan hello sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.09,
+    "end": 24.13,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.13,
+    "end": 24.57,
+    "text": "हम",
+    "hinglish": "hum",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 25.23,
+    "end": 25.82,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 26.42,
+    "end": 27.54,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.54,
+    "end": 27.55,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.69,
+    "end": 30.44,
+    "text": "अब तो वोट ख़त्म हो गया वोट आएगा",
+    "hinglish": "ab to vote khatm ho gaya vote aaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.06,
+    "end": 31.77,
+    "text": "इन्या",
+    "hinglish": "inya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 31.99,
+    "end": 34.49,
+    "text": "नदिया सरकार इतना दीदी",
+    "hinglish": "nadiya sarkar itna didi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.13,
+    "end": 51.04,
+    "text": "तो आपका देना है जी उसी का भूस देना है जी आगे उन्हें बढ़ाएगा विकास कराएगा हम लोग का जिंदाबाद हो बात सहारा हो मैंने ये भी चीज़ का सहारा हो उसी का भूस दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी वोट देना है",
+    "hinglish": "to aapka dena hai ji usi ka bhoos dena hai ji aage unhen badhaega vikas karaega hum log ka jindabad ho baat sahara ho mainne ye bhi cheez ka sahara ho usi ka bhoos diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi vote dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.67,
+    "end": 53.19,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 52.14,
+    "end": 54.88,
+    "text": "बहुत अच्छा कर देखते हैं",
+    "hinglish": "bahut achha kar dekhte hain",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.2,
+    "end": 53.22,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 55.21,
+    "end": 59.53,
+    "text": "और कितना अच्छा बनाते हैं जी",
+    "hinglish": "aur kitna achha banate hain ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 59.9,
+    "end": 59.97,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 60.05,
+    "end": 61.34,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_C",
+    "start": 0.35,
+    "end": 1.8,
+    "text": "हाँ चलो",
+    "hinglish": "haan chalo",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.85,
+    "end": 3.3,
+    "text": "बुखार खुद होते हैं",
+    "hinglish": "bukhar khud hote hain",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 4.25,
+    "end": 9.6,
+    "text": "कोई बात तो देना है ना कोई छापर भी देना है अब तो बहुत अच्छी हो गया",
+    "hinglish": "koi baat to dena hai na koi chhapar bhi dena hai ab to bahut achhi ho gaya",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 10.8,
+    "end": 11.75,
+    "text": "तो",
+    "hinglish": "to",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.75,
+    "end": 12.75,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 12.8,
+    "end": 13.75,
+    "text": "वोट देना",
+    "hinglish": "vote dena",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 14.95,
+    "end": 21.25,
+    "text": "हो तो देना है अब देना है देखिए ना कोई कर देना है",
+    "hinglish": "ho to dena hai ab dena hai dekhie na koi kar dena hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.25,
+    "end": 22.5,
+    "text": "हालांकि हाँ",
+    "hinglish": "halanki haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 22.4,
+    "end": 23.15,
+    "text": "हालास",
+    "hinglish": "halas",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.15,
+    "end": 24.7,
+    "text": "हम",
+    "hinglish": "hum",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 25.15,
+    "end": 25.9,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 26.35,
+    "end": 27.6,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.7,
+    "end": 28.85,
+    "text": "हाँ सुबह खत्म",
+    "hinglish": "haan subah khatm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 28.85,
+    "end": 30.7,
+    "text": "हो गया वोट आएगा",
+    "hinglish": "ho gaya vote aaega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 30.95,
+    "end": 34.5,
+    "text": "मैंने तो कुछ न दिया सरकार कुछ खिलाफ न दिया",
+    "hinglish": "mainne to kuch na diya sarkar kuch khilaph na diya",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 35.05,
+    "end": 42.35,
+    "text": "तो आपका देना है जी उसी का वोट देना है जी आगे उन्हें बताएगा विचार्ज कराएगा हम लोग का",
+    "hinglish": "to aapka dena hai ji usi ka vote dena hai ji aage unhen bataega vicharj karaega hum log ka",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 42.65,
+    "end": 45.4,
+    "text": "सहारा हो मान जे भी चीज से सहारा हो",
+    "hinglish": "sahara ho maan je bhi cheej se sahara ho",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 45.45,
+    "end": 51.2,
+    "text": "फिर भी देना है न ही दिया गया है लेकिन फिर भी घोष देना है",
+    "hinglish": "phir bhi dena hai na hi diya gaya hai lekin phir bhi ghosh dena hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 51.55,
+    "end": 52.05,
+    "text": "होती",
+    "hinglish": "hoti",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 52.05,
+    "end": 52.45,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 52.8,
+    "end": 53.1,
+    "text": "ते",
+    "hinglish": "te",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.5,
+    "end": 57.4,
+    "text": "अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+    "hinglish": "achha se dekhte hain aur kitna achha banate hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.65,
+    "end": 57.95,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 58.55,
+    "end": 59.4,
+    "text": "यह",
+    "hinglish": "yeh",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 60.2,
+    "end": 61.0,
+    "text": "हो क्या",
+    "hinglish": "ho kya",
+    "audio": "track-0"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.35,
+    "end": 1.8,
+    "text": "हाँ चलो",
+    "hinglish": "haan chalo",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.85,
+    "end": 3.3,
+    "text": "बुखार खुद होते हैं",
+    "hinglish": "bukhar khud hote hain",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.25,
+    "end": 9.6,
+    "text": "कोई बात तो देना है ना कोई छापर भी देना है अब तो बहुत अच्छी हो गया",
+    "hinglish": "koi baat to dena hai na koi chhapar bhi dena hai ab to bahut achhi ho gaya",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.8,
+    "end": 12.75,
+    "text": "तब तक चार",
+    "hinglish": "tab tak chaar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.8,
+    "end": 13.75,
+    "text": "वोट देना",
+    "hinglish": "vote dena",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.95,
+    "end": 21.25,
+    "text": "हो तो देना है अब देना है देखिए ना कोई कर देना है",
+    "hinglish": "ho to dena hai ab dena hai dekhie na koi kar dena hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.25,
+    "end": 22.45,
+    "text": "हालांकि हाँ",
+    "hinglish": "halanki haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.45,
+    "end": 23.15,
+    "text": "हलो सर",
+    "hinglish": "hello sir",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.15,
+    "end": 24.7,
+    "text": "हम",
+    "hinglish": "hum",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 25.15,
+    "end": 25.9,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.35,
+    "end": 27.6,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.7,
+    "end": 30.7,
+    "text": "आज वोट खत्म हो गया वोट आएगा",
+    "hinglish": "aaj vote khatm ho gaya vote aaega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.95,
+    "end": 34.5,
+    "text": "मैंने तो कुछ न दिया सरकार कुछ खिलाफ न दिया",
+    "hinglish": "mainne to kuch na diya sarkar kuch khilaph na diya",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.05,
+    "end": 42.35,
+    "text": "तो आपका देना है जी उसी का वोट देना है जी आगे उन्हें बताएगा विचार्ज कराएगा हम लोग का",
+    "hinglish": "to aapka dena hai ji usi ka vote dena hai ji aage unhen bataega vicharj karaega hum log ka",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 42.65,
+    "end": 45.4,
+    "text": "सहारा हो मान जे भी चीज से सहारा हो",
+    "hinglish": "sahara ho maan je bhi cheej se sahara ho",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.45,
+    "end": 51.2,
+    "text": "फिर भी देना है न ही दिया गया है लेकिन फिर भी घोष देना है",
+    "hinglish": "phir bhi dena hai na hi diya gaya hai lekin phir bhi ghosh dena hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.55,
+    "end": 52.05,
+    "text": "होती",
+    "hinglish": "hoti",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.05,
+    "end": 52.45,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.8,
+    "end": 53.1,
+    "text": "ते",
+    "hinglish": "te",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.5,
+    "end": 57.4,
+    "text": "अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+    "hinglish": "achha se dekhte hain aur kitna achha banate hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 57.65,
+    "end": 57.95,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.55,
+    "end": 59.4,
+    "text": "यह",
+    "hinglish": "yeh",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 60.2,
+    "end": 61.0,
+    "text": "हो क्या",
+    "hinglish": "ho kya",
+    "audio": "track-0"
+   }
+  ]
+ }
+}

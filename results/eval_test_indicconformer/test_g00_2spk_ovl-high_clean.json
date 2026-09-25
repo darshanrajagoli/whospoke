@@ -1,0 +1,1318 @@
+{
+ "reference": [
+  {
+   "speaker": "S2",
+   "start": 0.62,
+   "end": 1.452,
+   "text": "हैलो"
+  },
+  {
+   "speaker": "S2",
+   "start": 1.793,
+   "end": 3.382,
+   "text": "यश यश बोलिए"
+  },
+  {
+   "speaker": "S1",
+   "start": 3.094,
+   "end": 3.817,
+   "text": "नमस्ते मैम"
+  },
+  {
+   "speaker": "S2",
+   "start": 3.688,
+   "end": 5.568,
+   "text": "अच्छा अच्छा कहाँ पे"
+  },
+  {
+   "speaker": "S1",
+   "start": 4.126,
+   "end": 4.53,
+   "text": "हाँ मैम"
+  },
+  {
+   "speaker": "S1",
+   "start": 4.718,
+   "end": 9.471,
+   "text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका"
+  },
+  {
+   "speaker": "S2",
+   "start": 10.232,
+   "end": 13.412,
+   "text": "अच्छा अच्छा आपकी कार में क्या खराबी हो गई है जैसे"
+  },
+  {
+   "speaker": "S2",
+   "start": 13.72,
+   "end": 14.55,
+   "text": "अच्छा"
+  },
+  {
+   "speaker": "S2",
+   "start": 14.673,
+   "end": 18.047,
+   "text": "बंद हो गई है ना तो आपने ने उसका इंजन देखा"
+  },
+  {
+   "speaker": "S1",
+   "start": 16.044,
+   "end": 18.044,
+   "text": "मैम आपको क्या क्या चाहिए ये बताइए"
+  },
+  {
+   "speaker": "S1",
+   "start": 18.17,
+   "end": 26.716,
+   "text": "मैम आपको बहुत सारे प्राइज़ में मिल जाएंगे आपको किस प्राइज़ में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइज़ में अवेबल करवा देंगे"
+  },
+  {
+   "speaker": "S2",
+   "start": 27.043,
+   "end": 29.823,
+   "text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए"
+  },
+  {
+   "speaker": "S2",
+   "start": 29.979,
+   "end": 36.667,
+   "text": "अपनी लोकैशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपके आपकी बाइक ठीक हो जाएगी आप किसी यात्रा पे जा रहे हो क्या"
+  },
+  {
+   "speaker": "S1",
+   "start": 35.258,
+   "end": 53.077,
+   "text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक पीस सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस"
+  },
+  {
+   "speaker": "S2",
+   "start": 36.945,
+   "end": 37.755,
+   "text": "अच्छा"
+  },
+  {
+   "speaker": "S1",
+   "start": 53.285,
+   "end": 54.376,
+   "text": "आम की लकड़ी का मैम"
+  },
+  {
+   "speaker": "S1",
+   "start": 54.487,
+   "end": 69.874,
+   "text": "मैम यहाँ पर हर एक चीज अच्छा मिलता है आम की लकड़ी सागवन की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनके हाथ की यानि फिनिसिंग भी बहुत ही अच्छी है और आपको हर एक चीज ए वन मिल जाएगा"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S2",
+    "start": 0.62,
+    "end": 5.57,
+    "text": "हलो यश यश बोलिए अच्छा अच्छा कहाँ पे",
+    "hinglish": "hello yash yash bolie achha achha kahan pe",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 3.09,
+    "end": 9.47,
+    "text": "नमस्ते मैम हाँ मैम हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+    "hinglish": "namaste ma'am haan ma'am haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 10.23,
+    "end": 18.05,
+    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे अच्छा बंद हो गई है ना तो आपने उसका इंजन देखा",
+    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise achha band ho gayi hai na to aapne uska engine dekha",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 16.04,
+    "end": 26.72,
+    "text": "मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+    "hinglish": "ma'am aapko kya kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 27.04,
+    "end": 37.76,
+    "text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या अच्छा",
+    "hinglish": "achha achha achha to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waiph theek ho jaegi aap kisi yatra par ja rahe ho kya achha",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 35.26,
+    "end": 69.87,
+    "text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की उन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+    "hinglish": "ma'am aapko achha hi saman milega aapko milega divan bed milega ek sofa milega daining table milega aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki un finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S2",
+    "start": 0.62,
+    "end": 5.57,
+    "text": "हलो यश यश बोलिए मैम अच्छा कहाँ पे",
+    "hinglish": "hello yash yash bolie ma'am achha kahan pe",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 3.09,
+    "end": 9.47,
+    "text": "नमस्ते मैम मैम हाँ मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+    "hinglish": "namaste ma'am ma'am haan mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 10.23,
+    "end": 18.05,
+    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे अच्छा बंद हो गई है ना तो क्या",
+    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise achha band ho gayi hai na to kya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 16.04,
+    "end": 26.72,
+    "text": "मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+    "hinglish": "ma'am aapko kya kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 27.04,
+    "end": 37.76,
+    "text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप किसी यात्रा से जा रही",
+    "hinglish": "achha achha achha to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waiph theek ho jaegi aap kisi yatra se ja rahi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 35.26,
+    "end": 69.87,
+    "text": "नहीं आपको सारे सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की उन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+    "hinglish": "nahi aapko sare saman milega aapko milega divan bed milega ek sofa milega daining table milega aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki un finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S2",
+    "start": 0.62,
+    "end": 5.57,
+    "text": "हलो यश यश बोलिए अच्छा अच्छा कहाँ पे",
+    "hinglish": "hello yash yash bolie achha achha kahan pe",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 3.09,
+    "end": 9.47,
+    "text": "नमस्ते मैम हाँ मैम हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+    "hinglish": "namaste ma'am haan ma'am haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 10.23,
+    "end": 18.05,
+    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे अच्छा बंद हो गई है ना तो आपने जिसका इंजन देखा",
+    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise achha band ho gayi hai na to aapne jiska engine dekha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 16.04,
+    "end": 26.72,
+    "text": "मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+    "hinglish": "ma'am aapko kya kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 27.04,
+    "end": 37.76,
+    "text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या अच्छा",
+    "hinglish": "achha achha achha to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waiph theek ho jaegi aap kisi yatra par ja rahe ho kya achha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 35.26,
+    "end": 69.87,
+    "text": "मैम आपको अच्छा ही सामान मिलेगा हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की उन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+    "hinglish": "ma'am aapko achha hi saman milega haan aapko milega divan bed milega ek sofa milega daining table milega aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki un finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
+    "audio": "separated"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.65,
+    "end": 1.3,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 1.8,
+    "end": 2.95,
+    "text": "यस यश बोल",
+    "hinglish": "yas yash bol",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 2.95,
+    "end": 5.5,
+    "text": "ये नमस्ते मैम अच्छा मैं हाँ",
+    "hinglish": "ye namaste ma'am achha main haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 5.5,
+    "end": 6.4,
+    "text": "मिल जाएगा",
+    "hinglish": "mil jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 6.65,
+    "end": 9.55,
+    "text": "मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+    "hinglish": "ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.2,
+    "end": 13.3,
+    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
+    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 13.7,
+    "end": 14.4,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.65,
+    "end": 17.3,
+    "text": "बंद हो गयी है न तुम आपको क्या क्या चाहिए",
+    "hinglish": "band ho gayi hai na tum aapko kya kya chahiye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.3,
+    "end": 21.5,
+    "text": "ये बताइए मैम आपको बहुत सारे प्राइस मिल जाएंगे आपको किस",
+    "hinglish": "ye bataie ma'am aapko bahut sare price mil jaenge aapko kis",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.7,
+    "end": 26.75,
+    "text": "प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+    "hinglish": "price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.0,
+    "end": 28.25,
+    "text": "अच्छा अच्छा अच्छा",
+    "hinglish": "achha achha achha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 28.55,
+    "end": 29.65,
+    "text": "तो आप ऐसा करिए",
+    "hinglish": "to aap aisa karie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 29.95,
+    "end": 34.8,
+    "text": "अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप",
+    "hinglish": "apni location mere ko bhej dijie main udhar hi aa jaunga aapki waiph theek ho jaegi aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.1,
+    "end": 37.0,
+    "text": "किसी यात्रों से जा रहे हो ध्यान मिलेगा",
+    "hinglish": "kisi yatron se ja rahe ho dhyaan milega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 37.0,
+    "end": 43.7,
+    "text": "आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको",
+    "hinglish": "aapko milega divan bed milega ek sofa milega daining table milega aapko",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 43.85,
+    "end": 44.7,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 45.15,
+    "end": 69.9,
+    "text": "सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनके हाथ की इन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+    "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unke haath ki in finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.65,
+    "end": 1.3,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 1.8,
+    "end": 2.95,
+    "text": "यस यश बोल",
+    "hinglish": "yas yash bol",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 2.95,
+    "end": 5.5,
+    "text": "नमस्ते मैम हाँ मैम हाँ मैम",
+    "hinglish": "namaste ma'am haan ma'am haan ma'am",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 5.5,
+    "end": 6.4,
+    "text": "मिल जाएगा",
+    "hinglish": "mil jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 6.65,
+    "end": 9.55,
+    "text": "मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+    "hinglish": "ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.2,
+    "end": 13.3,
+    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
+    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 13.7,
+    "end": 14.4,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.65,
+    "end": 17.3,
+    "text": "बंद हो गई है ना तो आपने अभी",
+    "hinglish": "band ho gayi hai na to aapne abhi",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.3,
+    "end": 21.5,
+    "text": "ये बताइए मैम आपको बहुत सारे प्राइस मिल जाएंगे आपको किस",
+    "hinglish": "ye bataie ma'am aapko bahut sare price mil jaenge aapko kis",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 21.7,
+    "end": 26.75,
+    "text": "प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+    "hinglish": "price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.0,
+    "end": 28.25,
+    "text": "अच्छा अच्छा अच्छा",
+    "hinglish": "achha achha achha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 28.55,
+    "end": 29.65,
+    "text": "तो आप ऐसा करिए",
+    "hinglish": "to aap aisa karie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 29.95,
+    "end": 34.8,
+    "text": "अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप",
+    "hinglish": "apni location mere ko bhej dijie main udhar hi aa jaunga aapki waiph theek ho jaegi aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.1,
+    "end": 37.0,
+    "text": "किसी यात्रा पे जा रहे हो क्या मिलेगा",
+    "hinglish": "kisi yatra pe ja rahe ho kya milega",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 37.0,
+    "end": 43.7,
+    "text": "हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको",
+    "hinglish": "haan aapko milega divan bed milega ek sofa milega daining table milega aapko",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 43.85,
+    "end": 44.7,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 45.15,
+    "end": 69.9,
+    "text": "सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनके हाथ की इन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+    "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unke haath ki in finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.65,
+    "end": 1.3,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 1.8,
+    "end": 5.5,
+    "text": "यस यश बोलिए नमस्ते मैम हाँ मैम हाँ मैम",
+    "hinglish": "yas yash bolie namaste ma'am haan ma'am haan ma'am",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 3.08,
+    "end": 5.43,
+    "text": "अच्छा अच्छा कहाँ पे",
+    "hinglish": "achha achha kahan pe",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 5.5,
+    "end": 6.4,
+    "text": "मिल जाएगा",
+    "hinglish": "mil jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 6.65,
+    "end": 9.55,
+    "text": "मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+    "hinglish": "ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.2,
+    "end": 13.3,
+    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
+    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 13.7,
+    "end": 14.4,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.65,
+    "end": 21.5,
+    "text": "बंद हो गई है ना हम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस मिल जाएँगे आपको किस",
+    "hinglish": "band ho gayi hai na hum aapko kya kya chahiye ye bataie ma'am aapko bahut sare price mil jaenge aapko kis",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.96,
+    "end": 18.05,
+    "text": "तो वो आपने उसका ईंधन देखा",
+    "hinglish": "to wo aapne uska indhan dekha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.7,
+    "end": 26.75,
+    "text": "प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+    "hinglish": "price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.0,
+    "end": 28.25,
+    "text": "अच्छा अच्छा अच्छा",
+    "hinglish": "achha achha achha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 28.55,
+    "end": 29.65,
+    "text": "तो आप ऐसा करिए",
+    "hinglish": "to aap aisa karie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 29.95,
+    "end": 34.8,
+    "text": "अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप",
+    "hinglish": "apni location mere ko bhej dijie main udhar hi aa jaunga aapki waiph theek ho jaegi aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.1,
+    "end": 43.7,
+    "text": "मैम आपको अच्छा ही सामान मिलेगा हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको",
+    "hinglish": "ma'am aapko achha hi saman milega haan aapko milega divan bed milega ek sofa milega daining table milega aapko",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.16,
+    "end": 36.6,
+    "text": "किसी यात्रा पे जा रहे हो क्या",
+    "hinglish": "kisi yatra pe ja rahe ho kya",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.0,
+    "end": 37.27,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.44,
+    "end": 37.59,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 43.85,
+    "end": 44.7,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 45.15,
+    "end": 69.9,
+    "text": "सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनके हाथ की इन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+    "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unke haath ki in finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.66,
+    "end": 1.28,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.8,
+    "end": 5.51,
+    "text": "यश यश बोलिए अच्छा अच्छा कहाँ पे",
+    "hinglish": "yash yash bolie achha achha kahan pe",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 3.08,
+    "end": 5.43,
+    "text": "नमस्ते मैम हाँ मैम हाँ मैम",
+    "hinglish": "namaste ma'am haan ma'am haan ma'am",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 5.57,
+    "end": 6.38,
+    "text": "मिल जाएगा",
+    "hinglish": "mil jaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 6.7,
+    "end": 9.5,
+    "text": "मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+    "hinglish": "ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.22,
+    "end": 13.28,
+    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
+    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 13.73,
+    "end": 14.38,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.68,
+    "end": 18.04,
+    "text": "बंद हो गई है ना तो आपने फिर उसका इंजन देखा",
+    "hinglish": "band ho gayi hai na to aapne phir uska engine dekha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 15.96,
+    "end": 21.46,
+    "text": "मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस",
+    "hinglish": "ma'am aapko kya kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.71,
+    "end": 26.74,
+    "text": "प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+    "hinglish": "price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 27.05,
+    "end": 28.23,
+    "text": "अच्छा अच्छा अच्छा",
+    "hinglish": "achha achha achha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 28.55,
+    "end": 29.66,
+    "text": "तो आप ऐसा करिए",
+    "hinglish": "to aap aisa karie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.97,
+    "end": 34.78,
+    "text": "अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप",
+    "hinglish": "apni location mere ko bhej dijie main udhar hi aa jaunga aapki waiph theek ho jaegi aap",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.15,
+    "end": 36.6,
+    "text": "किसी यात्रा पे जा रहे हो क्या",
+    "hinglish": "kisi yatra pe ja rahe ho kya",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.16,
+    "end": 37.31,
+    "text": "हम आपको अच्छा ही सामान मिलेगा",
+    "hinglish": "hum aapko achha hi saman milega",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.02,
+    "end": 37.61,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.44,
+    "end": 43.64,
+    "text": "हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको",
+    "hinglish": "haan aapko milega divan bed milega ek sofa milega daining table milega aapko",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 43.91,
+    "end": 44.7,
+    "text": "और भी",
+    "hinglish": "aur bhi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 45.19,
+    "end": 69.89,
+    "text": "सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनके हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+    "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unke haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_B",
+    "start": 0.65,
+    "end": 1.45,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 1.75,
+    "end": 3.15,
+    "text": "यश याश बोलिए",
+    "hinglish": "yash yaash bolie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 3.1,
+    "end": 3.8,
+    "text": "नमस्ते मैम",
+    "hinglish": "namaste ma'am",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 3.8,
+    "end": 4.15,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.1,
+    "end": 4.45,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 4.35,
+    "end": 4.65,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.6,
+    "end": 4.9,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 5.55,
+    "end": 6.45,
+    "text": "मिल जाएगा",
+    "hinglish": "mil jaega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.6,
+    "end": 9.55,
+    "text": "मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+    "hinglish": "ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 10.2,
+    "end": 13.25,
+    "text": "अच्छा अच्छा आपकी कार में क्या खराबी हो गई है जैसे",
+    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 13.75,
+    "end": 14.4,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 14.65,
+    "end": 16.1,
+    "text": "बंद हो गई है ना तो",
+    "hinglish": "band ho gayi hai na to",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 16.25,
+    "end": 16.55,
+    "text": "वो आप",
+    "hinglish": "wo aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.8,
+    "end": 17.65,
+    "text": "अच्छा ये बहुत",
+    "hinglish": "achha ye bahut",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.7,
+    "end": 21.45,
+    "text": "मैम आपको बहुत सारे प्राइजे मिल जाएंगे आपको कितने",
+    "hinglish": "ma'am aapko bahut sare praije mil jaenge aapko kitne",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.7,
+    "end": 22.2,
+    "text": "प्राइस",
+    "hinglish": "price",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.25,
+    "end": 26.75,
+    "text": "आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+    "hinglish": "aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.05,
+    "end": 27.45,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.45,
+    "end": 28.25,
+    "text": "अच्छा अच्छा",
+    "hinglish": "achha achha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 28.55,
+    "end": 29.65,
+    "text": "तो आप ऐसा करिए",
+    "hinglish": "to aap aisa karie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 29.95,
+    "end": 34.75,
+    "text": "अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप",
+    "hinglish": "apni location mere ko bhej dijie main udhar hi aa jaunga aapki waik theek ho jaegi aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 35.35,
+    "end": 35.8,
+    "text": "यात्रा",
+    "hinglish": "yatra",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.45,
+    "end": 43.65,
+    "text": "मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको",
+    "hinglish": "milega aapko milega divan bed milega ek sofa milega daining table milega aapko",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.2,
+    "end": 37.55,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 43.9,
+    "end": 44.7,
+    "text": "और भी",
+    "hinglish": "aur bhi",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.2,
+    "end": 61.5,
+    "text": "सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो आम की लकड़ी का मैम मैम यहाँ पे हर एक चीज अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज",
+    "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo aam ki lakdi ka ma'am ma'am yahan pe har ek cheej achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheej",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 61.55,
+    "end": 61.9,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 62.35,
+    "end": 63.85,
+    "text": "हम लोग के यहाँ पे वर्कर्स",
+    "hinglish": "hum log ke yahan pe workers",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.5,
+    "end": 69.9,
+    "text": "काम करते हैं हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज अवेलेबल मिल जाएगा",
+    "hinglish": "kaam karte hain haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheej available mil jaega",
+    "audio": "track-0"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_B",
+    "start": 0.65,
+    "end": 1.45,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 1.75,
+    "end": 3.15,
+    "text": "यश याश बोलिए",
+    "hinglish": "yash yaash bolie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 3.1,
+    "end": 3.8,
+    "text": "नमस्ते मैम",
+    "hinglish": "namaste ma'am",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 3.8,
+    "end": 4.15,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.1,
+    "end": 4.45,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 4.35,
+    "end": 4.65,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.6,
+    "end": 4.9,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 5.55,
+    "end": 6.45,
+    "text": "मिल जाएगा",
+    "hinglish": "mil jaega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 6.6,
+    "end": 9.55,
+    "text": "मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+    "hinglish": "ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 10.2,
+    "end": 13.25,
+    "text": "अच्छा अच्छा आपकी कार में क्या खराबी हो गई है जैसे",
+    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 13.75,
+    "end": 14.4,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 14.65,
+    "end": 16.1,
+    "text": "बंद हो गई है ना तो",
+    "hinglish": "band ho gayi hai na to",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 16.25,
+    "end": 16.55,
+    "text": "वो आप",
+    "hinglish": "wo aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.8,
+    "end": 17.15,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.15,
+    "end": 17.6,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.85,
+    "end": 21.45,
+    "text": "मैम आपको बहुत सारे प्राइजे मिल जाएंगे आपको किस",
+    "hinglish": "ma'am aapko bahut sare praije mil jaenge aapko kis",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 21.7,
+    "end": 22.2,
+    "text": "प्राइस",
+    "hinglish": "price",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.25,
+    "end": 26.75,
+    "text": "आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+    "hinglish": "aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.05,
+    "end": 27.45,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.45,
+    "end": 28.25,
+    "text": "अच्छा अच्छा",
+    "hinglish": "achha achha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 28.55,
+    "end": 29.65,
+    "text": "तो आप ऐसा करिए",
+    "hinglish": "to aap aisa karie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 29.95,
+    "end": 34.75,
+    "text": "अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप",
+    "hinglish": "apni location mere ko bhej dijie main udhar hi aa jaunga aapki waik theek ho jaegi aap",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 35.35,
+    "end": 35.8,
+    "text": "यात्रा",
+    "hinglish": "yatra",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.45,
+    "end": 43.65,
+    "text": "मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको",
+    "hinglish": "milega aapko milega divan bed milega ek sofa milega daining table milega aapko",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.2,
+    "end": 37.55,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 43.9,
+    "end": 44.7,
+    "text": "और भी",
+    "hinglish": "aur bhi",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 45.2,
+    "end": 61.5,
+    "text": "सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो आम की लकड़ी का मैम मैम यहाँ पे हर एक चीज अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज",
+    "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo aam ki lakdi ka ma'am ma'am yahan pe har ek cheej achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheej",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 61.55,
+    "end": 61.9,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 62.35,
+    "end": 63.85,
+    "text": "हम लोग के यहाँ पे वर्कर्स",
+    "hinglish": "hum log ke yahan pe workers",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.5,
+    "end": 69.9,
+    "text": "काम करते हैं हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज अवेलेबल मिल जाएगा",
+    "hinglish": "kaam karte hain haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheej available mil jaega",
+    "audio": "track-0"
+   }
+  ]
+ }
+}

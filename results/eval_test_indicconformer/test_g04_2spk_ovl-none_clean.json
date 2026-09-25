@@ -1,0 +1,1084 @@
+{
+ "reference": [
+  {
+   "speaker": "S2",
+   "start": 0.359,
+   "end": 0.769,
+   "text": "हेलो"
+  },
+  {
+   "speaker": "S2",
+   "start": 0.919,
+   "end": 4.029,
+   "text": "क्या मैं जैन ब्रदर्स स्टेसनरी एण्ड बुक शॉप में बात कर रही हूँ"
+  },
+  {
+   "speaker": "S1",
+   "start": 4.383,
+   "end": 5.199,
+   "text": "नमस्ते"
+  },
+  {
+   "speaker": "S1",
+   "start": 5.317,
+   "end": 8.166,
+   "text": "आपके बच्चे का नाम वैभव है आपके लड़के का"
+  },
+  {
+   "speaker": "S1",
+   "start": 8.325,
+   "end": 11.055,
+   "text": "हाँ और वो कक्षा दस में पढ़ता है"
+  },
+  {
+   "speaker": "S2",
+   "start": 11.669,
+   "end": 15.433,
+   "text": "हमें क्या कहते हैं पेन के बोक्सेस चाहिए थे छः बॉक्स"
+  },
+  {
+   "speaker": "S2",
+   "start": 15.777,
+   "end": 17.437,
+   "text": "हाँ जी हमें"
+  },
+  {
+   "speaker": "S2",
+   "start": 17.602,
+   "end": 22.532,
+   "text": "हमें दो बोक्सेस के रेड के दो ब्लू के और दो ब्लैक चाहिए हैं"
+  },
+  {
+   "speaker": "S1",
+   "start": 22.887,
+   "end": 33.017,
+   "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है"
+  },
+  {
+   "speaker": "S2",
+   "start": 33.478,
+   "end": 35.508,
+   "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा"
+  },
+  {
+   "speaker": "S1",
+   "start": 36.043,
+   "end": 36.491,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S1",
+   "start": 36.745,
+   "end": 41.8,
+   "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज्यादा गर्मी हो रही है"
+  },
+  {
+   "speaker": "S1",
+   "start": 41.965,
+   "end": 47.295,
+   "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है"
+  },
+  {
+   "speaker": "S2",
+   "start": 47.601,
+   "end": 52.491,
+   "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा"
+  },
+  {
+   "speaker": "S2",
+   "start": 52.669,
+   "end": 57.759,
+   "text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे इनके प्राइस बताते जाइए"
+  },
+  {
+   "speaker": "S2",
+   "start": 58.058,
+   "end": 59.508,
+   "text": "मे को टेप चाहिए हैं"
+  },
+  {
+   "speaker": "S1",
+   "start": 59.68,
+   "end": 71.559,
+   "text": "हाँ दवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा"
+  },
+  {
+   "speaker": "S1",
+   "start": 71.69,
+   "end": 73.887,
+   "text": "अच्छा तो कब तक आएँगे"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S2",
+    "start": 0.36,
+    "end": 4.03,
+    "text": "हलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ",
+    "hinglish": "hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 4.38,
+    "end": 11.05,
+    "text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का हाँ और वो कक्षा दस में पढ़ता है",
+    "hinglish": "namaste aapke bacche ka naam vaibhav hai aapke ladke ka haan aur wo kaksha das mein padhta hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 11.67,
+    "end": 22.53,
+    "text": "हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स हाँ जी हमें हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं",
+    "hinglish": "hamen kya kahte hain pen ke boxes chahiye the chhah box haan ji hamen hamen do box uske red ke do blue ke aur do black ke chahiye hain",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 22.89,
+    "end": 33.02,
+    "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+    "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 33.48,
+    "end": 35.51,
+    "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+    "hinglish": "to ek box ka kitna price padega",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 36.04,
+    "end": 47.3,
+    "text": "हूँ अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
+    "hinglish": "hoon ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 47.6,
+    "end": 59.51,
+    "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए मेरे को टेप्स चाहिए हैं",
+    "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie mere ko teps chahiye hain",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 59.68,
+    "end": 73.89,
+    "text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+    "hinglish": "haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega achha to kab tak aaenge",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S2",
+    "start": 0.36,
+    "end": 4.03,
+    "text": "हलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ",
+    "hinglish": "hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 4.38,
+    "end": 11.05,
+    "text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का हाँ और वो कक्षा दस में पढ़ता है",
+    "hinglish": "namaste aapke bacche ka naam vaibhav hai aapke ladke ka haan aur wo kaksha das mein padhta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 11.67,
+    "end": 22.53,
+    "text": "हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स हाँ जी हमें हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं",
+    "hinglish": "hamen kya kahte hain pen ke boxes chahiye the chhah box haan ji hamen hamen do box uske red ke do blue ke aur do black ke chahiye hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 22.89,
+    "end": 33.02,
+    "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+    "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 33.48,
+    "end": 35.51,
+    "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+    "hinglish": "to ek box ka kitna price padega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 36.04,
+    "end": 47.3,
+    "text": "हूँ अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
+    "hinglish": "hoon ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 47.6,
+    "end": 59.51,
+    "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए मेरे को टेप्स चाहिए हैं",
+    "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie mere ko teps chahiye hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 59.68,
+    "end": 73.89,
+    "text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+    "hinglish": "haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega achha to kab tak aaenge",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S2",
+    "start": 0.36,
+    "end": 4.03,
+    "text": "हलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ",
+    "hinglish": "hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 4.38,
+    "end": 11.05,
+    "text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का हाँ और वो कक्षा दस में पढ़ता है",
+    "hinglish": "namaste aapke bacche ka naam vaibhav hai aapke ladke ka haan aur wo kaksha das mein padhta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 11.67,
+    "end": 22.53,
+    "text": "हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स हाँ जी हमें हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं",
+    "hinglish": "hamen kya kahte hain pen ke boxes chahiye the chhah box haan ji hamen hamen do box uske red ke do blue ke aur do black ke chahiye hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 22.89,
+    "end": 33.02,
+    "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+    "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 33.48,
+    "end": 35.51,
+    "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+    "hinglish": "to ek box ka kitna price padega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 36.04,
+    "end": 47.3,
+    "text": "हूँ अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
+    "hinglish": "hoon ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 47.6,
+    "end": 59.51,
+    "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए मेरे को टेप्स चाहिए हैं",
+    "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie mere ko teps chahiye hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 59.68,
+    "end": 73.89,
+    "text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+    "hinglish": "haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega achha to kab tak aaenge",
+    "audio": "mixture"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 11.05,
+    "text": "हलो क्या मैं जैन ब्रदर स्टेशनरी एंड बुक शॉप में बात कर रही हूँ नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का हाँ और वो कक्षा दस में पढ़ता है",
+    "hinglish": "hello kya main jain brother steshanri and book shop mein baat kar rahi hoon namaste aapke bacche ka naam vaibhav hai aapke ladke ka haan aur wo kaksha das mein padhta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.6,
+    "end": 15.3,
+    "text": "हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स",
+    "hinglish": "hamen kya kahte hain pen ke boxes chahiye the chhah box",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.7,
+    "end": 16.35,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.0,
+    "end": 22.55,
+    "text": "हमें हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं",
+    "hinglish": "hamen hamen do box uske red ke do blue ke aur do black ke chahiye hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.9,
+    "end": 28.55,
+    "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+    "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.15,
+    "end": 33.05,
+    "text": "और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+    "hinglish": "aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.45,
+    "end": 35.5,
+    "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+    "hinglish": "to ek box ka kitna price padega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.0,
+    "end": 36.45,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.7,
+    "end": 41.85,
+    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है",
+    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.9,
+    "end": 53.2,
+    "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी",
+    "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.35,
+    "end": 57.8,
+    "text": "तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
+    "hinglish": "to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.0,
+    "end": 69.05,
+    "text": "मेरे को टेप चाहिए है हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फेका",
+    "hinglish": "mere ko tape chahiye hai haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to pheka",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 69.35,
+    "end": 73.9,
+    "text": "आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+    "hinglish": "aap dobara se usko school bhejiega achha to kab tak aaenge",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 11.05,
+    "text": "हलो क्या मैं जैन ब्रदर स्टेशनरी एंड बुक शॉप में बात कर रही हूँ नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का हाँ और वो कक्षा दस में पढ़ता है",
+    "hinglish": "hello kya main jain brother steshanri and book shop mein baat kar rahi hoon namaste aapke bacche ka naam vaibhav hai aapke ladke ka haan aur wo kaksha das mein padhta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.6,
+    "end": 15.3,
+    "text": "हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स",
+    "hinglish": "hamen kya kahte hain pen ke boxes chahiye the chhah box",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.7,
+    "end": 16.35,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.0,
+    "end": 22.55,
+    "text": "हमें हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं",
+    "hinglish": "hamen hamen do box uske red ke do blue ke aur do black ke chahiye hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.9,
+    "end": 28.55,
+    "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+    "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.15,
+    "end": 33.05,
+    "text": "और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+    "hinglish": "aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.45,
+    "end": 35.5,
+    "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+    "hinglish": "to ek box ka kitna price padega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.0,
+    "end": 36.45,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.7,
+    "end": 41.85,
+    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है",
+    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.9,
+    "end": 53.2,
+    "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी",
+    "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.35,
+    "end": 57.8,
+    "text": "तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
+    "hinglish": "to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.0,
+    "end": 69.05,
+    "text": "मेरे को टेप चाहिए है हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फेका",
+    "hinglish": "mere ko tape chahiye hai haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to pheka",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 69.35,
+    "end": 73.9,
+    "text": "आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+    "hinglish": "aap dobara se usko school bhejiega achha to kab tak aaenge",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 11.05,
+    "text": "हलो क्या मैं जैन ब्रदर स्टेशनरी एंड बुक शॉप में बात कर रही हूँ नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का हाँ और वो कक्षा दस में पढ़ता है",
+    "hinglish": "hello kya main jain brother steshanri and book shop mein baat kar rahi hoon namaste aapke bacche ka naam vaibhav hai aapke ladke ka haan aur wo kaksha das mein padhta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.6,
+    "end": 15.3,
+    "text": "हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स",
+    "hinglish": "hamen kya kahte hain pen ke boxes chahiye the chhah box",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.7,
+    "end": 16.35,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.0,
+    "end": 22.55,
+    "text": "हमें हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं",
+    "hinglish": "hamen hamen do box uske red ke do blue ke aur do black ke chahiye hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.9,
+    "end": 28.55,
+    "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+    "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.15,
+    "end": 33.05,
+    "text": "और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+    "hinglish": "aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.45,
+    "end": 35.5,
+    "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+    "hinglish": "to ek box ka kitna price padega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.0,
+    "end": 36.45,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.7,
+    "end": 41.85,
+    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है",
+    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.9,
+    "end": 53.2,
+    "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी",
+    "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.35,
+    "end": 57.8,
+    "text": "तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
+    "hinglish": "to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.0,
+    "end": 69.05,
+    "text": "मेरे को टेप चाहिए है हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फेका",
+    "hinglish": "mere ko tape chahiye hai haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to pheka",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 69.35,
+    "end": 73.9,
+    "text": "आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+    "hinglish": "aap dobara se usko school bhejiega achha to kab tak aaenge",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.32,
+    "end": 11.03,
+    "text": "हलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का हाँ और वो कक्षा दस में पढ़ता है",
+    "hinglish": "hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon namaste aapke bacche ka naam vaibhav hai aapke ladke ka haan aur wo kaksha das mein padhta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.64,
+    "end": 15.27,
+    "text": "हमें क्या कहते हैं पेन के बॉक्सेज चाहिए थे छः बॉक्स",
+    "hinglish": "hamen kya kahte hain pen ke boksej chahiye the chhah box",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 15.72,
+    "end": 16.32,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.02,
+    "end": 22.49,
+    "text": "हमें हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं",
+    "hinglish": "hamen hamen do box uske red ke do blue ke aur do black ke chahiye hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.91,
+    "end": 28.52,
+    "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+    "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.19,
+    "end": 33.02,
+    "text": "और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+    "hinglish": "aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.46,
+    "end": 35.48,
+    "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+    "hinglish": "to ek box ka kitna price padega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.04,
+    "end": 36.41,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 36.7,
+    "end": 41.85,
+    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है",
+    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.93,
+    "end": 53.15,
+    "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी",
+    "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.39,
+    "end": 57.78,
+    "text": "तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
+    "hinglish": "to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.05,
+    "end": 59.57,
+    "text": "मेरे को टेप्स चाहिए हैं",
+    "hinglish": "mere ko teps chahiye hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 59.58,
+    "end": 69.03,
+    "text": "हर तो हम दिलावा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फेंक",
+    "hinglish": "har to hum dilava denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phenk",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 69.34,
+    "end": 73.88,
+    "text": "आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+    "hinglish": "aap dobara se usko school bhejiega achha to kab tak aaenge",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 4.05,
+    "text": "हलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ",
+    "hinglish": "hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.35,
+    "end": 8.2,
+    "text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का",
+    "hinglish": "namaste aapke bacche ka naam vaibhav hai aapke ladke ka",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 8.5,
+    "end": 11.05,
+    "text": "हाँ और वो कक्षा दस में पढ़ता है",
+    "hinglish": "haan aur wo kaksha das mein padhta hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.6,
+    "end": 15.35,
+    "text": "हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छह बॉक्स",
+    "hinglish": "hamen kya kahte hain pen ke boxes chahiye the chhah box",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 15.7,
+    "end": 16.35,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.0,
+    "end": 17.5,
+    "text": "हमें",
+    "hinglish": "hamen",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.55,
+    "end": 18.05,
+    "text": "तमें",
+    "hinglish": "tamen",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 18.05,
+    "end": 22.55,
+    "text": "दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं",
+    "hinglish": "do box uske red ke do blue ke aur do black ke chahiye hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.9,
+    "end": 28.55,
+    "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+    "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.15,
+    "end": 33.05,
+    "text": "और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+    "hinglish": "aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.45,
+    "end": 35.55,
+    "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+    "hinglish": "to ek box ka kitna price padega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.0,
+    "end": 36.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.0,
+    "end": 41.85,
+    "text": "जो भी हो यहाँ आने के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है",
+    "hinglish": "jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.95,
+    "end": 47.3,
+    "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
+    "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 47.55,
+    "end": 52.5,
+    "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
+    "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 52.65,
+    "end": 52.95,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.4,
+    "end": 57.75,
+    "text": "तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
+    "hinglish": "to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.0,
+    "end": 59.55,
+    "text": "मेरे को टेप चाहिए है",
+    "hinglish": "mere ko tape chahiye hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 59.6,
+    "end": 69.1,
+    "text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फेक",
+    "hinglish": "haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phek",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 69.3,
+    "end": 71.95,
+    "text": "आप दोबारा से उसको स्कूल भेजिएगा",
+    "hinglish": "aap dobara se usko school bhejiega",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 71.95,
+    "end": 72.55,
+    "text": "अच्छा",
+    "hinglish": "achha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 72.55,
+    "end": 73.9,
+    "text": "तो कब तक आएंगे",
+    "hinglish": "to kab tak aaenge",
+    "audio": "track-1"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.3,
+    "end": 4.05,
+    "text": "हलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ",
+    "hinglish": "hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 4.35,
+    "end": 8.2,
+    "text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का",
+    "hinglish": "namaste aapke bacche ka naam vaibhav hai aapke ladke ka",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 8.5,
+    "end": 11.05,
+    "text": "हाँ और वो कक्षा दस में पढ़ता है",
+    "hinglish": "haan aur wo kaksha das mein padhta hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 11.6,
+    "end": 15.35,
+    "text": "हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छह बॉक्स",
+    "hinglish": "hamen kya kahte hain pen ke boxes chahiye the chhah box",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 15.7,
+    "end": 16.35,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.0,
+    "end": 17.5,
+    "text": "हमें",
+    "hinglish": "hamen",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.55,
+    "end": 18.05,
+    "text": "तमें",
+    "hinglish": "tamen",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 18.05,
+    "end": 22.55,
+    "text": "दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं",
+    "hinglish": "do box uske red ke do blue ke aur do black ke chahiye hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 22.9,
+    "end": 28.55,
+    "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+    "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.15,
+    "end": 33.05,
+    "text": "और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+    "hinglish": "aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 33.45,
+    "end": 35.55,
+    "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+    "hinglish": "to ek box ka kitna price padega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 36.0,
+    "end": 36.5,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 37.0,
+    "end": 41.85,
+    "text": "जो भी हो यहाँ आने के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है",
+    "hinglish": "jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.95,
+    "end": 47.3,
+    "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
+    "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 47.55,
+    "end": 52.5,
+    "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
+    "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 52.65,
+    "end": 52.95,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.4,
+    "end": 57.75,
+    "text": "तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
+    "hinglish": "to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 58.0,
+    "end": 59.55,
+    "text": "मेरे को टेप चाहिए है",
+    "hinglish": "mere ko tape chahiye hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 59.6,
+    "end": 69.1,
+    "text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फेक",
+    "hinglish": "haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phek",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 69.3,
+    "end": 73.9,
+    "text": "आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएंगे",
+    "hinglish": "aap dobara se usko school bhejiega achha to kab tak aaenge",
+    "audio": "track-1"
+   }
+  ]
+ }
+}

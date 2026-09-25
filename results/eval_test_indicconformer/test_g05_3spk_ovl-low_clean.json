@@ -1,0 +1,2048 @@
+{
+ "reference": [
+  {
+   "speaker": "S3",
+   "start": 0.418,
+   "end": 4.27,
+   "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको"
+  },
+  {
+   "speaker": "S3",
+   "start": 4.501,
+   "end": 7.294,
+   "text": "नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको"
+  },
+  {
+   "speaker": "S3",
+   "start": 7.46,
+   "end": 9.149,
+   "text": "क्या मैम आपकी आवाज़ साफ नहीं आ रही है"
+  },
+  {
+   "speaker": "S2",
+   "start": 7.807,
+   "end": 8.765,
+   "text": "नमस्कार सर"
+  },
+  {
+   "speaker": "S2",
+   "start": 8.984,
+   "end": 14.229,
+   "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी"
+  },
+  {
+   "speaker": "S3",
+   "start": 12.464,
+   "end": 14.228,
+   "text": "हमारी डाक्टरी लखनऊ में है"
+  },
+  {
+   "speaker": "S3",
+   "start": 14.41,
+   "end": 14.743,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S3",
+   "start": 14.992,
+   "end": 18.971,
+   "text": "सबका इलाज है मैम आप कब से हो रहा है आपको यह सब"
+  },
+  {
+   "speaker": "S2",
+   "start": 17.772,
+   "end": 20.171,
+   "text": "पाँच लोगों के लिए चाहिए था सर्व हो पाएगा"
+  },
+  {
+   "speaker": "S3",
+   "start": 19.151,
+   "end": 21.431,
+   "text": "कब से आपको दिक्कत आ रहा है पैर का"
+  },
+  {
+   "speaker": "S2",
+   "start": 20.291,
+   "end": 27.421,
+   "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फ़ी छेना वोना समोसा वमोसा यह सब"
+  },
+  {
+   "speaker": "S2",
+   "start": 27.642,
+   "end": 38.495,
+   "text": "तो सर वह कह रहे थे वह वह सभी पूछ रहे थे कि वह जो यह है गुलाब जामुन यह कितने रुपये पीस मिलेगा"
+  },
+  {
+   "speaker": "S3",
+   "start": 39.002,
+   "end": 42.353,
+   "text": "आपके पैर में सूजन है क्या क्या दिक्कत है पैर में"
+  },
+  {
+   "speaker": "S1",
+   "start": 42.541,
+   "end": 42.951,
+   "text": "हलो"
+  },
+  {
+   "speaker": "S1",
+   "start": 43.083,
+   "end": 45.073,
+   "text": "हलो सर नमस्कार मैं हरीश चौरसिया बोल रहा था"
+  },
+  {
+   "speaker": "S1",
+   "start": 45.384,
+   "end": 47.791,
+   "text": "जी मेरी क्या आप की बात फोटोग्राफर से हो रही है"
+  },
+  {
+   "speaker": "S3",
+   "start": 48.296,
+   "end": 49.704,
+   "text": "आपको खाँसी भी आ रही हे"
+  },
+  {
+   "speaker": "S2",
+   "start": 50.473,
+   "end": 54.473,
+   "text": "साठ रुपये पीस है तो अगर मतलब"
+  },
+  {
+   "speaker": "S2",
+   "start": 54.721,
+   "end": 59.225,
+   "text": "तो पूछ रहे थे कि अगर सर यह कुछ डिस्काउंट उस्काउंट हो सकता है"
+  },
+  {
+   "speaker": "S2",
+   "start": 59.504,
+   "end": 78.724,
+   "text": "नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर वह मिल जाता तो कुछ दिन रहते हैं पर तो फिर मतलब जो होता है अगर रूम उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हम लोग"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S3",
+    "start": 0.42,
+    "end": 9.15,
+    "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक़्क़त है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+    "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya diqqat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 7.81,
+    "end": 14.23,
+    "text": "नमस्कार सर सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
+    "hinglish": "namaskar sir sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 12.46,
+    "end": 21.43,
+    "text": "हमारी डॉक्टरी लखनऊ में है हाँ कब का इलाज है मैम आप कब से हो रहा है आपको यह सब कब से आपको दिक्कत आ रहा है परेशान",
+    "hinglish": "hamari doktari lakhnau mein hai haan kab ka ilaj hai ma'am aap kab se ho raha hai aapko yeh sab kab se aapko dikkat aa raha hai pareshan",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 17.77,
+    "end": 38.49,
+    "text": "पाँच लोगों के लिए चाहिए था सर वो हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा वमोसा ये सब तो सर वो कर वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा",
+    "hinglish": "paanch logon ke liye chahiye tha sir wo ho paega haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa wamosa ye sab to sir wo kar wo sir ye poochh rahe the ki jo ye hai gulab jamun ek kitne rupye piece milega",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 39.0,
+    "end": 42.35,
+    "text": "आपके पैर में सूजन है क्या क्या दिक्कत है पैर में",
+    "hinglish": "aapke pair mein sujan hai kya kya dikkat hai pair mein",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 42.54,
+    "end": 47.79,
+    "text": "हेलो हलो सर नमस्कार मैं अजी स्टोर से बोल रहा था जी मेरे ग्राफ़ बात फोटोग्राफर से हो रही है",
+    "hinglish": "hello hello sir namaskar main aji store se bol raha tha ji mere graaf baat photographer se ho rahi hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 48.3,
+    "end": 49.7,
+    "text": "आपको खांसी भी आ रहा है",
+    "hinglish": "aapko khansi bhi aa raha hai",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 50.47,
+    "end": 78.72,
+    "text": "साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो सकता है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
+    "hinglish": "saath rupye piece hai to agar matlab to wo poochh rahe the ki agar sir kuch discount uskaunt ho sakta hai nahi to sir matlab hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar uchit rate mein mil jata to phir dusre restaurant par kyon jate hain log",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S3",
+    "start": 0.42,
+    "end": 9.15,
+    "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम हमारा नहीं आ रही है",
+    "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am hamara nahi aa rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 7.81,
+    "end": 14.23,
+    "text": "नमस्कार सर हम बोल रहे थे की लखनवी स्टाइल बिरयानी लखनऊ",
+    "hinglish": "namaskar sir hum bol rahe the ki lakhanvi style biryani lakhnau",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 12.46,
+    "end": 21.43,
+    "text": "डॉक्टरी लखनऊ में हाँ सब का इलाज है मैम आप कब से आब से आपको दिक्कत आ रहा है",
+    "hinglish": "doktari lakhnau mein haan sab ka ilaj hai ma'am aap kab se aab se aapko dikkat aa raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 17.77,
+    "end": 38.49,
+    "text": "पाँच चाहिए था और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा वमोसा ये सब तो सर वो कह रहे वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा",
+    "hinglish": "paanch chahiye tha aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa wamosa ye sab to sir wo kah rahe wo wo sir ye poochh rahe the ki jo ye hai gulab jamun ek kitne rupye piece milega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 39.0,
+    "end": 42.35,
+    "text": "आपके पैर में सूजन है क्या क्या दिक्कत है पैर में",
+    "hinglish": "aapke pair mein sujan hai kya kya dikkat hai pair mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 42.54,
+    "end": 47.79,
+    "text": "हेलो हलो सर नमस्कार मैं अजी स्टोर से बोल रहा था जी मेरे ग्राफ़ बात फोटोग्राफर से हो रही है",
+    "hinglish": "hello hello sir namaskar main aji store se bol raha tha ji mere graaf baat photographer se ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 48.3,
+    "end": 49.7,
+    "text": "आपको खांसी भी आ रहा है",
+    "hinglish": "aapko khansi bhi aa raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 50.47,
+    "end": 78.72,
+    "text": "साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो सकता है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
+    "hinglish": "saath rupye piece hai to agar matlab to wo poochh rahe the ki agar sir kuch discount uskaunt ho sakta hai nahi to sir matlab hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar uchit rate mein mil jata to phir dusre restaurant par kyon jate hain log",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S3",
+    "start": 0.42,
+    "end": 9.15,
+    "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम नमस्कार सर सर",
+    "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am namaskar sir sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 7.81,
+    "end": 14.23,
+    "text": "हमारी आज साफ नहीं आ रही है बोल रहे थे कि लखनवी स्टाइल बिरयानी जो कि चाहिए था",
+    "hinglish": "hamari aaj saaph nahi aa rahi hai bol rahe the ki lakhanvi style biryani jo ki chahiye tha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S3",
+    "start": 12.46,
+    "end": 21.43,
+    "text": "हमारी डॉक्टरी लखनऊ में हाँ सबका इलाज है मैम आप कब से आप कब से आपको दिक्कत आ",
+    "hinglish": "hamari doktari lakhnau mein haan sabka ilaj hai ma'am aap kab se aap kab se aapko dikkat aa",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 17.77,
+    "end": 38.49,
+    "text": "और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा वमोसा ये सब तो सर वो कर वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा",
+    "hinglish": "aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa wamosa ye sab to sir wo kar wo wo sir ye poochh rahe the ki jo ye hai gulab jamun ek kitne rupye piece milega",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S3",
+    "start": 39.0,
+    "end": 42.35,
+    "text": "आपके पैर में सूजन है क्या क्या दिक्कत है पैर में",
+    "hinglish": "aapke pair mein sujan hai kya kya dikkat hai pair mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 42.54,
+    "end": 47.79,
+    "text": "हेलो हलो सर नमस्कार मैं अजी स्टोर से बोल रहा था जी मेरे ग्राफ़ बात फोटोग्राफर से हो रही है",
+    "hinglish": "hello hello sir namaskar main aji store se bol raha tha ji mere graaf baat photographer se ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 48.3,
+    "end": 49.7,
+    "text": "आपको खांसी भी आ रहा है",
+    "hinglish": "aapko khansi bhi aa raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 50.47,
+    "end": 78.72,
+    "text": "साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो सकता है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
+    "hinglish": "saath rupye piece hai to agar matlab to wo poochh rahe the ki agar sir kuch discount uskaunt ho sakta hai nahi to sir matlab hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar uchit rate mein mil jata to phir dusre restaurant par kyon jate hain log",
+    "audio": "mixture"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.4,
+    "end": 0.8,
+    "text": "नमस्",
+    "hinglish": "namas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.15,
+    "end": 1.75,
+    "text": "सी मैम",
+    "hinglish": "si ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.55,
+    "end": 8.6,
+    "text": "बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम हमारा",
+    "hinglish": "bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am hamara",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 8.6,
+    "end": 9.45,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 10.25,
+    "end": 12.1,
+    "text": "बोलें इतने की लखनवी स्टाइल",
+    "hinglish": "bolen itne ki lakhanvi style",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 12.1,
+    "end": 14.3,
+    "text": "बिरयानी दालपुरी लखनऊ में है",
+    "hinglish": "biryani dalpuri lakhnau mein hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.35,
+    "end": 14.8,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.9,
+    "end": 16.4,
+    "text": "सबका इलाज मैम",
+    "hinglish": "sabka ilaj ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.8,
+    "end": 17.95,
+    "text": "आप कब तक आ",
+    "hinglish": "aap kab tak aa",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.95,
+    "end": 20.2,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 20.2,
+    "end": 20.9,
+    "text": "सार",
+    "hinglish": "saar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 20.9,
+    "end": 24.7,
+    "text": "कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी",
+    "hinglish": "kuch mitha mein bhi chahiye tha jaise gulab jamun barphi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 25.6,
+    "end": 28.75,
+    "text": "खेना वना समोसा ये सब तो सर वो करें",
+    "hinglish": "khena wana samosa ye sab to sir wo karen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.65,
+    "end": 30.2,
+    "text": "तो वो",
+    "hinglish": "to wo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 32.15,
+    "end": 34.55,
+    "text": "वो सर ये पूछ रहे थे कि जो",
+    "hinglish": "wo sir ye poochh rahe the ki jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.8,
+    "end": 36.85,
+    "text": "ये है गुलाब जामुन एक",
+    "hinglish": "ye hai gulab jamun ek",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 37.25,
+    "end": 38.55,
+    "text": "कितने रुपये पीस मिलेगा",
+    "hinglish": "kitne rupye piece milega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.95,
+    "end": 40.5,
+    "text": "आपके पैर में सूजन है",
+    "hinglish": "aapke pair mein sujan hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.9,
+    "end": 42.4,
+    "text": "क्या क्या दिक्कत है पैर में",
+    "hinglish": "kya kya dikkat hai pair mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 42.55,
+    "end": 45.1,
+    "text": "हलो हेलो सर नमस्कार मैं अजीटोर से बोल रहा था",
+    "hinglish": "hello hello sir namaskar main ajitor se bol raha tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 45.35,
+    "end": 47.8,
+    "text": "जी मेरी ग्राफ़ बात फोटोग्राफर से हो रही है",
+    "hinglish": "ji meri graaf baat photographer se ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 48.25,
+    "end": 49.75,
+    "text": "आपको खांसी भैया है",
+    "hinglish": "aapko khansi bhaiya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 50.5,
+    "end": 52.1,
+    "text": "साठ रुपये पीस है",
+    "hinglish": "saath rupye piece hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 53.05,
+    "end": 54.5,
+    "text": "तो अगर मतलब",
+    "hinglish": "to agar matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.65,
+    "end": 55.5,
+    "text": "तो वो पूछ रहे थे",
+    "hinglish": "to wo poochh rahe the",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 55.5,
+    "end": 56.4,
+    "text": "कि कर सर",
+    "hinglish": "ki kar sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 56.95,
+    "end": 59.25,
+    "text": "कुछ डिस्काउंट उस्काउंट हो सकता है",
+    "hinglish": "kuch discount uskaunt ho sakta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 59.45,
+    "end": 59.8,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 61.3,
+    "end": 63.1,
+    "text": "नहीं तो सर मतलब",
+    "hinglish": "nahi to sir matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 64.65,
+    "end": 72.75,
+    "text": "हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर",
+    "hinglish": "hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 72.75,
+    "end": 73.35,
+    "text": "मैं",
+    "hinglish": "main",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 73.95,
+    "end": 75.4,
+    "text": "उचित रेट में मिल जाता तो",
+    "hinglish": "uchit rate mein mil jata to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 75.95,
+    "end": 77.9,
+    "text": "फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
+    "hinglish": "phir dusre restaurant par kyon jate hain log",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.4,
+    "end": 0.8,
+    "text": "नमस्",
+    "hinglish": "namas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.15,
+    "end": 1.75,
+    "text": "सी मैम",
+    "hinglish": "si ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.55,
+    "end": 8.6,
+    "text": "बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम हम आज साहब ने",
+    "hinglish": "bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am hum aaj sahab ne",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 8.6,
+    "end": 9.45,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 10.25,
+    "end": 12.1,
+    "text": "बोलें इतने की लखनवी स्टाइल",
+    "hinglish": "bolen itne ki lakhanvi style",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 12.1,
+    "end": 14.3,
+    "text": "भाई डॉक्टरी लखनऊ में है",
+    "hinglish": "bhai doktari lakhnau mein hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.35,
+    "end": 14.8,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.9,
+    "end": 16.4,
+    "text": "सबका इलाज मैम",
+    "hinglish": "sabka ilaj ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.8,
+    "end": 17.95,
+    "text": "आप कब तक",
+    "hinglish": "aap kab tak",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.95,
+    "end": 20.2,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 20.2,
+    "end": 20.9,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 20.9,
+    "end": 24.7,
+    "text": "कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी",
+    "hinglish": "kuch mitha mein bhi chahiye tha jaise gulab jamun barphi",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 25.6,
+    "end": 28.75,
+    "text": "खेना वना समोसा ये सब तो सर वो करें",
+    "hinglish": "khena wana samosa ye sab to sir wo karen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.65,
+    "end": 30.2,
+    "text": "तो वो",
+    "hinglish": "to wo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 32.15,
+    "end": 34.55,
+    "text": "वो सर ये पूछ रहे थे कि जो",
+    "hinglish": "wo sir ye poochh rahe the ki jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 34.8,
+    "end": 36.85,
+    "text": "ये है गुलाब जामुन एक",
+    "hinglish": "ye hai gulab jamun ek",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 37.25,
+    "end": 38.55,
+    "text": "कितने रुपये पीस मिलेगा",
+    "hinglish": "kitne rupye piece milega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.95,
+    "end": 40.5,
+    "text": "आपके पैर में सूजन है",
+    "hinglish": "aapke pair mein sujan hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.9,
+    "end": 42.4,
+    "text": "क्या क्या दिक्कत है पैर में",
+    "hinglish": "kya kya dikkat hai pair mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 42.55,
+    "end": 45.1,
+    "text": "हलो हेलो सर नमस्कार मैं अजीटोर से बोल रहा था",
+    "hinglish": "hello hello sir namaskar main ajitor se bol raha tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 45.35,
+    "end": 47.8,
+    "text": "जी मेरी ग्राफ़ बात फोटोग्राफर से हो रही है",
+    "hinglish": "ji meri graaf baat photographer se ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 48.25,
+    "end": 49.75,
+    "text": "आपको खांसी भैया है",
+    "hinglish": "aapko khansi bhaiya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 50.5,
+    "end": 52.1,
+    "text": "साठ रुपये पीस है",
+    "hinglish": "saath rupye piece hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 53.05,
+    "end": 54.5,
+    "text": "तो अगर मतलब",
+    "hinglish": "to agar matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.65,
+    "end": 55.5,
+    "text": "तो वो पूछ रहे थे",
+    "hinglish": "to wo poochh rahe the",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 55.5,
+    "end": 56.4,
+    "text": "कि कर सर",
+    "hinglish": "ki kar sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 56.95,
+    "end": 59.25,
+    "text": "कुछ डिस्काउंट उस्काउंट हो सकता है",
+    "hinglish": "kuch discount uskaunt ho sakta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 59.45,
+    "end": 59.8,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 61.3,
+    "end": 63.1,
+    "text": "नहीं तो सर मतलब",
+    "hinglish": "nahi to sir matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 64.65,
+    "end": 72.75,
+    "text": "हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर",
+    "hinglish": "hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 72.75,
+    "end": 73.35,
+    "text": "मैं",
+    "hinglish": "main",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 73.95,
+    "end": 75.4,
+    "text": "उचित रेट में मिल जाता तो",
+    "hinglish": "uchit rate mein mil jata to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 75.95,
+    "end": 77.9,
+    "text": "फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
+    "hinglish": "phir dusre restaurant par kyon jate hain log",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.4,
+    "end": 0.8,
+    "text": "नमस्",
+    "hinglish": "namas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.15,
+    "end": 1.75,
+    "text": "सी मैम",
+    "hinglish": "si ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.55,
+    "end": 9.45,
+    "text": "बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम नमस्कार सर सर",
+    "hinglish": "bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am namaskar sir sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 7.76,
+    "end": 9.36,
+    "text": "हम आज साफ नहीं आ रही है",
+    "hinglish": "hum aaj saaph nahi aa rahi hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.25,
+    "end": 14.3,
+    "text": "बोल रहे हैं तो कि लखनवी स्टाइल डॉक्टरी लखनऊ में है",
+    "hinglish": "bol rahe hain to ki lakhanvi style doktari lakhnau mein hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.43,
+    "end": 14.22,
+    "text": "यानी जो भी हमें चाहिए हाँ",
+    "hinglish": "yani jo bhi hamen chahiye haan",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.35,
+    "end": 14.8,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.9,
+    "end": 16.4,
+    "text": "सबका इलाज मैम",
+    "hinglish": "sabka ilaj ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 16.8,
+    "end": 24.7,
+    "text": "आप कब से पाँच लोगों के चाहिए था कब से आप दिक्कत है और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी",
+    "hinglish": "aap kab se paanch logon ke chahiye tha kab se aap dikkat hai aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.93,
+    "end": 21.46,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 25.6,
+    "end": 28.75,
+    "text": "खेना वना समोसा ये सब तो सर वो करें",
+    "hinglish": "khena wana samosa ye sab to sir wo karen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.65,
+    "end": 30.2,
+    "text": "तो वो",
+    "hinglish": "to wo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.15,
+    "end": 34.55,
+    "text": "वो सर ये पूछ रहे थे कि जो",
+    "hinglish": "wo sir ye poochh rahe the ki jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 34.8,
+    "end": 36.85,
+    "text": "ये है गुलाब जामुन एक",
+    "hinglish": "ye hai gulab jamun ek",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.25,
+    "end": 38.55,
+    "text": "कितने रुपये पीस मिलेगा",
+    "hinglish": "kitne rupye piece milega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.95,
+    "end": 40.5,
+    "text": "आपके पैर में सूजन है",
+    "hinglish": "aapke pair mein sujan hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.9,
+    "end": 42.4,
+    "text": "क्या क्या दिक्कत है पैर में",
+    "hinglish": "kya kya dikkat hai pair mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 42.55,
+    "end": 45.1,
+    "text": "हलो हेलो सर नमस्कार मैं अजीटोर से बोल रहा था",
+    "hinglish": "hello hello sir namaskar main ajitor se bol raha tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 45.35,
+    "end": 47.8,
+    "text": "जी मेरी ग्राफ़ बात फोटोग्राफर से हो रही है",
+    "hinglish": "ji meri graaf baat photographer se ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 48.25,
+    "end": 49.75,
+    "text": "आपको खांसी भैया है",
+    "hinglish": "aapko khansi bhaiya hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 50.5,
+    "end": 52.1,
+    "text": "साठ रुपये पीस है",
+    "hinglish": "saath rupye piece hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 53.05,
+    "end": 54.5,
+    "text": "तो अगर मतलब",
+    "hinglish": "to agar matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.65,
+    "end": 56.4,
+    "text": "तो वो पूछ रहे थे कि अगर सही",
+    "hinglish": "to wo poochh rahe the ki agar sahi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.95,
+    "end": 59.25,
+    "text": "कुछ डिस्काउंट उस्काउंट हो सकता है",
+    "hinglish": "kuch discount uskaunt ho sakta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 59.45,
+    "end": 59.8,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 61.3,
+    "end": 63.1,
+    "text": "नहीं तो सर मतलब",
+    "hinglish": "nahi to sir matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 64.65,
+    "end": 72.75,
+    "text": "हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर",
+    "hinglish": "hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 72.75,
+    "end": 73.35,
+    "text": "मैं",
+    "hinglish": "main",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 73.95,
+    "end": 75.4,
+    "text": "उचित रेट में मिल जाता तो",
+    "hinglish": "uchit rate mein mil jata to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 75.95,
+    "end": 77.9,
+    "text": "फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
+    "hinglish": "phir dusre restaurant par kyon jate hain log",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.42,
+    "end": 0.76,
+    "text": "नमस्",
+    "hinglish": "namas",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.16,
+    "end": 1.72,
+    "text": "अच्छे मैम",
+    "hinglish": "achhe ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 2.58,
+    "end": 9.41,
+    "text": "बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम नमस्कार सर सर",
+    "hinglish": "bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am namaskar sir sir",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 7.76,
+    "end": 9.35,
+    "text": "हम आवाज साफ नहीं आ रही है",
+    "hinglish": "hum aavaj saaph nahi aa rahi hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.29,
+    "end": 14.29,
+    "text": "बोल रहे हैं तो कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए था",
+    "hinglish": "bol rahe hain to ki lakhanvi style biryani jo thi hamen chahiye tha",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 12.43,
+    "end": 14.24,
+    "text": "भारी डाक्री लग ना",
+    "hinglish": "bhari dakri lag na",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.36,
+    "end": 14.76,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.93,
+    "end": 16.37,
+    "text": "सबका इलाज मैम",
+    "hinglish": "sabka ilaj ma'am",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 16.84,
+    "end": 21.48,
+    "text": "आप कब से कब से आपको दिक्कत आ",
+    "hinglish": "aap kab se kab se aapko dikkat aa",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.89,
+    "end": 24.65,
+    "text": "और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी",
+    "hinglish": "aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 25.61,
+    "end": 28.72,
+    "text": "खेना वना समोसा ये सब तो सर वो करें",
+    "hinglish": "khena wana samosa ye sab to sir wo karen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 29.66,
+    "end": 30.17,
+    "text": "तो वो",
+    "hinglish": "to wo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.23,
+    "end": 34.52,
+    "text": "वो सर ये पूछ रहे थे कि जो",
+    "hinglish": "wo sir ye poochh rahe the ki jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 34.84,
+    "end": 35.77,
+    "text": "यह है",
+    "hinglish": "yeh hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.79,
+    "end": 36.82,
+    "text": "गुलाब जामु",
+    "hinglish": "gulab jamu",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.27,
+    "end": 38.51,
+    "text": "कितने रुपये पीस मिलेगा",
+    "hinglish": "kitne rupye piece milega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.98,
+    "end": 40.48,
+    "text": "आपके पैर में सूजन है",
+    "hinglish": "aapke pair mein sujan hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 40.94,
+    "end": 42.39,
+    "text": "क्या क्या दिक्कत है पैर में",
+    "hinglish": "kya kya dikkat hai pair mein",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 42.56,
+    "end": 45.07,
+    "text": "हलो हेलो सर नमस्कार मैं अजीट टोल से ही बोल रहा था",
+    "hinglish": "hello hello sir namaskar main ajit tol se hi bol raha tha",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 45.37,
+    "end": 47.77,
+    "text": "जी मेरी ग्राफ़ बात फोटोग्राफर से हो रही है",
+    "hinglish": "ji meri graaf baat photographer se ho rahi hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 48.28,
+    "end": 49.73,
+    "text": "आपको खांसी भी आ रहा है",
+    "hinglish": "aapko khansi bhi aa raha hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 50.54,
+    "end": 52.06,
+    "text": "साठ रुपये पीस है",
+    "hinglish": "saath rupye piece hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 53.1,
+    "end": 54.45,
+    "text": "तो अगर मतलब",
+    "hinglish": "to agar matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.66,
+    "end": 56.39,
+    "text": "तो वो पूछ रहे थे कि अगर सही",
+    "hinglish": "to wo poochh rahe the ki agar sahi",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.98,
+    "end": 59.24,
+    "text": "कुछ डिस्काउंट उस्काउंट हो पकता है",
+    "hinglish": "kuch discount uskaunt ho pakta hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 59.48,
+    "end": 59.78,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 61.32,
+    "end": 63.06,
+    "text": "नहीं तो सर मतलब",
+    "hinglish": "nahi to sir matlab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 64.66,
+    "end": 73.32,
+    "text": "हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर",
+    "hinglish": "hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 73.96,
+    "end": 75.39,
+    "text": "उचित रेट में मिल जाता तो",
+    "hinglish": "uchit rate mein mil jata to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 75.98,
+    "end": 77.88,
+    "text": "फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
+    "hinglish": "phir dusre restaurant par kyon jate hain log",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.4,
+    "end": 0.8,
+    "text": "नमस्",
+    "hinglish": "namas",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.15,
+    "end": 1.75,
+    "text": "सी मैम",
+    "hinglish": "si ma'am",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.55,
+    "end": 7.95,
+    "text": "बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम",
+    "hinglish": "bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.6,
+    "end": 9.0,
+    "text": "आ रही है",
+    "hinglish": "aa rahi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 9.0,
+    "end": 9.3,
+    "text": "तर",
+    "hinglish": "tar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 10.35,
+    "end": 11.35,
+    "text": "बोलना कि",
+    "hinglish": "bolna ki",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 11.7,
+    "end": 12.5,
+    "text": "स्टाइल",
+    "hinglish": "style",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 12.6,
+    "end": 12.9,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 13.35,
+    "end": 13.65,
+    "text": "नौ",
+    "hinglish": "nau",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 13.7,
+    "end": 16.4,
+    "text": "हाँ सबका इलाज है मैम",
+    "hinglish": "haan sabka ilaj hai ma'am",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 16.8,
+    "end": 17.75,
+    "text": "आप कब तक",
+    "hinglish": "aap kab tak",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.6,
+    "end": 18.2,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 19.5,
+    "end": 19.95,
+    "text": "पा",
+    "hinglish": "pa",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 19.65,
+    "end": 20.05,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 20.05,
+    "end": 21.3,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 20.3,
+    "end": 20.7,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 21.35,
+    "end": 21.9,
+    "text": "कुछ मीठा",
+    "hinglish": "kuch mitha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 21.9,
+    "end": 22.55,
+    "text": "में भी चाहिए",
+    "hinglish": "mein bhi chahiye",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.1,
+    "end": 24.65,
+    "text": "पर थी",
+    "hinglish": "par thi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 25.6,
+    "end": 27.45,
+    "text": "खेना ओना समोसा ये सब",
+    "hinglish": "khena ona samosa ye sab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_F",
+    "start": 27.6,
+    "end": 28.75,
+    "text": "तो सर वो कहे",
+    "hinglish": "to sir wo kahe",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.65,
+    "end": 30.2,
+    "text": "वो",
+    "hinglish": "wo",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 31.95,
+    "end": 32.4,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 32.4,
+    "end": 34.55,
+    "text": "वो सभी पूछ रहे थे कि जो",
+    "hinglish": "wo sabhi poochh rahe the ki jo",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 34.9,
+    "end": 36.85,
+    "text": "यह है गुलाब जामुन एक",
+    "hinglish": "yeh hai gulab jamun ek",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 37.25,
+    "end": 38.55,
+    "text": "कितने रुपये पीस मिलेगा",
+    "hinglish": "kitne rupye piece milega",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.95,
+    "end": 40.5,
+    "text": "आपके पैर में सूजन है",
+    "hinglish": "aapke pair mein sujan hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.9,
+    "end": 42.4,
+    "text": "क्या क्या दिक्कत है पैर में",
+    "hinglish": "kya kya dikkat hai pair mein",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_F",
+    "start": 42.55,
+    "end": 42.95,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_F",
+    "start": 43.05,
+    "end": 45.1,
+    "text": "हेलो सर नमस्कार मैं अजीत टोलिया बोल रहा था",
+    "hinglish": "hello sir namaskar main ajit toliya bol raha tha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_F",
+    "start": 45.35,
+    "end": 47.8,
+    "text": "जी मेरी गिरफ़ा बात फोटोग्राफर से हो रही है",
+    "hinglish": "ji meri girfa baat photographer se ho rahi hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 48.25,
+    "end": 49.75,
+    "text": "आपको खांसी भी आ रहा है",
+    "hinglish": "aapko khansi bhi aa raha hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 49.75,
+    "end": 51.0,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_F",
+    "start": 51.0,
+    "end": 52.1,
+    "text": "साठ रुपये पीस है",
+    "hinglish": "saath rupye piece hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_F",
+    "start": 53.1,
+    "end": 54.45,
+    "text": "तो अगर मतलब",
+    "hinglish": "to agar matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 54.65,
+    "end": 56.4,
+    "text": "तो वो पूछ रहे थे कि अगर शरीर",
+    "hinglish": "to wo poochh rahe the ki agar sharir",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 56.95,
+    "end": 59.25,
+    "text": "कुछ डिस्काउंट उस्काउंट हो सकता है",
+    "hinglish": "kuch discount uskaunt ho sakta hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 59.45,
+    "end": 59.85,
+    "text": "हूँ",
+    "hinglish": "hoon",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_F",
+    "start": 61.3,
+    "end": 62.45,
+    "text": "नहीं तो सर",
+    "hinglish": "nahi to sir",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 62.75,
+    "end": 63.1,
+    "text": "मतलब",
+    "hinglish": "matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 64.65,
+    "end": 68.7,
+    "text": "हम लोग टूरिस्ट है तो आए थे यही पर मतलब रहने के लिए थे अगर",
+    "hinglish": "hum log tourist hai to aae the yahi par matlab rahne ke liye the agar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 68.8,
+    "end": 71.6,
+    "text": "मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब",
+    "hinglish": "mil jata to kuch din rahte hain yahan par to phir matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 71.8,
+    "end": 72.7,
+    "text": "जो होता है अगर",
+    "hinglish": "jo hota hai agar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 73.95,
+    "end": 75.4,
+    "text": "उचित रेट में मिल जाता तो",
+    "hinglish": "uchit rate mein mil jata to",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_E",
+    "start": 75.95,
+    "end": 77.9,
+    "text": "फिर दूसरे रेस्टोरेंट पे क्यों जाते हैं लोग",
+    "hinglish": "phir dusre restaurant pe kyon jate hain log",
+    "audio": "track-1"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.4,
+    "end": 0.8,
+    "text": "नमस्",
+    "hinglish": "namas",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 1.15,
+    "end": 1.75,
+    "text": "सी मैम",
+    "hinglish": "si ma'am",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 2.55,
+    "end": 7.9,
+    "text": "बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम",
+    "hinglish": "bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.6,
+    "end": 9.0,
+    "text": "आ रही है",
+    "hinglish": "aa rahi hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.35,
+    "end": 11.35,
+    "text": "बोलना कि",
+    "hinglish": "bolna ki",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 11.7,
+    "end": 12.5,
+    "text": "स्टाइल",
+    "hinglish": "style",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 12.6,
+    "end": 12.9,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 13.7,
+    "end": 16.4,
+    "text": "हाँ सबका इलाज है मैम",
+    "hinglish": "haan sabka ilaj hai ma'am",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.1,
+    "end": 17.6,
+    "text": "क",
+    "hinglish": "ka",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 17.75,
+    "end": 18.2,
+    "text": "बात",
+    "hinglish": "baat",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 19.5,
+    "end": 19.8,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 20.05,
+    "end": 20.45,
+    "text": "",
+    "hinglish": "",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 20.6,
+    "end": 21.25,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.5,
+    "end": 21.9,
+    "text": "मीठा",
+    "hinglish": "mitha",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 21.9,
+    "end": 22.55,
+    "text": "में भी चाहिए",
+    "hinglish": "mein bhi chahiye",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.1,
+    "end": 24.65,
+    "text": "पर थी",
+    "hinglish": "par thi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 25.6,
+    "end": 27.45,
+    "text": "खेना ओना समोसा ये सब",
+    "hinglish": "khena ona samosa ye sab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 27.6,
+    "end": 28.75,
+    "text": "तो सर वो कहे",
+    "hinglish": "to sir wo kahe",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.65,
+    "end": 30.2,
+    "text": "वो",
+    "hinglish": "wo",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 31.95,
+    "end": 32.4,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.4,
+    "end": 33.35,
+    "text": "तो वो सर जी पूछ रहे हैं",
+    "hinglish": "to wo sir ji poochh rahe hain",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 33.4,
+    "end": 34.55,
+    "text": "जैसे कि जो",
+    "hinglish": "jaise ki jo",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 34.9,
+    "end": 36.85,
+    "text": "यह है गुलाब जामुन एक",
+    "hinglish": "yeh hai gulab jamun ek",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 37.25,
+    "end": 38.55,
+    "text": "कितने रुपये पीस मिलेगा",
+    "hinglish": "kitne rupye piece milega",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.95,
+    "end": 40.5,
+    "text": "आपके पैर में सूजन है",
+    "hinglish": "aapke pair mein sujan hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 40.9,
+    "end": 42.4,
+    "text": "क्या क्या दिक्कत है पैर में",
+    "hinglish": "kya kya dikkat hai pair mein",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 42.55,
+    "end": 42.95,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 43.05,
+    "end": 45.1,
+    "text": "हेलो सर नमस्कार मैं अजीत टोलिया बोल रहा था",
+    "hinglish": "hello sir namaskar main ajit toliya bol raha tha",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 45.35,
+    "end": 47.8,
+    "text": "जी मेरी गिरफ़ा बात फोटोग्राफर से हो रही है",
+    "hinglish": "ji meri girfa baat photographer se ho rahi hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 48.25,
+    "end": 49.75,
+    "text": "आपको खांसी भी आ रहा है",
+    "hinglish": "aapko khansi bhi aa raha hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 49.75,
+    "end": 51.0,
+    "text": "हम्म",
+    "hinglish": "hamm",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 51.0,
+    "end": 52.1,
+    "text": "साठ रुपये पीस है",
+    "hinglish": "saath rupye piece hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 53.1,
+    "end": 54.45,
+    "text": "तो अगर मतलब",
+    "hinglish": "to agar matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.65,
+    "end": 56.4,
+    "text": "तो वो पूछ रहे थे कि अगर शरीर",
+    "hinglish": "to wo poochh rahe the ki agar sharir",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 56.95,
+    "end": 59.25,
+    "text": "कुछ डिस्काउंट उस्काउंट हो सकता है",
+    "hinglish": "kuch discount uskaunt ho sakta hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 59.45,
+    "end": 59.85,
+    "text": "हूँ",
+    "hinglish": "hoon",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 61.3,
+    "end": 62.45,
+    "text": "नहीं तो सर",
+    "hinglish": "nahi to sir",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 62.75,
+    "end": 63.1,
+    "text": "मतलब",
+    "hinglish": "matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 64.65,
+    "end": 68.7,
+    "text": "हम लोग टूरिस्ट है तो आए थे यही पर मतलब रहने के लिए थे अगर",
+    "hinglish": "hum log tourist hai to aae the yahi par matlab rahne ke liye the agar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 68.8,
+    "end": 71.6,
+    "text": "मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब",
+    "hinglish": "mil jata to kuch din rahte hain yahan par to phir matlab",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 71.8,
+    "end": 72.7,
+    "text": "जो होता है अगर",
+    "hinglish": "jo hota hai agar",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 73.95,
+    "end": 75.4,
+    "text": "उचित रेट में मिल जाता तो",
+    "hinglish": "uchit rate mein mil jata to",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 75.95,
+    "end": 77.9,
+    "text": "फिर दूसरे रेस्टोरेंट पे क्यों जाते हैं लोग",
+    "hinglish": "phir dusre restaurant pe kyon jate hain log",
+    "audio": "track-1"
+   }
+  ]
+ }
+}

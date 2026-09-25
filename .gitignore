@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment and machine-local settings
+.venv/
+venv/
+data_location.txt
+
+# Large or re-creatable artefacts (rebuilt by scripts/build_dataset.py and the model downloads)
+data/
+models/
+results/cache/
+*.wav
+*.flac
+*.mp3
+*.parquet
+*.onnx
+
+# Office lock files
+~$*
+results/log_*.txt
+results/runs/

@@ -1,0 +1,1878 @@
+{
+ "reference": [
+  {
+   "speaker": "S2",
+   "start": 0.47,
+   "end": 1.14,
+   "text": "हैलो"
+  },
+  {
+   "speaker": "S3",
+   "start": 0.805,
+   "end": 1.258,
+   "text": "हाँ"
+  },
+  {
+   "speaker": "S3",
+   "start": 1.474,
+   "end": 8.349,
+   "text": "वोट इस बार तो देना है न कोई छाप पर भी देना है अब तो वोट अथि हो गया तो"
+  },
+  {
+   "speaker": "S2",
+   "start": 8.534,
+   "end": 10.334,
+   "text": "हम बिहार से बोल रहे हैं"
+  },
+  {
+   "speaker": "S2",
+   "start": 10.657,
+   "end": 19.637,
+   "text": "हमारे देश में छत्त पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए"
+  },
+  {
+   "speaker": "S2",
+   "start": 19.944,
+   "end": 20.464,
+   "text": "छत्त पू"
+  },
+  {
+   "speaker": "S3",
+   "start": 20.95,
+   "end": 22.256,
+   "text": "यही बार तो सरकार कौन"
+  },
+  {
+   "speaker": "S3",
+   "start": 22.416,
+   "end": 30.648,
+   "text": "वोट देना है भोट देना है अब देना है देखिए न वो ही छाप को छाप पर देना है वोट"
+  },
+  {
+   "speaker": "S2",
+   "start": 28.831,
+   "end": 46.978,
+   "text": "छत्त पूजन छत्त पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नए वस्त्र ख़रीद के लाते हैं वह पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं यह सब बनाते हैं पूजा करने के लिए"
+  },
+  {
+   "speaker": "S1",
+   "start": 47.762,
+   "end": 53.252,
+   "text": "हाँ हलो सर नमस ठीक है हाँ"
+  },
+  {
+   "speaker": "S1",
+   "start": 53.483,
+   "end": 53.993,
+   "text": "जी"
+  },
+  {
+   "speaker": "S1",
+   "start": 54.286,
+   "end": 59.629,
+   "text": "जी देखते हैं कि बहुत अच्छे से देखते हैं और कितना अच्छा बनाते हैं"
+  },
+  {
+   "speaker": "S3",
+   "start": 60.303,
+   "end": 79.393,
+   "text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ न दिया सरकार के खिलाफ नहीं दिया तो अब अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इन्द्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारा हो उसी का व्होट दिया जाएगा"
+  }
+ ],
+ "systems": {
+  "oracle-clean": [
+   {
+    "speaker": "S2",
+    "start": 0.47,
+    "end": 1.14,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 0.81,
+    "end": 8.35,
+    "text": "हाँ वोट एक बार तो देना है ना कोई छापड़ भी देना है अब तो वोट अच्छी हो गया तो",
+    "hinglish": "haan vote ek baar to dena hai na koi chhapad bhi dena hai ab to vote achhi ho gaya to",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 8.53,
+    "end": 20.46,
+    "text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+    "hinglish": "hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie chhath",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 20.95,
+    "end": 30.65,
+    "text": "सरकार भोट देना है वोट देना है अब देना है देखिए ना इच्छा खूब इच्छा पर देना है भोट",
+    "hinglish": "sarkar bhot dena hai vote dena hai ab dena hai dekhie na ichha khoob ichha par dena hai bhot",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S2",
+    "start": 28.83,
+    "end": 46.98,
+    "text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "chhath puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S1",
+    "start": 47.76,
+    "end": 59.63,
+    "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+    "hinglish": "hello haan hello sir namas theek hai haan ji ji dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
+    "audio": "clean"
+   },
+   {
+    "speaker": "S3",
+    "start": 60.3,
+    "end": 79.39,
+    "text": "अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो अब किसका देना है जे उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो उसी का वोट दिया जाएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega to kuch na diya sarkar kuch laabh nahi diya to ab kiska dena hai je usi ka vote dena hai je aage mein badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho usi ka vote diya jaega",
+    "audio": "clean"
+   }
+  ],
+  "oracle-mix": [
+   {
+    "speaker": "S2",
+    "start": 0.47,
+    "end": 1.14,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 0.81,
+    "end": 8.35,
+    "text": "हाँ वोट इस बार तो देना है ना कोई छापड़ भी देना है अब तो वोट अभी हो गया तो",
+    "hinglish": "haan vote is baar to dena hai na koi chhapad bhi dena hai ab to vote abhi ho gaya to",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 8.53,
+    "end": 20.46,
+    "text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+    "hinglish": "hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie chhath",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 20.95,
+    "end": 30.65,
+    "text": "इस बार तो सरकार भोट देना है वोट देना है अब देना है देखिए ना देना है",
+    "hinglish": "is baar to sarkar bhot dena hai vote dena hai ab dena hai dekhie na dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S2",
+    "start": 28.83,
+    "end": 46.98,
+    "text": "छठ पूजा में कर देना छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "chhath puja mein kar dena chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S1",
+    "start": 47.76,
+    "end": 59.63,
+    "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+    "hinglish": "hello haan hello sir namas theek hai haan ji ji dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 60.3,
+    "end": 79.39,
+    "text": "अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो अब किसका देना है जे उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो उसी का वोट दिया जाएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega to kuch na diya sarkar kuch laabh nahi diya to ab kiska dena hai je usi ka vote dena hai je aage mein badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho usi ka vote diya jaega",
+    "audio": "mixture"
+   }
+  ],
+  "oracle-sep": [
+   {
+    "speaker": "S2",
+    "start": 0.47,
+    "end": 1.14,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S3",
+    "start": 0.81,
+    "end": 8.35,
+    "text": "हाँ वोट एक बार तो देना है ना कोई छापड़ भी देना है अब तो वोट अच्छी हो गया तो",
+    "hinglish": "haan vote ek baar to dena hai na koi chhapad bhi dena hai ab to vote achhi ho gaya to",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 8.53,
+    "end": 20.46,
+    "text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+    "hinglish": "hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie chhath",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 20.95,
+    "end": 30.65,
+    "text": "एक बार तो सरकार भोट देना है वोट देना है अब देना है देखिए ना देना है भोट",
+    "hinglish": "ek baar to sarkar bhot dena hai vote dena hai ab dena hai dekhie na dena hai bhot",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S2",
+    "start": 28.83,
+    "end": 46.98,
+    "text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "chhath puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+    "audio": "separated"
+   },
+   {
+    "speaker": "S1",
+    "start": 47.76,
+    "end": 59.63,
+    "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+    "hinglish": "hello haan hello sir namas theek hai haan ji ji dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "S3",
+    "start": 60.3,
+    "end": 79.39,
+    "text": "अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो अब किसका देना है जे उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो उसी का वोट दिया जाएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega to kuch na diya sarkar kuch laabh nahi diya to ab kiska dena hai je usi ka vote dena hai je aage mein badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho usi ka vote diya jaega",
+    "audio": "mixture"
+   }
+  ],
+  "B-nosep": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.45,
+    "end": 6.8,
+    "text": "हेलो हाँ वोट इस बात तो देना है ना कोई छाप पर भी देना है अब तो वोट अथी हो गया",
+    "hinglish": "hello haan vote is baat to dena hai na koi chhaap par bhi dena hai ab to vote athi ho gaya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.0,
+    "end": 8.4,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.5,
+    "end": 9.4,
+    "text": "हम बिहार के",
+    "hinglish": "hum bihar ke",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 9.4,
+    "end": 10.35,
+    "text": "बोल रहे हैं",
+    "hinglish": "bol rahe hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.65,
+    "end": 16.45,
+    "text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
+    "hinglish": "hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 17.0,
+    "end": 17.4,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 18.6,
+    "end": 18.9,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 19.15,
+    "end": 20.5,
+    "text": "बोलिए साइट",
+    "hinglish": "bolie site",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.9,
+    "end": 23.2,
+    "text": "ते बार सरकार को वोट देना है",
+    "hinglish": "te baar sarkar ko vote dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.45,
+    "end": 26.4,
+    "text": "वो वोट देना है",
+    "hinglish": "wo vote dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.5,
+    "end": 30.65,
+    "text": "अब देना है देखिए न पूजा न कर देना है",
+    "hinglish": "ab dena hai dekhie na puja na kar dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.65,
+    "end": 32.2,
+    "text": "पूजा में हम लोग",
+    "hinglish": "puja mein hum log",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.9,
+    "end": 35.25,
+    "text": "नया सब समान लाते हैं जो",
+    "hinglish": "naya sab saman late hain jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.55,
+    "end": 35.65,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.9,
+    "end": 37.6,
+    "text": "वर्त करते हैं उसके लिए",
+    "hinglish": "wart karte hain uske liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.2,
+    "end": 41.55,
+    "text": "नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें",
+    "hinglish": "naya wastr kharid ke late hain pahante hain usmen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 41.85,
+    "end": 42.35,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.45,
+    "end": 47.0,
+    "text": "ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 47.7,
+    "end": 48.15,
+    "text": "हाँ मैं",
+    "hinglish": "haan main",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 48.4,
+    "end": 49.6,
+    "text": "हाँ हेलो सर",
+    "hinglish": "haan hello sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 50.5,
+    "end": 50.9,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 51.55,
+    "end": 52.25,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 52.75,
+    "end": 54.0,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 54.3,
+    "end": 57.15,
+    "text": "जी देखते हैं कि बहुत अच्छा से देखते हैं",
+    "hinglish": "ji dekhte hain ki bahut achha se dekhte hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 57.55,
+    "end": 59.65,
+    "text": "और कितना अच्छा बनाते हैं",
+    "hinglish": "aur kitna achha banate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 60.25,
+    "end": 63.0,
+    "text": "अब तो वोट ख़त्म हो गया अब वोट आएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 63.6,
+    "end": 64.3,
+    "text": "नहीं तब",
+    "hinglish": "nahi tab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.65,
+    "end": 67.05,
+    "text": "कुछ न दिया सरकार कुछ लाभ नहीं दिया",
+    "hinglish": "kuch na diya sarkar kuch laabh nahi diya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 67.7,
+    "end": 77.8,
+    "text": "तो आप किसका देना है जी उसकी का वोट देना है जी आगे समय बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो",
+    "hinglish": "to aap kiska dena hai ji uski ka vote dena hai ji aage samay badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 77.95,
+    "end": 79.45,
+    "text": "उसी का भूस दिया जाएगा",
+    "hinglish": "usi ka bhoos diya jaega",
+    "audio": "mixture"
+   }
+  ],
+  "B-spectral": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.45,
+    "end": 6.8,
+    "text": "हेलो वोट एक बार तो देना है ना कोई छाप पर भी देना है अब तो वोट अच्छी हो गया",
+    "hinglish": "hello vote ek baar to dena hai na koi chhaap par bhi dena hai ab to vote achhi ho gaya",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.0,
+    "end": 8.4,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.5,
+    "end": 9.4,
+    "text": "हम बिहार के",
+    "hinglish": "hum bihar ke",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 9.4,
+    "end": 10.35,
+    "text": "बोल रहे हैं",
+    "hinglish": "bol rahe hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.65,
+    "end": 16.45,
+    "text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
+    "hinglish": "hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 17.0,
+    "end": 17.4,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 18.6,
+    "end": 18.9,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 19.15,
+    "end": 20.5,
+    "text": "बोलिए साइट",
+    "hinglish": "bolie site",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.9,
+    "end": 23.2,
+    "text": "ते बार सरकार को वोट देना है",
+    "hinglish": "te baar sarkar ko vote dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.45,
+    "end": 26.4,
+    "text": "वो वोट देना है",
+    "hinglish": "wo vote dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.5,
+    "end": 30.65,
+    "text": "अब देना है देखिए ना कर देना है",
+    "hinglish": "ab dena hai dekhie na kar dena hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.65,
+    "end": 32.2,
+    "text": "पूजा में हम लोग",
+    "hinglish": "puja mein hum log",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.9,
+    "end": 35.25,
+    "text": "नया सब समान लाते हैं जो",
+    "hinglish": "naya sab saman late hain jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.55,
+    "end": 35.65,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.9,
+    "end": 37.6,
+    "text": "वर्त करते हैं उसके लिए",
+    "hinglish": "wart karte hain uske liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.2,
+    "end": 41.55,
+    "text": "नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें",
+    "hinglish": "naya wastr kharid ke late hain pahante hain usmen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 41.85,
+    "end": 42.35,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.45,
+    "end": 47.0,
+    "text": "ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 47.7,
+    "end": 48.15,
+    "text": "हाँ मैं",
+    "hinglish": "haan main",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 48.4,
+    "end": 49.6,
+    "text": "हाँ हेलो सर",
+    "hinglish": "haan hello sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 50.5,
+    "end": 50.9,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 51.55,
+    "end": 52.25,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 52.75,
+    "end": 54.0,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 54.3,
+    "end": 57.15,
+    "text": "जी देखते हैं कि बहुत अच्छा से देखते हैं",
+    "hinglish": "ji dekhte hain ki bahut achha se dekhte hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 57.55,
+    "end": 59.65,
+    "text": "और कितना अच्छा बनाते हैं",
+    "hinglish": "aur kitna achha banate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 60.25,
+    "end": 63.0,
+    "text": "अब तो वोट ख़त्म हो गया अब वोट आएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 63.6,
+    "end": 64.3,
+    "text": "नहीं तब",
+    "hinglish": "nahi tab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.65,
+    "end": 67.05,
+    "text": "कुछ न दिया सरकार कुछ लाभ नहीं दिया",
+    "hinglish": "kuch na diya sarkar kuch laabh nahi diya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 67.7,
+    "end": 77.8,
+    "text": "तो आप किसका देना है जी उसकी का वोट देना है जी आगे समय बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो",
+    "hinglish": "to aap kiska dena hai ji uski ka vote dena hai ji aage samay badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 77.95,
+    "end": 79.45,
+    "text": "उसी का भूस दिया जाएगा",
+    "hinglish": "usi ka bhoos diya jaega",
+    "audio": "mixture"
+   }
+  ],
+  "B-gmm": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.45,
+    "end": 6.8,
+    "text": "हाँ वोट इस बार तो देना है ना कोई छाप पर भी देना है अब तो वोट अथी हो गया",
+    "hinglish": "haan vote is baar to dena hai na koi chhaap par bhi dena hai ab to vote athi ho gaya",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 0.66,
+    "end": 1.31,
+    "text": "हलो",
+    "hinglish": "hello",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.0,
+    "end": 8.4,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.5,
+    "end": 10.35,
+    "text": "हम बिहार से बोल रहे हैं",
+    "hinglish": "hum bihar se bol rahe hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.65,
+    "end": 16.45,
+    "text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
+    "hinglish": "hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 17.0,
+    "end": 17.4,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 18.6,
+    "end": 18.9,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 19.15,
+    "end": 20.5,
+    "text": "बोलिए साइट",
+    "hinglish": "bolie site",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 20.9,
+    "end": 23.2,
+    "text": "ते बार सरकार को वोट देना है",
+    "hinglish": "te baar sarkar ko vote dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 24.45,
+    "end": 26.4,
+    "text": "वो वोट देना है",
+    "hinglish": "wo vote dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 26.5,
+    "end": 30.65,
+    "text": "अब देना है देखिए ना कर देना है",
+    "hinglish": "ab dena hai dekhie na kar dena hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 29.21,
+    "end": 29.48,
+    "text": "पूजा",
+    "hinglish": "puja",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 30.19,
+    "end": 30.66,
+    "text": "छः",
+    "hinglish": "chhah",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.65,
+    "end": 32.2,
+    "text": "पूजा में हम लोग",
+    "hinglish": "puja mein hum log",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.9,
+    "end": 35.25,
+    "text": "नया सब समान लाते हैं जो",
+    "hinglish": "naya sab saman late hain jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.55,
+    "end": 35.65,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.9,
+    "end": 37.6,
+    "text": "वर्त करते हैं उसके लिए",
+    "hinglish": "wart karte hain uske liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.2,
+    "end": 41.55,
+    "text": "नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें",
+    "hinglish": "naya wastr kharid ke late hain pahante hain usmen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 41.85,
+    "end": 42.35,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.45,
+    "end": 47.0,
+    "text": "ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 47.7,
+    "end": 48.15,
+    "text": "हाँ मैं",
+    "hinglish": "haan main",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 48.4,
+    "end": 49.6,
+    "text": "हाँ हेलो सर",
+    "hinglish": "haan hello sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 50.5,
+    "end": 50.9,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 51.55,
+    "end": 52.25,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 52.75,
+    "end": 54.0,
+    "text": "हाँ जी",
+    "hinglish": "haan ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 54.3,
+    "end": 57.15,
+    "text": "जी देखते हैं कि बहुत अच्छा से देखते हैं",
+    "hinglish": "ji dekhte hain ki bahut achha se dekhte hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 57.55,
+    "end": 59.65,
+    "text": "और कितना अच्छा बनाते हैं",
+    "hinglish": "aur kitna achha banate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 60.25,
+    "end": 63.0,
+    "text": "अब तो वोट ख़त्म हो गया अब वोट आएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 63.6,
+    "end": 64.3,
+    "text": "नहीं तब",
+    "hinglish": "nahi tab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 64.65,
+    "end": 67.05,
+    "text": "कुछ न दिया सरकार कुछ लाभ नहीं दिया",
+    "hinglish": "kuch na diya sarkar kuch laabh nahi diya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 67.7,
+    "end": 77.8,
+    "text": "तो आप किसका देना है जी उसकी का वोट देना है जी आगे समय बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो",
+    "hinglish": "to aap kiska dena hai ji uski ka vote dena hai ji aage samay badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 77.95,
+    "end": 79.45,
+    "text": "उसी का भूस दिया जाएगा",
+    "hinglish": "usi ka bhoos diya jaega",
+    "audio": "mixture"
+   }
+  ],
+  "B-pyannote": [
+   {
+    "speaker": "Speaker_A",
+    "start": 0.47,
+    "end": 1.31,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 0.66,
+    "end": 6.76,
+    "text": "हाँ वोट एक बार तो देना है ना कोई छापड़ भी देना है आप तो बहुत अच्छी हो गया",
+    "hinglish": "haan vote ek baar to dena hai na koi chhapad bhi dena hai aap to bahut achhi ho gaya",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.03,
+    "end": 8.38,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 8.52,
+    "end": 10.34,
+    "text": "हम बिहार से बोल रहे हैं",
+    "hinglish": "hum bihar se bol rahe hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 10.66,
+    "end": 16.45,
+    "text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
+    "hinglish": "hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.02,
+    "end": 17.38,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 18.61,
+    "end": 18.85,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.18,
+    "end": 19.67,
+    "text": "बोलिए",
+    "hinglish": "bolie",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.86,
+    "end": 20.47,
+    "text": "साइट पु",
+    "hinglish": "site pu",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 20.92,
+    "end": 23.18,
+    "text": "अब बार तो सरकार को वोट देना है",
+    "hinglish": "ab baar to sarkar ko vote dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 24.48,
+    "end": 26.39,
+    "text": "वो वोट देना है",
+    "hinglish": "wo vote dena hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 26.52,
+    "end": 30.66,
+    "text": "अब देना है देखिए नाम पर देना है",
+    "hinglish": "ab dena hai dekhie naam par dena hai",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.27,
+    "end": 29.39,
+    "text": "",
+    "hinglish": "",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 30.19,
+    "end": 32.18,
+    "text": "छठ पूजा में हम लोग",
+    "hinglish": "chhath puja mein hum log",
+    "audio": "separated"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 32.94,
+    "end": 35.25,
+    "text": "नया सब सामान लाते हैं जो",
+    "hinglish": "naya sab saman late hain jo",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 35.91,
+    "end": 37.58,
+    "text": "वर्त करते हैं उसके लिए",
+    "hinglish": "wart karte hain uske liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 38.22,
+    "end": 41.49,
+    "text": "नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें",
+    "hinglish": "naya wastr kharid ke late hain pahante hain usmen",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.9,
+    "end": 42.32,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 42.47,
+    "end": 46.98,
+    "text": "ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 47.7,
+    "end": 47.74,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 47.74,
+    "end": 47.8,
+    "text": "",
+    "hinglish": "",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 47.8,
+    "end": 47.97,
+    "text": "हम",
+    "hinglish": "hum",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 47.97,
+    "end": 48.14,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 48.45,
+    "end": 49.56,
+    "text": "हाँ हेलो सर",
+    "hinglish": "haan hello sir",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 50.52,
+    "end": 50.89,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 51.58,
+    "end": 52.23,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 52.8,
+    "end": 53.37,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 53.39,
+    "end": 53.96,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 54.32,
+    "end": 57.12,
+    "text": "जी देखते हैं कि बहुत अच्छा से देखते हैं",
+    "hinglish": "ji dekhte hain ki bahut achha se dekhte hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 57.58,
+    "end": 59.63,
+    "text": "और कितना अच्छा बनाते हैं",
+    "hinglish": "aur kitna achha banate hain",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 60.31,
+    "end": 62.96,
+    "text": "अब तो वोट ख़त्म हो गया अब वोट आएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 63.63,
+    "end": 64.26,
+    "text": "नहीं तब",
+    "hinglish": "nahi tab",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 64.68,
+    "end": 67.01,
+    "text": "कुछ न दिया सरकार कुछ लाभ नहीं दिया",
+    "hinglish": "kuch na diya sarkar kuch laabh nahi diya",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 67.73,
+    "end": 77.79,
+    "text": "तो आप किसका देना है जो उसी का वोट देना है जो आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो",
+    "hinglish": "to aap kiska dena hai jo usi ka vote dena hai jo aage mein badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho",
+    "audio": "mixture"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 78.06,
+    "end": 79.43,
+    "text": "उसी तक घूस दिया जाएगा",
+    "hinglish": "usi tak ghoos diya jaega",
+    "audio": "mixture"
+   }
+  ],
+  "A-spectral": [
+   {
+    "speaker": "Speaker_C",
+    "start": 0.5,
+    "end": 1.0,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 0.65,
+    "end": 1.15,
+    "text": "हां",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 1.05,
+    "end": 6.75,
+    "text": "हाँ वोट एक बार तो देना है ना कोई छापल भी देना है अब तो वोट अच्छी हो गया",
+    "hinglish": "haan vote ek baar to dena hai na koi chhapal bhi dena hai ab to vote achhi ho gaya",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.0,
+    "end": 8.4,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 8.5,
+    "end": 10.0,
+    "text": "हम बिहार से बोल रहे हैं",
+    "hinglish": "hum bihar se bol rahe hain",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 9.95,
+    "end": 10.35,
+    "text": "हे",
+    "hinglish": "he",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 10.65,
+    "end": 14.5,
+    "text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश",
+    "hinglish": "hamare desh mein chhath puja manaya jata hai aur hamare desh",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.5,
+    "end": 14.95,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 14.85,
+    "end": 16.45,
+    "text": "दीपावली भी मनाया जाता है",
+    "hinglish": "dipavli bhi manaya jata hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.0,
+    "end": 17.4,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.15,
+    "end": 19.7,
+    "text": "बोलिए",
+    "hinglish": "bolie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.85,
+    "end": 20.5,
+    "text": "साइट",
+    "hinglish": "site",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 20.9,
+    "end": 23.15,
+    "text": "इत तो सरकार को वोट देना है",
+    "hinglish": "it to sarkar ko vote dena hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 24.45,
+    "end": 26.45,
+    "text": "वो वोट देना है",
+    "hinglish": "wo vote dena hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 26.5,
+    "end": 28.85,
+    "text": "अब देना है देखिए ना कोई",
+    "hinglish": "ab dena hai dekhie na koi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 29.1,
+    "end": 29.6,
+    "text": "पूजा",
+    "hinglish": "puja",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 29.6,
+    "end": 30.35,
+    "text": "कर देना है",
+    "hinglish": "kar dena hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 30.65,
+    "end": 32.25,
+    "text": "पूजा में हम लोग",
+    "hinglish": "puja mein hum log",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 32.9,
+    "end": 35.25,
+    "text": "नया सब सामान लाते हैं जो",
+    "hinglish": "naya sab saman late hain jo",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 35.9,
+    "end": 37.6,
+    "text": "वर्त करते हैं उसके लिए",
+    "hinglish": "wart karte hain uske liye",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 38.2,
+    "end": 41.55,
+    "text": "नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें",
+    "hinglish": "naya wastr kharid ke late hain pahante hain usmen",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.85,
+    "end": 42.35,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 42.45,
+    "end": 47.0,
+    "text": "ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 47.7,
+    "end": 48.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 48.45,
+    "end": 49.6,
+    "text": "हाँ हेलो सर",
+    "hinglish": "haan hello sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.55,
+    "end": 50.9,
+    "text": "हमारा",
+    "hinglish": "hamara",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.55,
+    "end": 52.25,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.75,
+    "end": 53.3,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.4,
+    "end": 54.0,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 54.45,
+    "end": 55.5,
+    "text": "हम्म देखते हैं कि",
+    "hinglish": "hamm dekhte hain ki",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 55.5,
+    "end": 57.15,
+    "text": "बहुत अच्छा से देखते हैं",
+    "hinglish": "bahut achha se dekhte hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 57.55,
+    "end": 59.65,
+    "text": "और कितना अच्छा बनाते हैं",
+    "hinglish": "aur kitna achha banate hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 60.25,
+    "end": 63.0,
+    "text": "अब तो वोट खत्म हो गया अब वोट आएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 63.6,
+    "end": 64.25,
+    "text": "नहीं तब",
+    "hinglish": "nahi tab",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 64.65,
+    "end": 67.05,
+    "text": "कुछ न दिया सरकार कुछ लाभ नहीं दिया",
+    "hinglish": "kuch na diya sarkar kuch laabh nahi diya",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 67.7,
+    "end": 77.75,
+    "text": "तो आप किसका देना है जी उसकी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो",
+    "hinglish": "to aap kiska dena hai ji uski ka vote dena hai je aage mein badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 78.05,
+    "end": 79.45,
+    "text": "उसी तक हो दिया जाएगा",
+    "hinglish": "usi tak ho diya jaega",
+    "audio": "track-0"
+   }
+  ],
+  "A-gmm": [
+   {
+    "speaker": "Speaker_B",
+    "start": 0.5,
+    "end": 1.0,
+    "text": "हेलो",
+    "hinglish": "hello",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 0.65,
+    "end": 1.15,
+    "text": "हां",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 1.05,
+    "end": 2.4,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 2.4,
+    "end": 6.75,
+    "text": "देना है ना कोई छापड़ भी देना है अब तो बहुत अच्छी हो गया",
+    "hinglish": "dena hai na koi chhapad bhi dena hai ab to bahut achhi ho gaya",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 8.0,
+    "end": 8.4,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 8.5,
+    "end": 10.0,
+    "text": "हम बिहार से बोल रहे हैं",
+    "hinglish": "hum bihar se bol rahe hain",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 9.95,
+    "end": 10.35,
+    "text": "हे",
+    "hinglish": "he",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 10.65,
+    "end": 14.5,
+    "text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश",
+    "hinglish": "hamare desh mein chhath puja manaya jata hai aur hamare desh",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 14.5,
+    "end": 14.95,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 14.85,
+    "end": 16.45,
+    "text": "दीपावली भी मनाया जाता है",
+    "hinglish": "dipavli bhi manaya jata hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 17.0,
+    "end": 17.4,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.15,
+    "end": 19.7,
+    "text": "बोलिए",
+    "hinglish": "bolie",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 19.85,
+    "end": 20.5,
+    "text": "साइट",
+    "hinglish": "site",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 20.9,
+    "end": 23.15,
+    "text": "इत तो सरकार को वोट देना है",
+    "hinglish": "it to sarkar ko vote dena hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 24.45,
+    "end": 26.45,
+    "text": "वो वोट देना है",
+    "hinglish": "wo vote dena hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 26.5,
+    "end": 28.85,
+    "text": "अब देना है देखिए ना कोई",
+    "hinglish": "ab dena hai dekhie na koi",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 29.1,
+    "end": 29.6,
+    "text": "पूजा",
+    "hinglish": "puja",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 29.6,
+    "end": 30.35,
+    "text": "कर देना है",
+    "hinglish": "kar dena hai",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 30.65,
+    "end": 32.25,
+    "text": "पूजा में हम लोग",
+    "hinglish": "puja mein hum log",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 32.9,
+    "end": 35.25,
+    "text": "नया सब सामान लाते हैं जो",
+    "hinglish": "naya sab saman late hain jo",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 35.9,
+    "end": 37.6,
+    "text": "वर्त करते हैं उसके लिए",
+    "hinglish": "wart karte hain uske liye",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 38.2,
+    "end": 41.55,
+    "text": "नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें",
+    "hinglish": "naya wastr kharid ke late hain pahante hain usmen",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 41.85,
+    "end": 42.35,
+    "text": "और",
+    "hinglish": "aur",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_C",
+    "start": 42.45,
+    "end": 47.0,
+    "text": "ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+    "hinglish": "thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 47.7,
+    "end": 48.2,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-1"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 48.45,
+    "end": 49.6,
+    "text": "हाँ हेलो सर",
+    "hinglish": "haan hello sir",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 50.55,
+    "end": 50.9,
+    "text": "हमारा",
+    "hinglish": "hamara",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 51.55,
+    "end": 52.25,
+    "text": "ठीक है",
+    "hinglish": "theek hai",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 52.75,
+    "end": 53.3,
+    "text": "हाँ",
+    "hinglish": "haan",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 53.4,
+    "end": 54.0,
+    "text": "जी",
+    "hinglish": "ji",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 54.45,
+    "end": 57.15,
+    "text": "देखते है की बहुत अच्छा से देखते हैं",
+    "hinglish": "dekhte hai ki bahut achha se dekhte hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_B",
+    "start": 57.55,
+    "end": 59.65,
+    "text": "और कितना अच्छा बनाते हैं",
+    "hinglish": "aur kitna achha banate hain",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 60.25,
+    "end": 63.0,
+    "text": "अब तो वोट खत्म हो गया अब वोट आएगा",
+    "hinglish": "ab to vote khatm ho gaya ab vote aaega",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_A",
+    "start": 63.6,
+    "end": 64.25,
+    "text": "नहीं तब",
+    "hinglish": "nahi tab",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 64.65,
+    "end": 67.05,
+    "text": "कुछ न दिया सरकार कुछ लाभ नहीं दिया",
+    "hinglish": "kuch na diya sarkar kuch laabh nahi diya",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 67.7,
+    "end": 77.75,
+    "text": "तो आप किसका देना है जी उसकी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो",
+    "hinglish": "to aap kiska dena hai ji uski ka vote dena hai je aage mein badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho",
+    "audio": "track-0"
+   },
+   {
+    "speaker": "Speaker_D",
+    "start": 78.05,
+    "end": 79.45,
+    "text": "उसी तक हो दिया जाएगा",
+    "hinglish": "usi tak ho diya jaega",
+    "audio": "track-0"
+   }
+  ]
+ }
+}
