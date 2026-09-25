@@ -23,3 +23,6 @@ results/cache/
 ~$*
 results/log_*.txt
 results/runs/
+
+# Local Claude Code state
+.claude/
