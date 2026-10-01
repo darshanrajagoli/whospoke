@@ -2,6 +2,8 @@
 
     python scripts/build_notebooks.py            # write + execute both notebooks
     python scripts/build_notebooks.py --no-run   # write only
+    python scripts/build_notebooks.py --only walkthrough   # one notebook
+    python scripts/build_notebooks.py --stage4-only        # re-measure only the Stage-4 benchmark section
 """
 from __future__ import annotations
 
@@ -303,6 +305,8 @@ def rerun_stage4(kernel: str) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-run", action="store_true")
+    ap.add_argument("--only", choices=["benchmark", "walkthrough"], default=None,
+                    help="build just one notebook (the benchmark's GPU numbers are kept when only the walkthrough runs)")
     ap.add_argument("--stage4-only", action="store_true",
                     help="re-run only the Stage-4 section of 01_benchmark.ipynb, keeping every other output")
     ap.add_argument("--kernel", default="whospoke",
@@ -314,6 +318,8 @@ def main() -> None:
         rerun_stage4(args.kernel)
         return
     books = {"01_benchmark.ipynb": benchmark(), "02_walkthrough.ipynb": walkthrough()}
+    if args.only:
+        books = {k: v for k, v in books.items() if args.only in k}
     for name, nb in books.items():
         path = NB / name
         nbf.write(nb, path)
