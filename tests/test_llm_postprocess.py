@@ -11,7 +11,8 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from whospoke.llm_postprocess import (
+import whospoke.llm_postprocess as lp
+from whospoke.llm_postprocess import (  # noqa: E402
     LLMConnectionError, LLMContextError, LLMError, LLMReply, OpenAICompatibleLLM, PostProcessor, StaticLLM,
     chunk_schema, estimate_tokens, parse_json_object,
 )
@@ -218,8 +219,8 @@ def test_report_files(tmp_path):
 class FakeServer:
     """Minimal OpenAI-compatible server: records requests, answers with a scripted list of (status, body)."""
 
-    def __init__(self, answers):
-        self.answers, self.requests = list(answers), []
+    def __init__(self, answers, get_statuses=()):
+        self.answers, self.requests, self.get_statuses = list(answers), [], list(get_statuses)
         outer = self
 
         class Handler(BaseHTTPRequestHandler):
@@ -227,13 +228,17 @@ class FakeServer:
                 pass
 
             def do_GET(self):
-                self.send_response(200)
+                self.send_response(outer.get_statuses.pop(0) if outer.get_statuses else 200)
                 self.end_headers()
                 self.wfile.write(b'{"data": []}')
 
             def do_POST(self):
                 outer.requests.append(json.loads(self.rfile.read(int(self.headers["Content-Length"]))))
-                status, body = outer.answers.pop(0)
+                answer = outer.answers.pop(0)
+                if answer == "drop":                  # the server dies mid-request
+                    self.close_connection = True
+                    return
+                status, body = answer
                 self.send_response(status)
                 self.send_header("Content-Type", "application/json")
                 self.end_headers()
@@ -371,3 +376,110 @@ def test_real_llm_on_demo_transcript(tmp_path):
     assert report.executive_summary and report.keywords
     assert report.diagnostics.failed_chunks <= len(kept) // 4
     report.save(tmp_path)
+
+
+# ---------------------------------------------------------------- red-team regressions
+def test_dropped_connection_is_a_connection_error_and_stage3_survives(tmp_path):
+    srv = FakeServer(["drop"])
+    try:
+        with pytest.raises(LLMConnectionError, match="Lost the connection"):
+            OpenAICompatibleLLM(srv.url, "m").complete("s", "u", temperature=0, max_tokens=5)
+    finally:
+        srv.close()
+    srv = FakeServer(["drop"])
+    try:
+        res = _stub_pipeline(PostProcessor(base_url=srv.url)).run(np.zeros(9 * 16000, np.float32))
+        assert res.report is None and "Lost the connection" in res.report_error
+        assert (res.save(tmp_path) / "transcript.json").exists()
+    finally:
+        srv.close()
+
+
+def test_server_loading_model_is_waited_for(monkeypatch):
+    monkeypatch.setattr(lp, "RETRY_WAIT_S", 0.01)
+    srv = FakeServer([(503, {"error": "Loading model"}), ok("{}")], get_statuses=[503, 503, 200])
+    try:
+        llm = OpenAICompatibleLLM(srv.url, "m")
+        llm.ping()
+        assert llm.complete("s", "u", temperature=0, max_tokens=5).text == "{}"
+    finally:
+        srv.close()
+    srv = FakeServer([(503, {"error": "busy"})] * 7)
+    try:
+        with pytest.raises(LLMConnectionError, match="503"):
+            OpenAICompatibleLLM(srv.url, "m").complete("s", "u", temperature=0, max_tokens=5)
+    finally:
+        srv.close()
+
+
+def test_transient_server_error_keeps_the_schema():
+    srv = FakeServer([(500, {"error": "out of memory"})])
+    try:
+        llm = OpenAICompatibleLLM(srv.url, "m")
+        with pytest.raises(LLMError):
+            llm.complete("s", "u", temperature=0, max_tokens=5, schema={"type": "object"})
+        assert llm.schema_enforced and len(srv.requests) == 1
+    finally:
+        srv.close()
+
+
+def test_non_finite_line_id_is_ignored():
+    obj = json.loads(chunk_reply())
+    obj["lines"].append({"id": 1e999, "text": "x", "en": "x", "uncertain": False})
+    report, _ = run(json.dumps(obj), synthesis_reply())        # json.dumps writes Infinity
+    assert [x.line_id for x in report.cleaned_dialogue] == [1, 2, 4]
+
+
+def test_repair_that_adds_words_is_reverted():
+    obj = json.loads(chunk_reply())
+    # three short invented words: under the 50 % character limit, but a repair should not lengthen a line
+    obj["lines"][0]["text"] = "आई डी कार्ड गुम हो गया है सर सर पुलिस ने कहा"
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    line = report.cleaned_dialogue[0]
+    assert line.text == line.source_text and line.uncertain and "added words" in line.note
+
+
+def test_long_translation_is_flagged():
+    obj = json.loads(chunk_reply())
+    obj["lines"][2]["en"] = "Okay, I will bring it tomorrow. " + "The police also suspect election fraud. " * 3
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    assert report.cleaned_dialogue[2].uncertain and report.diagnostics.translations_too_long == 1
+
+
+def test_keywords_need_every_content_word_and_ignore_common_words():
+    synth = synthesis_reply(keywords=["ID card", "card cloning scam", "sir knighthood", "दंगे में मौतें"])
+    report, _ = run(chunk_reply(), synth)
+    assert report.keywords == ["ID card"] and report.diagnostics.keywords_dropped == 3
+
+
+def test_action_must_share_a_word_with_its_evidence():
+    synth = synthesis_reply(actions=[
+        {"owner": "Speaker_A", "action": "Transfer Rs 50,000 to the police officer", "lines": [2]},
+        {"owner": "Speaker_A", "action": "Bring the Aadhaar photocopy", "lines": [2]}])
+    report, _ = run(chunk_reply(), synth)
+    assert [a.action for a in report.action_items] == ["Bring the Aadhaar photocopy"]
+
+
+def test_long_recording_synthesis_fits_the_context():
+    lines = [{"speaker": f"Speaker_{'AB'[i % 2]}", "start": float(i), "end": i + 0.9,
+              "text": "आज मंडी में प्याज का भाव बहुत ऊपर चला गया है भाई", "hinglish": ""} for i in range(360)]
+
+    class Echo(StaticLLM):
+        def complete(self, system, user, *, temperature, max_tokens, schema=None):
+            self.calls.append({"user": user, "max_tokens": max_tokens})
+            assert estimate_tokens(system + user) + max_tokens <= 4096, "request does not fit the window"
+            props = schema["properties"]
+            if "lines" in props:
+                ids = [x["properties"]["id"]["const"] for x in props["lines"]["prefixItems"]]
+                return LLMReply(json.dumps({"lines": [{"id": i, "text": lines[i - 1]["text"], "en": "Onion prices rose.",
+                                                       "uncertain": False} for i in ids],
+                                            "summary": "Onion prices at the market went up a lot. " * 4,
+                                            "keywords": ["onion"], "actions": []}), "stop")
+            if set(props) == {"summary"}:
+                return LLMReply(json.dumps({"summary": "Onion prices went up."}), "stop")
+            return LLMReply(synthesis_reply(actions=[]), "stop")
+
+    llm = Echo([])
+    report = PostProcessor(llm).process_transcript({"lines": lines})
+    assert not report.diagnostics.synthesis_failed
+    assert len(report.cleaned_dialogue) == 360 and report.title == "Lost ID card"

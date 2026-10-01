@@ -22,8 +22,8 @@ An example is [results/demo/report.md](../results/demo/report.md).
 | section | where it comes from |
 |---|---|
 | title, topic, executive summary, key points | the LLM, from the checked translations and part summaries |
-| keywords | the LLM, **kept only if they occur** in the transcript or its line translations |
-| action items (who, what, which line) | the LLM; **kept only if** the owner is a real speaker (or "unspecified") and the cited lines exist |
+| keywords | the LLM, **kept only if every content word occurs** in the transcript or its line translations |
+| action items (who, what, which line) | the LLM; **kept only if** the owner is a real speaker (or "unspecified"), the cited lines exist and share a word with the action |
 | speakers: talk time and number of turns | computed from the Stage-2 timeline (no LLM) |
 | dialogue: time, speaker, repaired Devanagari, Hinglish, English | speaker and time from Stage 2 unchanged; Devanagari repaired and translated by the LLM; Hinglish by the Stage-3 romaniser |
 | what Stage 4 changed | every line where the repaired text differs from the ASR text, side by side |
@@ -66,12 +66,16 @@ Devanagari goes through the same romaniser as Stage 3, so both columns agree (D3
 | a line number that does not exist | ignored | `unknown_line_ids` |
 | a line is missing from the reply | restored from Stage 3, flagged | `lines_restored` |
 | the "repair" rewrites or translates the line (> 50 % of characters changed) | reverted to the ASR text, flagged | `lines_reverted` (D29) |
+| the "repair" adds words (more than 1, or 20 % of the line) | reverted to the ASR text, flagged | `lines_reverted` (D29) |
+| the English is much longer than the line (> 2 × its length + 30 characters) | kept, flagged: it may add things that were not said | `translations_too_long` |
 | no English translation | flagged; the English column stays empty | `missing_translations` |
 | the model says a line is too garbled | kept, flagged | `lines_flagged_by_llm` |
-| a keyword that was never said | dropped | `keywords_dropped` |
-| an action with an unknown owner or no valid evidence line | dropped | `actions_dropped` |
-| the final (synthesis) call fails | summary, keywords and actions are taken from the per-part results | `synthesis_failed` |
-| the server is not running | stops with a message telling you how to start it; `run --postprocess` checks this before the audio stages, and saves Stages 1–3 even if Stage 4 fails later | — |
+| a keyword with a content word that was never said (common words such as में, है, haan do not count) | dropped | `keywords_dropped` |
+| an action with an unknown owner, no valid evidence line, or no word in common with its evidence lines | dropped | `actions_dropped` |
+| a long recording: too many part summaries for one call | consecutive part summaries are merged by the LLM, in rounds, until they fit | — |
+| the final (synthesis) call fails | summary (merged part summaries), keywords and actions are taken from the per-part results | `synthesis_failed` |
+| the server is still loading the model (HTTP 503) | waited for (up to 2 minutes when checking, 30 s per request) | — |
+| the server is not running, or the connection drops | stops with a message telling you how to start it; `run --postprocess` checks this before the audio stages, and saves Stages 1–3 even if Stage 4 fails later | — |
 
 All counters are in `report.json → diagnostics` and in the last section of `report.md`.
 `tests/test_llm_postprocess.py` tests each row with scripted model replies and a fake HTTP server.
@@ -130,7 +134,7 @@ still apply.
 (`results/eval_test_indicconformer/*.json`, no audio models needed) for four inputs, each with one more source of
 upstream error: the true transcript, ASR on each clean voice, ASR on the noisy mixture, and the full pipeline. It
 measures whether the repair lowers or raises the who-said-what error (cpWER before vs after), how many of the report's
-keywords were really said, how close the report is to the one made from the true transcript, what each guardrail did,
+keywords and summary words were really said, how close the report is to the one made from the true transcript, what each guardrail did,
 and how long it takes. `scripts/make_report.py` turns that into the Stage-4 tables in
 [RESULTS_TABLES.md](RESULTS_TABLES.md) and `results/figures/stage4_cascade.png` (D31).
 

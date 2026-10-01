@@ -14,6 +14,7 @@ Per conversation and system (``results/eval_postprocess.csv``):
 
   cpwer_raw, cpwer_clean   who-said-what error of the Stage-3 text and of the Stage-4 repaired text
   keywords_true            share of the report's keywords that were really said (true transcript or its translation)
+  summary_true             share of the content words of the summary and key points that were really said
   keyword_f1, summary_f1   word overlap of the keywords / summary with the report made from the true transcript
   guardrail counts         lines repaired, reverted, restored, flagged; keywords and actions dropped
   llm_s, rtf               Stage-4 time, and that time divided by the audio length
@@ -42,15 +43,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from make_report import boot_ci, paired_diff_ci  # noqa: E402
 from whospoke.hinglish import romanise  # noqa: E402
 from whospoke.llm_postprocess import (  # noqa: E402
-    DEFAULT_BASE_URL, DEFAULT_CONTEXT, DEFAULT_MODEL, OpenAICompatibleLLM, PostProcessor, _STOP, _tokens,
+    DEFAULT_BASE_URL, DEFAULT_CONTEXT, DEFAULT_MODEL, OpenAICompatibleLLM, PostProcessor, _content_tokens, _fingerprint,
 )
 from whospoke.metrics import cp_error  # noqa: E402
 
 PROJECT = Path(__file__).resolve().parents[1]
 RES = PROJECT / "results"
 SYSTEMS = ["reference", "oracle-clean", "oracle-mix", "B-spectral"]
-STOP = _STOP | {"speaker", "speakers", "they", "their", "about", "also", "said", "says", "asks", "there", "what",
-                "which", "will", "would", "been", "were", "into", "some", "them", "then", "than", "conversation"}
 
 
 def by_speaker(lines: list[dict]) -> dict[str, str]:
@@ -71,7 +70,8 @@ def stage3_transcript(conv: dict, system: str, duration_s: float) -> dict:
 
 
 def words(texts: list[str]) -> set[str]:
-    return {t for s in texts for t in _tokens(s or "") if len(t) >= 3 and t not in STOP}
+    """Content words (the same filter the Stage-4 guardrails use)."""
+    return {t for s in texts for t in _content_tokens(s or "") if t != "conversation"}
 
 
 def f1(a: set[str], b: set[str]) -> float:
@@ -130,6 +130,12 @@ def main() -> None:
     llm.ping()
     post = PostProcessor(llm, context_tokens=args.llm_context)
     rss = RSSSampler(args.server_pid)
+    # Conversations of one speaker group share their speech across conditions, so some Stage-3 transcripts are
+    # identical (always for "reference"). Stage 4 is deterministic (temperature 0): reuse the report.
+    by_hash = {}
+    for f in cache.glob("*.json"):
+        rep_ = json.loads(f.read_text(encoding="utf-8"))
+        by_hash.setdefault((rep_["provenance"]["source_sha256"], f.stem.split("__")[1]), rep_)
     t_start = time.perf_counter()
 
     rows = []
@@ -139,11 +145,17 @@ def main() -> None:
         reports = {}
         for system in args.systems:
             f = cache / f"{cid}__{system}.json"
+            src = stage3_transcript(conv, system, m.duration_s)
+            key = (_fingerprint(src), system)
             if f.exists() and not args.force:
                 reports[system] = json.loads(f.read_text(encoding="utf-8"))
-            else:
-                reports[system] = post.process_transcript(stage3_transcript(conv, system, m.duration_s)).to_dict()
+            elif key in by_hash and not args.force:
+                reports[system] = by_hash[key]
                 f.write_text(json.dumps(reports[system], ensure_ascii=False, indent=1), encoding="utf-8")
+            else:
+                reports[system] = post.process_transcript(src).to_dict()
+                f.write_text(json.dumps(reports[system], ensure_ascii=False, indent=1), encoding="utf-8")
+            by_hash[key] = reports[system]
         ref_report = reports.get("reference")
         truth = [s["text"] for s in conv["reference"]] + [romanise(s["text"]) for s in conv["reference"]]
         if ref_report:
@@ -165,12 +177,15 @@ def main() -> None:
                 "cp_errors_raw": raw["errors"], "cp_errors_clean": clean["errors"],
                 "cpwer_raw": raw["rate"], "cpwer_clean": clean["rate"],
                 "keywords": len(kw),
-                "keywords_true": np.mean([bool(words([k]) & truth_words) for k in kw]) if kw else np.nan,
+                "keywords_true": np.mean([words([k]) <= truth_words for k in kw]) if kw else np.nan,
+                "summary_true": (len(sw & truth_words) / len(sw)) if (sw := words([rep["executive_summary"],
+                                                                                    *rep["key_points"]])) else np.nan,
                 "keyword_f1": f1(words(rep["keywords"]), words(ref_report["keywords"])) if ref_report else np.nan,
                 "summary_f1": f1(words([rep["executive_summary"]]), words([ref_report["executive_summary"]]))
                 if ref_report else np.nan,
                 "actions": len(rep["action_items"]),
-                **{k: d[k] for k in ("lines_changed", "lines_reverted", "lines_restored", "lines_flagged_by_llm",
+                **{k: d.get(k, 0) for k in ("lines_changed", "lines_reverted", "lines_restored", "lines_flagged_by_llm",
+                                     "translations_too_long",
                                      "missing_translations", "failed_chunks", "chunk_splits", "invalid_replies",
                                      "keywords_dropped", "actions_dropped", "synthesis_failed", "llm_calls",
                                      "prompt_tokens", "completion_tokens", "schema_enforced")},
@@ -197,6 +212,7 @@ def main() -> None:
         print(f"{s:13s} cpWER {g.cp_errors_raw.sum() / g.ref_words.sum():6.1%} -> "
               f"{g.cp_errors_clean.sum() / g.ref_words.sum():6.1%}  (Δ {100 * mean:+.1f} pts [{100 * lo:+.1f}, "
               f"{100 * hi:+.1f}])  keywords really said {g.keywords_true.mean():.0%} [{k_lo:.0%}, {k_hi:.0%}]  "
+              f"summary words really said {g.summary_true.mean():.0%}  "
               f"keyword F1 {g.keyword_f1.mean():.2f}  summary F1 {g.summary_f1.mean():.2f}  RTF {g.rtf.mean():.2f}")
 
 

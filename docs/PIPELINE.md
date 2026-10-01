@@ -142,9 +142,11 @@ and English instruction data. Quantised to 4 bits (Q4_K_M, ~4 GB) and served loc
 - The reply must follow a JSON schema that lists every line number in order (llama-server enforces it with a
   grammar), and is checked again in Python: unknown line numbers are dropped, missing lines restored and flagged; an
   unusable reply makes the chunk be halved and retried, and one line that still fails keeps its ASR text.
-- A "repair" that changes more than half of a line's characters is reverted (the model rewrote or translated it).
-- Keywords must occur in the transcript or its translations; action items must name a real speaker (or
-  "unspecified") and cite real lines.
+- A "repair" that changes more than half of a line's characters, or adds words, is reverted (the model rewrote,
+  translated or padded it); an English line much longer than its source is flagged.
+- Every content word of a keyword must occur in the transcript or its translations; action items must name a real
+  speaker (or "unspecified"), cite real lines and share a word with them.
+- Long recordings: part summaries are merged in rounds so that the final call always fits the context window.
 - The Hinglish column is made by the Stage-3 romaniser from the repaired Devanagari.
 Every guardrail's count goes into the report, and each one has a test.
 

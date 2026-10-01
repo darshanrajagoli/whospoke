@@ -23,6 +23,7 @@ key points, keywords, action items).
 from __future__ import annotations
 
 import hashlib
+import http.client
 import json
 import os
 import re
@@ -86,6 +87,13 @@ Return:
 EVIDENCE:
 """
 
+MERGE_PROMPT = """Below are summaries of consecutive parts of one conversation. Merge them into one factual summary of \
+at most 4 English sentences. Only what the summaries say.
+Return: "summary".
+
+SUMMARIES:
+"""
+
 
 # ====================================================================== LLM backends
 class LLMError(RuntimeError):
@@ -98,6 +106,14 @@ class LLMConnectionError(LLMError):
 
 class LLMContextError(LLMError):
     """The request did not fit the model's context window, or the server timed out on it."""
+
+
+class LLMHTTPError(LLMError):
+    """The server answered with an HTTP error status."""
+
+    def __init__(self, status: int, detail: str):
+        super().__init__(f"LLM server returned HTTP {status}: {detail}")
+        self.status, self.detail = status, detail
 
 
 @dataclass
@@ -120,6 +136,9 @@ class LLMBackend(Protocol):
 
 
 _CONTEXT_ERROR = re.compile(r"context|n_ctx|too long|exceed|maximum.*tokens", re.I)
+_SCHEMA_ERROR = re.compile(r"schema|grammar|response_format|json", re.I)
+RETRY_WAIT_S = 5.0              # wait between retries while the server answers HTTP 503 (loading / busy)
+_START_HINT = "Start it first: python scripts/serve_llm.py (see docs/MILESTONE4.md)."
 
 
 class OpenAICompatibleLLM:
@@ -149,27 +168,36 @@ class OpenAICompatibleLLM:
             payload["response_format"] = {"type": "json_object", "schema": schema}
         try:
             return self._post(payload)
-        except LLMError as exc:
-            if "response_format" not in payload or isinstance(exc, (LLMConnectionError, LLMContextError)):
+        except LLMHTTPError as exc:
+            # Only a server that rejects the schema itself loses it; a transient error must not switch it off.
+            if "response_format" not in payload or exc.status not in (400, 422, 500) \
+                    or not _SCHEMA_ERROR.search(exc.detail):
                 raise
             payload.pop("response_format")
             reply = self._post(payload)
             self.schema_enforced = False      # the server does not support it; stop sending it
             return reply
 
-    def ping(self) -> None:
-        """Raise LLMConnectionError unless the server answers ``GET /models`` within 10 s."""
-        try:
-            with urllib.request.urlopen(self.base_url + "/models", timeout=10):
-                pass
-        except urllib.error.HTTPError:
-            pass                                  # it answered; some servers do not implement /models
-        except (urllib.error.URLError, TimeoutError, socket.timeout) as exc:
-            raise LLMConnectionError(
-                f"Cannot reach the Stage-4 LLM server at {self.base_url} ({getattr(exc, 'reason', exc)}). "
-                "Start it first: python scripts/serve_llm.py (see docs/MILESTONE4.md).") from exc
+    def ping(self, wait_s: float = 120) -> None:
+        """Raise LLMConnectionError unless the server is up. A server still loading its model (HTTP 503) is
+        given up to ``wait_s`` seconds."""
+        deadline = time.monotonic() + wait_s
+        while True:
+            try:
+                with urllib.request.urlopen(self.base_url + "/models", timeout=10):
+                    return
+            except urllib.error.HTTPError as exc:
+                if exc.code != 503:
+                    return                        # it answered; some servers do not implement /models
+                if time.monotonic() > deadline:
+                    raise LLMConnectionError(f"The Stage-4 LLM server at {self.base_url} is still not ready "
+                                             f"(HTTP 503, usually: loading the model) after {wait_s:.0f} s.") from exc
+                time.sleep(RETRY_WAIT_S)
+            except (urllib.error.URLError, http.client.HTTPException, OSError) as exc:
+                raise LLMConnectionError(f"Cannot reach the Stage-4 LLM server at {self.base_url} "
+                                         f"({getattr(exc, 'reason', exc)}). {_START_HINT}") from exc
 
-    def _post(self, payload: dict) -> LLMReply:
+    def _post(self, payload: dict, retries_503: int = 6) -> LLMReply:
         req = urllib.request.Request(
             self.base_url + "/chat/completions",
             data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
@@ -180,17 +208,25 @@ class OpenAICompatibleLLM:
                 body = json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as exc:
             detail = exc.read().decode("utf-8", errors="replace")[:1000]
-            kind = LLMContextError if _CONTEXT_ERROR.search(detail) else LLMError
-            raise kind(f"LLM server returned HTTP {exc.code}: {detail}") from exc
+            if exc.code == 503:                   # busy or still loading the model: wait, then give up cleanly
+                if retries_503 > 0:
+                    time.sleep(RETRY_WAIT_S)
+                    return self._post(payload, retries_503 - 1)
+                raise LLMConnectionError(f"The Stage-4 LLM server keeps answering HTTP 503: {detail}") from exc
+            if _CONTEXT_ERROR.search(detail):
+                raise LLMContextError(f"LLM server returned HTTP {exc.code}: {detail}") from exc
+            raise LLMHTTPError(exc.code, detail) from exc
         except (TimeoutError, socket.timeout) as exc:
             raise LLMContextError(f"LLM server did not answer within {self.timeout_s} s") from exc
         except urllib.error.URLError as exc:
             if isinstance(exc.reason, (TimeoutError, socket.timeout)):
                 raise LLMContextError(f"LLM server did not answer within {self.timeout_s} s") from exc
             raise LLMConnectionError(
-                f"Cannot reach the Stage-4 LLM server at {self.base_url} ({exc.reason}). "
-                "Start it first: python scripts/serve_llm.py (see docs/MILESTONE4.md).") from exc
-        except json.JSONDecodeError as exc:
+                f"Cannot reach the Stage-4 LLM server at {self.base_url} ({exc.reason}). {_START_HINT}") from exc
+        except (http.client.HTTPException, OSError) as exc:   # connection dropped mid-reply (server crashed?)
+            raise LLMConnectionError(f"Lost the connection to the Stage-4 LLM server at {self.base_url} "
+                                     f"({type(exc).__name__}: {exc}). {_START_HINT}") from exc
+        except (json.JSONDecodeError, UnicodeDecodeError) as exc:
             raise LLMError("LLM server returned a body that is not JSON") from exc
         try:
             choice = body["choices"][0]
@@ -265,8 +301,9 @@ class Diagnostics:
     failed_chunks: int = 0            # single lines the LLM could not process at all (ASR wording kept)
     synthesis_failed: bool = False
     lines_changed: int = 0
-    lines_reverted: int = 0           # repair changed > MAX_EDIT_RATIO of the characters: reverted
+    lines_reverted: int = 0           # repair changed > MAX_EDIT_RATIO of the characters, or added words: reverted
     lines_restored: int = 0           # the reply skipped the line: restored from Stage 3
+    translations_too_long: int = 0    # flagged: may add content (> 2 × the line's length + 30 characters)
     lines_flagged_by_llm: int = 0
     missing_translations: int = 0
     unknown_line_ids: int = 0         # line numbers in the reply that do not exist
@@ -420,7 +457,7 @@ def chunk_schema(chunk: list[dict]) -> dict:
         return {"type": "object",
                 "properties": {"id": {"const": src["line_id"]},
                                "text": {"type": "string", "maxLength": 2 * n + 20},
-                               "en": {"type": "string", "maxLength": 3 * n + 40},
+                               "en": {"type": "string", "maxLength": _max_en(src["text"])},
                                "uncertain": {"type": "boolean"}},
                 "required": ["id", "text", "en", "uncertain"], "additionalProperties": False}
     return {"type": "object",
@@ -444,6 +481,15 @@ SYNTHESIS_SCHEMA = {
         "actions": {"type": "array", "items": _ACTION_SCHEMA, "maxItems": 6}},
     "required": ["title", "topic", "summary", "key_points", "keywords", "actions"], "additionalProperties": False,
 }
+
+
+MERGE_SCHEMA = {"type": "object", "properties": {"summary": {"type": "string", "maxLength": 600}},
+                "required": ["summary"], "additionalProperties": False}
+
+
+def _max_en(text: str) -> int:
+    """Longest acceptable English translation of a line: English is rarely more than ~1.5× the Devanagari."""
+    return 2 * len(text) + 30
 
 
 # ====================================================================== token budget
@@ -501,16 +547,18 @@ class PostProcessor:
         haystack = _token_set([x.source_text for x in cleaned] + [x.text for x in cleaned]
                               + [x.hinglish for x in cleaned] + [x.translation for x in cleaned]
                               + [romanise(x.source_text) for x in cleaned])
-        ids = {x.line_id for x in cleaned}
+        by_id = {x.line_id: x for x in cleaned}
         synth = self._synthesise(cleaned, chunk_notes) if cleaned else {}
 
         keywords = self._grounded(synth.get("keywords"), haystack)
         if not keywords:
             keywords = self._grounded([k for c in chunk_notes for k in c["keywords"]], haystack)
-        actions = self._actions(synth.get("actions"), ids, valid_owners)
+        actions = self._actions(synth.get("actions"), by_id, valid_owners)
         if not actions:
-            actions = self._actions([a for c in chunk_notes for a in c["actions"]], ids, valid_owners)
-        summary = _text(synth.get("summary")) or " ".join(c["summary"] for c in chunk_notes if c["summary"])
+            actions = self._actions([a for c in chunk_notes for a in c["actions"]], by_id, valid_owners)
+        summary = _text(synth.get("summary"))
+        if not summary:                       # synthesis failed: the part summaries, merged until they are short
+            summary = " ".join(self._condense([c["summary"] for c in chunk_notes]))[:1500]
 
         d = self.diag
         d.lines_changed = sum(x.changed for x in cleaned)
@@ -594,7 +642,7 @@ class PostProcessor:
                 continue
             try:
                 i = int(item.get("id", item.get("line_id")))
-            except (TypeError, ValueError):
+            except (TypeError, ValueError, OverflowError):
                 continue
             if i not in by_id:
                 self.diag.unknown_line_ids += 1
@@ -612,10 +660,18 @@ class PostProcessor:
             notes = []
             if normalise(text) != normalise(src["text"]):      # punctuation-only repairs are always accepted
                 edits, n = error_counts(src["text"], text, "char")
+                n_src = len(_tokens(src["text"]))
                 if edits / max(n, 1) > self.max_edit_ratio:
                     self.diag.lines_reverted += 1
                     notes.append("the model rewrote this line instead of repairing it; ASR wording kept")
                     text = src["text"]
+                elif len(_tokens(text)) - n_src > max(1, round(0.2 * n_src)):
+                    self.diag.lines_reverted += 1      # a repair removes or fixes words; it does not add sentences
+                    notes.append("the model added words that the ASR line does not contain; ASR wording kept")
+                    text = src["text"]
+            if len(en) > _max_en(src["text"]):
+                self.diag.translations_too_long += 1
+                notes.append("the English is much longer than the line, so it may add things that were not said")
             uncertain = bool(notes) or item.get("uncertain") is True
             if item.get("uncertain") is True:
                 self.diag.lines_flagged_by_llm += 1
@@ -636,10 +692,10 @@ class PostProcessor:
 
     def _synthesise(self, cleaned: list[CleanedLine], notes: list[dict]) -> dict:
         """Second call: title, topic, summary, key points, keywords and actions from the checked chunks."""
-        parts = [f"Part {i}: {n['summary']}" for i, n in enumerate(notes, 1) if n["summary"]]
+        parts = [f"Part {i}: {s}" for i, s in enumerate(self._condense([n["summary"] for n in notes]), 1)]
         lines = [f"{x.line_id} {x.speaker}: {x.translation or x.hinglish}" for x in cleaned]
-        kw = _dedupe(k for n in notes for k in n["keywords"])
-        acts = [a for n in notes for a in n["actions"] if isinstance(a, dict)]
+        kw = _dedupe(k for n in notes for k in n["keywords"])[:30]
+        acts = [a for n in notes for a in n["actions"] if isinstance(a, dict)][:12]
         head = SYNTHESIS_PROMPT + "SUMMARIES OF THE PARTS:\n" + ("\n".join(parts) or "(none)") + "\n\n"
         tail = (f"\nCANDIDATE KEYWORDS: {', '.join(kw) or '(none)'}\n"
                 f"CANDIDATE ACTIONS: {json.dumps(acts, ensure_ascii=False) if acts else '(none)'}\n")
@@ -665,19 +721,54 @@ class PostProcessor:
             self.diag.synthesis_failed = True
             return {}
 
+    def _condense(self, summaries: list[str]) -> list[str]:
+        """Part summaries short enough to leave half the context window for the rest of the synthesis prompt.
+
+        A long recording has one summary per chunk (a 30-minute one about 30), more than fits. Consecutive summaries
+        are merged by the LLM in groups, repeatedly, until they fit. A group the LLM cannot merge keeps its first
+        summary only.
+        """
+        parts = [s for s in summaries if s]
+        room = self._budget() // 2
+        while len(parts) > 1 and estimate_tokens("\n".join(parts)) > room:
+            groups, cur = [], []
+            for s in parts:
+                if cur and estimate_tokens("\n".join(cur + [s])) > room:
+                    groups.append(cur)
+                    cur = []
+                cur.append(s)
+            groups.append(cur)
+            if len(groups) == len(parts):            # every summary alone is already too long: shorten them
+                return [s[:400] for s in parts][: max(1, room // 120)]
+            merged = []
+            for g in groups:
+                if len(g) == 1:
+                    merged.append(g[0])
+                    continue
+                try:
+                    reply = self._call(MERGE_PROMPT + "\n".join(g), MERGE_SCHEMA, 300)
+                    merged.append(_text(parse_json_object(reply.text).get("summary")) or g[0])
+                except LLMConnectionError:
+                    raise
+                except LLMError:
+                    merged.append(g[0])
+            parts = merged
+        return parts
+
     # ------------------------------------------------------------------ grounding checks
     def _grounded(self, keywords: Any, haystack: set[str]) -> list[str]:
         out = []
         for k in _dedupe(_text(x) for x in _as_list(keywords)):
-            toks = [t for t in _tokens(k) if len(t) >= 3 and t not in _STOP]
-            if toks and any(t in haystack for t in toks):
+            toks = _content_tokens(k)
+            if toks and all(t in haystack for t in toks):
                 if k.lower() not in (o.lower() for o in out):
                     out.append(k)
             else:
                 self.diag.keywords_dropped += 1
         return out
 
-    def _actions(self, value: Any, valid_ids: set[int], owners: set[str]) -> list[ActionItem]:
+    def _actions(self, value: Any, lines: dict[int, CleanedLine], owners: set[str]) -> list[ActionItem]:
+        """Keep an action only if its owner exists, it cites real lines, and it shares a word with those lines."""
         out: list[ActionItem] = []
         for item in _as_list(value):
             if not isinstance(item, dict):
@@ -689,11 +780,13 @@ class PostProcessor:
             for x in _as_list(item.get("lines", item.get("evidence_line_ids"))):
                 try:
                     i = int(x)
-                except (TypeError, ValueError):
+                except (TypeError, ValueError, OverflowError):
                     continue
-                if i in valid_ids and i not in ids:
+                if i in lines and i not in ids:
                     ids.append(i)
-            if owner not in owners or not action or not ids:
+            evidence = _token_set([t for i in ids for t in (lines[i].source_text, lines[i].text, lines[i].hinglish,
+                                                            lines[i].translation, romanise(lines[i].source_text))])
+            if owner not in owners or not action or not ids or not (set(_content_tokens(action)) & evidence):
                 self.diag.actions_dropped += 1
                 continue
             if all((a.owner, a.action.lower()) != (owner, action.lower()) for a in out):
@@ -702,7 +795,21 @@ class PostProcessor:
 
 
 # ====================================================================== helpers
-_STOP = {"the", "and", "for", "with", "this", "that", "from", "are", "was", "has", "have", "not", "you", "your"}
+# Words that occur in almost every conversation, so they prove nothing about a keyword or an action.
+_STOP = {
+    "the", "and", "for", "with", "this", "that", "from", "are", "was", "has", "have", "not", "you", "your", "will",
+    "about", "they", "them", "their", "there", "what", "which", "would", "been", "were", "into", "some", "then",
+    "than", "also", "said", "says", "asks", "speaker", "speakers", "unspecified",
+    "हाँ", "हां", "में", "है", "हैं", "और", "हम", "चाहिए", "नहीं", "तो", "का", "की", "के", "को", "से", "पर", "भी",
+    "यह", "वह", "वो", "क्या", "कि", "ये", "था", "थे", "थी", "हो", "एक", "कर", "रहे", "रहा", "रही", "गया", "जी", "सर",
+    "haan", "han", "hai", "hain", "mein", "aur", "hum", "chahiye", "nahi", "nahin", "kya", "yeh", "the", "tha",
+    "thi", "rahe", "raha", "rahi", "gaya", "sir",
+}
+
+
+def _content_tokens(text: str) -> list[str]:
+    """Tokens of at least 3 characters that are not stop words: the words that carry content."""
+    return [t for t in _tokens(text) if len(t) >= 3 and t not in _STOP]
 
 
 def _tokens(text: str) -> list[str]:

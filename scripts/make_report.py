@@ -103,6 +103,7 @@ def stage4_section() -> list[str]:
                      "Δ (points)": f"{100 * m:+.1f} [{100 * lo:+.1f}, {100 * hi:+.1f}]",
                      "helped / hurt": f"{int((piv_clean[s] < piv_raw[s]).sum())} / {int((piv_clean[s] > piv_raw[s]).sum())}",
                      "keywords really said": f"{pct(kt.mean()) if len(kt) else '-'} [{pct(klo)} – {pct(khi)}]",
+                     "summary words really said": pct(g.summary_true.mean()),
                      "keyword F1 vs truth report": f"{g.keyword_f1.mean():.2f}",
                      "summary F1 vs truth report": f"{g.summary_f1.mean():.2f}",
                      "RTF": f"{g.rtf.mean():.2f}", "n": len(g)})
@@ -110,6 +111,7 @@ def stage4_section() -> list[str]:
         guard.append({"Stage-4 input": s, "lines": int(n), "repaired": pct(g.lines_changed.sum() / n),
                       "repair reverted (over-edited)": pct(g.lines_reverted.sum() / n),
                       "skipped by the model, restored": pct(g.lines_restored.sum() / n),
+                      "English suspiciously long": pct(g.translations_too_long.sum() / n),
                       "flagged uncertain by the model": pct(g.lines_flagged_by_llm.sum() / n),
                       "no translation": pct(g.missing_translations.sum() / n),
                       "lines the LLM failed on": int(g.failed_chunks.sum()),
@@ -121,8 +123,11 @@ def stage4_section() -> list[str]:
           "Stage 4 is run on four Stage-3 transcripts of the same conversations, each with one more source of upstream "
           "error. *cpWER before/after*: who-said-what error of the Stage-3 text and of the Stage-4 repaired text "
           "(pooled; Δ = paired mean per conversation, 95 % bootstrap CI, positive = Stage 4 added errors). "
-          "*Keywords really said*: share of the report's keywords found in the true transcript or its translation. "
-          "*F1 vs truth report*: word overlap with the report made from the true transcript. RTF = Stage-4 time ÷ audio length.\n",
+          "*Keywords really said*: share of the report's keywords whose content words all occur in the true transcript "
+          "or its translation; *summary words really said*: the same for the content words of the summary and key points. "
+          "*F1 vs truth report*: word overlap with the report made from the true transcript. RTF = Stage-4 time ÷ audio length. "
+          f"The {n_conv} conversations come from {e.group.nunique()} speaker group(s), and conversations of one group share "
+          "their speech, so these intervals are optimistic.\n",
           pd.DataFrame(rows).to_markdown(index=False), "",
           "### Stage 4 guardrails (share of transcript lines)\n", pd.DataFrame(guard).to_markdown(index=False), ""]
 
@@ -142,15 +147,16 @@ def stage4_section() -> list[str]:
     ax.grid(axis="x", visible=False)
     ax = axes[1]
     for i, (col, colr, name) in enumerate((("keywords_true", BLUE, "keywords really said"),
+                                           ("summary_true", AQUA, "summary words really said"),
                                            ("summary_f1", ORANGE, "summary overlap with truth report"))):
         v = [e[e.system == s][col].mean() for s, _ in systems]
-        ax.bar(x + (i - 0.5) * 0.38, v, 0.36, color=colr, label=name)
+        ax.bar(x + (i - 1) * 0.27, v, 0.25, color=colr, label=name)
     ax.set_xticks(x, labels, fontsize=8.5)
     ax.set_ylim(0, 1.25)
     ax.set_yticks([0, 0.25, 0.5, 0.75, 1.0])
     ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda y, _: f"{100 * y:.0f}%"))
     ax.set_title("How upstream errors reach the report", loc="left")
-    ax.legend(loc="upper center", ncol=2, fontsize=8.5)
+    ax.legend(loc="upper center", ncol=3, fontsize=7.5)
     ax.grid(axis="x", visible=False)
     fig.tight_layout()
     fig.savefig(FIG / "stage4_cascade.png", bbox_inches="tight")

@@ -264,10 +264,12 @@ speaker and times as well, then overwrote them; never asking for them is simpler
 what costs time on a CPU. A 7B model often produces broken JSON without a grammar. The Python checks still apply when
 a server ignores the schema.
 
-## D29 · A repair may change at most half of a line's characters
+## D29 · A repair may change at most half of a line's characters, and may not add words
 **Decided:** 2026-10-01
 **Choice:** if the repaired line differs from the ASR line in more than 50 % of its characters (character edit
-distance after the scoring normalisation, so punctuation does not count), the ASR line is kept and flagged.
+distance after the scoring normalisation, so punctuation does not count), or has more than max(1, 20 %) more words
+than the ASR line, the ASR line is kept and flagged. (The word rule was added after an internal red-team check showed
+that a short invented clause appended to a long line stays under the 50 % limit.)
 **Why:** the proposal asks Stage 4 to "fix syntactic errors caused by background noise drops", i.e. small repairs. A
 change of more than half the line is a rewrite: typically the model translated the line into English in the
 Devanagari field, or "completed" a fragment with words nobody said. 50 % is deliberately loose for short lines (one
@@ -287,7 +289,8 @@ more generated text and 50 % more time on a CPU, and the model's Hinglish would 
 (`results/eval_test_indicconformer/*.json`) for four inputs, each adding one source of upstream error: the true
 transcript, ASR on each clean voice (true timeline), ASR on the noisy mixture (true timeline), and the full Order-B
 pipeline. Measured per conversation: cpWER of the Stage-3 text vs the Stage-4 repaired text (paired, bootstrap CI);
-the share of report keywords that were really said (found in the true transcript or its translation); word overlap
+the share of report keywords, and of summary and key-point content words, that were really said (found in the true
+transcript or its translation); word overlap
 (F1) of the keywords and summary with the report made from the true transcript; guardrail counts; time.
 **Why:** a summary has no single right answer, but three things can be measured honestly: (1) whether the repair
 makes the transcript better or worse against the truth, which answers the proposal's "fix syntactic errors" directly;
@@ -295,4 +298,8 @@ makes the transcript better or worse against the truth, which answers the propos
 perfect transcript gives, which is the proposal's objective 5 ("how error propagation cascades from early acoustic
 layers down to final text generations") applied to the last stage. Re-using the stored transcripts means the same
 conversations as every other result, and no audio model has to run again. No human judgement or second LLM is used as
-a judge: both would be harder to reproduce than the numbers above.
+a judge: both would be harder to reproduce than the numbers above. The guardrails cannot check that a translation or a
+summary sentence is faithful; "summary words really said" measures how often unsaid content gets through.
+Conversations of one speaker group share their speech across the 9 conditions, so some Stage-3 transcripts are
+identical; Stage 4 is deterministic, so the evaluation reuses the report for an identical transcript instead of
+recomputing it, and the confidence intervals (bootstrap over conversations) are optimistic.
