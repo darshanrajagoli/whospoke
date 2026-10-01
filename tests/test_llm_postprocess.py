@@ -274,12 +274,28 @@ def test_client_drops_schema_when_server_rejects_it():
     srv = FakeServer([(400, {"error": "response_format not supported"}), ok("{}"), ok("{}")])
     try:
         llm = OpenAICompatibleLLM(srv.url, "m")
-        llm.complete("s", "u", temperature=0, max_tokens=5, schema={"type": "object"})
+        with pytest.warns(UserWarning, match="rejected the JSON schema"):
+            llm.complete("s", "u", temperature=0, max_tokens=5, schema={"type": "object"})
         llm.complete("s", "u", temperature=0, max_tokens=5, schema={"type": "object"})
         assert not llm.schema_enforced
         assert "response_format" not in srv.requests[1] and "response_format" not in srv.requests[2]
     finally:
         srv.close()
+
+
+def test_chat_template_matches_airavata_format_with_empty_generation_prompt():
+    # Airavata's model card format, byte for byte. A final user message always opens the assistant turn, so the
+    # template's "generation prompt" (what add_generation_prompt adds) is empty: llama-server feeds that prompt
+    # to the JSON grammar, and with Airavata's tokenizer a non-empty one makes every schema request fail (D32).
+    jinja2 = pytest.importorskip("jinja2")
+    tmpl = jinja2.Template((Path(__file__).resolve().parents[1] / "src/whospoke/resources/"
+                            "airavata_chat_template.jinja").read_text(encoding="utf-8"))
+    msgs = [{"role": "system", "content": "S"}, {"role": "user", "content": "U1"},
+            {"role": "assistant", "content": " A "}, {"role": "user", "content": "U2"}]
+    with_gen, without_gen = (tmpl.render(messages=msgs, bos_token="<s>", eos_token="</s>", add_generation_prompt=g)
+                             for g in (True, False))
+    assert with_gen == "<s><|system|>\nS\n<|user|>\nU1\n<|assistant|>\nA</s>\n<|user|>\nU2\n<|assistant|>\n"
+    assert without_gen == with_gen
 
 
 def test_client_reports_context_errors():
@@ -369,6 +385,7 @@ def test_real_llm_on_demo_transcript(tmp_path):
     except LLMConnectionError:
         pytest.skip("no Stage-4 LLM server running (python scripts/serve_llm.py)")
     report = PostProcessor(llm).process_file(DEMO)
+    assert report.diagnostics.schema_enforced, "the server rejected the JSON schema (see its log)"
     src = json.loads(DEMO.read_text(encoding="utf-8"))
     kept = [x for x in src["lines"] if x["text"].strip()]
     assert [(x.speaker, x.start, x.end) for x in report.cleaned_dialogue] == \

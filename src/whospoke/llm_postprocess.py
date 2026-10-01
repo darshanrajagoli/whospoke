@@ -31,6 +31,7 @@ import socket
 import time
 import urllib.error
 import urllib.request
+import warnings
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
@@ -176,6 +177,9 @@ class OpenAICompatibleLLM:
             payload.pop("response_format")
             reply = self._post(payload)
             self.schema_enforced = False      # the server does not support it; stop sending it
+            # loud, because it can also mean the server failed to build the grammar (see the chat template)
+            warnings.warn(f"The LLM server rejected the JSON schema, so replies are no longer constrained ({exc}).",
+                          stacklevel=2)
             return reply
 
     def ping(self, wait_s: float = 120) -> None:

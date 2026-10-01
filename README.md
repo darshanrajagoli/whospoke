@@ -97,7 +97,8 @@ set `WHOSPOKE_DATA` or write the path into a one-line `data_location.txt`.
 
 **Stage 4 (LLM).** It runs in a separate local server: `python scripts/serve_llm.py`. On the first run this builds
 llama.cpp's `llama-server` (needs CMake and a C++ compiler, or put a llama.cpp release on PATH) and a 4-bit Airavata
-(~4 GB; it downloads `ai4bharat/Airavata` once and needs ~22 GB of free disk while converting). Leave it running.
+(~4 GB; it downloads the 16-bit `Airavata.gguf` from `ai4bharat/Airavata` once and needs ~18 GB of free disk while
+quantising). `ai4bharat/Airavata` is gated too: click "Agree" on [its page](https://huggingface.co/ai4bharat/Airavata). Leave it running.
 On the 6 GB laptop GPU, Stage 4 runs on the CPU or as a separate step; see [docs/MILESTONE4.md](docs/MILESTONE4.md#running-the-model).
 
 ## Run it

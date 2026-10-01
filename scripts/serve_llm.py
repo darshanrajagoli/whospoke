@@ -2,7 +2,7 @@
 
     python scripts/serve_llm.py                     # CPU; the first run builds the 4-bit model (see below)
     python scripts/serve_llm.py --gpu-layers 20     # part of the model on the GPU (all 32 layers + cache need ~6 GB)
-    python scripts/serve_llm.py --prepare-only      # build the model file and exit
+    python scripts/serve_llm.py --prepare-only      # build llama-server and the 4-bit model file, then exit
 
 The server is llama.cpp's ``llama-server`` (an OpenAI-compatible HTTP server). It is taken from ``--llama-bin``,
 else from PATH (a llama.cpp release, ``brew install llama.cpp`` or ``winget install llama.cpp``), else built
@@ -10,8 +10,10 @@ once from the llama.cpp sources bundled in the ``llama-cpp-python`` package on P
 compiler).
 
 Model file (``models/airavata-q4_k_m.gguf``, ~4 GB): ``--gguf`` uses an existing file. Otherwise the first run
-downloads ``ai4bharat/Airavata`` from Hugging Face (~14 GB), converts it to GGUF with llama.cpp's converter and
-quantises it to 4 bits (Q4_K_M), then deletes the intermediate files. That needs ~22 GB of free disk once.
+downloads the 16-bit GGUF that ``ai4bharat/Airavata`` publishes (``Airavata.gguf``, 13.7 GB) and quantises it to
+4 bits (Q4_K_M) with ``llama-quantize``, then deletes the 16-bit file. That needs ~18 GB of free disk once. The
+repository is gated: accept its terms on huggingface.co, then set ``HF_TOKEN`` or run ``huggingface-cli login``.
+(Its tokenizer is the same as ``tokenizer.model`` in the repository: same pieces, same scores.)
 
 The chat format is Airavata's own (``<|system|>`` / ``<|user|>`` / ``<|assistant|>``, from its model card), passed
 as a template file so it does not depend on what the GGUF metadata contains. Stage 4 sends JSON schemas, which
@@ -32,6 +34,7 @@ MODELS = PROJECT / "models"
 LLAMA_DIR = MODELS / "llama.cpp"                       # llama.cpp sources + build, when built here
 TEMPLATE = PROJECT / "src" / "whospoke" / "resources" / "airavata_chat_template.jinja"
 HF_REPO = "ai4bharat/Airavata"
+HF_GGUF = "Airavata.gguf"                              # 16-bit GGUF published in the same repository
 GGUF = MODELS / "airavata-q4_k_m.gguf"
 EXE = ".exe" if os.name == "nt" else ""
 
@@ -81,24 +84,15 @@ def build_tools(gpu: str | None) -> None:
 
 
 def prepare_model(quantize_bin: Path, keep: bool) -> None:
-    """ai4bharat/Airavata (Hugging Face) → GGUF (8-bit) → 4-bit Q4_K_M."""
-    from huggingface_hub import snapshot_download
+    """ai4bharat/Airavata's own 16-bit GGUF (Hugging Face) → 4-bit Q4_K_M. No Python conversion step is needed."""
+    from huggingface_hub import hf_hub_download
 
-    src = llama_sources()
-    try:
-        import gguf  # noqa: F401
-        import sentencepiece  # noqa: F401
-    except ImportError:
-        run([sys.executable, "-m", "pip", "install", "sentencepiece", "protobuf", str(src / "gguf-py")])
-    hf_dir = MODELS / "Airavata-hf"
-    snapshot_download(HF_REPO, local_dir=hf_dir, allow_patterns=["*.json", "*.model", "*.safetensors", "*.txt"])
-    q8 = MODELS / "airavata-q8_0.gguf"
-    run([sys.executable, src / "convert_hf_to_gguf.py", hf_dir, "--outtype", "q8_0", "--outfile", q8])
+    MODELS.mkdir(parents=True, exist_ok=True)
+    # the repository is gated: the token comes from HF_TOKEN, else from `huggingface-cli login`
+    f16 = Path(hf_hub_download(HF_REPO, HF_GGUF, local_dir=MODELS / "Airavata-hf", token=os.getenv("HF_TOKEN") or None))
+    run([quantize_bin, f16, GGUF, "Q4_K_M"])
     if not keep:
-        shutil.rmtree(hf_dir)
-    run([quantize_bin, "--allow-requantize", q8, GGUF, "Q4_K_M"])
-    if not keep:
-        q8.unlink()
+        shutil.rmtree(MODELS / "Airavata-hf")
 
 
 def main() -> None:
@@ -113,7 +107,7 @@ def main() -> None:
     ap.add_argument("--host", default="127.0.0.1")
     ap.add_argument("--port", type=int, default=8080)
     ap.add_argument("--prepare-only", action="store_true", help="build the model file and exit")
-    ap.add_argument("--keep-intermediate", action="store_true", help="keep the Hugging Face and 8-bit files")
+    ap.add_argument("--keep-intermediate", action="store_true", help="keep the downloaded 16-bit GGUF")
     args = ap.parse_args()
 
     if args.build:

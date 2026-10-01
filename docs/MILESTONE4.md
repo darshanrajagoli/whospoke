@@ -98,9 +98,13 @@ transcript always gives the same report.
 - **Server program.** Taken from `--llama-bin`, else from PATH (a llama.cpp release; `brew install llama.cpp`;
   `winget install llama.cpp`), else built once from the llama.cpp sources that the `llama-cpp-python` package on PyPI
   bundles (needs CMake and a C++ compiler). `--build cuda` builds it with CUDA.
-- **Model file.** `models/airavata-q4_k_m.gguf` (~4 GB). On the first run, the script downloads `ai4bharat/Airavata`
-  from Hugging Face (~14 GB), converts it with llama.cpp's converter to an 8-bit GGUF and quantises that to 4 bits
-  (Q4_K_M), deleting the intermediate files (~22 GB of free disk needed once). `--gguf` serves an existing file.
+- **Model file.** `models/airavata-q4_k_m.gguf` (~4 GB). On the first run, the script downloads the 16-bit GGUF
+  that `ai4bharat/Airavata` publishes on Hugging Face (`Airavata.gguf`, 13.7 GB) and quantises it to 4 bits (Q4_K_M)
+  with llama.cpp's `llama-quantize`, then deletes the 16-bit file (~18 GB of free disk needed once). The repository
+  is gated: click "Agree" on its page, then set `HF_TOKEN` or run `huggingface-cli login`. No Python conversion step
+  is needed: the GGUF's tokenizer is the same as the repository's `tokenizer.model` (same 48,064 pieces and scores,
+  plus `<pad>`). `--gguf` serves an existing file. `python scripts/serve_llm.py --prepare-only` does all of this
+  and exits.
 - **Chat format.** Airavata's own (`<|system|>`, `<|user|>`, `<|assistant|>`, from its model card), passed as
   `src/whospoke/resources/airavata_chat_template.jinja`.
 
