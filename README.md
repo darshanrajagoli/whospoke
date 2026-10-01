@@ -1,6 +1,7 @@
 # whospoke — who spoke what, and when
 
-**Speech separation, speaker diarization and Hindi/Hinglish transcription for noisy, overlapping, code-switched audio.**
+**Speech separation, speaker diarization, Hindi/Hinglish transcription and an LLM-written report, for noisy,
+overlapping, code-switched audio.**
 CS F407 (Artificial Intelligence), BITS Pilani · Prof. Tirtharaj Dash
 Team: Darshan Rajagoli · Vismay · Abhinav Padhi · Shrivaths Prabhu
 
@@ -15,11 +16,13 @@ background, and it produces:
 [00:51 - 00:54] Speaker_A: to ab kab tak kitne baje tak office khula hai sir apna
 ```
 
-a speaker timeline (`timeline.json`), a Devanagari transcript, a Hinglish transcript and subtitles (`.srt`).
+a speaker timeline (`timeline.json`), a Devanagari transcript, a Hinglish transcript and subtitles (`.srt`), and
+a report written by a local LLM (AI4Bharat Airavata): executive summary, topic, keyword tags, action items, and the
+dialogue repaired and translated into English, speaker by speaker ([results/demo/report.md](results/demo/report.md)).
 (The excerpt is real output on a test conversation with heavy overlap and loud market noise; see [results/demo/](results/demo/).)
 
-This covers all four Milestones of the [project proposal](Audio_Engineering_AI_Project_Proposal.docx).
-Milestone 4 adds conservative LLM clean-up, translation, topic/keyword extraction and actionable-information extraction. **Navigation: [INDEX.md](INDEX.md).**
+This covers all four milestones of the [project proposal](Audio_Engineering_AI_Project_Proposal.docx), for Hindi and
+English. **Navigation: [INDEX.md](INDEX.md).**
 
 ---
 
@@ -40,7 +43,7 @@ are in [docs/RESULTS.md](docs/RESULTS.md).
 | 1 · Separation | Conv-TasNet: +9.6 dB on overlaps. With the true timeline, splicing separated overlaps cuts heavy-overlap transcript errors from 35.5 % to 27.6 % |
 | 2 · Diarization | Our spectral clustering: DER 20.3 %. GMM: 20.3 %. Off-the-shelf pyannote 3.1: 18.4 %. Ours and pyannote are within error bars |
 | 3 · Transcription | IndicConformer: 21.0 % WER on real-world Vaani audio, vs 38.0 % for IndicWav2Vec. 78 % of English words inside Hindi recognised. 82 % of them spelled correctly in the Hinglish output. Same ranking on a Nirantar Hindi sample (11.0 % vs 30.2 %) |
-| 4 · LLM post-processing | Airavata turns the Stage-3 JSON into a guarded report: cleaned dialogue, faithful English translation, topic, executive summary, keywords, key points and evidence-linked action items |
+| 4 · LLM report | TODO-STAGE4 |
 
 ![Order A vs Order B](results/figures/order_A_vs_B.png)
 
@@ -52,9 +55,9 @@ and every judgement call in [DECISIONS.md](DECISIONS.md).
 ## How it works
 
 ```
-recording ─► Stage 2: who speaks when ─► Stage 1: separate only the overlapping turns ─► Stage 3: Hindi ASR ─► Hinglish
-             (pyannote VAD + overlap      (Conv-TasNet, noise-trained)                   (IndicConformer)     romaniser
-              detection, WeSpeaker voice
+recording ─► Stage 2: who speaks when ─► Stage 1: separate only the overlaps ─► Stage 3: Hindi ASR ─► Hinglish ─► Stage 4: report
+             (pyannote VAD + overlap      (Conv-TasNet, noise-trained)           (IndicConformer)     romaniser   (Airavata 7B, 4-bit,
+              detection, WeSpeaker voice                                                                          local; guarded)
               fingerprints, our spectral
               clustering)
 ```
@@ -64,6 +67,7 @@ recording ─► Stage 2: who speaks when ─► Stage 1: separate only the over
 | 1 · Separation | Conv-TasNet or Demucs | Conv-TasNet (Libri2Mix noisy, 16 kHz), with windowing, gain fit and speaker-consistent stitching | [PIPELINE.md §1](docs/PIPELINE.md#stage-1--blind-source-separation-separationpy) |
 | 2 · Diarization | pyannote + spectral clustering or GMM | pyannote segmentation + WeSpeaker embeddings; **both** clusterers written from scratch; pyannote 3.1 as a reference | [§2](docs/PIPELINE.md#stage-2--speaker-diarization-vadpy-diarizationpy-clusteringpy) |
 | 3 · Transcription | IndicASR or IndicWav2Vec; native or Latin script | **Both** ASR models compared on real-world Vaani audio; Devanagari **and** Hinglish output | [§3](docs/PIPELINE.md#stage-3--regional--code-switched-transcription-asr_backendspy-hinglishpy-pipelinepy) |
+| 4 · LLM post-processing | Airavata or OpenHathi; topic, error repair, summary, keywords, speaker-separated dialogue | Airavata (4-bit, llama.cpp). Speaker labels and times never pass through the LLM; over-edited repairs are reverted; keywords must have been said | [§4](docs/PIPELINE.md#stage-4--llm-post-processing-llm_postprocesspy), [MILESTONE4.md](docs/MILESTONE4.md) |
 
 ## Setup
 
@@ -91,39 +95,17 @@ Noise comes from [DEMAND](https://zenodo.org/records/1227121) (CC-BY-4.0) and [E
 **Data folder.** Corpora and simulated conversations (≈5 GB) go to `project/data` by default. To put them somewhere else,
 set `WHOSPOKE_DATA` or write the path into a one-line `data_location.txt`.
 
-### Milestone 4 — local Airavata
-
-Stage 4 uses a local OpenAI-compatible HTTP endpoint. AI4Bharat documents Airavata as a 7B Hindi instruction-tuned model and documents serving it with `llama.cpp` ([model card](https://huggingface.co/ai4bharat/Airavata)); this keeps the project local and avoids putting the 7B BF16 weights directly into the 6 GB laptop GPU.
-
-Install `llama.cpp`, then start Airavata locally (the exact launcher varies by build):
-
-```bash
-llama serve -hf ai4bharat/Airavata
-```
-
-The Stage-4 client expects the server at `http://127.0.0.1:8080/v1` by default. It sends a system prompt plus the Stage-3 transcript and accepts only validated JSON. The [Airavata model card](https://huggingface.co/ai4bharat/Airavata) gives its instruction format and local-serving options.
-
-For an existing Stage-3 run:
-
-```bash
-python -m whospoke postprocess results/demo/transcript.json
-# or
-python scripts/postprocess.py results/demo/transcript.json --out results/demo/milestone4
-```
-
-For the complete pipeline:
-
-```bash
-python -m whospoke run my_recording.wav --postprocess
-```
-
-Stage 4 writes `report.json` and `report.md`. Every cleaned dialogue row retains the original Stage-3 speaker and timestamps; omitted or malformed LLM rows are restored from the source transcript and flagged rather than silently discarded.
+**Stage 4 (LLM).** It runs in a separate local server: `python scripts/serve_llm.py`. On the first run this builds
+llama.cpp's `llama-server` (needs CMake and a C++ compiler, or put a llama.cpp release on PATH) and a 4-bit Airavata
+(~4 GB; it downloads `ai4bharat/Airavata` once and needs ~22 GB of free disk while converting). Leave it running.
+On the 6 GB laptop GPU, Stage 4 runs on the CPU or as a separate step; see [docs/MILESTONE4.md](docs/MILESTONE4.md#running-the-model).
 
 ## Run it
 
 ```bash
 python -m whospoke run my_recording.wav                 # Order B, spectral clustering, IndicConformer
-python -m whospoke run my_recording.wav --postprocess  # same run, plus Milestone 4 report
+python -m whospoke run my_recording.wav --postprocess   # the same, plus the Stage-4 report (LLM server running)
+python -m whospoke postprocess results/runs/my_recording/transcript.json   # Stage 4 on its own, after a run
 python -m whospoke run my_recording.wav --order A --clustering gmm --asr indicwav2vec --speakers 2
 ```
 
@@ -142,6 +124,9 @@ python scripts/eval_asr.py                            # Stage 3 model choice (Va
 python scripts/eval_asr_nirantar.py                   # Stage 3 cross-check on Nirantar Hindi (needs the Colab-extracted sample, D7)
 python scripts/eval_separation.py --split test        # Stage 1 on test
 python scripts/evaluate.py --split test               # every system end to end on test
+python scripts/serve_llm.py &                         # Stage-4 LLM server (leave running)
+python scripts/eval_postprocess.py                    # Stage 4 on the test transcripts (no audio models needed)
+python -m whospoke postprocess results/demo/transcript.json   # the demo report
 python scripts/make_report.py                         # tables + figures
 python scripts/build_notebooks.py                     # executed notebooks
 pytest                                                # fast tests; `pytest -m slow` runs the real models too
@@ -155,3 +140,7 @@ pytest                                                # fast tests; `pytest -m s
   chosen on Vaani instead (D19). The same applies to Nirantar, whose Hindi comes from the IndicVoices collection (D7).
 - At most two people talk at once. Conv-TasNet separates two voices.
 - The Hinglish romaniser is rule-based plus a lexicon. It is readable, not a standard spelling.
+- Stage 4 uses a 7B model at 4 bits on a laptop. TODO-STAGE4-LIMIT (what the test-set evaluation shows it does
+  well and badly). It cannot recover words the ASR never heard. A summary has no single right answer, so it is
+  measured indirectly (D31): against the true transcript, and against the report made from it.
+- Hindi and English only. Other Indian languages are a possible extension (D4).

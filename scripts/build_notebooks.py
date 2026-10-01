@@ -129,11 +129,56 @@ ax.set_xlabel("audio length (minutes)"); ax.set_ylabel("processing time (s)")
 ax.set_title("Order B: processing time vs audio length")
 plt.tight_layout(); plt.savefig(ROOT / "results/figures/latency_scaling.png", dpi=200, bbox_inches="tight"); plt.show()
 scaling'''),
-        md("## Summary\n\nThe tables above are saved to `results/benchmark_stages.csv` and `results/benchmark_scaling.csv`; "
-           "the figures to `results/figures/`. The headline numbers are quoted in `docs/RESULTS.md`."),
+        *stage4_benchmark_cells(),
+        md("## Summary\n\nThe tables above are saved to `results/benchmark_stages.csv`, `results/benchmark_scaling.csv` "
+           "and `results/benchmark_llm.csv`; the figures to `results/figures/`. The headline numbers are quoted in "
+           "`docs/RESULTS.md`."),
     ]
     nb.metadata["kernelspec"] = {"name": "python3", "display_name": "Python 3", "language": "python"}
     return nb
+
+
+STAGE4_MARK = "## 7 · Stage 4"
+
+
+def stage4_benchmark_cells() -> list:
+    md, code = nbf.v4.new_markdown_cell, nbf.v4.new_code_cell
+    return [
+        md(f"{STAGE4_MARK} — LLM post-processing (Airavata)\n\n"
+           "Stage 4 runs in its own process, llama.cpp's `llama-server` (`python scripts/serve_llm.py`), so its memory is "
+           "that server's resident memory (RAM, or GPU memory with `--gpu-layers`), not the GPU memory measured above. "
+           "Its cost depends on how many words were recognised, not directly on audio length: the model writes every "
+           "line back once in Devanagari and once in English.\n\n"
+           "This section can be re-run on its own (`python scripts/build_notebooks.py --stage4-only`), so the Stage 1–3 "
+           "GPU measurements above are kept when it is measured on another machine. The machine is printed below."),
+        code(r'''import platform, psutil
+from whospoke.llm_postprocess import OpenAICompatibleLLM, PostProcessor
+llm = OpenAICompatibleLLM(); llm.ping()
+server = next((p for p in psutil.process_iter(["cmdline"])
+               if Path((p.info["cmdline"] or [""])[0]).name.startswith("llama-server")), None)
+cmd = " ".join(server.info["cmdline"]) if server else ""
+gpu_layers = cmd.split("-ngl ")[1].split()[0] if "-ngl " in cmd else "?"
+print(f"machine: {platform.processor() or platform.machine()}, {psutil.cpu_count()} CPU threads, "
+      f"{psutil.virtual_memory().total / 2**30:.0f} GB RAM | llama-server GPU layers: {gpu_layers}")
+demo = json.loads((ROOT / "results/demo/transcript.json").read_text(encoding="utf-8"))
+post = PostProcessor(llm)
+post.process_transcript({"lines": demo["lines"][:2]})          # warm-up (loads the model into memory)
+rows = []
+for run in range(2):
+    t0 = time.perf_counter(); rep = post.process_transcript(demo); secs = time.perf_counter() - t0
+    d = rep.diagnostics
+    rows.append({"run": run + 1, "audio_s": demo["duration_s"], "lines": len(rep.cleaned_dialogue), "seconds": round(secs, 1),
+                 "rtf": round(secs / demo["duration_s"], 2), "llm_calls": d.llm_calls, "prompt_tokens": d.prompt_tokens,
+                 "completion_tokens": d.completion_tokens, "tokens_per_s": round(d.completion_tokens / max(d.llm_seconds, 1e-9), 1),
+                 "server_rss_mb": round(server.memory_info().rss / 2**20) if server else np.nan})
+llm_bench = pd.DataFrame(rows); llm_bench.to_csv(ROOT / "results/benchmark_llm.csv", index=False)
+llm_bench'''),
+        code(r'''ev = ROOT / "results/eval_postprocess.csv"
+if ev.exists():   # Stage-4 cost over the evaluated test conversations (scripts/eval_postprocess.py)
+    e = pd.read_csv(ev)
+    e["tokens_per_s"] = e.completion_tokens / e.llm_s
+    display(e.groupby("system")[["duration_s", "n_lines", "llm_s", "rtf", "completion_tokens", "tokens_per_s"]].mean().round(2))'''),
+    ]
 
 
 def walkthrough() -> nbf.NotebookNode:
@@ -141,7 +186,7 @@ def walkthrough() -> nbf.NotebookNode:
     md, code = nbf.v4.new_markdown_cell, nbf.v4.new_code_cell
     nb.cells = [
         md("# Who spoke what and when — walkthrough (runs locally or on Google Colab)\n\n"
-           "This notebook takes one noisy, overlapping Hindi/Hinglish conversation through all three stages and "
+           "This notebook takes one noisy, overlapping Hindi/Hinglish conversation through all four stages and "
            "shows what each stage produces.\n\n"
            "**On Colab:** Runtime → Change runtime type → T4 GPU. Add your Hugging Face token under *Secrets* (🔑) "
            "as `HF_TOKEN` (the account must have accepted the model terms listed in the README). Then run all cells."),
@@ -213,19 +258,61 @@ for s in sorted(ref["segments"], key=lambda s: s["start"]):
 ref_text = {k: " ".join(v) for k, v in ref_text.items()}
 print("cpWER (words wrong or given to the wrong speaker):", round(cp_error(ref_text, result.text_by_speaker())["rate"], 3))
 result.save(ROOT / "results/runs/walkthrough"); print("saved to results/runs/walkthrough")'''),
+        md("## 6 · Stage 4: the report (LLM clean-up, translation, summary, keywords)\n\n"
+           "Stage 4 needs the local Airavata server (`python scripts/serve_llm.py`, see `docs/MILESTONE4.md`). If it is "
+           "not running, this cell shows the report made for the demo conversation in `results/demo/` instead."),
+        code(r'''from IPython.display import Markdown
+from whospoke.llm_postprocess import LLMConnectionError, OpenAICompatibleLLM, PostProcessor
+try:
+    llm = OpenAICompatibleLLM(); llm.ping()
+    report = PostProcessor(llm).process_transcript(result.transcript_json())
+    report.save(ROOT / "results/runs/walkthrough")
+    display(Markdown(report.markdown()))
+except LLMConnectionError as exc:
+    print(exc, "\nShowing the demo report instead:\n")
+    display(Markdown((ROOT / "results/demo/report.md").read_text(encoding="utf-8")))'''),
     ]
     nb.metadata["kernelspec"] = {"name": "python3", "display_name": "Python 3", "language": "python"}
     return nb
 
 
+def rerun_stage4(kernel: str) -> None:
+    """Execute SETUP + the Stage-4 cells alone and splice them into the executed benchmark notebook."""
+    from nbconvert.preprocessors import ExecutePreprocessor
+
+    path = NB / "01_benchmark.ipynb"
+    full = nbf.read(path, as_version=4)
+    part = nbf.v4.new_notebook()
+    part.cells = [nbf.v4.new_code_cell(SETUP), *stage4_benchmark_cells()]
+    part.metadata["kernelspec"] = full.metadata.get("kernelspec", {})
+    ExecutePreprocessor(timeout=7200, kernel_name=kernel).preprocess(part, {"metadata": {"path": str(NB)}})
+    start = next((i for i, c in enumerate(full.cells) if c.cell_type == "markdown" and c.source.startswith(STAGE4_MARK)),
+                 None)
+    if start is None:                                   # notebook from before Stage 4: insert before the summary
+        start = next(i for i, c in enumerate(full.cells) if c.source.startswith("## Summary"))
+        full.cells[start:start] = part.cells[1:]
+    else:
+        full.cells[start:start + len(part.cells) - 1] = part.cells[1:]
+    for i, c in enumerate(full.cells):
+        if c.source.startswith("## Summary"):
+            full.cells[i] = benchmark().cells[-1]
+    nbf.write(full, path)
+    print("updated the Stage-4 section of", path)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-run", action="store_true")
+    ap.add_argument("--stage4-only", action="store_true",
+                    help="re-run only the Stage-4 section of 01_benchmark.ipynb, keeping every other output")
     ap.add_argument("--kernel", default="whospoke",
                     help="Jupyter kernel to execute with (register the venv once: python -m ipykernel install --user --name whospoke)")
     args = ap.parse_args()
     NB.mkdir(exist_ok=True)
     (PROJECT / "results" / "figures").mkdir(parents=True, exist_ok=True)
+    if args.stage4_only:
+        rerun_stage4(args.kernel)
+        return
     books = {"01_benchmark.ipynb": benchmark(), "02_walkthrough.ipynb": walkthrough()}
     for name, nb in books.items():
         path = NB / name

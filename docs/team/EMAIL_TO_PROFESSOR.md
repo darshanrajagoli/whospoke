@@ -33,8 +33,11 @@ before the mid-sem review.
    conversations we made ourselves from real IndicVoices speech and real background noise. That way we
    know exactly who said what and when.
 
-We are planning to do the LLM post-processing part (Milestone 4) after the review. Please let us know if
-you want us to change either of these.
+We have also built the LLM post-processing part (Milestone 4). It runs Airavata locally (compressed to
+4 bits so it fits a laptop) and writes a report with a summary, keywords and the dialogue translated into
+English. It is not allowed to change who spoke when, and we measured on the test conversations how much it
+helps and how errors from the earlier stages show up in its summaries. Please let us know if you want us to
+change either of the two points above.
 
 Thank you,
 Darshan Rajagoli (for the team)

@@ -3,8 +3,9 @@
 The proposal asks for "standardized Latin representations for code-switched text (e.g. Hinglish)".
 The ASR models write everything — including English words — in Devanagari (``होमवर्क``). We convert:
 
-1. **English loanwords** are looked up in a lexicon (``resources/loanwords.tsv``, ~430 entries built
-   from the most frequent words in IndicVoices) and written in English: ``होमवर्क`` → ``homework``.
+1. **English loanwords** are looked up in a lexicon (``resources/loanwords.tsv``, ~2,600 entries: hand-made from
+   the most frequent words in IndicVoices, plus forms mined from Vaani *train*, D20) and written in English:
+   ``होमवर्क`` → ``homework``.
 2. **Hindi words** are romanised by rule, with Hindi *schwa deletion*: the inherent "a" of a
    consonant is not pronounced at the end of a word or in the pattern V C _ C V (``कमरा`` is
    "kamra", not "kamara"; ``समझना`` is "samajhna").

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "whospoke"
 version = "0.1.0"
-description = "Who spoke what and when: separation, diarization and Hindi/Hinglish transcription for noisy multi-speaker audio (CS F407 project)."
+description = "Who spoke what and when: separation, diarization, Hindi/Hinglish transcription and an LLM report for noisy multi-speaker audio (CS F407 project)."
 requires-python = ">=3.10"
 
 [tool.setuptools.packages.find]

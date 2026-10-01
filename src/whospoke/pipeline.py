@@ -7,6 +7,8 @@ Order B (overlap-targeted separation)
     mixture ──diarize + detect overlaps──▶ turns ──separate ONLY the overlapping stretches──▶ ASR ──▶ transcript
             (everything outside overlaps is transcribed straight from the mixture)
 
+Either order can end with Stage 4 (``llm_postprocess.PostProcessor``): transcript ──LLM──▶ report.
+
 Each stage is timed and its peak GPU memory recorded, for the benchmark notebook.
 """
 from __future__ import annotations
@@ -46,8 +48,9 @@ class Result:
     timings: dict[str, float] = field(default_factory=dict)
     gpu_peak_mb: dict[str, float] = field(default_factory=dict)
     duration_s: float = 0.0
-    report: dict | None = None          # Milestone 4 LLM report (optional; disabled by default)
+    report: dict | None = None          # Stage-4 LLM report (only when a postprocessor is given)
     report_markdown: str | None = None
+    report_error: str | None = None     # why Stage 4 failed; Stages 1-3 are still saved
 
     def text_by_speaker(self) -> dict[str, str]:
         out: dict[str, list[str]] = {}
@@ -69,6 +72,12 @@ class Result:
                   for i, l in enumerate(sorted(self.lines, key=lambda l: l.start), 1) if l.text]
         return "\n\n".join(blocks) + "\n"
 
+    def transcript_json(self) -> dict:
+        """The Stage-3 deliverable as a dict: written to transcript.json and read by Stage 4."""
+        return {"order": self.order, "duration_s": self.duration_s, "timings_s": self.timings,
+                "gpu_peak_mb": self.gpu_peak_mb, "speakers": self.diarization.speakers,
+                "lines": [asdict(l) for l in sorted(self.lines, key=lambda l: l.start)]}
+
     def save(self, out_dir: str | Path) -> Path:
         out = Path(out_dir)
         out.mkdir(parents=True, exist_ok=True)
@@ -76,11 +85,8 @@ class Result:
         (out / "transcript.txt").write_text(self.transcript() + "\n", encoding="utf-8")
         (out / "transcript_hinglish.txt").write_text(self.transcript(hinglish=True) + "\n", encoding="utf-8")
         (out / "transcript.srt").write_text(self.srt(), encoding="utf-8")
-        (out / "transcript.json").write_text(json.dumps({
-            "order": self.order, "duration_s": self.duration_s, "timings_s": self.timings,
-            "gpu_peak_mb": self.gpu_peak_mb, "speakers": self.diarization.speakers,
-            "lines": [asdict(l) for l in sorted(self.lines, key=lambda l: l.start)],
-        }, ensure_ascii=False, indent=1), encoding="utf-8")
+        (out / "transcript.json").write_text(json.dumps(self.transcript_json(), ensure_ascii=False, indent=1),
+                                             encoding="utf-8")
         if self.report is not None:
             (out / "report.json").write_text(json.dumps(self.report, ensure_ascii=False, indent=2), encoding="utf-8")
             if self.report_markdown:
@@ -202,8 +208,7 @@ class Pipeline:
             postprocess: bool | None = None) -> Result:
         """Process a 16 kHz mono recording. ``diarization`` may be supplied (oracle experiments).
 
-        ``postprocess`` controls Milestone 4. It defaults to whether a postprocessor was supplied
-        to the constructor, preserving the Stage-1–3 behaviour for existing callers.
+        Stage 4 runs when the pipeline was given a ``postprocessor``; ``postprocess=False`` skips it for one call.
         """
         wav = np.asarray(wav, np.float32)
         res = Result(self.order, Diarization([]), [], duration_s=round(len(wav) / SR, 3))
@@ -224,19 +229,17 @@ class Pipeline:
                 units = self._targeted_separation(wav, res.diarization)
             with _Stage(res, "asr"):
                 res.lines = self._transcribe(units)
-        do_postprocess = self.postprocessor is not None if postprocess is None else postprocess
-        if do_postprocess:
-            if self.postprocessor is None:
-                raise ValueError("postprocess=True requires a Stage-4 postprocessor")
-            with _Stage(res, "llm_postprocess"):
-                transcript = {
-                    "order": res.order, "duration_s": res.duration_s, "timings_s": res.timings,
-                    "gpu_peak_mb": res.gpu_peak_mb, "speakers": res.diarization.speakers,
-                    "lines": [asdict(l) for l in sorted(res.lines, key=lambda l: l.start)],
-                }
-                report = self.postprocessor.process_transcript(transcript)
-                res.report = report.to_dict()
-                res.report_markdown = report.markdown()
+        if self.postprocessor is not None and postprocess is not False:
+            from .llm_postprocess import LLMError
+
+            with _Stage(res, "llm"):
+                try:
+                    report = self.postprocessor.process_transcript(res.transcript_json())
+                    res.report, res.report_markdown = report.to_dict(), report.markdown()
+                except LLMError as exc:
+                    res.report_error = str(exc)
+        elif postprocess:
+            raise ValueError("postprocess=True needs a Stage-4 postprocessor")
         res.timings["total"] = round(time.perf_counter() - t0, 3)
         return res
 

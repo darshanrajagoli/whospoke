@@ -31,7 +31,8 @@ qualitative demo.
 
 ## D4 · Language scope
 **Decided:** 2026-09-25 (by the team)
-**Choice:** Hindi + English code-switching (Hinglish) only, for midsem.
+**Choice:** Hindi + English code-switching (Hinglish) only, for the whole project (all four stages). Other Indian
+languages (IndicConformer and the corpora cover 22) are a possible extension, not part of this project.
 
 ## D5 · Compute
 **Decided:** 2026-09-25
@@ -239,9 +240,59 @@ transparency.
 With the true timeline it removes about a fifth of the heavy-overlap errors (44.1 % → 36.2 %). With our own diarization
 the gain is small, because diarization mistakes (words credited to the wrong speaker) then dominate the error.
 
-
-## D27 · Milestone 4 uses a guarded local Airavata backend
+## D27 · Stage 4 runs Airavata locally, behind an OpenAI-compatible server
 **Decided:** 2026-10-01
-**Choice:** implement Stage 4 as a provider-independent post-processing layer with an OpenAI-compatible local HTTP backend, configured by default for AI4Bharat Airavata. Airavata is instruction-tuned for Hindi/English and is documented for local `llama.cpp` serving. The code does not require an `openai` Python package or a hosted API.
-**Guardrail:** Stage-3 speaker IDs and timestamps are immutable source evidence. The LLM may clean obvious ASR fragments, translate, summarise, extract grounded keywords and explicit actions, but cannot change the timeline. Every source line must appear exactly once; missing lines are restored and flagged. Hallucinated line IDs are discarded.
-**Reason:** a 7B BF16 model is too large to treat as a normal in-process CUDA model on the project's 6 GB laptop GPU. A quantized local server keeps inference practical while preserving the proposal's localized-LLM requirement.
+**Choice:** Stage 4 talks to any OpenAI-compatible `/v1/chat/completions` server through the standard library (no
+`openai` package, no hosted API, no key). The default is AI4Bharat **Airavata** (7B, Hindi instruction-tuned from
+OpenHathi, the proposal's two examples), quantised to 4 bits (Q4_K_M) and served by llama.cpp's `llama-server`
+(`scripts/serve_llm.py`), which can build both the server and the model file from PyPI and Hugging Face alone.
+**Why:** the proposal asks for a *localized* foundational LLM. The 7B model in 16-bit (~14 GB) does not fit the 6 GB
+laptop GPU next to Stages 1–3; at 4 bits (~4 GB) it runs on a CPU, or partly on the GPU. A separate server process
+keeps the 7B model's memory and dependencies out of the Stage 1–3 Python environment, and any other local model can be
+swapped in with `--llm-url`.
+
+## D28 · Speaker labels and timestamps never pass through the LLM
+**Decided:** 2026-10-01
+**Choice:** the model sees numbered lines ("7 | Speaker_B | 00:06-00:20 | text") and replies with text per line number
+only: repaired Devanagari, English, an "uncertain" flag. Speaker and time are copied from Stage 3. The reply is
+constrained by a JSON schema that lists every line number in order (llama-server compiles it into a grammar, so
+only replies of that shape can be generated), and checked again in Python: unknown line numbers are dropped, missing
+lines restored and flagged. An unusable reply makes the chunk be halved and retried; a single line that still fails
+keeps its ASR text, flagged. The report is still written.
+**Why:** Stages 1–3 are measured; Stage 4 is not allowed to undo that. A first version asked the model to return the
+speaker and times as well, then overwrote them; never asking for them is simpler and shortens the reply, which is
+what costs time on a CPU. A 7B model often produces broken JSON without a grammar. The Python checks still apply when
+a server ignores the schema.
+
+## D29 · A repair may change at most half of a line's characters
+**Decided:** 2026-10-01
+**Choice:** if the repaired line differs from the ASR line in more than 50 % of its characters (character edit
+distance after the scoring normalisation, so punctuation does not count), the ASR line is kept and flagged.
+**Why:** the proposal asks Stage 4 to "fix syntactic errors caused by background noise drops", i.e. small repairs. A
+change of more than half the line is a rewrite: typically the model translated the line into English in the
+Devanagari field, or "completed" a fragment with words nobody said. 50 % is deliberately loose for short lines (one
+fixed word in a two-word line is a 20–40 % change). How often it fires, and whether repairs lower or raise cpWER, is
+measured on the test set (D31).
+
+## D30 · The Hinglish column comes from the Stage-3 romaniser, not from the LLM
+**Decided:** 2026-10-01
+**Choice:** the repaired Devanagari is romanised by `hinglish.py`, as in Stage 3. An unchanged line keeps its
+Stage-3 Hinglish exactly.
+**Why:** the reply would otherwise carry each line three times (Devanagari, Hinglish, English), which is about 50 %
+more generated text and 50 % more time on a CPU, and the model's Hinglish would be spelled differently from Stage 3's.
+
+## D31 · How Stage 4 is evaluated
+**Decided:** 2026-10-01
+**Choice:** `scripts/eval_postprocess.py` runs Stage 4 on the stored Stage-3 transcripts of the test conversations
+(`results/eval_test_indicconformer/*.json`) for four inputs, each adding one source of upstream error: the true
+transcript, ASR on each clean voice (true timeline), ASR on the noisy mixture (true timeline), and the full Order-B
+pipeline. Measured per conversation: cpWER of the Stage-3 text vs the Stage-4 repaired text (paired, bootstrap CI);
+the share of report keywords that were really said (found in the true transcript or its translation); word overlap
+(F1) of the keywords and summary with the report made from the true transcript; guardrail counts; time.
+**Why:** a summary has no single right answer, but three things can be measured honestly: (1) whether the repair
+makes the transcript better or worse against the truth, which answers the proposal's "fix syntactic errors" directly;
+(2) whether upstream errors put things into the report that nobody said; (3) how far the report drifts from the one a
+perfect transcript gives, which is the proposal's objective 5 ("how error propagation cascades from early acoustic
+layers down to final text generations") applied to the last stage. Re-using the stored transcripts means the same
+conversations as every other result, and no audio model has to run again. No human judgement or second LLM is used as
+a judge: both would be harder to reproduce than the numbers above.

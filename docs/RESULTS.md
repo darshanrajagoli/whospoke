@@ -146,6 +146,22 @@ Once real diarization is used, separation still helps but only a little: 50.0 % 
 it (paired difference 0.5 points, CI −0.0 to +1.0). In heavy overlap it is 54.6 % vs 53.6 %. The benefit is limited
 because when the diarizer gets the speakers wrong around an overlap, the right voice cannot be chosen.
 
+## Stage 4 — LLM post-processing
+
+Stage 4 (Airavata 7B, 4-bit, llama.cpp; [MILESTONE4.md](MILESTONE4.md)) was run on the stored Stage-3 transcripts of
+TODO-STAGE4-N test conversations (`scripts/eval_postprocess.py`, D31). It was run on four inputs, each with one more
+source of upstream error than the one before, so the cascade can be followed into the report:
+
+TODO-STAGE4-TABLE
+
+**Does the LLM repair the transcript?** TODO-STAGE4-REPAIR
+
+**How upstream errors reach the report.** TODO-STAGE4-CASCADE
+
+**The guardrails at work.** TODO-STAGE4-GUARDRAILS
+
+![Stage 4](../results/figures/stage4_cascade.png)
+
 ## Speed and memory
 
 Measured by [notebooks/01_benchmark.ipynb](../notebooks/01_benchmark.ipynb) on an RTX 3050 laptop GPU (6 GB), one
@@ -161,6 +177,8 @@ separates a few seconds of overlap instead of the whole recording, and diarizes 
 roughly linearly with length: 1 min of audio takes 4.3 s and 8 min takes 35 s. Model sizes: Conv-TasNet 5.1 M
 parameters, pyannote segmentation 1.5 M, WeSpeaker ResNet-34 6.6 M, IndicConformer 600 M.
 
+**Stage 4** is measured separately, because it runs in its own server process (benchmark notebook §7): TODO-STAGE4-SPEED
+
 ## What limits the system (and what we will do next)
 
 1. **Diarization errors dominate** (23 of the ~50 cpWER points). Next steps: a better speaker-count estimate for
@@ -170,8 +188,7 @@ parameters, pyannote segmentation 1.5 M, WeSpeaker ResNet-34 6.6 M, IndicConform
    conversations. There is no room echo, no phone codec and at most two people at once. A real broadcast has no
    ground truth, so it cannot be scored.
 3. **No fine-tuning** (6 GB laptop GPU). All models are used as released.
-4. **Milestone 4** (LLM clean-up of the transcript) comes after the mid-semester review. Its input, the
-   speaker-attributed transcript JSON, is already produced.
+4. **Stage 4 can only be as good as its input.** TODO-STAGE4-NEXT
 5. **Possible extension: a second test set from Nirantar.** About 325 of Nirantar's 490 Hindi speakers are not our
    test speakers, so conversations could be built from them. We don't, for three reasons:
    - *Not heard by us is not the same as not heard by the model.* IndicConformer was trained on IndicVoices' train

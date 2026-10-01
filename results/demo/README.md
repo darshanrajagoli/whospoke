@@ -1,6 +1,7 @@
 # Example output
 
-`python -m whospoke run <data>/synth/test/test_g02_2spk_ovl-high_market5/mixture.wav --out results/demo`
+`python -m whospoke run <data>/synth/test/test_g02_2spk_ovl-high_market5/mixture.wav --out results/demo`, then
+`python -m whospoke postprocess results/demo/transcript.json` (Stage 4, with `scripts/serve_llm.py` running)
 
 The input is a 62 s test conversation: 2 speakers, heavy overlap, 5 dB market noise. It was chosen because its
 who-said-what error (cpWER 49 %) is close to the test-set median (46.5 %), so this is a typical case, not the best
@@ -13,3 +14,5 @@ one. The audio is not in the repository; rebuild it with `scripts/build_dataset.
 | `transcript_hinglish.txt` | the same in Hinglish (Latin script) |
 | `transcript.srt` | subtitles |
 | `transcript.json` | everything above plus per-stage timings and GPU memory |
+| `report.md` | Stage 4: summary, topic, keywords, action items, speakers, repaired and translated dialogue |
+| `report.json` | the same, machine-readable, with the guardrail counts |

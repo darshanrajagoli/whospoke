@@ -1,5 +1,7 @@
 """Turn the result CSVs into tables (docs/RESULTS_TABLES.md) and figures (results/figures/*.png).
 
+Stage 4 (``results/eval_postprocess.csv``, from scripts/eval_postprocess.py) is added when it exists.
+
 Every number in docs/RESULTS.md comes from the tables this script writes.
 Confidence intervals: 95 % bootstrap over conversations (paired where systems are compared).
 
@@ -77,6 +79,85 @@ def bar_group(ax, groups, series, values, errs, colors, labels, ylabel, fmt=pct)
     ax.grid(axis="x", visible=False)
 
 
+STAGE4_SYSTEMS = [("reference", "true transcript"), ("oracle-clean", "ASR, clean voices"),
+                  ("oracle-mix", "ASR, noisy mixture"), ("B-spectral", "full pipeline, Order B")]
+
+
+def stage4_section() -> list[str]:
+    """Tables + figure for Stage 4 from results/eval_postprocess.csv (scripts/eval_postprocess.py)."""
+    f = RES / "eval_postprocess.csv"
+    if not f.exists():
+        return []
+    e = pd.read_csv(f)
+    systems = [(s, lab) for s, lab in STAGE4_SYSTEMS if s in set(e.system)]
+    e["r_raw"], e["r_clean"] = e.cp_errors_raw / e.ref_words, e.cp_errors_clean / e.ref_words   # per conversation
+    piv_raw, piv_clean = (e.pivot(index="id", columns="system", values=c) for c in ("r_raw", "r_clean"))
+    rows, guard = [], []
+    for s, lab in systems:
+        g = e[e.system == s]
+        m, lo, hi = paired_diff_ci(piv_clean[s], piv_raw[s])
+        kt = g.keywords_true.dropna().to_numpy()
+        klo, khi = boot_ci(kt) if len(kt) else (np.nan, np.nan)
+        rows.append({"Stage-4 input": f"{s} ({lab})", "cpWER before": pct(g.cp_errors_raw.sum() / g.ref_words.sum()),
+                     "cpWER after": pct(g.cp_errors_clean.sum() / g.ref_words.sum()),
+                     "Δ (points)": f"{100 * m:+.1f} [{100 * lo:+.1f}, {100 * hi:+.1f}]",
+                     "helped / hurt": f"{int((piv_clean[s] < piv_raw[s]).sum())} / {int((piv_clean[s] > piv_raw[s]).sum())}",
+                     "keywords really said": f"{pct(kt.mean()) if len(kt) else '-'} [{pct(klo)} – {pct(khi)}]",
+                     "keyword F1 vs truth report": f"{g.keyword_f1.mean():.2f}",
+                     "summary F1 vs truth report": f"{g.summary_f1.mean():.2f}",
+                     "RTF": f"{g.rtf.mean():.2f}", "n": len(g)})
+        n = g.n_lines.sum()
+        guard.append({"Stage-4 input": s, "lines": int(n), "repaired": pct(g.lines_changed.sum() / n),
+                      "repair reverted (over-edited)": pct(g.lines_reverted.sum() / n),
+                      "skipped by the model, restored": pct(g.lines_restored.sum() / n),
+                      "flagged uncertain by the model": pct(g.lines_flagged_by_llm.sum() / n),
+                      "no translation": pct(g.missing_translations.sum() / n),
+                      "lines the LLM failed on": int(g.failed_chunks.sum()),
+                      "keywords dropped (ungrounded)": int(g.keywords_dropped.sum()),
+                      "actions dropped (unsupported)": int(g.actions_dropped.sum()),
+                      "synthesis failed": int(g.synthesis_failed.sum()), "schema enforced": bool(g.schema_enforced.all())})
+    n_conv = e.id.nunique()
+    md = [f"## Stage 4 — LLM post-processing on the test set ({n_conv} conversations)\n",
+          "Stage 4 is run on four Stage-3 transcripts of the same conversations, each with one more source of upstream "
+          "error. *cpWER before/after*: who-said-what error of the Stage-3 text and of the Stage-4 repaired text "
+          "(pooled; Δ = paired mean per conversation, 95 % bootstrap CI, positive = Stage 4 added errors). "
+          "*Keywords really said*: share of the report's keywords found in the true transcript or its translation. "
+          "*F1 vs truth report*: word overlap with the report made from the true transcript. RTF = Stage-4 time ÷ audio length.\n",
+          pd.DataFrame(rows).to_markdown(index=False), "",
+          "### Stage 4 guardrails (share of transcript lines)\n", pd.DataFrame(guard).to_markdown(index=False), ""]
+
+    fig, axes = plt.subplots(1, 2, figsize=(10, 3.2))
+    labels = [lab.replace(", ", ",\n") for _, lab in systems]
+    x = np.arange(len(systems))
+    ax = axes[0]
+    for i, (col, colr, name) in enumerate((("cp_errors_raw", GREY, "Stage-3 transcript"),
+                                           ("cp_errors_clean", BLUE, "after Stage-4 repair"))):
+        v = [e[e.system == s][col].sum() / e[e.system == s].ref_words.sum() for s, _ in systems]
+        ax.bar(x + (i - 0.5) * 0.38, v, 0.36, color=colr, label=name)
+    ax.set_xticks(x, labels, fontsize=8.5)
+    ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda y, _: f"{100 * y:.0f}%"))
+    ax.set_ylabel("cpWER (lower is better)")
+    ax.set_title("Does the LLM repair the transcript?", loc="left")
+    ax.legend(loc="upper left", fontsize=8.5)
+    ax.grid(axis="x", visible=False)
+    ax = axes[1]
+    for i, (col, colr, name) in enumerate((("keywords_true", BLUE, "keywords really said"),
+                                           ("summary_f1", ORANGE, "summary overlap with truth report"))):
+        v = [e[e.system == s][col].mean() for s, _ in systems]
+        ax.bar(x + (i - 0.5) * 0.38, v, 0.36, color=colr, label=name)
+    ax.set_xticks(x, labels, fontsize=8.5)
+    ax.set_ylim(0, 1.25)
+    ax.set_yticks([0, 0.25, 0.5, 0.75, 1.0])
+    ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda y, _: f"{100 * y:.0f}%"))
+    ax.set_title("How upstream errors reach the report", loc="left")
+    ax.legend(loc="upper center", ncol=2, fontsize=8.5)
+    ax.grid(axis="x", visible=False)
+    fig.tight_layout()
+    fig.savefig(FIG / "stage4_cascade.png", bbox_inches="tight")
+    plt.close(fig)
+    return md
+
+
 def main(asr: str = "indicconformer") -> None:
     FIG.mkdir(parents=True, exist_ok=True)
     md: list[str] = ["# Results tables (generated by `scripts/make_report.py` — do not edit by hand)\n"]
@@ -142,6 +223,7 @@ def main(asr: str = "indicconformer") -> None:
     # ------------------------------------------------------------ End-to-end (test)
     ev = RES / f"eval_test_{asr}.csv"
     if not ev.exists():
+        md += stage4_section()
         OUT_MD.write_text("\n".join(md), encoding="utf-8")
         print("no end-to-end results yet; wrote partial tables")
         return
@@ -198,6 +280,7 @@ def main(asr: str = "indicconformer") -> None:
                      "conversations where first is worse (cpWER)": f"{int((piv_cp[a] > piv_cp[b]).sum())}/{len(piv_cp)}"})
     md += [f"## Paired comparisons (same {n_conv} conversations; mean difference with 95 % bootstrap CI — "
            "positive = the first system has MORE errors)\n", pd.DataFrame(prow).to_markdown(index=False), ""]
+    md += stage4_section()
     OUT_MD.write_text("\n".join(md), encoding="utf-8")
 
     # ------------------------------------------------------------ figures
