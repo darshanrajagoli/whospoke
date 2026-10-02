@@ -23,7 +23,7 @@ Reports are cached in ``results/eval_postprocess/``; an interrupted run resumes 
 
     python scripts/serve_llm.py &                       # once, in another terminal
     python scripts/eval_postprocess.py --groups 0 1     # 18 conversations: 2 speaker groups × all 9 conditions
-    python scripts/eval_postprocess.py                  # all 72
+    python scripts/eval_postprocess.py                  # all 63 (group 7 was used to develop the prompts, D32)
 """
 from __future__ import annotations
 
@@ -32,6 +32,7 @@ import json
 import sys
 import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import numpy as np
@@ -50,6 +51,7 @@ from whospoke.metrics import cp_error  # noqa: E402
 PROJECT = Path(__file__).resolve().parents[1]
 RES = PROJECT / "results"
 SYSTEMS = ["reference", "oracle-clean", "oracle-mix", "B-spectral"]
+PROMPT_DEV_GROUP = 7     # the Stage-4 prompts were developed on this test group, so it is never scored (D32)
 
 
 def by_speaker(lines: list[dict]) -> dict[str, str]:
@@ -111,24 +113,29 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--asr", default="indicconformer")
     ap.add_argument("--systems", nargs="+", default=SYSTEMS, choices=SYSTEMS)
-    ap.add_argument("--groups", nargs="+", type=int, default=None, help="speaker groups to use (default: all 8)")
+    ap.add_argument("--groups", nargs="+", type=int, default=None,
+                    help=f"speaker groups to use (default: all except {PROMPT_DEV_GROUP}, D32)")
     ap.add_argument("--llm-url", default=DEFAULT_BASE_URL)
     ap.add_argument("--llm-model", default=DEFAULT_MODEL)
     ap.add_argument("--llm-context", type=int, default=DEFAULT_CONTEXT)
     ap.add_argument("--server-pid", type=int, default=None, help="LLM server process, to record its peak memory")
     ap.add_argument("--force", action="store_true", help="re-run Stage 4 even if a cached report exists")
+    ap.add_argument("--workers", type=int, default=1,
+                    help="reports made at once (start the server with the same --parallel); the measured Stage-4 "
+                         "times then include the sharing of the CPU")
     args = ap.parse_args()
 
     meta = pd.read_csv(RES / f"eval_test_{args.asr}.csv")
     stage3_cpwer = meta.set_index(["id", "system"]).cpwer
     meta = meta.drop_duplicates("id").set_index("id")
+    if args.groups is not None and PROMPT_DEV_GROUP in args.groups:
+        raise SystemExit(f"group {PROMPT_DEV_GROUP} was used to develop the Stage-4 prompts and is not scored (D32)")
+    meta = meta[meta.group != PROMPT_DEV_GROUP]
     if args.groups is not None:
         meta = meta[meta.group.isin(args.groups)]
     cache = RES / "eval_postprocess"
     cache.mkdir(parents=True, exist_ok=True)
-    llm = OpenAICompatibleLLM(args.llm_url, args.llm_model)
-    llm.ping()
-    post = PostProcessor(llm, context_tokens=args.llm_context)
+    OpenAICompatibleLLM(args.llm_url, args.llm_model).ping()
     rss = RSSSampler(args.server_pid)
     # Conversations of one speaker group share their speech across conditions, so some Stage-3 transcripts are
     # identical (always for "reference"). Stage 4 is deterministic (temperature 0): reuse the report.
@@ -138,24 +145,46 @@ def main() -> None:
         by_hash.setdefault((rep_["provenance"]["source_sha256"], f.stem.split("__")[1]), rep_)
     t_start = time.perf_counter()
 
+    convs = {cid: json.loads((RES / f"eval_test_{args.asr}" / f"{cid}.json").read_text(encoding="utf-8"))
+             for cid in meta.index}
+    jobs = {}                                  # one Stage-4 run per distinct transcript that is not cached yet
+    for cid, m in meta.iterrows():
+        for system in args.systems:
+            src = stage3_transcript(convs[cid], system, m.duration_s)
+            key = (_fingerprint(src), system)
+            if args.force or (not (cache / f"{cid}__{system}.json").exists() and key not in by_hash):
+                jobs.setdefault(key, (cid, system, src))
+    local = threading.local()
+
+    def make_report(key):
+        cid, system, src = jobs[key]
+        if not hasattr(local, "post"):
+            local.post = PostProcessor(OpenAICompatibleLLM(args.llm_url, args.llm_model),
+                                       context_tokens=args.llm_context)
+        rep_ = local.post.process_transcript(src).to_dict()
+        (cache / f"{cid}__{system}.json").write_text(json.dumps(rep_, ensure_ascii=False, indent=1), encoding="utf-8")
+        return key, rep_
+
+    print(f"{len(jobs)} reports to make, {args.workers} at a time", flush=True)
+    with ThreadPoolExecutor(args.workers) as pool:
+        for i, (key, rep_) in enumerate(pool.map(make_report, list(jobs)), 1):
+            by_hash[key] = rep_
+            print(f"  [{i}/{len(jobs)}] {jobs[key][0]} {jobs[key][1]}: {rep_['diagnostics']['llm_seconds']:.0f} s",
+                  flush=True)
+
     rows = []
     for cid, m in meta.iterrows():
-        conv = json.loads((RES / f"eval_test_{args.asr}" / f"{cid}.json").read_text(encoding="utf-8"))
+        conv = convs[cid]
         ref_text = by_speaker(conv["reference"])
         reports = {}
         for system in args.systems:
             f = cache / f"{cid}__{system}.json"
-            src = stage3_transcript(conv, system, m.duration_s)
-            key = (_fingerprint(src), system)
-            if f.exists() and not args.force:
+            key = (_fingerprint(stage3_transcript(conv, system, m.duration_s)), system)
+            if f.exists() and not (args.force and key in jobs):
                 reports[system] = json.loads(f.read_text(encoding="utf-8"))
-            elif key in by_hash and not args.force:
+            else:                              # an identical transcript's report
                 reports[system] = by_hash[key]
                 f.write_text(json.dumps(reports[system], ensure_ascii=False, indent=1), encoding="utf-8")
-            else:
-                reports[system] = post.process_transcript(src).to_dict()
-                f.write_text(json.dumps(reports[system], ensure_ascii=False, indent=1), encoding="utf-8")
-            by_hash[key] = reports[system]
         ref_report = reports.get("reference")
         truth = [s["text"] for s in conv["reference"]] + [romanise(s["text"]) for s in conv["reference"]]
         if ref_report:
@@ -199,7 +228,8 @@ def main() -> None:
     out = RES / "eval_postprocess.csv"
     df.to_csv(out, index=False)
     summary = {"model": args.llm_model, "context_tokens": args.llm_context, "conversations": int(df.id.nunique()),
-               "server_peak_rss_mb": rss.stop() or None, "wall_s_this_run": round(time.perf_counter() - t_start, 1)}
+               "server_peak_rss_mb": rss.stop() or None, "workers": args.workers,
+               "wall_s_this_run": round(time.perf_counter() - t_start, 1)}
     (RES / "eval_postprocess_summary.json").write_text(json.dumps(summary, indent=1), encoding="utf-8")
 
     print(f"\n{df.id.nunique()} conversations  ({out})")

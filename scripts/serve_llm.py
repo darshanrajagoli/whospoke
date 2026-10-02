@@ -3,6 +3,7 @@
     python scripts/serve_llm.py                     # CPU; the first run builds the 4-bit model (see below)
     python scripts/serve_llm.py --gpu-layers 20     # part of the model on the GPU (all 32 layers + cache need ~6 GB)
     python scripts/serve_llm.py --prepare-only      # build llama-server and the 4-bit model file, then exit
+    python scripts/serve_llm.py --parallel 3        # serve 3 requests at once (scripts/eval_postprocess.py --workers 3)
 
 The server is llama.cpp's ``llama-server`` (an OpenAI-compatible HTTP server). It is taken from ``--llama-bin``,
 else from PATH (a llama.cpp release, ``brew install llama.cpp`` or ``winget install llama.cpp``), else built
@@ -104,6 +105,9 @@ def main() -> None:
     ap.add_argument("--gpu-layers", type=int, default=0, help="model layers on the GPU (0 = CPU only, 99 = all)")
     ap.add_argument("--ctx", type=int, default=4096, help="context window in tokens (Airavata: 4096)")
     ap.add_argument("--threads", type=int, default=None, help="CPU threads (default: llama.cpp's choice)")
+    ap.add_argument("--parallel", type=int, default=1,
+                    help="requests served at once, each with its own --ctx window (more total throughput, more memory: "
+                         "~2 GB of cache per request)")
     ap.add_argument("--host", default="127.0.0.1")
     ap.add_argument("--port", type=int, default=8080)
     ap.add_argument("--prepare-only", action="store_true", help="build the model file and exit")
@@ -128,8 +132,11 @@ def main() -> None:
     if args.prepare_only:
         print(f"ready: {gguf}")
         return
-    cmd = [server, "-m", gguf, "--host", args.host, "--port", str(args.port), "-c", str(args.ctx),
-           "-ngl", str(args.gpu_layers), "--jinja", "--chat-template-file", TEMPLATE, "--alias", "ai4bharat/Airavata"]
+    # explicit slots: each gets ctx tokens of its own (llama-server's automatic slots share one ctx-sized cache)
+    cmd = [server, "-m", gguf, "--host", args.host, "--port", str(args.port), "-np", str(args.parallel),
+           "-c", str(args.ctx * args.parallel), "-ngl", str(args.gpu_layers), "--jinja",
+           "--chat-template-file", TEMPLATE, "--alias", "ai4bharat/Airavata",
+           "--cache-ram", "0"]            # no extra RAM prompt cache (default 8 GB); each slot still reuses its prefix
     if args.threads:
         cmd += ["-t", str(args.threads)]
     print(f"Stage-4 LLM server: http://{args.host}:{args.port}/v1  (Ctrl+C to stop)", flush=True)

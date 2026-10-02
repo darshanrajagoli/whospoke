@@ -3,7 +3,7 @@
 Stage 4 turns the raw Stage-3 transcript into the proposal's final deliverable: *"a polished, human-readable
 transcript report featuring a concise executive summary, keyword tags, and speaker-separated dialogues."* It uses
 AI4Bharat's **Airavata** (the proposal's example of a "localized foundational LLM"), run locally by llama.cpp.
-Results are in [RESULTS.md](RESULTS.md#stage-4--llm-post-processing); the decisions are D27–D31 in
+Results are in [RESULTS.md](RESULTS.md#stage-4--llm-post-processing); the decisions are D27–D32 in
 [DECISIONS.md](../DECISIONS.md).
 
 ## Quick start

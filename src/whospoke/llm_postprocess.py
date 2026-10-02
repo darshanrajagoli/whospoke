@@ -38,7 +38,7 @@ from pathlib import Path
 from typing import Any, Protocol
 
 from .audio import fmt_ts
-from .hinglish import romanise
+from .hinglish import lexicon, romanise
 from .metrics import error_counts, normalise
 
 DEFAULT_MODEL = os.getenv("WHOSPOKE_LLM_MODEL", "ai4bharat/Airavata")
@@ -46,7 +46,7 @@ DEFAULT_BASE_URL = os.getenv("WHOSPOKE_LLM_URL", "http://127.0.0.1:8080/v1")
 DEFAULT_CONTEXT = int(os.getenv("WHOSPOKE_LLM_CONTEXT", "4096"))      # Airavata is Llama-2 based: 4,096 tokens
 DEFAULT_TEMPERATURE = float(os.getenv("WHOSPOKE_LLM_TEMPERATURE", "0"))  # greedy: the same input gives the same report
 DEFAULT_TIMEOUT = int(os.getenv("WHOSPOKE_LLM_TIMEOUT", "900"))      # a 7B model on a laptop CPU is slow
-MAX_LINES_PER_CHUNK = 12        # a 7B model loses track of longer numbered lists
+MAX_LINES_PER_CHUNK = 6         # with longer lists Airavata's translations drift onto neighbouring lines (D32)
 MAX_EDIT_RATIO = 0.5            # a repair may change at most half of a line's characters (D29)
 UNSPECIFIED = "unspecified"     # action-item owner when the transcript does not say who must act
 
@@ -59,9 +59,10 @@ The ASR text has mistakes caused by noise and people talking over each other.
 
 For every line, in the same order, return an object with:
 - "id": the line number.
-- "text": the same line in Devanagari, with only obvious ASR mistakes repaired (a repeated word, a broken word, \
-missing punctuation). Keep English words that were spoken in English. If you are not sure, copy the line unchanged.
-- "en": a faithful English translation of the line. Do not add anything that is not said.
+- "text": the line in Devanagari. Copy it unchanged unless a word is clearly broken or repeated by mistake. Never \
+replace a word with a synonym, never drop or add words. English words written in Devanagari (like ऑफिस, टाइम, \
+मैडम) stay exactly as they are.
+- "english": this line translated into English. Translate only this line. Do not describe it, do not add anything.
 - "uncertain": true if the line is too garbled to understand, otherwise false.
 
 Also return:
@@ -79,8 +80,9 @@ translated into English, and candidate keywords and actions. Write the final rep
 Return:
 - "title": a short factual title (at most 10 words).
 - "topic": the main topic in a few words (for example "lost ID card", "crop prices", "weather update").
-- "summary": an executive summary in 2 to 4 English sentences. Only what the evidence supports.
-- "key_points": up to 5 short factual points.
+- "summary": an executive summary in 2 to 4 English sentences: what the speakers talk about, ask for or agree on. \
+Only what the evidence supports. Do not describe this report or the evidence.
+- "key_points": up to 5 short factual points about what is said.
 - "keywords": up to 8 keywords that occur in the evidence.
 - "actions": explicit requests, instructions or promises only, with "owner" (a speaker label or "unspecified"), \
 "action" and supporting "lines". Empty list if none.
@@ -461,9 +463,11 @@ def chunk_schema(chunk: list[dict]) -> dict:
         return {"type": "object",
                 "properties": {"id": {"const": src["line_id"]},
                                "text": {"type": "string", "maxLength": 2 * n + 20},
-                               "en": {"type": "string", "maxLength": _max_en(src["text"])},
+                               # printable ASCII: the model cannot copy the Devanagari line into the English field
+                               "english": {"type": "string",
+                                           "pattern": f"^[ !#-\\[\\]-~]{{0,{_max_en(src['text'])}}}$"},
                                "uncertain": {"type": "boolean"}},
-                "required": ["id", "text", "en", "uncertain"], "additionalProperties": False}
+                "required": ["id", "text", "english", "uncertain"], "additionalProperties": False}
     return {"type": "object",
             "properties": {
                 # a tuple: exactly these lines, in order (llama.cpp lets "items" override "prefixItems", so no "items")
@@ -480,7 +484,7 @@ SYNTHESIS_SCHEMA = {
         "title": {"type": "string", "maxLength": 90},
         "topic": {"type": "string", "maxLength": 80},
         "summary": {"type": "string", "maxLength": 800},
-        "key_points": {"type": "array", "items": {"type": "string", "maxLength": 200}, "maxItems": 5},
+        "key_points": {"type": "array", "items": {"type": "string", "maxLength": 200}, "minItems": 1, "maxItems": 5},
         "keywords": {"type": "array", "items": {"type": "string", "maxLength": 40}, "maxItems": 8},
         "actions": {"type": "array", "items": _ACTION_SCHEMA, "maxItems": 6}},
     "required": ["title", "topic", "summary", "key_points", "keywords", "actions"], "additionalProperties": False,
@@ -489,6 +493,9 @@ SYNTHESIS_SCHEMA = {
 
 MERGE_SCHEMA = {"type": "object", "properties": {"summary": {"type": "string", "maxLength": 600}},
                 "required": ["summary"], "additionalProperties": False}
+
+
+_DEVANAGARI = re.compile("[\u0900-\u097f]")
 
 
 def _max_en(text: str) -> int:
@@ -660,7 +667,9 @@ class PostProcessor:
                 lines.append(_kept(src, "the model skipped this line; ASR wording kept."))
                 continue
             text = _text(item.get("text", item.get("cleaned"))) or src["text"]
-            en = _text(item.get("en", item.get("translation")))
+            en = _text(item.get("english", item.get("en", item.get("translation"))))
+            if _DEVANAGARI.search(en):         # a copy of the line, not a translation (servers without a schema)
+                en = ""
             notes = []
             if normalise(text) != normalise(src["text"]):      # punctuation-only repairs are always accepted
                 edits, n = error_counts(src["text"], text, "char")
@@ -672,6 +681,14 @@ class PostProcessor:
                 elif len(_tokens(text)) - n_src > max(1, round(0.2 * n_src)):
                     self.diag.lines_reverted += 1      # a repair removes or fixes words; it does not add sentences
                     notes.append("the model added words that the ASR line does not contain; ASR wording kept")
+                    text = src["text"]
+                elif len(_tokens(text)) < len(_no_repeats(_tokens(src["text"]))):
+                    self.diag.lines_reverted += 1      # only a word repeated by mistake may go (D29)
+                    notes.append("the model dropped words that the ASR line contains; ASR wording kept")
+                    text = src["text"]
+                elif _loanwords(src["text"]) - set(_tokens(text)):
+                    self.diag.lines_reverted += 1      # e.g. कंट्रोल → नियंत्रण: a "repair" into Hindi (D29)
+                    notes.append("the model replaced English words spoken in the line; ASR wording kept")
                     text = src["text"]
             if len(en) > _max_en(src["text"]):
                 self.diag.translations_too_long += 1
@@ -689,6 +706,17 @@ class PostProcessor:
                 src["line_id"], src["speaker"], src["start"], src["end"], text,
                 src["hinglish"] if not changed and src["hinglish"] else romanise(text), en, src["text"],
                 changed, uncertain, _sentence("; ".join(notes))))
+        # a degenerate reply repeats one English sentence for several different lines: none of them is a translation
+        seen: dict[str, set[str]] = {}
+        for x in lines:
+            if len(_tokens(x.translation)) >= 3:
+                seen.setdefault(x.translation.lower(), set()).add(normalise(x.source_text))
+        for x in lines:
+            if len(seen.get(x.translation.lower(), ())) > 1:
+                self.diag.missing_translations += 1
+                x.translation, x.uncertain = "", True
+                x.note = _sentence("; ".join(filter(None, [x.note.rstrip("."),
+                                                           "the same English was returned for different lines"])))
         note = {"summary": _text(obj.get("summary", obj.get("chunk_summary"))),
                 "keywords": [_text(k) for k in _as_list(obj.get("keywords")) if _text(k)],
                 "actions": _as_list(obj.get("actions", obj.get("action_items")))}
@@ -818,6 +846,21 @@ def _content_tokens(text: str) -> list[str]:
 
 def _tokens(text: str) -> list[str]:
     return re.findall(r"[\w\u0900-\u097f]+", normalise(text))
+
+
+_LOANWORDS: set[str] = set()
+
+
+def _loanwords(text: str) -> set[str]:
+    """The words of ``text`` that are English loanwords (the Stage-3 romaniser's lexicon)."""
+    if not _LOANWORDS:
+        _LOANWORDS.update(t for w in lexicon() for t in _tokens(w))
+    return set(_tokens(text)) & _LOANWORDS
+
+
+def _no_repeats(tokens: list[str]) -> list[str]:
+    """The words without immediate repetitions ("आँखें आँखें दिखा" → "आँखें दिखा")."""
+    return [t for i, t in enumerate(tokens) if i == 0 or t != tokens[i - 1]]
 
 
 def _token_set(texts: list[str]) -> set[str]:

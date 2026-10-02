@@ -9,7 +9,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | 1 | [README.md](README.md) | What the project does, the headline numbers, how to install and run it |
 | 2 | [docs/RESULTS.md](docs/RESULTS.md) | Every result, explained in plain English, with the evidence for each design choice |
 | 3 | [DEVIATIONS.md](DEVIATIONS.md) | Every place we differ from the professor's proposal, and why |
-| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D31), recorded as it was made |
+| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D32), recorded as it was made |
 | 5 | [docs/PIPELINE.md](docs/PIPELINE.md) | Technical reference: how each stage works, stage by stage |
 | 6 | [docs/MILESTONE4.md](docs/MILESTONE4.md) | Stage 4 in full: running the LLM, the report, the prompts, the guardrails, settings |
 | 7 | [docs/RESULTS_TABLES.md](docs/RESULTS_TABLES.md) | Raw result tables with 95 % confidence intervals (generated, not hand-written) |

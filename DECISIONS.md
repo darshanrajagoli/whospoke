@@ -264,12 +264,14 @@ speaker and times as well, then overwrote them; never asking for them is simpler
 what costs time on a CPU. A 7B model often produces broken JSON without a grammar. The Python checks still apply when
 a server ignores the schema.
 
-## D29 · A repair may change at most half of a line's characters, and may not add words
+## D29 · A repair may change at most half of a line's characters, and may not add, drop or translate words
 **Decided:** 2026-10-01
 **Choice:** if the repaired line differs from the ASR line in more than 50 % of its characters (character edit
 distance after the scoring normalisation, so punctuation does not count), or has more than max(1, 20 %) more words
 than the ASR line, the ASR line is kept and flagged. (The word rule was added after an internal red-team check showed
-that a short invented clause appended to a long line stays under the 50 % limit.)
+that a short invented clause appended to a long line stays under the 50 % limit.) Two more rules were added after
+the real model was run (D32): a repair may not drop words (only an immediately repeated word may go), and may not
+remove an English loanword that the line contains (a word in the romaniser's lexicon, e.g. कंट्रोल → नियंत्रण).
 **Why:** the proposal asks Stage 4 to "fix syntactic errors caused by background noise drops", i.e. small repairs. A
 change of more than half the line is a rewrite: typically the model translated the line into English in the
 Devanagari field, or "completed" a fragment with words nobody said. 50 % is deliberately loose for short lines (one
@@ -303,3 +305,44 @@ summary sentence is faithful; "summary words really said" measures how often uns
 Conversations of one speaker group share their speech across the 9 conditions, so some Stage-3 transcripts are
 identical; Stage 4 is deterministic, so the evaluation reuses the report for an identical transcript instead of
 recomputing it, and the confidence intervals (bootstrap over conversations) are optimistic.
+
+## D32 · Stage 4 after meeting the real model: what changed, developed on test group 7 only
+**Decided:** 2026-10-02
+**Context:** the prompts and guardrails of D27–D31 were written before any Airavata output had been seen. The first
+real runs showed mechanical failures and quality failures. Mechanical problems were fixed wherever they appeared.
+Changes made because of report *quality* were developed only on test speaker group 7 (9 conversations), and group 7 is
+excluded from every Stage-4 number reported (`scripts/eval_postprocess.py` never uses it; the Stage 1–3 results are
+unchanged).
+**Mechanical fixes:**
+- *Every JSON-schema request failed.* Current llama-server feeds the template's generation prompt (`<|assistant|>\n`)
+  into the grammar, but skips its first token when that token starts with a space. Airavata's tokenizer merges the
+  leading space with `<`, so the grammar lost the `<` and rejected everything ("Failed to initialize samplers"). The
+  client then silently fell back to unconstrained replies. The chat template now opens the assistant turn after a
+  final user message even without `add_generation_prompt`, so the generation prompt is empty; the rendered prompt is
+  byte-identical to the model card format. The fallback now warns, and the real-LLM test asserts the schema was used.
+- *Model file.* `ai4bharat/Airavata` publishes a 16-bit GGUF whose tokenizer equals `tokenizer.model` (same pieces and
+  scores); quantising it directly to Q4_K_M needs no Python conversion step and ~18 GB of disk instead of ~22 GB.
+- *Memory.* llama-server's automatic slots share one 4,096-token cache, and it keeps an extra RAM prompt cache of up to
+  8 GB by default (it was killed for lack of memory while running three requests). `serve_llm.py` now sets the number
+  of slots explicitly (`--parallel`, default 1), each with its own 4,096-token window, and turns that RAM cache off.
+**Quality changes (group 7):** in the first reports the "English" column was mostly the Devanagari line copied, repairs
+replaced English loanwords with Hindi ones (मैम "ma'am" → माँ "mother", शुगर → चीनी, हॉस्पिटल → अस्पताल) and
+deleted words, translations drifted onto neighbouring lines, and the summary described the report instead of the
+conversation. On the true transcript of one conversation the "repairs" added 10 cpWER points. Changes:
+- the English field is named `english` (with `en`, Airavata often answered in Hindi) and the schema allows only
+  printable ASCII in it, so the line cannot be copied; Devanagari in it counts as no translation;
+- the chunk prompt says to copy a line unless a word is clearly broken or repeated, never to use synonyms, never to drop
+  or add words, and to keep English words written in Devanagari;
+- a repair that drops a word (other than an immediate repeat) or removes a loanword is reverted (D29);
+- chunks hold at most 6 lines instead of 12: with 12, translations drifted by one or two lines;
+- when several different lines get the same English sentence (a degenerate reply), those translations are dropped;
+- the synthesis must return at least one key point (it often returned none), and its summary prompt asks for what the
+  speakers talk about, not a description of the report.
+On the group-7 reports the cpWER change from repair was +1.0 to +2.3 points with the first prompts and −0.4 to +10
+points after the first round of changes; with the final version it was −0.5 to 0 points (3 reports), and the English
+column became English. It is still a 7B model at 4 bits: many translations stay wrong, summaries are often generic
+("a conversation between two people"), and the measured effect is reported as it is (RESULTS.md). The development
+reports are not kept in the repository; group 7 is simply not scored.
+**Why:** the freeze rule keeps the reported numbers honest: nothing reported was looked at while the prompts were
+changed. Group 7 was chosen because it is a three-speaker group, the harder case.
+

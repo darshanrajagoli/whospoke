@@ -4,6 +4,7 @@
 """
 import hashlib
 import json
+import re
 import threading
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
@@ -454,6 +455,42 @@ def test_repair_that_adds_words_is_reverted():
     report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
     line = report.cleaned_dialogue[0]
     assert line.text == line.source_text and line.uncertain and "added words" in line.note
+
+
+def test_repair_that_drops_words_is_reverted_but_a_repeated_word_may_go():
+    obj = json.loads(chunk_reply())
+    obj["lines"][1]["text"] = "कार्ड की फोटो कॉपी लाना"          # first word dropped: a short deletion, under 50 %
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    first, second = report.cleaned_dialogue[:2]
+    assert second.text == second.source_text and "dropped words" in second.note
+    assert first.changed and first.text == "आई डी कार्ड गुम हो गया है सर।"    # "सर सर" → "सर" is allowed
+
+
+def test_repair_that_replaces_a_loanword_is_reverted():
+    obj = json.loads(chunk_reply())
+    obj["lines"][1]["text"] = "आधार पत्र की फोटो कॉपी लाना"           # कार्ड ("card") → पत्र: Hindi for an English word
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    line = report.cleaned_dialogue[1]
+    assert line.text == line.source_text and "replaced English words" in line.note
+
+
+def test_same_english_for_different_lines_is_dropped():
+    obj = json.loads(chunk_reply())
+    for x in obj["lines"]:
+        x["en"] = "Speaker_B says he will come to the market"
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    assert all(x.translation == "" and x.uncertain for x in report.cleaned_dialogue)
+    assert report.diagnostics.missing_translations == 3
+
+
+def test_english_field_must_not_be_devanagari():
+    obj = json.loads(chunk_reply())
+    obj["lines"][0]["en"] = obj["lines"][0]["text"]                # the line copied, not translated
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    assert report.cleaned_dialogue[0].translation == "" and report.diagnostics.missing_translations == 1
+    pattern = chunk_schema([{"line_id": 1, "text": "क"}])["properties"]["lines"]["prefixItems"][0]["properties"]
+    assert re.fullmatch(pattern["english"]["pattern"].strip("^$"), "Okay, I'll bring it.")
+    assert not re.fullmatch(pattern["english"]["pattern"].strip("^$"), "ठीक है")
 
 
 def test_long_translation_is_flagged():
