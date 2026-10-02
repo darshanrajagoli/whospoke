@@ -83,7 +83,7 @@ to end, including the Stage-4 LLM if its server is running.
 | `eval_test_indicconformer.csv` | Every system × every test conversation |
 | `eval_test_indicconformer/*.json` | Every system's full transcript for every test conversation |
 | `figures/` | Figures used in RESULTS.md and the slides |
-| `eval_postprocess.csv`, `eval_postprocess/*.json` | Stage 4 on the test transcripts: scores per conversation, and every report |
+| `eval_postprocess.csv`, `eval_postprocess/*.json`, `eval_postprocess_summary*.json` | Stage 4 on the test transcripts: scores per conversation, every report, and the settings of each run |
 | `benchmark_{stages,scaling,llm}.csv` | Speed and memory per stage (from the benchmark notebook) |
 | `demo/` | Example output of one full run (timeline, transcripts, subtitles, Stage-4 report) |
 | `runs/` | Your own runs (git-ignored) |
