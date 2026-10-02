@@ -1,0 +1,225 @@
+{
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Marriage, Vegetables, and a Pile of Things",
+ "executive_summary": "A conversation in Hindi and Hinglish about marriage, vegetables, and a pile of things.",
+ "key_points": [
+  "Hello",
+  "Hello, I'm speaking from Sir's restaurant. Our specialty is Sir's and you save and you save too."
+ ],
+ "keywords": [
+  "नमस्ते",
+  "बोलो",
+  "रेस्टोरेंट",
+  "vegetables",
+  "pile of things"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 10.8,
+   "turns": 2,
+   "share": 0.184
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 37.63,
+   "turns": 4,
+   "share": 0.643
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 10.11,
+   "turns": 5,
+   "share": 0.173
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S3",
+   "start": 0.67,
+   "end": 2.34,
+   "text": "हाँ जी नमस्ते हाँ बोलो",
+   "hinglish": "haan ji namaste haan bolo",
+   "translation": "Hello",
+   "source_text": "हाँ जी नमस्ते हाँ बोलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 2.71,
+   "end": 4.79,
+   "text": "हाँ हेलो हाँ बोलिए",
+   "hinglish": "haan hello haan bolie",
+   "translation": "Hello",
+   "source_text": "हाँ हेलो हाँ बोलिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 5.16,
+   "end": 7.27,
+   "text": "हाँ हाँ जना हलो",
+   "hinglish": "haan haan jana hello",
+   "translation": "Hello",
+   "source_text": "हाँ हाँ जना हलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 8.01,
+   "end": 16.73,
+   "text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप होती है और लेजर होती है वी वी सेव है और यू सेव भी है",
+   "hinglish": "haan ji bolie mere parlour mein three step hote hain four step hoti hai aur lejar hoti hai V V sev hai aur yu sev bhi hai",
+   "translation": "Hello, I'm speaking from Sir's restaurant. Our specialty is Sir's and you save and you save too.",
+   "source_text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप होती है और लेजर होती है वी वी सेव है और यू सेव भी है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 17.25,
+   "end": 22.42,
+   "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+   "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+   "translation": "Hello, I'm speaking from Sir's restaurant. Our specialty is Sir's.",
+   "source_text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S3",
+   "start": 22.67,
+   "end": 25.67,
+   "text": "रामसगर चौरे हाँ ठीक है",
+   "hinglish": "ramasgar chaure haan theek hai",
+   "translation": "Ramasgar Chowar is fine.",
+   "source_text": "रामसगर चौरे हाँ ठीक है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 26.3,
+   "end": 37.76,
+   "text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रूपये मिलेंगे आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो",
+   "hinglish": "aapko bata de agar aap shadi le jaoge to teen sau rupye milenge aapko aur agar aap use trai karva ke ya sabji banva ke le jaoge to aapko sadhe chaar sau rupye ki pad jaegi to",
+   "translation": "You tell if you marry, you will get three hundred rupees. If you try to make or cook vegetables, you will get five hundred rupees.",
+   "source_text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रूपये मिलेंगे आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S3",
+   "start": 38.49,
+   "end": 40.29,
+   "text": "दो चार दिन लगते हैं हाँ",
+   "hinglish": "do chaar din lagte hain haan",
+   "translation": "It takes two days.",
+   "source_text": "दो चार दिन लगते हैं हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 40.62,
+   "end": 48.69,
+   "text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
+   "hinglish": "haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain",
+   "translation": "It is a pile of things you can see. You can see it.",
+   "source_text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S3",
+   "start": 49.44,
+   "end": 50.97,
+   "text": "हाँ हाँ पूछो",
+   "hinglish": "haan haan puchho",
+   "translation": "",
+   "source_text": "हाँ हाँ पूछो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S2",
+   "start": 51.15,
+   "end": 64.08,
+   "text": "तो आप शॉप पे एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है न मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज",
+   "hinglish": "to aap shop pe ek baar aa jae to hum aapko bata den ki kya chahiye kaisa lag raha hai na market hai aapke yahan vaise to hamare yahan sabse zyada matlab hamare shop ka bole to sabse pasandida cheej",
+   "translation": "",
+   "source_text": "तो आप शॉप पे एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है न मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 385.376,
+  "prompt_tokens": 1914,
+  "completion_tokens": 931,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 0,
+  "lines_reverted": 9,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 8,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 5,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "29ba6c074fd11ae88d871b4cf31719850d267c2454a251cbe94b60ee61845757",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-02T03:10:09Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 64.75
+ }
+}
