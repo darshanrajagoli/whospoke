@@ -119,6 +119,8 @@ def stage4_section() -> list[str]:
                       "actions dropped (unsupported)": int(g.actions_dropped.sum()),
                       "synthesis failed": int(g.synthesis_failed.sum()), "schema enforced": bool(g.schema_enforced.all())})
     n_conv = e.id.nunique()
+    summ = RES / "eval_postprocess_summary.json"
+    workers = json.loads(summ.read_text(encoding="utf-8")).get("workers", 1) if summ.exists() else 1
     md = [f"## Stage 4 — LLM post-processing on the test set ({n_conv} conversations)\n",
           "Stage 4 is run on four Stage-3 transcripts of the same conversations, each with one more source of upstream "
           "error. *cpWER before/after*: who-said-what error of the Stage-3 text and of the Stage-4 repaired text "
@@ -126,8 +128,11 @@ def stage4_section() -> list[str]:
           "*Keywords really said*: share of the report's keywords whose content words all occur in the true transcript "
           "or its translation; *summary words really said*: the same for the content words of the summary and key points. "
           "*F1 vs truth report*: word overlap with the report made from the true transcript. RTF = Stage-4 time ÷ audio length. "
-          f"The {n_conv} conversations come from {e.group.nunique()} speaker group(s), and conversations of one group share "
-          "their speech, so these intervals are optimistic.\n",
+          f"The {n_conv} conversations come from {e.group.nunique()} speaker group(s) "
+          f"({', '.join(map(str, sorted(e.group.unique())))}; group 7 was used to develop the prompts and is never "
+          "scored, D32), and conversations of one group share their speech, so these intervals are optimistic."
+          + (f" Reports were made {workers} at a time on one CPU, so RTF includes that sharing; single-request speed "
+             "is in the benchmark notebook (§7)." if workers > 1 else "") + "\n",
           pd.DataFrame(rows).to_markdown(index=False), "",
           "### Stage 4 guardrails (share of transcript lines)\n", pd.DataFrame(guard).to_markdown(index=False), ""]
 
@@ -342,7 +347,6 @@ def main(asr: str = "indicconformer") -> None:
     errs = {s: {k: np.abs(np.array(boot_ci(df[(df.system == s) & (df.n_speakers == k)].der.to_numpy())) - vals[s][k])
                 for k in vals[s]} for s in systems}
     groups = sorted(vals["B-spectral"])
-    k = len(systems)
     x = np.arange(len(groups))
     for i, (s, col, lab) in enumerate(zip(systems, [BLUE, ORANGE, GREY],
                                           ["spectral clustering (ours)", "GMM (ours)", "pyannote 3.1 (reference)"])):

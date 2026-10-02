@@ -130,20 +130,22 @@ and English instruction data. Quantised to 4 bits (Q4_K_M, ~4 GB) and served loc
 (`scripts/serve_llm.py`), with its own chat format and a 4,096-token context window (D27).
 
 **Two calls.**
-1. *Per chunk* of ≤ 12 lines (sized to fit the context window): the model sees numbered lines
-   (`7 | Speaker_B | 00:06-00:20 | <Devanagari>`) and returns, per line number, the line with only obvious ASR mistakes
-   repaired, a faithful English translation and an "uncertain" flag, plus a summary, keywords and explicit actions
-   for that part.
+1. *Per chunk* of ≤ 6 lines (sized to fit the context window): the model sees numbered lines
+   (`7 | Speaker_B | 00:06-00:20 | <Devanagari>`) and returns, per line number, the line copied with only clearly
+   broken or repeated words repaired, its English translation (the schema allows only ASCII there) and an "uncertain"
+   flag, plus a summary, keywords and explicit actions for that part.
 2. *Synthesis*: from the part summaries and the English lines, a title, topic, 2–4 sentence executive summary, key
    points, keywords and action items.
 
-**Guardrails** (D28–D30).
+**Guardrails** (D28–D30, D32).
 - Speaker labels and timestamps are never part of the reply format; they are copied from Stage 3.
 - The reply must follow a JSON schema that lists every line number in order (llama-server enforces it with a
   grammar), and is checked again in Python: unknown line numbers are dropped, missing lines restored and flagged; an
   unusable reply makes the chunk be halved and retried, and one line that still fails keeps its ASR text.
-- A "repair" that changes more than half of a line's characters, or adds words, is reverted (the model rewrote,
-  translated or padded it); an English line much longer than its source is flagged.
+- A "repair" that changes more than half of a line's characters, adds words, drops words (other than an immediate
+  repeat) or replaces an English loanword is reverted (the model rewrote, translated, padded or "Hindi-ised" it); an
+  English line much longer than its source is flagged; one English sentence returned for several different lines is
+  dropped.
 - Every content word of a keyword must occur in the transcript or its translations; action items must name a real
   speaker (or "unspecified"), cite real lines and share a word with them.
 - Long recordings: part summaries are merged in rounds so that the final call always fits the context window.
@@ -151,8 +153,8 @@ and English instruction data. Quantised to 4 bits (Q4_K_M, ~4 GB) and served loc
 Every guardrail's count goes into the report, and each one has a test.
 
 **Metrics** (D31). cpWER of the Stage-3 text vs the repaired text (does the repair help?); share of report keywords
-that were really said; word overlap (F1) of keywords and summary with the report made from the true transcript;
-time per conversation.
+and summary words that were really said; word overlap (F1) of keywords and summary with the report made from the true
+transcript; time per conversation. Test group 7 was used to revise the prompts and is not scored (D32).
 
 ## How errors cascade (proposal objective 5)
 

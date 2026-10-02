@@ -179,6 +179,9 @@ llm_bench'''),
 if ev.exists():   # Stage-4 cost over the evaluated test conversations (scripts/eval_postprocess.py)
     e = pd.read_csv(ev)
     e["tokens_per_s"] = e.completion_tokens / e.llm_s
+    workers = json.loads((ROOT / "results/eval_postprocess_summary.json").read_text()).get("workers", 1)
+    print(f"{e.id.nunique()} test conversations; {workers} report(s) made at a time on the same CPU, so these times "
+          "include that sharing (the table above is one request at a time)")
     display(e.groupby("system")[["duration_s", "n_lines", "llm_s", "rtf", "completion_tokens", "tokens_per_s"]].mean().round(2))'''),
     ]
 

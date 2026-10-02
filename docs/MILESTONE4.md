@@ -36,12 +36,13 @@ An example is [results/demo/report.md](../results/demo/report.md).
 transcript.json (Stage 3)
   │  drop lines with no recognised words; number the rest by their position in transcript.json
   ▼
-chunks of ≤ 12 consecutive lines, sized so that prompt + expected reply fit Airavata's 4,096-token window
+chunks of ≤ 6 consecutive lines, sized so that prompt + expected reply fit Airavata's 4,096-token window
   │
   ▼  call 1 per chunk — "repair, translate, flag; summary, keywords, actions for this part"
   │      input : "7 | Speaker_B | 00:06-00:20 | बाबू माशंकर इंटर कॉलेज के तो बी ए का पेपर ..."
-  │      output: {"lines": [{"id": 7, "text": …, "en": …, "uncertain": false}, …], "summary": …, "keywords": […], "actions": […]}
-  │      (a JSON schema lists every line number in order; llama-server turns it into a grammar)
+  │      output: {"lines": [{"id": 7, "text": …, "english": …, "uncertain": false}, …], "summary": …, "keywords": […], "actions": […]}
+  │      (a JSON schema lists every line number in order and allows only ASCII in "english"; llama-server turns it
+  │       into a grammar)
   ▼
 checks in Python (below) ─► if the reply is unusable: halve the chunk and retry; a single line that still fails keeps its ASR text, flagged
   │
@@ -67,7 +68,11 @@ Devanagari goes through the same romaniser as Stage 3, so both columns agree (D3
 | a line is missing from the reply | restored from Stage 3, flagged | `lines_restored` |
 | the "repair" rewrites or translates the line (> 50 % of characters changed) | reverted to the ASR text, flagged | `lines_reverted` (D29) |
 | the "repair" adds words (more than 1, or 20 % of the line) | reverted to the ASR text, flagged | `lines_reverted` (D29) |
+| the "repair" drops words (other than an immediately repeated word) | reverted to the ASR text, flagged | `lines_reverted` (D29, D32) |
+| the "repair" replaces an English loanword (e.g. कंट्रोल → नियंत्रण; the romaniser's lexicon) | reverted to the ASR text, flagged | `lines_reverted` (D29, D32) |
 | the English is much longer than the line (> 2 × its length + 30 characters) | kept, flagged: it may add things that were not said | `translations_too_long` |
+| the "English" is the Devanagari line copied (only possible without a schema) | treated as no translation | `missing_translations` |
+| the same English sentence (3+ words) is returned for different lines (a degenerate reply) | those translations are dropped, flagged | `missing_translations` (D32) |
 | no English translation | flagged; the English column stays empty | `missing_translations` |
 | the model says a line is too garbled | kept, flagged | `lines_flagged_by_llm` |
 | a keyword with a content word that was never said (common words such as में, है, haan do not count) | dropped | `keywords_dropped` |
@@ -85,11 +90,17 @@ All counters are in `report.json → diagnostics` and in the last section of `re
 They are in `src/whospoke/llm_postprocess.py` (`SYSTEM_PROMPT`, `CHUNK_PROMPT`, `SYNTHESIS_PROMPT`). The system
 prompt is three sentences: you clean up ASR transcripts of Hindi/Hinglish conversations recorded in noisy places;
 the transcript is the only source of truth, never add facts, names, numbers, dates, places, events or actions; reply
-with JSON only. The chunk prompt explains the numbered-line format and asks, per line, for a minimal repair ("a
-repeated word, a broken word, missing punctuation… keep English words that were spoken in English… if you are not
-sure, copy the line unchanged"), a faithful English translation and an `uncertain` flag. The prompts are short and
-concrete because a 7B model follows short instructions better than long rule lists. Temperature is 0, so the same
-transcript always gives the same report.
+with JSON only. The chunk prompt explains the numbered-line format and asks, per line, to copy the line unless a word
+is clearly broken or repeated ("never replace a word with a synonym, never drop or add words; English words written in
+Devanagari stay exactly as they are"), for its English translation ("translate only this line; do not describe it")
+and for an `uncertain` flag. The prompts are short and concrete because a 7B model follows short instructions better
+than long rule lists. Temperature is 0, so the same transcript gives the same report (when several requests share
+the server at once, llama.cpp's batching can change a reply slightly).
+
+The prompts were first written without seeing any model output, then revised once after the first real runs, using
+only test speaker group 7, which is therefore never scored (D32). The first prompts produced an "English" column that
+was mostly the Devanagari copied, and "repairs" that replaced English loanwords with Hindi ones (मैम "ma'am" → माँ
+"mother") or deleted words.
 
 ## Running the model
 
@@ -106,7 +117,14 @@ transcript always gives the same report.
   plus `<pad>`). `--gguf` serves an existing file. `python scripts/serve_llm.py --prepare-only` does all of this
   and exits.
 - **Chat format.** Airavata's own (`<|system|>`, `<|user|>`, `<|assistant|>`, from its model card), passed as
-  `src/whospoke/resources/airavata_chat_template.jinja`.
+  `src/whospoke/resources/airavata_chat_template.jinja`. The template opens the assistant turn after the last user
+  message even when not asked to: current llama-server feeds the template's "generation prompt" into the JSON
+  grammar, and with Airavata's tokenizer a non-empty one makes every schema request fail (D32). The text sent to the
+  model is the same.
+- **Several requests at once.** `--parallel N` serves N requests at once, each with its own 4,096-token window (and
+  ~2 GB more memory each). On a 4-core CPU, 3 at a time gave roughly twice the total throughput of one; each single
+  request is slower. `scripts/eval_postprocess.py --workers N` uses it. llama-server's extra RAM prompt cache (8 GB by
+  default) is turned off.
 
 **On the 6 GB laptop GPU.** The 4-bit weights are about 4 GB, and the cache for a full 4,096-token window adds about
 2 GB (7B Llama-2 architecture: 32 layers × 4,096 dimensions × 2 × 4,096 tokens × 2 bytes). Stages 1–3 peak at 4.5 GB.
