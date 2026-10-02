@@ -1,0 +1,8 @@
+{
+ "model": "ai4bharat/Airavata",
+ "context_tokens": 4096,
+ "conversations": 18,
+ "server_peak_rss_mb": 12850.8,
+ "workers": 3,
+ "wall_s_this_run": 12049.9
+}
