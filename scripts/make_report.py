@@ -10,6 +10,7 @@ Confidence intervals: 95 % bootstrap over conversations (paired where systems ar
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -106,7 +107,7 @@ def stage4_section() -> list[str]:
                      "summary words really said": pct(g.summary_true.mean()),
                      "keyword F1 vs truth report": f"{g.keyword_f1.mean():.2f}",
                      "summary F1 vs truth report": f"{g.summary_f1.mean():.2f}",
-                     "RTF": f"{g.rtf.mean():.2f}", "n": len(g)})
+                     "n": len(g)})
         n = g.n_lines.sum()
         guard.append({"Stage-4 input": s, "lines": int(n), "repaired": pct(g.lines_changed.sum() / n),
                       "repair reverted (over-edited)": pct(g.lines_reverted.sum() / n),
@@ -119,22 +120,35 @@ def stage4_section() -> list[str]:
                       "actions dropped (unsupported)": int(g.actions_dropped.sum()),
                       "synthesis failed": int(g.synthesis_failed.sum()), "schema enforced": bool(g.schema_enforced.all())})
     n_conv = e.id.nunique()
-    summ = RES / "eval_postprocess_summary.json"
-    workers = json.loads(summ.read_text(encoding="utf-8")).get("workers", 1) if summ.exists() else 1
     md = [f"## Stage 4 — LLM post-processing on the test set ({n_conv} conversations)\n",
           "Stage 4 is run on four Stage-3 transcripts of the same conversations, each with one more source of upstream "
           "error. *cpWER before/after*: who-said-what error of the Stage-3 text and of the Stage-4 repaired text "
           "(pooled; Δ = paired mean per conversation, 95 % bootstrap CI, positive = Stage 4 added errors). "
           "*Keywords really said*: share of the report's keywords whose content words all occur in the true transcript "
           "or its translation; *summary words really said*: the same for the content words of the summary and key points. "
-          "*F1 vs truth report*: word overlap with the report made from the true transcript. RTF = Stage-4 time ÷ audio length. "
+          "*F1 vs truth report*: word overlap with the report made from the true transcript. "
           f"The {n_conv} conversations come from {e.group.nunique()} speaker group(s) "
           f"({', '.join(map(str, sorted(e.group.unique())))}; group 7 was used to develop the prompts and is never "
-          "scored, D32), and conversations of one group share their speech, so these intervals are optimistic."
-          + (f" Reports were made {workers} at a time on one CPU, so RTF includes that sharing; single-request speed "
-             "is in the benchmark notebook (§7)." if workers > 1 else "") + "\n",
+          "scored, D32), and conversations of one group share their speech, so these intervals are optimistic.\n",
           pd.DataFrame(rows).to_markdown(index=False), "",
           "### Stage 4 guardrails (share of transcript lines)\n", pd.DataFrame(guard).to_markdown(index=False), ""]
+    # speed is never pooled across machines: one row per evaluation run (eval_postprocess_summary_gXX_..._<machine>.json)
+    speed = []
+    for f in sorted(RES.glob("eval_postprocess_summary_g*.json")):
+        info = json.loads(f.read_text(encoding="utf-8"))
+        groups = [int(x) for x in re.findall(r"g(\d\d)", f.stem)]
+        g = e[e.group.isin(groups)]
+        if g.empty:
+            continue
+        speed.append({"machine": info.get("machine", f.stem), "groups": ", ".join(map(str, groups)),
+                      "server": info.get("server", ""), "reports at once": info.get("workers", 1),
+                      **{f"RTF {s}": f"{g[g.system == s].rtf.mean():.2f}" for s, _ in systems},
+                      "server peak memory": f"{info['server_peak_rss_mb'] / 1024:.1f} GB"
+                      if info.get("server_peak_rss_mb") else "-"})
+    if speed:
+        md += ["### Stage 4 time per run (RTF = Stage-4 time ÷ audio length; not pooled across machines)\n",
+               "With several reports at once, each report's time includes the sharing of the machine; single-request "
+               "speed is in the benchmark notebook (§7).\n", pd.DataFrame(speed).to_markdown(index=False), ""]
 
     fig, axes = plt.subplots(1, 2, figsize=(10, 3.2))
     labels = [lab.replace(", ", ",\n") for _, lab in systems]

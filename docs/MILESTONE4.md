@@ -127,7 +127,7 @@ was mostly the Devanagari copied, and "repairs" that replaced English loanwords 
   default) is turned off.
 - **Memory, measured on CPU.** With one request at a time the server's resident memory reads 10 GB, of which 4 GB is
   the memory-mapped model file (page cache the system can reclaim) and 6 GB its own memory (weights rearranged for
-  the CPU, plus the 2 GB cache). With `--parallel 3` it peaked at 12.9 GB (`results/eval_postprocess_summary.json`).
+  the CPU, plus the 2 GB cache). With `--parallel 3` it peaked at 12.5 GB (`results/eval_postprocess_summary_g00_g01_cloud.json`).
   A 16 GB machine should use `--parallel 1` or `2`.
 
 **On the 6 GB laptop GPU.** The 4-bit weights are about 4 GB, and the cache for a full 4,096-token window adds about

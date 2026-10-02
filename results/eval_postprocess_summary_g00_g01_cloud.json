@@ -1,0 +1,16 @@
+{
+ "model": "ai4bharat/Airavata",
+ "context_tokens": 4096,
+ "conversations": 18,
+ "server_peak_rss_mb": 12850.8,
+ "workers": 3,
+ "wall_s_this_run": 12049.9,
+ "groups": [
+  0,
+  1
+ ],
+ "machine": "cloud container: 4 vCPU Intel Xeon @ 2.10 GHz (no SMT), 15 GB RAM, Linux, no GPU",
+ "gpu_layers": 0,
+ "llama_cpp": "built by scripts/serve_llm.py from the sources bundled in llama-cpp-python 0.3.36 (CPU)",
+ "server": "scripts/serve_llm.py --threads 4 --parallel 3"
+}
