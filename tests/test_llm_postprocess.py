@@ -309,7 +309,7 @@ def test_client_reports_context_errors():
 
 
 def test_client_reports_unreachable_server():
-    llm = OpenAICompatibleLLM("http://127.0.0.1:9/v1", "m", timeout_s=2)
+    llm = OpenAICompatibleLLM("http://127.0.0.1:9/v1", "m", timeout_s=15)   # Windows takes ~2 s to refuse a closed port
     with pytest.raises(LLMConnectionError, match="serve_llm.py"):
         llm.ping()
     with pytest.raises(LLMConnectionError):
