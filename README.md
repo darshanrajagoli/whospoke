@@ -43,7 +43,7 @@ are in [docs/RESULTS.md](docs/RESULTS.md).
 | 1 · Separation | Conv-TasNet: +9.6 dB on overlaps. With the true timeline, splicing separated overlaps cuts heavy-overlap transcript errors from 35.5 % to 27.6 % |
 | 2 · Diarization | Our spectral clustering: DER 20.3 %. GMM: 20.3 %. Off-the-shelf pyannote 3.1: 18.4 %. Ours and pyannote are within error bars |
 | 3 · Transcription | IndicConformer: 21.0 % WER on real-world Vaani audio, vs 38.0 % for IndicWav2Vec. 78 % of English words inside Hindi recognised. 82 % of them spelled correctly in the Hinglish output. Same ranking on a Nirantar Hindi sample (11.0 % vs 30.2 %) |
-| 4 · LLM report | TODO-STAGE4 |
+| 4 · LLM report | Airavata (4-bit, CPU) writes the report, but its "repair" never lowered cpWER: on the full pipeline 34.6 % → 35.6 % (+1.0 points, CI +0.7 to +1.4; 18 conversations). 56 % of its keywords were really said (97 % from the true transcript). Speakers and times pass through unchanged |
 
 ![Order A vs Order B](results/figures/order_A_vs_B.png)
 
@@ -141,7 +141,9 @@ pytest                                                # fast tests; `pytest -m s
   chosen on Vaani instead (D19). The same applies to Nirantar, whose Hindi comes from the IndicVoices collection (D7).
 - At most two people talk at once. Conv-TasNet separates two voices.
 - The Hinglish romaniser is rule-based plus a lexicon. It is readable, not a standard spelling.
-- Stage 4 uses a 7B model at 4 bits on a laptop. TODO-STAGE4-LIMIT (what the test-set evaluation shows it does
-  well and badly). It cannot recover words the ASR never heard. A summary has no single right answer, so it is
-  measured indirectly (D31): against the true transcript, and against the report made from it.
+- Stage 4 uses a 7B model at 4 bits on a laptop. It keeps the speakers and times intact and produces a readable
+  report, but its repairs add errors (about +1 cpWER point) instead of removing them, many English translations are
+  wrong, and its summary repeats the ASR's mistakes. Read the report next to the Stage-3 transcript, not instead of
+  it. It cannot recover words the ASR never heard. A summary has no single right answer, so it is measured
+  indirectly (D31): against the true transcript, and against the report made from it.
 - Hindi and English only. Other Indian languages are a possible extension (D4).

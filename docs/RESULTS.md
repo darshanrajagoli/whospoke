@@ -149,16 +149,44 @@ because when the diarizer gets the speakers wrong around an overlap, the right v
 ## Stage 4 — LLM post-processing
 
 Stage 4 (Airavata 7B, 4-bit, llama.cpp; [MILESTONE4.md](MILESTONE4.md)) was run on the stored Stage-3 transcripts of
-TODO-STAGE4-N test conversations (`scripts/eval_postprocess.py`, D31). It was run on four inputs, each with one more
-source of upstream error than the one before, so the cascade can be followed into the report:
+18 test conversations (speaker groups 0 and 1: all 9 overlap × noise conditions, 2 of the 8 speaker groups;
+`scripts/eval_postprocess.py`, D31). It was run on four inputs, each with one more source of upstream error than the
+one before, so the cascade can be followed into the report:
 
-TODO-STAGE4-TABLE
+| Stage-4 input | cpWER before → after repair | Δ per conversation (95 % CI) | helped / hurt | keywords really said | summary overlap with the truth report |
+|---|---|---|---|---|---|
+| true transcript | 0.0 % → 2.0 % | +2.1 points (+1.5 to +2.6) | 0 / 18 | 97 % | (itself) |
+| ASR on each clean voice | 15.7 % → 16.5 % | +0.8 (+0.5 to +1.2) | 0 / 15 | 65 % | 0.17 |
+| ASR on the noisy mixture | 25.1 % → 25.8 % | +0.7 (+0.4 to +1.1) | 0 / 10 | 59 % | 0.12 |
+| **full pipeline (Order B)** | **34.6 % → 35.6 %** | **+1.0 (+0.7 to +1.4)** | 0 / 16 | 56 % | 0.15 |
 
-**Does the LLM repair the transcript?** TODO-STAGE4-REPAIR
+(The full-pipeline cpWER here, 34.6 %, is lower than the 49.5 % above because these 18 conversations are only two
+speaker groups; the comparison before vs after is paired on the same conversations. Group 7 was used to revise the
+prompts and is not scored, D32.)
 
-**How upstream errors reach the report.** TODO-STAGE4-CASCADE
+**Does the LLM repair the transcript?** No. The repair never lowered cpWER in any of the 18 conversations, for any input, and it raised it in
+10 to 18 of them: by about one point on ASR transcripts and by two points on the true transcript. The model's edits
+are mostly not repairs: it adds a word (`अच्छा` → `अच्छा है`), turns an English word into Hindi (`यस` → `हां`),
+swaps a word for a near-synonym (`कारण` → `क्योंकि`) or changes a gender ending (`मिलेगा` → `मिलेगी`), while
+IndicConformer's words are usually already right (many other edits only add a full stop, which cpWER ignores). The proposal's
+"fix syntactic errors caused by background noise drops" is therefore **not achieved** by this 7B model; the
+guardrails only keep the damage small. For reading, the report's Devanagari column is close to the Stage-3
+transcript, and the Stage-3 transcript itself is the more accurate record.
 
-**The guardrails at work.** TODO-STAGE4-GUARDRAILS
+**How upstream errors reach the report.** Keywords that were really said fall from 97 % (true transcript) to 65 %, 59 % and 56 % as
+recognition errors, noise and overlap, and then diarization errors are added. The report made from a noisy transcript
+has almost nothing in common with the report made from the true one: word overlap (F1) 0.12–0.17 for the summary and
+0.02–0.06 for the keywords. Part of that is a 7B model paraphrasing freely, but it means the report is not a stable summary of the conversation: it follows whatever the
+ASR heard, mistranslations included (the demo's "e-pass", [results/demo/README.md](../results/demo/README.md)). The
+"summary words really said" measure (26–36 %, in [RESULTS_TABLES.md](RESULTS_TABLES.md)) is only 34 % even for the true
+transcript, so it mostly measures paraphrase, not invention, and is not used for conclusions.
+
+**The guardrails at work.** Every reply followed the JSON schema (the server enforced it) and no line was lost or
+moved: speakers and times are exactly Stage 3's. The model tried to change 45–70 % of the lines; 31–53 % of all
+lines were reverted because the "repair" rewrote, shortened or Hindi-ised them, and 14–18 % were changed and kept.
+6–11 % of lines have no English (an empty reply, or the same sentence given for several lines). 55–79
+keywords per input were dropped for not having been said, and 4 action items (all on the full-pipeline input) for not matching their lines. The
+model flags about half of all lines as hard to understand, so the flag carries little information.
 
 ![Stage 4](../results/figures/stage4_cascade.png)
 
@@ -188,7 +216,12 @@ parameters, pyannote segmentation 1.5 M, WeSpeaker ResNet-34 6.6 M, IndicConform
    conversations. There is no room echo, no phone codec and at most two people at once. A real broadcast has no
    ground truth, so it cannot be scored.
 3. **No fine-tuning** (6 GB laptop GPU). All models are used as released.
-4. **Stage 4 can only be as good as its input.** TODO-STAGE4-NEXT
+4. **Stage 4 can only be as good as its input.** It cannot recover words the ASR never heard, and on this test set its
+repair adds errors (+1 cpWER point on the full pipeline) instead of removing them; its English and its summary follow
+the ASR's mistakes. Next steps: use Stage 4 for translation and summary only and leave the Stage-3 text as the
+transcript (the measured repair does not help); try a larger or newer Indic model through `--llm-url` (Airavata is a
+2024 7B model; the pipeline accepts any OpenAI-compatible server) and re-run `scripts/eval_postprocess.py`; and judge
+translation quality with human ratings on a sample, which the automatic measures here cannot do.
 5. **Possible extension: a second test set from Nirantar.** About 325 of Nirantar's 490 Hindi speakers are not our
    test speakers, so conversations could be built from them. We don't, for three reasons:
    - *Not heard by us is not the same as not heard by the model.* IndicConformer was trained on IndicVoices' train
