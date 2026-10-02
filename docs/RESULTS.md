@@ -205,7 +205,13 @@ separates a few seconds of overlap instead of the whole recording, and diarizes 
 roughly linearly with length: 1 min of audio takes 4.3 s and 8 min takes 35 s. Model sizes: Conv-TasNet 5.1 M
 parameters, pyannote segmentation 1.5 M, WeSpeaker ResNet-34 6.6 M, IndicConformer 600 M.
 
-**Stage 4** is measured separately, because it runs in its own server process (benchmark notebook §7): TODO-STAGE4-SPEED
+**Stage 4** is measured separately, because it runs in its own server process (benchmark notebook §7):
+TODO-STAGE4-SPEED-LAPTOP
+On the 4-core cloud CPU used for the evaluation (no GPU), one request at a time, the demo conversation (63 s, 16
+lines) took 281 s of LLM time (4 calls), about 4.5× the audio length; the whole four-stage run on the same machine
+took 323 s, of which Stages 1–3 took 17 s. Generation runs at about 4.8 tokens/s there. The server needs about 6 GB
+of its own memory (plus the 4 GB model file, memory-mapped). Per-run times of the evaluation are in
+[RESULTS_TABLES.md](RESULTS_TABLES.md), by machine.
 
 ## What limits the system (and what we will do next)
 
