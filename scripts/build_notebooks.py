@@ -175,14 +175,21 @@ for run in range(2):
                  "server_rss_mb": round(server.memory_info().rss / 2**20) if server else np.nan})
 llm_bench = pd.DataFrame(rows); llm_bench.to_csv(ROOT / "results/benchmark_llm.csv", index=False)
 llm_bench'''),
-        code(r'''ev = ROOT / "results/eval_postprocess.csv"
+        code(r'''import re
+ev = ROOT / "results/eval_postprocess.csv"
 if ev.exists():   # Stage-4 cost over the evaluated test conversations (scripts/eval_postprocess.py)
     e = pd.read_csv(ev)
     e["tokens_per_s"] = e.completion_tokens / e.llm_s
-    workers = json.loads((ROOT / "results/eval_postprocess_summary.json").read_text()).get("workers", 1)
-    print(f"{e.id.nunique()} test conversations; {workers} report(s) made at a time on the same CPU, so these times "
-          "include that sharing (the table above is one request at a time)")
-    display(e.groupby("system")[["duration_s", "n_lines", "llm_s", "rtf", "completion_tokens", "tokens_per_s"]].mean().round(2))'''),
+    # never pooled across machines: one table per evaluation run (results/eval_postprocess_summary_gXX_..._<machine>.json)
+    for f in sorted((ROOT / "results").glob("eval_postprocess_summary_g*.json")):
+        info = json.loads(f.read_text(encoding="utf-8"))
+        g = e[e.group.isin([int(x) for x in re.findall(r"g(\d\d)", f.stem)])]
+        if g.empty:
+            continue
+        print(f"{info.get('machine', f.stem)} | groups {', '.join(map(str, sorted(g.group.unique())))}, {g.id.nunique()} conversations | "
+              f"{info.get('workers', 1)} report(s) at a time, so these times include that sharing "
+              "(the table above is one request at a time)")
+        display(g.groupby("system")[["duration_s", "n_lines", "llm_s", "rtf", "completion_tokens", "tokens_per_s"]].mean().round(2))'''),
     ]
 
 
