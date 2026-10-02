@@ -125,6 +125,10 @@ was mostly the Devanagari copied, and "repairs" that replaced English loanwords 
   ~2 GB more memory each). On a 4-core CPU, 3 at a time gave roughly twice the total throughput of one; each single
   request is slower. `scripts/eval_postprocess.py --workers N` uses it. llama-server's extra RAM prompt cache (8 GB by
   default) is turned off.
+- **Memory, measured on CPU.** With one request at a time the server's resident memory reads 10 GB, of which 4 GB is
+  the memory-mapped model file (page cache the system can reclaim) and 6 GB its own memory (weights rearranged for
+  the CPU, plus the 2 GB cache). With `--parallel 3` it peaked at 12.9 GB (`results/eval_postprocess_summary.json`).
+  A 16 GB machine should use `--parallel 1` or `2`.
 
 **On the 6 GB laptop GPU.** The 4-bit weights are about 4 GB, and the cache for a full 4,096-token window adds about
 2 GB (7B Llama-2 architecture: 32 layers × 4,096 dimensions × 2 × 4,096 tokens × 2 bytes). Stages 1–3 peak at 4.5 GB.
