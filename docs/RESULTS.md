@@ -171,7 +171,10 @@ the report:
 | **full pipeline (Order B)** | **51.8 % → 52.8 %** | **+0.9 (+0.8 to +1.1)** | 1 / 50 | 60 % | 0.16 |
 
 (The full-pipeline cpWER here, 51.8 %, differs from the 49.5 % above only because group 7 is left out: its cpWER is
-35.6 %, lower than most. The comparison before vs after is paired on the same conversations.)
+35.6 %, lower than most. The comparison before vs after is paired on the same conversations. The reports of groups
+0–1 were made on a CPU, the rest on the GPU. A CPU and a GPU build give slightly different reports for the same
+transcript, so group 0 was also made on the GPU: 94 % of the repaired lines were identical, the repair hurt by about
+the same amount, and no conclusion changed ([results/crosscheck_g00_gpu](../results/crosscheck_g00_gpu/README.md), D33).)
 
 **Does the LLM repair the transcript?** No. Across 63 conversations and four inputs, the repair lowered cpWER once (one
 full-pipeline conversation) and raised it in 42 to 58 of the 63 per input: by about one point on ASR transcripts and by

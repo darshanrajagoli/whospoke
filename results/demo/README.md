@@ -19,8 +19,10 @@ one. The audio is not in the repository; rebuild it with `scripts/build_dataset.
 
 ## How good is the Stage-4 report?
 
-`report.md` was made on a CPU (4 cores) by the 4-bit Airavata: 4 LLM calls, 281 s for 63 s of audio. Read against
-the transcript, it is a rough reading aid, not a trustworthy summary:
+`report.md` was made on a CPU (4 cores) by the 4-bit Airavata: 4 LLM calls, 281 s for 63 s of audio (about 58 s on
+the laptop GPU). The GPU build words the report a little differently, because its arithmetic differs in the last bits
+([results/crosscheck_g00_gpu](../crosscheck_g00_gpu/README.md)). Read against the transcript, it is a rough reading
+aid, not a trustworthy summary:
 
 - **Right:** the lost ID card (line 6), the question about office hours, the CCTV cameras, the application to write.
   The only repair kept is a sensible one (`आप आप` → `आप`); the guardrails reverted two "repairs" that dropped words.

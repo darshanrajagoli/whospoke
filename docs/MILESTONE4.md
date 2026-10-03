@@ -94,8 +94,11 @@ with JSON only. The chunk prompt explains the numbered-line format and asks, per
 is clearly broken or repeated ("never replace a word with a synonym, never drop or add words; English words written in
 Devanagari stay exactly as they are"), for its English translation ("translate only this line; do not describe it")
 and for an `uncertain` flag. The prompts are short and concrete because a 7B model follows short instructions better
-than long rule lists. Temperature is 0, so the same transcript gives the same report (when several requests share
-the server at once, llama.cpp's batching can change a reply slightly).
+than long rule lists. Temperature is 0, so on one machine the same transcript gives the same report (when several
+requests share the server at once, llama.cpp's batching can change a reply slightly). A CPU and a GPU build do not
+give identical reports: their arithmetic differs in the last bits, and greedy decoding can then pick another word
+where two are nearly tied. Re-run on the GPU, 94 % of group 0's repaired lines were identical to the CPU run, the
+summaries were worded differently, and every conclusion held ([results/crosscheck_g00_gpu](../results/crosscheck_g00_gpu/README.md)).
 
 The prompts were first written without seeing any model output, then revised once after the first real runs, using
 only test speaker group 7, which is therefore never scored (D32). The first prompts produced an "English" column that

@@ -1,0 +1,164 @@
+{
+ "title": "Find a Maid",
+ "topic": "Finding a Maid",
+ "executive_summary": "A conversation about finding a maid.",
+ "key_points": [
+  "Part 1: A conversation about finding a maid.",
+  "Part 2: The speaker says to do something.",
+  "Part 3: The speaker says to do something.",
+  "Part 4: The speaker says to do something.",
+  "Part 5: The speaker says to do something."
+ ],
+ "keywords": [
+  "maid",
+  "availability",
+  "prices",
+  "methods"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 51.7,
+   "turns": 4,
+   "share": 0.816
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 11.63,
+   "turns": 3,
+   "share": 0.184
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.78,
+   "end": 2.02,
+   "text": "डुम के मैम हम मैम",
+   "hinglish": "dum ke ma'am hum ma'am",
+   "translation": "We're looking for a maid.",
+   "source_text": "डुम के मैम हम मैम",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 2.41,
+   "end": 3.24,
+   "text": "हलो",
+   "hinglish": "hello",
+   "translation": "Hello.",
+   "source_text": "हलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 3.91,
+   "end": 8.66,
+   "text": "हाँ मैम मिल जाएगा मैम आपको किस समय यहाँ आपका",
+   "hinglish": "haan ma'am mil jaega ma'am aapko kis samay yahan aapka",
+   "translation": "Yes, a maid will be available at what time.",
+   "source_text": "हाँ मैम मिल जाएगा मैम आपको किस बजे यहाँ आपका",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 9.75,
+   "end": 20.63,
+   "text": "मैम चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँ आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+   "hinglish": "ma'am chahiye ye bataie ma'am aapko bahut sare price mein mil jaen aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+   "translation": "Maid should tell you about the prices and the methods of availability.",
+   "source_text": "मैम चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 19.37,
+   "end": 23.72,
+   "text": "कार में क्या खराबी हो गई है अच्छा",
+   "hinglish": "car mein kya kharabi ho gayi hai achha",
+   "translation": "What is the problem with the car?",
+   "source_text": "कार में क्या खराबी हो गई है अच्छा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 24.42,
+   "end": 59.25,
+   "text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ के वर्कर है अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ एवल मिल जाएगा आपको",
+   "hinglish": "ma'am aapko achha hi saman milega aapko milega divan bed milega ek sofa milega daining table milega aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan ke worker hai achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheez eval mil jaega aapko",
+   "translation": "The workers here are skilled in woodworking and will provide you with every piece of furniture you need.",
+   "source_text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ के वर्कर है अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ एवल मिल जाएगा आपको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 57.3,
+   "end": 63.75,
+   "text": "तो आप ऐसा करिए",
+   "hinglish": "to aap aisa karie",
+   "translation": "So you do it",
+   "source_text": "तो आप ऐसा करिए",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  5,
+  6,
+  7
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 35.624,
+  "prompt_tokens": 1600,
+  "completion_tokens": 747,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 3,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 1,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "00c88a5d82b25aa5485946fb113cdbbacd2f0d8ca6abad966fce4b03d8d67087",
+  "source_line_count": 8,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T15:32:48Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 64.18
+ }
+}

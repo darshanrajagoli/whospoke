@@ -9,7 +9,7 @@ groups 0–6) · **Brief:** [docs/team/RED_TEAM_AUDIT_PROMPT.md](../docs/team/RE
 2. **Most serious, High (fixed):** Milestone 1's deliverable, separate `.wav` files per speaker, was not produced by any command; the separator only ran inside the pipeline. `python -m whospoke separate` now writes them (F1).
 3. **Medium (limitation):** Stage 4 never produced a single action item in 252 test reports, although the proposal asks it to "extract actionable information" (F2).
 4. **Medium (fixed):** on Windows, `python -m whospoke postprocess` crashed with `UnicodeEncodeError` when its output was redirected or piped (F5).
-5. **Also fixed in this branch:** Stage 4 was scored only on the easier half of the test set (F3), the docs said the model does not fit the 6 GB GPU when it does (F4), and the Low findings F6, F8–F11. Only F2 (no action items) and F7 (spelling variants) remain, both documented as limitations.
+5. **Also fixed in this branch:** Stage 4 was scored only on the easier half of the test set (F3), the docs said the model does not fit the 6 GB GPU when it does (F4), and the Low findings F6, F8–F12. Only F2 (no action items) and F7 (spelling variants) remain, both documented as limitations.
 
 ## Findings
 
@@ -26,6 +26,7 @@ groups 0–6) · **Brief:** [docs/team/RED_TEAM_AUDIT_PROMPT.md](../docs/team/RE
 | F9 | Low | Measurement | "Server peak memory" on Windows is the working set: the same server setup reads 4.4 GB in one run and 1.0 GB in the next | `docs/RESULTS_TABLES.md:174-175` | Fixed in this branch (explained) |
 | F10 | Low | Reproducibility | With `hf_xet` installed (pinned in requirements), the 13.7 GB model download cannot resume after an interruption | `requirements.txt` (`hf_xet==1.6.0`), `results/LAPTOP_RUN_REPORT.md:64-66` | Fixed in this branch (documented) |
 | F11 | Low | Claims vs evidence | Stage-4 prose quoted the 18-conversation run after the tables moved to 63 conversations | `README.md:46`, `DEVIATIONS.md:22`, `docs/RESULTS.md` Stage-4 section | Fixed in this branch |
+| F12 | Low | Evaluation validity | Stage-4 reports of groups 0–1 were made on a CPU, the rest on a GPU, and "temperature 0, same report" does not hold across the two | `docs/MILESTONE4.md:97`, `DECISIONS.md` D33 | Fixed in this branch (cross-checked; conclusions unchanged) |
 
 ---
 
@@ -218,6 +219,26 @@ The ranking and the size of the gap are unchanged.
 **Suggested fix.**
 - Replace those numbers with the ones in `docs/RESULTS_TABLES.md:153-156`: full pipeline 51.8 → 52.8 %, +0.9 [+0.8, +1.1], helped 1 / hurt 50 of 63.
 - Explain why 51.8 % differs from the 49.5 % headline: the headline includes group 7, whose Stage-3 cpWER is 35.6 %.
+
+### F12 — CPU-made and GPU-made Stage-4 reports in one table · Low
+**Status:** Fixed in this branch: group 0 was re-run on the GPU and compared (`results/crosscheck_g00_gpu/`), and
+MILESTONE4, RESULTS and D33 now say that reports are reproducible on one machine, not across machines.
+
+**What is wrong.** MILESTONE4 said "Temperature is 0, so the same transcript gives the same report". That holds on one
+machine. A CPU and a CUDA build of llama.cpp add up floating-point numbers in a different order, and greedy decoding
+can then pick a different token where two are nearly tied. Groups 0–1 were scored with CPU-made reports and groups 2–6
+with GPU-made ones, so the pooled table mixes the two.
+
+**Evidence.** The 36 group-0 reports made again on the GPU (`results/crosscheck_g00_gpu/compare.py`):
+- 381 of 406 repaired lines (94 %) are identical to the CPU's, and 19 of 36 reports have identical repaired text;
+- the executive summary is identical in only 2 of 36;
+- the repair's cpWER change is +1.2 points on the CPU and +1.4 on the GPU (every input positive on both);
+- helped in 0 vs 2 of 36 reports; 0 action items on both;
+- keywords really said are within 2 points on three inputs, and 88 % vs 70 % on the fourth (9 conversations).
+
+**Suggested fix.** State the limit of the determinism claim, keep the cross-check in the repository, and say in the
+Stage-4 results that groups 0–1 were made on a CPU. Re-running groups 0–1 on the GPU is not needed: no conclusion
+changes.
 
 ---
 

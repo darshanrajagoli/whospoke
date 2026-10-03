@@ -1,0 +1,124 @@
+{
+ "title": "Furniture Search",
+ "topic": "Furniture",
+ "executive_summary": "Speaker A is looking for furniture and asks for the price and type.",
+ "key_points": [
+  "You will get it."
+ ],
+ "keywords": [
+  "आपको क्या चाहिए"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "Speaker_A",
+   "talk_time_s": 60.65,
+   "turns": 5,
+   "share": 1.0
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "Speaker_A",
+   "start": 0.8,
+   "end": 2.15,
+   "text": "नमस्ते मैम हाँ मैम",
+   "hinglish": "namaste ma'am haan ma'am",
+   "translation": "Hello",
+   "source_text": "नमस्ते मैम हाँ मैम",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "Speaker_A",
+   "start": 2.45,
+   "end": 3.1,
+   "text": "हलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "Speaker_A",
+   "start": 3.85,
+   "end": 22.5,
+   "text": "हाँ मैम मिल जाएगा मैम आपको किस बचा चाहिए आपका चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएंगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे कार में क्या ख़राबी हो गई है जैसे",
+   "hinglish": "haan ma'am mil jaega ma'am aapko kis bacha chahiye aapka chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to bataie hum aapko us price mein available karva denge car mein kya kharabi ho gayi hai jaise",
+   "translation": "Yes, I will get it, what do you want me to do? Tell me what price you want me to get it in and what type of furniture.",
+   "source_text": "हाँ मैम मिल जाएगा मैम आपको किस बचा चाहिए आपका चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएंगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे कार में क्या ख़राबी हो गई है जैसे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "Speaker_A",
+   "start": 22.85,
+   "end": 23.6,
+   "text": "अच्छा है",
+   "hinglish": "achha hai",
+   "translation": "Good",
+   "source_text": "अच्छा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "Speaker_A",
+   "start": 24.35,
+   "end": 63.6,
+   "text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ के वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ एगोल मिल जाएगा आपने उसका इंजन देखा अच्छा अच्छा अच्छा तो आप ऐसा करिए",
+   "hinglish": "ma'am aapko achha hi saman milega aapko milega divan bed milega ek sofa milega daining table milega aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan ke worker hain achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheez egol mil jaega aapne uska engine dekha achha achha achha to aap aisa karie",
+   "translation": "Good, I will get it, what do you want me to do? Tell me what price you want me to get it in and what type of furniture.",
+   "source_text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ के वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ एगोल मिल जाएगा आपने उसका इंजन देखा अच्छा अच्छा अच्छा तो आप ऐसा करिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnostics": {
+  "llm_calls": 2,
+  "llm_seconds": 31.142,
+  "prompt_tokens": 1186,
+  "completion_tokens": 630,
+  "chunks": 1,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 4,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 3,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "fa9c250a51b9f73ce69716cf6de7a673b19f8c0afd4d6a4f0a85a08d9d83cac0",
+  "source_line_count": 5,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T15:33:19Z",
+  "pipeline_order": "B",
+  "source_audio_duration_s": 64.18
+ }
+}

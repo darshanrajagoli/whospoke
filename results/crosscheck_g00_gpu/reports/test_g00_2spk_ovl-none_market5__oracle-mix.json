@@ -1,0 +1,144 @@
+{
+ "title": "Car Repairs and Prices",
+ "topic": "Car Repairs and Prices",
+ "executive_summary": "A conversation between two people about car repairs and prices.",
+ "key_points": [
+  "Car Repairs and Prices"
+ ],
+ "keywords": [
+  "car"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 51.63,
+   "turns": 3,
+   "share": 0.804
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 12.56,
+   "turns": 3,
+   "share": 0.196
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.26,
+   "end": 3.01,
+   "text": "हलो याश याश बोलिए",
+   "hinglish": "hello yaash yaash bolie",
+   "translation": "Hello Yash Yash speak",
+   "source_text": "हलो याश याश बोलिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 3.31,
+   "end": 9.56,
+   "text": "नमस्ते मैम हाँ मैम हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+   "hinglish": "namaste ma'am haan ma'am haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+   "translation": "Hello Ma'am Yes Ma'am will come Ma'am what budget do you want how much budget do you want",
+   "source_text": "नमस्ते मैम हाँ मैम हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 10.22,
+   "end": 15.49,
+   "text": "अच्छा अच्छा कहाँ पे अच्छा अच्छा आपकी कार में क्या खराबी हो गई है देखें",
+   "hinglish": "achha achha kahan pe achha achha aapki car mein kya kharabi ho gayi hai dekhen",
+   "translation": "Your car has a problem",
+   "source_text": "अच्छा अच्छा कहाँ पे अच्छा अच्छा आपकी कार में क्या खराबी हो गई है देखें",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 16.11,
+   "end": 26.9,
+   "text": "मैम आपको क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+   "hinglish": "ma'am aapko kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+   "translation": "Ma'am tell us what price you want and what type of car you want",
+   "source_text": "मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 27.1,
+   "end": 31.64,
+   "text": "अच्छा बंद हो गई है ना तो आपने इंजन देखा",
+   "hinglish": "achha band ho gayi hai na to aapne engine dekha",
+   "translation": "",
+   "source_text": "अच्छा बंद हो गई है ना तो आपने इंजन देखा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 31.8,
+   "end": 66.39,
+   "text": "लकड़ी सागवान की लकड़ी शीशम की लकड़ी एक एक चीज अच्छी मिलता है हम लोग के यहाँ पे वर्कर है अच्छे से काम करते हैं और आपको हर एक चीज अवेलेबल मिल जाएगा",
+   "hinglish": "lakdi sagvan ki lakdi shisham ki lakdi ek ek cheej achhi milta hai hum log ke yahan pe worker hai achhe se kaam karte hain aur aapko har ek cheej available mil jaega",
+   "translation": "",
+   "source_text": "लकड़ी सागवान की लकड़ी शीशम की लकड़ी एक एक चीज अच्छी मिलता है हम लोग के यहाँ पे वर्कर है अच्छे से काम करते हैं और आपको हर एक चीज अवेलेबल मिल जाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 2,
+  "llm_seconds": 27.555,
+  "prompt_tokens": 1172,
+  "completion_tokens": 580,
+  "chunks": 1,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 4,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 5,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "89e4624c4ae79405a25b8f68a1451146a3e141a456bf6135c2d9c0c72d59c8de",
+  "source_line_count": 6,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T15:22:04Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 67.03
+ }
+}

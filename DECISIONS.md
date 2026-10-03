@@ -362,7 +362,14 @@ the team laptop (RTX 3050, 6 GB).
   time. Stage 4 still cannot share the card with Stages 1–3 (4.5 GB), so on this laptop it runs as a separate step
   after Stage 3, or on the CPU.
 - *Coverage.* Stage 4 is scored on all 63 test conversations that may be scored (groups 0–6), not only groups 0–3.
-  The cached reports of groups 0–3 are reused (Stage 4 is deterministic at temperature 0); groups 4–6 are new.
+  The cached reports of groups 0–3 are reused (Stage 4 is deterministic at temperature 0 on one machine); groups 4–6
+  are new.
+- *CPU and GPU reports in one table.* Groups 0–1 were reported on the CPU and groups 2–6 on the GPU. The two builds
+  give slightly different reports for the same transcript (different floating-point order, then greedy decoding). So
+  group 0 was made again on the GPU and compared (`results/crosscheck_g00_gpu/`): 94 % of the repaired lines are
+  identical, the repair still adds about one cpWER point (+1.2 on the CPU, +1.4 on the GPU), there are no action
+  items on either, and the free-text summaries differ. The conclusions do not depend on the machine, so the scored
+  reports are kept as they are.
 - *Speed.* Each evaluation run keeps its own summary (`results/eval_postprocess_summary_gXX_..._<machine>.json`), and
   the tables and the benchmark notebook show one row per run. Times from a CPU and a GPU are never averaged together.
 **Why:** groups 0–3 happen to be the easier half of the test set (full-pipeline cpWER 39.1 % vs 59.8 % for groups 4–7),

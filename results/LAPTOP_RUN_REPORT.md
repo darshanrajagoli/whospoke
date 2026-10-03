@@ -61,6 +61,11 @@ only while the system has memory to spare, so the number depends on what else wa
 Over all 63 scorable conversations the full-pipeline cpWER goes from 51.8 % to 52.8 % (+0.9 points, CI +0.8 to +1.1).
 The tables are in `docs/RESULTS_TABLES.md`.
 
+**Cross-check, group 0 on the GPU.** Groups 0–1 were scored with CPU-made reports. To check that the machine does not
+change the conclusions, the 36 group-0 reports were made again on this GPU, in a separate copy of the repository
+(1,867 s). 94 % of the repaired lines are identical to the CPU reports, the repair still adds about one cpWER point,
+there are no action items, and only the free-text summaries differ. Details: `results/crosscheck_g00_gpu/README.md`.
+
 ## Benchmark notebook (`scripts/build_notebooks.py --stage4-only --kernel whospoke`)
 
 Only §7 was executed and spliced in. Every Stage 1–3 cell and output is unchanged (checked cell by cell against the
