@@ -6,31 +6,31 @@ groups 0–6) · **Brief:** [docs/team/RED_TEAM_AUDIT_PROMPT.md](../docs/team/RE
 ## Executive summary
 
 1. **Overall verdict:** the headline results are sound. Every Stage 1–3 number we traced matches the generated tables, there is no test leakage, and the main conclusion (Order B beats Order A) still holds when whole speaker groups are resampled.
-2. **Most serious, High (open):** Milestone 1's deliverable, separate `.wav` files per speaker, is not produced by any command. The separator only runs inside the pipeline (F1).
+2. **Most serious, High (fixed):** Milestone 1's deliverable, separate `.wav` files per speaker, was not produced by any command; the separator only ran inside the pipeline. `python -m whospoke separate` now writes them (F1).
 3. **Medium (limitation):** Stage 4 never produced a single action item in 252 test reports, although the proposal asks it to "extract actionable information" (F2).
-4. **Medium (open):** on Windows, `python -m whospoke postprocess` crashes with `UnicodeEncodeError` when its output is redirected or piped (F5).
-5. **Fixed in this branch:** Stage 4 was scored only on the easier half of the test set (F3), and the docs said the model does not fit the 6 GB GPU when it does (F4). Both are now fixed (D33).
+4. **Medium (fixed):** on Windows, `python -m whospoke postprocess` crashed with `UnicodeEncodeError` when its output was redirected or piped (F5).
+5. **Also fixed in this branch:** Stage 4 was scored only on the easier half of the test set (F3), the docs said the model does not fit the 6 GB GPU when it does (F4), and the Low findings F6, F8–F11. Only F2 (no action items) and F7 (spelling variants) remain, both documented as limitations.
 
 ## Findings
 
 | ID | Severity | Area | One-line summary | File:line | Status |
 |---|---|---|---|---|---|
-| F1 | High | Proposal compliance | No command writes the separated per-speaker `.wav` files that Milestone 1's deliverable asks for | `src/whospoke/__main__.py:86-104`, `src/whospoke/pipeline.py:81-94` | Open |
+| F1 | High | Proposal compliance | No command writes the separated per-speaker `.wav` files that Milestone 1's deliverable asks for | `src/whospoke/__main__.py:86-104`, `src/whospoke/pipeline.py:81-94` | Fixed in this branch |
 | F2 | Medium | Stage 4 | Zero action items kept in all 252 evaluation reports and in the demo report | `results/eval_postprocess.csv` (`actions`), `results/demo/report.md:22-24` | Documented as limitation |
 | F3 | Medium | Evaluation validity | Stage 4 was scored only on groups 0–1 (then 0–3), the easier half of the test set | `docs/RESULTS_TABLES.md:147`, `DECISIONS.md:349` | Fixed in this branch |
 | F4 | Medium | Claims vs evidence | Docs said the 4-bit model "does not fully fit" the 6 GB GPU; measured, it fits | `docs/MILESTONE4.md:135-139`, `README.md:102` | Fixed in this branch |
-| F5 | Medium | Code (Windows) | `whospoke postprocess` / `run` crash with `UnicodeEncodeError` when stdout is a pipe or a file | `src/whospoke/__main__.py:79-80`, `:64-66` | Open |
-| F6 | Low | Statistics | Confidence intervals treat the 72 conversations as independent, but they are 8 speaker groups × 9 conditions | `scripts/make_report.py:47-61` | Open (conclusions unchanged) |
+| F5 | Medium | Code (Windows) | `whospoke postprocess` / `run` crash with `UnicodeEncodeError` when stdout is a pipe or a file | `src/whospoke/__main__.py:79-80`, `:64-66` | Fixed in this branch |
+| F6 | Low | Statistics | Confidence intervals treat the 72 conversations as independent, but they are 8 speaker groups × 9 conditions | `scripts/make_report.py:47-61` | Fixed in this branch (conclusions unchanged) |
 | F7 | Low | Metrics | Text normalisation does not merge chandrabindu/anusvara, nukta or ZWJ/ZWNJ spelling variants | `src/whospoke/metrics.py:84-88` | Documented as limitation |
 | F8 | Low | Repository | The generic `results/eval_postprocess_summary.json` (overwritten by every run) was committed with stale content | `.gitignore:35`, `scripts/eval_postprocess.py:233-235` | Fixed in this branch |
-| F9 | Low | Measurement | "Server peak memory" on Windows is the working set: the same server setup reads 4.4 GB in one run and 1.0 GB in the next | `docs/RESULTS_TABLES.md:174-175` | Open |
-| F10 | Low | Reproducibility | With `hf_xet` installed (pinned in requirements), the 13.7 GB model download cannot resume after an interruption | `requirements.txt` (`hf_xet==1.6.0`), `results/LAPTOP_RUN_REPORT.md:64-66` | Open |
-| F11 | Low | Claims vs evidence | Stage-4 prose quoted the 18-conversation run after the tables moved to 63 conversations | `README.md:46`, `DEVIATIONS.md:22`, `docs/RESULTS.md` Stage-4 section | Open (being updated in this branch) |
+| F9 | Low | Measurement | "Server peak memory" on Windows is the working set: the same server setup reads 4.4 GB in one run and 1.0 GB in the next | `docs/RESULTS_TABLES.md:174-175` | Fixed in this branch (explained) |
+| F10 | Low | Reproducibility | With `hf_xet` installed (pinned in requirements), the 13.7 GB model download cannot resume after an interruption | `requirements.txt` (`hf_xet==1.6.0`), `results/LAPTOP_RUN_REPORT.md:64-66` | Fixed in this branch (documented) |
+| F11 | Low | Claims vs evidence | Stage-4 prose quoted the 18-conversation run after the tables moved to 63 conversations | `README.md:46`, `DEVIATIONS.md:22`, `docs/RESULTS.md` Stage-4 section | Fixed in this branch |
 
 ---
 
 ### F1 — Milestone 1 deliverable: no separated `.wav` output · High
-**Status:** Open.
+**Status:** Fixed in this branch. `python -m whospoke separate file.wav` writes `separated_track_1.wav` and `separated_track_2.wav` (whole recording, one common gain so the tracks never clip), listed in the README, INDEX and DEVIATIONS row 1, tested in `tests/test_cli.py`. On the demo recording (5 dB market noise) the tracks are +2.5 dB SI-SDR better than the mixture.
 
 **What is wrong.** The proposal's Milestone 1 deliverable is "a script that ingests a multi-speaker radio broadcast wave file and outputs separate, isolated .wav channels for each detected concurrent speaker layer". No command in the repository writes separated audio to disk:
 - `Result.save` writes only `timeline.json`, the transcripts, `.srt` and the report (`src/whospoke/pipeline.py:81-94`);
@@ -108,12 +108,12 @@ python -c "import pandas as pd; print(pd.read_csv('results/eval_postprocess.csv'
 | 28 layers on the GPU | 19.6 tokens/s |
 | `--parallel 2` (two requests at once) | 22.7 tokens/s combined, no gain |
 
-Source: `results/LAPTOP_RUN_REPORT.md`, "GPU layers" table. Single-request demo: 56.7 s for 62.6 s of audio (`results/benchmark_llm.csv`).
+Source: `results/LAPTOP_RUN_REPORT.md`, "GPU layers" table. Single-request demo: 57.7 s for 62.6 s of audio (`results/benchmark_llm.csv`).
 
 **Why it mattered.** Following the old advice, someone would have run Stage 4 at about 5× the time on the CPU, or tuned a layer count for nothing. Stages 1–3 (4.5 GB) still cannot share the card with it, and the corrected text says so.
 
 ### F5 — CLI crashes on Windows when output is redirected · Medium
-**Status:** Open (verified).
+**Status:** Fixed in this branch: `main()` switches stdout and stderr to UTF-8. `tests/test_cli.py` runs the CLI with a cp1252 stdout; it failed before the fix and passes after. `postprocess` with `PYTHONIOENCODING=cp1252` and output redirected now exits 0.
 
 **What is wrong.** On Windows, Python writes to a pipe or a file in the ANSI code page (cp1252). `postprocess_transcript` prints the keywords (`src/whospoke/__main__.py:80`), which are usually Devanagari, so the command dies with `UnicodeEncodeError`. The report files are already saved by then (line 77), but the command exits with a traceback and a non-zero code. That breaks any script or log redirect. `run` prints the title and summary (`:66`), which can contain non-cp1252 characters too.
 
@@ -141,7 +141,7 @@ for stream in (sys.stdout, sys.stderr):
 Then add a test that runs `main()` with a non-UTF-8 stdout. The scripts that print Devanagari (`scripts/eval_asr.py`, `scripts/evaluate.py` progress lines) can get the same two lines.
 
 ### F6 — Intervals assume independent conversations · Low
-**Status:** Open. The conclusions are unchanged.
+**Status:** Fixed in this branch. `scripts/make_report.py` now also prints every paired comparison with whole speaker groups resampled (RESULTS_TABLES, "The same comparisons, resampling whole speaker groups"), and RESULTS.md's "How we measured" says so. The conclusions are unchanged; the generated table's intervals (seeded) differ from the hand-computed ones below by at most 0.4 points.
 
 **What is wrong.** `boot_ci` and `paired_diff_ci` (`scripts/make_report.py:47-61`) resample conversations. The 72 test conversations are 8 speaker groups, each rendered under 9 conditions (`scripts/build_dataset.py:59-66`). Conversations of one group share their speech, so they are not independent and the intervals are too narrow. RESULTS_TABLES says so for Stage 4 (line 149), but not for Stages 1–3.
 
@@ -192,7 +192,7 @@ The ranking and the size of the gap are unchanged.
 **Now.** The file is untracked and ignored (`.gitignore:35`). A comment at `scripts/eval_postprocess.py:233-234` says how to keep a run's summary.
 
 ### F9 — "Server peak memory" depends on Windows memory pressure · Low
-**Status:** Open.
+**Status:** Fixed in this branch: the speed table's note in RESULTS_TABLES now explains the measure and that it is comparable only within one machine under similar load; LAPTOP_RUN_REPORT explains the 4.4 vs 1.0 GB.
 
 **What is wrong.** The evaluation samples the server's resident set size, which on Windows is the working set. That includes pages of the memory-mapped model file, and Windows trims them when memory runs short. The same server, on the same laptop with the same command, reads **4.4 GB** for groups 2–3 and **1.0 GB** for groups 4–6 (`docs/RESULTS_TABLES.md:174-175`). On the cloud CPU it is 12.5 GB with three slots.
 
@@ -201,14 +201,14 @@ The ranking and the size of the gap are unchanged.
 **Suggested fix.** A note under the speed table in `scripts/make_report.py`: "server memory is the process's resident set; on Windows it includes memory-mapped model pages and shrinks when the system is short of memory, so compare it only within one machine". Alternatively, record the GPU memory from `nvidia-smi` for GPU runs.
 
 ### F10 — Model download cannot resume · Low
-**Status:** Open.
+**Status:** Fixed in this branch: README "Stage 4 (LLM)" and MILESTONE4 "Model file" tell users on a slow or capped connection to set `HF_HUB_DISABLE_XET=1`.
 
 **What is wrong.** `requirements.txt` pins `hf_xet==1.6.0`. With it installed, `huggingface_hub` downloads `Airavata.gguf` (13.7 GB) through Xet, which does not resume an interrupted download. On the team's capped campus Wi-Fi this lost about 7.4 GB once, plus a 3.8 GB partial file (`results/LAPTOP_RUN_REPORT.md:64-66`). With `HF_HUB_DISABLE_XET=1` the plain-HTTP download resumes.
 
 **Suggested fix.** One sentence in README "Stage 4 (LLM)" and in MILESTONE4 "Model file": "On an unreliable or capped connection, set `HF_HUB_DISABLE_XET=1` first, so the 13.7 GB download can resume".
 
 ### F11 — Stage-4 prose behind the tables · Low
-**Status:** Open (being updated in this branch).
+**Status:** Fixed in this branch: README, DEVIATIONS, RESULTS and MILESTONE4 quote the 63-conversation numbers, and RESULTS explains the 51.8 % vs 49.5 % difference.
 
 **What is wrong.** The generated tables cover 63 conversations, but some prose still quotes the 18-conversation run:
 - `README.md:46`: "34.6 % → 35.6 % (+1.0 points…; 18 conversations)";
@@ -227,7 +227,7 @@ The ranking and the size of the gap are unchanged.
 
 | proposal item | delivered? |
 |---|---|
-| M1 separation (Conv-TasNet or Demucs) | Conv-TasNet; Demucs ruled out with a reason (D8). File output missing: F1 |
+| M1 separation (Conv-TasNet or Demucs) | Conv-TasNet; Demucs ruled out with a reason (D8). File output: `whospoke separate` (F1, fixed) |
 | M2 diarization (pyannote embeddings + spectral clustering or GMM) | both clusterers written from scratch; `timeline.json` in the proposal's `[00:12 - 00:45]: Speaker_A` shape |
 | M3 transcription (IndicASR or IndicWav2Vec; native or Latin script) | both models compared; Devanagari and Hinglish output |
 | M4 (localized LLM; topic, error repair, summary; report with summary, keyword tags, speaker-separated dialogue) | all present; repair measured as not helping (documented); action items: F2 |
@@ -293,7 +293,7 @@ The guardrails held in every report:
 - 103 fast tests pass.
 - Slow tests (`-m slow`) run the real models; the real-LLM test skips when no server is running, so it reads as skipped rather than passed.
 - Every Stage-4 guardrail has a scripted-reply test.
-- Not tested: the CLI's console output (F5) and Order A's leak-suppression thresholds on real audio.
+- The CLI's `separate` command and its console encoding are now tested (`tests/test_cli.py`). Not tested: Order A's leak-suppression thresholds on real audio.
 
 **8. Hinglish romaniser.**
 - Common words come out well: `डॉक्टर` → doctor, `स्कूल` → school, `रिचार्ज` → recharge, `फ़ोन` → phone, `आधार कार्ड` → aadhar card, `मैं ठीक हूँ` → main theek hoon.
@@ -314,13 +314,13 @@ The guardrails held in every report:
    The Vaani ASR test is real field audio. The numbers measure the pipeline under controlled stress; they do not predict broadcast accuracy.
 
 2. **"You changed the professor's order of stages. Isn't that just a different pipeline?"**
-   Both orders are built and run on the same 72 conversations. Order B is better by 6.7 cpWER points: CI +4.0 to +9.4 per conversation, and +3.1 to +10.4 when resampling whole speaker groups. It wins in 50 of 72 conversations and in 7 of 8 groups. Order A is still available (`--order A`).
+   Both orders are built and run on the same 72 conversations. Order B is better by 6.7 cpWER points: CI +4.0 to +9.4 per conversation, and +3.2 to +10.4 when resampling whole speaker groups. It wins in 50 of 72 conversations and in 7 of 8 groups. Order A is still available (`--order A`).
 
 3. **"Where are the separated wav files Milestone 1 asks for?"**
-   Today they are only played in the walkthrough notebook (F1). The fix is a `separate` command; until it lands, the honest answer is that the separator is evaluated (SI-SDRi) but its output is consumed inside the pipeline.
+   `python -m whospoke separate recording.wav` writes one `.wav` per separated voice of the whole recording (F1). Inside the pipeline (Order B) only the overlapping stretches are separated, because that measured better.
 
 4. **"Your diarizer is 'within error bars' of pyannote. Isn't that just saying it's slightly worse?"**
-   Yes. DER is 20.3 % vs 18.4 %, and cpWER differs by 0.8 points, with CI −2.3 to +3.7 resampling groups. Pyannote wins in 5 of 8 groups. Our version is built from scratch as the proposal asks. Its real weakness is the speaker count in 2-speaker conversations: it finds only one speaker 36 % of the time.
+   Yes. DER is 20.3 % vs 18.4 %, and cpWER differs by 0.8 points, with CI −2.3 to +3.6 resampling groups. Pyannote wins in 5 of 8 groups. Our version is built from scratch as the proposal asks. Its real weakness is the speaker count in 2-speaker conversations: it finds only one speaker 36 % of the time.
 
 5. **"IndicConformer was trained on IndicVoices, and your test set is IndicVoices. Isn't the ASR result contaminated?"**
    Partly, which is why the ASR was chosen on Vaani, which neither model saw. IndicConformer wins there too, 21.0 % vs 38.0 %. The end-to-end numbers on IndicVoices flatter the ASR and say so.
