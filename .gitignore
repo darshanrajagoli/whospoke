@@ -33,3 +33,6 @@ docs/explainers/
 
 # Stage-4 evaluation: the summary of the latest run only (each kept run is saved as eval_postprocess_summary_gXX_..._<machine>.json)
 results/eval_postprocess_summary.json
+
+# Demo-video fonts and audio cache (docs/presentation/demo-video/make_demo_video.py)
+docs/presentation/demo-video/.fonts/

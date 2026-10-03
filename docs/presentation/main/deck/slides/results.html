@@ -1,0 +1,82 @@
+<section id="results" data-transition="fade" style="background:#FAF9F5;color:#141413;font-family:'Lora', Georgia, serif;padding:128px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.15;color:#141413">All four milestones work on unseen test audio</h2>
+<p style="font-size:28px;line-height:1.4;color:#5E5D59">72 test conversations (83 min) of real conversational Hindi with real village and market noise. Test speakers were never used for tuning.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:row;gap:64px">
+<div style="flex:1.2;display:flex;flex-direction:column;gap:18px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#141413">Where the errors come from</h3>
+<p style="font-size:24px;line-height:1.35;color:#5E5D59">Error = words misheard or given to the wrong speaker (cpWER)</p>
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;color:#3D3D3A">Speech recogniser alone, one clean voice</p>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center">
+<div style="width:212px;height:40px;background:#6A9BCC;border-radius:6px"></div>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#141413">17.7%</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;color:#3D3D3A">+ noise and overlapping speech</p>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center">
+<div style="width:356px;height:40px;background:#6A9BCC;border-radius:6px"></div>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#141413">29.7%</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;color:#141413"><b>+ automatic who-spoke-when = our full pipeline</b></p>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center">
+<div style="width:594px;height:40px;background:#D97757;border-radius:6px"></div>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#141413">49.5%</p>
+</div>
+</div>
+<hr style="border-top:2px dashed #E8E6DC">
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;color:#3D3D3A">Proposal's order: separate everything first</p>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center">
+<div style="width:670px;height:40px;background:#B0AEA5;border-radius:6px"></div>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#141413">55.8%</p>
+</div>
+</div>
+<p style="font-size:26px;line-height:1.35;color:#141413"><b>Ours: 11% fewer errors</b>, better in 50 of 72 conversations</p>
+</div>
+<div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:20px">
+<div style="display:flex;flex-direction:column;gap:8px;background:#F0EEE6;padding:28px;border-radius:16px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:#5E5D59">M1 Separation</p>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1;color:#141413">+9.6 dB</p>
+<p style="font-size:24px;line-height:1.35;color:#3D3D3A">clearer speech where two voices overlap</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#F0EEE6;padding:28px;border-radius:16px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:#5E5D59">M2 Diarization</p>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1;color:#141413">20.3%</p>
+<p style="font-size:24px;line-height:1.35;color:#3D3D3A">error, built from scratch; standard pyannote: 18.4%</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#F0EEE6;padding:28px;border-radius:16px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:#5E5D59">M3 Transcription</p>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1;color:#141413">21%</p>
+<p style="font-size:24px;line-height:1.35;color:#3D3D3A">word error on real-world Hindi; IndicWav2Vec: 38%</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#F0EEE6;padding:28px;border-radius:16px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:#5E5D59">M4 LLM report</p>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1;color:#141413">~1 min</p>
+<p style="font-size:24px;line-height:1.35;color:#3D3D3A">per minute of audio, fully local on a 6 GB laptop GPU</p>
+</div>
+</div>
+</div>
+<aside>DARSHAN (about 80 seconds)
+
+Thanks, Vismay. Everything here is measured on 72 test conversations, 83 minutes of real conversational Hindi with real village and market noise. None of the test speakers were used for tuning.
+
+Our main measure is strict. A word counts as wrong if it is misheard, or if it is given to the wrong speaker.
+
+[Point to the bars, top to bottom.]
+This chart shows where the errors come from. The speech recogniser alone, on one clean voice: 17.7 percent. Add noise and overlapping speech: 29.7. Add fully automatic who-spoke-when: 49.5.
+
+That last step, telling apart two people who talk over each other in a noisy market, is the largest source of error. Our clustering, both the spectral clustering and the Gaussian mixture the proposal asks for, is written from scratch, and it comes within error bars of pyannote, the standard tool.
+
+[Point to the grey bar.]
+And diarization works best on the original recording, before separation touches it. The proposal's order, separating everything first, gets 55.8. Ours makes 11 percent fewer errors, and wins in 50 of the 72 conversations.
+
+[Point to the cards.]
+One number per milestone: separation adds 9.6 dB where voices overlap, IndicConformer beats IndicWav2Vec 21 to 38 percent, and the report runs locally on a laptop GPU.
+
+[NEXT SLIDE.]</aside>
+</section>
