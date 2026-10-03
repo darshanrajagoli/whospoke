@@ -5,6 +5,7 @@ Examples::
     python -m whospoke run recording.wav
     python -m whospoke run recording.wav --postprocess
     python -m whospoke postprocess results/demo/transcript.json
+    python -m whospoke separate recording.wav
 
 ``--postprocess`` and ``postprocess`` need the local Stage-4 LLM server: ``python scripts/serve_llm.py``.
 """
@@ -12,9 +13,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 
-from .audio import load
+import numpy as np
+
+from .audio import load, save
 from .llm_postprocess import (DEFAULT_BASE_URL, DEFAULT_CONTEXT, DEFAULT_MODEL, DEFAULT_TIMEOUT, LLMConnectionError,
                              PostProcessor)
 
@@ -50,6 +54,27 @@ def build_postprocessor(args: argparse.Namespace) -> PostProcessor:
                          timeout_s=args.llm_timeout, json_schema=not args.llm_no_schema)
 
 
+def default_out(audio: str) -> Path:
+    return Path(__file__).resolve().parents[2] / "results" / "runs" / Path(audio).stem
+
+
+def separate_audio(args: argparse.Namespace) -> None:
+    """Stage 1 on its own (the proposal's Milestone-1 deliverable): one .wav per separated voice.
+
+    The whole recording is separated, as in Order A. The tracks are not labelled with speakers: that is Stage 2's job.
+    """
+    from .separation import Separator
+
+    tracks = Separator(args.separator).separate(load(args.audio))
+    peak = float(np.abs(tracks).max()) if tracks.size else 0.0
+    if peak > 0.99:                   # the gain fit can exceed full scale; one factor keeps the tracks' balance
+        tracks = tracks * (0.99 / peak)
+    out = Path(args.out) if args.out else default_out(args.audio)
+    for k, track in enumerate(tracks, 1):
+        save(out / f"separated_track_{k}.wav", track)
+        print(f"saved {out / f'separated_track_{k}.wav'}")
+
+
 def run_audio(args: argparse.Namespace) -> None:
     from .pipeline import Pipeline
 
@@ -59,7 +84,7 @@ def run_audio(args: argparse.Namespace) -> None:
     pipe = Pipeline(args.order, diarizer=tuned_diarizer(args.order, args.clustering), asr=args.asr,
                     postprocessor=post)
     result = pipe.run(load(args.audio), n_speakers=args.speakers)
-    out = Path(args.out) if args.out else Path(__file__).resolve().parents[2] / "results" / "runs" / Path(args.audio).stem
+    out = Path(args.out) if args.out else default_out(args.audio)
     result.save(out)
     print(result.transcript(hinglish=True))
     if result.report is not None:
@@ -84,6 +109,10 @@ def postprocess_transcript(args: argparse.Namespace) -> None:
 
 
 def main() -> None:
+    # Devanagari output: a Windows console redirected to a file or pipe would otherwise use cp1252 and crash
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(prog="whospoke", description="Who spoke what and when — Hindi/Hinglish audio.")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
@@ -103,12 +132,19 @@ def main() -> None:
     post.add_argument("--out", default=None, help="output folder (default: the transcript's folder)")
     add_llm_args(post)
 
+    sep = sub.add_parser("separate", help="Stage 1 only: write one .wav per separated voice")
+    sep.add_argument("audio")
+    sep.add_argument("--out", default=None, help="output folder (default: results/runs/<file name>)")
+    sep.add_argument("--separator", choices=["convtasnet", "convtasnet-clean", "sepformer"], default="convtasnet")
+
     args = ap.parse_args()
     try:
         if args.cmd == "run":
             run_audio(args)
         elif args.cmd == "postprocess":
             postprocess_transcript(args)
+        elif args.cmd == "separate":
+            separate_audio(args)
     except LLMConnectionError as exc:
         raise SystemExit(f"error: {exc}") from None
 

@@ -1,6 +1,7 @@
-# Stage-4 laptop run — test groups 2–3 and the benchmark notebook's Stage-4 section
+# Stage-4 laptop run — test groups 2–6 and the benchmark notebook's Stage-4 section
 
-Run on 3 October 2026 on the team laptop, branch `claude/stage4-eval-g02-g03`.
+Run on 3 October 2026 on the team laptop, branch `claude/stage4-eval-g02-g03`. Groups 2–3 were the planned run;
+groups 4–6 were added the same evening, so that Stage 4 is scored on every test group except 7 (D33).
 
 ## Machine and software
 
@@ -49,13 +50,23 @@ cpWER before → after the Stage-4 repair, groups 2–3 only (pooled):
 | ASR on the noisy mixture | 36.7 % → 37.8 % |
 | full pipeline (Order B) | 44.0 % → 45.2 % |
 
-The same as on groups 0–1: the repair adds about one point. The 36-conversation tables are in `docs/RESULTS_TABLES.md`.
+The same as on groups 0–1: the repair adds about one point.
+
+**Groups 4–6** (`eval_postprocess.py --workers 1`, every scorable group; groups 0–3 reused from the cache): 108 new
+reports (27 conversations × 4 inputs) in 5,767 s (96 min), no errors, 21–22 tokens/s, RTF 0.58–0.95. Saved in
+`results/eval_postprocess_summary_g04_g05_g06_laptop.json`. Its server peak memory reads 1.0 GB, against 4.4 GB for
+the groups 2–3 run with the same settings: on Windows the resident memory includes the memory-mapped model file
+only while the system has memory to spare, so the number depends on what else was running.
+
+Over all 63 scorable conversations the full-pipeline cpWER goes from 51.8 % to 52.8 % (+0.9 points, CI +0.8 to +1.1).
+The tables are in `docs/RESULTS_TABLES.md`.
 
 ## Benchmark notebook (`scripts/build_notebooks.py --stage4-only --kernel whospoke`)
 
 Only §7 was executed and spliced in. Every Stage 1–3 cell and output is unchanged (checked cell by cell against the
 previous commit); the only other change is the summary sentence that now lists `results/benchmark_llm.csv`.
-The demo conversation (63 s, 16 lines) takes 56.7 s of Stage-4 time (RTF 0.91, 4 LLM calls, 22 tokens/s).
+The demo conversation (63 s, 16 lines) takes 57.7 s of Stage-4 time (RTF 0.92, 4 LLM calls, 22 tokens/s). §7 was run
+again after groups 4–6, so that its speed tables list all three evaluation runs; Stage 1–3 outputs are still unchanged.
 The evaluation-speed tables are printed per machine (cloud CPU groups 0–1, laptop GPU groups 2–3), never pooled.
 
 ## What went wrong
@@ -71,7 +82,7 @@ The evaluation-speed tables are printed per machine (cloud CPU groups 0–1, lap
 - **A lost log.** The download script's log stopped updating after 16:55 because another process held the log file
   open. The download, the SHA-256 check and the quantisation still completed; the script writes its "done" marker
   only after the hash matches.
-- **Low memory.** The laptop had under 1 GB of RAM free during the evaluation (the server plus a browser). The run
-  itself was not affected.
+- **Low memory.** The laptop had under 1 GB of RAM free during the evaluation (the server plus a browser). The runs
+  were not affected, but it makes the server's measured peak memory vary between runs (above).
 - **Sleep setting.** The brief said to set standby back to 30 minutes at the end. It was already "never" before the
   run started, so it was left as it was.

@@ -230,6 +230,8 @@ def main() -> None:
     summary = {"model": args.llm_model, "context_tokens": args.llm_context, "conversations": int(df.id.nunique()),
                "server_peak_rss_mb": rss.stop() or None, "workers": args.workers,
                "wall_s_this_run": round(time.perf_counter() - t_start, 1)}
+    # this run only (git-ignored, overwritten by the next run): to keep it, save it as
+    # eval_postprocess_summary_gXX_..._<machine>.json with "groups", "machine" and "server" added (D33)
     (RES / "eval_postprocess_summary.json").write_text(json.dumps(summary, indent=1), encoding="utf-8")
 
     print(f"\n{df.id.nunique()} conversations  ({out})")

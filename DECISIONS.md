@@ -247,7 +247,7 @@ the gain is small, because diarization mistakes (words credited to the wrong spe
 OpenHathi, the proposal's two examples), quantised to 4 bits (Q4_K_M) and served by llama.cpp's `llama-server`
 (`scripts/serve_llm.py`), which can build both the server and the model file from PyPI and Hugging Face alone.
 **Why:** the proposal asks for a *localized* foundational LLM. The 7B model in 16-bit (~14 GB) does not fit the 6 GB
-laptop GPU next to Stages 1–3; at 4 bits (~4 GB) it runs on a CPU, or partly on the GPU. A separate server process
+laptop GPU next to Stages 1–3; at 4 bits (~4 GB) it runs on a CPU, or on the GPU on its own (measured in D33). A separate server process
 keeps the 7B model's memory and dependencies out of the Stage 1–3 Python environment, and any other local model can be
 swapped in with `--llm-url`.
 
@@ -345,4 +345,28 @@ column became English. It is still a 7B model at 4 bits: many translations stay 
 reports are not kept in the repository; group 7 is simply not scored.
 **Why:** the freeze rule keeps the reported numbers honest: nothing reported was looked at while the prompts were
 changed. Group 7 was chosen because it is a three-speaker group, the harder case.
+
+## D33 · Stage 4 on the laptop GPU, scored on every test group except 7, speed never pooled
+**Decided:** 2026-10-03
+**Context:** groups 0–1 were evaluated on a 4-core cloud CPU (no GPU), three reports at a time. The rest was run on
+the team laptop (RTX 3050, 6 GB).
+**Choice:**
+- *Server.* A prebuilt llama.cpp release (b11312, `win-cuda-12.4`) is used on the laptop through
+  `serve_llm.py --llama-bin`. It is the same llama.cpp commit (`0c1e570`) that `serve_llm.py` builds from
+  `llama-cpp-python` 0.3.36, so the model file and the server behave as in the cloud run; the laptop has no CMake,
+  C++ compiler or CUDA toolkit to build it. The model file is quantised by `serve_llm.py --prepare-only` from the
+  16-bit GGUF after checking its SHA-256 against the Hugging Face hash.
+- *GPU layers.* All layers on the GPU (`--gpu-layers 99`): with one 4,096-token slot the server uses 5.9 of the
+  6.0 GB, and generates 23 tokens/s, against 19.6 tokens/s with 28 layers. A second slot (`--parallel 2`) gave no extra
+  throughput (22.7 tokens/s for both together): its 2 GB cache does not fit next to the model. So one request at a
+  time. Stage 4 still cannot share the card with Stages 1–3 (4.5 GB), so on this laptop it runs as a separate step
+  after Stage 3, or on the CPU.
+- *Coverage.* Stage 4 is scored on all 63 test conversations that may be scored (groups 0–6), not only groups 0–3.
+  The cached reports of groups 0–3 are reused (Stage 4 is deterministic at temperature 0); groups 4–6 are new.
+- *Speed.* Each evaluation run keeps its own summary (`results/eval_postprocess_summary_gXX_..._<machine>.json`), and
+  the tables and the benchmark notebook show one row per run. Times from a CPU and a GPU are never averaged together.
+**Why:** groups 0–3 happen to be the easier half of the test set (full-pipeline cpWER 39.1 % vs 59.8 % for groups 4–7),
+so results from them alone would not describe the test set. On the GPU a report takes about 50 s instead of
+several minutes, so the remaining groups cost about 1.5 hours. Group 7 stays excluded (D32). Averaging the speed of two
+very different machines would describe neither.
 

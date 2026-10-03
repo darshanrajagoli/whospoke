@@ -23,7 +23,7 @@ An example is [results/demo/report.md](../results/demo/report.md).
 |---|---|
 | title, topic, executive summary, key points | the LLM, from the checked translations and part summaries |
 | keywords | the LLM, **kept only if every content word occurs** in the transcript or its line translations |
-| action items (who, what, which line) | the LLM; **kept only if** the owner is a real speaker (or "unspecified"), the cited lines exist and share a word with the action |
+| action items (who, what, which line) | the LLM; **kept only if** the owner is a real speaker (or "unspecified"), the cited lines exist and share a word with the action. In practice Airavata returns none, even for plain requests (empty in all 252 evaluation reports; RESULTS.md) |
 | speakers: talk time and number of turns | computed from the Stage-2 timeline (no LLM) |
 | dialogue: time, speaker, repaired Devanagari, Hinglish, English | speaker and time from Stage 2 unchanged; Devanagari repaired and translated by the LLM; Hinglish by the Stage-3 romaniser |
 | what Stage 4 changed | every line where the repaired text differs from the ASR text, side by side |
@@ -112,7 +112,8 @@ was mostly the Devanagari copied, and "repairs" that replaced English loanwords 
 - **Model file.** `models/airavata-q4_k_m.gguf` (~4 GB). On the first run, the script downloads the 16-bit GGUF
   that `ai4bharat/Airavata` publishes on Hugging Face (`Airavata.gguf`, 13.7 GB) and quantises it to 4 bits (Q4_K_M)
   with llama.cpp's `llama-quantize`, then deletes the 16-bit file (~18 GB of free disk needed once). The repository
-  is gated: click "Agree" on its page, then set `HF_TOKEN` or run `huggingface-cli login`. No Python conversion step
+  is gated: click "Agree" on its page, then set `HF_TOKEN` or run `huggingface-cli login`. On a slow or capped
+  connection set `HF_HUB_DISABLE_XET=1`, so that an interrupted download resumes instead of starting again. No Python conversion step
   is needed: the GGUF's tokenizer is the same as the repository's `tokenizer.model` (same 48,064 pieces and scores,
   plus `<pad>`). `--gguf` serves an existing file. `python scripts/serve_llm.py --prepare-only` does all of this
   and exits.
@@ -123,22 +124,31 @@ was mostly the Devanagari copied, and "repairs" that replaced English loanwords 
   model is the same.
 - **Several requests at once.** `--parallel N` serves N requests at once, each with its own 4,096-token window (and
   ~2 GB more memory each). On a 4-core CPU, 3 at a time gave roughly twice the total throughput of one; each single
-  request is slower. `scripts/eval_postprocess.py --workers N` uses it. llama-server's extra RAM prompt cache (8 GB by
-  default) is turned off.
+  request is slower. On the 6 GB GPU it gave nothing (below). `scripts/eval_postprocess.py --workers N` uses it.
+  llama-server's extra RAM prompt cache (8 GB by default) is turned off.
 - **Memory, measured on CPU.** With one request at a time the server's resident memory reads 10 GB, of which 4 GB is
   the memory-mapped model file (page cache the system can reclaim) and 6 GB its own memory (weights rearranged for
   the CPU, plus the 2 GB cache). With `--parallel 3` it peaked at 12.5 GB (`results/eval_postprocess_summary_g00_g01_cloud.json`).
   A 16 GB machine should use `--parallel 1` or `2`.
+- **Memory, measured on the GPU.** With every layer on the GPU the server holds about 1 GB of RAM while it generates
+  (4.4 GB at its peak, while the memory-mapped model file is copied to the GPU).
 
-**On the 6 GB laptop GPU.** The 4-bit weights are about 4 GB, and the cache for a full 4,096-token window adds about
-2 GB (7B Llama-2 architecture: 32 layers × 4,096 dimensions × 2 × 4,096 tokens × 2 bytes). Stages 1–3 peak at 4.5 GB.
-So the model cannot share the card with Stages 1–3, and does not fully fit on it alone. Two ways to run it:
-- keep it on the CPU (the default, `--gpu-layers 0`): slower, nothing to tune;
+**On the 6 GB laptop GPU (RTX 3050), measured.** The 4-bit weights are about 4 GB, and the cache for a full
+4,096-token window adds about 2 GB (7B Llama-2 architecture: 32 layers × 4,096 dimensions × 2 × 4,096 tokens × 2
+bytes). With one request at a time **the whole model fits**: `serve_llm.py --gpu-layers 99` uses 5.9 of the 6.0 GB and
+generates 23 tokens/s (19.6 with 28 layers; 4.8 on the 4-core cloud CPU). A second request slot does not fit next to it
+and gave no extra throughput, so keep `--parallel 1` on this card (D33). Stages 1–3 peak at 4.5 GB, so the model cannot
+share the card with them. Two ways to run it:
 - run Stage 4 as a separate step after Stage 3 has released the GPU (`run` without `--postprocess`, then
-  `whospoke postprocess`), with part of the model on the GPU, e.g. `serve_llm.py --gpu-layers 20`; raise the number
-  until llama-server reports that it runs out of GPU memory, then step back.
+  `whospoke postprocess`), with `serve_llm.py --gpu-layers 99`: about as fast as real time (the demo's 63 s
+  conversation takes 58 s). On a card with less free memory, lower `--gpu-layers` until llama-server loads;
+- keep it on the CPU (the default, `--gpu-layers 0`) when the GPU is busy: nothing to tune, about 5× slower (the
+  same demo took 281 s on a 4-core CPU).
 
-Speed and memory measured on CPU are in RESULTS.md and [notebooks/01_benchmark.ipynb](../notebooks/01_benchmark.ipynb) §7.
+On Windows without a compiler, a llama.cpp release works: the evaluation used release b11312 (`win-cuda-12.4`, plus
+its CUDA runtime zip), the same llama.cpp commit that `serve_llm.py` builds, via `serve_llm.py --llama-bin <folder>`.
+
+Speed and memory on both machines are in RESULTS.md and [notebooks/01_benchmark.ipynb](../notebooks/01_benchmark.ipynb) §7.
 
 Any other OpenAI-compatible server also works (`--llm-url`, `--llm-model`; e.g. OpenHathi, the proposal's other
 example, or a larger model). A server that does not support JSON schemas is detected automatically; the Python checks
@@ -163,6 +173,13 @@ measures whether the repair lowers or raises the who-said-what error (cpWER befo
 keywords and summary words were really said, how close the report is to the one made from the true transcript, what each guardrail did,
 and how long it takes. `scripts/make_report.py` turns that into the Stage-4 tables in
 [RESULTS_TABLES.md](RESULTS_TABLES.md) and `results/figures/stage4_cascade.png` (D31).
+
+**Result, on all 63 test conversations that may be scored (groups 0–6, D33):** the repair does not fix the
+transcript. It raises cpWER by about one point on every ASR input (full pipeline 51.8 % → 52.8 %, +0.9 points,
+CI +0.8 to +1.1; lower in 1 conversation, higher in 50), and by two points on the true transcript. 60 % of the
+keywords from the full pipeline were really said (99 % from the true transcript), and the summary drifts far from
+the one made from the true transcript (word F1 0.14–0.18). No action items are extracted. So the Stage-3
+transcript stays the record, and the report is a reading aid next to it ([RESULTS.md](RESULTS.md#stage-4--llm-post-processing)).
 
 ## Files
 

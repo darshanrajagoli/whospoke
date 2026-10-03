@@ -272,7 +272,9 @@ print("cpWER (words wrong or given to the wrong speaker):", round(cp_error(ref_t
 result.save(ROOT / "results/runs/walkthrough"); print("saved to results/runs/walkthrough")'''),
         md("## 6 · Stage 4: the report (LLM clean-up, translation, summary, keywords)\n\n"
            "Stage 4 needs the local Airavata server (`python scripts/serve_llm.py`, see `docs/MILESTONE4.md`). If it is "
-           "not running, this cell shows the report made for the demo conversation in `results/demo/` instead."),
+           "not running, this cell shows the report made for the demo conversation in `results/demo/` instead. On a 6 GB "
+           "GPU, start the server on the CPU (the default) for this notebook: Stages 1–3 above keep their models on the "
+           "GPU, and the whole LLM (`--gpu-layers 99`) only fits on the card on its own."),
         code(r'''from IPython.display import Markdown
 from whospoke.llm_postprocess import LLMConnectionError, OpenAICompatibleLLM, PostProcessor
 try:

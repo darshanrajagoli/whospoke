@@ -9,7 +9,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | 1 | [README.md](README.md) | What the project does, the headline numbers, how to install and run it |
 | 2 | [docs/RESULTS.md](docs/RESULTS.md) | Every result, explained in plain English, with the evidence for each design choice |
 | 3 | [DEVIATIONS.md](DEVIATIONS.md) | Every place we differ from the professor's proposal, and why |
-| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D32), recorded as it was made |
+| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D33), recorded as it was made |
 | 5 | [docs/PIPELINE.md](docs/PIPELINE.md) | Technical reference: how each stage works, stage by stage |
 | 6 | [docs/MILESTONE4.md](docs/MILESTONE4.md) | Stage 4 in full: running the LLM, the report, the prompts, the guardrails, settings |
 | 7 | [docs/RESULTS_TABLES.md](docs/RESULTS_TABLES.md) | Raw result tables with 95 % confidence intervals (generated, not hand-written) |
@@ -23,6 +23,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | [docs/team/WHATSAPP_MESSAGE.md](docs/team/WHATSAPP_MESSAGE.md) | The message that split the mid-sem review tasks (sent; kept as written) |
 | [docs/team/RED_TEAM_AUDIT_PROMPT.md](docs/team/RED_TEAM_AUDIT_PROMPT.md) | Prompt for the independent audit (output → `audit/RED_TEAM_AUDIT.md`) |
 | [docs/team/EMAIL_TO_PROFESSOR.md](docs/team/EMAIL_TO_PROFESSOR.md) | Draft email flagging the two design decisions before the review |
+| [audit/RED_TEAM_AUDIT.md](audit/RED_TEAM_AUDIT.md) | The red-team audit: every finding with its evidence and status, and the 10 hardest examiner questions |
 | [notebooks/02_walkthrough.ipynb](notebooks/02_walkthrough.ipynb) | Run all four stages on one conversation, in Colab or locally |
 | [notebooks/01_benchmark.ipynb](notebooks/01_benchmark.ipynb) | Speed, memory and model-size benchmark of every stage (the proposal's "benchmarking notebook") |
 
@@ -31,7 +32,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | Module | Stage | What it does |
 |---|---|---|
 | `pipeline.py` | all | Runs the stages in Order A or Order B (then Stage 4, if given) and writes the outputs |
-| `__main__.py` | all | Command line: `python -m whospoke run audio.wav [--postprocess]`, `python -m whospoke postprocess transcript.json` |
+| `__main__.py` | all | Command line: `python -m whospoke run audio.wav [--postprocess]`, `python -m whospoke postprocess transcript.json`, `python -m whospoke separate audio.wav` (Stage 1 alone: one `.wav` per voice) |
 | `separation.py` | 1 | Conv-TasNet / SepFormer separation with windowing, gain fit and stitching |
 | `vad.py` | 2 | Where is anyone speaking? Where are two people speaking? (pyannote segmentation) |
 | `diarization.py` | 2 | Voice fingerprints → clusters → a who-spoke-when timeline (both orders) |
@@ -70,7 +71,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 ## Tests — `tests/`
 
 `pytest` runs the fast suite (metrics, simulation, clustering, timeline logic, separation stitching, romaniser, and
-every Stage-4 guardrail with scripted LLM replies and a fake server); `pytest -m slow` also runs the real models end
+every Stage-4 guardrail with scripted LLM replies and a fake server, and the command line); `pytest -m slow` also runs the real models end
 to end, including the Stage-4 LLM if its server is running.
 
 ## Results — `results/`
@@ -83,7 +84,8 @@ to end, including the Stage-4 LLM if its server is running.
 | `eval_test_indicconformer.csv` | Every system × every test conversation |
 | `eval_test_indicconformer/*.json` | Every system's full transcript for every test conversation |
 | `figures/` | Figures used in RESULTS.md and the slides |
-| `eval_postprocess.csv`, `eval_postprocess/*.json`, `eval_postprocess_summary*.json` | Stage 4 on the test transcripts: scores per conversation, every report, and the settings of each run |
+| `eval_postprocess.csv`, `eval_postprocess/*.json`, `eval_postprocess_summary_g*.json` | Stage 4 on the 63 test conversations: scores per conversation, every report, and the settings, machine and cost of each run |
+| `LAPTOP_RUN_REPORT.md` | How the Stage-4 runs on the laptop GPU went: GPU layers, speed, what went wrong |
 | `benchmark_{stages,scaling,llm}.csv` | Speed and memory per stage (from the benchmark notebook) |
 | `demo/` | Example output of one full run (timeline, transcripts, subtitles, Stage-4 report) |
 | `runs/` | Your own runs (git-ignored) |

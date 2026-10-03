@@ -43,7 +43,7 @@ are in [docs/RESULTS.md](docs/RESULTS.md).
 | 1 · Separation | Conv-TasNet: +9.6 dB on overlaps. With the true timeline, splicing separated overlaps cuts heavy-overlap transcript errors from 35.5 % to 27.6 % |
 | 2 · Diarization | Our spectral clustering: DER 20.3 %. GMM: 20.3 %. Off-the-shelf pyannote 3.1: 18.4 %. Ours and pyannote are within error bars |
 | 3 · Transcription | IndicConformer: 21.0 % WER on real-world Vaani audio, vs 38.0 % for IndicWav2Vec. 78 % of English words inside Hindi recognised. 82 % of them spelled correctly in the Hinglish output. Same ranking on a Nirantar Hindi sample (11.0 % vs 30.2 %) |
-| 4 · LLM report | Airavata (4-bit, CPU) writes the report, but its "repair" never lowered cpWER: on the full pipeline 34.6 % → 35.6 % (+1.0 points, CI +0.7 to +1.4; 18 conversations). 56 % of its keywords were really said (97 % from the true transcript). Speakers and times pass through unchanged |
+| 4 · LLM report | Airavata (4-bit, local; runs fully on the 6 GB GPU) writes the report, but its "repair" does not fix the transcript: on the full pipeline 51.8 % → 52.8 % (+0.9 points, CI +0.8 to +1.1; 63 conversations, better in 1, worse in 50). 60 % of its keywords were really said (99 % from the true transcript). It extracts no action items. Speakers and times pass through unchanged |
 
 ![Order A vs Order B](results/figures/order_A_vs_B.png)
 
@@ -99,7 +99,11 @@ set `WHOSPOKE_DATA` or write the path into a one-line `data_location.txt`.
 llama.cpp's `llama-server` (needs CMake and a C++ compiler, or put a llama.cpp release on PATH) and a 4-bit Airavata
 (~4 GB; it downloads the 16-bit `Airavata.gguf` from `ai4bharat/Airavata` once and needs ~18 GB of free disk while
 quantising). `ai4bharat/Airavata` is gated too: click "Agree" on [its page](https://huggingface.co/ai4bharat/Airavata). Leave it running.
-On the 6 GB laptop GPU, Stage 4 runs on the CPU or as a separate step; see [docs/MILESTONE4.md](docs/MILESTONE4.md#running-the-model).
+On a slow or data-capped connection, set `HF_HUB_DISABLE_XET=1` first: the 13.7 GB download can then resume after
+an interruption (the default Xet transfer starts again from zero).
+On the 6 GB laptop GPU the whole 4-bit model fits (`serve_llm.py --gpu-layers 99`), but not next to Stages 1–3, so
+run Stage 4 as a separate step there (about real time), or on the CPU (about 5× slower); see
+[docs/MILESTONE4.md](docs/MILESTONE4.md#running-the-model).
 
 ## Run it
 
@@ -108,6 +112,7 @@ python -m whospoke run my_recording.wav                 # Order B, spectral clus
 python -m whospoke run my_recording.wav --postprocess   # the same, plus the Stage-4 report (LLM server running)
 python -m whospoke postprocess results/runs/my_recording/transcript.json   # Stage 4 on its own, after a run
 python -m whospoke run my_recording.wav --order A --clustering gmm --asr indicwav2vec --speakers 2
+python -m whospoke separate my_recording.wav             # Stage 1 alone: one .wav per separated voice
 ```
 
 Outputs go to `results/runs/<file>/`. An example is in [results/demo/](results/demo/): a two-speaker test conversation with heavy overlap in 5 dB market noise, picked because its error is close to the test-set median (a typical case, not the best one).
@@ -143,7 +148,7 @@ pytest                                                # fast tests; `pytest -m s
 - The Hinglish romaniser is rule-based plus a lexicon. It is readable, not a standard spelling.
 - Stage 4 uses a 7B model at 4 bits on a laptop. It keeps the speakers and times intact and produces a readable
   report, but its repairs add errors (about +1 cpWER point) instead of removing them, many English translations are
-  wrong, and its summary repeats the ASR's mistakes. Read the report next to the Stage-3 transcript, not instead of
-  it. It cannot recover words the ASR never heard. A summary has no single right answer, so it is measured
+  wrong, its summary repeats the ASR's mistakes, and it extracts no action items (the section stays empty). Read
+  the report next to the Stage-3 transcript, not instead of it. It cannot recover words the ASR never heard. A summary has no single right answer, so it is measured
   indirectly (D31): against the true transcript, and against the report made from it.
 - Hindi and English only. Other Indian languages are a possible extension (D4).

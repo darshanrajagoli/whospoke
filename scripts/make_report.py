@@ -12,6 +12,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 import matplotlib
@@ -59,6 +60,23 @@ def paired_diff_ci(a: pd.Series, b: pd.Series, seed: int = 0) -> tuple[float, fl
     d = (a - b).dropna().to_numpy()
     lo, hi = boot_ci(d, seed=seed)
     return float(d.mean()), lo, hi
+
+
+def group_diff_ci(a: pd.Series, b: pd.Series, group: pd.Series, n: int = 4000,
+                  seed: int = 0) -> tuple[float, float, float, int, int]:
+    """Mean of (a − b) with a 95 % CI from resampling whole speaker groups (conversations of a group share speech)."""
+    d = (a - b).dropna()
+    by = [d[group[d.index] == g].to_numpy() for g in sorted(group[d.index].unique())]
+    rng = np.random.default_rng(seed)
+    stats = [np.concatenate([by[i] for i in rng.integers(0, len(by), len(by))]).mean() for _ in range(n)]
+    worse = sum(x.mean() > 0 for x in by)
+    return float(d.mean()), float(np.percentile(stats, 2.5)), float(np.percentile(stats, 97.5)), worse, len(by)
+
+
+def fold_variants(text: str) -> str:
+    """Spelling variants that annotators and models write inconsistently: nukta, chandrabindu → anusvara, joiners."""
+    t = unicodedata.normalize("NFD", text).replace("़", "").replace("ँ", "ं")
+    return unicodedata.normalize("NFC", t.replace("‌", "").replace("‍", ""))
 
 
 def pct(x: float) -> str:
@@ -148,7 +166,10 @@ def stage4_section() -> list[str]:
     if speed:
         md += ["### Stage 4 time per run (RTF = Stage-4 time ÷ audio length; not pooled across machines)\n",
                "With several reports at once, each report's time includes the sharing of the machine; single-request "
-               "speed is in the benchmark notebook (§7).\n", pd.DataFrame(speed).to_markdown(index=False), ""]
+               "speed is in the benchmark notebook (§7). *Server peak memory* is the server process's resident memory: "
+               "it counts the memory-mapped model file, and on Windows it shrinks when the system is short of memory, "
+               "so it is comparable only between runs on one machine under similar load.\n",
+               pd.DataFrame(speed).to_markdown(index=False), ""]
 
     fig, axes = plt.subplots(1, 2, figsize=(10, 3.2))
     labels = [lab.replace(", ", ",\n") for _, lab in systems]
@@ -244,6 +265,22 @@ def main(asr: str = "indicconformer") -> None:
                f"Chosen on Vaani test: **{a['chosen_model']}**. Hinglish romaniser: "
                f"{a['romaniser_english_spelling_acc']:.1%} of {a['romaniser_pairs']} English words spoken inside Hindi "
                f"(Vaani test) come out in correct English spelling.\n"]
+        utt = RES / "asr_comparison_utterances.csv"
+        if utt.exists():
+            sys.path.insert(0, str(PROJECT / "src"))
+            from whospoke.metrics import error_counts
+
+            u = pd.read_csv(utt).fillna("")
+            rob = []
+            for (m, st), g in u.groupby(["model", "set"]):
+                strict = np.array([error_counts(r, h) for r, h in zip(g.ref, g.hyp)])
+                folded = np.array([error_counts(fold_variants(r), fold_variants(h)) for r, h in zip(g.ref, g.hyp)])
+                rob.append({"model": m, "set": st, "WER (as scored)": pct(strict[:, 0].sum() / strict[:, 1].sum()),
+                            "WER, spelling variants merged": pct(folded[:, 0].sum() / strict[:, 1].sum())})
+            md += ["### Stage 3 — robustness of the WER to spelling variants\n",
+                   "Scoring counts nukta, chandrabindu vs anusvara and invisible joiners as differences; merging them "
+                   "lowers both models' WER alike and does not change the ranking.\n",
+                   pd.DataFrame(rob).to_markdown(index=False), ""]
 
     # ------------------------------------------------------------ End-to-end (test)
     ev = RES / f"eval_test_{asr}.csv"
@@ -305,6 +342,18 @@ def main(asr: str = "indicconformer") -> None:
                      "conversations where first is worse (cpWER)": f"{int((piv_cp[a] > piv_cp[b]).sum())}/{len(piv_cp)}"})
     md += [f"## Paired comparisons (same {n_conv} conversations; mean difference with 95 % bootstrap CI — "
            "positive = the first system has MORE errors)\n", pd.DataFrame(prow).to_markdown(index=False), ""]
+    grp = df.drop_duplicates("id").set_index("id").group
+    grow = []
+    for a, b, label in comps:
+        m, lo, hi, worse, k = group_diff_ci(piv_cp[a], piv_cp[b], grp)
+        dm, dlo, dhi, dworse, _ = group_diff_ci(piv_der[a], piv_der[b], grp)
+        grow.append({"comparison": label, "Δ cpWER (points)": f"{100 * m:+.1f} [{100 * lo:+.1f}, {100 * hi:+.1f}]",
+                     "Δ DER (points)": f"{100 * dm:+.1f} [{100 * dlo:+.1f}, {100 * dhi:+.1f}]",
+                     "speaker groups where first is worse (cpWER / DER)": f"{worse}/{k} / {dworse}/{k}"})
+    md += ["### The same comparisons, resampling whole speaker groups\n",
+           f"The {n_conv} conversations are {grp.nunique()} speaker groups, each rendered in every condition, so "
+           "conversations of one group are not independent. Resampling whole groups gives wider, more honest intervals.\n",
+           pd.DataFrame(grow).to_markdown(index=False), ""]
     md += stage4_section()
     OUT_MD.write_text("\n".join(md), encoding="utf-8")
 
