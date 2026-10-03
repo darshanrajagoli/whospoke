@@ -1,0 +1,165 @@
+{
+ "title": "Hindi and Hinglish Conversations",
+ "topic": "Voting and Government",
+ "executive_summary": "A conversation between two people in Hindi about voting and the government.",
+ "key_points": [
+  "Voting is a right and a responsibility of the people.",
+  "The government should give a vote to the people."
+ ],
+ "keywords": [
+  "vote",
+  "government",
+  "people",
+  "india",
+  "diwali"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 15.38,
+   "turns": 2,
+   "share": 0.24
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 12.18,
+   "turns": 3,
+   "share": 0.19
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 36.55,
+   "turns": 2,
+   "share": 0.57
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.76,
+   "end": 1.43,
+   "text": "हेलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हेलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 1.87,
+   "end": 7.36,
+   "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ",
+   "hinglish": "hello haan hello sir namas theek hai haan",
+   "translation": "Hello yes hello sir is okay is okay",
+   "source_text": "हलो हाँ हेलो सर नमस् ठीक है हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 6.31,
+   "end": 13.82,
+   "text": "हाँ वोट इस बात तो देना है ना कोई छाप पर भी देना है अब तो वोट अभी हो गया तो",
+   "hinglish": "haan vote is baat to dena hai na koi chhaap par bhi dena hai ab to vote abhi ho gaya to",
+   "translation": "Hello yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes",
+   "source_text": "हाँ वोट इस बात तो देना है ना कोई छाप पर भी देना है अब तो वोट अभी हो गया तो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 14.19,
+   "end": 15.99,
+   "text": "हम बिहार से बोल रहे हैं",
+   "hinglish": "hum bihar se bol rahe hain",
+   "translation": "We are speaking from Bihar",
+   "source_text": "हम बिहार से बोल रहे हैं",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 15.09,
+   "end": 24.98,
+   "text": "जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं जी",
+   "hinglish": "ji ji dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain ji",
+   "translation": "Look at me and how good I am",
+   "source_text": "जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 6,
+   "speaker": "S3",
+   "start": 25.42,
+   "end": 54.46,
+   "text": "एक बार तो सरकार को भोट देना है वोट देना है अब देना है देखें ना इच्छा पर देना है वोट अब तो वोट खत्म हो गया है अब वोट आएगा तो कुछ नहीं दिया सरकार कुछ लाभ नहीं दिया तो आप किसका देना है जी उसी का वोट देना है जी आगे में बढ़ाएगा विकास करेगा हम लोग का इंदिरा आबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो उसी का भोट दिया जाएगा",
+   "hinglish": "ek baar to sarkar ko bhot dena hai vote dena hai ab dena hai dekhen na ichha par dena hai vote ab to vote khatm ho gaya hai ab vote aaega to kuch nahi diya sarkar kuch laabh nahi diya to aap kiska dena hai ji usi ka vote dena hai ji aage mein badhaega vikas karega hum log ka indira aabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho usi ka bhot diya jaega",
+   "translation": "Once the government should give a vote to the people, it should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the",
+   "source_text": "एक बार तो सरकार को भोट देना है वोट देना है अब देना है देखिए ना इच्छा पर देना है वोट अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो आप किसका देना है जी उसी का वोट देना है जी आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिरा आबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो उसी का भोट दिया जाएगा",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 54.98,
+   "end": 64.69,
+   "text": "हमारे देश में छठ पूजा मनाई जाती है और हमारे देश में दीपावली भी मनाई जाती है और हाँ बोलिए छठ",
+   "hinglish": "hamare desh mein chhath puja manai jati hai aur hamare desh mein dipavli bhi manai jati hai aur haan bolie chhath",
+   "translation": "In India, Chhath Puja is celebrated and also Diwali is celebrated and yes, we say Chhath",
+   "source_text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 46.154,
+  "prompt_tokens": 1830,
+  "completion_tokens": 1015,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 0,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 3,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "3abf180186b2a88c9a07eb6af91467b211b1c0f989e4d4149f51878774ab3c4f",
+  "source_line_count": 7,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:43:31Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 65.41
+ }
+}

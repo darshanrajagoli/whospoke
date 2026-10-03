@@ -1,0 +1,202 @@
+{
+ "title": "Lost ID Card and Request for Base Card",
+ "topic": "Lost ID Card and Request for Base Card",
+ "executive_summary": "Two people talk about the principal of the Babu Matanka Inter College and ask for a check from their karmi to pay for the BA paper, which was missing from their school. They mention that they lost their ID card from their hand and need an ID card from the base card and a photo of the person who is coming with the base card. They also mention that they need money and a document.",
+ "key_points": [
+  "Lost ID Card and Request for Base Card"
+ ],
+ "keywords": [
+  "principal",
+  "ID card",
+  "base card",
+  "office",
+  "application"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 41.01,
+   "turns": 5,
+   "share": 0.618
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 25.39,
+   "turns": 5,
+   "share": 0.382
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.42,
+   "end": 1.34,
+   "text": "नमस्ते",
+   "hinglish": "namaste",
+   "translation": "Hello",
+   "source_text": "नमस्ते",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 0.88,
+   "end": 1.92,
+   "text": "नमस्ते सर",
+   "hinglish": "namaste sir",
+   "translation": "Hello Sir",
+   "source_text": "नमस्ते सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 2.4,
+   "end": 26.73,
+   "text": "बोल रहे थे कि आप बाबू मतंका इंटर कॉलेज के प्रधानाचार हैं तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा पर्स वहीं छूट गया था उसमें कुछ सामान है ज़रूरत की तो वो मुझे चाहिए था पैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए",
+   "hinglish": "bol rahe the ki aap babu matanka intar college ke pradhanachar hain to hum B e ka paper dene gaye the aapke school mein mera pars wahin chhoot gaya tha usmen kuch saman hai zarurat ki to wo mujhe chahiye tha paise mil sakta hai aap apne karmachari se check karva ke puchhie",
+   "translation": "They were talking about the principal of the Babu Matanka Inter College and asked for a check from their karmi to pay for the BA paper, which was missing from their school.",
+   "source_text": "बोल रहे थे कि आप आप बाबू मतंका इंटर कॉलेज के प्रधानाचार हैं तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा पर्स वहीं छूट गया था उसमें कुछ सामान है ज़रूरत की तो वो मुझे चाहिए था पैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 26.91,
+   "end": 31.86,
+   "text": "सर मेरे कोई गलती हो गई मेरे हाथ से वो मेरा आई डी कार्ड गुम हो गया है सर",
+   "hinglish": "sir mere koi galti ho gayi mere haath se wo mera aai D card gum ho gaya hai sir",
+   "translation": "The speaker mentioned that they lost their ID card from their hand.",
+   "source_text": "सर मेरे कोई गलती हो गई मेरे हाथ से वो मेरा आई डी कार्ड गुम हो गया है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 28.43,
+   "end": 35.16,
+   "text": "कमरा नंबर तीन में छूटा थी हाँ मेरा था वो पॉकेट मेरा था संगीता जी हाँ",
+   "hinglish": "kamra number teen mein chhuta thi haan mera tha wo pocket mera tha sangita ji haan",
+   "translation": "The speaker mentioned that they lost their pocketbook in room number three.",
+   "source_text": "कमरा नंबर तीन में छूटा था हाँ मेरा था वो पॉकेट मेरा था संगीता जी हाँ",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 33.1,
+   "end": 40.16,
+   "text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक उसका फ़ोटो एक आधार कार्ड ही और",
+   "hinglish": "haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir ek uska photo ek aadhar card hi aur",
+   "translation": "The speaker mentioned that they need an ID card from the base card and a photo of the person who is coming with the base card.",
+   "source_text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक उसका फ़ोटो एक आधार कार्ड ही और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 40.68,
+   "end": 47.83,
+   "text": "तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए हाँ पैसा भी था डॉक्यूमेंट भी था",
+   "hinglish": "to apne camera si si ti V camera check karva lijie haan paisa bhi tha dokyument bhi tha",
+   "translation": "He said he had to check his camera, and also the document.",
+   "source_text": "तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए हाँ पैसा भी था डॉक्यूमेंट भी था उसमें",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 48.34,
+   "end": 58.26,
+   "text": "ठीक है सर ये कहाँ आनी पड़ेगी ऑफिस तो ऑफिस आप कब तक केतने घंटे तक ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा",
+   "hinglish": "theek hai sir ye kahan aani padegi office to office aap kab tak ketne ghante tak office khula hai sir apna aai D card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega",
+   "translation": "He said he would have to go to the office, and also get two items from the office.",
+   "source_text": "ठीक है सर ये कहाँ आनी पड़ेगी ऑफिस तो ऑफिस आप कब तक कितने बजे तक ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 57.32,
+   "end": 59.2,
+   "text": "पैसा भी था डॉक्यूमेंट भी था",
+   "hinglish": "paisa bhi tha dokyument bhi tha",
+   "translation": "He said there was money, and also the document.",
+   "source_text": "पैसा भी था डॉक्यूमेंट भी था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 59.48,
+   "end": 61.9,
+   "text": "अच्छा उसके बाद एप्लीकेशन भी लिखनी पड़ेगी",
+   "hinglish": "achha uske baad eplikeshan bhi likhni padegi",
+   "translation": "He said he would have to write an application.",
+   "source_text": "अच्छा उसके बाद एप्लीकेशन भी लिखनी पड़ेगी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 46.441,
+  "prompt_tokens": 1873,
+  "completion_tokens": 1022,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 4,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 8,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 0,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "3d53969d834514725db63907b319f1040a1969b8aeeb91a4ce8f4ffdc4e3c473",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:26:36Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 62.56
+ }
+}

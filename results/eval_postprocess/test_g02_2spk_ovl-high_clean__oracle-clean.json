@@ -1,0 +1,199 @@
+{
+ "title": "Lost ID Card and Office Hours in Babu Matanka Inter College",
+ "topic": "Lost ID Card and Office Hours in Babu Matanka Inter College",
+ "executive_summary": "A conversation between two people about the principal of the Babu Matanka Inter College, the need for a base camp, and the loss of an ID card.",
+ "key_points": [
+  "Lost ID Card and Office Hours in Babu Matanka Inter College"
+ ],
+ "keywords": [
+  "base card",
+  "paper deliverer"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 49.84,
+   "turns": 6,
+   "share": 0.736
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 17.88,
+   "turns": 4,
+   "share": 0.264
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.29,
+   "end": 1.21,
+   "text": "नमस्ते",
+   "hinglish": "namaste",
+   "translation": "Hello",
+   "source_text": "नमस्ते",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 0.75,
+   "end": 1.79,
+   "text": "नमस्ते सर",
+   "hinglish": "namaste sir",
+   "translation": "Hello Sir",
+   "source_text": "नमस्ते सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 2.09,
+   "end": 31.79,
+   "text": "बोल रहे थे कि आप बाबू मतंका इंटर कॉलेज के प्रधानाचार हैं तो हम बी एड का पेपर देने गए थे आपके स्कूल में मेरा पर्स वहीं छूट गया था उसमें कुछ सामान हैं ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था हाँ मेरा था वो पॉकिट मेरा था",
+   "hinglish": "bol rahe the ki aap babu matanka intar college ke pradhanachar hain to hum B ed ka paper dene gaye the aapke school mein mera pars wahin chhoot gaya tha usmen kuch saman hain zarurat ki to wo mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein chhuta tha haan mera tha wo pokit mera tha",
+   "translation": "They were talking about the principal of the Babu Matanka Inter College and how they had to give a paper to the base camp, and they had some items that they needed, but they didn't have them. They asked their karmi to check if they could get them.",
+   "source_text": "बोल रहे थे कि आप आप बाबू मतंका इंटर कॉलेज के प्रधानाचार हैं तो हम बी एड का पेपर देने गए थे आपके स्कूल में मेरा पर्स वहीं छूट गया था उसमें कुछ सामान हैं ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था हाँ मेरा था वो पॉकिट मेरा था",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 27.25,
+   "end": 39.21,
+   "text": "सर मेरे कोई गलती हो गई है मेरे हाथ से वो मेरा आई डी कार्ड घुम हो गया है सर हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फ़ोटो एक आधार कार्ड एक और",
+   "hinglish": "sir mere koi galti ho gayi hai mere haath se wo mera aai D card ghum ho gaya hai sir haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir ek khud ka photo ek aadhar card ek aur",
+   "translation": "The speaker is saying that they had an ID card that was lost or misplaced, and they asked the speaker to check if they could get it. They also asked the speaker to get a photo of the base camp and another photo of themselves.",
+   "source_text": "सर मेरे कोई गलती हो गई है मेरे हाथ से वो मेरा आई डी कार्ड घुम हो गया है सर हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फ़ोटो एक आधार कार्ड एक और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 34.19,
+   "end": 35.83,
+   "text": "संगीता जी हाँ",
+   "hinglish": "sangita ji haan",
+   "translation": "Hello",
+   "source_text": "संगीता जी हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 39.96,
+   "end": 44.08,
+   "text": "अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "hinglish": "apne camera si si ti V camera check karva lijie",
+   "translation": "Get your camera and check it.",
+   "source_text": "अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 44.5,
+   "end": 45.82,
+   "text": "ठीक है सर कहाँ करनी पड़ेगी",
+   "hinglish": "theek hai sir kahan karni padegi",
+   "translation": "Surely, where will it happen?",
+   "source_text": "ठीक है सर कहाँ करनी पड़ेगी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 46.43,
+   "end": 51.42,
+   "text": "हाँ पैसा भी था डॉक्युमेंट भी था उसमें पैसा भी था डॉक्युमेंट भी था",
+   "hinglish": "haan paisa bhi tha dokyument bhi tha usmen paisa bhi tha dokyument bhi tha",
+   "translation": "Yes, there was money in the document too. Document also had money in it.",
+   "source_text": "हाँ पैसा भी था डॉक्यूमेंट भी था उसमें पैसा भी था डॉक्यूमेंट भी था",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 52.03,
+   "end": 55.59,
+   "text": "तो ऑफिस का तो कि अब कब तक के कितने घंटे तक ऑफिस खुला है सर अपना",
+   "hinglish": "to office ka to ki ab kab tak ke kitne ghante tak office khula hai sir apna",
+   "translation": "So, when will the office be open until what time?",
+   "source_text": "तो ऑफिस का तो कि अब कब तक कितने बजे तक ऑफिस खुला है सर अपना",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S1",
+   "start": 53.81,
+   "end": 62.28,
+   "text": "तीन हज़ार था और आधार कार्ड था और उसमें पेपर देने वाला जो होता है जो मिलता है प्रेस पत्र था",
+   "hinglish": "teen hazar tha aur aadhar card tha aur usmen paper dene wala jo hota hai jo milta hai press patr tha",
+   "translation": "There were three hazards and a base card and a paper deliverer who gives the paper.",
+   "source_text": "तीन हज़ार था और आधार कार्ड था और उसमें पेपर देने वाला जो होता है जो मिलता है प्रेस पत्र था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 47.357,
+  "prompt_tokens": 1859,
+  "completion_tokens": 1062,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 5,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "84660ecc1a3c4f10a7db09759a6c965e3c301d94f9fab9883eb3e54ce07e71db",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:19:01Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 62.93
+ }
+}

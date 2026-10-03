@@ -1,0 +1,151 @@
+{
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Government Bribes and Chhath Puja",
+ "executive_summary": "A conversation between two people in Hindi, with some English translation. The conversation is about various topics, including government bribes, Chhath Puja, and new clothes.",
+ "key_points": [
+  "government bribes",
+  "Chhath Puja",
+  "new clothes"
+ ],
+ "keywords": [
+  "Chhath Puja",
+  "new clothes"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 5.49,
+   "turns": 1,
+   "share": 0.075
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 30.59,
+   "turns": 3,
+   "share": 0.421
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 36.65,
+   "turns": 2,
+   "share": 0.504
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.36,
+   "end": 5.85,
+   "text": "हेलो हाँ हलो सर नमस् ठीक है हाँ",
+   "hinglish": "hello haan hello sir namas theek hai haan",
+   "translation": "Hello, sir. It's okay. How are you?",
+   "source_text": "हेलो हाँ हलो सर नमस् ठीक है हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 6.22,
+   "end": 18.14,
+   "text": "हेलो हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
+   "hinglish": "hello hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie",
+   "translation": "Hello, we are from Bihar. We celebrate Chhath Puja in our country and also celebrate Diwali. And yes, we speak.",
+   "source_text": "हेलो हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 18.34,
+   "end": 25.78,
+   "text": "हाँ वोट इस बात तो देना है ना कोई छाप पर भी देना है अब तो वोट अच्छी हो गया तो",
+   "hinglish": "haan vote is baat to dena hai na koi chhaap par bhi dena hai ab to vote achhi ho gaya to",
+   "translation": "Yes, vote for this. No, vote on the print too. Now, the vote is over. Let's see how it goes.",
+   "source_text": "हाँ वोट इस बात तो देना है ना कोई छाप पर भी देना है अब तो वोट अच्छी हो गया तो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 26.38,
+   "end": 26.9,
+   "text": "साइड",
+   "hinglish": "side",
+   "translation": "Side",
+   "source_text": "साइड",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 27.31,
+   "end": 56.52,
+   "text": "एक बार तो सरकार को भोट देना है वोट देना है अब देना है देखिए ना पूरी पूरी छापर देना है वोट अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो आप किसका देना है जी उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ का सहारा हो उसी का वोट दिया जाएगा",
+   "hinglish": "ek baar to sarkar ko bhot dena hai vote dena hai ab dena hai dekhie na puri puri chhapar dena hai vote ab to vote khatm ho gaya ab vote aaega to kuch na diya sarkar kuch laabh nahi diya to aap kiska dena hai ji usi ka vote dena hai je aage mein badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana jo bhi cheez ka sahara ho usi ka vote diya jaega",
+   "translation": "Once upon a time, the government should give a bribe.",
+   "source_text": "एक बार तो सरकार को भोट देना है वोट देना है अब देना है देखिए ना पूरी पूरी छापर देना है वोट अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो आप किसका देना है जी उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ का सहारा हो उसी का वोट दिया जाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 57.18,
+   "end": 75.33,
+   "text": "छछ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+   "hinglish": "chhachh puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+   "translation": "Chhath Puja is a new kind of worship that involves bringing new clothes, khadi, and other items for the fast. It is also a tradition to make incantations and perform rituals.",
+   "source_text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 2,
+  "llm_seconds": 31.599,
+  "prompt_tokens": 1273,
+  "completion_tokens": 683,
+  "chunks": 1,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 3,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "b50bbfb8256ddbff308e8e0d85cd39f62ab68b44cc275770d6d0c9b82c4a946c",
+  "source_line_count": 6,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:32:47Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 76.06
+ }
+}

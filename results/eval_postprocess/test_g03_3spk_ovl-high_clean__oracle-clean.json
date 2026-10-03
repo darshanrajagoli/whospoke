@@ -1,0 +1,156 @@
+{
+ "title": "Chhath Puja in Bihar",
+ "topic": "Chhath Puja",
+ "executive_summary": "Speaker talks about Chhath Puja in Bihar and mentions new materials for worship and offerings to the gods. They mention that the government has not given any benefits, but will give them to whom they want. They will give votes to whoever they want, but not to the government. Speaker mentions that the vote is over, but no one has been given any benefits. They mention that the government will give benefits to whom it wants, but not to them. They will give votes to whoever they want, but not to the government.",
+ "key_points": [
+  "Chhath Puja",
+  "Bihar",
+  "government",
+  "benefits",
+  "grants"
+ ],
+ "keywords": [
+  "Chhath Puja",
+  "Bihar",
+  "government",
+  "benefits"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 11.88,
+   "turns": 1,
+   "share": 0.137
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 31.27,
+   "turns": 2,
+   "share": 0.361
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 43.38,
+   "turns": 3,
+   "share": 0.501
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.57,
+   "end": 12.45,
+   "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+   "hinglish": "hello haan hello sir namas theek hai haan ji ji dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
+   "translation": "Hello sir, how are you doing? I'm doing well and how are you?",
+   "source_text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 12.85,
+   "end": 25.34,
+   "text": "हेलो हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+   "hinglish": "hello hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie chhath",
+   "translation": "Hello, we are from Bihar and celebrate Chhath Puja in our country and also celebrate Diwali.",
+   "source_text": "हेलो हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 15.31,
+   "end": 15.76,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Yes",
+   "source_text": "हाँ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 4,
+   "speaker": "S3",
+   "start": 23.75,
+   "end": 40.67,
+   "text": "वोट इस बार तो देना है ना कोई छापर भी देना है अब तो वोट अभी हो गया तो सरकार भोट देना है वोट देना है अब देना है देखिए ना कोई छाप छापर देना है वोट",
+   "hinglish": "vote is baar to dena hai na koi chhapar bhi dena hai ab to vote abhi ho gaya to sarkar bhot dena hai vote dena hai ab dena hai dekhie na koi chhaap chhapar dena hai vote",
+   "translation": "Vote this time, no one else will be able to vote, but the government will give a bounty.",
+   "source_text": "वोट इस बार तो देना है ना कोई छापर भी देना है अब तो वोट अभी हो गया तो सरकार भोट देना है वोट देना है अब देना है देखिए ना कोई छाप छापर देना है वोट",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 37.66,
+   "end": 56.44,
+   "text": "छछ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं उपहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए हाँ",
+   "hinglish": "chhachh puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hain uphante hain usmen aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye haan",
+   "translation": "In Chhath Puja, we bring new materials for worship, such as new clothes, and make offerings to the gods.",
+   "source_text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं उपहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए हाँ",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S3",
+   "start": 55.32,
+   "end": 81.33,
+   "text": "अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ नहीं दिया गया सरकार कुछ लाभ नहीं दिया तो अब किसका देना है जे उसी का वोट दिया जाए जे आगे में बढ़ाएगा विकास करेगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना ये भी ठीक से सहारा हो उसी का वोट दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी वोट देना है वोट नहीं देना है वोट देना है",
+   "hinglish": "ab to vote khatm ho gaya ab vote aaega to kuch nahi diya gaya sarkar kuch laabh nahi diya to ab kiska dena hai je usi ka vote diya jae je aage mein badhaega vikas karega hum log ka indirabad ho bathroom ho sahara ho mana ye bhi theek se sahara ho usi ka vote diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi vote dena hai vote nahi dena hai vote dena hai",
+   "translation": "Now the vote is over, but no one has been given any benefits. The government will give benefits to whom it wants, but not to me. I will give votes to whoever I want, but not to the government.",
+   "source_text": "अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो अब किसका देना है जे उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना ये भी ठीक से सहारा हो उसी का वोट दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी वोट देना है वोट नहीं देना है वोट देना है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 2,
+  "llm_seconds": 41.788,
+  "prompt_tokens": 1351,
+  "completion_tokens": 897,
+  "chunks": 1,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 3,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "cb5660c40750f64bb6c9abd46a6180b48d6edb3ec4da050eef3580c5162b0348",
+  "source_line_count": 6,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:49:22Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 81.86
+ }
+}

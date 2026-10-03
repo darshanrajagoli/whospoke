@@ -1,0 +1,181 @@
+{
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Voting and Family Matters",
+ "executive_summary": "Part 2 of the conversation discusses Chhath Puja and Diwali in Bihar, as well as family matters.",
+ "key_points": [
+  "Voting in Bihar",
+  "Family matters in Bihar"
+ ],
+ "keywords": [
+  "Chhath Puja",
+  "Diwali",
+  "Family matters"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 22.77,
+   "turns": 3,
+   "share": 0.32
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 31.16,
+   "turns": 3,
+   "share": 0.438
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 17.26,
+   "turns": 2,
+   "share": 0.242
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.31,
+   "end": 2.88,
+   "text": "हेलो हम बिहार के बोल रहे हैं",
+   "hinglish": "hello hum bihar ke bol rahe hain",
+   "translation": "Hello, we are speaking from Bihar.",
+   "source_text": "हेलो हम बिहार के बोल रहे हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 1.59,
+   "end": 7.76,
+   "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी",
+   "hinglish": "hello haan hello sir namas theek hai haan ji",
+   "translation": "Hello, yes, sir, it's okay, yes, G.",
+   "source_text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 7.53,
+   "end": 7.98,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Yes.",
+   "source_text": "हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 8.64,
+   "end": 18.4,
+   "text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+   "hinglish": "hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie chhath",
+   "translation": "In Bihar, we celebrate Chhath Puja and Diwali, and we say 'Chhath'.",
+   "source_text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 19.18,
+   "end": 33.63,
+   "text": "जी देखते है की बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं जी गाँव के तो सभी लोग देखते है बहुत सुंदर बनाते हैं",
+   "hinglish": "ji dekhte hai ki bahut achha se dekhte hai aur kitna achha banate hain ji gaanv ke to sabhi log dekhte hai bahut sundar banate hain",
+   "translation": "The village people see how beautiful it is and make a lot of beautiful things.",
+   "source_text": "जी देखते है की बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं जी गाँव के तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 34.07,
+   "end": 52.9,
+   "text": "छछ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं उपहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए हाँ",
+   "hinglish": "chhachh puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hain uphante hain usmen aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye haan",
+   "translation": "In Chhath Puja, we bring new clothes and utensils for fasting, and we make a lot of beautiful things.",
+   "source_text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं उपहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए हाँ",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S3",
+   "start": 49.71,
+   "end": 66.52,
+   "text": "वोट इस बार तो देना है ना कोई छापर भी देना है अब तो वोट अभी हो गया तो सरकार को भोट देना है वोट देना है अब देना है देखिए ना कोई छाप छापर देना है वोट",
+   "hinglish": "vote is baar to dena hai na koi chhapar bhi dena hai ab to vote abhi ho gaya to sarkar ko bhot dena hai vote dena hai ab dena hai dekhie na koi chhaap chhapar dena hai vote",
+   "translation": "Vote this time, no imprinting either, then government to give a thought to vote, let's see if you can vote now, no imprinting",
+   "source_text": "वोट इस बार तो देना है ना कोई छापर भी देना है अब तो वोट अभी हो गया तो सरकार को भोट देना है वोट देना है अब देना है देखिए ना कोई छाप छापर देना है वोट",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 57.16,
+   "end": 59.31,
+   "text": "पारिवारिक सब जी",
+   "hinglish": "parivarik sab ji",
+   "translation": "Family matters",
+   "source_text": "पारिवारिक सब जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 36.218,
+  "prompt_tokens": 1668,
+  "completion_tokens": 791,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 8,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 0,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "f0dd7c5c56fead2206384ffc001900001a0c5e9f08296881301a646161485151",
+  "source_line_count": 8,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:52:52Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 67.0
+ }
+}

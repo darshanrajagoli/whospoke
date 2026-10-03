@@ -1,0 +1,236 @@
+{
+ "title": "Voting in Bihar",
+ "topic": "Voting in Bihar",
+ "executive_summary": "A conversation in Hindi about the government and the printing of the vote",
+ "key_points": [
+  "Voting is to be done on the printout itself, not on the printout itself",
+  "The government has not given any money, but it will give money to whoever wants it",
+  "The money has not been given, but it will be given to whoever wants it"
+ ],
+ "keywords": [
+  "vote",
+  "government",
+  "printout",
+  "hello",
+  "yes"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 14.85,
+   "turns": 4,
+   "share": 0.248
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 2.47,
+   "turns": 2,
+   "share": 0.041
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 42.58,
+   "turns": 6,
+   "share": 0.711
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S3",
+   "start": 0.35,
+   "end": 0.803,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Hello",
+   "source_text": "हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 0.973,
+   "end": 1.643,
+   "text": "हैलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हैलो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 1.816,
+   "end": 3.616,
+   "text": "हम बिहार से बोल रहे हैं",
+   "hinglish": "hum bihar se bol rahe hain",
+   "translation": "We are speaking from Bihar",
+   "source_text": "हम बिहार से बोल रहे हैं",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 4,
+   "speaker": "S3",
+   "start": 4.302,
+   "end": 11.177,
+   "text": "वोट इस बार तो देना है न कोई छाप पर भी देना है अब तो वोट अथि हो गया तो",
+   "hinglish": "vote is baar to dena hai na koi chhaap par bhi dena hai ab to vote athi ho gaya to",
+   "translation": "Vote this time, not on the printout but on the printout itself",
+   "source_text": "वोट इस बार तो देना है न कोई छाप पर भी देना है अब तो वोट अथि हो गया तो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 11.302,
+   "end": 12.608,
+   "text": "यही बार तो सरकार कौन",
+   "hinglish": "yahi baar to sarkar kaun",
+   "translation": "Who is the government at this time?",
+   "source_text": "यही बार तो सरकार कौन",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S3",
+   "start": 12.936,
+   "end": 21.168,
+   "text": "वोट देना है भोट देना है अब देना है देखिए न वो ही छाप को छाप पर देना है वोट",
+   "hinglish": "vote dena hai bhot dena hai ab dena hai dekhie na wo hi chhaap ko chhaap par dena hai vote",
+   "translation": "Vote is to be given, not on the printout but on the printout itself",
+   "source_text": "वोट देना है भोट देना है अब देना है देखिए न वो ही छाप को छाप पर देना है वोट",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 21.382,
+   "end": 26.872,
+   "text": "हाँ हलो सर नमस ठीक है हाँ",
+   "hinglish": "haan hello sir namas theek hai haan",
+   "translation": "Hello sir, how are you?",
+   "source_text": "हाँ हलो सर नमस ठीक है हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 27.066,
+   "end": 27.576,
+   "text": "जी",
+   "hinglish": "ji",
+   "translation": "G",
+   "source_text": "जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S3",
+   "start": 27.732,
+   "end": 46.822,
+   "text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ न दिया सरकार के खिलाफ नहीं दिया तो अब अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इन्द्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारे हो उसी का व्होट दिया जाएगा",
+   "hinglish": "ab to vote khatm ho gaya ab vote aaega nahi to kuch na diya sarkar ke khilaph nahi diya to ab ab kiska dena hai jo usi ka vote dena hai je aage mein badhaega vikas karaega hum log ka indravas ho bathroom ho sahara ho mane ye bhi cheej ke sahare ho usi ka vote diya jaega",
+   "translation": "Now, the government has not given any money, but it will give money to whoever wants it. We will increase the income of the people.",
+   "source_text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ न दिया सरकार के खिलाफ नहीं दिया तो अब अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इन्द्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारा हो उसी का व्होट दिया जाएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S3",
+   "start": 46.924,
+   "end": 53.541,
+   "text": "फिर भी देना है नहीं दिया गया है लेकिन फिर भी व्होट देना है होट नहीं देना है चलो होट देना है",
+   "hinglish": "phir bhi dena hai nahi diya gaya hai lekin phir bhi vote dena hai hot nahi dena hai chalo hot dena hai",
+   "translation": "Yet, the money has not been given, but it will be given to whoever wants it. We will not give money to whoever does not want it.",
+   "source_text": "फिर भी देना है नहीं दिया गया है लेकिन फिर भी व्होट देना है होट नहीं देना है चलो होट देना है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 51.956,
+   "end": 57.299,
+   "text": "जी देखते हैं कि बहुत अच्छे से देखते हैं और कितना अच्छा बनाते हैं",
+   "hinglish": "ji dekhte hain ki bahut achhe se dekhte hain aur kitna achha banate hain",
+   "translation": "Looking at the good and the bad.",
+   "source_text": "जी देखते हैं कि बहुत अच्छे से देखते हैं और कितना अच्छा बनाते हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 12,
+   "speaker": "S1",
+   "start": 57.52,
+   "end": 61.031,
+   "text": "हाँ जी तो फिर",
+   "hinglish": "haan ji to phir",
+   "translation": "Yes, sir.",
+   "source_text": "हाँ जी तो फिर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 45.32,
+  "prompt_tokens": 1775,
+  "completion_tokens": 1002,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 3,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "5547dba7dc2e68ba5d2b27ebfb45732f67e7685a1e91d4d4e88d6196d8d43c64",
+  "source_line_count": 12,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:45:53Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 61.35
+ }
+}

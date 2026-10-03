@@ -1,0 +1,154 @@
+{
+ "title": "Evidence of a Hindi-Hinglish conversation",
+ "topic": "Vote giving is to be done, no printer also to be given now",
+ "executive_summary": "The speaker requests vote giving and no printer to be given.",
+ "key_points": [
+  "vote",
+  "giving",
+  "no printer"
+ ],
+ "keywords": [
+  "vote",
+  "giving",
+  "no printer"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 15.21,
+   "turns": 2,
+   "share": 0.168
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 0.67,
+   "turns": 1,
+   "share": 0.007
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 74.49,
+   "turns": 3,
+   "share": 0.824
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.72,
+   "end": 1.39,
+   "text": "हेलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हेलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S3",
+   "start": 1.05,
+   "end": 10.01,
+   "text": "हाँ वोट इस बात तो देना है ना कोई छापर भी देना है अब तो वोट अभी हो गया तो सरकार",
+   "hinglish": "haan vote is baat to dena hai na koi chhapar bhi dena hai ab to vote abhi ho gaya to sarkar",
+   "translation": "Yes, vote giving is to be done, no printer also to be given now, the government",
+   "source_text": "हाँ वोट इस बात तो देना है ना कोई छापर भी देना है अब तो वोट अभी हो गया तो सरकार",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 8.61,
+   "end": 20.31,
+   "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+   "hinglish": "hello haan hello sir namas theek hai haan ji ji dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
+   "translation": "Hello, hello, hello, sir, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well, well",
+   "source_text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S3",
+   "start": 21.0,
+   "end": 55.44,
+   "text": "वोट देना है वोट देना है अब देना है देखिए ना पूरी पूरी छापर देना है वोट अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया गया है सरकार कुछ लाभ नहीं दिया तो आप किसका देना है जी उसी का वोट दिया जाएगा जे आयोग में बढ़ाएगा विकास करेगा हम लोग का इंदिरा आबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो उसी का वोट दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी वोट देना है वोट नहीं देना है फिर लोग भूट देना है",
+   "hinglish": "vote dena hai vote dena hai ab dena hai dekhie na puri puri chhapar dena hai vote ab to vote khatm ho gaya ab vote aaega to kuch na diya gaya hai sarkar kuch laabh nahi diya to aap kiska dena hai ji usi ka vote diya jaega je aayog mein badhaega vikas karega hum log ka indira aabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho usi ka vote diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi vote dena hai vote nahi dena hai phir log bhoot dena hai",
+   "translation": "Vote giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not giving is to be done, not",
+   "source_text": "वोट देना है वोट देना है अब देना है देखिए ना पूरी पूरी छापर देना है वोट अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो आप किसका देना है जी उसी का वोट देना है जे आयोग में बढ़ाएगा विकास कराएगा हम लोग का इंदिरा आबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो उसी का वोट दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी वोट देना है वोट नहीं देना है फिर लोग भूट देना है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 55.83,
+   "end": 59.34,
+   "text": "हाँ जी",
+   "hinglish": "haan ji",
+   "translation": "Yes, sir",
+   "source_text": "हाँ जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S3",
+   "start": 57.59,
+   "end": 88.68,
+   "text": "ठीक है देना है वोट सब एक कुछ को अब एक बीच का देखना है कि किसी का कौन आगेगा विकास बढ़ाएगा फिर एक समाज का बढ़ाएगा गाँव का बढ़ाएगा आगे के रूप अच्छा होगा सब एक कुछ मिलेगा धीरे धीरे दीजिए वोट देना ही होगा वोट में पैसे दीजिएगा वोट देना ही होगा आगे बोलिए कही पढ़ाइए दीजिए जीतेगा जिसका विकास अच्छा होगा चुनाव में देखना है जरूर रुचि के अच्छा है वो आगे बढ़ाएगा उसी का",
+   "hinglish": "theek hai dena hai vote sab ek kuch ko ab ek beech ka dekhna hai ki kisi ka kaun aagega vikas badhaega phir ek samaj ka badhaega gaanv ka badhaega aage ke roop achha hoga sab ek kuch milega dhire dhire dijie vote dena hi hoga vote mein paise dijiega vote dena hi hoga aage bolie kahi padhaie dijie jitega jiska vikas achha hoga chunav mein dekhna hai jarur ruchi ke achha hai wo aage badhaega usi ka",
+   "translation": "Okay, vote giving is to be done, no printer also to be given now, the government",
+   "source_text": "ठीक है देना है वोट सब एक कुछ को अब एक बीच का देखना है कि किसी का कौन आगेगा विकास बढ़ाएगा फिर एक समाज का बढ़ाएगा गाँव का बढ़ाएगा आगे के रूप अच्छा होगा सब एक कुछ मिलेगा धीरे धीरे दीजिए वोट देना ही होगा वोट में पैसे दीजिएगा वोट देना ही होगा आगे बोलिए कही पढ़ाइए दीजिए जीतेगा जिसका विकास अच्छा होगा चुनाव में देखना है जरूर रुचि के अच्छा है वो आगे बढ़ाएगा उसी का",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 2,
+  "llm_seconds": 51.513,
+  "prompt_tokens": 1615,
+  "completion_tokens": 1082,
+  "chunks": 1,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 5,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 0,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "4461c76dcebe90ebdd4beab3c05304e5afe22c1a0609794ee5eb6ef4a24b95e4",
+  "source_line_count": 6,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:56:22Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 89.36
+ }
+}

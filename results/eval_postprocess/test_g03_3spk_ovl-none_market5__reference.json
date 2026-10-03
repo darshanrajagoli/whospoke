@@ -1,0 +1,272 @@
+{
+ "title": "Hindi and Hinglish Conversations",
+ "topic": "Hindi and Hinglish Conversations",
+ "executive_summary": "This report summarizes a conversation in Hindi and Hinglish, with a focus on the main topic of the conversation and the key points discussed.",
+ "key_points": [
+  "Hindi and Hinglish Conversations"
+ ],
+ "keywords": [
+  "हैलो",
+  "रात को तो सभी लोग देखते हैं बहुत सुंदर",
+  "हम बिहार से बोल रहे हैं",
+  "हाँ बोलिए",
+  "सरकार कौन है",
+  "बहुत अच्छा"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 33.08,
+   "turns": 7,
+   "share": 0.461
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 30.12,
+   "turns": 5,
+   "share": 0.419
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 8.63,
+   "turns": 3,
+   "share": 0.12
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.48,
+   "end": 5.97,
+   "text": "हाँ हलो सर नमस ठीक है हाँ",
+   "hinglish": "haan hello sir namas theek hai haan",
+   "translation": "Hello sir, how are you?",
+   "source_text": "हाँ हलो सर नमस ठीक है हाँ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 6.096,
+   "end": 6.606,
+   "text": "जी",
+   "hinglish": "ji",
+   "translation": "G",
+   "source_text": "जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 6.998,
+   "end": 7.452,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Yes",
+   "source_text": "हाँ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 4,
+   "speaker": "S3",
+   "start": 7.79,
+   "end": 14.665,
+   "text": "वोट इस बार तो देना है न कोई छाप पर भी देना है अब तो वोट अथि हो गया तो",
+   "hinglish": "vote is baar to dena hai na koi chhaap par bhi dena hai ab to vote athi ho gaya to",
+   "translation": "Vote this time, not even on the imprint, then",
+   "source_text": "वोट इस बार तो देना है न कोई छाप पर भी देना है अब तो वोट अथि हो गया तो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 14.827,
+   "end": 20.17,
+   "text": "जी देखते हैं कि बहुत अच्छे से देखते हैं और कितना अच्छा बनाते हैं",
+   "hinglish": "ji dekhte hain ki bahut achhe se dekhte hain aur kitna achha banate hain",
+   "translation": "Look at me, how good I am and how good I make",
+   "source_text": "जी देखते हैं कि बहुत अच्छे से देखते हैं और कितना अच्छा बनाते हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 20.303,
+   "end": 23.813,
+   "text": "हाँ जी तो फिर",
+   "hinglish": "haan ji to phir",
+   "translation": "Yes, then",
+   "source_text": "हाँ जी तो फिर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 24.093,
+   "end": 24.763,
+   "text": "हैलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हैलो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 24.991,
+   "end": 30.133,
+   "text": "रात को तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
+   "hinglish": "raat ko to sabhi log dekhte hain bahut sundar banate hain",
+   "translation": "At night, everyone looks at the sky and makes beautiful things",
+   "source_text": "रात को तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 30.871,
+   "end": 32.671,
+   "text": "हम बिहार से बोल रहे हैं",
+   "hinglish": "hum bihar se bol rahe hain",
+   "translation": "We are from Bihar",
+   "source_text": "हम बिहार से बोल रहे हैं",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 32.912,
+   "end": 41.892,
+   "text": "हमारे देश में छत्त पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
+   "hinglish": "hamare desh mein chhatt puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie",
+   "translation": "In our country, Chautha is celebrated and Diwali is also celebrated and yes, we speak",
+   "source_text": "हमारे देश में छत्त पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 11,
+   "speaker": "S2",
+   "start": 42.001,
+   "end": 42.521,
+   "text": "छत्त पू",
+   "hinglish": "chhatt pu",
+   "translation": "Who is the government?",
+   "source_text": "छत्त पू",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 12,
+   "speaker": "S3",
+   "start": 42.821,
+   "end": 44.127,
+   "text": "यही बार तो सरकार कौन",
+   "hinglish": "yahi baar to sarkar kaun",
+   "translation": "Yes, speak",
+   "source_text": "यही बार तो सरकार कौन",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 13,
+   "speaker": "S1",
+   "start": 44.626,
+   "end": 46.776,
+   "text": "पारिवारिक और जी",
+   "hinglish": "parivarik aur ji",
+   "translation": "Family and G",
+   "source_text": "पारिवारिक और जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 14,
+   "speaker": "S1",
+   "start": 46.917,
+   "end": 57.857,
+   "text": "बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से हम देखने में भी ख़ूब अच्छा लगता है हम लोग तो दूसरो को भी बुला बुला के ले जाते हैं",
+   "hinglish": "bahut achha bahut achha dekhte hain bahut achha se hum dekhne mein bhi khoob achha lagta hai hum log to dusro ko bhi bula bula ke le jate hain",
+   "translation": "Very good very good look at it very good we also take others to look at it we take others to look at it",
+   "source_text": "बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से हम देखने में भी ख़ूब अच्छा लगता है हम लोग तो दूसरो को भी बुला बुला के ले जाते हैं",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 15,
+   "speaker": "S2",
+   "start": 58.171,
+   "end": 76.318,
+   "text": "छत पूजन छत्त पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नए वस्त्र ख़रीद के लाते हैं वह पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं यह सब बनाते हैं पूजा करने के लिए",
+   "hinglish": "chhat pujan chhatt puja mein hum log naya sab saman late hain jo vrat karte hain uske liye nae wastr kharid ke late hain woh pahante hain usmen aur thakua banate hain kasar banate hain yeh sab banate hain puja karne ke liye",
+   "translation": "Chhat Puja in Chhat Puja we bring new stuff for fasting for fasting we bring new clothes for fasting we wear them in them and make cakes for fasting we make cakes for fasting",
+   "source_text": "छत्त पूजन छत्त पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नए वस्त्र ख़रीद के लाते हैं वह पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं यह सब बनाते हैं पूजा करने के लिए",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  4,
+  5,
+  6,
+  11,
+  12,
+  15
+ ],
+ "diagnostics": {
+  "llm_calls": 4,
+  "llm_seconds": 59.493,
+  "prompt_tokens": 2390,
+  "completion_tokens": 1317,
+  "chunks": 3,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 7,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "09f2d694fff46c4fb05d1683f1d83917607ef36faaf943cbdd2b6a264c20701e",
+  "source_line_count": 15,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:35:53Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 76.67
+ }
+}

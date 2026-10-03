@@ -1,0 +1,180 @@
+{
+ "title": "Lost ID Card and Camera",
+ "topic": "Getting a New ID Card and a Camera",
+ "executive_summary": "A conversation about getting a new ID card and a camera.",
+ "key_points": [
+  "Part 1: A conversation about getting a new ID card and a camera.",
+  "Part 2: Two people discuss money and a card.",
+  "Part 3: S2: Sir, I have a problem with my ID card. Can you help me get a new one? I have a photo of myself and my base card, but I need another one.",
+  "Part 4: S1: They were talking about the school and my missing photo.",
+  "Part 5: S2: Let's go and get these items. I'll take a photo of them later."
+ ],
+ "keywords": [
+  "ID card",
+  "camera",
+  "missing photo",
+  "base card",
+  "money",
+  "card"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 38.42,
+   "turns": 4,
+   "share": 0.581
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 27.66,
+   "turns": 4,
+   "share": 0.419
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.74,
+   "end": 13.59,
+   "text": "नमस्ते सर सर मेरे कोई गलती हुई मेरे हाथ से वो मेरा आई डी कार्ड घूम हो गया वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड एक और",
+   "hinglish": "namaste sir sir mere koi galti hui mere haath se wo mera aai D card ghoom ho gaya wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir ek khud ka photo ek aadhar card ek aur",
+   "translation": "Sir, I have a problem with my ID card. Can you help me get a new one? I have a photo of myself and my base card, but I need another one. I'm also looking for a camera to take a photo of myself.",
+   "source_text": "नमस्ते सर सर मेरे कोई गलती हुई मेरे हाथ से वो मेरा आई डी कार्ड घूम हो गया वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड एक और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 14.02,
+   "end": 40.53,
+   "text": "बोल रहे थे आप बाबू मशंकर इंटर कॉलेज के ना चाह रहे हैं तो हम बी ए का फोटो देते थे क्या कि स्कूल में मेरा फर्द वहीं छूट गया था उसमें",
+   "hinglish": "bol rahe the aap babu mashankar intar college ke na chaah rahe hain to hum B e ka photo dete the kya ki school mein mera phard wahin chhoot gaya tha usmen",
+   "translation": "They were talking about the school and my missing photo.",
+   "source_text": "बोल रहे थे आप आप बाबू मशंकर इंटर कॉलेज के ना चाह रहे हैं तो हम बी ए का फोटो देते थे क्या कि स्कूल में मेरा फर्द वहीं छूट गया था उसमें",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 41.74,
+   "end": 45.94,
+   "text": "मेरा था वो पॉकिट मेरा था",
+   "hinglish": "mera tha wo pokit mera tha",
+   "translation": "I had a poket with me.",
+   "source_text": "मेरा था वो पॉकिट मेरा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 44.72,
+   "end": 50.19,
+   "text": "आइए जाके दो सामान लो तो हमें सबसे पहले किसके पास जाना पड़ेगा ये फोन बनाएगा अच्छा उसके बाद",
+   "hinglish": "aaie jake do saman lo to hamen sabse pahle kiske paas jana padega ye phone banaega achha uske baad",
+   "translation": "Let's go and get these items. I'll take a photo of them later.",
+   "source_text": "आइए जाके दो सामान लो तो हमें सबसे पहले किसके पास जाना पड़ेगा ये फोन बनाएगा अच्छा उसके बाद",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 50.69,
+   "end": 54.96,
+   "text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "hinglish": "haan to apne camera si si ti V camera check karva lijie",
+   "translation": "Will be available.",
+   "source_text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 54.28,
+   "end": 55.64,
+   "text": "मिली पड़ेगी",
+   "hinglish": "mili padegi",
+   "translation": "Sir, I have a problem with my ID card. Can you help?",
+   "source_text": "मिली पड़ेगी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 55.83,
+   "end": 59.27,
+   "text": "हाँ पैसा भी सा",
+   "hinglish": "haan paisa bhi sa",
+   "translation": "Yes, money too.",
+   "source_text": "हाँ पैसा भी सा",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 57.55,
+   "end": 65.53,
+   "text": "और वो एल की आपको दे देगा उसके बाद में अगर मान लो कि आई डी कार्ड आने में कितना दिन लगेगा रस्सी",
+   "hinglish": "aur wo L ki aapko de dega uske baad mein agar maan lo ki aai D card aane mein kitna din lagega rassi",
+   "translation": "And he will give you a lump of money after that if you believe that it will take a day to get a card.",
+   "source_text": "और वो एल की आपको दे दूंगा उसके बाद में अगर मान लो कि आई डी कार्ड आने में कितना दिन लगेगा रस्सी",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  3,
+  5,
+  6,
+  7,
+  8,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 40.208,
+  "prompt_tokens": 1669,
+  "completion_tokens": 887,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 2,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "e599dc673d3c7d30e1587fdbdaff3c5d390a72cc7a2134a78fe6675ea038c904",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:23:40Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 66.1
+ }
+}

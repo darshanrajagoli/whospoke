@@ -1,0 +1,206 @@
+{
+ "title": "Lost ID Card and Discount at School",
+ "topic": "Lost ID Card and Discount at School",
+ "executive_summary": "A conversation between two people about a missing I.D. card and a discount at a school.",
+ "key_points": [
+  "Lost ID Card",
+  "Discount at School",
+  "ID Card",
+  "Camera",
+  "Check"
+ ],
+ "keywords": [
+  "ID Card",
+  "Discount",
+  "School",
+  "Camera",
+  "Check"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 36.29,
+   "turns": 5,
+   "share": 0.617
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 22.55,
+   "turns": 5,
+   "share": 0.383
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.52,
+   "end": 1.56,
+   "text": "नमस्ते सर",
+   "hinglish": "namaste sir",
+   "translation": "Hello Mr.",
+   "source_text": "नमस्ते सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 1.77,
+   "end": 11.31,
+   "text": "मैं बोल रहा था कि आप बाबू मशंकर इंटर कॉलेज के जो प्रधानाचार्य हैं",
+   "hinglish": "main bol raha tha ki aap babu mashankar intar college ke jo pradhanachary hain",
+   "translation": "I was saying that you are the principal of Babu Manshankar Inter College",
+   "source_text": "नमस्ते बोल रहे थे कि आप आप बाबू मशंकर इंटर कॉलेज के जो प्रधानाचार्य हैं",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 11.52,
+   "end": 16.37,
+   "text": "सर मेरे कोई गलती हो गई मेरे हाथ से वो मेरा आई डी कार्ड गुम हो गया है सर",
+   "hinglish": "sir mere koi galti ho gayi mere haath se wo mera aai D card gum ho gaya hai sir",
+   "translation": "My hand slipped and I lost my I.D. card.",
+   "source_text": "सर मेरे कोई गलती हो गई मेरे हाथ से वो मेरा आई डी कार्ड गुम हो गया है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 16.59,
+   "end": 35.19,
+   "text": "तो हम बी एस का पेपर देने गए थे आपके स्कूल में मेरा फ़र्स वहीं छूट गया था उसमें कुछ छूटे सामान है ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था हाँ",
+   "hinglish": "to hum B S ka paper dene gaye the aapke school mein mera fars wahin chhoot gaya tha usmen kuch chhute saman hai zarurat ki to wo mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein chhuta tha haan",
+   "translation": "They went to the B.S. paper and asked for a discount at your school, but they couldn't get it because it was already discounted.",
+   "source_text": "तो हम बी एस का पेपर देने गए थे आपके स्कूल में मेरा फर्स वहीं छूट गया था उसमें कुछ छूटे सामान है ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था हाँ",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 35.88,
+   "end": 43.12,
+   "text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक उसका फ़ोटो एक आधार कार्ड ही और",
+   "hinglish": "haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir ek uska photo ek aadhar card hi aur",
+   "translation": "Yes, they are coming with the Agzam pass, but I need an I.D. card and a base card copy.",
+   "source_text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक उसका फ़ोटो एक आधार कार्ड ही और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 43.79,
+   "end": 46.26,
+   "text": "मेरा था वो पॉकिट मेरा था",
+   "hinglish": "mera tha wo pokit mera tha",
+   "translation": "My was a poket, but it was mine.",
+   "source_text": "मेरा था वो पॉकिट मेरा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 46.81,
+   "end": 51.82,
+   "text": "ठीक है सर ये कहाँ आनी पड़ेगी ऑफिस तो ऑफिस आप कब तक केतने बजे तक ऑफिस खुला है सर अपना",
+   "hinglish": "theek hai sir ye kahan aani padegi office to office aap kab tak ketne baje tak office khula hai sir apna",
+   "translation": "Sure, where will the office be open from 9:00 AM to 10:00 AM?",
+   "source_text": "ठीक है सर ये कहाँ आनी पड़ेगी ऑफिस तो ऑफिस आप कब तक कितने बजे तक ऑफिस खुला है सर अपना",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 52.25,
+   "end": 53.16,
+   "text": "संगीता जी",
+   "hinglish": "sangita ji",
+   "translation": "I'm sorry, I'm not sure what you mean.",
+   "source_text": "संगीता जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 53.38,
+   "end": 57.79,
+   "text": "आईडी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा",
+   "hinglish": "aaidi card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega",
+   "translation": "I'm sorry, I'm not sure who will be able to help you with that.",
+   "source_text": "आईडी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S1",
+   "start": 58.08,
+   "end": 62.85,
+   "text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "hinglish": "haan to apne camera si si ti V camera check karva lijie",
+   "translation": "Sure, can you check my camera to see if it's working?",
+   "source_text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 43.191,
+  "prompt_tokens": 1836,
+  "completion_tokens": 970,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 8,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 0,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "af4cca4804a916b5e9e6a330d6eb321e4b5e4bdb4ebe31c8e5991c15f9be8e24",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:00:48Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 63.35
+ }
+}

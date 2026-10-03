@@ -1,0 +1,158 @@
+{
+ "title": "Hindi and Hinglish conversation recorded in noisy places",
+ "topic": "Voting, Imprinting, Printers, Handshake, Government, Benefits",
+ "executive_summary": "Voting, Imprinting, Printers, Handshake, Government, Benefits",
+ "key_points": [
+  "vote",
+  "imprinting",
+  "printers",
+  "handshake",
+  "government"
+ ],
+ "keywords": [
+  "vote",
+  "imprinting",
+  "printers",
+  "handshake",
+  "government"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 15.27,
+   "turns": 2,
+   "share": 0.25
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 2.65,
+   "turns": 1,
+   "share": 0.043
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 43.13,
+   "turns": 3,
+   "share": 0.706
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S3",
+   "start": 0.35,
+   "end": 0.8,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "",
+   "source_text": "हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 0.97,
+   "end": 3.62,
+   "text": "हेलो हम बिहार के बोल रहे हैं",
+   "hinglish": "hello hum bihar ke bol rahe hain",
+   "translation": "",
+   "source_text": "हेलो हम बिहार के बोल रहे हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the same English was returned for different lines."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 4.3,
+   "end": 21.17,
+   "text": "वोट इस बार तो देना है ना कोई छापर भी देना है अब तो वोट अभी हो गया तो सरकार को भोट देना है वोट देना है अब देना है देखिए ना कोई छाप छापर देना है वोट",
+   "hinglish": "vote is baar to dena hai na koi chhapar bhi dena hai ab to vote abhi ho gaya to sarkar ko bhot dena hai vote dena hai ab dena hai dekhie na koi chhaap chhapar dena hai vote",
+   "translation": "Vote this time, no imprinting, no printers, then the government will give a handshake, vote, no imprinting, no printers.",
+   "source_text": "वोट इस बार तो देना है ना कोई छापर भी देना है अब तो वोट अभी हो गया तो सरकार को भोट देना है वोट देना है अब देना है देखिए ना कोई छाप छापर देना है वोट",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 21.38,
+   "end": 27.58,
+   "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी",
+   "hinglish": "hello haan hello sir namas theek hai haan ji",
+   "translation": "Hello yes hello sir, hello yes g",
+   "source_text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 27.73,
+   "end": 53.54,
+   "text": "अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो अब किसका देना है जे उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना ये भी ठीक है सहारा हो उसी का वोट दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी वोट देना है वोट नहीं देना है उसे में वोट देना है",
+   "hinglish": "ab to vote khatm ho gaya ab vote aaega to kuch na diya sarkar kuch laabh nahi diya to ab kiska dena hai je usi ka vote dena hai je aage mein badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana ye bhi theek hai sahara ho usi ka vote diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi vote dena hai vote nahi dena hai use mein vote dena hai",
+   "translation": "Now the vote is over, no one has been given, the government has not given any benefits, but still vote",
+   "source_text": "अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो अब किसका देना है जे उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना ये भी ठीक है सहारा हो उसी का वोट दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी वोट देना है वोट नहीं देना है उसे में वोट देना है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 51.96,
+   "end": 61.03,
+   "text": "जी देखते है की बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं जी",
+   "hinglish": "ji dekhte hai ki bahut achha se dekhte hai aur kitna achha banate hain ji",
+   "translation": "Ji looks at how good he is and how good he makes",
+   "source_text": "जी देखते है की बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 2,
+  "llm_seconds": 28.326,
+  "prompt_tokens": 1169,
+  "completion_tokens": 605,
+  "chunks": 1,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 0,
+  "lines_reverted": 5,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 2,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 0,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "3646dfb778635957364df858208d836cc21cb99ace9b680fe2b8d77e9644c978",
+  "source_line_count": 6,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:46:22Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 61.35
+ }
+}

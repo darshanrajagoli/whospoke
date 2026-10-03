@@ -1,0 +1,191 @@
+{
+ "title": "Hindi and Hinglish Conversation",
+ "topic": "Hindi and Hinglish Conversation",
+ "executive_summary": "A conversation in Hindi and Hinglish.",
+ "key_points": [
+  "Hindi and Hinglish Conversation"
+ ],
+ "keywords": [
+  "वोट",
+  "बिहार",
+  "दीपावली",
+  "छछ पूजा"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 33.48,
+   "turns": 4,
+   "share": 0.459
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 30.47,
+   "turns": 3,
+   "share": 0.418
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 8.97,
+   "turns": 2,
+   "share": 0.123
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.48,
+   "end": 6.61,
+   "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी",
+   "hinglish": "hello haan hello sir namas theek hai haan ji",
+   "translation": "Hello",
+   "source_text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S3",
+   "start": 7.0,
+   "end": 14.66,
+   "text": "हाँ वोट इस बात तो देना है ना कोई छाप पर भी देना है अब तो वोट अच्छी हो गया तो",
+   "hinglish": "haan vote is baat to dena hai na koi chhaap par bhi dena hai ab to vote achhi ho gaya to",
+   "translation": "Vote this, not on the printout but on the printout itself.",
+   "source_text": "हाँ वोट इस बात तो देना है ना कोई छाप पर भी देना है अब तो वोट अच्छी हो गया तो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 14.83,
+   "end": 23.81,
+   "text": "जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं जी",
+   "hinglish": "ji dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain ji",
+   "translation": "Look at how good and beautiful we make.",
+   "source_text": "जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 24.09,
+   "end": 24.76,
+   "text": "हेलो",
+   "hinglish": "hello",
+   "translation": "Hello.",
+   "source_text": "हेलो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 24.99,
+   "end": 30.13,
+   "text": "हम्म गाँव के तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
+   "hinglish": "hamm gaanv ke to sabhi log dekhte hain bahut sundar banate hain",
+   "translation": "",
+   "source_text": "हम्म गाँव के तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 30.87,
+   "end": 42.52,
+   "text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+   "hinglish": "hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie chhath",
+   "translation": "",
+   "source_text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S3",
+   "start": 42.82,
+   "end": 44.13,
+   "text": "एक बार तो सरकार को",
+   "hinglish": "ek baar to sarkar ko",
+   "translation": "Government",
+   "source_text": "एक बार तो सरकार को",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 44.63,
+   "end": 57.86,
+   "text": "परिवार सब जी बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से और देखने में भी खूब अच्छा लगता है हम लोग तो दूसरों को भी बुला बुला के ले जाते हैं",
+   "hinglish": "parivar sab ji bahut achha bahut achha dekhte hain bahut achha se aur dekhne mein bhi khoob achha lagta hai hum log to dusron ko bhi bula bula ke le jate hain",
+   "translation": "Family",
+   "source_text": "परिवार सब जी बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से और देखने में भी खूब अच्छा लगता है हम लोग तो दूसरों को भी बुला बुला के ले जाते हैं",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 58.17,
+   "end": 76.32,
+   "text": "छछ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+   "hinglish": "chhachh puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
+   "translation": "Chhacha",
+   "source_text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 39.923,
+  "prompt_tokens": 1686,
+  "completion_tokens": 881,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 4,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 2,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 3,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "a234b3ec459d7065c0fb063ccce8927f5035e3f0eec9208c394d1bf644a26aa7",
+  "source_line_count": 9,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:36:33Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 76.67
+ }
+}

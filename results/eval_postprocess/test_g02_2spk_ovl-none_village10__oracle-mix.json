@@ -1,0 +1,203 @@
+{
+ "title": "Lost ID Card and Base Card in Babu Maansingar Inter College",
+ "topic": "Lost ID Card and Base Card in Babu Maansingar Inter College",
+ "executive_summary": "A conversation between two people, one of whom is the principal of Babu Maansingar Inter College, about the I.D. card and the base card.",
+ "key_points": [
+  "Lost I.D. card and base card in Babu Maansingar Inter College"
+ ],
+ "keywords": [
+  "I.D. card",
+  "base card",
+  "where",
+  "office",
+  "open",
+  "how long"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 36.29,
+   "turns": 5,
+   "share": 0.617
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 22.55,
+   "turns": 5,
+   "share": 0.383
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.52,
+   "end": 1.56,
+   "text": "नमस्ते सर",
+   "hinglish": "namaste sir",
+   "translation": "Hello Mr. Sir",
+   "source_text": "नमस्ते सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 1.77,
+   "end": 11.31,
+   "text": "मैं बोल रहा था आप बाबू माशंकर इंटर कॉलेज के प्रधानाचार्य है",
+   "hinglish": "main bol raha tha aap babu mashankar intar college ke pradhanachary hai",
+   "translation": "I was speaking to you, you are the principal of Babu Maansingar Inter College.",
+   "source_text": "नमस्ते बोल रहे थे आप आप बाबू माशंकर इंटर कॉलेज के प्रधानाचार्य है",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 11.52,
+   "end": 16.37,
+   "text": "सर तो गलती हुई मेरे हाथ से तो मेरा आई डी कार्ड गुम हो गया है सर",
+   "hinglish": "sir to galti hui mere haath se to mera aai D card gum ho gaya hai sir",
+   "translation": "Mr. Sir, my hand slipped and my I.D. card went missing.",
+   "source_text": "सर तो गलती हुई मेरे हाथ से तो मेरा आई डी कार्ड गुम हो गया है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 16.59,
+   "end": 35.19,
+   "text": "तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा पेड़ वही छूट गया था उसमें कुछ ऐसे सामान है जरूरत की तो वो मुझे चाहिए था पैसे मिल सकता है अब अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था हाँ",
+   "hinglish": "to hum B e ka paper dene gaye the aapke school mein mera ped wahi chhoot gaya tha usmen kuch aise saman hai jarurat ki to wo mujhe chahiye tha paise mil sakta hai ab apne karmachari se check karva ke puchhie kamra number teen mein chhuta tha haan",
+   "translation": "They went to give the BA paper and I asked my Karma Chari to check the room number three, it was discounted.",
+   "source_text": "तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा पेड़ वही छूट गया था उसमें कुछ ऐसे सामान है जरूरत की तो वो मुझे चाहिए था पैसे मिल सकता है अब अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 35.88,
+   "end": 43.12,
+   "text": "हाँ सर वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फोटो काफी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड और",
+   "hinglish": "haan sir wo exam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kaphi aur kya kya lana hai sir ek khud ka photo ek aadhar card aur",
+   "translation": "Yes, they are coming with the exam papers, but I need a photo of myself and a base card.",
+   "source_text": "हाँ सर वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फोटो काफी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 43.79,
+   "end": 46.26,
+   "text": "मेरा था वो पॉकिट मेरा था",
+   "hinglish": "mera tha wo pokit mera tha",
+   "translation": "My was a poket, my was my.",
+   "source_text": "मेरा था वो पॉकिट मेरा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 46.81,
+   "end": 51.82,
+   "text": "ठीक है सर ये कहाँ आनी पड़ेगी और कब तक के कितने घंटे तक ऑफिस खुला है सर अपना",
+   "hinglish": "theek hai sir ye kahan aani padegi aur kab tak ke kitne ghante tak office khula hai sir apna",
+   "translation": "Sir, where will you go and how long will the office be open?",
+   "source_text": "ठीक है सर ये कहाँ आनी पड़ेगी और कब तक कितने बजे तक ऑफिस खुला है सर अपना",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 52.25,
+   "end": 53.16,
+   "text": "जीता जी",
+   "hinglish": "jita ji",
+   "translation": "Sir, won't you please?",
+   "source_text": "जीता जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 53.38,
+   "end": 57.79,
+   "text": "आईडी गई दो सामान लौंगा तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा",
+   "hinglish": "aaidi gayi do saman launga to hamen sabse pahle kiske paas jana padega ye kaun banaega",
+   "translation": "Sir, if you find two things, who will you give them to?",
+   "source_text": "आईडी गई दो सामान लौंगा तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S1",
+   "start": 58.08,
+   "end": 62.85,
+   "text": "हाँ अपने कैमरे सीसीटीवी कैमरे चेक करवा लीजिए",
+   "hinglish": "haan apne camera c.c.t.v camera check karva lijie",
+   "translation": "Sir, will you please check your camera and CCTV cameras?",
+   "source_text": "हाँ अपने कैमरे सीसीटीवी कैमरे चेक करवा लीजिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 50.21,
+  "prompt_tokens": 1820,
+  "completion_tokens": 1137,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 8,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 7,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "ffba59ba5e30abb5e32519d8756ca9be13489a3ede2c05047321383d6dc5fab6",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:01:38Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 63.35
+ }
+}
