@@ -48,6 +48,17 @@
 
 Chosen on Vaani test: **indicconformer**. Hinglish romaniser: 82.0% of 8630 English words spoken inside Hindi (Vaani test) come out in correct English spelling.
 
+### Stage 3 — robustness of the WER to spelling variants
+
+Scoring counts nukta, chandrabindu vs anusvara and invisible joiners as differences; merging them lowers both models' WER alike and does not change the ranking.
+
+| model          | set               | WER (as scored)   | WER, spelling variants merged   |
+|:---------------|:------------------|:------------------|:--------------------------------|
+| indicconformer | indicvoices-valid | 13.9 %            | 12.6 %                          |
+| indicconformer | vaani-test        | 21.0 %            | 20.0 %                          |
+| indicwav2vec   | indicvoices-valid | 36.1 %            | 34.3 %                          |
+| indicwav2vec   | vaani-test        | 38.0 %            | 36.4 %                          |
+
 ## End-to-end on the test set (72 conversations, 83 min)
 
 cpWER = words wrong **or attributed to the wrong speaker** (pooled over all words). DER with 0.25 s collar, overlap scored. Oracle rows use the true speaker timeline.
@@ -143,3 +154,45 @@ cpWER = words wrong **or attributed to the wrong speaker** (pooled over all word
 | GMM − spectral clustering                    | +1.2 [-1.5, +4.1]  | +0.0 [-1.7, +1.8] | 31/72                                        |
 | pyannote 3.1 − our diarizer                  | -0.8 [-4.4, +3.0]  | -1.9 [-4.3, +0.7] | 31/72                                        |
 | true timeline: mixture − separated overlaps  | +3.0 [+1.8, +4.3]  | +0.0 [+0.0, +0.0] | 39/72                                        |
+
+### The same comparisons, resampling whole speaker groups
+
+The 72 conversations are 8 speaker groups, each rendered in every condition, so conversations of one group are not independent. Resampling whole groups gives wider, more honest intervals.
+
+| comparison                                   | Δ cpWER (points)   | Δ DER (points)    | speaker groups where first is worse (cpWER / DER)   |
+|:---------------------------------------------|:-------------------|:------------------|:----------------------------------------------------|
+| Order A − Order B (proposal's order vs ours) | +6.7 [+3.2, +10.4] | +5.9 [+3.5, +8.5] | 7/8 / 8/8                                           |
+| no separation − targeted separation          | +0.5 [+0.0, +1.0]  | +0.0 [+0.0, +0.0] | 7/8 / 0/8                                           |
+| GMM − spectral clustering                    | +1.2 [-1.8, +4.4]  | +0.0 [-2.3, +1.9] | 4/8 / 4/8                                           |
+| pyannote 3.1 − our diarizer                  | -0.8 [-3.6, +2.3]  | -1.9 [-4.3, +0.9] | 3/8 / 2/8                                           |
+| true timeline: mixture − separated overlaps  | +3.0 [+1.3, +4.5]  | +0.0 [+0.0, +0.0] | 7/8 / 0/8                                           |
+
+## Stage 4 — LLM post-processing on the test set (63 conversations)
+
+Stage 4 is run on four Stage-3 transcripts of the same conversations, each with one more source of upstream error. *cpWER before/after*: who-said-what error of the Stage-3 text and of the Stage-4 repaired text (pooled; Δ = paired mean per conversation, 95 % bootstrap CI, positive = Stage 4 added errors). *Keywords really said*: share of the report's keywords whose content words all occur in the true transcript or its translation; *summary words really said*: the same for the content words of the summary and key points. *F1 vs truth report*: word overlap with the report made from the true transcript. The 63 conversations come from 7 speaker group(s) (0, 1, 2, 3, 4, 5, 6; group 7 was used to develop the prompts and is never scored, D32), and conversations of one group share their speech, so these intervals are optimistic.
+
+| Stage-4 input                       | cpWER before   | cpWER after   | Δ (points)        | helped / hurt   | keywords really said     | summary words really said   |   keyword F1 vs truth report |   summary F1 vs truth report |   n |
+|:------------------------------------|:---------------|:--------------|:------------------|:----------------|:-------------------------|:----------------------------|-----------------------------:|-----------------------------:|----:|
+| reference (true transcript)         | 0.0 %          | 1.9 %         | +2.0 [+1.7, +2.2] | 0 / 58          | 98.8 % [97.5 % – 99.8 %] | 50.3 %                      |                         1    |                         1    |  63 |
+| oracle-clean (ASR, clean voices)    | 18.0 %         | 19.1 %        | +1.2 [+0.9, +1.4] | 0 / 49          | 63.9 % [56.8 % – 71.1 %] | 47.5 %                      |                         0.17 |                         0.18 |  63 |
+| oracle-mix (ASR, noisy mixture)     | 30.6 %         | 31.4 %        | +0.9 [+0.7, +1.1] | 0 / 42          | 62.9 % [55.3 % – 70.7 %] | 40.2 %                      |                         0.1  |                         0.14 |  63 |
+| B-spectral (full pipeline, Order B) | 51.8 %         | 52.8 %        | +0.9 [+0.8, +1.1] | 1 / 50          | 60.5 % [53.8 % – 67.9 %] | 37.1 %                      |                         0.1  |                         0.16 |  63 |
+
+### Stage 4 guardrails (share of transcript lines)
+
+| Stage-4 input   |   lines | repaired   | repair reverted (over-edited)   | skipped by the model, restored   | English suspiciously long   | flagged uncertain by the model   | no translation   |   lines the LLM failed on |   keywords dropped (ungrounded) |   actions dropped (unsupported) |   synthesis failed | schema enforced   |
+|:----------------|--------:|:-----------|:--------------------------------|:---------------------------------|:----------------------------|:---------------------------------|:-----------------|--------------------------:|--------------------------------:|--------------------------------:|-------------------:|:------------------|
+| reference       |    1210 | 15.4 %     | 24.6 %                          | 0.0 %                            | 0.0 %                       | 58.5 %                           | 5.7 %            |                         0 |                             210 |                               0 |                  0 | True              |
+| oracle-clean    |     598 | 20.7 %     | 37.3 %                          | 0.0 %                            | 0.0 %                       | 63.0 %                           | 7.7 %            |                         0 |                             136 |                               0 |                  0 | True              |
+| oracle-mix      |     567 | 18.0 %     | 38.6 %                          | 0.0 %                            | 0.0 %                       | 59.3 %                           | 6.2 %            |                         0 |                             184 |                               0 |                  0 | True              |
+| B-spectral      |    1159 | 14.3 %     | 26.1 %                          | 0.0 %                            | 0.0 %                       | 55.0 %                           | 4.8 %            |                         0 |                             154 |                               4 |                  0 | True              |
+
+### Stage 4 time per run (RTF = Stage-4 time ÷ audio length; not pooled across machines)
+
+With several reports at once, each report's time includes the sharing of the machine; single-request speed is in the benchmark notebook (§7). *Server peak memory* is the server process's resident memory: it counts the memory-mapped model file, and on Windows it shrinks when the system is short of memory, so it is comparable only between runs on one machine under similar load.
+
+| machine                                                                                                  | groups   | server                                                                                               |   reports at once |   RTF reference |   RTF oracle-clean |   RTF oracle-mix |   RTF B-spectral | server peak memory   |
+|:---------------------------------------------------------------------------------------------------------|:---------|:-----------------------------------------------------------------------------------------------------|------------------:|----------------:|-------------------:|-----------------:|-----------------:|:---------------------|
+| cloud container: 4 vCPU Intel Xeon @ 2.10 GHz (no SMT), 15 GB RAM, Linux, no GPU                         | 0, 1     | scripts/serve_llm.py --threads 4 --parallel 3                                                        |                 3 |            9.01 |               6.15 |             5.38 |             9.05 | 12.5 GB              |
+| RTX 3050 Laptop GPU (6 GB, all layers on the GPU), AMD Ryzen 5 7640HS (6 cores), 15.3 GB RAM, Windows 11 | 2, 3     | scripts/serve_llm.py --llama-bin C:\whospoke-data\llama-b11312-cuda12.4 --gpu-layers 99 --parallel 1 |                 1 |            0.87 |               0.64 |             0.59 |             0.96 | 4.4 GB               |
+| RTX 3050 Laptop GPU (6 GB, all layers on the GPU), AMD Ryzen 5 7640HS (6 cores), 15.3 GB RAM, Windows 11 | 4, 5, 6  | scripts/serve_llm.py --llama-bin C:\whospoke-data\llama-b11312-cuda12.4 --gpu-layers 99 --parallel 1 |                 1 |            0.95 |               0.64 |             0.58 |             0.85 | 1.0 GB               |

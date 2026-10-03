@@ -12,6 +12,11 @@ For measured results see [RESULTS.md](RESULTS.md); for every judgement call see 
  (16 kHz mono)     │  ORDER A (proposal's order, also built and measured)                 │    transcript.txt / _hinglish.txt
                    │  1. separate whole file ─► 2. diarize both tracks jointly ─► 3. ASR  │    transcript.srt / .json
                    └──────────────────────────────────────────────────────────────────────┘
+                                                      │
+                                                      ▼  4. LLM post-processing (Airavata, local; optional)
+                                                   report.md / report.json
+                                                   (summary, topic, keywords, action items,
+                                                    repaired + translated speaker dialogue)
 ```
 
 ---
@@ -114,6 +119,43 @@ how many of the English words spoken inside Hindi sentences come out exactly rig
 
 ---
 
+## Stage 4 — LLM post-processing (`llm_postprocess.py`)
+
+**Job.** Turn the Stage-3 transcript into the proposal's final deliverable: a human-readable report with an executive
+summary, topic, keyword tags and speaker-separated dialogue, repaired and translated. Full reference:
+[MILESTONE4.md](MILESTONE4.md).
+
+**Model.** AI4Bharat **Airavata**: OpenHathi (Llama-2 7B with an extended Hindi vocabulary) instruction-tuned on Hindi
+and English instruction data. Quantised to 4 bits (Q4_K_M, ~4 GB) and served locally by llama.cpp's `llama-server`
+(`scripts/serve_llm.py`), with its own chat format and a 4,096-token context window (D27).
+
+**Two calls.**
+1. *Per chunk* of ≤ 6 lines (sized to fit the context window): the model sees numbered lines
+   (`7 | Speaker_B | 00:06-00:20 | <Devanagari>`) and returns, per line number, the line copied with only clearly
+   broken or repeated words repaired, its English translation (the schema allows only ASCII there) and an "uncertain"
+   flag, plus a summary, keywords and explicit actions for that part.
+2. *Synthesis*: from the part summaries and the English lines, a title, topic, 2–4 sentence executive summary, key
+   points, keywords and action items.
+
+**Guardrails** (D28–D30, D32).
+- Speaker labels and timestamps are never part of the reply format; they are copied from Stage 3.
+- The reply must follow a JSON schema that lists every line number in order (llama-server enforces it with a
+  grammar), and is checked again in Python: unknown line numbers are dropped, missing lines restored and flagged; an
+  unusable reply makes the chunk be halved and retried, and one line that still fails keeps its ASR text.
+- A "repair" that changes more than half of a line's characters, adds words, drops words (other than an immediate
+  repeat) or replaces an English loanword is reverted (the model rewrote, translated, padded or "Hindi-ised" it); an
+  English line much longer than its source is flagged; one English sentence returned for several different lines is
+  dropped.
+- Every content word of a keyword must occur in the transcript or its translations; action items must name a real
+  speaker (or "unspecified"), cite real lines and share a word with them.
+- Long recordings: part summaries are merged in rounds so that the final call always fits the context window.
+- The Hinglish column is made by the Stage-3 romaniser from the repaired Devanagari.
+Every guardrail's count goes into the report, and each one has a test.
+
+**Metrics** (D31). cpWER of the Stage-3 text vs the repaired text (does the repair help?); share of report keywords
+and summary words that were really said; word overlap (F1) of keywords and summary with the report made from the true
+transcript; time per conversation. Test group 7 was used to revise the prompts and is not scored (D32).
+
 ## How errors cascade (proposal objective 5)
 
 `scripts/evaluate.py` runs *oracle* versions of the pipeline that replace one stage with the truth:
@@ -127,9 +169,14 @@ how many of the English words spoken inside Hindi sentences come out exactly rig
 
 The differences between consecutive rows are the error contributed by each stage.
 
+`scripts/eval_postprocess.py` carries the cascade into Stage 4: it runs the LLM on the true transcript and on the
+oracle-clean, oracle-mix and B-spectral transcripts of the same conversations, and measures how much of each
+upstream error survives into the report (keywords that were never said, drift of the summary from the one made
+from the true transcript), and whether the LLM repair removes any of it (cpWER before vs after Stage 4).
+
 ---
 
-## Outputs of one run (`python -m whospoke run file.wav`)
+## Outputs of one run (`python -m whospoke run file.wav [--postprocess]`)
 
 | file | content |
 |---|---|
@@ -138,3 +185,5 @@ The differences between consecutive rows are the error contributed by each stage
 | `transcript_hinglish.txt` | same, romanised |
 | `transcript.srt` | subtitles (play the audio with them in VLC) |
 | `transcript.json` | everything above + per-stage timings and GPU memory |
+| `report.md` | the Stage-4 deliverable (with `--postprocess`): summary, topic, keywords, action items, speakers, repaired and translated dialogue, what was changed and why |
+| `report.json` | the same, machine-readable, with every guardrail's count and the SHA-256 of the transcript lines it was made from |

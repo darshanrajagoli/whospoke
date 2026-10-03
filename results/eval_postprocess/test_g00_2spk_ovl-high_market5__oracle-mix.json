@@ -1,0 +1,149 @@
+{
+ "title": "Furniture Prices and Travel Plans",
+ "topic": "Furniture Prices and Travel Plans",
+ "executive_summary": "A conversation between two people about furniture prices and travel plans.",
+ "key_points": [
+  "Furniture prices",
+  "Travel plans",
+  "Furniture draping room",
+  "Handiwork",
+  "Payment methods"
+ ],
+ "keywords": [
+  "Furniture",
+  "Wife"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 58.01,
+   "turns": 3,
+   "share": 0.712
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 23.47,
+   "turns": 3,
+   "share": 0.288
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.37,
+   "end": 5.21,
+   "text": "हेलो मैम यस यस बोलिए अच्छा अच्छा काफे",
+   "hinglish": "hello ma'am yas yas bolie achha achha kaphe",
+   "translation": "Hello Ma'am, how are you? Good coffee.",
+   "source_text": "हेलो मैम यस यस बोलिए अच्छा अच्छा काफे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 5.65,
+   "end": 21.38,
+   "text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका मैम आपको क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइज में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइज़ करवा देंगे",
+   "hinglish": "haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka ma'am aapko kya chahiye ye bataie ma'am aapko bahut sare praij mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us prize karva denge",
+   "translation": "Yes, Ma'am, I will get it. What budget do you want? What price do you want? What type of furniture do you want?",
+   "source_text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइज में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइज़ करवा देंगे",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 19.29,
+   "end": 27.14,
+   "text": "काफी बंद हो गयी है ना तो आपने उसका इंधन देखा",
+   "hinglish": "kaphi band ho gayi hai na to aapne uska indhan dekha",
+   "translation": "It's closed. Did you see her?",
+   "source_text": "अच्छा बंद हो गयी है ना तो आपने उसका इंधन देखा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 25.26,
+   "end": 44.28,
+   "text": "तो आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगी आपको और सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो चाल की लकड़ी थी मैम",
+   "hinglish": "to aapko milega divan bed milega ek sofa milega daining table milegi aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo chaal ki lakdi thi ma'am",
+   "translation": "So, you will get a divan bed, a sofa, and a dining table. You will also get a furniture draping room with the wood that was used for the trick. Ma'am.",
+   "source_text": "तो आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो चाल की लकड़ी था मैम",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 42.95,
+   "end": 53.73,
+   "text": "तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या अच्छा",
+   "hinglish": "to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waiph theek ho jaegi aap kisi yatra par ja rahe ho kya achha",
+   "translation": "So, you can send me your location and I will come there. Your wife will be fine. You are going on a trip, is it? Good.",
+   "source_text": "तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या अच्छा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 54.4,
+   "end": 77.66,
+   "text": "मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सावन की लकड़ी शीशम की लकड़ी हर एक चीज़ अच्छी मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा मैम मेरा दुकान पड़ेगा गासीपुर में और मैम आप अपना पेमेंट कैसे करेंगे ऑनलाइन करेंगे कैश ऑन डिलीवरी करेंगे कैसे",
+   "hinglish": "ma'am yahan par har ek cheez achha milta hai aam ki lakdi savan ki lakdi shisham ki lakdi har ek cheez achhi milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega ma'am mera dukan padega gasipur mein aur ma'am aap apna payment kaise karenge online karenge cash on delivery karenge kaise",
+   "translation": "Ma'am, I have good workers here. They work well. Their handiwork is also very good. You will get everything you want. Ma'am, how will you pay? Will you pay online? Will you pay cash on delivery? How will you do it?",
+   "source_text": "मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सावन की लकड़ी शीशम की लकड़ी हर एक चीज़ अच्छी मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा मैम मेरा दुकान पड़ेगा गासीपुर में और मैम आप अपना पेमेंट कैसे करेंगे ऑनलाइन करेंगे कैश ऑन डिलीवरी करेंगे कैसे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "diagnostics": {
+  "llm_calls": 2,
+  "llm_seconds": 357.44,
+  "prompt_tokens": 1374,
+  "completion_tokens": 845,
+  "chunks": 1,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 5,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 1,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "a97d7223f81c7d296c37bc390e32b46c8a93efb29a20648267370b6f0d7d4ed7",
+  "source_line_count": 7,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-02T02:30:05Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 78.17
+ }
+}

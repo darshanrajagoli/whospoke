@@ -18,12 +18,13 @@ audit/RED_TEAM_AUDIT.md.
 CONTEXT
 - Repository: https://github.com/darshanrajagoli/whospoke (clone it). Start by reading, in this order:
   README.md, INDEX.md, Audio_Engineering_AI_Project_Proposal.docx (the professor's brief — extract its
-  text), DEVIATIONS.md, DECISIONS.md, docs/PIPELINE.md, docs/RESULTS.md, then all code in src/whospoke/,
+  text), DEVIATIONS.md, DECISIONS.md, docs/PIPELINE.md, docs/MILESTONE4.md, docs/RESULTS.md, then all code in src/whospoke/,
   scripts/ and tests/.
 - The project is a "who spoke what and when" pipeline for noisy, overlapping, Hindi/English code-switched
   audio: Stage 1 speech separation (Conv-TasNet), Stage 2 speaker diarization (VAD + speaker embeddings +
-  spectral clustering / GMM), Stage 3 Hindi ASR (IndicConformer / IndicWav2Vec) + Hinglish romanisation.
-  Stage 4 (LLM post-processing) is intentionally NOT built yet (planned after the mid-semester review).
+  spectral clustering / GMM), Stage 3 Hindi ASR (IndicConformer / IndicWav2Vec) + Hinglish romanisation,
+  Stage 4 LLM post-processing (AI4Bharat Airavata, 4-bit, served locally by llama.cpp; docs/MILESTONE4.md) that
+  writes a report: summary, topic, keywords, action items, repaired + translated speaker dialogue.
 - Evaluation uses simulated conversations built from real IndicVoices speech + real background noise,
   with a dev set for tuning and a test set for reporting.
 
@@ -54,7 +55,12 @@ WHAT TO CHECK (go through every item; say "checked, no issue" when that is the f
 7. Tests: which important behaviours are NOT tested? Are any tests trivially passing?
 8. Hinglish romaniser (src/whospoke/hinglish.py): find words it romanises badly; check that its reported
    accuracy was measured on data not used to build its lexicon.
-9. Presentation risk: list the 10 hardest questions an examiner could ask about this project, each with the
+9. Stage 4 (src/whospoke/llm_postprocess.py, scripts/eval_postprocess.py, results/eval_postprocess.csv,
+   results/demo/report.md): can the LLM change speakers or timestamps? Can an invented line, keyword or action
+   item reach the report? Are the guardrails (D28–D30) actually enforced and tested? Is the evaluation (D31)
+   a fair measure of "fix syntactic errors" and of error propagation into the summary? Read several reports in
+   results/eval_postprocess/ against their true transcripts: are the summaries and translations faithful?
+10. Presentation risk: list the 10 hardest questions an examiner could ask about this project, each with the
    honest best answer based on the repo.
 
 OUTPUT FORMAT for audit/RED_TEAM_AUDIT.md

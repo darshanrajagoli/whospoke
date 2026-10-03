@@ -1,0 +1,168 @@
+{
+ "title": "Lost ID Card",
+ "topic": "Lost ID Card",
+ "executive_summary": "Speakers discuss the topic of lost ID cards and agree to find a solution.",
+ "key_points": [
+  "Speakers agree to find a solution to the problem of lost ID cards.",
+  "Speakers mention that the shop is busy, but they are the most popular shop in the area.",
+  "Speakers mention that they will tell you what is available when you come to the shop."
+ ],
+ "keywords": [
+  "Shop",
+  "Busy",
+  "Popular",
+  "Tell"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 25.24,
+   "turns": 2,
+   "share": 0.391
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 35.4,
+   "turns": 3,
+   "share": 0.549
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 3.89,
+   "turns": 2,
+   "share": 0.06
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S3",
+   "start": 0.71,
+   "end": 2.4,
+   "text": "हाँ जी नमस्ते हेलो हाँ बोलो",
+   "hinglish": "haan ji namaste hello haan bolo",
+   "translation": "Hello",
+   "source_text": "हाँ जी नमस्ते हेलो हाँ बोलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 1.56,
+   "end": 4.66,
+   "text": "हेलो हाँ बोल नमस्कार",
+   "hinglish": "hello haan bol namaskar",
+   "translation": "Hello",
+   "source_text": "हेलो हाँ बोल नमस्कार",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 8.05,
+   "end": 10.25,
+   "text": "हाँ हाँ आपको बता देगा",
+   "hinglish": "haan haan aapko bata dega",
+   "translation": "Hello",
+   "source_text": "हाँ हाँ आपको बता देगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 9.15,
+   "end": 28.53,
+   "text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रूपये मिलेंगे आपको और अगर आप उसे फ्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है",
+   "hinglish": "aapko bata de agar aap shadi le jaoge to teen sau rupye milenge aapko aur agar aap use fry karva ke ya sabji banva ke le jaoge to aapko sadhe chaar sau rupae ki pad jaegi to haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai",
+   "translation": "Hello",
+   "source_text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रूपये मिलेंगे आपको और अगर आप उसे फ्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 26.09,
+   "end": 47.0,
+   "text": "मेरे पार्लर में होते हैं फोर स्टेक होती है और फेजल होती है वी वी सेव है और यू सेवी है आपको कौन सी करानी है उसके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको सामने मतलब फेस के अकॉर्डिंग करानी है या फिर सामने से कराना है",
+   "hinglish": "mere parlour mein hote hain four stek hoti hai aur phejal hoti hai V V sev hai aur yu sevi hai aapko kaun si karani hai uske theek hai uski phees bata deti hoon meri meri yu cutting ke liye jo aapko samne matlab face ke according karani hai ya phir samne se karana hai",
+   "translation": "Hello",
+   "source_text": "मेरे पार्लर में होते हैं फोर स्टेक होती है और फेजल होती है वी वी सेव है और यू सेवी है आपको कौन सी करानी है उसके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको सामने मतलब फेस के अकॉर्डिंग करानी है या फिर सामने से कराना है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 47.6,
+   "end": 51.93,
+   "text": "थ्री हंड्रेड तीन सौ समथिंग हाँ",
+   "hinglish": "three hundred teen sau something haan",
+   "translation": "Hello",
+   "source_text": "थ्री हंड्रेड तीन सौ समथिंग हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 52.61,
+   "end": 65.53,
+   "text": "तो आप शॉप पे एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है न हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज",
+   "hinglish": "to aap shop pe ek baar aa jae to hum aapko bata den ki kya chahiye kaisa lag raha hai na haan ab market hai aapke yahan vaise to hamare yahan sabse zyada matlab hamare shop ka bole to sabse pasandida cheej",
+   "translation": "They said they'll tell you what's available when you come to the shop. They said the shop is busy, but they're the most popular shop in the area. They said they'll tell you what's available when you come to the shop.",
+   "source_text": "तो आप शॉप पे एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है न हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  5,
+  6,
+  7,
+  9
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 243.805,
+  "prompt_tokens": 1641,
+  "completion_tokens": 617,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 0,
+  "lines_reverted": 6,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 0,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 3,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 3,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "e8e3843d797af1f0fae5837cd985dc9dc753eecd40dad3e3c129d45ff5df512c",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-02T04:21:37Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 66.14
+ }
+}

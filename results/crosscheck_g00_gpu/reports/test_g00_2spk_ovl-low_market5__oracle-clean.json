@@ -1,0 +1,176 @@
+{
+ "title": "Hindi-Hinglish Conversation",
+ "topic": "Car Engine Repair",
+ "executive_summary": "A conversation between two people about a car engine and how to fix it.",
+ "key_points": [
+  "Hello",
+  "Yes, I will find you a budget.",
+  "What budget do you need? What price do you want?",
+  "Your car is in trouble, like this."
+ ],
+ "keywords": [
+  "कार इंजन",
+  "इंजन"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 51.7,
+   "turns": 4,
+   "share": 0.771
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 15.36,
+   "turns": 4,
+   "share": 0.229
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.78,
+   "end": 2.02,
+   "text": "नमस्ते मैम हाँ मैम",
+   "hinglish": "namaste ma'am haan ma'am",
+   "translation": "Hello",
+   "source_text": "नमस्ते मैम हाँ मैम",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 2.41,
+   "end": 3.24,
+   "text": "हलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 3.91,
+   "end": 8.66,
+   "text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+   "hinglish": "haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+   "translation": "Yes, I will find you a budget. What budget do you need? What price do you want?",
+   "source_text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 6.94,
+   "end": 10.67,
+   "text": "यश यश बोलिए अच्छा अच्छा कहाँ पे",
+   "hinglish": "yash yash bolie achha achha kahan pe",
+   "translation": "Yay, say something nice. Where do you want to go?",
+   "source_text": "यश यश बोलिए अच्छा अच्छा कहाँ पे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 9.75,
+   "end": 20.63,
+   "text": "मैम आपको क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+   "hinglish": "ma'am aapko kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+   "translation": "What do you want? What price do you want? What price do you want?",
+   "source_text": "मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 19.37,
+   "end": 23.72,
+   "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे अच्छा",
+   "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise achha",
+   "translation": "Your car is in trouble, like this.",
+   "source_text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे अच्छा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 24.42,
+   "end": 59.25,
+   "text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+   "hinglish": "ma'am aapko achha hi saman milega aapko milega divan bed milega ek sofa milega daining table milega aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
+   "translation": "",
+   "source_text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the same English was returned for different lines."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 57.3,
+   "end": 63.75,
+   "text": "बंद हो गई है ना तो आपने उसका इंजन देखा अच्छा अच्छा तो आप ऐसा करिए",
+   "hinglish": "band ho gayi hai na to aapne uska engine dekha achha achha to aap aisa karie",
+   "translation": "",
+   "source_text": "बंद हो गई है ना तो आपने उसका इंजन देखा अच्छा अच्छा अच्छा तो आप ऐसा करिए",
+   "changed": true,
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 40.561,
+  "prompt_tokens": 1864,
+  "completion_tokens": 860,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 4,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 4,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 4,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "dc27d995ec26b79e67395a0d4a6405cd2666ed9d5c738061637f2f5cf6cab4fa",
+  "source_line_count": 8,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T15:32:12Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 64.18
+ }
+}

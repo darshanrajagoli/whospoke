@@ -1,0 +1,183 @@
+{
+ "title": "Lucknowi Style Biryanis",
+ "topic": "Lucknowi Style Biryanis",
+ "executive_summary": "Speaker requests a discount for five people for Lucknowi style biryanis.",
+ "key_points": [
+  "Lucknowi style biryanis",
+  "five people",
+  "discount"
+ ],
+ "keywords": [
+  "biryanis",
+  "Lucknowi style",
+  "five people",
+  "discount"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 12.64,
+   "turns": 2,
+   "share": 0.154
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 55.0,
+   "turns": 3,
+   "share": 0.668
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 14.69,
+   "turns": 3,
+   "share": 0.178
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.62,
+   "end": 9.57,
+   "text": "नमस्ते सर सर सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर हो पाएगा",
+   "hinglish": "namaste sir sir sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi paanch logon ke liye chahiye tha sir ho paega",
+   "translation": "Hello good morning we were talking about the Lucknowi style biryanis that we wanted for five people Sir will it be possible",
+   "source_text": "नमस्कार सर सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर हो पाएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 9.62,
+   "end": 14.83,
+   "text": "हेलो अच्छा आइए बोल रहा था मेरी",
+   "hinglish": "hello achha aaie bol raha tha meri",
+   "translation": "Yes and also wanted in sweet like rose berries snowy khena vana samosa and all that",
+   "source_text": "हेलो अच्छा आइए बोल रहा था मेरी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 15.65,
+   "end": 33.81,
+   "text": "हाँ और मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा वमोसा ये सब तो सर वो कह रहे वो वो सर पूछ रहे थे की जो ये है गुलाब जामुन एक कितने रुपये पीस लगेगा",
+   "hinglish": "haan aur mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa wamosa ye sab to sir wo kah rahe wo wo sir poochh rahe the ki jo ye hai gulab jamun ek kitne rupye piece lagega",
+   "translation": "Lucknow is in and when is the treatment available Sir",
+   "source_text": "हाँ और मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा वमोसा ये सब तो सर वो कह रहे वो वो सर पूछ रहे थे की जो ये है गुलाब जामुन एक कितने रुपये पीस लगेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S3",
+   "start": 32.57,
+   "end": 38.98,
+   "text": "लखनऊ में है हाँ कब का इलाज है मैम आप कब तक",
+   "hinglish": "lakhnau mein hai haan kab ka ilaj hai ma'am aap kab tak",
+   "translation": "",
+   "source_text": "लखनऊ में है हाँ कब का इलाज है मैम आप कब तक",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 37.78,
+   "end": 45.21,
+   "text": "जी सही है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फोटोशूपी दिक्कत कैसा क्या रहता है",
+   "hinglish": "ji sahi hai mere yahan das joon ki shadi hai to mere ko pri wedding photoshupi dikkat kaisa kya rahta hai",
+   "translation": "",
+   "source_text": "जी सही है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फोटोशूपी दिक्कत कैसा क्या रहता है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S3",
+   "start": 42.32,
+   "end": 48.21,
+   "text": "कब से आपको दिक्कत आ रहा है आपको पैर में सूजन है क्या दिक्कत है पैर में",
+   "hinglish": "kab se aapko dikkat aa raha hai aapko pair mein sujan hai kya dikkat hai pair mein",
+   "translation": "When did you start getting Diqqat in your leg and what is the Diqqat in the leg",
+   "source_text": "कब से आपको दिक्कत आ रहा है आपको पैर में सूजन है क्या क्या दिक्कत है पैर में",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 48.93,
+   "end": 76.82,
+   "text": "साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो गया है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं हम लोग",
+   "hinglish": "saath rupye piece hai to agar matlab to wo poochh rahe the ki agar sir kuch discount uskaunt ho gaya hai nahi to sir matlab hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar uchit rate mein mil jata to phir dusre restaurant par kyon jate hain hum log",
+   "translation": "Sar asked if there is a discount if the amount is not specified.",
+   "source_text": "साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो गया है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं हम लोग",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S3",
+   "start": 56.36,
+   "end": 58.75,
+   "text": "सब कुछ है",
+   "hinglish": "sab kuch hai",
+   "translation": "Sar asked if everything is okay.",
+   "source_text": "सब भी है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  3,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 38.415,
+  "prompt_tokens": 1797,
+  "completion_tokens": 812,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 4,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 8,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 0,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 2,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "54dfbbc7116626874fe311c332f66fbb99026edc70d729cafa2d923690fd6d17",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:58:34Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 77.24
+ }
+}

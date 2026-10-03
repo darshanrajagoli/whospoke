@@ -41,7 +41,11 @@ different noise recordings** (D13).
 | **cpWER** | all stages together: who said what? | WER after matching each found speaker to a real one; words given to the wrong speaker count as errors |
 
 Confidence intervals are 95 % bootstrap intervals over conversations. Comparisons between systems are **paired**
-(same conversations), which removes the variation between conversations.
+(same conversations), which removes the variation between conversations. The 72 conversations are 8 speaker groups ×
+9 conditions, so conversations of one group are not independent, and these intervals are somewhat too narrow.
+Resampling whole speaker groups instead gives wider intervals, and every conclusion holds: Order A − Order B
++6.7 cpWER points (+3.2 to +10.4; Order B better in 7 of 8 groups), separated overlaps on the true timeline
+−3.0 points (−4.5 to −1.3), pyannote − ours −0.8 (−3.6 to +2.3; a tie) ([RESULTS_TABLES.md](RESULTS_TABLES.md)).
 
 ---
 
@@ -110,6 +114,11 @@ Per conversation, splicing removes on average 3.0 points of error (paired CI +1.
 IndicConformer's IndicVoices number is flattered, because it was trained on IndicVoices. That is why the choice
 was made on Vaani, which neither model has seen. It wins there by 17 points.
 
+Scoring counts spelling variants as errors (chandrabindu ँ vs anusvara ं, the nukta dot, invisible joiners), which
+annotators and models write inconsistently. Treating those variants as the same lowers both models' WER by 1–2 points
+(Vaani: IndicConformer 21.0 → 20.0 %, IndicWav2Vec 38.0 → 36.4 %) and does not change the ranking, so the stricter
+scoring is kept everywhere ([RESULTS_TABLES.md](RESULTS_TABLES.md)).
+
 **Nirantar cross-check** (`scripts/eval_asr_nirantar.py`). A teammate streamed the whole ~198 GB Nirantar archive on
 Colab and kept only Hindi (64,597 clips, 135.6 h, 490 speakers). From a random 800-clip sample we dropped every
 speaker in the IndicVoices valid split, since those are our test speakers, which left 406 clips (0.91 h). On these, IndicConformer scores
@@ -146,6 +155,61 @@ Once real diarization is used, separation still helps but only a little: 50.0 % 
 it (paired difference 0.5 points, CI −0.0 to +1.0). In heavy overlap it is 54.6 % vs 53.6 %. The benefit is limited
 because when the diarizer gets the speakers wrong around an overlap, the right voice cannot be chosen.
 
+## Stage 4 — LLM post-processing
+
+Stage 4 (Airavata 7B, 4-bit, llama.cpp; [MILESTONE4.md](MILESTONE4.md)) was run on the stored Stage-3 transcripts of
+all **63 test conversations that may be scored** (speaker groups 0–6, every overlap × noise condition;
+`scripts/eval_postprocess.py`, D31, D33). Group 7 was used to revise the prompts and is never scored (D32). It was run
+on four inputs, each with one more source of upstream error than the one before, so the cascade can be followed into
+the report:
+
+| Stage-4 input | cpWER before → after repair | Δ per conversation (95 % CI) | helped / hurt | keywords really said | summary overlap with the truth report |
+|---|---|---|---|---|---|
+| true transcript | 0.0 % → 1.9 % | +2.0 points (+1.7 to +2.2) | 0 / 58 | 99 % | (itself) |
+| ASR on each clean voice | 18.0 % → 19.1 % | +1.2 (+0.9 to +1.4) | 0 / 49 | 64 % | 0.18 |
+| ASR on the noisy mixture | 30.6 % → 31.4 % | +0.9 (+0.7 to +1.1) | 0 / 42 | 63 % | 0.14 |
+| **full pipeline (Order B)** | **51.8 % → 52.8 %** | **+0.9 (+0.8 to +1.1)** | 1 / 50 | 60 % | 0.16 |
+
+(The full-pipeline cpWER here, 51.8 %, differs from the 49.5 % above only because group 7 is left out: its cpWER is
+35.6 %, lower than most. The comparison before vs after is paired on the same conversations. The reports of groups
+0–1 were made on a CPU, the rest on the GPU. A CPU and a GPU build give slightly different reports for the same
+transcript, so group 0 was also made on the GPU: 94 % of the repaired lines were identical, the repair hurt by about
+the same amount, and no conclusion changed ([results/crosscheck_g00_gpu](../results/crosscheck_g00_gpu/README.md), D33).)
+
+**Does the LLM repair the transcript?** No. Across 63 conversations and four inputs, the repair lowered cpWER once (one
+full-pipeline conversation) and raised it in 42 to 58 of the 63 per input: by about one point on ASR transcripts and by
+two points on the true transcript. The model's edits are mostly not repairs: it adds a word (`अच्छा` → `अच्छा है`),
+turns an English word into Hindi (`यस` → `हां`), swaps a word for a near-synonym (`कारण` → `क्योंकि`) or changes a
+gender ending (`मिलेगा` → `मिलेगी`), while IndicConformer's words are usually already right (many other edits only add
+a full stop, which cpWER ignores). The proposal's "fix syntactic errors caused by background noise drops" is therefore
+**not achieved** by this 7B model; the guardrails only keep the damage small. For reading, the report's Devanagari
+column is close to the Stage-3 transcript, and the Stage-3 transcript itself is the more accurate record.
+
+**How upstream errors reach the report.** Keywords that were really said fall from 99 % (true transcript) to 64 % as soon
+as recognition errors are present, and to 63 % and 60 % as noise and overlap, and then diarization errors are added.
+The report made from a noisy transcript has little in common with the report made from the true one: word overlap
+(F1) 0.14–0.18 for the summary and 0.10–0.17 for the keywords. Part of that is a 7B model paraphrasing freely, but it
+means the report is not a stable summary of the conversation: it follows whatever the ASR heard, mistranslations
+included (the demo's "e-pass", [results/demo/README.md](../results/demo/README.md)). The "summary words really said"
+measure (37–50 %, in [RESULTS_TABLES.md](RESULTS_TABLES.md)) is only 50 % even for the true transcript, so it mostly
+measures paraphrase, not invention, and is not used for conclusions.
+
+**Action items: none.** The proposal asks Stage 4 to "extract actionable information", and the report has an
+action-items section, but in all 252 evaluation reports (and the demo) it is empty. The model proposed 4 action items
+in total, all on the full-pipeline input, and all were dropped because they did not match their lines. It returns an
+empty list even for lines that are plain requests ("मैम ... इन को ज़्यादा मीठा खिलाना बंद कर दीजिए", "stop giving him so
+much sugar", checked on group 7 only). This is a limit of the model with these prompts; the prompts are frozen (D32),
+so it is reported, not tuned away. The requests are still in the dialogue and its English column.
+
+**The guardrails at work.** Every reply followed the JSON schema (the server enforced it) and no line was lost or
+moved: speakers and times are exactly Stage 3's. The model tried to change 40–58 % of the lines; 25–39 % of all
+lines were reverted because the "repair" rewrote, shortened or Hindi-ised them, and 14–21 % were changed and kept.
+5–8 % of lines have no English (an empty reply, or the same sentence given for several lines). 136–210 keywords per
+input were dropped for not having been said. The model flags 55–63 % of all lines as hard to understand, so the flag
+carries little information.
+
+![Stage 4](../results/figures/stage4_cascade.png)
+
 ## Speed and memory
 
 Measured by [notebooks/01_benchmark.ipynb](../notebooks/01_benchmark.ipynb) on an RTX 3050 laptop GPU (6 GB), one
@@ -161,6 +225,18 @@ separates a few seconds of overlap instead of the whole recording, and diarizes 
 roughly linearly with length: 1 min of audio takes 4.3 s and 8 min takes 35 s. Model sizes: Conv-TasNet 5.1 M
 parameters, pyannote segmentation 1.5 M, WeSpeaker ResNet-34 6.6 M, IndicConformer 600 M.
 
+**Stage 4** is measured separately, because it runs in its own server process (benchmark notebook §7).
+On the RTX 3050 laptop GPU, with every layer of the 4-bit model on the GPU (5.9 of its 6 GB) and one request at a
+time, the demo conversation (63 s, 16 lines) took **58 s** of LLM time (4 calls), about real time; generation runs at
+22 tokens/s, and the server holds about 1 GB of RAM. It cannot run on the GPU at the same time as Stages 1–3
+(4.5 GB), so on this laptop it is a separate step after Stage 3 (D33). A second parallel request gave no extra
+throughput on this card.
+On the 4-core cloud CPU used for the evaluation (no GPU), one request at a time, the demo conversation (63 s, 16
+lines) took 281 s of LLM time (4 calls), about 4.5× the audio length; the whole four-stage run on the same machine
+took 323 s, of which Stages 1–3 took 17 s. Generation runs at about 4.8 tokens/s there. The server needs about 6 GB
+of its own memory (plus the 4 GB model file, memory-mapped). Per-run times of the evaluation are in
+[RESULTS_TABLES.md](RESULTS_TABLES.md), by machine.
+
 ## What limits the system (and what we will do next)
 
 1. **Diarization errors dominate** (23 of the ~50 cpWER points). Next steps: a better speaker-count estimate for
@@ -170,8 +246,12 @@ parameters, pyannote segmentation 1.5 M, WeSpeaker ResNet-34 6.6 M, IndicConform
    conversations. There is no room echo, no phone codec and at most two people at once. A real broadcast has no
    ground truth, so it cannot be scored.
 3. **No fine-tuning** (6 GB laptop GPU). All models are used as released.
-4. **Milestone 4** (LLM clean-up of the transcript) comes after the mid-semester review. Its input, the
-   speaker-attributed transcript JSON, is already produced.
+4. **Stage 4 can only be as good as its input.** It cannot recover words the ASR never heard, and on this test set its
+repair adds errors (+1 cpWER point on the full pipeline) instead of removing them; its English and its summary follow
+the ASR's mistakes. Next steps: use Stage 4 for translation and summary only and leave the Stage-3 text as the
+transcript (the measured repair does not help); try a larger or newer Indic model through `--llm-url` (Airavata is a
+2024 7B model; the pipeline accepts any OpenAI-compatible server) and re-run `scripts/eval_postprocess.py`; and judge
+translation quality with human ratings on a sample, which the automatic measures here cannot do.
 5. **Possible extension: a second test set from Nirantar.** About 325 of Nirantar's 490 Hindi speakers are not our
    test speakers, so conversations could be built from them. We don't, for three reasons:
    - *Not heard by us is not the same as not heard by the model.* IndicConformer was trained on IndicVoices' train

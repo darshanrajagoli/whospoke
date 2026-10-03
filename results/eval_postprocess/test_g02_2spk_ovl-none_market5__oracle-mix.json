@@ -1,0 +1,202 @@
+{
+ "title": "Lost ID Card and Request for Help",
+ "topic": "Lost ID Card and Request for Help",
+ "executive_summary": "A conversation about making money and getting a check made.",
+ "key_points": [
+  "Part 1: A conversation about making money and getting a check made.",
+  "Part 2: The speaker is asking for help to get a phone.",
+  "Part 3: The speaker is looking for a way to make money and I wanted to get a check made.",
+  "Part 4: The speaker is asking for help to get a phone.",
+  "Part 5: The speaker is looking for a way to make money and I wanted to get a check made."
+ ],
+ "keywords": [
+  "money",
+  "check",
+  "base card",
+  "phone"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 35.79,
+   "turns": 5,
+   "share": 0.588
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 25.1,
+   "turns": 5,
+   "share": 0.412
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.76,
+   "end": 26.22,
+   "text": "बाबू मॉलेज के बनाना चाह रहे हैं तो और मुझे चाहिए था पैसा मिल सकता है अब हमने कह सारी चेक करवा सक्ती है",
+   "hinglish": "babu molej ke banana chaah rahe hain to aur mujhe chahiye tha paisa mil sakta hai ab hamne kah sari check karva sakti hai",
+   "translation": "Babu Mallage is looking for a way to make money and I wanted to get a check made. Now we have got all the cheques made.",
+   "source_text": "बाबू मॉलेज के बनाना चाह रहे हैं तो और मुझे चाहिए था पैसा मिल सकता है अब हमने कह सारी चेक करवा सकती है",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 26.74,
+   "end": 27.78,
+   "text": "नमस्ते सर",
+   "hinglish": "namaste sir",
+   "translation": "Hello sir.",
+   "source_text": "नमस्ते सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 28.45,
+   "end": 30.41,
+   "text": "कंगा नंबर तीन में छूटा सा",
+   "hinglish": "kanga number teen mein chhuta sa",
+   "translation": "There was a discount at Canga No. 3.",
+   "source_text": "कंगा नंबर तीन में छूटा सा",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 30.92,
+   "end": 38.73,
+   "text": "सर मेरे कोई गलती हो गई है मेरे हाथ से वो मेरा आई डी कार्ड घूम हो गया है सर हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
+   "hinglish": "sir mere koi galti ho gayi hai mere haath se wo mera aai D card ghoom ho gaya hai sir haan sir wo egzam paas aa rahe hain to aai D card chahiye sir",
+   "translation": "My hand slipped and my ID card fell off my hand. I want an ID card, sir.",
+   "source_text": "सर मेरे कोई गलती हो गई है मेरे हाथ से वो मेरा आई डी कार्ड घूम हो गया है सर हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 38.95,
+   "end": 42.14,
+   "text": "हाँ मेरा था वो प्रोफिट मेरा था",
+   "hinglish": "haan mera tha wo prophit mera tha",
+   "translation": "Yes, my profit was mine.",
+   "source_text": "हाँ मेरा था वो प्रॉफिट मेरा था",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 42.94,
+   "end": 47.07,
+   "text": "आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड की और",
+   "hinglish": "aadhar card ki photo kapi aur kya kya lana hai sir ek khud ka photo ek aadhar card ki aur",
+   "translation": "A photo of the base card and what else do I need.",
+   "source_text": "आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड की और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 47.31,
+   "end": 48.22,
+   "text": "गीता जी",
+   "hinglish": "gita ji",
+   "translation": "",
+   "source_text": "गीता जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 48.44,
+   "end": 53.5,
+   "text": "ठीक है कहाँ आनी पड़ेगी ऑफिस और चौथी कितने बजे तक ऑफिस खुला है सर अपना",
+   "hinglish": "theek hai kahan aani padegi office aur chauthi kitne baje tak office khula hai sir apna",
+   "translation": "",
+   "source_text": "ठीक है कहाँ आनी पड़ेगी ऑफिस और चौथी कितने बजे तक ऑफिस खुला है सर अपना",
+   "changed": false,
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 53.95,
+   "end": 58.22,
+   "text": "हाँ तो अपने कैमरे सीसी टी वी कैमरे चेक करवा दीजिए",
+   "hinglish": "haan to apne camera sisi ti V camera check karva dijie",
+   "translation": "Sure, check your camera.",
+   "source_text": "हाँ तो अपने कैमरे सीसी टी वी कैमरे चेक करवा दीजिए",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 58.91,
+   "end": 65.97,
+   "text": "आई डी कार्ड के जो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये फोन बनने का तो उसके बाद फिर अप्लिकेशन भी लिखनी पड़ेगी",
+   "hinglish": "aai D card ke jo saman lenge to hamen sabse pahle kiske paas jana padega ye phone banne ka to uske baad phir aplikeshan bhi likhni padegi",
+   "translation": "Sure, what do you need to do to get a phone?",
+   "source_text": "आई डी कार्ड के जो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये फोन बनने का तो उसके बाद फिर अप्लिकेशन भी लिखनी पड़ेगी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  4,
+  6,
+  7,
+  8,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 41.747,
+  "prompt_tokens": 1745,
+  "completion_tokens": 948,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 3,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 4,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "1f401165c45508ab35858cc178f281364f9bfdfc058e60697ba2a04d2d13cef3",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:05:10Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 66.49
+ }
+}

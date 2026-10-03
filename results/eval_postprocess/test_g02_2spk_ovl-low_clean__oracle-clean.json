@@ -1,0 +1,225 @@
+{
+ "title": "Lost ID Card",
+ "topic": "Lost ID Card",
+ "executive_summary": "Two individuals discuss the need for a photo card and an application for an ID card.",
+ "key_points": [
+  "Lost ID Card",
+  "Photocard",
+  "Application for ID Card"
+ ],
+ "keywords": [
+  "Application for ID Card"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 35.89,
+   "turns": 6,
+   "share": 0.532
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 31.57,
+   "turns": 6,
+   "share": 0.468
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.4,
+   "end": 1.32,
+   "text": "नमस्ते",
+   "hinglish": "namaste",
+   "translation": "Hello",
+   "source_text": "नमस्ते",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 1.8,
+   "end": 2.84,
+   "text": "नमस्ते सर",
+   "hinglish": "namaste sir",
+   "translation": "Hello Sir",
+   "source_text": "नमस्ते सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 3.12,
+   "end": 11.56,
+   "text": "बोल रहे थे कि आप बाबू मटंकर इंटर कॉलेज के प्रधानाचार्य हैं",
+   "hinglish": "bol rahe the ki aap babu matankar intar college ke pradhanachary hain",
+   "translation": "They were saying that you are the principal of Babu Mantakar Inter College.",
+   "source_text": "बोल रहे थे कि आप आप बाबू मतंकर इंटर कॉलेज के प्रधानाचार्य हैं",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 10.23,
+   "end": 13.02,
+   "text": "सर मेरे कोई गलती हो गई मेरे हाथ से",
+   "hinglish": "sir mere koi galti ho gayi mere haath se",
+   "translation": "The gentleman said something with his hand.",
+   "source_text": "सर मेरे कोई गलती हो गई मेरे हाथ से",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 13.43,
+   "end": 31.3,
+   "text": "तो हम बी एस का पेपर देने गए थे आपके स्कूल में मेरा फ़र्स वहीं छूट गया था उसमें कुछ छूटे सामान है ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था",
+   "hinglish": "to hum B S ka paper dene gaye the aapke school mein mera fars wahin chhoot gaya tha usmen kuch chhute saman hai zarurat ki to wo mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein chhuta tha",
+   "translation": "They wanted to check with their custodian about the discount in Room No. 3.",
+   "source_text": "तो हम बी एस का पेपर देने गए थे आपके स्कूल में मेरा फर्स वहीं छूट गया था उसमें कुछ छूटे सामान है ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 30.73,
+   "end": 37.53,
+   "text": "वो मेरा आई डी कार्ड घुम हो गया है सर पाँच सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर",
+   "hinglish": "wo mera aai D card ghum ho gaya hai sir paanch sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir",
+   "translation": "They wanted to know the photo of the base card and the card number.",
+   "source_text": "वो मेरा आई डी कार्ड घुम हो गया है सर पाँच सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 37.74,
+   "end": 41.91,
+   "text": "हाँ मेरा था वो पॉकेट मेरा था संगीता जी",
+   "hinglish": "haan mera tha wo pocket mera tha sangita ji",
+   "translation": "Yes, my was a pocket mine was a sangiata G",
+   "source_text": "हाँ मेरा था वो पॉकेट मेरा था संगीता जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 40.93,
+   "end": 44.15,
+   "text": "एक उसका फ़ोटो एक आधार कार्ड या और ठीक है ये कार आनी पड़ेगी",
+   "hinglish": "ek uska photo ek aadhar card ya aur theek hai ye car aani padegi",
+   "translation": "A photo of his, an base card or else a car will be needed",
+   "source_text": "एक उसका फ़ोटो एक आधार कार्ड या और ठीक है ये कार आनी पड़ेगी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 43.94,
+   "end": 44.36,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Yes",
+   "source_text": "हाँ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 44.74,
+   "end": 53.98,
+   "text": "तो ऑफ़िस तो कि आप कब तक कितने बजे तक ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद",
+   "hinglish": "to ofis to ki aap kab tak kitne baje tak office khula hai sir apna aai D card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega achha uske baad",
+   "translation": "So, the office, until when the office is open, Sir, we will need to go to the office first, who will make it good after that",
+   "source_text": "तो ऑफ़िस तो कि आप कब तक कितने बजे तक ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 54.36,
+   "end": 58.43,
+   "text": "तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "hinglish": "to apne camera si si ti V camera check karva lijie",
+   "translation": "So, your camera, check your camera",
+   "source_text": "तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 12,
+   "speaker": "S2",
+   "start": 58.59,
+   "end": 67.07,
+   "text": "काफी अच्छा आवेदन भी लिखनी पड़ेगी आवेदन में क्या लिखूँ सर अच्छा और वो एलचुबल साहब को दे दूँ मैं उसके बाद में अगर मान लो फिर आई डी कार्ड आने में कितना दिन लगेगा",
+   "hinglish": "kaphi achha aavedan bhi likhni padegi aavedan mein kya likhun sir achha aur wo elchubal sahab ko de dun main uske baad mein agar maan lo phir aai D card aane mein kitna din lagega",
+   "translation": "Good application, also write what you want in the application, Sir, and I will give it to the LChubal Sahib, if you believe me, then it will take how many days for the ID card to come",
+   "source_text": "अच्छा एप्लीकेशन भी लिखनी पड़ेगी एप्लीकेशन में क्या लिखूँ सर अच्छा और वो एलचुबल साहब को दे दूँ मैं उसके बाद में अगर मान लो फिर आई डी कार्ड आने में कितना दिन लगेगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  4,
+  5,
+  6,
+  8,
+  10,
+  11,
+  12
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 46.724,
+  "prompt_tokens": 1930,
+  "completion_tokens": 1049,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "701c08098fa16d3bac441beef4aba9974e3cde51d56599ec25de00976ae5b6d6",
+  "source_line_count": 12,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:08:09Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 67.53
+ }
+}

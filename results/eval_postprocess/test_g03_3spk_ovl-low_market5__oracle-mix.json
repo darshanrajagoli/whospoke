@@ -1,0 +1,150 @@
+{
+ "title": "Hindi and Hinglish Conversation",
+ "topic": "Elections",
+ "executive_summary": "A conversation in Hindi and Hinglish about the upcoming elections and the importance of voting.",
+ "key_points": [
+  "Hindi and Hinglish are the languages spoken in the conversation.",
+  "The speaker asks for a print of the conversation.",
+  "The speaker mentions that the government is not willing to listen to the people's voice."
+ ],
+ "keywords": [
+  "Print"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 15.27,
+   "turns": 2,
+   "share": 0.25
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 2.65,
+   "turns": 1,
+   "share": 0.043
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 43.13,
+   "turns": 3,
+   "share": 0.706
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S3",
+   "start": 0.35,
+   "end": 0.8,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Hello Ma'am Bihar is speaking.",
+   "source_text": "हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 0.97,
+   "end": 3.62,
+   "text": "हेलो मैम बिहार को तो बोल रहा है",
+   "hinglish": "hello ma'am bihar ko to bol raha hai",
+   "translation": "Give me no impression, but give me a print.",
+   "source_text": "हेलो मैम बिहार को तो बोल रहा है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 4.3,
+   "end": 21.17,
+   "text": "देना है ना कोई छापड़ भी देना है अब तो बहुत अच्छी हो गया तो सरकार को वोट देना वोट देना है अब देना है देखिए ना कोई छाप कोई छापड़ देना है तो",
+   "hinglish": "dena hai na koi chhapad bhi dena hai ab to bahut achhi ho gaya to sarkar ko vote dena vote dena hai ab dena hai dekhie na koi chhaap koi chhapad dena hai to",
+   "translation": "",
+   "source_text": "देना है ना कोई छापड़ भी देना है अब तो बहुत अच्छी हो गया तो सरकार को वोट देना वोट देना है अब देना है देखिए ना कोई छाप कोई छापड़ देना है तो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 21.38,
+   "end": 27.58,
+   "text": "हेलो हाँ हेलो सर हम ठीक है है हाँ जी",
+   "hinglish": "hello haan hello sir hum theek hai hai haan ji",
+   "translation": "Hello Sir, are you okay?",
+   "source_text": "हेलो हाँ हेलो सर हम ठीक है हाँ जी",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 27.73,
+   "end": 53.54,
+   "text": "अब तो वोट खत्म हो गया वोट आएगा तो पूछना दिया सरकार के खिलाफ नहीं दिया तो आपका देना है जी उसी का वोट देना है जो आगे उन्हें बताएगा विकास कराएगा हम लोग का जिंदाबाद होगा सहारा हो मैंने जो भी चीज़ का सहारा हो उसकी का घोस दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी घूस देना है",
+   "hinglish": "ab to vote khatm ho gaya vote aaega to puchhna diya sarkar ke khilaph nahi diya to aapka dena hai ji usi ka vote dena hai jo aage unhen bataega vikas karaega hum log ka jindabad hoga sahara ho mainne jo bhi cheez ka sahara ho uski ka ghos diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi ghoos dena hai",
+   "translation": "",
+   "source_text": "अब तो वोट खत्म हो गया वोट आएगा तो पूछना दिया सरकार के खिलाफ नहीं दिया तो आपका देना है जी उसी का वोट देना है जो आगे उन्हें बताएगा विकास कराएगा हम लोग का जिंदाबाद होगा सहारा हो मैंने जो भी चीज़ का सहारा हो उसकी का घोस दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी घूस देना है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 51.96,
+   "end": 61.03,
+   "text": "देखते है की बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं ये",
+   "hinglish": "dekhte hai ki bahut achha se dekhte hain aur kitna achha banate hain ye",
+   "translation": "Look at how good they are and how good they make us.",
+   "source_text": "देखते है की बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं ये",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  5
+ ],
+ "diagnostics": {
+  "llm_calls": 2,
+  "llm_seconds": 29.209,
+  "prompt_tokens": 1281,
+  "completion_tokens": 628,
+  "chunks": 1,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 4,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 2,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 6,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "dc03c6d8b1b9c5495912292bf3459b5acdc8ed11c69d9b3c78ba85d0aec59450",
+  "source_line_count": 6,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:46:51Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 61.35
+ }
+}

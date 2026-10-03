@@ -1,0 +1,191 @@
+{
+ "title": "Transcript of a conversation at Jain Brothers Stationery and Book Shop",
+ "topic": "Personal information about Vaibhav",
+ "executive_summary": "The conversation is about the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the",
+ "key_points": [
+  "Personal information about Vaibhav"
+ ],
+ "keywords": [
+  "Jain Brothers Stationery and Book Shop",
+  "Vaibhav",
+  "Blue",
+  "Black",
+  "School",
+  "heat",
+  "water"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 42.32,
+   "turns": 5,
+   "share": 0.669
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 20.94,
+   "turns": 4,
+   "share": 0.331
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.44,
+   "end": 8.02,
+   "text": "हेलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेस चाहिए",
+   "hinglish": "hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon hamen kya kahte hain pen ke boxes chahiye",
+   "translation": "Hello, what do you say at Jain Brothers Stationery and Book Shop?",
+   "source_text": "हेलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेस चाहिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 6.77,
+   "end": 10.63,
+   "text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "hinglish": "namaste aapke bacche ka naam vaibhav hai aapke ladke ka",
+   "translation": "Hello, your child's name is Vaibhav.",
+   "source_text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 10.95,
+   "end": 12.61,
+   "text": "हां जी",
+   "hinglish": "haan ji",
+   "translation": "Yes, that's right.",
+   "source_text": "हां जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 11.78,
+   "end": 14.51,
+   "text": "और वो कट गया था दो वज्ता",
+   "hinglish": "aur wo kat gaya tha do wajta",
+   "translation": "And he got cut by two knives.",
+   "source_text": "और वो कट गया था दो वज्ता",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 13.14,
+   "end": 18.07,
+   "text": "दो ब्लू के और दो ब्लैक के चाहिए हैं",
+   "hinglish": "do blue ke aur do black ke chahiye hain",
+   "translation": "Two blue and two black.",
+   "source_text": "दो ब्लू के और दो ब्लैक के चाहिए हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 18.58,
+   "end": 28.71,
+   "text": "वो आपने उसको सुबह स्कूल भेजा था वहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का",
+   "hinglish": "wo aapne usko subah school bheja tha wahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka",
+   "translation": "He was sent to school in the morning and got sick and had a fever.",
+   "source_text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 32.01,
+   "end": 43.23,
+   "text": "अब जो भी यहाँ आने के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
+   "hinglish": "ab jo bhi yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
+   "translation": "The person who came here after the heat, it must have been because of the water shortage, he got sick.",
+   "source_text": "अब जो भी यहाँ आने के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 43.92,
+   "end": 50.69,
+   "text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बता दी जाइए मेरे को टेप चाहिए है",
+   "hinglish": "haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uske price bata di jaie mere ko tape chahiye hai",
+   "translation": "Yes, you can do a task for me, write down the price of the item and tell me my tape is needed.",
+   "source_text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बता दी जाइए मेरे को टेप चाहिए हैं",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S1",
+   "start": 51.03,
+   "end": 65.41,
+   "text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबैयत इसको ठीक हो जाएगी तो फिर आप दोबारा से इस्कूल कूल भेजिएगा तो कब तक आएँगे",
+   "hinglish": "haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar dega tabaiyat isko theek ho jaegi to phir aap dobara se school kool bhejiega to kab tak aaenge",
+   "translation": "Yes, we will give in, but if you are, come and take your child home, rest for a while, then send us a message saying when you will come.",
+   "source_text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबीयत इसको ठीक हो जाएगी तो फिर आप दोबारा से इस्कूल कूल भेजिएगा तो कब तक आएँगे",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  4,
+  5,
+  6,
+  8,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 53.864,
+  "prompt_tokens": 1856,
+  "completion_tokens": 1164,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 1,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "de94b7b2398a046cb9f6a1a7b3e7d32afecf1c891891249b1804ba7a6075c393",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:29:56Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 66.09
+ }
+}

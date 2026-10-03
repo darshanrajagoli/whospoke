@@ -1,0 +1,165 @@
+{
+ "title": "Hindi and Hinglish Conversations",
+ "topic": "Hindi and Hinglish Conversations",
+ "executive_summary": "This report summarizes a conversation between two people in Hindi, with a focus on the topic of voting. The evidence includes summaries of the parts, lines translated into English, and candidate keywords and actions.",
+ "key_points": [
+  "Hindi and Hinglish Conversations",
+  "Voting"
+ ],
+ "keywords": [
+  "vote"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 22.77,
+   "turns": 3,
+   "share": 0.419
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 31.16,
+   "turns": 3,
+   "share": 0.573
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 0.45,
+   "turns": 1,
+   "share": 0.008
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.31,
+   "end": 2.88,
+   "text": "हेलो हम बिहार से बोल रहे",
+   "hinglish": "hello hum bihar se bol rahe",
+   "translation": "Hello, we are speaking from Bihar.",
+   "source_text": "हेलो हम बिहार से बोल रहे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 1.59,
+   "end": 7.76,
+   "text": "हेलो हाँ हलो सर नमस्ते ठीक है हाँ जी",
+   "hinglish": "hello haan hello sir namaste theek hai haan ji",
+   "translation": "Hello, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes,",
+   "source_text": "हेलो हाँ हलो सर नमस्ते ठीक है हाँ जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 7.53,
+   "end": 7.98,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Yes",
+   "source_text": "हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 8.64,
+   "end": 18.4,
+   "text": "हमारे देश में छठ पूजा मनाई जाती है और हमारे देश में दीपावली भी मनाई जाती है और हाँ बोलिए छठ",
+   "hinglish": "hamare desh mein chhath puja manai jati hai aur hamare desh mein dipavli bhi manai jati hai aur haan bolie chhath",
+   "translation": "In our country, Chhath is celebrated and Diwali is also celebrated and we say Chhath",
+   "source_text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 19.18,
+   "end": 33.63,
+   "text": "हाँ देखते है की बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं ये गाँव पे तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
+   "hinglish": "haan dekhte hai ki bahut achha se dekhte hai aur kitna achha banate hain ye gaanv pe to sabhi log dekhte hain bahut sundar banate hain",
+   "translation": "Look at how beautiful it is and how well-made the villages are",
+   "source_text": "हाँ देखते है की बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं ये गाँव पे तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 34.07,
+   "end": 52.9,
+   "text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते है उपहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं बनाते हैं पूजा करते हैं",
+   "hinglish": "chhath puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hai uphante hain usmen aur thakua banate hain kasar banate hain banate hain puja karte hain",
+   "translation": "In Chhath Puja, we bring new items for fasting, new clothes for wearing, and make offerings in the fire. We also make sculptures and perform puja.",
+   "source_text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते है उपहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं बनाते हैं पूजा करते हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 57.16,
+   "end": 59.31,
+   "text": "वोट देना",
+   "hinglish": "vote dena",
+   "translation": "Voting",
+   "source_text": "वोट देना",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  8
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 37.453,
+  "prompt_tokens": 1594,
+  "completion_tokens": 813,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 4,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 7,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 1,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "55072e7913a81d00164e128b09084e54ac33df741366a53b3aaeef30b2367250",
+  "source_line_count": 8,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:53:30Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 67.0
+ }
+}

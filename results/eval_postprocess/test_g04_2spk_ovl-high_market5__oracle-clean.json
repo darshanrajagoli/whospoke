@@ -1,0 +1,188 @@
+{
+ "title": "Lost ID Card",
+ "topic": "Lost ID Card",
+ "executive_summary": "The speaker is asking for a color birange and cassers for his child.",
+ "key_points": [
+  "Lost ID Card",
+  "color birange",
+  "cassers",
+  "unspecified"
+ ],
+ "keywords": [
+  "color birange",
+  "cassers"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 42.32,
+   "turns": 5,
+   "share": 0.536
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 36.59,
+   "turns": 4,
+   "share": 0.464
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.77,
+   "end": 10.79,
+   "text": "हलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स हाँ जी हमें",
+   "hinglish": "hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon hamen kya kahte hain pen ke boxes chahiye the chhah box haan ji hamen",
+   "translation": "Hello",
+   "source_text": "हलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स हाँ जी हमें",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 2.69,
+   "end": 6.64,
+   "text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "hinglish": "namaste aapke bacche ka naam vaibhav hai aapke ladke ka",
+   "translation": "Hello",
+   "source_text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 9.43,
+   "end": 12.15,
+   "text": "हाँ और वो कक्षा दस में पढ़ता है",
+   "hinglish": "haan aur wo kaksha das mein padhta hai",
+   "translation": "Hello",
+   "source_text": "हाँ और वो कक्षा दस में पढ़ता है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 12.9,
+   "end": 25.26,
+   "text": "हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं तो एक बॉक्स का कितना प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
+   "hinglish": "hamen do box uske red ke do blue ke aur do black ke chahiye hain to ek box ka kitna price padega to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega",
+   "translation": "Hello",
+   "source_text": "हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं तो एक बॉक्स का कितना प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 23.49,
+   "end": 33.62,
+   "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+   "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+   "translation": "Hello",
+   "source_text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 33.99,
+   "end": 40.71,
+   "text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए मेरे को टेप्स चाहिए हैं",
+   "hinglish": "haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie mere ko teps chahiye hain",
+   "translation": "Hello",
+   "source_text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए मेरे को टेप्स चाहिए हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 39.15,
+   "end": 50.37,
+   "text": "मैं अब जो भी हो वहाँ आने के बाद हो सकता हूँ कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
+   "hinglish": "main ab jo bhi ho wahan aane ke baad ho sakta hoon ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
+   "translation": "I can come to pick up my child whenever he is ready, but if you are, come and pick him up. Then we will send him to school and he will be fine.",
+   "source_text": "हूँ अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 48.32,
+   "end": 55.81,
+   "text": "मुझे रंग बिरंगे वाले चाहिए हैं आठ आठ सेट और सीजर्स चाहिए हैं बारह पीस",
+   "hinglish": "mujhe rang birange wale chahiye hain aath aath set aur sijars chahiye hain barah piece",
+   "translation": "I want eight sets of color birange and six sets of cassers.",
+   "source_text": "मुझे रंग बिरंगे वाले चाहिए हैं आठ आठ सेट और सीजर्स चाहिए हैं बारह पीस",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 52.75,
+   "end": 67.05,
+   "text": "हां तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबेयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+   "hinglish": "haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabeyat uski theek ho jaegi to phir aap dobara se usko school bhejiega achha to kab tak aaenge",
+   "translation": "Yes, we will give our child a ride to school, but if you are, come and pick him up.",
+   "source_text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  8
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 33.546,
+  "prompt_tokens": 1785,
+  "completion_tokens": 708,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 7,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 0,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "126e129d9a6b6dd28865d1991ad434702647389c712fd5a436ba050bae812f1e",
+  "source_line_count": 9,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:32:08Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 67.49
+ }
+}

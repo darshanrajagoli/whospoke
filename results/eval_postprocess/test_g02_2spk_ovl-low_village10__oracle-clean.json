@@ -1,0 +1,218 @@
+{
+ "title": "Lost ID Card",
+ "topic": "Getting a Base Card and Photo",
+ "executive_summary": "A conversation between two people about getting a base card and a photo.",
+ "key_points": [
+  "Getting a base card and a photo.",
+  "Lost ID card.",
+  "Discount in room number three.",
+  "Yes, I have a pocket mine."
+ ],
+ "keywords": [
+  "base card",
+  "photo of base card",
+  "discount in room number three",
+  "ऑफिस",
+  "कैमरे"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 38.88,
+   "turns": 6,
+   "share": 0.623
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 23.56,
+   "turns": 5,
+   "share": 0.377
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.33,
+   "end": 9.84,
+   "text": "नमस्ते बोल रहे थे कि आप बाबू मशंकर इंटर कॉलेज के प्रधानाचार्य हैं",
+   "hinglish": "namaste bol rahe the ki aap babu mashankar intar college ke pradhanachary hain",
+   "translation": "Hello, they were speaking about the principal of Babu Manshankar Inter College.",
+   "source_text": "नमस्ते बोल रहे थे कि आप आप बाबू मशंकर इंटर कॉलेज के प्रधानाचार्य हैं",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 7.98,
+   "end": 11.96,
+   "text": "नमस्ते सर सर मेरे कोई गलती हुई है मेरे हाथ से",
+   "hinglish": "namaste sir sir mere koi galti hui hai mere haath se",
+   "translation": "Hello, Sir, my hand is itching.",
+   "source_text": "नमस्ते सर सर मेरे कोई गलती हुई है मेरे हाथ से",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 10.74,
+   "end": 26.43,
+   "text": "तो हम बी एस का पेपर दे रहे थे आपके स्कूल में मेरा फ़र्स वहीं छूट गया था उसमें कुछ सामान है ज़रूरत की तो वो मुझे चाहिए था पैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए",
+   "hinglish": "to hum B S ka paper de rahe the aapke school mein mera fars wahin chhoot gaya tha usmen kuch saman hai zarurat ki to wo mujhe chahiye tha paise mil sakta hai aap apne karmachari se check karva ke puchhie",
+   "translation": "So, they were giving a paper to BS and my paper was missing at your school. I need money to get it from your Karmachari.",
+   "source_text": "तो हम बी एस का पेपर देने गए थे आपके स्कूल में मेरा फर्स वहीं छूट गया था उसमें कुछ सामान है ज़रूरत की तो वो मुझे चाहिए था पैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 27.19,
+   "end": 34.21,
+   "text": "वो मेरा आई डी कार्ड घुम हो गया है सर पाँच सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर",
+   "hinglish": "wo mera aai D card ghum ho gaya hai sir paanch sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir",
+   "translation": "The photo of the base card and what else do they want.",
+   "source_text": "वो मेरा आई डी कार्ड घुम हो गया है सर पाँच सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 33.33,
+   "end": 35.3,
+   "text": "कमरा नंबर तीन में छूटा था",
+   "hinglish": "kamra number teen mein chhuta tha",
+   "translation": "There was a discount in room number three.",
+   "source_text": "कमरा नंबर तीन में छूटा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 35.54,
+   "end": 37.33,
+   "text": "एक उसका फोटो एक आधार कार्ड ये और",
+   "hinglish": "ek uska photo ek aadhar card ye aur",
+   "translation": "A photo of a base card and something else.",
+   "source_text": "एक उसका फोटो एक आधार कार्ड ये और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 37.84,
+   "end": 42.04,
+   "text": "हाँ मेरा था ओ पॉकेट मेरा था संगीता जी",
+   "hinglish": "haan mera tha o pocket mera tha sangita ji",
+   "translation": "Yes, my was a pocket mine was a sangiata G",
+   "source_text": "हाँ मेरा था ओ पॉकेट मेरा था संगीता जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 42.61,
+   "end": 43.93,
+   "text": "ठीक है सर कहाँ करनी पड़ेगी",
+   "hinglish": "theek hai sir kahan karni padegi",
+   "translation": "Okay, sir where will you go",
+   "source_text": "ठीक है सर कहाँ करनी पड़ेगी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 44.31,
+   "end": 48.51,
+   "text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "hinglish": "haan to apne camera si si ti V camera check karva lijie",
+   "translation": "Yes, your camera check your camera, please",
+   "source_text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 49.21,
+   "end": 58.66,
+   "text": "तो ऑफ़िस तो आप कब तक कितने बजे तक ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद",
+   "hinglish": "to ofis to aap kab tak kitne baje tak office khula hai sir apna aai D card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega achha uske baad",
+   "translation": "So office, when will you be open until 10:00 am, sir, who will we need to see first, who will make it happen?",
+   "source_text": "तो ऑफ़िस तो आप कब तक कितने बजे तक ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 59.04,
+   "end": 62.35,
+   "text": "हाँ पैसा भी था डॉक्यूमेंट भी था उसमें",
+   "hinglish": "haan paisa bhi tha dokyument bhi tha usmen",
+   "translation": "There was money too, and a document too, in it.",
+   "source_text": "हाँ पैसा भी था डॉक्यूमेंट भी था उसमें",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  3,
+  4,
+  5,
+  6,
+  8,
+  9,
+  10,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 46.002,
+  "prompt_tokens": 1884,
+  "completion_tokens": 1029,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 8,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 8,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "f04768168dab90588cda630bfb768a717cb7fa8d9e1de4ba3ac995c9572d9696",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:12:08Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 62.94
+ }
+}

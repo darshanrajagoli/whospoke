@@ -1,0 +1,210 @@
+{
+ "title": "हिंदी और हिंदी बातचीत का सारांश",
+ "topic": "विवाह और सब्जियां",
+ "executive_summary": "दो लोगों के बीच विवाह और सब्जियों के बारे में एक बातचीत।",
+ "key_points": [
+  "हाँ, बोलिए",
+  "जी",
+  "विवाह",
+  "वेजिटेबल्स",
+  "ट्राय करें"
+ ],
+ "keywords": [
+  "बोलिए",
+  "vegetables",
+  "try",
+  "make"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 38.36,
+   "turns": 3,
+   "share": 0.494
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 30.93,
+   "turns": 3,
+   "share": 0.398
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 8.33,
+   "turns": 4,
+   "share": 0.107
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.77,
+   "end": 3.73,
+   "text": "हाँ हेलो हाँ बोलिए हाँ जी बोलिए",
+   "hinglish": "haan hello haan bolie haan ji bolie",
+   "translation": "Hello, hello, speak",
+   "source_text": "हाँ हेलो हाँ बोलिए हाँ जी बोलिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S3",
+   "start": 2.79,
+   "end": 4.68,
+   "text": "हाँ जी नमस्ते हाँ बोलो",
+   "hinglish": "haan ji namaste haan bolo",
+   "translation": "Hello, hello, hello",
+   "source_text": "हाँ जी नमस्ते हाँ बोलो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 4.92,
+   "end": 14.21,
+   "text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है",
+   "hinglish": "mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V V seb hai aur yu seb bhi hai aapko kaun si karani hai",
+   "translation": "My parlour has three steps and four steps and a staircase and a staircase and a staircase and a staircase and a staircase and a staircase and a staircase and a staircase and a staircase and a staircase and a staircase and a staircase and a staircase and a staircase and a st",
+   "source_text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 11.64,
+   "end": 16.79,
+   "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+   "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+   "translation": "Yes, yes, yes",
+   "source_text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 16.03,
+   "end": 17.55,
+   "text": "हाँ हाँ जन",
+   "hinglish": "haan haan jan",
+   "translation": "OK, tell me her fee",
+   "source_text": "हाँ हाँ जन",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 17.97,
+   "end": 44.08,
+   "text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग हाँ तीन सौ समथिंग हाँ चार्ज है उसका यू सेफ करानी ना आपको हाँ आईब्रो का कौन साड अपर हेड मतलब फुल फुल चार्ज तीस रुपये पचास रुपये का",
+   "hinglish": "okay theek hai uski phees bata deti hoon meri meri yu cutting ke liye jo aapko saam matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay haan to uske three hundred teen sau something haan teen sau something haan charge hai uska yu seph karani na aapko haan aaibro ka kaun saad apar head matlab full full charge tees rupye pachas rupye ka",
+   "translation": "OK, then her three hundred three hundred is",
+   "source_text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग हाँ तीन सौ समथिंग हाँ चार्ज है उसका यू सेफ करानी ना आपको हाँ आईब्रो का कौन साड अपर हेड मतलब फुल फुल चार्ज तीस रुपये पचास रुपये का",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S3",
+   "start": 33.24,
+   "end": 33.7,
+   "text": "हलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हलो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 38.86,
+   "end": 39.19,
+   "text": "जी",
+   "hinglish": "ji",
+   "translation": "G",
+   "source_text": "जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S3",
+   "start": 41.85,
+   "end": 46.31,
+   "text": "राम सेगर चौरा हाँ ठीक देंगे दो चार दिन लगेंगे",
+   "hinglish": "raam segar chaura haan theek denge do chaar din lagenge",
+   "translation": "Ram Segar Chowra Yes will give two four days",
+   "source_text": "राम सेगर चौरा हाँ ठीक देंगे दो चार दिन लगेंगे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 44.93,
+   "end": 70.38,
+   "text": "आपको बता दें अगर आप शादी ले जाएँगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे त्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं तो आप सॉफ्टवेयर एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
+   "hinglish": "aapko bata den agar aap shadi le jaenge to teen sau rupye milenge aapko aur agar aap use trai karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki zarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain to aap sophtaveyar ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai",
+   "translation": "Tell us if you'll marry and we'll give you three hundred, if you get him to try or make vegetables, then you'll get four hundred, but if you want to get married, then it's a big deal, you'll have to get married, but if you want to get married, then it's a big deal, you'll have to get married, but if you want to get married, then it's a big deal, you'll have to get married, but if you want to get married, then it's a big deal, you'll have to get married, but if you want to get married, then it's a big deal, you'll have to get married, but if you want to get married, then it's a big deal, you'll have to get married, but if you want to get married, then it's a big deal, you'll have to get married, but if you want to get married, then it's a big deal, you'll have to get married, but if you're",
+   "source_text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं तो आप सॉफ्टवेयर एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  3,
+  4,
+  5,
+  6,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 486.809,
+  "prompt_tokens": 2115,
+  "completion_tokens": 1169,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 4,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 8,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "b3eedb0125890659393d260b1654040c4c50a61bb0c152da6e0d3fcce1a03430",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-02T03:54:12Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 70.93
+ }
+}

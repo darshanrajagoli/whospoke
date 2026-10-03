@@ -1,0 +1,219 @@
+{
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Lost ID Card",
+ "executive_summary": "Two people will stay and work computers.",
+ "key_points": [
+  "Didi",
+  "saree",
+  "unspecified",
+  "computer",
+  "work"
+ ],
+ "keywords": [
+  "Didi",
+  "saree",
+  "computer",
+  "work"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 9.3,
+   "turns": 6,
+   "share": 0.156
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 50.48,
+   "turns": 5,
+   "share": 0.844
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.72,
+   "end": 3.87,
+   "text": "नमस्कार दीदी और सब तो ठीक है अपना बताइए",
+   "hinglish": "namaskar didi aur sab to theek hai apna bataie",
+   "translation": "Hello, Didi and everyone else, is everything okay?",
+   "source_text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 4.07,
+   "end": 10.78,
+   "text": "मैं दो",
+   "hinglish": "main do",
+   "translation": "I'm two",
+   "source_text": "मैं दो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 11.07,
+   "end": 11.81,
+   "text": "हाँ चाहिएगा",
+   "hinglish": "haan chahiega",
+   "translation": "Yes",
+   "source_text": "हाँ चाहिएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 23.0,
+   "end": 24.12,
+   "text": "साड़ी लेना है",
+   "hinglish": "sadi lena hai",
+   "translation": "Need to get a saree",
+   "source_text": "साड़ी लेना है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 24.75,
+   "end": 32.62,
+   "text": "अरे हमको मतलब की लेंगे रोड पे शहर में होना चाहिए हमको शहर में हाँ ऑनलाइन चल जाएगा",
+   "hinglish": "are hamko matlab ki lenge road pe shahar mein hona chahiye hamko shahar mein haan online chal jaega",
+   "translation": "Hey, we're not going to understand if we go to the city, we'll go to the city and we'll go online",
+   "source_text": "अरे हमको मतलब की लेंगे रोड पे शहर में चाहिए हमको शहर में हाँ ऑनलाइन चल जाएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 33.14,
+   "end": 34.66,
+   "text": "हाँ साड़ी चाहिएगा",
+   "hinglish": "haan sadi chahiega",
+   "translation": "Yes, a saree is needed",
+   "source_text": "हाँ साड़ी चाहिएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 35.08,
+   "end": 42.84,
+   "text": "मेल होते मेल हम्म दो",
+   "hinglish": "mail hote mail hamm do",
+   "translation": "Two people will stay and work computers.",
+   "source_text": "मेल होते मेल हम्म दो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 43.33,
+   "end": 44.99,
+   "text": "पूनम आ",
+   "hinglish": "punam aa",
+   "translation": "Poonam aa.",
+   "source_text": "पूनम आ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 45.37,
+   "end": 57.69,
+   "text": "हाँ दो लोग रहेंगे और कंप्यूटर काम करेंगे हाँ नहीं यही पास में बस नैनी मिलती बिल्ला भी अगर हो तो बताओ",
+   "hinglish": "haan do log rahenge aur computer kaam karenge haan nahi yahi paas mein bas naini milti billa bhi agar ho to batao",
+   "translation": "Two people will stay and work computers. Naini mila billa also if you say so.",
+   "source_text": "हाँ दो लोग रहेंगे और कंप्यूटर काम करेंगे हाँ नहीं यही पास में बस नैनी मिलती बिला भी अगर हो तो बताओ",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 58.08,
+   "end": 59.19,
+   "text": "हाँ हाँ",
+   "hinglish": "haan haan",
+   "translation": "Yes.",
+   "source_text": "हाँ हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 12,
+   "speaker": "S2",
+   "start": 59.89,
+   "end": 75.71,
+   "text": "हाँ बस दो लोग कंप्यूटर हमारा काम है बस जैसा कहू कैस कर देंगे नहीं चेक कर देंगे जैसा कहोगे",
+   "hinglish": "haan bas do log computer hamara kaam hai bas jaisa kahu kais kar denge nahi check kar denge jaisa kahoge",
+   "translation": "Two people will work computers. Check will not be done as you say.",
+   "source_text": "हाँ बस दो लोग कंप्यूटर हमारा काम काम है बस जैसा कहू कैस कर देंगे नहीं चेक कर देंगे जैसा कहोगे",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  3,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 37.02,
+  "prompt_tokens": 1664,
+  "completion_tokens": 793,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 4,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 8,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 1,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "7a5a5efb6907affec053a1ee322c320c844905fe78663981a78cd9aec2b9cdf0",
+  "source_line_count": 12,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:13:43Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 76.07
+ }
+}

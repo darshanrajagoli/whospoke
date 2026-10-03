@@ -1,0 +1,224 @@
+{
+ "title": "Wedding and Photography Shoot",
+ "topic": "Wedding and Photography Shoot",
+ "executive_summary": "A conversation between two people about a wedding and a photography shoot.",
+ "key_points": [
+  "wedding",
+  "photography shoot",
+  "unanswerable question",
+  "S3",
+  "S2"
+ ],
+ "keywords": [
+  "wedding"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 27.91,
+   "turns": 4,
+   "share": 0.466
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 8.77,
+   "turns": 2,
+   "share": 0.147
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 23.16,
+   "turns": 5,
+   "share": 0.387
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S3",
+   "start": 0.54,
+   "end": 7.29,
+   "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko",
+   "translation": "Hello, sir! What is the dijkat?",
+   "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 7.99,
+   "end": 10.51,
+   "text": "हलो हेलो सर नमस्कार मैं अजी टोर से बोल रहा था",
+   "hinglish": "hello hello sir namaskar main aji tor se bol raha tha",
+   "translation": "Hello, sir! I was speaking to Ajie Tor.",
+   "source_text": "हलो हेलो सर नमस्कार मैं अजी टोर से बोल रहा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 10.67,
+   "end": 14.29,
+   "text": "क्या मैम आपकी बात साफ नहीं आ रही है हमारी डॉक्टरी लखनऊ में आई हैं।",
+   "hinglish": "kya ma'am aapki baat saaph nahi aa rahi hai hamari doktari lakhnau mein aai hain.",
+   "translation": "Isn't your doctor coming to Lucknow?",
+   "source_text": "क्या मैम आपकी बात साफ नहीं आ रही है हमारी डॉक्टरी लखनऊ में आए हैं",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 14.55,
+   "end": 22.67,
+   "text": "जी मेरी गिरफ़्फ़ बात फोटोग्राफर से हो रही है जी सर है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
+   "hinglish": "ji meri giraff baat photographer se ho rahi hai ji sir hai mere yahan das joon ki shadi hai to mere ko pri wedding fotoshut karana tha",
+   "translation": "Gee, my photography is happening with the photographer. I have a wedding in June, so I wanted to get pre-wedding photoshoot done.",
+   "source_text": "जी मेरी गिरफ़्फ़ बात फोटोग्राफर से हो रही है जी सर है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 21.88,
+   "end": 26.52,
+   "text": "हाँ सबका इलाज है मैम आप कब से हो रहा है आपको यह सब",
+   "hinglish": "haan sabka ilaj hai ma'am aap kab se ho raha hai aapko yeh sab",
+   "translation": "Yes, everyone is getting treated. When are you going to be treated?",
+   "source_text": "हाँ सबका इलाज है मैम आप कब से हो रहा है आपको यह सब",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 25.86,
+   "end": 36.79,
+   "text": "तो सर उसका कैसा क्या रहता है चून को मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगा आप तो कब टाइम है मतलब फ़ोटोशूट करने के लिए आप दूसरी डेटें आप",
+   "hinglish": "to sir uska kaisa kya rahta hai choon ko matlab meri jo pri wedding fotoshut usse pahle hoga aap to kab time hai matlab fotoshut karne ke liye aap dusri deten aap",
+   "translation": "So, how is my boyfriend? When is he going to be photographed?",
+   "source_text": "तो सर उसका कैसा क्या रहता है चून को मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगा आप तो कब टाइम है मतलब फ़ोटोशूट करने के लिए आप दूसरी डेटें आप",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S3",
+   "start": 35.81,
+   "end": 43.19,
+   "text": "कब से आपको दिक्कत आ रहा है पैर का आपके पैर में सूजन है क्या क्या दिक्कत है पैर में आपको खांसी भी आ रहा है",
+   "hinglish": "kab se aapko dikkat aa raha hai pair ka aapke pair mein sujan hai kya kya dikkat hai pair mein aapko khansi bhi aa raha hai",
+   "translation": "S3",
+   "source_text": "कब से आपको दिक्कत आ रहा है पैर का आपके पैर में सूजन है क्या क्या दिक्कत है पैर में आपको खांसी भी आ रहा है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 43.59,
+   "end": 44.55,
+   "text": "नमस्कार सर",
+   "hinglish": "namaskar sir",
+   "translation": "S2",
+   "source_text": "नमस्कार सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 45.08,
+   "end": 51.42,
+   "text": "सर प्री वेडिंग सूट फोटोशूट कम से कम अच्छी लोकेशन पर चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको",
+   "hinglish": "sir pri wedding suit photoshoot kam se kam achhi location par chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko",
+   "translation": "S1",
+   "source_text": "सर प्री वेडिंग सूट फोटोशूट कम से कम अच्छी लोकेशन पर चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 51.98,
+   "end": 59.79,
+   "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर वह हो पाएगा",
+   "hinglish": "sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi paanch logon ke liye chahiye tha sir woh ho paega",
+   "translation": "S2",
+   "source_text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर वह हो पाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S3",
+   "start": 60.58,
+   "end": 61.35,
+   "text": "सब भी है",
+   "hinglish": "sab bhi hai",
+   "translation": "S3",
+   "source_text": "सब भी है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 41.492,
+  "prompt_tokens": 1829,
+  "completion_tokens": 872,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 8,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 4,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "2d856730bcf6d07bf3f8f75f7d9e94f55cec800eb7c093223b4b0cee9094089d",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:50:17Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 61.66
+ }
+}

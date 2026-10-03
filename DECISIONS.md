@@ -31,7 +31,8 @@ qualitative demo.
 
 ## D4 · Language scope
 **Decided:** 2026-09-25 (by the team)
-**Choice:** Hindi + English code-switching (Hinglish) only, for midsem.
+**Choice:** Hindi + English code-switching (Hinglish) only, for the whole project (all four stages). Other Indian
+languages (IndicConformer and the corpora cover 22) are a possible extension, not part of this project.
 
 ## D5 · Compute
 **Decided:** 2026-09-25
@@ -238,4 +239,141 @@ transparency.
 **Chosen:** splice with 0.5 s context (default `sep_context_s=0.5`). It is the best or tied policy on both timelines.
 With the true timeline it removes about a fifth of the heavy-overlap errors (44.1 % → 36.2 %). With our own diarization
 the gain is small, because diarization mistakes (words credited to the wrong speaker) then dominate the error.
+
+## D27 · Stage 4 runs Airavata locally, behind an OpenAI-compatible server
+**Decided:** 2026-10-01
+**Choice:** Stage 4 talks to any OpenAI-compatible `/v1/chat/completions` server through the standard library (no
+`openai` package, no hosted API, no key). The default is AI4Bharat **Airavata** (7B, Hindi instruction-tuned from
+OpenHathi, the proposal's two examples), quantised to 4 bits (Q4_K_M) and served by llama.cpp's `llama-server`
+(`scripts/serve_llm.py`), which can build both the server and the model file from PyPI and Hugging Face alone.
+**Why:** the proposal asks for a *localized* foundational LLM. The 7B model in 16-bit (~14 GB) does not fit the 6 GB
+laptop GPU next to Stages 1–3; at 4 bits (~4 GB) it runs on a CPU, or on the GPU on its own (measured in D33). A separate server process
+keeps the 7B model's memory and dependencies out of the Stage 1–3 Python environment, and any other local model can be
+swapped in with `--llm-url`.
+
+## D28 · Speaker labels and timestamps never pass through the LLM
+**Decided:** 2026-10-01
+**Choice:** the model sees numbered lines ("7 | Speaker_B | 00:06-00:20 | text") and replies with text per line number
+only: repaired Devanagari, English, an "uncertain" flag. Speaker and time are copied from Stage 3. The reply is
+constrained by a JSON schema that lists every line number in order (llama-server compiles it into a grammar, so
+only replies of that shape can be generated), and checked again in Python: unknown line numbers are dropped, missing
+lines restored and flagged. An unusable reply makes the chunk be halved and retried; a single line that still fails
+keeps its ASR text, flagged. The report is still written.
+**Why:** Stages 1–3 are measured; Stage 4 is not allowed to undo that. A first version asked the model to return the
+speaker and times as well, then overwrote them; never asking for them is simpler and shortens the reply, which is
+what costs time on a CPU. A 7B model often produces broken JSON without a grammar. The Python checks still apply when
+a server ignores the schema.
+
+## D29 · A repair may change at most half of a line's characters, and may not add, drop or translate words
+**Decided:** 2026-10-01
+**Choice:** if the repaired line differs from the ASR line in more than 50 % of its characters (character edit
+distance after the scoring normalisation, so punctuation does not count), or has more than max(1, 20 %) more words
+than the ASR line, the ASR line is kept and flagged. (The word rule was added after an internal red-team check showed
+that a short invented clause appended to a long line stays under the 50 % limit.) Two more rules were added after
+the real model was run (D32): a repair may not drop words (only an immediately repeated word may go), and may not
+remove an English loanword that the line contains (a word in the romaniser's lexicon, e.g. कंट्रोल → नियंत्रण).
+**Why:** the proposal asks Stage 4 to "fix syntactic errors caused by background noise drops", i.e. small repairs. A
+change of more than half the line is a rewrite: typically the model translated the line into English in the
+Devanagari field, or "completed" a fragment with words nobody said. 50 % is deliberately loose for short lines (one
+fixed word in a two-word line is a 20–40 % change). How often it fires, and whether repairs lower or raise cpWER, is
+measured on the test set (D31).
+
+## D30 · The Hinglish column comes from the Stage-3 romaniser, not from the LLM
+**Decided:** 2026-10-01
+**Choice:** the repaired Devanagari is romanised by `hinglish.py`, as in Stage 3. An unchanged line keeps its
+Stage-3 Hinglish exactly.
+**Why:** the reply would otherwise carry each line three times (Devanagari, Hinglish, English), which is about 50 %
+more generated text and 50 % more time on a CPU, and the model's Hinglish would be spelled differently from Stage 3's.
+
+## D31 · How Stage 4 is evaluated
+**Decided:** 2026-10-01
+**Choice:** `scripts/eval_postprocess.py` runs Stage 4 on the stored Stage-3 transcripts of the test conversations
+(`results/eval_test_indicconformer/*.json`) for four inputs, each adding one source of upstream error: the true
+transcript, ASR on each clean voice (true timeline), ASR on the noisy mixture (true timeline), and the full Order-B
+pipeline. Measured per conversation: cpWER of the Stage-3 text vs the Stage-4 repaired text (paired, bootstrap CI);
+the share of report keywords, and of summary and key-point content words, that were really said (found in the true
+transcript or its translation); word overlap
+(F1) of the keywords and summary with the report made from the true transcript; guardrail counts; time.
+**Why:** a summary has no single right answer, but three things can be measured honestly: (1) whether the repair
+makes the transcript better or worse against the truth, which answers the proposal's "fix syntactic errors" directly;
+(2) whether upstream errors put things into the report that nobody said; (3) how far the report drifts from the one a
+perfect transcript gives, which is the proposal's objective 5 ("how error propagation cascades from early acoustic
+layers down to final text generations") applied to the last stage. Re-using the stored transcripts means the same
+conversations as every other result, and no audio model has to run again. No human judgement or second LLM is used as
+a judge: both would be harder to reproduce than the numbers above. The guardrails cannot check that a translation or a
+summary sentence is faithful; "summary words really said" measures how often unsaid content gets through.
+Conversations of one speaker group share their speech across the 9 conditions, so some Stage-3 transcripts are
+identical; Stage 4 is deterministic, so the evaluation reuses the report for an identical transcript instead of
+recomputing it, and the confidence intervals (bootstrap over conversations) are optimistic.
+
+## D32 · Stage 4 after meeting the real model: what changed, developed on test group 7 only
+**Decided:** 2026-10-02
+**Context:** the prompts and guardrails of D27–D31 were written before any Airavata output had been seen. The first
+real runs showed mechanical failures and quality failures. Mechanical problems were fixed wherever they appeared.
+Changes made because of report *quality* were developed only on test speaker group 7 (9 conversations), and group 7 is
+excluded from every Stage-4 number reported (`scripts/eval_postprocess.py` never uses it; the Stage 1–3 results are
+unchanged).
+**Mechanical fixes:**
+- *Every JSON-schema request failed.* Current llama-server feeds the template's generation prompt (`<|assistant|>\n`)
+  into the grammar, but skips its first token when that token starts with a space. Airavata's tokenizer merges the
+  leading space with `<`, so the grammar lost the `<` and rejected everything ("Failed to initialize samplers"). The
+  client then silently fell back to unconstrained replies. The chat template now opens the assistant turn after a
+  final user message even without `add_generation_prompt`, so the generation prompt is empty; the rendered prompt is
+  byte-identical to the model card format. The fallback now warns, and the real-LLM test asserts the schema was used.
+- *Model file.* `ai4bharat/Airavata` publishes a 16-bit GGUF whose tokenizer equals `tokenizer.model` (same pieces and
+  scores); quantising it directly to Q4_K_M needs no Python conversion step and ~18 GB of disk instead of ~22 GB.
+- *Memory.* llama-server's automatic slots share one 4,096-token cache, and it keeps an extra RAM prompt cache of up to
+  8 GB by default (it was killed for lack of memory while running three requests). `serve_llm.py` now sets the number
+  of slots explicitly (`--parallel`, default 1), each with its own 4,096-token window, and turns that RAM cache off.
+**Quality changes (group 7):** in the first reports the "English" column was mostly the Devanagari line copied, repairs
+replaced English loanwords with Hindi ones (मैम "ma'am" → माँ "mother", शुगर → चीनी, हॉस्पिटल → अस्पताल) and
+deleted words, translations drifted onto neighbouring lines, and the summary described the report instead of the
+conversation. On the true transcript of one conversation the "repairs" added 10 cpWER points. Changes:
+- the English field is named `english` (with `en`, Airavata often answered in Hindi) and the schema allows only
+  printable ASCII in it, so the line cannot be copied; Devanagari in it counts as no translation;
+- the chunk prompt says to copy a line unless a word is clearly broken or repeated, never to use synonyms, never to drop
+  or add words, and to keep English words written in Devanagari;
+- a repair that drops a word (other than an immediate repeat) or removes a loanword is reverted (D29);
+- chunks hold at most 6 lines instead of 12: with 12, translations drifted by one or two lines;
+- when several different lines get the same English sentence (a degenerate reply), those translations are dropped;
+- the synthesis must return at least one key point (it often returned none), and its summary prompt asks for what the
+  speakers talk about, not a description of the report.
+On the group-7 reports the cpWER change from repair was +1.0 to +2.3 points with the first prompts and −0.4 to +10
+points after the first round of changes; with the final version it was −0.5 to 0 points (3 reports), and the English
+column became English. It is still a 7B model at 4 bits: many translations stay wrong, summaries are often generic
+("a conversation between two people"), and the measured effect is reported as it is (RESULTS.md). The development
+reports are not kept in the repository; group 7 is simply not scored.
+**Why:** the freeze rule keeps the reported numbers honest: nothing reported was looked at while the prompts were
+changed. Group 7 was chosen because it is a three-speaker group, the harder case.
+
+## D33 · Stage 4 on the laptop GPU, scored on every test group except 7, speed never pooled
+**Decided:** 2026-10-03
+**Context:** groups 0–1 were evaluated on a 4-core cloud CPU (no GPU), three reports at a time. The rest was run on
+the team laptop (RTX 3050, 6 GB).
+**Choice:**
+- *Server.* A prebuilt llama.cpp release (b11312, `win-cuda-12.4`) is used on the laptop through
+  `serve_llm.py --llama-bin`. It is the same llama.cpp commit (`0c1e570`) that `serve_llm.py` builds from
+  `llama-cpp-python` 0.3.36, so the model file and the server behave as in the cloud run; the laptop has no CMake,
+  C++ compiler or CUDA toolkit to build it. The model file is quantised by `serve_llm.py --prepare-only` from the
+  16-bit GGUF after checking its SHA-256 against the Hugging Face hash.
+- *GPU layers.* All layers on the GPU (`--gpu-layers 99`): with one 4,096-token slot the server uses 5.9 of the
+  6.0 GB, and generates 23 tokens/s, against 19.6 tokens/s with 28 layers. A second slot (`--parallel 2`) gave no extra
+  throughput (22.7 tokens/s for both together): its 2 GB cache does not fit next to the model. So one request at a
+  time. Stage 4 still cannot share the card with Stages 1–3 (4.5 GB), so on this laptop it runs as a separate step
+  after Stage 3, or on the CPU.
+- *Coverage.* Stage 4 is scored on all 63 test conversations that may be scored (groups 0–6), not only groups 0–3.
+  The cached reports of groups 0–3 are reused (Stage 4 is deterministic at temperature 0 on one machine); groups 4–6
+  are new.
+- *CPU and GPU reports in one table.* Groups 0–1 were reported on the CPU and groups 2–6 on the GPU. The two builds
+  give slightly different reports for the same transcript (different floating-point order, then greedy decoding). So
+  group 0 was made again on the GPU and compared (`results/crosscheck_g00_gpu/`): 94 % of the repaired lines are
+  identical, the repair still adds about one cpWER point (+1.2 on the CPU, +1.4 on the GPU), there are no action
+  items on either, and the free-text summaries differ. The conclusions do not depend on the machine, so the scored
+  reports are kept as they are.
+- *Speed.* Each evaluation run keeps its own summary (`results/eval_postprocess_summary_gXX_..._<machine>.json`), and
+  the tables and the benchmark notebook show one row per run. Times from a CPU and a GPU are never averaged together.
+**Why:** groups 0–3 happen to be the easier half of the test set (full-pipeline cpWER 39.1 % vs 59.8 % for groups 4–7),
+so results from them alone would not describe the test set. On the GPU a report takes about 50 s instead of
+several minutes, so the remaining groups cost about 1.5 hours. Group 7 stays excluded (D32). Averaging the speed of two
+very different machines would describe neither.
 

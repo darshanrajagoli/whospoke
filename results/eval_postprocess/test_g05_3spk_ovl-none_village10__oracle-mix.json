@@ -1,0 +1,183 @@
+{
+ "title": "Lucknowi Style Biryanis and Pre-Wedding Photography",
+ "topic": "Lucknowi style biryanis and pre-wedding photography",
+ "executive_summary": "A conversation about Lucknowi style biryanis, pre-wedding photography, and other topics.",
+ "key_points": [
+  "Lucknowi style biryanis",
+  "Pre-wedding photography",
+  "Lucknowi style",
+  "Photographer",
+  "Pre-wedding ceremony"
+ ],
+ "keywords": [
+  "biryanis",
+  "pre-wedding photography",
+  "Lucknowi style",
+  "photographer"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 21.81,
+   "turns": 3,
+   "share": 0.354
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 31.39,
+   "turns": 2,
+   "share": 0.51
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 8.34,
+   "turns": 3,
+   "share": 0.136
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.78,
+   "end": 9.95,
+   "text": "नमस्ते सर सर सर हम बोल रहे हैं कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर वो हो पाएगा",
+   "hinglish": "namaste sir sir sir hum bol rahe hain ki lakhanvi style biryani jo thi hamen chahiye thi paanch logon ke liye chahiye tha sir wo ho paega",
+   "translation": "Hello sir, we are speaking about the Lucknowi style biryanis that we wanted for five people. It would be good if you could get us some.",
+   "source_text": "नमस्कार सर सर हम बोल रहे हैं कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर वो हो पाएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S3",
+   "start": 10.34,
+   "end": 14.19,
+   "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "hinglish": "namaste ma'am bataie kya dikkat hai aapko",
+   "translation": "Hello sir, what is the matter with you?",
+   "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 14.74,
+   "end": 17.39,
+   "text": "हलो हेलो सर नमस्कार मैं अजीत बोल रहा था",
+   "hinglish": "hello hello sir namaskar main ajit bol raha tha",
+   "translation": "Hello sir, I was speaking about Ajit.",
+   "source_text": "हलो हेलो सर नमस्कार मैं अजीत बोल रहा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S3",
+   "start": 17.85,
+   "end": 20.65,
+   "text": "नमस्ते नमस्ते न बताइए क्या दिक्कत है आपको",
+   "hinglish": "namaste namaste na bataie kya dikkat hai aapko",
+   "translation": "Hello sir, is your conversation clear?",
+   "source_text": "नमस्ते नमस्ते न बताइए क्या दिक्कत है आपको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 21.43,
+   "end": 29.57,
+   "text": "जी मेरी जो बात फोटोग्राफर से हो रही है दूसरा ये है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
+   "hinglish": "ji meri jo baat photographer se ho rahi hai dusra ye hai mere yahan das joon ki shadi hai to mere ko pri wedding fotoshut karana tha",
+   "translation": "G sir, I am talking about my wedding which is in June and I wanted to have a pre-wedding photography.",
+   "source_text": "जी मेरी जो बात फोटोग्राफर से हो रही है दूसरा ये है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S3",
+   "start": 29.73,
+   "end": 31.42,
+   "text": "क्या मैम आपकी बात साफ नहीं आ रही है",
+   "hinglish": "kya ma'am aapki baat saaph nahi aa rahi hai",
+   "translation": "Is the conversation clear?",
+   "source_text": "क्या मैम आपकी बात साफ नहीं आ रही है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 31.85,
+   "end": 54.07,
+   "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा मोटा ये सब तो सर वो कह रहे थे वो वो सभी दिख रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा साठ रुपये पीस है अगर मतलब",
+   "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa mota ye sab to sir wo kah rahe the wo wo sabhi dikh rahe the ki jo ye hai gulab jamun ek kitne rupye piece milega saath rupye piece hai agar matlab",
+   "translation": "Yes, and also wanted something sweet like rose berries, snowballs, and a lot of money. They were all saying that whoever it is, that's what they want. When will the photo shoot be?",
+   "source_text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा मोटा ये सब तो सर वो कह रहे हैं वो वो सभी दिख रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा साठ रुपये पीस है अगर मतलब",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 54.32,
+   "end": 65.34,
+   "text": "तो सर उसका कैसा क्या रहता है सर चून को मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगा आप तो कब टाइम है मतलब फ़ोटोशूट करने के लिए आप देखें आप",
+   "hinglish": "to sir uska kaisa kya rahta hai sir choon ko matlab meri jo pri wedding fotoshut usse pahle hoga aap to kab time hai matlab fotoshut karne ke liye aap dekhen aap",
+   "translation": "So, how does he feel? What does he want? I'm asking you, sir, when is the photo shoot?",
+   "source_text": "तो सर उसका कैसा क्या रहता है सर चून को मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगा आप तो कब टाइम है मतलब फ़ोटोशूट करने के लिए आप देखें आप",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 44.056,
+  "prompt_tokens": 1775,
+  "completion_tokens": 946,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "6d73496b94b1e3fffdbb61c12768df4f24539f12021ea26e363fb3369b2ed09d",
+  "source_line_count": 8,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:39:45Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 65.83
+ }
+}

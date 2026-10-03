@@ -1,0 +1,175 @@
+{
+ "title": "Lost ID Card and Phone Number",
+ "topic": "Lost ID Card and Phone Number",
+ "executive_summary": "The speaker is asking for the owner's ID card and phone number.",
+ "key_points": [
+  "ID card",
+  "Phone number",
+  "Lost ID card",
+  "Lost ID card and Phone number"
+ ],
+ "keywords": [
+  "ID card",
+  "Phone number"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 33.36,
+   "turns": 3,
+   "share": 0.568
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 25.39,
+   "turns": 5,
+   "share": 0.432
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 0.88,
+   "end": 1.92,
+   "text": "नमस्ते सर",
+   "hinglish": "namaste sir",
+   "translation": "Hello sir",
+   "source_text": "नमस्ते सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 2.4,
+   "end": 26.73,
+   "text": "बोल रहे थे कि आप बाबू मालिज के प्रधानाचार हैं तो हम बी ए का फोटो देने के आपकी कॉलेज नहीं सकता है",
+   "hinglish": "bol rahe the ki aap babu malij ke pradhanachar hain to hum B e ka photo dene ke aapki college nahi sakta hai",
+   "translation": "They were saying that they can't provide a photo of the BA, which is the head of the Malij college.",
+   "source_text": "बोल रहे थे कि आप आप बाबू मालिज के प्रधानाचार हैं तो हम बी ए का फोटो देने के आपकी कॉलेज नहीं सकता है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 26.91,
+   "end": 31.86,
+   "text": "सर मेरे कोई गलती हुई मेरे हाथ से और मेरा आई डी कार्ड घुम गया सर",
+   "hinglish": "sir mere koi galti hui mere haath se aur mera aai D card ghum gaya sir",
+   "translation": "The speaker said that their hand slipped and their ID card fell off.",
+   "source_text": "सर मेरे कोई गलती हुई मेरे हाथ से और मेरा आई डी कार्ड घुम गया सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 33.1,
+   "end": 40.16,
+   "text": "हाँ करो एग्जाम पास आ रहे तो आई डी कार्ड चाहिए आधार कार्ड की फोटो कापी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड की और",
+   "hinglish": "haan karo exam paas aa rahe to aai D card chahiye aadhar card ki photo kapi aur kya kya lana hai sir ek khud ka photo ek aadhar card ki aur",
+   "translation": "The speaker said that they want to take a photo of the base card and the owner of the photo.",
+   "source_text": "हाँ करो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए आधार कार्ड की फोटो कापी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड की और",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 40.68,
+   "end": 47.83,
+   "text": "अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए हाँ पैसा भी था ना तो नहीं",
+   "hinglish": "apne camera si si ti V camera check karva lijie haan paisa bhi tha na to nahi",
+   "translation": "The speaker said that they want to check their camera and see if they have money.",
+   "source_text": "अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए हाँ पैसा भी था ना तो नहीं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 48.34,
+   "end": 58.26,
+   "text": "ठीक है कहाँ आनी पड़ेगी आप कब तक तक कितने बजे तक ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा फोन बनाएगा",
+   "hinglish": "theek hai kahan aani padegi aap kab tak tak kitne baje tak office khula hai sir apna aai D card ke do saman lenge to hamen sabse pahle kiske paas jana padega phone banaega",
+   "translation": "The speaker said that they will need to go to the office to get the owner's ID card and phone number.",
+   "source_text": "ठीक है कहाँ आनी पड़ेगी आप कब तक कितने बजे तक ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा फोन बनाएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 57.32,
+   "end": 59.2,
+   "text": "पैसा को डॉकूमेंट बता",
+   "hinglish": "paisa ko dokument bata",
+   "translation": "He told me to pay the money",
+   "source_text": "पैसा को डॉकूमेंट बता",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 59.48,
+   "end": 61.9,
+   "text": "अच्छा उसके बाद अपनी एप्लीकेशन भी लिखनी पड़ेगी",
+   "hinglish": "achha uske baad apni eplikeshan bhi likhni padegi",
+   "translation": "He told me to write my application after that",
+   "source_text": "अच्छा उसके बाद अपनी एप्लीकेशन भी लिखनी पड़ेगी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  3,
+  4,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 35.405,
+  "prompt_tokens": 1649,
+  "completion_tokens": 771,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 0,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 2,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "0ba6424e66a5e332e904a5bda14a0866f89f5985a48f6921324ea362832db0da",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:27:11Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 62.56
+ }
+}

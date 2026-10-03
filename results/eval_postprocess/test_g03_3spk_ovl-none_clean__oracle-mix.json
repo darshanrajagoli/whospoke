@@ -1,0 +1,167 @@
+{
+ "title": "Chhath Pooja and Voting in Hindi and Hinglish",
+ "topic": "Chhath Pooja and Voting in Hindi and Hinglish",
+ "executive_summary": "A conversation in Hindi and Hinglish about Chhath Pooja, voting, and wishing for a good wish.",
+ "key_points": [
+  "Chhath Pooja is a Hindu festival that is celebrated in the month of Chhath.",
+  "Voting is an important part of democracy and is a way to express opinions and opinions.",
+  "Wishing for a good future is an important part of Chhath Pooja and voting."
+ ],
+ "keywords": [
+  "Chhath Pooja",
+  "Good",
+  "Make"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 11.6,
+   "turns": 2,
+   "share": 0.189
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 32.61,
+   "turns": 3,
+   "share": 0.53
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 17.3,
+   "turns": 2,
+   "share": 0.281
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.58,
+   "end": 12.4,
+   "text": "हेलो हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
+   "hinglish": "hello hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie",
+   "translation": "Hello, we are speaking from Bihar. Sixth Pooja is celebrated in our country and also Deepavali is celebrated in our country and yes.",
+   "source_text": "हेलो हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S3",
+   "start": 12.61,
+   "end": 21.68,
+   "text": "हाँ वोट इस बार तो देना है ना कोई छाप पर भी देना है आज तो वोट अभी हो गया तो सरकार",
+   "hinglish": "haan vote is baar to dena hai na koi chhaap par bhi dena hai aaj to vote abhi ho gaya to sarkar",
+   "translation": "Yes, vote this time to give vote no imprint also to give vote today so vote has already happened to the government.",
+   "source_text": "हाँ वोट इस बार तो देना है ना कोई छाप पर भी देना है आज तो वोट अभी हो गया तो सरकार",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 21.87,
+   "end": 41.28,
+   "text": "छठ छठ पूजा छठ पूजा में हम लोग नया सब समान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए हाँ",
+   "hinglish": "chhath chhath puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye haan",
+   "translation": "Chhath Chhath Pooja in Chhath Chhath Pooja we bring new uniforms and new clothes to wear in the Pooja and make new offerings to the Pooja and make new offerings to the Pooja.",
+   "source_text": "छठ छठ पूजा छठ पूजा में हम लोग नया सब समान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 41.98,
+   "end": 48.24,
+   "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी",
+   "hinglish": "hello haan hello sir namas theek hai haan ji",
+   "translation": "Hello, hello, hello, hello, hello, hello, hello, hello, hello, hello, hello, ha",
+   "source_text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 48.72,
+   "end": 56.95,
+   "text": "भोट देना है वोट देना है अब देना है देखिए ना इच्छा खूब इच्छा पर देना है भोट",
+   "hinglish": "bhot dena hai vote dena hai ab dena hai dekhie na ichha khoob ichha par dena hai bhot",
+   "translation": "Bhoot is to give vote vote is to give vote is to give vote is to give vote is to give vote is to give",
+   "source_text": "भोट देना है वोट देना है अब देना है देखिए ना इच्छा खूब इच्छा पर देना है भोट",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 57.47,
+   "end": 58.85,
+   "text": "हाँ हाँ",
+   "hinglish": "haan haan",
+   "translation": "Yes, yes, yes, yes, yes, yes,",
+   "source_text": "हाँ हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 59.12,
+   "end": 64.46,
+   "text": "जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+   "hinglish": "ji dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
+   "translation": "Glances at the good and makes the good.",
+   "source_text": "जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 42.246,
+  "prompt_tokens": 1704,
+  "completion_tokens": 938,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 0,
+  "lines_reverted": 6,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 0,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 5,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "d76fc721768bc36c2fa5b32e317a59461b3b324c86e096e0498ab506db1a148c",
+  "source_line_count": 7,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:30:18Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 65.05
+ }
+}

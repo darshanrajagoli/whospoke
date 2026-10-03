@@ -1,0 +1,203 @@
+{
+ "title": "Lost ID Card",
+ "topic": "Missing ID Card",
+ "executive_summary": "A conversation between two people about a missing ID card.",
+ "key_points": [
+  "ID card",
+  "Missing ID card",
+  "Babu Manshankar Inter College",
+  "Principal",
+  "Exam"
+ ],
+ "keywords": [
+  "ID card",
+  "Babu Manshankar Inter College",
+  "Principal",
+  "Exam"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 35.79,
+   "turns": 5,
+   "share": 0.588
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 25.1,
+   "turns": 5,
+   "share": 0.412
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.76,
+   "end": 26.22,
+   "text": "नमस्ते बोल रहे थे कि आप बाबू मशंकर इंटर कॉलेज के प्रधानाचार्य हैं तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा फर्स्ट वहीं छूट गया था जिसमें कुछ सामान हैं जरूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए",
+   "hinglish": "namaste bol rahe the ki aap babu mashankar intar college ke pradhanachary hain to hum B e ka paper dene gaye the aapke school mein mera first wahin chhoot gaya tha jismen kuch saman hain jarurat ki to wo mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie",
+   "translation": "Hello, they were talking about me being the principal of Babu Manshankar Inter College and I went to give them a BA paper, but they missed my first one in their school. They said they needed it, so I asked my Karma Chari to check for me.",
+   "source_text": "नमस्ते बोल रहे थे कि आप आप बाबू मशंकर इंटर कॉलेज के प्रधानाचार्य हैं तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा फर्स्ट वहीं छूट गया था उसमें कुछ सामान हैं जरूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 26.74,
+   "end": 27.78,
+   "text": "नमस्ते सर",
+   "hinglish": "namaste sir",
+   "translation": "Hello, sir.",
+   "source_text": "नमस्ते सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 28.45,
+   "end": 30.41,
+   "text": "कमरा नंबर तीन में छूटा थी",
+   "hinglish": "kamra number teen mein chhuta thi",
+   "translation": "There was a discount in room number three.",
+   "source_text": "कमरा नंबर तीन में छूटा था",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 30.92,
+   "end": 38.73,
+   "text": "सर मेरे कोई गलती हो गई मेरे हाथ से वो मेरा आई डी कार्ड गुम हो गया है सर पाँच वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
+   "hinglish": "sir mere koi galti ho gayi mere haath se wo mera aai D card gum ho gaya hai sir paanch wo egzam paas aa rahe hain to aai D card chahiye sir",
+   "translation": "There was a mistake in my hand and I lost my ID card. I need an ID card from the five who are coming with the exam.",
+   "source_text": "सर मेरे कोई गलती हो गई मेरे हाथ से वो मेरा आई डी कार्ड गुम हो गया है सर पाँच वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 38.95,
+   "end": 42.14,
+   "text": "हाँ मेरा था वो पॉकिट मेरा था",
+   "hinglish": "haan mera tha wo pokit mera tha",
+   "translation": "Yes, I had a poket with my name on it.",
+   "source_text": "हाँ मेरा था वो पॉकिट मेरा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 42.94,
+   "end": 47.07,
+   "text": "बेस कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फ़ोटो एक आधार कार्ड ही और",
+   "hinglish": "base card ki photo kapi aur kya kya lana hai sir ek khud ka photo ek aadhar card hi aur",
+   "translation": "The photo of the base card and what else do I need.",
+   "source_text": "आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फ़ोटो एक आधार कार्ड ही और",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 47.31,
+   "end": 48.22,
+   "text": "संगीता जी",
+   "hinglish": "sangita ji",
+   "translation": "Sangiata G",
+   "source_text": "संगीता जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 48.44,
+   "end": 53.5,
+   "text": "ठीक है सर ये कहाँ आनी पड़ेगी ऑफिस तो कब तक केतने घंटे तक ऑफिस खुला है सर अपना",
+   "hinglish": "theek hai sir ye kahan aani padegi office to kab tak ketne ghante tak office khula hai sir apna",
+   "translation": "Okay sir, where will you have to go to the office and how long will the office be open until 10 pm sir?",
+   "source_text": "ठीक है सर ये कहाँ आनी पड़ेगी ऑफिस तो कब तक कितने बजे तक ऑफिस खुला है सर अपना",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 53.95,
+   "end": 58.22,
+   "text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "hinglish": "haan to apne camera si si ti V camera check karva lijie",
+   "translation": "Yes, get your camera checked at CCTV cameras.",
+   "source_text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 58.91,
+   "end": 65.97,
+   "text": "आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद अच्छा एप्लीकेशन भी लिखनी पड़ेगी",
+   "hinglish": "aai D card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega achha uske baad achha eplikeshan bhi likhni padegi",
+   "translation": "Get two items from the ID card and who will be the first to get them, followed by an application for the same.",
+   "source_text": "आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद अच्छा एप्लीकेशन भी लिखनी पड़ेगी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  4,
+  5,
+  6,
+  8,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 43.919,
+  "prompt_tokens": 1852,
+  "completion_tokens": 983,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 4,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "3caf570e3917b7cc54c70ce6483ce1da79c290b09b2cd599dfadfe17e2b2cdad",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:04:28Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 66.49
+ }
+}

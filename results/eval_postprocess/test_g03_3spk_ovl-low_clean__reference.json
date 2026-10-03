@@ -1,0 +1,253 @@
+{
+ "title": "Hindi and Hinglish Conversations",
+ "topic": "Hindi and Hinglish Conversations",
+ "executive_summary": "This report summarizes a conversation in Hindi and Hinglish, with a focus on the main topic of the conversation and the key points and keywords discussed.",
+ "key_points": [
+  "Hindi and Hinglish Conversations"
+ ],
+ "keywords": [
+  "हैलो",
+  "वोट",
+  "दीपावली",
+  "बिहार",
+  "government",
+  "new materials",
+  "worship",
+  "people"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 11.34,
+   "turns": 3,
+   "share": 0.146
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 30.12,
+   "turns": 5,
+   "share": 0.389
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 35.96,
+   "turns": 5,
+   "share": 0.464
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.47,
+   "end": 1.14,
+   "text": "हैलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हैलो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S3",
+   "start": 0.805,
+   "end": 1.258,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Yes",
+   "source_text": "हाँ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 1.474,
+   "end": 8.349,
+   "text": "वोट इस बार तो देना है न कोई छाप पर भी देना है अब तो वोट अथि हो गया तो",
+   "hinglish": "vote is baar to dena hai na koi chhaap par bhi dena hai ab to vote athi ho gaya to",
+   "translation": "Vote this time, not even on the imprint, then it's done.",
+   "source_text": "वोट इस बार तो देना है न कोई छाप पर भी देना है अब तो वोट अथि हो गया तो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 8.534,
+   "end": 10.334,
+   "text": "हम बिहार से बोल रहे हैं",
+   "hinglish": "hum bihar se bol rahe hain",
+   "translation": "We are speaking from Bihar.",
+   "source_text": "हम बिहार से बोल रहे हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 10.657,
+   "end": 19.637,
+   "text": "हमारे देश में छत्त पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
+   "hinglish": "hamare desh mein chhatt puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie",
+   "translation": "In our country, Chautha is celebrated and Deepavali is also celebrated and yes.",
+   "source_text": "हमारे देश में छत्त पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 19.944,
+   "end": 20.464,
+   "text": "चहत्त पू",
+   "hinglish": "chahatt pu",
+   "translation": "Chautha Pu.",
+   "source_text": "छत्त पू",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S3",
+   "start": 20.95,
+   "end": 22.256,
+   "text": "यही बार तो सरकार कौन",
+   "hinglish": "yahi baar to sarkar kaun",
+   "translation": "Who is the government?",
+   "source_text": "यही बार तो सरकार कौन",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S3",
+   "start": 22.416,
+   "end": 30.648,
+   "text": "वो वोट देना है भोट देना है अब देना है देखिए न वो ही छाप को छाप पर देना है वोट",
+   "hinglish": "wo vote dena hai bhot dena hai ab dena hai dekhie na wo hi chhaap ko chhaap par dena hai vote",
+   "translation": "Who is willing to vote and not just on the printout?",
+   "source_text": "वोट देना है भोट देना है अब देना है देखिए न वो ही छाप को छाप पर देना है वोट",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 28.831,
+   "end": 46.978,
+   "text": "छत्त पूजन छत्त पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नए वस्त्र ख़रीद के लाते हैं वह पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं यह सब बनाते हैं पूजा करने के लिए",
+   "hinglish": "chhatt pujan chhatt puja mein hum log naya sab saman late hain jo vrat karte hain uske liye nae wastr kharid ke late hain woh pahante hain usmen aur thakua banate hain kasar banate hain yeh sab banate hain puja karne ke liye",
+   "translation": "We bring new materials for those who fast, and make new clothes, and make cushions, and make altars, and make everything for worship.",
+   "source_text": "छत्त पूजन छत्त पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नए वस्त्र ख़रीद के लाते हैं वह पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं यह सब बनाते हैं पूजा करने के लिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S1",
+   "start": 47.762,
+   "end": 53.252,
+   "text": "हाँ हलो सर नमस ठीक है हाँ",
+   "hinglish": "haan hello sir namas theek hai haan",
+   "translation": "Yes sir, it's fine. Yes.",
+   "source_text": "हाँ हलो सर नमस ठीक है हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 53.483,
+   "end": 53.993,
+   "text": "जी",
+   "hinglish": "ji",
+   "translation": "G.",
+   "source_text": "जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 12,
+   "speaker": "S1",
+   "start": 54.286,
+   "end": 59.629,
+   "text": "जी देखते हैं कि बहुत अच्छे से देखते हैं और कितना अच्छा बनाते हैं",
+   "hinglish": "ji dekhte hain ki bahut achhe se dekhte hain aur kitna achha banate hain",
+   "translation": "Look at how well we do and how much we make.",
+   "source_text": "जी देखते हैं कि बहुत अच्छे से देखते हैं और कितना अच्छा बनाते हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 13,
+   "speaker": "S3",
+   "start": 60.303,
+   "end": 79.393,
+   "text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ न दिया सरकार के खिलाफ नहीं दिया तो अब अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इन्द्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारे हो उसी का व्होट दिया जाएगा",
+   "hinglish": "ab to vote khatm ho gaya ab vote aaega nahi to kuch na diya sarkar ke khilaph nahi diya to ab ab kiska dena hai jo usi ka vote dena hai je aage mein badhaega vikas karaega hum log ka indravas ho bathroom ho sahara ho mane ye bhi cheej ke sahare ho usi ka vote diya jaega",
+   "translation": "The government has not done anything for the people, and they will not do anything in the future. We should vote for the same person who will increase the economy and make us more comfortable.",
+   "source_text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ न दिया सरकार के खिलाफ नहीं दिया तो अब अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इन्द्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारा हो उसी का व्होट दिया जाएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13
+ ],
+ "diagnostics": {
+  "llm_calls": 4,
+  "llm_seconds": 53.394,
+  "prompt_tokens": 2299,
+  "completion_tokens": 1187,
+  "chunks": 3,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 11,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 4,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "552a4061b060469f005ab1454e44d66af3f6769d6e82d2ef3965b1f728f61d1d",
+  "source_line_count": 13,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:39:15Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 79.8
+ }
+}

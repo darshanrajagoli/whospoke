@@ -1,0 +1,225 @@
+{
+ "title": "Hindi and Hinglish Conversation Transcript",
+ "topic": "Hindi and Hinglish Conversation",
+ "executive_summary": "This report summarizes a conversation between two people in Hindi and Hinglish, with a focus on haircut and fees.",
+ "key_points": [
+  "Hello",
+  "G G ye to our specialty is Sir",
+  "Ram to cachorre will do fine",
+  "Yes, speak",
+  "Two days will be needed"
+ ],
+ "keywords": [
+  "जी जी ये तो हमारी स्पेशलिटी है सर",
+  "राम से कचोरे हाँ ठीक कर देंगे",
+  "दो दिन लगेंगे"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 27.55,
+   "turns": 4,
+   "share": 0.459
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 24.53,
+   "turns": 4,
+   "share": 0.409
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 7.93,
+   "turns": 3,
+   "share": 0.132
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S3",
+   "start": 0.43,
+   "end": 4.25,
+   "text": "हाँ जी नमस्ते हाँ बोलो हाँ हाँ जना हलो",
+   "hinglish": "haan ji namaste haan bolo haan haan jana hello",
+   "translation": "Hello",
+   "source_text": "हाँ जी नमस्ते हाँ बोलो हाँ हाँ जना हलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 2.53,
+   "end": 2.98,
+   "text": "हेलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हेलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 4.56,
+   "end": 7.07,
+   "text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप",
+   "hinglish": "namaskar main sir restaurant se baat kar raha hoon aap",
+   "translation": "Hello",
+   "source_text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 6.8,
+   "end": 7.35,
+   "text": "हाँ हेलो",
+   "hinglish": "haan hello",
+   "translation": "Hello",
+   "source_text": "हाँ हेलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 8.11,
+   "end": 9.92,
+   "text": "जी जी ये तो हमारी स्पेशलिटी है सर",
+   "hinglish": "ji ji ye to hamari speshliti hai sir",
+   "translation": "G G ye to our specialty is Sir",
+   "source_text": "जी जी ये तो हमारी स्पेशलिटी है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S3",
+   "start": 10.52,
+   "end": 13.49,
+   "text": "राम से कचोरे हाँ ठीक कर देंगे",
+   "hinglish": "raam se kachore haan theek kar denge",
+   "translation": "Ram to cachorre will do fine",
+   "source_text": "राम से कचोरे हाँ ठीक कर देंगे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 12.82,
+   "end": 14.17,
+   "text": "हाँ बोलिए",
+   "hinglish": "haan bolie",
+   "translation": "Yes, speak",
+   "source_text": "हाँ बोलिए",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S3",
+   "start": 14.53,
+   "end": 15.67,
+   "text": "दो चार दिन लगेंगे",
+   "hinglish": "do chaar din lagenge",
+   "translation": "Two days will be needed",
+   "source_text": "दो चार दिन लगेंगे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 16.0,
+   "end": 26.18,
+   "text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेव भी है आपको कौन सी करानी है",
+   "hinglish": "haan ji bolie mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V V seb hai aur yu sev bhi hai aapko kaun si karani hai",
+   "translation": "Yes, you speak in my parlour, there are three steps, four steps, and a step of a step, and a step of a step, and a step of a step, and a step of a step, and a step of a step, and a step of a step, and a step of a step, and a step of a step, and a step of a step, and a step of a step, and a step of a",
+   "source_text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेव भी है आपको कौन सी करानी है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 24.84,
+   "end": 44.6,
+   "text": "आपको बता दें अगर आप शादी ले जाएँगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे त्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
+   "hinglish": "aapko bata den agar aap shadi le jaenge to teen sau rupye milenge aapko aur agar aap use trai karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki zarurat hai hum use bahar se bulva ke bhi aapko de sakte hain",
+   "translation": "You tell me if you marry, you will get three hundred rupees, and if you get him a haircut or a vegetable, you will get four hundred rupees, and yes, the price is high, but it's worth it because it's the best",
+   "source_text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 44.8,
+   "end": 60.27,
+   "text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग",
+   "hinglish": "okay theek hai uski phees bata deti hoon meri meri yu cutting ke liye jo aapko saam matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay haan to uske three hundred teen sau something",
+   "translation": "Okay, let's talk about her fees, my dear, for her haircut, which is the face, or for her haircut, which is the front, and for her haircut, which is the back, and for her haircut, which is the side, and for her haircut, which is the back, and for her haircut, which is the side, and for her haircut, which is the back, and for her haircut, which is the side, and for her haircut, which is the",
+   "source_text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  8,
+  9,
+  10,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 517.786,
+  "prompt_tokens": 2033,
+  "completion_tokens": 1199,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 4,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "9e730841c71b6351fb02b966c4809e8bb16682c115dd15171e2ca10cba92d60e",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-02T03:18:46Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 60.58
+ }
+}

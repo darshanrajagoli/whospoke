@@ -1,0 +1,150 @@
+{
+ "title": "Chhutti Puja, Deepavali, and Voting in Hindi and Hinglish",
+ "topic": "Chhutti Puja, Deepavali, and Voting",
+ "executive_summary": "A conversation in Hindi and Hinglish about Chhutti Puja, Deepavali, and voting.",
+ "key_points": [
+  "Chhutti Puja, Deepavali, and Voting"
+ ],
+ "keywords": [
+  "chhutti puja",
+  "deepavali"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 5.49,
+   "turns": 1,
+   "share": 0.075
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 30.59,
+   "turns": 3,
+   "share": 0.421
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 36.65,
+   "turns": 2,
+   "share": 0.504
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.36,
+   "end": 5.85,
+   "text": "हेलो हाँ हेलो सर नमस्कार ठीक है हाँ",
+   "hinglish": "hello haan hello sir namaskar theek hai haan",
+   "translation": "Hello, sir, hello. It's okay.",
+   "source_text": "हेलो हाँ हेलो सर नमस्कार ठीक है हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 6.22,
+   "end": 18.14,
+   "text": "हेलो हम बिहार से बोल रहे हैं हमारे देश में छुट्टी पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
+   "hinglish": "hello hum bihar se bol rahe hain hamare desh mein chhutti puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie",
+   "translation": "Hello, we are speaking from Bihar. Chhutti Puja is celebrated in our country and Deepavali is also celebrated in our country and say hello.",
+   "source_text": "हेलो हम बिहार से बोल रहे हैं हमारे देश में छुट्टी पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 18.34,
+   "end": 25.78,
+   "text": "हाँ वो ये बात तो देना है ना कोई छापड़ भी देना है अब तो बहुत अच्छी हो गया तो",
+   "hinglish": "haan wo ye baat to dena hai na koi chhapad bhi dena hai ab to bahut achhi ho gaya to",
+   "translation": "Yes, that's right. No, it's not a muddle. It's fine.",
+   "source_text": "हाँ वो ये बात तो देना है ना कोई छापड़ भी देना है अब तो बहुत अच्छी हो गया तो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 26.38,
+   "end": 26.9,
+   "text": "साइड",
+   "hinglish": "side",
+   "translation": "Side.",
+   "source_text": "साइड",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 27.31,
+   "end": 56.52,
+   "text": "कई बार तो सरकार को वोट देना है वोट देना है अब देना है देखें नहीं छपड़ देना है अब तो वोट खत्म हो गया है अब वोट आएगा सूचना दिया सरकार के खिलाफ नहीं दिया तो आप उसी का देना है जी उसी का वोट देना है जो आगे में बैठाएगा विकास करेगा हम लोग का इंदिराबाद का बाथरूम हो सहारा हो मान जो भी चीज का सहारा हो उसी का वोट दिया जाएगा",
+   "hinglish": "kai baar to sarkar ko vote dena hai vote dena hai ab dena hai dekhen nahi chhapad dena hai ab to vote khatm ho gaya hai ab vote aaega suchna diya sarkar ke khilaph nahi diya to aap usi ka dena hai ji usi ka vote dena hai jo aage mein baithaega vikas karega hum log ka indirabad ka bathroom ho sahara ho maan jo bhi cheej ka sahara ho usi ka vote diya jaega",
+   "translation": "Many times, the government has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has voted. It has v",
+   "source_text": "कई बार तो सरकार को वोट देना है वोट देना है अब देना है दिखे नो छपड़ देना है अब तो वोट खत्म हो गया अब वोट आएगा सूचना दिया सरकार के खिलाफ नहीं दिया तो आप उसी का देना है जी उसी का वोट देना है जो आगे में बैठाएगा विकास कराएगा हम लोग का इंदिराबाद का बाथरूम हो सहारा हो मान जो भी चीज का सहारा हो उसी का वोट दिया जाएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 57.18,
+   "end": 75.33,
+   "text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो वर्त करते हैं उसके लिए नया व्रत खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
+   "hinglish": "chhath puja chhath puja mein hum log naya sab saman late hain jo wart karte hain uske liye naya vrat kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye",
+   "translation": "In Chhutti Puja, we bring new things that we make. We make new offerings. We wear new clothes. We make new ornaments. We make new jewelry. We make new food. We make new drinks. We make new music. We make new dances. We make new songs. We make new music. We make new songs. We make new music. We make new music. We make new music. We make new music. We make new music. We make new music.",
+   "source_text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो वर्त करते हैं उसके लिए नया व्रत खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 2,
+  "llm_seconds": 44.525,
+  "prompt_tokens": 1486,
+  "completion_tokens": 948,
+  "chunks": 1,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 3,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "0810d0dd9f3a3f0f3f86eae1be057ecf6e0e80544f94d09b6c077d7324c38470",
+  "source_line_count": 6,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:33:31Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 76.06
+ }
+}

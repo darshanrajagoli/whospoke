@@ -1,0 +1,231 @@
+{
+ "title": "Marriage and Getting It Done by a Doctor or a Doctor's Assistant",
+ "topic": "Marriage and Getting It Done by a Doctor or a Doctor's Assistant",
+ "executive_summary": "A conversation between two people in Hindi about marriage and getting it done by a doctor or a doctor's assistant.",
+ "key_points": [
+  "Marriage and Getting It Done by a Doctor or a Doctor's Assistant",
+  "Getting It Done by a Doctor or a Doctor's Assistant"
+ ],
+ "keywords": [
+  "doctor",
+  "doctor's assistant",
+  "get it done by a doctor or a doctor's"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 12.19,
+   "turns": 3,
+   "share": 0.2
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 40.71,
+   "turns": 5,
+   "share": 0.667
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 8.12,
+   "turns": 4,
+   "share": 0.133
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.8,
+   "end": 5.99,
+   "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+   "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+   "translation": "Hello, I am talking to Sir's restaurant.",
+   "source_text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 6.17,
+   "end": 8.29,
+   "text": "हाँ हेलो हाँ बोलिए",
+   "hinglish": "haan hello haan bolie",
+   "translation": "Yes, yes, speak.",
+   "source_text": "हाँ हेलो हाँ बोलिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 8.74,
+   "end": 9.68,
+   "text": "हाँ जी नमस्ते",
+   "hinglish": "haan ji namaste",
+   "translation": "Yes, hello.",
+   "source_text": "हाँ जी नमस्ते",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 10.29,
+   "end": 10.62,
+   "text": "जी",
+   "hinglish": "ji",
+   "translation": "G.",
+   "source_text": "जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 11.05,
+   "end": 11.82,
+   "text": "हाँ, जी बोलिए",
+   "hinglish": "haan, ji bolie",
+   "translation": "Yes, speak.",
+   "source_text": "हाँ जी बोलिए",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 12.51,
+   "end": 37.8,
+   "text": "आपको बता दें अगर आप शादी ले जाएँगे तो तीन सौ रुपये मिलेंगे, आपको और अगर आप उसे त्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं तो आप सॉफ्टवेयर एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
+   "hinglish": "aapko bata den agar aap shadi le jaenge to teen sau rupye milenge, aapko aur agar aap use trai karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain to aap sophtaveyar ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai",
+   "translation": "Tell me if you marry, you will get three hundred rupees, if you marry and you get it done by a doctor or a doctor's assistant, you will get four hundred rupees, if you marry and you get it done by a doctor or a doctor's assistant, you will get four hundred rupees.",
+   "source_text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं तो आप सॉफ्टवेयर एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S3",
+   "start": 38.45,
+   "end": 40.75,
+   "text": "बोलो हाँ बोलो हाँ जना",
+   "hinglish": "bolo haan bolo haan jana",
+   "translation": "Say yes, say yes, say yes",
+   "source_text": "हाँ बोलो हाँ हाँ जना",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 41.5,
+   "end": 49.71,
+   "text": "है नहीं हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज़्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज़ केवल और केवल यही",
+   "hinglish": "hai nahi haan ab market hai aapke yahan vaise to hamare yahan sabse zyada matlab hamare shop ka bole to sabse pasandida cheez keval aur keval yahi",
+   "translation": "We're the best shop in town, according to the market. It's only and only us.",
+   "source_text": "है न हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज़्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज़ केवल और केवल यही",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S3",
+   "start": 50.42,
+   "end": 52.09,
+   "text": "हलोसागर चौरा",
+   "hinglish": "halosagar chaura",
+   "translation": "Chowras are a type of flower.",
+   "source_text": "हलोसागर चौरा",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 52.45,
+   "end": 54.14,
+   "text": "समझ लो ना एक तरीके से वो",
+   "hinglish": "samajh lo na ek tarike se wo",
+   "translation": "Understand the way they do it.",
+   "source_text": "समझ लो ना एक तरीके से वो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 11,
+   "speaker": "S3",
+   "start": 54.9,
+   "end": 58.11,
+   "text": "हाँ पी कर देंगे दो चार दिन लगेंगे",
+   "hinglish": "haan pi kar denge do chaar din lagenge",
+   "translation": "They will drink for four days.",
+   "source_text": "हाँ पी कर देंगे दो चार दिन लगेंगे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 12,
+   "speaker": "S1",
+   "start": 58.62,
+   "end": 67.92,
+   "text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है",
+   "hinglish": "mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V V seb hai aur yu seb bhi hai aapko kaun si karani hai",
+   "translation": "In my car, there are three steps and a step off, and a step off, and a step off, and a step off, and a step off, and a step off, and a step off, and a step off, and a step off, and a step off, and a step off, and a step off, and a step off, and a step off, and a step off, a",
+   "source_text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  6,
+  11,
+  12
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 518.622,
+  "prompt_tokens": 1992,
+  "completion_tokens": 1279,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 4,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 3,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "719b207aa4c767d5029932379b965c61342ba4de4a24185ce6eec24bd0ee39ff",
+  "source_line_count": 12,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-02T02:41:14Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 68.25
+ }
+}

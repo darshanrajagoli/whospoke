@@ -1,0 +1,178 @@
+{
+ "title": "Lost ID Card and Application",
+ "topic": "Lost ID Card and Application",
+ "executive_summary": "Speaker is asking about the location of the office and the hours it will be open. They also mention that they will need to go to a school to deliver the BS paper and the base card. The speaker mentions that they lost their ID card in the school and asks the principal to check the room number three. The speaker also mentions that they will need to make an application for a new ID card and application for a new base card. The speaker mentions that they will need to make an application for a new ID card and application for a new base card.",
+ "key_points": [
+  "location",
+  "hours",
+  "ID card",
+  "application",
+  "make"
+ ],
+ "keywords": [
+  "office",
+  "hours",
+  "ID card"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 31.44,
+   "turns": 4,
+   "share": 0.553
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 25.41,
+   "turns": 4,
+   "share": 0.447
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.32,
+   "end": 9.93,
+   "text": "नमस्ते बोल रहे थे कि आप बाबू मशंकर इंटर कॉलेज के जो प्रधानाचार्य हैं",
+   "hinglish": "namaste bol rahe the ki aap babu mashankar intar college ke jo pradhanachary hain",
+   "translation": "Hello, they were speaking about the principal of Babu Manshankar Inter College.",
+   "source_text": "नमस्ते बोल रहे थे कि आप आप बाबू मशंकर इंटर कॉलेज के जो प्रधानाचार्य हैं",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 10.24,
+   "end": 16.3,
+   "text": "नमस्ते सर सर मेरे कोई गलती हुई मेरे हाथ से और मेरा आई डी कार्ड गुम हो गया है सर",
+   "hinglish": "namaste sir sir mere koi galti hui mere haath se aur mera aai D card gum ho gaya hai sir",
+   "translation": "Hello, sir, my hand was broken and my ID card was lost.",
+   "source_text": "नमस्ते सर सर मेरे कोई गलती हुई मेरे हाथ से और मेरा आई डी कार्ड गुम हो गया है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 17.07,
+   "end": 34.85,
+   "text": "तो हम बी एस का पेपर देने गए थे आपके स्कूल में मेरा फ़र्स वहीं छूट गया था उसमें कुछ छूटे सामान है ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था",
+   "hinglish": "to hum B S ka paper dene gaye the aapke school mein mera fars wahin chhoot gaya tha usmen kuch chhute saman hai zarurat ki to wo mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein chhuta tha",
+   "translation": "So, they went to deliver the BS paper and lost the paper in your school. They asked your Karma Chari to check the room number three.",
+   "source_text": "तो हम बी एस का पेपर देने गए थे आपके स्कूल में मेरा फर्स वहीं छूट गया था उसमें कुछ छूटे सामान है ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 35.57,
+   "end": 42.73,
+   "text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड ये और",
+   "hinglish": "haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir ek khud ka photo ek aadhar card ye aur",
+   "translation": "Yes, sir, they are coming with the Exam Pass and a photo of the base card.",
+   "source_text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड ये और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 42.91,
+   "end": 46.05,
+   "text": "हाँ मेरा था वो पॉकेट मेरा था",
+   "hinglish": "haan mera tha wo pocket mera tha",
+   "translation": "Yes, my pocket was my own.",
+   "source_text": "हाँ मेरा था वो पॉकेट मेरा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 46.47,
+   "end": 51.58,
+   "text": "ठीक है सर ये कहाँ आनी पड़ेगी ऑफिस तो ऑफ़िस अब कब तक केतने घंटे तक ऑफ़िस खुला है सर अपना",
+   "hinglish": "theek hai sir ye kahan aani padegi office to ofis ab kab tak ketne ghante tak ofis khula hai sir apna",
+   "translation": "Okay, sir, where will the office be open for how many hours?",
+   "source_text": "ठीक है सर ये कहाँ आनी पड़ेगी ऑफिस तो ऑफ़िस अब कब तक कितने बजे तक ऑफ़िस खुला है सर अपना",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 51.9,
+   "end": 52.81,
+   "text": "संगीता जी",
+   "hinglish": "sangita ji",
+   "translation": "",
+   "source_text": "संगीता जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 53.2,
+   "end": 60.28,
+   "text": "आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद अच्छा एप्लीकेशन भी लिखनी पड़ेगी",
+   "hinglish": "aai D card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega achha uske baad achha eplikeshan bhi likhni padegi",
+   "translation": "",
+   "source_text": "आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद अच्छा एप्लीकेशन भी लिखनी पड़ेगी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 41.524,
+  "prompt_tokens": 1751,
+  "completion_tokens": 903,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 0,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 3,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "e4e65dccae02f3155a78c6bdfd13c4baac5619ac1e7eee7792d69bb112a8b548",
+  "source_line_count": 8,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T11:57:07Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 60.67
+ }
+}

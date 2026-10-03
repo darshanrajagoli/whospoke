@@ -1,0 +1,182 @@
+{
+ "title": "Hindi and Hinglish conversation in uncertain Devanagari transcript",
+ "topic": "Discount on ten June wedding",
+ "executive_summary": "A conversation in Hindi and Hinglish about a discount on a ten June wedding.",
+ "key_points": [
+  "ten June wedding",
+  "discount",
+  "Devanagari",
+  "Hindi",
+  "Hinglish"
+ ],
+ "keywords": [
+  "discount"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 7.55,
+   "turns": 3,
+   "share": 0.109
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 55.07,
+   "turns": 4,
+   "share": 0.793
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 6.8,
+   "turns": 1,
+   "share": 0.098
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.73,
+   "end": 1.14,
+   "text": "हलो",
+   "hinglish": "hello",
+   "translation": "Hello sir sir sir sir",
+   "source_text": "हलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 1.79,
+   "end": 8.23,
+   "text": "नमस्कार सर सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
+   "hinglish": "namaskar sir sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
+   "translation": "Hello ma'am, we were talking about Lakhnavi style biryanis that we wanted",
+   "source_text": "नमस्कार सर सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 8.85,
+   "end": 15.65,
+   "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko",
+   "translation": "Hello ma'am, what is the diqqat for you",
+   "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 15.84,
+   "end": 25.56,
+   "text": "पाँच लोगों के लिए चाहिए था सर्व हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा वमोसा ये सब",
+   "hinglish": "paanch logon ke liye chahiye tha sarv ho paega haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa wamosa ye sab",
+   "translation": "Five people will be served and also some sweet like rose berries, snowy kheencha, vana samosa, and wamosa",
+   "source_text": "पाँच लोगों के लिए चाहिए था सर्व हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा वमोसा ये सब",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 25.8,
+   "end": 30.54,
+   "text": "हेलो सर नमस्कार मैं अजीट से बोल रहा था जी मेरे ग्राफ़ बात फ़ोटोग्राफर से हो रही है",
+   "hinglish": "hello sir namaskar main ajit se bol raha tha ji mere graaf baat fotographar se ho rahi hai",
+   "translation": "Hello sir, I was speaking to the photographer about my graph",
+   "source_text": "हेलो सर नमस्कार मैं अजीट से बोल रहा था जी मेरे ग्राफ़ बात फ़ोटोग्राफर से हो रही है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 30.92,
+   "end": 41.77,
+   "text": "तो सर वो कह रहे वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा",
+   "hinglish": "to sir wo kah rahe wo wo sir ye poochh rahe the ki jo ye hai gulab jamun ek kitne rupye piece milega",
+   "translation": "So sir, they were asking about the price of the rose berries",
+   "source_text": "तो सर वो कह रहे वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 42.18,
+   "end": 44.58,
+   "text": "जी सर यह मेरे यहाँ दस जून की शादी है",
+   "hinglish": "ji sir yeh mere yahan das joon ki shadi hai",
+   "translation": "",
+   "source_text": "जी सर यह मेरे यहाँ दस जून की शादी है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 44.88,
+   "end": 72.94,
+   "text": "साठ रुपये पीस है तो अगर मतलब तो पूछ रहे थे कि अगर सर ये कुछ डिस्काउंट उस्काउंट हो सकता है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए थे अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
+   "hinglish": "saath rupye piece hai to agar matlab to poochh rahe the ki agar sir ye kuch discount uskaunt ho sakta hai nahi to sir matlab hum log tourist hain to aae the yahin par matlab rahne ke liye the agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar uchit rate mein mil jata to phir dusre restaurant par kyon jate hain log",
+   "translation": "",
+   "source_text": "साठ रुपये पीस है तो अगर मतलब तो पूछ रहे थे कि अगर सर ये कुछ डिस्काउंट उस्काउंट हो सकता है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए थे अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
+   "changed": false,
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 40.947,
+  "prompt_tokens": 1849,
+  "completion_tokens": 865,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 0,
+  "lines_reverted": 5,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 13,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "4643f1ecfe3ead3c20e9f487d3bf1b870e8051f7508b41c780f91f1e6b8cbd78",
+  "source_line_count": 8,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:35:10Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 73.46
+ }
+}

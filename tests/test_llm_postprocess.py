@@ -1,0 +1,539 @@
+"""Stage 4: the guardrails around the LLM, with scripted replies (no model needed).
+
+``pytest -m slow`` also runs the real local LLM server on the demo transcript, if one is running.
+"""
+import hashlib
+import json
+import re
+import threading
+from http.server import BaseHTTPRequestHandler, HTTPServer
+from pathlib import Path
+
+import numpy as np
+import pytest
+
+import whospoke.llm_postprocess as lp
+from whospoke.llm_postprocess import (  # noqa: E402
+    LLMConnectionError, LLMContextError, LLMError, LLMReply, OpenAICompatibleLLM, PostProcessor, StaticLLM,
+    chunk_schema, estimate_tokens, parse_json_object,
+)
+
+DEMO = Path(__file__).resolve().parents[1] / "results" / "demo" / "transcript.json"
+
+
+def transcript():
+    return {
+        "order": "B",
+        "duration_s": 9.0,
+        "lines": [
+            {"speaker": "Speaker_A", "start": 0.0, "end": 2.0,
+             "text": "आई डी कार्ड गुम हो गया है सर सर", "hinglish": "aai D card gum ho gaya hai sir sir"},
+            {"speaker": "Speaker_B", "start": 2.1, "end": 4.0,
+             "text": "आधार कार्ड की फोटो कॉपी लाना", "hinglish": "aadhar card ki photo copy lana"},
+            {"speaker": "Speaker_A", "start": 4.2, "end": 4.5, "text": "", "hinglish": ""},
+            {"speaker": "Speaker_A", "start": 5.0, "end": 9.0,
+             "text": "ठीक है कल ले आऊंगा", "hinglish": "theek hai kal le aaunga"},
+        ],
+    }
+
+
+def chunk_reply(**changes):
+    lines = [
+        {"id": 1, "text": "आई डी कार्ड गुम हो गया है सर।", "en": "My ID card has been lost, sir.", "uncertain": False},
+        {"id": 2, "text": "आधार कार्ड की फोटो कॉपी लाना।", "en": "Bring a photocopy of the Aadhaar card.",
+         "uncertain": False},
+        {"id": 4, "text": "ठीक है, कल ले आऊंगा।", "en": "Okay, I will bring it tomorrow.", "uncertain": False},
+    ]
+    obj = {"lines": lines, "summary": "A lost ID card and the documents needed to replace it.",
+           "keywords": ["ID card", "Aadhaar card"],
+           "actions": [{"owner": "Speaker_A", "action": "Bring a photocopy of the Aadhaar card", "lines": [2, 4]}]}
+    obj.update(changes)
+    return json.dumps(obj, ensure_ascii=False)
+
+
+def synthesis_reply(**changes):
+    obj = {"title": "Lost ID card", "topic": "replacing a lost ID card",
+           "summary": "Speaker_A has lost their ID card. Speaker_B asks for a photocopy of the Aadhaar card.",
+           "key_points": ["The ID card is lost.", "An Aadhaar photocopy is needed."],
+           "keywords": ["ID card", "Aadhaar card", "photocopy"],
+           "actions": [{"owner": "Speaker_A", "action": "Bring a photocopy of the Aadhaar card", "lines": [2, 4]}]}
+    obj.update(changes)
+    return json.dumps(obj, ensure_ascii=False)
+
+
+def run(*replies, **kw):
+    llm = StaticLLM(list(replies))
+    return PostProcessor(llm, **kw).process_transcript(transcript()), llm
+
+
+# ---------------------------------------------------------------- parsing and schema
+def test_parse_json_object_tolerates_fences_and_stray_words():
+    assert parse_json_object("```json\n{\"x\": 1}\n```") == {"x": 1}
+    assert parse_json_object("Here it is: {\"x\": [1, 2]} hope that helps") == {"x": [1, 2]}
+    with pytest.raises(LLMError):
+        parse_json_object("no json here")
+
+
+def test_chunk_schema_pins_every_line_number_in_order():
+    src = [{"line_id": 3, "text": "क"}, {"line_id": 7, "text": "ख"}]
+    lines = chunk_schema(src)["properties"]["lines"]
+    assert [x["properties"]["id"]["const"] for x in lines["prefixItems"]] == [3, 7]
+    assert "items" not in lines        # llama.cpp would let "items" override the tuple
+
+
+def test_token_estimate_is_conservative_for_devanagari():
+    assert estimate_tokens("आधार कार्ड की फोटो कॉपी") > estimate_tokens("aadhar card ki photo copy")
+
+
+# ---------------------------------------------------------------- the guardrails
+def test_happy_path_report():
+    report, llm = run(chunk_reply(), synthesis_reply())
+    assert len(llm.calls) == 2                              # one chunk + the synthesis
+    assert [x.line_id for x in report.cleaned_dialogue] == [1, 2, 4]   # the empty line 3 is skipped
+    assert report.diagnostics.empty_lines_skipped == 1
+    first = report.cleaned_dialogue[0]
+    assert (first.speaker, first.start, first.end) == ("Speaker_A", 0.0, 2.0)
+    assert first.changed and first.source_text.endswith("सर सर")
+    assert first.hinglish.startswith("aai D card") or first.hinglish.startswith("aai")   # from the romaniser
+    assert report.title == "Lost ID card"
+    assert report.keywords == ["ID card", "Aadhaar card", "photocopy"]
+    assert report.action_items[0].owner == "Speaker_A"
+    assert report.uncertain_lines == []
+    assert {s["speaker"] for s in report.speakers} == {"Speaker_A", "Speaker_B"}
+    # speaker and time never reach the model's output format, only its input
+    assert "speaker" not in json.dumps(llm.calls[0]["schema"]["properties"]["lines"])
+
+
+def test_unknown_line_ids_are_dropped_and_missing_lines_restored():
+    obj = json.loads(chunk_reply())
+    obj["lines"] = [obj["lines"][0], {"id": 99, "text": "invented", "en": "Invented.", "uncertain": False}]
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    assert [x.line_id for x in report.cleaned_dialogue] == [1, 2, 4]
+    assert report.diagnostics.unknown_line_ids == 1
+    assert report.diagnostics.lines_restored == 2
+    restored = report.cleaned_dialogue[1]
+    assert restored.uncertain and not restored.changed and "skipped" in restored.note
+    assert restored.text == "आधार कार्ड की फोटो कॉपी लाना"
+
+
+def test_over_edited_line_is_reverted():
+    obj = json.loads(chunk_reply())
+    obj["lines"][1]["text"] = "My ID card was lost"          # translated instead of repaired
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    line = report.cleaned_dialogue[1]
+    assert line.text == line.source_text and not line.changed and line.uncertain
+    assert report.diagnostics.lines_reverted == 1
+
+
+def test_missing_translation_and_model_flag_are_reported():
+    obj = json.loads(chunk_reply())
+    obj["lines"][0]["en"] = ""
+    obj["lines"][2]["uncertain"] = True
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    assert report.uncertain_lines == [1, 4]
+    assert report.diagnostics.missing_translations == 1
+    assert report.diagnostics.lines_flagged_by_llm == 1
+    assert "translation" in report.cleaned_dialogue[0].note
+
+
+def test_ungrounded_keywords_and_unsupported_actions_are_dropped():
+    synth = synthesis_reply(
+        keywords=["ID card", "weather forecast", "election"],
+        actions=[{"owner": "Speaker_Z", "action": "x", "lines": [1]},           # unknown speaker
+                 {"owner": "Speaker_B", "action": "Check the CCTV", "lines": [42]},   # no valid evidence
+                 {"owner": "unknown", "action": "Bring the photocopy", "lines": [2]}])
+    report, _ = run(chunk_reply(), synth)
+    assert report.keywords == ["ID card"]
+    assert report.diagnostics.keywords_dropped == 2
+    assert [(a.owner, a.evidence_line_ids) for a in report.action_items] == [("unspecified", [2])]
+
+
+def test_invalid_reply_splits_the_chunk_then_keeps_failed_line():
+    half1 = json.loads(chunk_reply())
+    half1["lines"] = half1["lines"][:1]
+    half2 = json.loads(chunk_reply())
+    half2["lines"] = half2["lines"][1:]
+    # 3 lines: garbage → split into [1] and [2, 4]; [1] fails again → kept; [2, 4] succeeds
+    report, llm = run("not json", "still not json", json.dumps(half2, ensure_ascii=False), synthesis_reply())
+    assert len(llm.calls) == 4
+    d = report.diagnostics
+    assert (d.invalid_replies, d.chunk_splits, d.failed_chunks) == (2, 1, 1)
+    assert report.cleaned_dialogue[0].uncertain and not report.cleaned_dialogue[0].changed
+    assert report.cleaned_dialogue[1].translation.startswith("Bring")
+
+
+def test_truncated_reply_and_context_error_split_the_chunk():
+    one = json.loads(chunk_reply())
+    one["lines"] = one["lines"][:1]
+    two = json.loads(chunk_reply())
+    two["lines"] = two["lines"][1:]
+    replies = [LLMReply('{"lines": [', "length"), LLMContextError("too long"),
+               json.dumps(two, ensure_ascii=False), synthesis_reply()]
+    report, llm = run(*replies)
+    assert report.diagnostics.chunk_splits == 1
+    assert report.cleaned_dialogue[0].uncertain and "context" in report.cleaned_dialogue[0].note
+
+
+def test_synthesis_failure_falls_back_to_chunk_results():
+    report, _ = run(chunk_reply(), "garbage")
+    assert report.diagnostics.synthesis_failed
+    assert report.executive_summary.startswith("A lost ID card")
+    assert report.keywords == ["ID card", "Aadhaar card"]
+    assert report.action_items and report.title == "Conversation report"
+
+
+def test_connection_error_stops_the_run():
+    with pytest.raises(LLMConnectionError):
+        run(LLMConnectionError("down"))
+
+
+def test_long_transcripts_are_chunked_to_fit_the_context():
+    lines = [{"speaker": f"Speaker_{'AB'[i % 2]}", "start": float(i), "end": i + 0.9,
+              "text": "यह एक लंबी बातचीत की पंक्ति है जिसमें कई शब्द हैं", "hinglish": ""} for i in range(40)]
+    post = PostProcessor(StaticLLM([]), context_tokens=1024)
+    chunks = post._plan_chunks([dict(x, line_id=i + 1) for i, x in enumerate(lines)])
+    assert sum(map(len, chunks)) == 40 and len(chunks) > 3
+    assert max(map(len, chunks)) <= 12
+
+
+def test_empty_transcript_needs_no_llm():
+    llm = StaticLLM([])
+    report = PostProcessor(llm).process_transcript({"lines": [{"speaker": "A", "start": 0, "end": 1, "text": ""}]})
+    assert llm.calls == [] and report.cleaned_dialogue == []
+    assert "No speech" in report.executive_summary
+
+
+def test_report_files(tmp_path):
+    report, _ = run(chunk_reply(), synthesis_reply())
+    report.save(tmp_path)
+    data = json.loads((tmp_path / "report.json").read_text(encoding="utf-8"))
+    assert {"executive_summary", "keywords", "action_items", "cleaned_dialogue", "speakers", "diagnostics",
+            "provenance"} <= set(data)
+    md = (tmp_path / "report.md").read_text(encoding="utf-8")
+    for heading in ("## Executive summary", "## Keywords", "## Action items", "## Speakers", "## Dialogue",
+                    "## What Stage 4 changed", "## How this report was made"):
+        assert heading in md
+    assert "`ID card`" in md
+
+
+# ---------------------------------------------------------------- the HTTP client, against a fake server
+class FakeServer:
+    """Minimal OpenAI-compatible server: records requests, answers with a scripted list of (status, body)."""
+
+    def __init__(self, answers, get_statuses=()):
+        self.answers, self.requests, self.get_statuses = list(answers), [], list(get_statuses)
+        outer = self
+
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self, *a):
+                pass
+
+            def do_GET(self):
+                self.send_response(outer.get_statuses.pop(0) if outer.get_statuses else 200)
+                self.end_headers()
+                self.wfile.write(b'{"data": []}')
+
+            def do_POST(self):
+                outer.requests.append(json.loads(self.rfile.read(int(self.headers["Content-Length"]))))
+                answer = outer.answers.pop(0)
+                if answer == "drop":                  # the server dies mid-request
+                    self.close_connection = True
+                    return
+                status, body = answer
+                self.send_response(status)
+                self.send_header("Content-Type", "application/json")
+                self.end_headers()
+                self.wfile.write(json.dumps(body).encode())
+
+        self.httpd = HTTPServer(("127.0.0.1", 0), Handler)
+        self.url = f"http://127.0.0.1:{self.httpd.server_port}/v1"
+        threading.Thread(target=self.httpd.serve_forever, daemon=True).start()
+
+    def close(self):
+        self.httpd.shutdown()
+
+
+def ok(text, finish="stop"):
+    return 200, {"choices": [{"message": {"content": text}, "finish_reason": finish}],
+                 "usage": {"prompt_tokens": 10, "completion_tokens": 5}}
+
+
+def test_client_sends_schema_and_reads_usage():
+    srv = FakeServer([ok('{"a": 1}')])
+    try:
+        llm = OpenAICompatibleLLM(srv.url, "m")
+        llm.ping()
+        r = llm.complete("s", "u", temperature=0, max_tokens=50, schema={"type": "object"})
+        assert (r.text, r.finish_reason, r.prompt_tokens, r.completion_tokens) == ('{"a": 1}', "stop", 10, 5)
+        assert srv.requests[0]["response_format"] == {"type": "json_object", "schema": {"type": "object"}}
+        assert srv.requests[0]["temperature"] == 0 and srv.requests[0]["max_tokens"] == 50
+    finally:
+        srv.close()
+
+
+def test_client_drops_schema_when_server_rejects_it():
+    srv = FakeServer([(400, {"error": "response_format not supported"}), ok("{}"), ok("{}")])
+    try:
+        llm = OpenAICompatibleLLM(srv.url, "m")
+        with pytest.warns(UserWarning, match="rejected the JSON schema"):
+            llm.complete("s", "u", temperature=0, max_tokens=5, schema={"type": "object"})
+        llm.complete("s", "u", temperature=0, max_tokens=5, schema={"type": "object"})
+        assert not llm.schema_enforced
+        assert "response_format" not in srv.requests[1] and "response_format" not in srv.requests[2]
+    finally:
+        srv.close()
+
+
+def test_chat_template_matches_airavata_format_with_empty_generation_prompt():
+    # Airavata's model card format, byte for byte. A final user message always opens the assistant turn, so the
+    # template's "generation prompt" (what add_generation_prompt adds) is empty: llama-server feeds that prompt
+    # to the JSON grammar, and with Airavata's tokenizer a non-empty one makes every schema request fail (D32).
+    jinja2 = pytest.importorskip("jinja2")
+    tmpl = jinja2.Template((Path(__file__).resolve().parents[1] / "src/whospoke/resources/"
+                            "airavata_chat_template.jinja").read_text(encoding="utf-8"))
+    msgs = [{"role": "system", "content": "S"}, {"role": "user", "content": "U1"},
+            {"role": "assistant", "content": " A "}, {"role": "user", "content": "U2"}]
+    with_gen, without_gen = (tmpl.render(messages=msgs, bos_token="<s>", eos_token="</s>", add_generation_prompt=g)
+                             for g in (True, False))
+    assert with_gen == "<s><|system|>\nS\n<|user|>\nU1\n<|assistant|>\nA</s>\n<|user|>\nU2\n<|assistant|>\n"
+    assert without_gen == with_gen
+
+
+def test_client_reports_context_errors():
+    srv = FakeServer([(400, {"error": {"message": "the request exceeds the available context size"}})])
+    try:
+        with pytest.raises(LLMContextError):
+            OpenAICompatibleLLM(srv.url, "m").complete("s", "u", temperature=0, max_tokens=5, schema={"type": "object"})
+    finally:
+        srv.close()
+
+
+def test_client_reports_unreachable_server():
+    llm = OpenAICompatibleLLM("http://127.0.0.1:9/v1", "m", timeout_s=15)   # Windows takes ~2 s to refuse a closed port
+    with pytest.raises(LLMConnectionError, match="serve_llm.py"):
+        llm.ping()
+    with pytest.raises(LLMConnectionError):
+        llm.complete("s", "u", temperature=0, max_tokens=5)
+
+
+def test_postprocessor_through_http(tmp_path):
+    srv = FakeServer([ok(chunk_reply()), ok(synthesis_reply())])
+    try:
+        report = PostProcessor(base_url=srv.url).process_transcript(transcript())
+        assert report.diagnostics.schema_enforced and report.diagnostics.llm_calls == 2
+        assert report.diagnostics.prompt_tokens == 20
+        prompt = srv.requests[0]["messages"][1]["content"]
+        assert "1 | Speaker_A | 00:00-00:02 | आई डी कार्ड" in prompt
+    finally:
+        srv.close()
+
+
+# ---------------------------------------------------------------- the pipeline runs Stage 4 after Stage 3
+class _Diarizer:
+    name = "stub"
+
+    def __call__(self, wav, n_speakers=None):
+        from whospoke.diarization import Diarization, Turn
+
+        return Diarization([Turn(0.0, 2.0, "Speaker_A"), Turn(2.1, 4.0, "Speaker_B"), Turn(5.0, 9.0, "Speaker_A")])
+
+
+class _ASR:
+    name = "stub"
+
+    def transcribe(self, pieces):
+        texts = ["आई डी कार्ड गुम हो गया है सर सर", "आधार कार्ड की फोटो कॉपी लाना", "ठीक है कल ले आऊंगा"]
+        return texts[: len(pieces)]
+
+
+def _stub_pipeline(postprocessor):
+    pytest.importorskip("torch")
+    from whospoke.pipeline import Pipeline
+
+    return Pipeline("B", separator=None, diarizer=_Diarizer(), asr_model=_ASR(), postprocessor=postprocessor)
+
+
+def test_pipeline_writes_the_stage4_report(tmp_path):
+    llm = StaticLLM([chunk_reply().replace('"id": 4', '"id": 3'), synthesis_reply(actions=[])])
+    res = _stub_pipeline(PostProcessor(llm)).run(np.zeros(9 * 16000, np.float32))
+    assert "llm" in res.timings and res.report["title"] == "Lost ID card"
+    out = res.save(tmp_path)
+    assert {"report.json", "report.md", "transcript.json", "timeline.json"} <= {p.name for p in out.iterdir()}
+    saved = json.loads((out / "transcript.json").read_text(encoding="utf-8"))
+    canonical = json.dumps(saved["lines"], ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    # the provenance hash matches the saved transcript, although its timings changed after Stage 4
+    assert res.report["provenance"]["source_sha256"] == hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
+def test_pipeline_keeps_stage3_when_stage4_fails(tmp_path):
+    res = _stub_pipeline(PostProcessor(StaticLLM([LLMConnectionError("down")]))).run(np.zeros(9 * 16000, np.float32))
+    assert res.report is None and "down" in res.report_error
+    out = res.save(tmp_path)
+    assert (out / "transcript.json").exists() and not (out / "report.json").exists()
+
+
+def test_pipeline_without_postprocessor_is_unchanged():
+    res = _stub_pipeline(None).run(np.zeros(9 * 16000, np.float32))
+    assert res.report is None and "llm" not in res.timings
+
+
+# ---------------------------------------------------------------- the real model (pytest -m slow)
+@pytest.mark.slow
+def test_real_llm_on_demo_transcript(tmp_path):
+    llm = OpenAICompatibleLLM()
+    try:
+        llm.ping()
+    except LLMConnectionError:
+        pytest.skip("no Stage-4 LLM server running (python scripts/serve_llm.py)")
+    report = PostProcessor(llm).process_file(DEMO)
+    assert report.diagnostics.schema_enforced, "the server rejected the JSON schema (see its log)"
+    src = json.loads(DEMO.read_text(encoding="utf-8"))
+    kept = [x for x in src["lines"] if x["text"].strip()]
+    assert [(x.speaker, x.start, x.end) for x in report.cleaned_dialogue] == \
+        [(x["speaker"], x["start"], x["end"]) for x in kept]
+    assert report.executive_summary and report.keywords
+    assert report.diagnostics.failed_chunks <= len(kept) // 4
+    report.save(tmp_path)
+
+
+# ---------------------------------------------------------------- red-team regressions
+def test_dropped_connection_is_a_connection_error_and_stage3_survives(tmp_path):
+    srv = FakeServer(["drop"])
+    try:
+        with pytest.raises(LLMConnectionError, match="Lost the connection"):
+            OpenAICompatibleLLM(srv.url, "m").complete("s", "u", temperature=0, max_tokens=5)
+    finally:
+        srv.close()
+    srv = FakeServer(["drop"])
+    try:
+        res = _stub_pipeline(PostProcessor(base_url=srv.url)).run(np.zeros(9 * 16000, np.float32))
+        assert res.report is None and "Lost the connection" in res.report_error
+        assert (res.save(tmp_path) / "transcript.json").exists()
+    finally:
+        srv.close()
+
+
+def test_server_loading_model_is_waited_for(monkeypatch):
+    monkeypatch.setattr(lp, "RETRY_WAIT_S", 0.01)
+    srv = FakeServer([(503, {"error": "Loading model"}), ok("{}")], get_statuses=[503, 503, 200])
+    try:
+        llm = OpenAICompatibleLLM(srv.url, "m")
+        llm.ping()
+        assert llm.complete("s", "u", temperature=0, max_tokens=5).text == "{}"
+    finally:
+        srv.close()
+    srv = FakeServer([(503, {"error": "busy"})] * 7)
+    try:
+        with pytest.raises(LLMConnectionError, match="503"):
+            OpenAICompatibleLLM(srv.url, "m").complete("s", "u", temperature=0, max_tokens=5)
+    finally:
+        srv.close()
+
+
+def test_transient_server_error_keeps_the_schema():
+    srv = FakeServer([(500, {"error": "out of memory"})])
+    try:
+        llm = OpenAICompatibleLLM(srv.url, "m")
+        with pytest.raises(LLMError):
+            llm.complete("s", "u", temperature=0, max_tokens=5, schema={"type": "object"})
+        assert llm.schema_enforced and len(srv.requests) == 1
+    finally:
+        srv.close()
+
+
+def test_non_finite_line_id_is_ignored():
+    obj = json.loads(chunk_reply())
+    obj["lines"].append({"id": 1e999, "text": "x", "en": "x", "uncertain": False})
+    report, _ = run(json.dumps(obj), synthesis_reply())        # json.dumps writes Infinity
+    assert [x.line_id for x in report.cleaned_dialogue] == [1, 2, 4]
+
+
+def test_repair_that_adds_words_is_reverted():
+    obj = json.loads(chunk_reply())
+    # three short invented words: under the 50 % character limit, but a repair should not lengthen a line
+    obj["lines"][0]["text"] = "आई डी कार्ड गुम हो गया है सर सर पुलिस ने कहा"
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    line = report.cleaned_dialogue[0]
+    assert line.text == line.source_text and line.uncertain and "added words" in line.note
+
+
+def test_repair_that_drops_words_is_reverted_but_a_repeated_word_may_go():
+    obj = json.loads(chunk_reply())
+    obj["lines"][1]["text"] = "कार्ड की फोटो कॉपी लाना"          # first word dropped: a short deletion, under 50 %
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    first, second = report.cleaned_dialogue[:2]
+    assert second.text == second.source_text and "dropped words" in second.note
+    assert first.changed and first.text == "आई डी कार्ड गुम हो गया है सर।"    # "सर सर" → "सर" is allowed
+
+
+def test_repair_that_replaces_a_loanword_is_reverted():
+    obj = json.loads(chunk_reply())
+    obj["lines"][1]["text"] = "आधार पत्र की फोटो कॉपी लाना"           # कार्ड ("card") → पत्र: Hindi for an English word
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    line = report.cleaned_dialogue[1]
+    assert line.text == line.source_text and "replaced English words" in line.note
+
+
+def test_same_english_for_different_lines_is_dropped():
+    obj = json.loads(chunk_reply())
+    for x in obj["lines"]:
+        x["en"] = "Speaker_B says he will come to the market"
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    assert all(x.translation == "" and x.uncertain for x in report.cleaned_dialogue)
+    assert report.diagnostics.missing_translations == 3
+
+
+def test_english_field_must_not_be_devanagari():
+    obj = json.loads(chunk_reply())
+    obj["lines"][0]["en"] = obj["lines"][0]["text"]                # the line copied, not translated
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    assert report.cleaned_dialogue[0].translation == "" and report.diagnostics.missing_translations == 1
+    pattern = chunk_schema([{"line_id": 1, "text": "क"}])["properties"]["lines"]["prefixItems"][0]["properties"]
+    assert re.fullmatch(pattern["english"]["pattern"].strip("^$"), "Okay, I'll bring it.")
+    assert not re.fullmatch(pattern["english"]["pattern"].strip("^$"), "ठीक है")
+
+
+def test_long_translation_is_flagged():
+    obj = json.loads(chunk_reply())
+    obj["lines"][2]["en"] = "Okay, I will bring it tomorrow. " + "The police also suspect election fraud. " * 3
+    report, _ = run(json.dumps(obj, ensure_ascii=False), synthesis_reply())
+    assert report.cleaned_dialogue[2].uncertain and report.diagnostics.translations_too_long == 1
+
+
+def test_keywords_need_every_content_word_and_ignore_common_words():
+    synth = synthesis_reply(keywords=["ID card", "card cloning scam", "sir knighthood", "दंगे में मौतें"])
+    report, _ = run(chunk_reply(), synth)
+    assert report.keywords == ["ID card"] and report.diagnostics.keywords_dropped == 3
+
+
+def test_action_must_share_a_word_with_its_evidence():
+    synth = synthesis_reply(actions=[
+        {"owner": "Speaker_A", "action": "Transfer Rs 50,000 to the police officer", "lines": [2]},
+        {"owner": "Speaker_A", "action": "Bring the Aadhaar photocopy", "lines": [2]}])
+    report, _ = run(chunk_reply(), synth)
+    assert [a.action for a in report.action_items] == ["Bring the Aadhaar photocopy"]
+
+
+def test_long_recording_synthesis_fits_the_context():
+    lines = [{"speaker": f"Speaker_{'AB'[i % 2]}", "start": float(i), "end": i + 0.9,
+              "text": "आज मंडी में प्याज का भाव बहुत ऊपर चला गया है भाई", "hinglish": ""} for i in range(360)]
+
+    class Echo(StaticLLM):
+        def complete(self, system, user, *, temperature, max_tokens, schema=None):
+            self.calls.append({"user": user, "max_tokens": max_tokens})
+            assert estimate_tokens(system + user) + max_tokens <= 4096, "request does not fit the window"
+            props = schema["properties"]
+            if "lines" in props:
+                ids = [x["properties"]["id"]["const"] for x in props["lines"]["prefixItems"]]
+                return LLMReply(json.dumps({"lines": [{"id": i, "text": lines[i - 1]["text"], "en": "Onion prices rose.",
+                                                       "uncertain": False} for i in ids],
+                                            "summary": "Onion prices at the market went up a lot. " * 4,
+                                            "keywords": ["onion"], "actions": []}), "stop")
+            if set(props) == {"summary"}:
+                return LLMReply(json.dumps({"summary": "Onion prices went up."}), "stop")
+            return LLMReply(synthesis_reply(actions=[]), "stop")
+
+    llm = Echo([])
+    report = PostProcessor(llm).process_transcript({"lines": lines})
+    assert not report.diagnostics.synthesis_failed
+    assert len(report.cleaned_dialogue) == 360 and report.title == "Lost ID card"

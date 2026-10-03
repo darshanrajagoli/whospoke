@@ -1,0 +1,124 @@
+{
+ "title": "Jain Brother's Health Concerns",
+ "topic": "Jain Brother's Health Concerns",
+ "executive_summary": "Speaker A is concerned about the Jain brother's health and wants to know how to get him to school. The speaker confirms that the Jain brother is in class 10 and that he has a fever. The speaker says that they need two boxes of red, two boxes of blue, and two boxes of black, and that the price of one box is Rs. 200. The speaker says that the Jain brother may have been deprived of water due to his illness and that he may have become sick because of this. The speaker says that they will give him medication, but if they are available, they will come and take him home for a few days, and then they will send him back to school. The speaker says that they will send him back to school, but if he is not able to attend, they will give him medication.",
+ "key_points": [
+  "Jain Brother's Health Concerns",
+  "school",
+  "health"
+ ],
+ "keywords": [
+  "school"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "Speaker_A",
+   "talk_time_s": 64.85,
+   "turns": 5,
+   "share": 1.0
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 2,
+   "speaker": "Speaker_A",
+   "start": 1.4,
+   "end": 8.75,
+   "text": "क्या मैं जैन ब्रदर्श नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का ये बॉक्सेस चाहिए थे छह बॉक्स",
+   "hinglish": "kya main jain bradarsh namaste aapke bacche ka naam vaibhav hai aapke ladke ka ye boxes chahiye the chhah box",
+   "translation": "The speaker says that the Jain brother's name is Vaibhav, and that his boy needs six boxes.",
+   "source_text": "क्या मैं जैन ब्रदर्श नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का ये बॉक्सेस चाहिए थे छह बॉक्स",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "Speaker_A",
+   "start": 9.05,
+   "end": 12.2,
+   "text": "सही है, और वो कक्षा दस में पढ़ता है",
+   "hinglish": "sahi hai, aur wo kaksha das mein padhta hai",
+   "translation": "The speaker confirms that the Jain brother is in class 10.",
+   "source_text": "सही हाँ और वो कक्षा दस में पढ़ता है",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 4,
+   "speaker": "Speaker_A",
+   "start": 12.8,
+   "end": 29.35,
+   "text": "हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए तो एक बॉक्स का कितना प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+   "hinglish": "hamen do box uske red ke do blue ke aur do black ke chahiye to ek box ka kitna price padega to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
+   "translation": "The speaker says that they need two boxes of red, two boxes of blue, and two boxes of black, and that the price of one box is Rs. 200, and that they will be able to get it from the mam.",
+   "source_text": "हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए तो एक बॉक्स का कितना प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "Speaker_A",
+   "start": 29.65,
+   "end": 44.9,
+   "text": "और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है तो आप मेरा एक काम करिए आइटम यूज कर लीजिए और मुझे उसकी प्राइस बताती चाहिए अब कुछ जो भी हो यहाँ आने के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है",
+   "hinglish": "aur usko bukhar ho gaya hai uske sharir ka saath badh gaya hai to aap mera ek kaam karie item use kar lijie aur mujhe uski price batati chahiye ab kuch jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
+   "translation": "The speaker says that the Jain brother has a fever and that his body has become stiff, and that they should use an item to help him and tell him the price of the item.",
+   "source_text": "और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है तो आप मेरा एक काम करिए आइटम यूज कर लीजिए और मुझे उसकी प्राइस बताती चाहिए अब कुछ जो भी हो यहाँ आने के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "Speaker_A",
+   "start": 45.0,
+   "end": 67.55,
+   "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर दवा तो हम दिवा देंगे लेकिन अब तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अठारह तो कब तक आएंगे",
+   "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai har dava to hum diva denge lekin ab to agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar dega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega atharah to kab tak aaenge",
+   "translation": "The speaker says that the Jain brother may have been deprived of water due to his illness, and that he may have become sick because of this, and that they will give him medication, but if they are available, they will come and take him home for a few days, and then they will send him back to school.",
+   "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर दवा तो हम दिवा देंगे लेकिन अब तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अठारह तो कब तक आएंगे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 2,
+  "llm_seconds": 44.376,
+  "prompt_tokens": 1349,
+  "completion_tokens": 930,
+  "chunks": 1,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 3,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 1,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "24b809a29af32be8c742762dc48fdf8c7b80619478a9feb6d665a20ecf154f1c",
+  "source_line_count": 6,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:33:35Z",
+  "pipeline_order": "B",
+  "source_audio_duration_s": 67.49
+ }
+}

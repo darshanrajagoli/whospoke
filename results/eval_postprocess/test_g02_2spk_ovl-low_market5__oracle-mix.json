@@ -1,0 +1,232 @@
+{
+ "title": "Lost ID Card",
+ "topic": "Photocopying Service",
+ "executive_summary": "A conversation about a lost poket.",
+ "key_points": [
+  "Part 1: A conversation about a lost poket.",
+  "Part 2: A conversation about a photocopying service.",
+  "Part 3: A conversation about a lost poket.",
+  "Part 4: A conversation about a photocopying service.",
+  "Part 5: A conversation about a lost poket."
+ ],
+ "keywords": [
+  "stolen poket",
+  "check"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 19.71,
+   "turns": 6,
+   "share": 0.444
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 24.73,
+   "turns": 6,
+   "share": 0.556
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.73,
+   "end": 10.38,
+   "text": "नमस्ते बोल रहे थे आप बाबू मशंकर इंटर कॉलेज",
+   "hinglish": "namaste bol rahe the aap babu mashankar intar college",
+   "translation": "Hello, they were speaking to you. You are Babu Manshankar Inter College.",
+   "source_text": "नमस्ते बोल रहे थे आप आप बाबू मशंकर इंटर कॉलेज",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 10.87,
+   "end": 16.86,
+   "text": "नमस्ते सर सर मेरे कोई गलती हुई है मेरे हाथ से और मेरा आई डी कार्ड घूम गया है सर",
+   "hinglish": "namaste sir sir mere koi galti hui hai mere haath se aur mera aai D card ghoom gaya hai sir",
+   "translation": "Hello, sir, I have a problem with my hand and my ID card.",
+   "source_text": "नमस्ते सर सर मेरे कोई गलती हुई है मेरे हाथ से और मेरा आई डी कार्ड घूम गया है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 29.6,
+   "end": 32.36,
+   "text": "एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
+   "hinglish": "exam paas aa rahe hain to aai D card chahiye sir",
+   "translation": "Exam passes are coming, so I need an ID card.",
+   "source_text": "एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 32.67,
+   "end": 34.64,
+   "text": "कमरा नंबर तीन में छूटा था",
+   "hinglish": "kamra number teen mein chhuta tha",
+   "translation": "There was a discount in room number three.",
+   "source_text": "कमरा नंबर तीन में छूटा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 35.02,
+   "end": 37.08,
+   "text": "बेस कार्ड की फोटो कॉपी और क्या कहाना सर",
+   "hinglish": "base card ki photo copy aur kya kahana sir",
+   "translation": "Base card photo copy and what to say.",
+   "source_text": "आधार कार्ड की फोटो कॉपी और क्या कहाना सर",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 36.44,
+   "end": 39.62,
+   "text": "मेरा था वो पॉकिट मेरा था",
+   "hinglish": "mera tha wo pokit mera tha",
+   "translation": "My poket was stolen.",
+   "source_text": "मेरा था वो पॉकिट मेरा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 40.41,
+   "end": 43.64,
+   "text": "कुर्क फोटो आधार कार्ड योग अन्नी पड़ेगी",
+   "hinglish": "kurk photo aadhar card yog anni padegi",
+   "translation": "Kurk Fototo Base Card Yog Anni Pade",
+   "source_text": "कुर्क फोटो आधार कार्ड योग अन्नी पड़ेगी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 44.14,
+   "end": 45.05,
+   "text": "संगीता जी",
+   "hinglish": "sangita ji",
+   "translation": "Sangriya G",
+   "source_text": "संगीता जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 45.33,
+   "end": 48.89,
+   "text": "ऑफिस तो कब तक कितने बजे तक ऑफिस खुला है सर अपना",
+   "hinglish": "office to kab tak kitne baje tak office khula hai sir apna",
+   "translation": "Office To How Long Till What Time The Office Is Open Sir",
+   "source_text": "ऑफिस तो कब तक कितने बजे तक ऑफिस खुला है सर अपना",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 49.58,
+   "end": 49.99,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Yes",
+   "source_text": "हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 12,
+   "speaker": "S2",
+   "start": 50.79,
+   "end": 57.92,
+   "text": "आईडी गान लूंगा तो हमें सबसे पहले किसके पास जाना पड़ेगा ये फोन बनाएगा अच्छा उसके बाद एप्लीकेशन भी लिखनी पड़ेगी",
+   "hinglish": "aaidi gaan lunga to hamen sabse pahle kiske paas jana padega ye phone banaega achha uske baad eplikeshan bhi likhni padegi",
+   "translation": "ID Gaan Layenge To Whom We Have To Go First To Make The Phone Then Write The Application After That",
+   "source_text": "आईडी गान लूंगा तो हमें सबसे पहले किसके पास जाना पड़ेगा ये फोन बनाएगा अच्छा उसके बाद एप्लीकेशन भी लिखनी पड़ेगी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 13,
+   "speaker": "S1",
+   "start": 57.02,
+   "end": 60.61,
+   "text": "चेक करवा लीजिए",
+   "hinglish": "check karva lijie",
+   "translation": "Check",
+   "source_text": "चेक करवा लीजिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  }
+ ],
+ "uncertain_lines": [
+  2,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 38.925,
+  "prompt_tokens": 1720,
+  "completion_tokens": 880,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 6,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 5,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 3,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 1,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "da892af02629423b24509145eb71343d9ac11c06fe79e51b652becc6dd9b63f6",
+  "source_line_count": 13,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:16:21Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 61.28
+ }
+}

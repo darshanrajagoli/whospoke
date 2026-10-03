@@ -1,0 +1,231 @@
+{
+ "title": "Marriage License Request",
+ "topic": "Marriage License Request",
+ "executive_summary": "Two people are talking about getting a marriage license.",
+ "key_points": [
+  "help",
+  "marriage",
+  "license"
+ ],
+ "keywords": [],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 23.9,
+   "turns": 4,
+   "share": 0.407
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 24.76,
+   "turns": 4,
+   "share": 0.422
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 10.06,
+   "turns": 4,
+   "share": 0.171
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.34,
+   "end": 0.89,
+   "text": "हेलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हेलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S3",
+   "start": 1.5,
+   "end": 3.27,
+   "text": "हाँ जी नमस्ते हाँ बोलो",
+   "hinglish": "haan ji namaste haan bolo",
+   "translation": "Hello, hello",
+   "source_text": "हाँ जी नमस्ते हाँ बोलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 3.46,
+   "end": 8.82,
+   "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+   "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
+   "translation": "Hello, hello, I'm talking to Sir Restorant, you know, our specialty is Sir.",
+   "source_text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 8.89,
+   "end": 10.24,
+   "text": "हाँ बोलिए",
+   "hinglish": "haan bolie",
+   "translation": "Hello",
+   "source_text": "हाँ बोलिए",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 6,
+   "speaker": "S3",
+   "start": 10.5,
+   "end": 12.1,
+   "text": "हलोर",
+   "hinglish": "halor",
+   "translation": "Halalore",
+   "source_text": "हलोर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 12.42,
+   "end": 12.75,
+   "text": "जी",
+   "hinglish": "ji",
+   "translation": "G.",
+   "source_text": "जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S3",
+   "start": 13.43,
+   "end": 17.2,
+   "text": "हाँ ठीक कर देंगे दो चार दिन लगेंगे हाँ",
+   "hinglish": "haan theek kar denge do chaar din lagenge haan",
+   "translation": "I will give you two four days",
+   "source_text": "हाँ ठीक कर देंगे दो चार दिन लगेंगे हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 17.47,
+   "end": 18.24,
+   "text": "हाँ जी बोलिए",
+   "hinglish": "haan ji bolie",
+   "translation": "Say 'ji'",
+   "source_text": "हाँ जी बोलिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 18.44,
+   "end": 29.44,
+   "text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसके फ्राई करा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये भी पड़ेगी तो",
+   "hinglish": "aapko bata de agar aap shadi le jaoge to teen sau rupye milenge aapko aur agar aap uske fry kara ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye bhi padegi to",
+   "translation": "Tell me if you marry, I will give you three hundred rupees",
+   "source_text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसके फ्राई करा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये भी पड़ेगी तो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 29.85,
+   "end": 51.08,
+   "text": "मेरे पार्लर में मछली सेब होते हैं फॉर स्टेस होती है और हेल्पल होती है और यू सेब भी है आपको कौन सी करानी है और उसकी ठीक है उसकी फीस बता देती हूँ मेरे मेरी यू कटिंग के लिए तो आपको सामने मतलब फेस के अकॉर्डिंगली कटानी है या फिर सामने से भी हेरप कटाना है",
+   "hinglish": "mere parlour mein machhli seb hote hain phor stes hoti hai aur helpal hoti hai aur yu seb bhi hai aapko kaun si karani hai aur uski theek hai uski phees bata deti hoon mere meri yu cutting ke liye to aapko samne matlab face ke akordingli katani hai ya phir samne se bhi herap katana hai",
+   "translation": "My parlour has fish, vegetables, and helpal, and also ube",
+   "source_text": "मेरे पार्लर में मछली सेब होते हैं फॉर स्टेस होती है और हेल्पल होती है और यू सेब भी है आपको कौन सी करानी है और उसकी ठीक है उसकी फीस बता देती हूँ मेरे मेरी यू कटिंग के लिए तो आपको सामने मतलब फेस के अकॉर्डिंगली कटानी है या फिर सामने से भी हेरप कटाना है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 12,
+   "speaker": "S2",
+   "start": 51.35,
+   "end": 59.42,
+   "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलबा के भी आपको दे सकते हैं",
+   "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulba ke bhi aapko de sakte hain",
+   "translation": "The variety is a heap, you can see it as you want, like you want a different way of getting it",
+   "source_text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलबा के भी आपको दे सकते हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 13,
+   "speaker": "S3",
+   "start": 59.87,
+   "end": 62.79,
+   "text": "हाँ हाँ पूछो अग्यारे बिलाड़ी होते हैं",
+   "hinglish": "haan haan puchho agyare biladi hote hain",
+   "translation": "Yes, ask for the other bills",
+   "source_text": "हाँ हाँ पूछो अग्यारे बिलाड़ी होते हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 354.639,
+  "prompt_tokens": 1820,
+  "completion_tokens": 848,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 0,
+  "lines_reverted": 8,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 4,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 7,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 1,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "150265e8a600021aed80b191bf19f1cf0c1c1715c7a0a679c55eb9f857580b65",
+  "source_line_count": 13,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-02T03:46:05Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 63.31
+ }
+}

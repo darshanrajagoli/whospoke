@@ -1,0 +1,161 @@
+{
+ "title": "Conversation between two women",
+ "topic": "Yes, yes",
+ "executive_summary": "The women discuss the possibility of living with two people and the computer working, as well as the need for a pass and a promise.",
+ "key_points": [
+  "Yes, yes"
+ ],
+ "keywords": [
+  "link road",
+  "city",
+  "computer",
+  "work",
+  "promise"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 9.38,
+   "turns": 5,
+   "share": 0.117
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 70.61,
+   "turns": 2,
+   "share": 0.883
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.55,
+   "end": 8.81,
+   "text": "मैम दो रूम चाहिए था",
+   "hinglish": "ma'am do room chahiye tha",
+   "translation": "Mam wanted two rooms",
+   "source_text": "मैम दो रूम चाहिए था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 8.98,
+   "end": 9.96,
+   "text": "प्रणाम दीदी",
+   "hinglish": "pranam didi",
+   "translation": "Pranam, Didi",
+   "source_text": "प्रणाम दीदी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 9.47,
+   "end": 71.82,
+   "text": "टस्ट कंप्यूटर का हम है हमारा अरे हमको मतलब कि लिंक रोड पर शहर में चाहिए हमको शहर में हाँ हाँ नैन लोड चल जाएगा नई लोड पर नई लोड पर हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और कंप्यूटर काम से ना काम चल जाएंगे हाँ हाँ नहीं यही पास नहीं बस नहीं दिला भी अगर हो तो बताओ हाँ बस दो लोग दो लोग रहेंगे और कल्प्यूटर हमारा काम है बस जैसा कहूँ कैसे कर देंगे नहीं चेक कर देंगे जैसा कहोगे नहीं पहले रजिस्ट्री हाँ एगेजमेंट पहले हो चाहिए",
+   "hinglish": "tast computer ka hum hai hamara are hamko matlab ki link road par shahar mein chahiye hamko shahar mein haan haan nain load chal jaega nai load par nai load par haan do log rahenge hum log haan do log rahenge aur computer kaam se na kaam chal jaenge haan haan nahi yahi paas nahi bas nahi dila bhi agar ho to batao haan bas do log do log rahenge aur kalpyutar hamara kaam hai bas jaisa kahun kaise kar denge nahi check kar denge jaisa kahoge nahi pahle rajistri haan egejment pahle ho chahiye",
+   "translation": "The computer will not work if you don't tell us what you want. It's not just the link road, it's the whole city. We'll have two people living with us and the computer will work. No, it's not just a pass, it's a promise. Let us know what you want.",
+   "source_text": "टस्ट कंप्यूटर का हम है हमारा अरे हमको मतलब कि लिंक रोड पर शहर में चाहिए हमको शहर में हाँ हाँ नैन लोड चल जाएगा नई लोड पर नई लोड पर हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और कंप्यूटर काम से ना काम चल करेंगे हाँ हाँ नहीं यही पास नहीं बस नहीं दिला भी अगर हो तो बताओ हाँ बस दो लोग दो लोग रहेंगे और कल्प्यूटर हमारा काम काम है बस जैसा कहूँ कैसे कर देंगे नहीं चेक कर देंगे जैसा कहोगे नहीं पहले रजिस्ट्री हाँ एगेजमेंट पहले हो चाहिए",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 16.36,
+   "end": 20.31,
+   "text": "और सब तो ठीक है अपना बताइए क्या चाहिएगा साड़ी लेना है",
+   "hinglish": "aur sab to theek hai apna bataie kya chahiega sadi lena hai",
+   "translation": "And everything else is fine. Tell me what you want.",
+   "source_text": "और सब तो ठीक है अपना बताइए क्या चाहिएगा साड़ी लेना है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 25.6,
+   "end": 27.12,
+   "text": "हाँ साड़ी चाहिएगा",
+   "hinglish": "haan sadi chahiega",
+   "translation": "Punam and.",
+   "source_text": "हाँ साड़ी चाहिएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 38.16,
+   "end": 39.98,
+   "text": "पूनम कर और",
+   "hinglish": "punam kar aur",
+   "translation": "",
+   "source_text": "पूनम कर और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand; no English translation was returned."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 46.06,
+   "end": 47.17,
+   "text": "हाँ हाँ",
+   "hinglish": "haan haan",
+   "translation": "Yes, yes",
+   "source_text": "हाँ हाँ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 34.713,
+  "prompt_tokens": 1600,
+  "completion_tokens": 731,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 1,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "092a3a478dedc426f90913228ac8b35a145597ab28a10f1e58481e02e72fb46d",
+  "source_line_count": 7,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:31:03Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 72.61
+ }
+}

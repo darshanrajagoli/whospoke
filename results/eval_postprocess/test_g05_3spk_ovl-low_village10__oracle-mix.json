@@ -1,0 +1,227 @@
+{
+ "title": "Lucknowi-style biryanis and pre-wedding photographs",
+ "topic": "Lucknowi-style biryanis and pre-wedding photographs",
+ "executive_summary": "A conversation between two people about a pre-wedding suit and the cost of a Lucknowi-style biryanis.",
+ "key_points": [
+  "pre-wedding photograph",
+  "wedding",
+  "June",
+  "pre-wedding suit",
+  "cost"
+ ],
+ "keywords": [
+  "pre-wedding photograph",
+  "wedding",
+  "June",
+  "pre-wedding suit",
+  "cost"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 27.91,
+   "turns": 4,
+   "share": 0.466
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 8.77,
+   "turns": 2,
+   "share": 0.147
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 23.16,
+   "turns": 5,
+   "share": 0.387
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S3",
+   "start": 0.54,
+   "end": 7.29,
+   "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko",
+   "translation": "Hello, sir, what is the situation?",
+   "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 7.99,
+   "end": 10.51,
+   "text": "हलो हेलो सर नमस्कार मैं सोचिए बोल रहा था",
+   "hinglish": "hello hello sir namaskar main sochie bol raha tha",
+   "translation": "Hello, sir, I was thinking that I was speaking",
+   "source_text": "हलो हेलो सर नमस्कार मैं सोचिए बोल रहा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 10.67,
+   "end": 14.29,
+   "text": "क्या मैम आपकी बात साफ नहीं आ रही है? हमारी बैंक भी लखनऊ में आई है।",
+   "hinglish": "kya ma'am aapki baat saaph nahi aa rahi hai? hamari bank bhi lakhnau mein aai hai.",
+   "translation": "Isn't Ma'am clearing your talk? Our bank has also come to Lucknow.",
+   "source_text": "क्या मैम आपकी बात साफ नहीं आ रही है हमारी बैंक भी लखनऊ में आया है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 14.55,
+   "end": 22.67,
+   "text": "जी मेरी ग्राफ़ बात फोटोग्राफर से हो रही है जी सारी है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फोटोग्राफ कराना है",
+   "hinglish": "ji meri graaf baat photographer se ho rahi hai ji sari hai mere yahan das joon ki shadi hai to mere ko pri wedding photograph karana hai",
+   "translation": "G is my graph talking to the photographer and all is about my upcoming wedding. I need to get a pre-wedding photograph taken.",
+   "source_text": "जी मेरी ग्राफ़ बात फोटोग्राफर से हो रही है जी सारी है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फोटोग्राफ कराना है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 21.88,
+   "end": 26.52,
+   "text": "सबका इलाज ना कब से घर आए",
+   "hinglish": "sabka ilaj na kab se ghar aae",
+   "translation": "Everyone has been home for a long time.",
+   "source_text": "सबका इलाज ना कब से घर आए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 25.86,
+   "end": 36.79,
+   "text": "तो सर उसका कैसा क्या रहता है? जून को मतलब मेरी जो प्री वेडिंग फोटोशूट उससे पहले होगा आपको तो कब टाइम है मतलब फोटोशूट करने के लिए",
+   "hinglish": "to sir uska kaisa kya rahta hai? joon ko matlab meri jo pri wedding photoshoot usse pahle hoga aapko to kab time hai matlab photoshoot karne ke liye",
+   "translation": "So sir, how is he doing? June is about to be my wedding, but when will you be able to take a pre-wedding photograph?",
+   "source_text": "तो सर उसका कैसा क्या रहता है जून को मतलब मेरी जो प्री वेडिंग फोटोशूट उससे पहले होगा आपको तो कब टाइम है मतलब फोटोशूट करने के लिए",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S3",
+   "start": 35.81,
+   "end": 43.19,
+   "text": "कम की आपको दिक्कत आ रहा है पैर आपके पैर में सूजन है क्या दिक्कत है पैर में आपको खांसी भी आ रहा है",
+   "hinglish": "kam ki aapko dikkat aa raha hai pair aapke pair mein sujan hai kya dikkat hai pair mein aapko khansi bhi aa raha hai",
+   "translation": "The speaker is asking about the cost of a pre-wedding suit and if it is available in a good location. The speaker also mentions that they want at least two to three days in the pre-wedding ceremony.",
+   "source_text": "कम की आपको दिक्कत आ रहा है पैर आपके पैर में सूजन है क्या क्या दिक्कत है पैर में आपको खांसी भी आ रहा है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 43.59,
+   "end": 44.55,
+   "text": "नमस्कार सर",
+   "hinglish": "namaskar sir",
+   "translation": "The speaker greets the listener.",
+   "source_text": "नमस्कार सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 45.08,
+   "end": 51.42,
+   "text": "तो प्री वेडिंग सूट देखो तो सूट कम से कम अच्छी लोकेशन पर चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको",
+   "hinglish": "to pri wedding suit dekho to suit kam se kam achhi location par chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko",
+   "translation": "The speaker is asking about the pre-wedding suit and if it is available in a good location. The speaker also mentions that they want at least two to three days in the pre-wedding ceremony.",
+   "source_text": "तो प्री वेडिंग सूट देखो तो सूट कम से कम अच्छी लोकेशन पर चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 51.98,
+   "end": 59.79,
+   "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर वह हो पाएगा",
+   "hinglish": "sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi paanch logon ke liye chahiye tha sir woh ho paega",
+   "translation": "The speaker is talking about a Lucknowi-style biryanis that they wanted for five people. They mention that they want at least two to three days in the pre-wedding ceremony.",
+   "source_text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर वह हो पाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S3",
+   "start": 60.58,
+   "end": 61.35,
+   "text": "भैया",
+   "hinglish": "bhaiya",
+   "translation": "The speaker addresses the listener as",
+   "source_text": "भैया",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 50.608,
+  "prompt_tokens": 1934,
+  "completion_tokens": 1090,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 10,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 0,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "1e0c6e327db23557b7b94589fb29f3ef57e80400abc4748ca290d6f7372e335b",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:51:08Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 61.66
+ }
+}

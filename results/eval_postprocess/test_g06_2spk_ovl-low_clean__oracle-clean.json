@@ -1,0 +1,216 @@
+{
+ "title": "Renting a saree",
+ "topic": "Renting a saree",
+ "executive_summary": "Two people will stay and whoever is there will work, computer work and not work.",
+ "key_points": [
+  "Renting a saree",
+  "Two people will stay and whoever is there will work, computer work and not work."
+ ],
+ "keywords": [
+  "saree",
+  "trust computer",
+  "trust company",
+  "पास में बताओ दो करी बस"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 7.62,
+   "turns": 5,
+   "share": 0.117
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 57.72,
+   "turns": 6,
+   "share": 0.883
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.24,
+   "end": 6.96,
+   "text": "मैं दो",
+   "hinglish": "main do",
+   "translation": "I want two rooms",
+   "source_text": "मैं दो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 7.68,
+   "end": 10.69,
+   "text": "प्रणाली दीदी और सब तो ठीक है अपना बताइए",
+   "hinglish": "pranali didi aur sab to theek hai apna bataie",
+   "translation": "I'm sorry, I don't understand. Please repeat.",
+   "source_text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 10.87,
+   "end": 12.25,
+   "text": "दो रूम चाहिए था",
+   "hinglish": "do room chahiye tha",
+   "translation": "I need two rooms.",
+   "source_text": "दो रूम चाहिए था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 11.88,
+   "end": 12.62,
+   "text": "क्या चाहिएगा",
+   "hinglish": "kya chahiega",
+   "translation": "What do you want?",
+   "source_text": "क्या चाहिएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 13.02,
+   "end": 28.39,
+   "text": "ट्रस्ट कंप्यूटर का हम है हमारा अरे हमको मतलब कि लिंग रोड पे शहर में चाहिए हमको शहर में",
+   "hinglish": "trast computer ka hum hai hamara are hamko matlab ki ling road pe shahar mein chahiye hamko shahar mein",
+   "translation": "We don't have a trust computer, we're just a trust company.",
+   "source_text": "ट्रस्ट कंप्यूटर का हम है हमारा अरे हमको मतलब कि लिंग रोड पे शहर में चाहिए हमको शहर में",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 29.17,
+   "end": 30.29,
+   "text": "साड़ी लेना है",
+   "hinglish": "sadi lena hai",
+   "translation": "I need a saree.",
+   "source_text": "साड़ी लेना है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 30.52,
+   "end": 32.1,
+   "text": "हां ओन चल जाएगा",
+   "hinglish": "haan on chal jaega",
+   "translation": "Yes, I will go.",
+   "source_text": "हाँ ओन चल जाएगा",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 32.57,
+   "end": 34.09,
+   "text": "हाँ साड़ी चाहिएगा",
+   "hinglish": "haan sadi chahiega",
+   "translation": "Yes, I will get a saree.",
+   "source_text": "हाँ साड़ी चाहिएगा",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 33.33,
+   "end": 45.85,
+   "text": "नहीं लोकते नहीं लोटे हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और जो है कंप्यूटर काम से ना काम से करेंगे",
+   "hinglish": "nahi lokte nahi lote haan do log rahenge hum log haan do log rahenge aur jo hai computer kaam se na kaam se karenge",
+   "translation": "No, don't let us go, two people will stay and whoever is there will work, computer work and not work.",
+   "source_text": "नहीं लोकते नहीं लोटे हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और जो है कंप्यूटर काम से ना काम से करेंगे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S1",
+   "start": 46.35,
+   "end": 47.58,
+   "text": "पूर्णम",
+   "hinglish": "purnam",
+   "translation": "Fullum.",
+   "source_text": "पूर्णम",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S2",
+   "start": 48.28,
+   "end": 68.43,
+   "text": "नहीं पास में बताओ दो करी बस",
+   "hinglish": "nahi paas mein batao do kari bas",
+   "translation": "Tell me more, just say.",
+   "source_text": "नहीं पास में बताओ दो करी बस",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  9,
+  10,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 37.747,
+  "prompt_tokens": 1640,
+  "completion_tokens": 815,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 9,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "66b63489ffc267591697401866accf1008c12452151b225cc27b00358e24af29",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:19:48Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 69.21
+ }
+}

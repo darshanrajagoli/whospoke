@@ -1,0 +1,158 @@
+{
+ "title": "Transcript of a Hindi and Hinglish conversation recorded at Jain Brothers Stationery &amp;",
+ "topic": "Water shortage and care for a sick person",
+ "executive_summary": "Speaker A asks for help in finding a water shortage and the reason for it, and then providing medicine and taking care of the person if they are not there. They also ask for help in finding their child home for a few days.",
+ "key_points": [
+  "water shortage",
+  "reason for it",
+  "medicine",
+  "care"
+ ],
+ "keywords": [
+  "Vaibhav",
+  "School",
+  "Fever",
+  "water shortage",
+  "reason for it",
+  "medicine"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "Speaker_A",
+   "talk_time_s": 65.9,
+   "turns": 7,
+   "share": 1.0
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "Speaker_A",
+   "start": 0.3,
+   "end": 1.15,
+   "text": "नमस्ते",
+   "hinglish": "namaste",
+   "translation": "Hello",
+   "source_text": "नमस्ते",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "Speaker_A",
+   "start": 1.2,
+   "end": 12.0,
+   "text": "आपके बच्चे का नाम वैभव है आपके लड़के का हेलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छह बॉक्स",
+   "hinglish": "aapke bacche ka naam vaibhav hai aapke ladke ka hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon hamen kya kahte hain pen ke boxes chahiye the chhah box",
+   "translation": "Your boy's name is Vaibhav",
+   "source_text": "आपके बच्चे का नाम वैभव है आपके लड़के का हेलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छह बॉक्स",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "Speaker_A",
+   "start": 12.85,
+   "end": 21.35,
+   "text": "हाँ और वो कथा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+   "hinglish": "haan aur wo katha das mein padhta hai wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
+   "translation": "Hello to you, I am speaking at Jain Brothers Stationery & Book Shop",
+   "source_text": "हाँ और वो कथा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "Speaker_A",
+   "start": 21.9,
+   "end": 34.0,
+   "text": "और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है हमें हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए तो एक बॉक्स का कितना प्राइस पड़ेगा",
+   "hinglish": "aur usko bukhar ho gaya hai uske sharir ka saath badh gaya hai hamen hamen do box uske red ke do blue ke aur do black ke chahiye to ek box ka kitna price padega",
+   "translation": "You sent him to school in the morning",
+   "source_text": "और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है हमें हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए तो एक बॉक्स का कितना प्राइस पड़ेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "Speaker_A",
+   "start": 34.1,
+   "end": 39.3,
+   "text": "हाँ तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
+   "hinglish": "haan to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega",
+   "translation": "And he reads in ten",
+   "source_text": "हाँ तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "Speaker_A",
+   "start": 39.9,
+   "end": 45.1,
+   "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज्यादा गर्मी हो रही है",
+   "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
+   "translation": "And he has a fever",
+   "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज्यादा गर्मी हो रही है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "Speaker_A",
+   "start": 45.6,
+   "end": 68.85,
+   "text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए उसकी वजह ऐसी पानी की कमी वगैरह हो गई होगी तो उसकी वजह ऐसी वो बीमार हो गया है हाथ दवा तो हम दिलवा देंगे लेकिन हाथ अगर है तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तो ठीक हो जाएगी आप दोबारा भेजिएगा अच्छा तो कब तक आएंगे",
+   "hinglish": "haan ji to aap mera ek kaam karie item note kar lijie uski wajah aisi pani ki kami wagairah ho gayi hogi to uski wajah aisi wo bimar ho gaya hai haath dava to hum dilva denge lekin haath agar hai to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega to theek ho jaegi aap dobara bhejiega achha to kab tak aaenge",
+   "translation": "Yes, you can do a favor by taking a note of the water shortage that has occurred and the reason for it, if it is because someone is sick, and then we will provide medicine and take care of the person, but if the person is not there, come and get your child home for a few days, and it will be fine if you send us a message when you are ready to come back.",
+   "source_text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए उसकी वजह ऐसी पानी की कमी वगैरह हो गई होगी तो उसकी वजह ऐसी वो बीमार हो गया है हाथ दवा तो हम दिलवा देंगे लेकिन हाथ अगर है तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तो ठीक हो जाएगी आप दोबारा भेजिएगा अच्छा तो कब तक आएंगे",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 39.009,
+  "prompt_tokens": 1811,
+  "completion_tokens": 833,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 0,
+  "lines_reverted": 5,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 5,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "58393554a8f3845b680c4d624a56ec76943fca0bbe93754e8c8945c25f78af28",
+  "source_line_count": 7,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:19:59Z",
+  "pipeline_order": "B",
+  "source_audio_duration_s": 69.37
+ }
+}

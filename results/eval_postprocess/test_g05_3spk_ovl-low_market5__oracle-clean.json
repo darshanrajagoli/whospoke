@@ -1,0 +1,227 @@
+{
+ "title": "Wedding and Medical Services",
+ "topic": "Wedding and Medical Services",
+ "executive_summary": "A conversation about a wedding and medical services.",
+ "key_points": [
+  "wedding",
+  "photographer",
+  "pre-wedding",
+  "photography shoot",
+  "medical services"
+ ],
+ "keywords": [
+  "wedding",
+  "photographer",
+  "pre-wedding",
+  "photography shoot"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 12.46,
+   "turns": 4,
+   "share": 0.21
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 35.67,
+   "turns": 4,
+   "share": 0.602
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 11.11,
+   "turns": 3,
+   "share": 0.188
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.27,
+   "end": 0.68,
+   "text": "हलो",
+   "hinglish": "hello",
+   "translation": "",
+   "source_text": "हलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 0.47,
+   "end": 6.92,
+   "text": "नमस्कार सर सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
+   "hinglish": "namaskar sir sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
+   "translation": "",
+   "source_text": "नमस्कार सर सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 7.45,
+   "end": 9.44,
+   "text": "हेलोर नमस्कार मैं अजीत ही बोल रहा था",
+   "hinglish": "helor namaskar main ajit hi bol raha tha",
+   "translation": "",
+   "source_text": "हेलोर नमस्कार मैं अजीत ही बोल रहा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S3",
+   "start": 9.89,
+   "end": 18.9,
+   "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+   "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+   "translation": "",
+   "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 19.08,
+   "end": 27.31,
+   "text": "जी मेरी गिरफ़्स बात फ़ोटोग्राफर से हो रही है जी सारी है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
+   "hinglish": "ji meri girafs baat fotographar se ho rahi hai ji sari hai mere yahan das joon ki shadi hai to mere ko pri wedding fotoshut karana tha",
+   "translation": "Gee my gear is talking to the photographer and it's all about my upcoming wedding, so I was supposed to have a pre-wedding photography shoot.",
+   "source_text": "जी मेरी गिरफ़्स बात फ़ोटोग्राफर से हो रही है जी सारी है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 27.98,
+   "end": 30.38,
+   "text": "पाँच लोगों के लिए चाहिए था सर्व हो पाएगा",
+   "hinglish": "paanch logon ke liye chahiye tha sarv ho paega",
+   "translation": "Five people will be available.",
+   "source_text": "पाँच लोगों के लिए चाहिए था सर्व हो पाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 29.46,
+   "end": 31.29,
+   "text": "तो सर उसका कैसा क्या रहता है",
+   "hinglish": "to sir uska kaisa kya rahta hai",
+   "translation": "Sir, how is he doing?",
+   "source_text": "तो सर उसका कैसा क्या रहता है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S3",
+   "start": 31.92,
+   "end": 33.69,
+   "text": "हमारी डाक्टरी लखनऊ में है",
+   "hinglish": "hamari daktari lakhnau mein hai",
+   "translation": "Our clinic is in Lucknow.",
+   "source_text": "हमारी डाक्टरी लखनऊ में है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 32.81,
+   "end": 39.94,
+   "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा उमोसा ये सब",
+   "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa umosa ye sab",
+   "translation": "Yes, and also wanted something sweet like rose berries, snowy cake, and yogurt.",
+   "source_text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा उमोसा ये सब",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S3",
+   "start": 40.65,
+   "end": 40.98,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Yes.",
+   "source_text": "हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S2",
+   "start": 41.33,
+   "end": 61.02,
+   "text": "तो सर वो कह रहे वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा साठ रुपये पीस है तो अगर मतलब तो पूछ रहे थे कि अगर सर ये कुछ डिस्काउंट उस्काउंट हो सक्ता है",
+   "hinglish": "to sir wo kah rahe wo wo sir ye poochh rahe the ki jo ye hai gulab jamun ek kitne rupye piece milega saath rupye piece hai to agar matlab to poochh rahe the ki agar sir ye kuch discount uskaunt ho sakta hai",
+   "translation": "So, Sir, he was asking about the price of rose berries, which he said was 60 rupees per piece, but if he meant to ask about discounts, then he was asking about the price of 60 rupees per piece.",
+   "source_text": "तो सर वो कह रहे वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा साठ रुपये पीस है तो अगर मतलब तो पूछ रहे थे कि अगर सर ये कुछ डिस्काउंट उस्काउंट हो सकता है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 42.208,
+  "prompt_tokens": 1899,
+  "completion_tokens": 891,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 5,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 4,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "3fe950100b99ebad6bf4b8e47ff5275f8d445ecc604f90f0e85466755c3e454c",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:53:49Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 61.57
+ }
+}

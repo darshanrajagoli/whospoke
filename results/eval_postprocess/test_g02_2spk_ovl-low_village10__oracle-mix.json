@@ -1,0 +1,204 @@
+{
+ "title": "Lost ID Card and Phone Number",
+ "topic": "Location of Office and Camera CCTV",
+ "executive_summary": "A conversation between two friends about the location of an office and the availability of camera CCTV cameras.",
+ "key_points": [
+  "ID card and phone number lost",
+  "Location of office and camera CCTV",
+  "Availability of camera CCTV cameras"
+ ],
+ "keywords": [
+  "ID card",
+  "Phone number",
+  "Camera",
+  "CCTV"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 23.19,
+   "turns": 5,
+   "share": 0.496
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 23.56,
+   "turns": 5,
+   "share": 0.504
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.33,
+   "end": 9.84,
+   "text": "नमस्ते बोल रहे थे आप बाबू मशंकर इंटर कॉलेज के प्रधाना कार्य",
+   "hinglish": "namaste bol rahe the aap babu mashankar intar college ke pradhana kaary",
+   "translation": "Hello, they were speaking to you. They said they were from Babu Manshankar Inter College.",
+   "source_text": "नमस्ते बोल रहे थे आप आप बाबू मशंकर इंटर कॉलेज के प्रधाना कार्य",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 7.98,
+   "end": 11.96,
+   "text": "नमस्ते सर सर मेरे कोई गलती हुई मेरे आग से",
+   "hinglish": "namaste sir sir mere koi galti hui mere aag se",
+   "translation": "Hello, sir, I had a fire in my house.",
+   "source_text": "नमस्ते सर सर मेरे कोई गलती हुई मेरे आग से",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 27.19,
+   "end": 34.21,
+   "text": "वो मेरा आई डी कार्ड घुम हो गया है सर पाँच सर वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फोटोकॉपी और लेके लगना चाहिए",
+   "hinglish": "wo mera aai D card ghum ho gaya hai sir paanch sir wo exam paas aa rahe hain to aai D card chahiye sir aadhar card ki photokopi aur leke lagna chahiye",
+   "translation": "The ID card of my friend has gone missing. I need an ID card from the base camp.",
+   "source_text": "वो मेरा आई डी कार्ड घुम हो गया है सर पाँच सर वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फोटोकॉपी और लेके लगना चाहिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 33.33,
+   "end": 35.3,
+   "text": "मेरा नंबर तीन में छुजा था",
+   "hinglish": "mera number teen mein chhuja tha",
+   "translation": "My number was written in my friend's phone.",
+   "source_text": "मेरा नंबर तीन में छुजा था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 35.54,
+   "end": 37.33,
+   "text": "एक कुछ का फोटो एक आजा का",
+   "hinglish": "ek kuch ka photo ek aaja ka",
+   "translation": "A photo of someone.",
+   "source_text": "एक कुछ का फोटो एक आजा का",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 37.84,
+   "end": 42.04,
+   "text": "हाँ मेरा था उपट मेरा था संगीता जी",
+   "hinglish": "haan mera tha upat mera tha sangita ji",
+   "translation": "Yes, my friend was a teacher.",
+   "source_text": "हाँ मेरा था उपट मेरा था संगीता जी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 42.61,
+   "end": 43.93,
+   "text": "ठीक है, कहाँ जाना पड़ेगा",
+   "hinglish": "theek hai, kahan jana padega",
+   "translation": "Where do we have to go?",
+   "source_text": "ठीक है कहां करनी पड़ेगी",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 44.31,
+   "end": 48.51,
+   "text": "हाँ तो अपने कैमरे सीसीटीवी कैमरे चेक करवा लीजिए",
+   "hinglish": "haan to apne camera c.c.t.v camera check karva lijie",
+   "translation": "Yes, let's check our camera CCTV cameras.",
+   "source_text": "हाँ तो अपने कैमरे सीसीटीवी कैमरे चेक करवा लीजिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 49.21,
+   "end": 58.66,
+   "text": "ऑफिस तो कितने बच्चे का ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद",
+   "hinglish": "office to kitne bacche ka office khula hai sir apna aai D card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega achha uske baad",
+   "translation": "Office, how many children have an office open? Who will we have to go to first, to get two items from their ID card?",
+   "source_text": "ऑफिस तो कितने बच्चे का ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 59.04,
+   "end": 62.35,
+   "text": "हाँ पैसा भी था डकुमेंट भी था",
+   "hinglish": "haan paisa bhi tha dakument bhi tha",
+   "translation": "Yes, there was money and a document as well.",
+   "source_text": "हाँ पैसा भी था डकुमेंट भी था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  2,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 38.869,
+  "prompt_tokens": 1729,
+  "completion_tokens": 876,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 0,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 9,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 1,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "313f10fcb154345a8ff89f33c4ce714046ed3a0bcda0c032813d67503c4bea32",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T12:12:47Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 62.94
+ }
+}
