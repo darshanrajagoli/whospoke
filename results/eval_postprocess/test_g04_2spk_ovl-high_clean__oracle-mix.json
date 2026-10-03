@@ -1,0 +1,193 @@
+{
+ "title": "Transcript of a conversation about Vaibhav, Class 10, Health, box, red, blue, black, price",
+ "topic": "Vaibhav, Class 10, Health, box, red, blue, black, price",
+ "executive_summary": "A conversation about Vaibhav, Class 10, Health, box, red, blue, black, price.",
+ "key_points": [
+  "Vaibhav",
+  "Class 10",
+  "Health",
+  "box",
+  "red, blue, black, price"
+ ],
+ "keywords": [
+  "Vaibhav",
+  "Class 10",
+  "box",
+  "red, blue, black, price"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 42.53,
+   "turns": 4,
+   "share": 0.667
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 21.24,
+   "turns": 5,
+   "share": 0.333
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.75,
+   "end": 1.16,
+   "text": "हलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 0.96,
+   "end": 4.84,
+   "text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "hinglish": "namaste aapke bacche ka naam vaibhav hai aapke ladke ka",
+   "translation": "I am talking at Jain Brothers Stationery and Book Shop",
+   "source_text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 5.55,
+   "end": 12.59,
+   "text": "क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेज चाहिए थे छः बॉक्स",
+   "hinglish": "kya main jain bradars steshanri and book shop mein baat kar rahi hoon hamen kya kahte hain pen ke boksej chahiye the chhah box",
+   "translation": "Am I talking at Jain Brothers Stationery and Book Shop?",
+   "source_text": "क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेज चाहिए थे छः बॉक्स",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 13.2,
+   "end": 26.86,
+   "text": "हाँ और वो कक्षा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+   "hinglish": "haan aur wo kaksha das mein padhta hai wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+   "translation": "Yes and he studies in Class 10",
+   "source_text": "हाँ और वो कक्षा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 27.35,
+   "end": 29.01,
+   "text": "हाँ जी अब जो",
+   "hinglish": "haan ji ab jo",
+   "translation": "Yes, George",
+   "source_text": "हाँ जी अब जो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 28.18,
+   "end": 50.97,
+   "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर तो हम दिला देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबेयता उसकी ठीक हो जाएगी तो फिर दो बॉक्स उसके रेट के",
+   "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai har to hum dila denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabeyta uski theek ho jaegi to phir do box uske rate ke",
+   "translation": "Now, George, he can come here whenever he wants, but it will be because of the heat, and it will be because of the water shortage. Then, he will get better, and then, we will get him some boxes.",
+   "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर तो हम दिला देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर दो बॉक्स उसके रेट के",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 48.37,
+   "end": 55.61,
+   "text": "हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं तो एक बॉक्स का कितना प्राइस पड़ेगा",
+   "hinglish": "hamen do box uske red ke do blue ke aur do black ke chahiye hain to ek box ka kitna price padega",
+   "translation": "We need two boxes of his red, two boxes of blue, and two boxes of black. What will the price of one box be?",
+   "source_text": "हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं तो एक बॉक्स का कितना प्राइस पड़ेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 56.11,
+   "end": 58.31,
+   "text": "अच्छा तो मैम",
+   "hinglish": "achha to ma'am",
+   "translation": "Good, then Mam",
+   "source_text": "अच्छा तो मैम",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 57.21,
+   "end": 62.1,
+   "text": "तो मैम अपने अंबो में दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
+   "hinglish": "to ma'am apne ambo mein do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega",
+   "translation": "So Mam will pay two hundred rupees in her ambos and I will get some special discount.",
+   "source_text": "तो मैम अपने अंबो में दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 42.655,
+  "prompt_tokens": 1793,
+  "completion_tokens": 913,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 4,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "7f754bb373728acaa38c63d035cb402b49ea04ae2d794146bdb4b637600f4071",
+  "source_line_count": 9,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:26:23Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 62.59
+ }
+}

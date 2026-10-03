@@ -1,0 +1,227 @@
+{
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Computer and Online Services",
+ "executive_summary": "Two people will stay and the computers will work.",
+ "key_points": [
+  "Two people will stay and the computers will work.",
+  "Computer and Online Services"
+ ],
+ "keywords": [
+  "Didi",
+  "Sari",
+  "Computer",
+  "Online",
+  "saree",
+  "two people will stay and the computers"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 9.3,
+   "turns": 6,
+   "share": 0.132
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 61.06,
+   "turns": 6,
+   "share": 0.868
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.72,
+   "end": 3.87,
+   "text": "नमस्कार दीदी और सब तो ठीक है अपना बताइए",
+   "hinglish": "namaskar didi aur sab to theek hai apna bataie",
+   "translation": "Hello, Didi and everyone else. Say your name.",
+   "source_text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 4.07,
+   "end": 10.78,
+   "text": "मैं दो",
+   "hinglish": "main do",
+   "translation": "I'm two.",
+   "source_text": "मैं दो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 11.07,
+   "end": 11.81,
+   "text": "क्या चाहिएगा",
+   "hinglish": "kya chahiega",
+   "translation": "What do you want?",
+   "source_text": "क्या चाहिएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 12.05,
+   "end": 22.63,
+   "text": "दो रूम चाहिए था टू कंप्यूटर का है हमारा",
+   "hinglish": "do room chahiye tha two computer ka hai hamara",
+   "translation": "Two rooms were needed for the computer.",
+   "source_text": "दो रूम चाहिए था टू कंप्यूटर का है हमारा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 23.0,
+   "end": 24.12,
+   "text": "सारी लेना है",
+   "hinglish": "sari lena hai",
+   "translation": "Take all the clothes.",
+   "source_text": "साड़ी लेना है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 24.75,
+   "end": 32.62,
+   "text": "अरे हमको मतलब कि लेंगे रोड पर शहर में चाहिए हमको शहर में हाँ ऑनलाइन चल जाएगा",
+   "hinglish": "are hamko matlab ki lenge road par shahar mein chahiye hamko shahar mein haan online chal jaega",
+   "translation": "We don't want to take the road to the city, we'll go online.",
+   "source_text": "अरे हमको मतलब कि लेंगे रोड पर शहर में चाहिए हमको शहर में हाँ ऑनलाइन चल जाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 33.14,
+   "end": 34.66,
+   "text": "हाँ साड़ी चाहिएगा",
+   "hinglish": "haan sadi chahiega",
+   "translation": "Yes, a saree is needed",
+   "source_text": "हाँ साड़ी चाहिएगा",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 35.08,
+   "end": 42.84,
+   "text": "नहीं लो तो नहीं लो सर हूँ हूँ हाँ दो लोग रहेंगे हम लोग",
+   "hinglish": "nahi lo to nahi lo sir hoon hoon haan do log rahenge hum log",
+   "translation": "No, not lo, not lo, Sir, two people will stay, we people",
+   "source_text": "नहीं लो तो नहीं लो सर हूँ हूँ हाँ दो लोग रहेंगे हम लोग",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 43.33,
+   "end": 44.99,
+   "text": "पूनम कर और",
+   "hinglish": "punam kar aur",
+   "translation": "Poonam kar and",
+   "source_text": "पूनम कर और",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 45.37,
+   "end": 57.69,
+   "text": "हाँ आप दो लोग रहेंगे और कंप्यूटर काम से काम चलते हैं हाँ हाँ नहीं यही पास में बस नैनी में दिला दीजिए अगर हो तो बताओ के",
+   "hinglish": "haan aap do log rahenge aur computer kaam se kaam chalte hain haan haan nahi yahi paas mein bas naini mein dila dijie agar ho to batao ke",
+   "translation": "Yes, you two will stay and the computers will work, yes, yes, no, no, in the nearby Naini if you say so",
+   "source_text": "हाँ आप दो लोग रहेंगे और कंप्यूटर काम से काम चलिए करेंगे हाँ हाँ नहीं यही पास में बस नैनी में दिला दीजिए अगर हो तो बताओ के",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 58.08,
+   "end": 59.19,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Yes",
+   "source_text": "हाँ हाँ",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 12,
+   "speaker": "S2",
+   "start": 59.89,
+   "end": 75.71,
+   "text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस जैसा कहोग कैप कर देंगे नहीं चेक कर देंगे जैसा कहोगे",
+   "hinglish": "haan bas do log do log rahenge aur computer hamara kaam kaam hai bas jaisa kahog cap kar denge nahi check kar denge jaisa kahoge",
+   "translation": "Yes",
+   "source_text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस जैसा कहोग कैप कर देंगे नहीं चेक कर देंगे जैसा कहोगे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  }
+ ],
+ "uncertain_lines": [
+  3,
+  4,
+  5,
+  6,
+  12
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 40.057,
+  "prompt_tokens": 1734,
+  "completion_tokens": 863,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 4,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 4,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "d77e1cd18354ccd337bcecc202b83b922c93b4b7c2df82ddfa83f9828b29fc40",
+  "source_line_count": 12,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:13:06Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 76.07
+ }
+}

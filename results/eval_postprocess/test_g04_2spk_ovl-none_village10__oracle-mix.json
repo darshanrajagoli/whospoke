@@ -1,0 +1,206 @@
+{
+ "title": "Transcript of a Hindi and Hinglish Conversation",
+ "topic": "Tapes, Colorful Wallpaper, and Eight Sets of Items",
+ "executive_summary": "A conversation in Hindi and Hinglish about tapes, colorful wallpaper, and eight sets of items.",
+ "key_points": [
+  "Hello",
+  "Namaste",
+  "Tape",
+  "Color",
+  "Wallpaper"
+ ],
+ "keywords": [
+  "Hello",
+  "Namaste",
+  "Tape",
+  "Wallpaper"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 39.68,
+   "turns": 5,
+   "share": 0.544
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 33.29,
+   "turns": 5,
+   "share": 0.456
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.54,
+   "end": 0.95,
+   "text": "हेलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हेलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 1.65,
+   "end": 2.46,
+   "text": "नमस्ते",
+   "hinglish": "namaste",
+   "translation": "Hello",
+   "source_text": "नमस्ते",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 3.03,
+   "end": 12.09,
+   "text": "क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रहा हूँ हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स हाँ जी हमें",
+   "hinglish": "kya main jain bradars steshanri and book shop mein baat kar raha hoon hamen kya kahte hain pen ke boxes chahiye the chhah box haan ji hamen",
+   "translation": "What do we say at Jain Brothers Stationery and Book Shop about pens? We want two boxes of red, two boxes of blue, and two boxes of black.",
+   "source_text": "क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स हाँ जी हमें",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 12.65,
+   "end": 15.5,
+   "text": "आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "hinglish": "aapke bacche ka naam vaibhav hai aapke ladke ka",
+   "translation": "Your son's name is Vaibhav, your boy's.",
+   "source_text": "आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 16.15,
+   "end": 23.29,
+   "text": "हमें दो बॉक्स इसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हूँ तो एक बॉक्स का कितना प्राइस पड़ेगा",
+   "hinglish": "hamen do box iske red ke do blue ke aur do black ke chahiye hoon to ek box ka kitna price padega",
+   "translation": "We want two boxes of red, two boxes of blue, and two boxes of black. How much will a box of red cost?",
+   "source_text": "हमें दो बॉक्स इसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हूँ तो एक बॉक्स का कितना प्राइस पड़ेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 24.02,
+   "end": 26.75,
+   "text": "हाँ और वो कक्षा दस में पढ़ता है",
+   "hinglish": "haan aur wo kaksha das mein padhta hai",
+   "translation": "Yes, and he is in Class 10.",
+   "source_text": "हाँ और वो कक्षा दस में पढ़ता है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 27.37,
+   "end": 37.57,
+   "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
+   "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie",
+   "translation": "She will get a box of two hundred rupees and some special discounts if she buys the item and tells me its price.",
+   "source_text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 37.85,
+   "end": 48.54,
+   "text": "वो आपने उसको शुगर फूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+   "hinglish": "wo aapne usko shugar phool bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+   "translation": "She sent him sugar flowers and he got sick and his fever went up, his body temperature rose.",
+   "source_text": "वो आपने उसको शुगर फूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 48.88,
+   "end": 55.36,
+   "text": "मेरे को टेप चाहिए हैं मुझे रंग बिरंगे वाले चाहिए हैं आठ आठ सेट",
+   "hinglish": "mere ko tape chahiye hain mujhe rang birange wale chahiye hain aath aath set",
+   "translation": "I need tapes and colorful wallpaper, eight sets.",
+   "source_text": "मेरे को टेप चाहिए हैं मुझे रंग बिरंगे वाले चाहिए हैं आठ आठ सेट",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S1",
+   "start": 55.99,
+   "end": 78.59,
+   "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाँ तो हम दिला देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम करिएगा तबियत उसकी ठीक हो जाएगी कुछ आप दोबारा से उसको स्कूल भेजिएगा",
+   "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai haan to hum dila denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kariega tabiyat uski theek ho jaegi kuch aap dobara se usko school bhejiega",
+   "translation": "It seems that the heat is causing water shortages, and he got sick because of it. We will provide him with some relief, but if you are here, come and take your child home for a few days.",
+   "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाँ तो हम दिला देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम करिएगा तबियत उसकी ठीक हो जाएगी कुछ आप दोबारा से उसको स्कूल भेजिएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 48.926,
+  "prompt_tokens": 1906,
+  "completion_tokens": 1045,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 8,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "3e532ddd751b16817bbf022bc33b07821883ef7f2aad16b94cb3a83d08f60584",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:09:55Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 79.23
+ }
+}

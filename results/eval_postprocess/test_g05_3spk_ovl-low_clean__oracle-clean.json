@@ -1,0 +1,182 @@
+{
+ "title": "Hindi and Hinglish Conversations",
+ "topic": "Hindi and Hinglish Conversations",
+ "executive_summary": "This report summarizes a conversation between two individuals about the price of dikkat, a doctor, and a request for a sweet.",
+ "key_points": [
+  "The speaker is coughing and asking for discounts.",
+  "The speaker is also coughing."
+ ],
+ "keywords": [
+  "dikkat",
+  "price",
+  "doctor",
+  "sweet"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 5.25,
+   "turns": 1,
+   "share": 0.063
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 55.39,
+   "turns": 3,
+   "share": 0.667
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 22.45,
+   "turns": 4,
+   "share": 0.27
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S3",
+   "start": 0.42,
+   "end": 9.15,
+   "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक़्क़त है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+   "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya diqqat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+   "translation": "Hello, sir! What is the price of the dikkat?",
+   "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक़्क़त है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 7.81,
+   "end": 14.23,
+   "text": "नमस्कार सर सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
+   "hinglish": "namaskar sir sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
+   "translation": "Hello sir! What is the price of the dikkat?",
+   "source_text": "नमस्कार सर सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 12.46,
+   "end": 21.43,
+   "text": "हमारी डॉक्टरी लखनऊ में है हाँ कब का इलाज है मैम आप कब से हो रहा है आपको यह सब कब से आपको दिक्कत आ रहा है परेशान",
+   "hinglish": "hamari doktari lakhnau mein hai haan kab ka ilaj hai ma'am aap kab se ho raha hai aapko yeh sab kab se aapko dikkat aa raha hai pareshan",
+   "translation": "Our doctor is in Lucknow, when can we get treated?",
+   "source_text": "हमारी डॉक्टरी लखनऊ में है हाँ कब का इलाज है मैम आप कब से हो रहा है आपको यह सब कब से आपको दिक्कत आ रहा है परेशान",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 17.77,
+   "end": 38.49,
+   "text": "पाँच लोगों के लिए चाहिए था सर वो हो पाएगा है और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा वमोसा ये सब तो सर वो कर वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा",
+   "hinglish": "paanch logon ke liye chahiye tha sir wo ho paega hai aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa wamosa ye sab to sir wo kar wo sir ye poochh rahe the ki jo ye hai gulab jamun ek kitne rupye piece milega",
+   "translation": "Five people were needed, sir, but it would be possible. And also, some sweet like rose jam, ice cream, and samosa would be nice.",
+   "source_text": "पाँच लोगों के लिए चाहिए था सर वो हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा वमोसा ये सब तो सर वो कर वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 39.0,
+   "end": 42.35,
+   "text": "आपके पैर में सूजन है क्या क्या दिक्कत है पैर में",
+   "hinglish": "aapke pair mein sujan hai kya kya dikkat hai pair mein",
+   "translation": "Your foot is swollen?",
+   "source_text": "आपके पैर में सूजन है क्या क्या दिक्कत है पैर में",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 42.54,
+   "end": 47.79,
+   "text": "हेलो हलो सर नमस्कार मैं अजी स्टोर से बोल रहा था जी मेरे ग्राफ़ बात फोटोग्राफर से हो रही है",
+   "hinglish": "hello hello sir namaskar main aji store se bol raha tha ji mere graaf baat photographer se ho rahi hai",
+   "translation": "Hello sir! I was talking to the photographer about my graph.",
+   "source_text": "हेलो हलो सर नमस्कार मैं अजी स्टोर से बोल रहा था जी मेरे ग्राफ़ बात फोटोग्राफर से हो रही है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S3",
+   "start": 48.3,
+   "end": 49.7,
+   "text": "आपको भी खाँसी आ रही है",
+   "hinglish": "aapko bhi khansi aa rahi hai",
+   "translation": "You are also coughing",
+   "source_text": "आपको खांसी भी आ रहा है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 50.47,
+   "end": 78.72,
+   "text": "साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो सकता है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
+   "hinglish": "saath rupye piece hai to agar matlab to wo poochh rahe the ki agar sir kuch discount uskaunt ho sakta hai nahi to sir matlab hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar uchit rate mein mil jata to phir dusre restaurant par kyon jate hain log",
+   "translation": "Sixty rupees is on the table, if you want to buy it, ask them if they can discount that amount, if you want to stay here for a few days, ask them if they can provide accommodation, if you want to go to other restaurants, ask them if they can recommend any.",
+   "source_text": "साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो सकता है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 51.127,
+  "prompt_tokens": 1841,
+  "completion_tokens": 1086,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 6,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 8,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "3f8ec59c79daacba381f441e8a0cd21d2c3348de7c0270417811b624e4e74e3a",
+  "source_line_count": 8,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:46:05Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 79.05
+ }
+}

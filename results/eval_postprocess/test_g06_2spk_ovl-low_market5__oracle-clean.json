@@ -1,0 +1,221 @@
+{
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Mama, Pranam, Didi, Everyone else, Let's talk, Trust computer is ours, Two ...",
+ "executive_summary": "A transcript of a conversation between two people, with the main topic being the need for two rooms and computer work.",
+ "key_points": [
+  "Mama wants two rooms",
+  "Pranam, didi and everyone else, let's talk",
+  "Trust computer is ours, we're not going to take you to the city",
+  "All of them are going to take a saree",
+  "Yes, they're going to walk"
+ ],
+ "keywords": [
+  "Mama",
+  "Pranam",
+  "Didi",
+  "Everyone else",
+  "Let's talk",
+  "Trust computer is ours",
+  "No pass, just say if you want us to"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 21.73,
+   "turns": 5,
+   "share": 0.274
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 57.72,
+   "turns": 6,
+   "share": 0.726
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.32,
+   "end": 8.52,
+   "text": "मैम दो रूम चाहिए था",
+   "hinglish": "ma'am do room chahiye tha",
+   "translation": "Mama wants two rooms",
+   "source_text": "मैम दो रूम चाहिए था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 7.34,
+   "end": 11.38,
+   "text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए क्या चाहिएगा",
+   "hinglish": "pranam didi aur sab to theek hai apna bataie kya chahiega",
+   "translation": "Pranam, didi and everyone else, let's talk",
+   "source_text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए क्या चाहिएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 10.76,
+   "end": 26.24,
+   "text": "ट्रस्ट कंप्यूटर का हम है हमारा अरे हमको मतलब कि लेंगे शहर में चाहिए हमको शहर में",
+   "hinglish": "trast computer ka hum hai hamara are hamko matlab ki lenge shahar mein chahiye hamko shahar mein",
+   "translation": "Trust computer is ours, we're not going to take you to the city, we're not going to take you to the city",
+   "source_text": "ट्रस्ट कंप्यूटर का हम है हमारा अरे हमको मतलब कि लेंगे शहर में चाहिए हमको शहर में",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 27.0,
+   "end": 31.1,
+   "text": "सारी लेना है हाँ साड़ी चाहिएगा पूनम साड़ी",
+   "hinglish": "sari lena hai haan sadi chahiega punam sadi",
+   "translation": "All of them are going to take a saree, Punam saree",
+   "source_text": "साड़ी लेना है हाँ साड़ी चाहिएगा पूनम साड़ी",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 31.37,
+   "end": 32.95,
+   "text": "हाँ उन्होंने चल जाएगा",
+   "hinglish": "haan unhonne chal jaega",
+   "translation": "Yes, they're going to walk",
+   "source_text": "हाँ उन्होंने चल जाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 33.47,
+   "end": 35.77,
+   "text": "और हाँ हाँ अच्छा",
+   "hinglish": "aur haan haan achha",
+   "translation": "And yes, good",
+   "source_text": "और हाँ हाँ अच्छा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 36.09,
+   "end": 43.99,
+   "text": "नहीं लोते नहीं लो सर हम्म हूँ हूँ हाँ दो लोग रहेंगे हम लोग",
+   "hinglish": "nahi lote nahi lo sir hamm hoon hoon haan do log rahenge hum log",
+   "translation": "",
+   "source_text": "नहीं लोते नहीं लो सर हम्म हूँ हूँ हाँ दो लोग रहेंगे हम लोग",
+   "changed": false,
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 44.25,
+   "end": 49.3,
+   "text": "हाँ अरे नया फैशन में तो निकला है बनारसी साड़ी हाँ तो हाँ",
+   "hinglish": "haan are naya fashion mein to nikla hai banarsi sadi haan to haan",
+   "translation": "The new fashion is in Banarasi sari.",
+   "source_text": "हाँ अरे नया फैशन में तो निकला है बनारसी साड़ी हाँ तो हाँ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 49.99,
+   "end": 54.45,
+   "text": "हाँ दो लोग रहेंगे और कंप्यूटर काम जैसा काम चल जाएंगे",
+   "hinglish": "haan do log rahenge aur computer kaam jaisa kaam chal jaenge",
+   "translation": "",
+   "source_text": "हाँ दो लोग रहेंगे और कंप्यूटर काम जैसा काम चल करेंगे",
+   "changed": true,
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S1",
+   "start": 53.24,
+   "end": 59.48,
+   "text": "रेड कलर का रेड कलर का चाहिएगा हाँ हाँ शादी है ननद का",
+   "hinglish": "red colour ka red colour ka chahiega haan haan shadi hai nanad ka",
+   "translation": "The red color is needed for marriage.",
+   "source_text": "रेड कलर का रेड कलर का चाहिएगा हाँ हाँ शादी है ननद का",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 11,
+   "speaker": "S2",
+   "start": 59.88,
+   "end": 79.98,
+   "text": "नहीं पास नहीं बस नहीं अगर हो तो बताओ दो कर हमारा है बस",
+   "hinglish": "nahi paas nahi bas nahi agar ho to batao do kar hamara hai bas",
+   "translation": "No pass, just say if you want us to.",
+   "source_text": "नहीं पास नहीं बस नहीं अगर हो तो बताओ दो कर हमारा है बस",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  9
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 47.45,
+  "prompt_tokens": 1792,
+  "completion_tokens": 1021,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 0,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "9d3e9589bdab448bfeee07daa67113b9b7f3a6098a4c08b57cadf2a8c23e3acc",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:27:33Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 80.6
+ }
+}

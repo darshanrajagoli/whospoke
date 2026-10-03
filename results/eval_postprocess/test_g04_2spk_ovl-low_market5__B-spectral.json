@@ -1,0 +1,173 @@
+{
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Lost ID Card",
+ "executive_summary": "Speaker A is asking for a tape and wants to buy a color birange wallet. He says it's getting very hot and that it's been twelve hours since the last time he spoke to Speaker A. He also asks Speaker A to tell him the price of everything.",
+ "key_points": [
+  "Speaker A is asking for a tape and wants to buy a color birange wallet",
+  "Speaker A says it's getting very hot",
+  "Speaker A asks Speaker A to tell him the price of everything"
+ ],
+ "keywords": [
+  "tape",
+  "color birange wallet",
+  "hot",
+  "twelve hours ago",
+  "twelve hours later",
+  "price",
+  "price of everything"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "Speaker_A",
+   "talk_time_s": 73.85,
+   "turns": 8,
+   "share": 1.0
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "Speaker_A",
+   "start": 0.3,
+   "end": 18.95,
+   "text": "हाँ हेलो क्या मैं जैन ब्रदर स्टेशनरी एंड बुक शॉप में बात कर रही हूँ आपके बच्चे का नाम वैभव है आपके लड़के का हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स हाँ जी हमें हमें दो बॉक्स के रेड के दो ब्लू के और दो ब्लैक के चाहिए न",
+   "hinglish": "haan hello kya main jain brother steshanri and book shop mein baat kar rahi hoon aapke bacche ka naam vaibhav hai aapke ladke ka hamen kya kahte hain pen ke boxes chahiye the chhah box haan ji hamen hamen do box ke red ke do blue ke aur do black ke chahiye na",
+   "translation": "Speaker_A is asking for a tape. He wants to buy some color birange wallet. He says it's getting very hot. Twelve hours ago, it was twelve hours ago. Now, it's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's...",
+   "source_text": "हाँ हेलो क्या मैं जैन ब्रदर स्टेशनरी एंड बुक शॉप में बात कर रही हूँ आपके बच्चे का नाम वैभव है आपके लड़के का हमें क्या कहते हैं पेन के बॉक्सेस चाहिए थे छः बॉक्स हाँ जी हमें हमें दो बॉक्स के रेड के दो ब्लू के और दो ब्लैक के चाहिए न",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "Speaker_A",
+   "start": 19.35,
+   "end": 37.75,
+   "text": "हाँ और वो कब एक बॉक्स का कितना प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं खेलिए तो कुछ स्पेशल डिस्काउंट भी मिलेगा तो आप मेरा एक काम करिए आई टी बुक कर लीजिए और जिसके बाद वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+   "hinglish": "haan aur wo kab ek box ka kitna price padega to ma'am ek box do sau rupye ka padega to main khelie to kuch special discount bhi milega to aap mera ek kaam karie aai ti book kar lijie aur jiske baad wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
+   "translation": "Speaker_A is asking for a tape. He wants to buy some color birange wallet. He says it's getting very hot. Twelve hours ago, it was twelve hours ago. Now, it's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's twelve hours later. It's",
+   "source_text": "हाँ और वो कब एक बॉक्स का कितना प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं खेलिए तो कुछ स्पेशल डिस्काउंट भी मिलेगा तो आप मेरा एक काम करिए आई टी बुक कर लीजिए और जिसके बाद वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "Speaker_A",
+   "start": 38.35,
+   "end": 42.85,
+   "text": "और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है हम्म",
+   "hinglish": "aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai hamm",
+   "translation": "Speaker_A is asking for a tape. He wants to buy some color birange wallet. He says it's getting very hot. Twelve hours ago, it was twelve...",
+   "source_text": "और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है हम्म",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 4,
+   "speaker": "Speaker_A",
+   "start": 42.95,
+   "end": 44.55,
+   "text": "मेरे को टेप चाहिए है",
+   "hinglish": "mere ko tape chahiye hai",
+   "translation": "Speaker_A is asking for a tape. He wants to buy some color birange wal",
+   "source_text": "मेरे को टेप चाहिए है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 5,
+   "speaker": "Speaker_A",
+   "start": 44.6,
+   "end": 47.45,
+   "text": "मुझे रंग बिरंगे वाले चाहिए हैं",
+   "hinglish": "mujhe rang birange wale chahiye hain",
+   "translation": "",
+   "source_text": "मुझे रंग बिरंगे वाले चाहिए हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
+  },
+  {
+   "line_id": 6,
+   "speaker": "Speaker_A",
+   "start": 48.1,
+   "end": 54.35,
+   "text": "अब जो भी हो गई के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है ये बारह घंटे",
+   "hinglish": "ab jo bhi ho gayi ke baad ho sakta hai ki itni zyada garmi ho rahi hai ye barah ghante",
+   "translation": "",
+   "source_text": "अब जो भी हो गई के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है ये बारह घंटे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
+  },
+  {
+   "line_id": 7,
+   "speaker": "Speaker_A",
+   "start": 54.65,
+   "end": 58.6,
+   "text": "बस हाँ सब आप मेरे को इन सबका प्राइस के बारे में बताइए हाँ सर",
+   "hinglish": "bas haan sab aap mere ko in sabka price ke bare mein bataie haan sir",
+   "translation": "Yes sir, just tell me the price of everything.",
+   "source_text": "बस हाँ सब आप मेरे को इन सबका प्राइस के बारे में बताइए हाँ सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "Speaker_A",
+   "start": 58.65,
+   "end": 76.3,
+   "text": "हर तो हम दिला देंगे लेकिन आप अगर है तो आ जाइए तो घर ले जाइए कुछ दिन आराम कर लेगा तो स्वास्थ्य ठीक हो जाएगा तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
+   "hinglish": "har to hum dila denge lekin aap agar hai to aa jaie to ghar le jaie kuch din aaram kar lega to svaasthy theek ho jaega to phir aap dobara se usko school bhejiega",
+   "translation": "We will give you a break but you come back and finish the job.",
+   "source_text": "हर तो हम दिला देंगे लेकिन आप अगर है तो आ जाइए तो घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  8
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 73.704,
+  "prompt_tokens": 2130,
+  "completion_tokens": 1538,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 6,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 1,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "14d07072d0abd5fde03e7f9af22037258848bbb62b501f0b644f3d4894ff9c48",
+  "source_line_count": 8,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:24:04Z",
+  "pipeline_order": "B",
+  "source_audio_duration_s": 76.75
+ }
+}

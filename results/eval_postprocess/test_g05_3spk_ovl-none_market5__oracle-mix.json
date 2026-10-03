@@ -1,0 +1,185 @@
+{
+ "title": "Wedding and Doctor",
+ "topic": "Wedding and Doctor",
+ "executive_summary": "A conversation between two people about a wedding and a doctor.",
+ "key_points": [
+  "Wedding",
+  "Doctor",
+  "Discount",
+  "Roses",
+  "Berries"
+ ],
+ "keywords": [
+  "Wedding",
+  "Doctor",
+  "Discount",
+  "Roses",
+  "Berries"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 17.48,
+   "turns": 3,
+   "share": 0.274
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 35.85,
+   "turns": 3,
+   "share": 0.562
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 10.42,
+   "turns": 2,
+   "share": 0.163
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.65,
+   "end": 5.95,
+   "text": "हेलो हेलो सर नमस्कार मैं अजीटोर से बोल रहा था जी मेरी ग्राफ़ बात फ़ोटोग्राफर से हो रही है",
+   "hinglish": "hello hello sir namaskar main ajitor se bol raha tha ji meri graaf baat fotographar se ho rahi hai",
+   "translation": "Hello Hello Sir Namaste I was speaking to Ajitror from the photographer",
+   "source_text": "हेलो हेलो सर नमस्कार मैं अजीटोर से बोल रहा था जी मेरी ग्राफ़ बात फ़ोटोग्राफर से हो रही है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 6.66,
+   "end": 7.62,
+   "text": "नमस्कार सर",
+   "hinglish": "namaskar sir",
+   "translation": "Hello Sir",
+   "source_text": "नमस्कार सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S3",
+   "start": 7.97,
+   "end": 14.78,
+   "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko",
+   "translation": "Hello Ma'am, can you tell me what the Diqqat is?",
+   "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 15.49,
+   "end": 20.93,
+   "text": "जी सर ये है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटो क्लिक कराना था",
+   "hinglish": "ji sir ye hai mere yahan das joon ki shadi hai to mere ko pri wedding photo click karana tha",
+   "translation": "Yes, I have a ten June wedding and I wanted to take a pre-wedding photo.",
+   "source_text": "जी सर ये है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटो क्लिक कराना था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S3",
+   "start": 21.59,
+   "end": 25.2,
+   "text": "क्या मैम आपकी बात साफ नहीं आ रही है हमारी डॉक्टरी लखनऊ में आए हैं",
+   "hinglish": "kya ma'am aapki baat saaph nahi aa rahi hai hamari doktari lakhnau mein aae hain",
+   "translation": "Isn't your doctor in Lucknow?",
+   "source_text": "क्या मैम आपकी बात साफ नहीं आ रही है हमारी डॉक्टरी लखनऊ में आए हैं",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 25.75,
+   "end": 40.83,
+   "text": "सर हम बोल रहे हैं तो कि लखनवी टाइप पाँच लोगों के लिए चाहिए था कब हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन खाना वाना खाना पड़ेगा",
+   "hinglish": "sir hum bol rahe hain to ki lakhanvi type paanch logon ke liye chahiye tha kab ho paega haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun khana wana khana padega",
+   "translation": "We were speaking about the Lucknavi typing and if it would be possible for five people to type it.",
+   "source_text": "सर हम बोल रहे हैं तो कि लखनवी टाइप पाँच लोगों के लिए चाहिए था कब हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन खाना वाना खाना पड़ेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 41.56,
+   "end": 48.3,
+   "text": "तो सर उसका कैसा क्या रहता है चून को मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगा आपको",
+   "hinglish": "to sir uska kaisa kya rahta hai choon ko matlab meri jo pri wedding fotoshut usse pahle hoga aapko",
+   "translation": "What is his condition?",
+   "source_text": "तो सर उसका कैसा क्या रहता है चून को मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगा आपको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 49.0,
+   "end": 68.81,
+   "text": "तो सर वो कर रहे वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो कुछ सकता है",
+   "hinglish": "to sir wo kar rahe wo wo sir ye poochh rahe the ki jo ye hai gulab jamun ek kitne rupye piece milega saath rupye piece hai to agar matlab to wo poochh rahe the ki agar sir kuch discount uskaunt ho kuch sakta hai",
+   "translation": "He is asking for discount on the amount of roses and berries, if that is what he wants.",
+   "source_text": "तो सर वो कर रहे वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो कुछ सकता है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 37.369,
+  "prompt_tokens": 1709,
+  "completion_tokens": 791,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 0,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 0,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "b84c0b6d372753321158d1d2d99dcc45a7594adaf4c63a5ca6b04edf1c5c92cf",
+  "source_line_count": 8,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:43:06Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 69.5
+ }
+}

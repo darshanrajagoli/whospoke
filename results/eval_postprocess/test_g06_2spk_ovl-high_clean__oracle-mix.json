@@ -1,0 +1,166 @@
+{
+ "title": "Lost ID Card",
+ "topic": "Lost ID Card",
+ "executive_summary": "Mam wanted two rooms, Pranam Didi, Didi trust computer is ours, Yes, the car is there, Poonam",
+ "key_points": [
+  "Mam wanted two rooms",
+  "Pranam, Didi",
+  "Didis trust computer is ours, tell us",
+  "Yes, all that is fine, tell me the name in the car",
+  "The car is there"
+ ],
+ "keywords": [
+  "Mam",
+  "Didi",
+  "Trust",
+  "Computer",
+  "Car",
+  "Yes"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 9.38,
+   "turns": 5,
+   "share": 0.117
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 70.61,
+   "turns": 2,
+   "share": 0.883
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.55,
+   "end": 8.81,
+   "text": "मैम दो रूम चाहिए था",
+   "hinglish": "ma'am do room chahiye tha",
+   "translation": "Mam wanted two rooms",
+   "source_text": "मैम दो रूम चाहिए था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 8.98,
+   "end": 9.96,
+   "text": "प्रणाम दीदी",
+   "hinglish": "pranam didi",
+   "translation": "Pranam, Didi",
+   "source_text": "प्रणाम दीदी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 9.47,
+   "end": 71.82,
+   "text": "दीदी ट्रस्ट कंप्यूटर का हमारा तो ठीक है अपना बताइए शहर में चाहिए हमको शहर में हाँ हाँ लोकते लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और कंप्यूटर हाँ हाँ नहीं यही पास में बस नहीं मिली दिला भी अगर हो तो हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस जैसा कहोग कैश कर देंगे नहीं चेक कर देंगे जैसा कहोगे नहीं पहले रजिस्ट्री हाँ एग्रीमेंट पहले हो चाहिए",
+   "hinglish": "didi trast computer ka hamara to theek hai apna bataie shahar mein chahiye hamko shahar mein haan haan lokte log rahenge hum log haan do log rahenge aur computer haan haan nahi yahi paas mein bas nahi mili dila bhi agar ho to haan bas do log do log rahenge aur computer hamara kaam kaam hai bas jaisa kahog cash kar denge nahi check kar denge jaisa kahoge nahi pahle rajistri haan egriment pahle ho chahiye",
+   "translation": "Didis trust computer is ours, tell us",
+   "source_text": "दीदी ट्रस्ट कंप्यूटर का हमारा तो ठीक है अपना बताइए शहर में चाहिए हमको शहर में हाँ हाँ लोकते लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और कंप्यूटर हाँ हाँ नहीं यही पास में बस नहीं मिली दिला भी अगर हो तो हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस जैसा कहोग कैश कर देंगे नहीं चेक कर देंगे जैसा कहोगे नहीं पहले रजिस्ट्री हाँ एग्रीमेंट पहले हो चाहिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 16.36,
+   "end": 20.31,
+   "text": "हाँ वो सब तो ठीक है अपना बताइए क्या चाहिएगा गाड़ी में नाम है",
+   "hinglish": "haan wo sab to theek hai apna bataie kya chahiega gadi mein naam hai",
+   "translation": "Yes, all that is fine, tell me the name in the car",
+   "source_text": "हाँ वो सब तो ठीक है अपना बताइए क्या चाहिएगा गाड़ी में नाम है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 25.6,
+   "end": 27.12,
+   "text": "हाँ गाड़ी होती है",
+   "hinglish": "haan gadi hoti hai",
+   "translation": "The car is there",
+   "source_text": "हाँ गाड़ी होती है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 38.16,
+   "end": 39.98,
+   "text": "पूनम आ",
+   "hinglish": "punam aa",
+   "translation": "Poonam, come",
+   "source_text": "पूनम आ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 46.06,
+   "end": 47.17,
+   "text": "हाँ हाँ",
+   "hinglish": "haan haan",
+   "translation": "Yes, yes",
+   "source_text": "हाँ हाँ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 28.643,
+  "prompt_tokens": 1542,
+  "completion_tokens": 608,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 0,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "8ca32f6023294ba9e70c2430f7184702cf420a27eb8465b3f23594b3d392aaf8",
+  "source_line_count": 7,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:31:32Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 72.61
+ }
+}

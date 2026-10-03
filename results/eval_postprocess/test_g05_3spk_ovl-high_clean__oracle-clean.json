@@ -1,0 +1,215 @@
+{
+ "title": "Lakhnavi Style Biryanis and Wedding Ceremony Requests",
+ "topic": "Lakhnavi Style Biryanis and Wedding Ceremony Requests",
+ "executive_summary": "A conversation about Lakhnavi style biryanis, asking for help with a graph, and mentioning a photographer.",
+ "key_points": [
+  "Part 1: A conversation about Lakhnavi style biryanis, asking for help with a graph, and mentioning a photographer.",
+  "Part 2: The speaker is asking the host if he has a photographer for the wedding ceremony, if he has a dike in his foot and if he has a discount for the restaurant.",
+  "Part 3: The speaker is asking the host if he has a photographer for the wedding ceremony, if he has a dike in his foot and if he has a discount for the restaurant.",
+  "Part 4: The speaker is asking the host if he has a photographer for the wedding ceremony, if he has a dike in his foot and if he has a discount for the restaurant.",
+  "Part 5: The speaker is asking the host if he has a photographer for the wedding ceremony, if he has a dike in his foot and if he has a discount for the restaurant."
+ ],
+ "keywords": [
+  "biryanis",
+  "photographer",
+  "help",
+  "wedding",
+  "dikkat",
+  "pair",
+  "swollen"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 12.64,
+   "turns": 2,
+   "share": 0.139
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 55.0,
+   "turns": 3,
+   "share": 0.605
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 23.31,
+   "turns": 5,
+   "share": 0.256
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.62,
+   "end": 9.57,
+   "text": "नमस्ते सर सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर वो हो पाएगा",
+   "hinglish": "namaste sir sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi paanch logon ke liye chahiye tha sir wo ho paega",
+   "translation": "Hello sir, we were talking about Lakhnavi style biryanis that we wanted for five people. Sir, can you get that for us?",
+   "source_text": "नमस्कार सर सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर वो हो पाएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S3",
+   "start": 7.64,
+   "end": 11.49,
+   "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "hinglish": "namaste ma'am bataie kya dikkat hai aapko",
+   "translation": "",
+   "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 9.62,
+   "end": 14.83,
+   "text": "हेलो हलो सर नमस्कार मैं अजी टोर से बोल रहा था जी मेरे ग्राफ़ बात फोटोग्राफर से हो रही है",
+   "hinglish": "hello hello sir namaskar main aji tor se bol raha tha ji mere graaf baat photographer se ho rahi hai",
+   "translation": "Hello sir, hello sir, I was talking to a photographer about my graph. Sir, can you help me with that?",
+   "source_text": "हेलो हलो सर नमस्कार मैं अजी टोर से बोल रहा था जी मेरे ग्राफ़ बात फोटोग्राफर से हो रही है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S3",
+   "start": 12.44,
+   "end": 17.21,
+   "text": "नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+   "hinglish": "namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+   "translation": "",
+   "source_text": "नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 15.65,
+   "end": 33.81,
+   "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा वमोसा ये सब तो सर वो कह रहे वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा",
+   "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa wamosa ye sab to sir wo kah rahe wo wo sir ye poochh rahe the ki jo ye hai gulab jamun ek kitne rupye piece milega",
+   "translation": "Yes and also wanted something sweet like rose berries, snowy kheencha, wamosa, and samosa. Sir, when will you be able to get that for us?",
+   "source_text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा वमोसा ये सब तो सर वो कह रहे वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S3",
+   "start": 32.57,
+   "end": 38.98,
+   "text": "हमारी डॉक्टरी लखनऊ में है हाँ कब का इलाज है मैम आप कब से हो रहा है आपको यह सब",
+   "hinglish": "hamari doktari lakhnau mein hai haan kab ka ilaj hai ma'am aap kab se ho raha hai aapko yeh sab",
+   "translation": "Our doctor is in Lucknow, when will you be able to get that for us?",
+   "source_text": "हमारी डॉक्टरी लखनऊ में है हाँ कब का इलाज है मैम आप कब से हो रहा है आपको यह सब",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 37.78,
+   "end": 45.21,
+   "text": "जी सर यह मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था तो सर उसका कैसा क्या रहता है",
+   "hinglish": "ji sir yeh mere yahan das joon ki shadi hai to mere ko pri wedding fotoshut karana tha to sir uska kaisa kya rahta hai",
+   "translation": "The speaker is asking the host if he has a photographer for the wedding ceremony.",
+   "source_text": "जी सर यह मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था तो सर उसका कैसा क्या रहता है",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S3",
+   "start": 42.32,
+   "end": 48.21,
+   "text": "कब से आपको दिक्कत आ रहा है पैर आपके पैर में सूजन है क्या दिक्कत है पैर में",
+   "hinglish": "kab se aapko dikkat aa raha hai pair aapke pair mein sujan hai kya dikkat hai pair mein",
+   "translation": "The speaker is asking the host if he has a dike in his foot and if it is swollen.",
+   "source_text": "कब से आपको दिक्कत आ रहा है पैर आपके पैर में सूजन है क्या क्या दिक्कत है पैर में",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 48.93,
+   "end": 76.82,
+   "text": "सठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो सक्ता है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं हम लोग",
+   "hinglish": "sath rupye piece hai to agar matlab to wo poochh rahe the ki agar sir kuch discount uskaunt ho sakta hai nahi to sir matlab hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar uchit rate mein mil jata to phir dusre restaurant par kyon jate hain hum log",
+   "translation": "The speaker is asking the host if he has a discount for the restaurant and if he does, the speaker wants to know if the host is willing to give it to them.",
+   "source_text": "साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो सकता है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं हम लोग",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S3",
+   "start": 56.36,
+   "end": 58.75,
+   "text": "आपको भी खांसी आ रही है सब भी है",
+   "hinglish": "aapko bhi khansi aa rahi hai sab bhi hai",
+   "translation": "The speaker is informing the host that he is also experiencing coughing.",
+   "source_text": "आपको खांसी भी आ रहा है सब भी है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  8,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 64.244,
+  "prompt_tokens": 2061,
+  "completion_tokens": 1374,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 4,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 9,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "4e63b1ab6ec25662c9961078a608f1bd00c48e37c6f0c7618618d7bcf98aeb37",
+  "source_line_count": 10,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:57:56Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 77.24
+ }
+}

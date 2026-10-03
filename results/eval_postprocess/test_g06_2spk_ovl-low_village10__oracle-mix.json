@@ -1,0 +1,212 @@
+{
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "System and Computer",
+ "executive_summary": "The speaker mentions a system and asks if the computer can be hit.",
+ "key_points": [
+  "System",
+  "Computer",
+  "Hit"
+ ],
+ "keywords": [
+  "System",
+  "Computer",
+  "Hit"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 10.27,
+   "turns": 6,
+   "share": 0.154
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 56.36,
+   "turns": 5,
+   "share": 0.846
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.69,
+   "end": 7.4,
+   "text": "नहीं दो",
+   "hinglish": "nahi do",
+   "translation": "No two",
+   "source_text": "नहीं दो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 7.96,
+   "end": 8.93,
+   "text": "प्रणाम दीदी",
+   "hinglish": "pranam didi",
+   "translation": "System",
+   "source_text": "प्रणाम दीदी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 9.98,
+   "end": 11.81,
+   "text": "और सब तो ठीक है अपना बताइए",
+   "hinglish": "aur sab to theek hai apna bataie",
+   "translation": "And everything else is fine, tell me",
+   "source_text": "और सब तो ठीक है अपना बताइए",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 12.18,
+   "end": 18.55,
+   "text": "अः ट्रस्ट कंप्यूटर का है मारा",
+   "hinglish": "ah trast computer ka hai mara",
+   "translation": "A: Trust computer is hit",
+   "source_text": "अः ट्रस्ट कंप्यूटर का है मारा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 18.97,
+   "end": 21.07,
+   "text": "क्या चाहिएगा साड़ी में ना है",
+   "hinglish": "kya chahiega sadi mein na hai",
+   "translation": "Do you want a saree?",
+   "source_text": "क्या चाहिएगा साड़ी में ना है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 20.02,
+   "end": 30.37,
+   "text": "अरे हमको मतलब रोड पे शहर में सही हमको शहर में हाँ भी चल जाएगा",
+   "hinglish": "are hamko matlab road pe shahar mein sahi hamko shahar mein haan bhi chal jaega",
+   "translation": "Do you mean to go to the city by road and also to the city?",
+   "source_text": "अरे हमको मतलब रोड पे शहर में सही हमको शहर में हाँ भी चल जाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 31.07,
+   "end": 34.74,
+   "text": "हां शाड़ी चाहिएगा पूनम शाड़ी",
+   "hinglish": "haan shadi chahiega punam shadi",
+   "translation": "Yes, I will call up Punam Shaadi",
+   "source_text": "हाँ शाड़ी चाहिएगा पूनम शाड़ी",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 10,
+   "speaker": "S1",
+   "start": 48.48,
+   "end": 49.59,
+   "text": "हाँ हाँ",
+   "hinglish": "haan haan",
+   "translation": "Yes, Yes",
+   "source_text": "हाँ हाँ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 11,
+   "speaker": "S2",
+   "start": 49.79,
+   "end": 57.4,
+   "text": "हाँ नहीं यही पास में बस मैंने दिला भी अगर हो तो बताओ",
+   "hinglish": "haan nahi yahi paas mein bas mainne dila bhi agar ho to batao",
+   "translation": "Yes, No, I also told her nearby if you want to know",
+   "source_text": "हाँ नहीं यही पास में बस मैंने दिला भी अगर हो तो बताओ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 12,
+   "speaker": "S1",
+   "start": 57.61,
+   "end": 58.2,
+   "text": "अच्छा",
+   "hinglish": "achha",
+   "translation": "Good",
+   "source_text": "अच्छा",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 13,
+   "speaker": "S2",
+   "start": 57.91,
+   "end": 83.23,
+   "text": "जाओ जाओ",
+   "hinglish": "jao jao",
+   "translation": "Go, Go",
+   "source_text": "जाओ जाओ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  2,
+  5,
+  6,
+  7,
+  13
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 33.814,
+  "prompt_tokens": 1588,
+  "completion_tokens": 730,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 4,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 0,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 2,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "db246b445f94926939198cd20f3ef2a7467ef81112b9b3a5258a61cbc1eab6cc",
+  "source_line_count": 13,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:24:00Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 83.94
+ }
+}

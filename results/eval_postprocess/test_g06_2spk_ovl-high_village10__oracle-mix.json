@@ -1,0 +1,192 @@
+{
+ "title": "Hindi and Hinglish Conversation",
+ "topic": "Rooms, Saris, and Money",
+ "executive_summary": "A conversation about rooms, saris, and money.",
+ "key_points": [
+  "Rooms",
+  "Saris",
+  "Money",
+  "Yes",
+  "Two people will stay and what is"
+ ],
+ "keywords": [
+  "Rooms",
+  "Money",
+  "Yes",
+  "Two people",
+  "Stay"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 20.13,
+   "turns": 5,
+   "share": 0.413
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 28.65,
+   "turns": 4,
+   "share": 0.587
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.76,
+   "end": 15.55,
+   "text": "मैं दो रूम चाहिए था टेम्प्यूटर का हमारा दीदी और",
+   "hinglish": "main do room chahiye tha tempyutar ka hamara didi aur",
+   "translation": "I wanted two rooms, Tempuator's didi and all, and said 'Ok, tell me the name of the sari',",
+   "source_text": "मैं दो रूम चाहिए था टेम्प्यूटर का हमारा दीदी और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 13.59,
+   "end": 21.84,
+   "text": "प्रणाली दीदी और सब तो ठीक है अपना बताइए आप कहिएगा साड़ी के नाम है हाँ साड़ी पूनम",
+   "hinglish": "pranali didi aur sab to theek hai apna bataie aap kahiega sadi ke naam hai haan sadi punam",
+   "translation": "The system said 'Ok, tell me the name of the sari',",
+   "source_text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए आप कहिएगा साड़ी के नाम है हाँ साड़ी पूनम",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 16.34,
+   "end": 18.68,
+   "text": "सारी जना है",
+   "hinglish": "sari jana hai",
+   "translation": "There is a lot of money,",
+   "source_text": "सारी जना है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 24.96,
+   "end": 26.71,
+   "text": "हाँ",
+   "hinglish": "haan",
+   "translation": "Yes,",
+   "source_text": "हाँ हाँ",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 27.33,
+   "end": 28.91,
+   "text": "हाँ ऑन निकल देगा",
+   "hinglish": "haan on nikal dega",
+   "translation": "Yes, on the nail it will go,",
+   "source_text": "हाँ ऑन निकल देगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 29.15,
+   "end": 33.55,
+   "text": "अच्छा हाँ अरे नया फैशन में तो निकला है",
+   "hinglish": "achha haan are naya fashion mein to nikla hai",
+   "translation": "Yes,",
+   "source_text": "अच्छा हाँ अरे नया फैशन में तो निकला है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 35.01,
+   "end": 35.99,
+   "text": "आप हाँ",
+   "hinglish": "aap haan",
+   "translation": "Yes",
+   "source_text": "आप हाँ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 36.75,
+   "end": 46.69,
+   "text": "हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और जो है",
+   "hinglish": "haan do log rahenge hum log haan do log rahenge aur jo hai",
+   "translation": "Yes, two people will stay and what is",
+   "source_text": "हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और जो है",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 47.41,
+   "end": 52.16,
+   "text": "रेड कलर को रेड कलर का चाहिएगा हाँ हाँ खादी है",
+   "hinglish": "red colour ko red colour ka chahiega haan haan khadi hai",
+   "translation": "Red color should be red color",
+   "source_text": "रेड कलर को रेड कलर का चाहिएगा हाँ हाँ खादी है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 31.649,
+  "prompt_tokens": 1565,
+  "completion_tokens": 677,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 3,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "2d4389e61ee116cbeb00c2081c64b10f46c9eea9969cb6526f1db861b92a7871",
+  "source_line_count": 12,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:35:05Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 73.04
+ }
+}

@@ -1,0 +1,190 @@
+{
+ "title": "Lost ID Card",
+ "topic": "Lost ID Card",
+ "executive_summary": "Two people discuss the topic of lost ID cards and the need to find them.",
+ "key_points": [
+  "The speaker mentions that they have lost their ID card and need to find it."
+ ],
+ "keywords": [
+  "all",
+  "everything",
+  "red",
+  "paint",
+  "color",
+  "red color"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 21.73,
+   "turns": 5,
+   "share": 0.425
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 29.42,
+   "turns": 4,
+   "share": 0.575
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 7.34,
+   "end": 11.38,
+   "text": "राम सभी और सब तो ठीक है अपना बताइए कहाँ चाहिएगा",
+   "hinglish": "raam sabhi aur sab to theek hai apna bataie kahan chahiega",
+   "translation": "Ram all and everything is fine, tell me where you will go",
+   "source_text": "राम सभी और सब तो ठीक है अपना बताइए कहाँ चाहिएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 10.76,
+   "end": 26.24,
+   "text": "अरे हमको मतलब सारे चाहिए हमको",
+   "hinglish": "are hamko matlab sare chahiye hamko",
+   "translation": "Hey, don't mean all and everything, we won't",
+   "source_text": "अरे हमको मतलब सारे चाहिए हमको",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 27.0,
+   "end": 31.1,
+   "text": "साड़ी लेना है हाँ साड़ी चाहिएगा पूनम साड़ी",
+   "hinglish": "sadi lena hai haan sadi chahiega punam sadi",
+   "translation": "Sari is to be taken, yes sari is to be taken, Punam sari",
+   "source_text": "साड़ी लेना है हाँ साड़ी चाहिएगा पूनम साड़ी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 31.37,
+   "end": 32.95,
+   "text": "हाँ ना विचार देगा",
+   "hinglish": "haan na vichar dega",
+   "translation": "Yes no, I won't think about it",
+   "source_text": "हाँ ना विचार देगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 33.47,
+   "end": 35.77,
+   "text": "और हाँ हाँ अच्छा",
+   "hinglish": "aur haan haan achha",
+   "translation": "And yes yes, good",
+   "source_text": "और हाँ हाँ अच्छा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S2",
+   "start": 36.09,
+   "end": 43.99,
+   "text": "मेल उड़ते हम्म हम्म हम",
+   "hinglish": "mail udte hamm hamm hum",
+   "translation": "Mel fly away, we will fly away, we will",
+   "source_text": "मेल उड़ते हम्म हम्म हम",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S1",
+   "start": 44.25,
+   "end": 49.3,
+   "text": "हाँ अरे नया फैशन में तो निकला है बनारसी साड़ी हाँ तो हाँ",
+   "hinglish": "haan are naya fashion mein to nikla hai banarsi sadi haan to haan",
+   "translation": "Yes, the new fashion has come out in Banarasi sari.",
+   "source_text": "हाँ अरे नया फैशन में तो निकला है बनारसी साड़ी हाँ तो हाँ",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S2",
+   "start": 49.99,
+   "end": 54.45,
+   "text": "हाँ दो लोग रहेंगे और रेड कलर को",
+   "hinglish": "haan do log rahenge aur red colour ko",
+   "translation": "Two people will stay and paint the red color in red.",
+   "source_text": "हाँ दो लोग रहेंगे और रेड कलर को",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S1",
+   "start": 53.24,
+   "end": 59.48,
+   "text": "रेड कलर को रेड कलर का चाहिएगा हाँ हाँ शादी है ननद का",
+   "hinglish": "red colour ko red colour ka chahiega haan haan shadi hai nanad ka",
+   "translation": "The red color should be painted in red.",
+   "source_text": "रेड कलर को रेड कलर का चाहिएगा हाँ हाँ शादी है ननद का",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  }
+ ],
+ "uncertain_lines": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  9,
+  10
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 37.033,
+  "prompt_tokens": 1600,
+  "completion_tokens": 804,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 0,
+  "lines_reverted": 8,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 5,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 7,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 2,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "14a32f35eaef6f8f4c4df2f9cae8392f90d84df1b83e7900135146d52a48b21f",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:28:10Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 80.6
+ }
+}

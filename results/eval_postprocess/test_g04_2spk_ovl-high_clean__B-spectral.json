@@ -1,0 +1,212 @@
+{
+ "title": "Water Shortages and Discounts in Jain Brothers Stationery & Book Shop",
+ "topic": "Water Shortages and Discounts in Jain Brothers Stationery & Book Shop",
+ "executive_summary": "Speaker A talks about water shortages, discounts, and the need to take care of sick people.",
+ "key_points": [
+  "name",
+  "class",
+  "health",
+  "water shortage",
+  "discounts"
+ ],
+ "keywords": [
+  "name",
+  "class",
+  "water shortage"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "Speaker_A",
+   "talk_time_s": 57.7,
+   "turns": 11,
+   "share": 1.0
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "Speaker_A",
+   "start": 0.7,
+   "end": 1.85,
+   "text": "हलो नमस्ते",
+   "hinglish": "hello namaste",
+   "translation": "Hello",
+   "source_text": "हलो नमस्ते",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "Speaker_A",
+   "start": 1.9,
+   "end": 4.85,
+   "text": "आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "hinglish": "aapke bacche ka naam vaibhav hai aapke ladke ka",
+   "translation": "Your boy's name is Vaibhav",
+   "source_text": "आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "Speaker_A",
+   "start": 5.5,
+   "end": 12.5,
+   "text": "क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेज चाहिए थे छः बॉक्स",
+   "hinglish": "kya main jain bradars steshanri and book shop mein baat kar rahi hoon hamen kya kahte hain pen ke boksej chahiye the chhah box",
+   "translation": "Am I talking at Jain Brothers Stationery & Book Shop?",
+   "source_text": "क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेज चाहिए थे छः बॉक्स",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "Speaker_A",
+   "start": 13.2,
+   "end": 21.7,
+   "text": "हाँ और वो कक्षा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+   "hinglish": "haan aur wo kaksha das mein padhta hai wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
+   "translation": "Yes, and he studies in Class 10.",
+   "source_text": "हाँ और वो कक्षा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "Speaker_A",
+   "start": 22.3,
+   "end": 26.2,
+   "text": "और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+   "hinglish": "aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+   "translation": "And he has a fever.",
+   "source_text": "और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "Speaker_A",
+   "start": 26.35,
+   "end": 26.85,
+   "text": "हम्म",
+   "hinglish": "hamm",
+   "translation": "And his body temperature rises.",
+   "source_text": "हम्म",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "Speaker_A",
+   "start": 27.3,
+   "end": 27.95,
+   "text": "हाँ जी",
+   "hinglish": "haan ji",
+   "translation": "Yes, it's hot here",
+   "source_text": "हाँ जी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "Speaker_A",
+   "start": 28.1,
+   "end": 33.25,
+   "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है",
+   "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
+   "translation": "Everyone here is hot",
+   "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "Speaker_A",
+   "start": 33.5,
+   "end": 53.3,
+   "text": "उसकी वजह से पानी की कमी वगैरह हो रही होगी तो उसकी वजह से वो बीमार हो गया है हर तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबेयता उसकी ठीक हो जाएगी तो फिर हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं",
+   "hinglish": "uski wajah se pani ki kami wagairah ho rahi hogi to uski wajah se wo bimar ho gaya hai har to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabeyta uski theek ho jaegi to phir hamen do box uske red ke do blue ke aur do black ke chahiye hain",
+   "translation": "Because of her, there may be a shortage of water, but she is sick, so we will take care of her, but if you are here, come and take your child home for a few days, and then we will get two boxes of her red, two boxes of blue, and two boxes of black.",
+   "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "Speaker_A",
+   "start": 53.5,
+   "end": 55.6,
+   "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+   "hinglish": "to ek box ka kitna price padega",
+   "translation": "How much will it cost for a box?",
+   "source_text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "Speaker_A",
+   "start": 56.1,
+   "end": 62.1,
+   "text": "अच्छा तो कब तक का इन लोगों में दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
+   "hinglish": "achha to kab tak ka in logon mein do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega",
+   "translation": "If two hundred rupees are charged for these people, then I will also get some special discount.",
+   "source_text": "अच्छा तो कब तक का इन लोगों में दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  9,
+  10,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 44.191,
+  "prompt_tokens": 1892,
+  "completion_tokens": 950,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 1,
+  "lines_reverted": 7,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "67851a5f29aa399fabc0fb7b3c507aff02c564420ec2feb52bad0da71017da1a",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:27:08Z",
+  "pipeline_order": "B",
+  "source_audio_duration_s": 62.59
+ }
+}

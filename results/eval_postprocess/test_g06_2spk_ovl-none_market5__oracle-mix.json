@@ -1,0 +1,202 @@
+{
+ "title": "Transcript of Hindi and Hinglish Conversations",
+ "topic": "Fashion and Banarasi Sarees",
+ "executive_summary": "A conversation between Didi and others about fashion and Banarasi sarees.",
+ "key_points": [
+  "Didi wants to buy a saree",
+  "Saree is a new fashion",
+  "Two people will stay and I will be there",
+  "Fashion in Banarasi sarees",
+  "Red color should be red color"
+ ],
+ "keywords": [
+  "Didi",
+  "Saree",
+  "Fashion",
+  "Banarasi"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 22.69,
+   "turns": 6,
+   "share": 0.438
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 29.07,
+   "turns": 4,
+   "share": 0.562
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.73,
+   "end": 3.79,
+   "text": "नमस्कार दीदी और सब तो ठीक है अपना बताइए",
+   "hinglish": "namaskar didi aur sab to theek hai apna bataie",
+   "translation": "Hello, Didi and everyone else, let me know if you need anything",
+   "source_text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 12.56,
+   "end": 16.43,
+   "text": "क्या चाहिएगा साड़ी लेना है हाँ साड़ी चाहिएगा",
+   "hinglish": "kya chahiega sadi lena hai haan sadi chahiega",
+   "translation": "Do you want to buy a saree, yes, a saree please",
+   "source_text": "क्या चाहिएगा साड़ी लेना है हाँ साड़ी चाहिएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 16.84,
+   "end": 23.22,
+   "text": "टूरा का",
+   "hinglish": "tura ka",
+   "translation": "Too bad",
+   "source_text": "टूटा का",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 23.49,
+   "end": 25.23,
+   "text": "पूनम आ",
+   "hinglish": "punam aa",
+   "translation": "Pooonam",
+   "source_text": "पूनम आ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 25.46,
+   "end": 35.78,
+   "text": "अरे हमको ले",
+   "hinglish": "are hamko le",
+   "translation": "Hey, let's go",
+   "source_text": "अरे हमको ले",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 36.03,
+   "end": 41.72,
+   "text": "हाँ हाँ अच्छा है अरे नया फैशन में तो निकला है बनारसी साड़ी",
+   "hinglish": "haan haan achha hai are naya fashion mein to nikla hai banarsi sadi",
+   "translation": "Yes, yes, good, yes, new fashion in the Banarasi saree",
+   "source_text": "हाँ हाँ अच्छा हाँ अरे नया फैशन में तो निकला है बनारसी साड़ी",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 42.48,
+   "end": 44.8,
+   "text": "मिलते मिले",
+   "hinglish": "milte mile",
+   "translation": "Two people will stay and I will be there.",
+   "source_text": "मिलते मिले",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 45.52,
+   "end": 49.59,
+   "text": "हाँ तो हाँ रेड कलर को रेड कलर का चाहिए",
+   "hinglish": "haan to haan red colour ko red colour ka chahiye",
+   "translation": "Yes, red color should be red color.",
+   "source_text": "हाँ तो हाँ रेड कलर को रेड कलर का चाहिए",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 49.85,
+   "end": 59.9,
+   "text": "हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और मैं आपकी",
+   "hinglish": "haan do log rahenge hum log haan do log rahenge aur main aapki",
+   "translation": "Yes, two people will stay and I will be there.",
+   "source_text": "हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और मैं आपकी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 60.51,
+   "end": 64.77,
+   "text": "हाँ हाँ साधी है ना ना सादी",
+   "hinglish": "haan haan sadhi hai na na sadi",
+   "translation": "Yes, it is said.",
+   "source_text": "हाँ हाँ साधी है ना ना सादी",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 37.341,
+  "prompt_tokens": 1613,
+  "completion_tokens": 805,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 0,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 5,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 4,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 1,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "f4cc0d3d913b8bd78a754f4d72a30173575729293b1a18ee616c76fa7533c2a9",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:17:14Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 65.46
+ }
+}

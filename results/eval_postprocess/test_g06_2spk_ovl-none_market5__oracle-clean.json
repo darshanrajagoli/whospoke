@@ -1,0 +1,216 @@
+{
+ "title": "Hindi and Hinglish Conversation",
+ "topic": "Saree and Going to the City on the Road",
+ "executive_summary": "Two people talk about buying a saree and going to the city on the road.",
+ "key_points": [
+  "Saree",
+  "Going to the City on the Road",
+  "Yes",
+  "No"
+ ],
+ "keywords": [
+  "saree",
+  "go to the city on the road",
+  "yes"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 22.69,
+   "turns": 6,
+   "share": 0.378
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 37.28,
+   "turns": 5,
+   "share": 0.622
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.73,
+   "end": 3.79,
+   "text": "नमस्कार दीदी और सब तो ठीक है अपना बताइए",
+   "hinglish": "namaskar didi aur sab to theek hai apna bataie",
+   "translation": "Hello, Didi and everyone else. Let me know if you need anything.",
+   "source_text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 4.09,
+   "end": 12.3,
+   "text": "मैम दो रूम चाहिए था",
+   "hinglish": "ma'am do room chahiye tha",
+   "translation": "Ma'am, we need two rooms.",
+   "source_text": "मैम दो रूम चाहिए था",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 12.56,
+   "end": 16.43,
+   "text": "क्या चाहिएगा साड़ी लेना है हाँ साड़ी लेना चाहिएगा",
+   "hinglish": "kya chahiega sadi lena hai haan sadi lena chahiega",
+   "translation": "Do you want to buy a saree? Yes, you should buy a saree.",
+   "source_text": "क्या चाहिएगा साड़ी लेना है हाँ साड़ी चाहिएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 16.84,
+   "end": 23.22,
+   "text": "ट्रस्ट टू कंप्यूटर का है हमारा",
+   "hinglish": "trast two computer ka hai hamara",
+   "translation": "Trust to Computers is ours.",
+   "source_text": "ट्रस्ट टू कंप्यूटर का है हमारा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 23.49,
+   "end": 25.23,
+   "text": "पूनम कर और",
+   "hinglish": "punam kar aur",
+   "translation": "Pooonam kar and.",
+   "source_text": "पूनम कर और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 25.46,
+   "end": 35.78,
+   "text": "अरे हमको मतलब कि लेंगे रोड पर शहर में चाहिए हमको शहर में हाँ निकल जाएगा",
+   "hinglish": "are hamko matlab ki lenge road par shahar mein chahiye hamko shahar mein haan nikal jaega",
+   "translation": "We don't want to go to the city on the road. We want to go to the city.",
+   "source_text": "अरे हमको मतलब कि लेंगे रोड पर शहर में चाहिए हमको शहर में हाँ निकल जाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 36.03,
+   "end": 41.72,
+   "text": "हाँ हाँ अच्छा हाँ अरे नया फैशन में तो निकला है बनारसी साड़ी",
+   "hinglish": "haan haan achha haan are naya fashion mein to nikla hai banarsi sadi",
+   "translation": "",
+   "source_text": "हाँ हाँ अच्छा हाँ अरे नया फैशन में तो निकला है बनारसी साड़ी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 42.48,
+   "end": 44.8,
+   "text": "मिलो सर मिल ल",
+   "hinglish": "milo sir mil la",
+   "translation": "Milo Sir Mill L",
+   "source_text": "मिलो सर मिल ल",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 45.52,
+   "end": 49.59,
+   "text": "हाँ तो हाँ रेड कलर को रेड कलर का चाहिएगा",
+   "hinglish": "haan to haan red colour ko red colour ka chahiega",
+   "translation": "",
+   "source_text": "हाँ तो हाँ रेड कलर को रेड कलर का चाहिएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 49.85,
+   "end": 59.9,
+   "text": "हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और कंप्यूटर काम से काम चल जाएंगे",
+   "hinglish": "haan do log rahenge hum log haan do log rahenge aur computer kaam se kaam chal jaenge",
+   "translation": "Yes, two people will stay and two people will work and computers will work",
+   "source_text": "हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और कंप्यूटर काम से काम चल करेंगे",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 60.51,
+   "end": 64.77,
+   "text": "हाँ शादी है ननद का ननद का शादी",
+   "hinglish": "haan shadi hai nanad ka nanad ka shadi",
+   "translation": "",
+   "source_text": "हाँ हाँ शादी है ननद का ननद का शादी",
+   "changed": true,
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
+  }
+ ],
+ "uncertain_lines": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  9,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 40.345,
+  "prompt_tokens": 1754,
+  "completion_tokens": 865,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 4,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 5,
+  "missing_translations": 3,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "c6b480fe6d7cdaac9991f2cf1b55a9192eb40b77147daa29c3b0ba9d9a50f5c0",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:16:36Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 65.46
+ }
+}

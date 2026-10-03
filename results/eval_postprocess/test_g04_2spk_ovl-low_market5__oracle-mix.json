@@ -1,0 +1,220 @@
+{
+ "title": "Jain Brothers Stationery and Book Shop",
+ "topic": "Sugar flowers, tapes, color birange wallet, and water shortage",
+ "executive_summary": "A conversation at Jain Brothers Stationery and Book Shop.",
+ "key_points": [
+  "Jain Brothers Stationery and Book Shop",
+  "Ten boxes",
+  "Price",
+  "Maam",
+  "Boxes"
+ ],
+ "keywords": [
+  "Jain Brothers Stationery and Book Shop",
+  "Ten boxes",
+  "Price",
+  "Boxes"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 39.64,
+   "turns": 6,
+   "share": 0.498
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 39.97,
+   "turns": 5,
+   "share": 0.502
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.34,
+   "end": 1.16,
+   "text": "नमस्ते",
+   "hinglish": "namaste",
+   "translation": "Hello",
+   "source_text": "नमस्कार",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 0.75,
+   "end": 4.39,
+   "text": "हलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ",
+   "hinglish": "hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon",
+   "translation": "I am speaking at Jain Brothers Stationery and Book Shop",
+   "source_text": "हलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 4.83,
+   "end": 7.68,
+   "text": "आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "hinglish": "aapke bacche ka naam vaibhav hai aapke ladke ka",
+   "translation": "Your child's name is Vaibhav",
+   "source_text": "आपके बच्चे का नाम वैभव है आपके लड़के का",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 7.94,
+   "end": 18.79,
+   "text": "हमें क्या कहते हैं टेन के बॉक्सेस चाहिए थे छः बॉक्स हाँ जी हमें हमें दो बॉक्स के रेड के दो ब्लू के और दो ब्लैक के चाहिए न",
+   "hinglish": "hamen kya kahte hain ten ke boxes chahiye the chhah box haan ji hamen hamen do box ke red ke do blue ke aur do black ke chahiye na",
+   "translation": "What do we say",
+   "source_text": "हमें क्या कहते हैं टेन के बॉक्सेस चाहिए थे छः बॉक्स हाँ जी हमें हमें दो बॉक्स के रेड के दो ब्लू के और दो ब्लैक के चाहिए न",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 19.36,
+   "end": 22.09,
+   "text": "हाँ और वो कत",
+   "hinglish": "haan aur wo kat",
+   "translation": "",
+   "source_text": "हाँ और वो कत",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 20.73,
+   "end": 33.17,
+   "text": "तो दस बॉक्स का थोड़ा प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः दे दी तो कुछ स्पेशल डिस्काउंट भी मिलेगा तो आप मेरा एक काम करिए आइटम नोट कर दीजिए और मुझे",
+   "hinglish": "to das box ka thoda price padega to ma'am ek box do sau rupye ka padega to main chhah de di to kuch special discount bhi milega to aap mera ek kaam karie item note kar dijie aur mujhe",
+   "translation": "",
+   "source_text": "तो दस बॉक्स का थोड़ा प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः दे दी तो कुछ स्पेशल डिस्काउंट भी मिलेगा तो आप मेरा एक काम करिए आइटम नोट कर दीजिए और मुझे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 32.07,
+   "end": 42.85,
+   "text": "वो तो आपने उसको शुगर फूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+   "hinglish": "wo to aapne usko shugar phool bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+   "translation": "He sent her sugar flowers and she got sick and had a fever, her body temperature rose",
+   "source_text": "वो तो आपने उसको शुगर फूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 43.03,
+   "end": 49.67,
+   "text": "मेरे को टेप चाहिए है मुझे रंग बिरंगे वाले चाहिए है अब जो भी",
+   "hinglish": "mere ko tape chahiye hai mujhe rang birange wale chahiye hai ab jo bhi",
+   "translation": "I want tape and color birange wallet, please",
+   "source_text": "मेरे को टेप चाहिए है मुझे रंग बिरंगे वाले चाहिए है अब जो भी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 48.17,
+   "end": 53.23,
+   "text": "अब जो भी होने के बाद हो सक्ता है की इतनी ज्यादा गर्मी हो गई है",
+   "hinglish": "ab jo bhi hone ke baad ho sakta hai ki itni zyada garmi ho gayi hai",
+   "translation": "Whoever is there, please tell me about the good prices",
+   "source_text": "अब जो भी होने के बाद हो सकता है की इतनी ज्यादा गर्मी हो गई है",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S2",
+   "start": 52.0,
+   "end": 58.4,
+   "text": "बारह सौ बस हाँ अब आप मेरे को इन अच्छा प्राइस के बारे में बताइए हाँ सर",
+   "hinglish": "barah sau bas haan ab aap mere ko in achha price ke bare mein bataie haan sir",
+   "translation": "Twelve hundred buses, please tell me about the good prices",
+   "source_text": "बारह सौ बस हाँ अब आप मेरे को इन अच्छा प्राइस के बारे में बताइए हाँ सर",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S1",
+   "start": 58.76,
+   "end": 76.16,
+   "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर तवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ गई है तो घर ले जाइए कुछ दिन आराम कर देगा तो स्वास्थ्य उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको फूल भेजिएगा",
+   "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai har tava to hum dilva denge lekin aap agar hain to aa gayi hai to ghar le jaie kuch din aaram kar dega to svaasthy uski theek ho jaegi to phir aap dobara se usko phool bhejiega",
+   "translation": "Her water shortage may have caused her illness, but she got better with our help. We will provide her with a good price, but if you are here, take her home and rest for a few days. She will get better.",
+   "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर तवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ गई है तो घर ले जाइए कुछ दिन आराम कर देगा तबियत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको फूल भेजिएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 46.815,
+  "prompt_tokens": 1957,
+  "completion_tokens": 997,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 3,
+  "lines_reverted": 6,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 9,
+  "missing_translations": 2,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "4c81b2e7c7852f23c351773f7ee9e9fe6653a0cf4ea9aa182df9c6b1c6ac954c",
+  "source_line_count": 11,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:22:50Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 76.75
+ }
+}

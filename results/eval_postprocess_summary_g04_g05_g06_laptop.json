@@ -1,0 +1,17 @@
+{
+ "model": "ai4bharat/Airavata",
+ "context_tokens": 4096,
+ "conversations": 27,
+ "server_peak_rss_mb": 1024.8,
+ "workers": 1,
+ "wall_s_this_run": 5766.9,
+ "groups": [
+  4,
+  5,
+  6
+ ],
+ "machine": "RTX 3050 Laptop GPU (6 GB, all layers on the GPU), AMD Ryzen 5 7640HS (6 cores), 15.3 GB RAM, Windows 11",
+ "gpu_layers": 99,
+ "llama_cpp": "b11312 prebuilt win-cuda-12.4 (commit 0c1e570)",
+ "server": "scripts/serve_llm.py --llama-bin C:\\whospoke-data\\llama-b11312-cuda12.4 --gpu-layers 99 --parallel 1"
+}

@@ -1,0 +1,238 @@
+{
+ "title": "Marriage Ceremony",
+ "topic": "Ten-Year-Old Wedding Ceremony",
+ "executive_summary": "A conversation about a marriage ceremony.",
+ "key_points": [
+  "Ten-Year-Old Wedding Ceremony",
+  "Photoshoot",
+  "Pre-wedding Shoot",
+  "Wedding"
+ ],
+ "keywords": [
+  "marriage",
+  "ceremony",
+  "ten-year-old",
+  "photoshoot",
+  "wedding"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 28.51,
+   "turns": 4,
+   "share": 0.43
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 15.73,
+   "turns": 4,
+   "share": 0.237
+  },
+  {
+   "speaker": "S3",
+   "talk_time_s": 22.12,
+   "turns": 4,
+   "share": 0.333
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.33,
+   "end": 1.29,
+   "text": "नमस्कार सर",
+   "hinglish": "namaskar sir",
+   "translation": "Hello sir",
+   "source_text": "नमस्कार सर",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 2,
+   "speaker": "S3",
+   "start": 1.97,
+   "end": 10.81,
+   "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+   "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
+   "translation": "Hello ma'am",
+   "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 11.38,
+   "end": 16.49,
+   "text": "हेलो हेलो सर नमस्कार मैं अजीत बोल रहा था जी मेरे ग्राफ बात फोटो",
+   "hinglish": "hello hello sir namaskar main ajit bol raha tha ji mere graaph baat photo",
+   "translation": "Hello sir, I was speaking about my graph and my photo",
+   "source_text": "हेलो हेलो सर नमस्कार मैं अजीत बोल रहा था जी मेरे ग्राफ बात फोटो",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 4,
+   "speaker": "S3",
+   "start": 15.61,
+   "end": 17.37,
+   "text": "लखनऊ में है",
+   "hinglish": "lakhnau mein hai",
+   "translation": "There is a place called Lucknow",
+   "source_text": "लखनऊ में है",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 17.74,
+   "end": 22.98,
+   "text": "बिरयानी चाहिए थी",
+   "hinglish": "biryani chahiye thi",
+   "translation": "Biryani was needed",
+   "source_text": "बिरयानी चाहिए थी",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 23.16,
+   "end": 25.56,
+   "text": "जी सर ये मेरे यहाँ दस दूर की शादी है",
+   "hinglish": "ji sir ye mere yahan das door ki shadi hai",
+   "translation": "Sir, there is a ten-year-old marriage ceremony here",
+   "source_text": "जी सर ये मेरे यहाँ दस दूर की शादी है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 26.46,
+   "end": 28.86,
+   "text": "पाँच बजे के लिए चाहिए",
+   "hinglish": "paanch baje ke liye chahiye",
+   "translation": "S2",
+   "source_text": "पाँच बजे के लिए चाहिए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 27.66,
+   "end": 41.86,
+   "text": "फोटोशूट करने के लिए आप जूस भी देते",
+   "hinglish": "photoshoot karne ke liye aap juice bhi dete",
+   "translation": "S1",
+   "source_text": "फोटोशूट करने के लिए आप जूस भी देते",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 10,
+   "speaker": "S3",
+   "start": 30.57,
+   "end": 34.55,
+   "text": "कैसा क्या रहता है मतलब मेरे जो श्री",
+   "hinglish": "kaisa kya rahta hai matlab mere jo shri",
+   "translation": "S3",
+   "source_text": "कैसा क्या रहता है मतलब मेरे जो श्री",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 11,
+   "speaker": "S2",
+   "start": 42.39,
+   "end": 49.52,
+   "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खाना वाना समोसा मोटा ये सब",
+   "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khana wana samosa mota ye sab",
+   "translation": "S2",
+   "source_text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खाना वाना समोसा मोटा ये सब",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 12,
+   "speaker": "S3",
+   "start": 50.06,
+   "end": 57.6,
+   "text": "कब से आपको दिक्कत आ रहा है पैर का आपके पैर में सूजन है क्या क्या दिक्कत है पैर में आपको खा भी आ रहा है",
+   "hinglish": "kab se aapko dikkat aa raha hai pair ka aapke pair mein sujan hai kya kya dikkat hai pair mein aapko kha bhi aa raha hai",
+   "translation": "S3",
+   "source_text": "कब से आपको दिक्कत आ रहा है पैर का आपके पैर में सूजन है क्या क्या दिक्कत है पैर में आपको खा भी आ रहा है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 13,
+   "speaker": "S1",
+   "start": 58.23,
+   "end": 65.03,
+   "text": "तो प्री वेडिंग शूट गया फोटोशूट कम से कम अच्छी लोकेशन पे चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको हाँ",
+   "hinglish": "to pri wedding shoot gaya photoshoot kam se kam achhi location pe chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko haan",
+   "translation": "S1",
+   "source_text": "तो प्री वेडिंग शूट गया फोटोशूट कम से कम अच्छी लोकेशन पे चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको हाँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  }
+ ],
+ "uncertain_lines": [
+  2,
+  5,
+  6,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 35.037,
+  "prompt_tokens": 1728,
+  "completion_tokens": 746,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 0,
+  "lines_reverted": 7,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 2,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 1,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "d86155f7950ede8a29ffc3aee9dd72b4a4f08ebb2d7d17fb5c4c49902eb91bd6",
+  "source_line_count": 13,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T14:06:44Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 65.67
+ }
+}

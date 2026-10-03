@@ -1,0 +1,193 @@
+{
+ "title": "Transcript of a conversation about buying boxes",
+ "topic": "boxes",
+ "executive_summary": "A conversation about buying boxes.",
+ "key_points": [
+  "Jain Brothers' boxes",
+  "price",
+  "sick",
+  "help",
+  "health"
+ ],
+ "keywords": [
+  "boxes",
+  "Jain Brothers",
+  "price",
+  "sick"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 42.32,
+   "turns": 5,
+   "share": 0.536
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 36.59,
+   "turns": 4,
+   "share": 0.464
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.77,
+   "end": 10.79,
+   "text": "हेलो क्या मैं जैन ब्रदर्स का नाम के बॉक्सेस चाहिए थे छह बॉक्स हाँ जी और",
+   "hinglish": "hello kya main jain bradars ka naam ke boxes chahiye the chhah box haan ji aur",
+   "translation": "Hello, can you give me six boxes of Jain Brothers' boxes?",
+   "source_text": "हेलो क्या मैं जैन ब्रदर्स का नाम के बॉक्सेस चाहिए थे छह बॉक्स हाँ जी और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 2.69,
+   "end": 6.64,
+   "text": "नमस्ते आपका बड़ा का नाम वैभव है आपके लड़के का",
+   "hinglish": "namaste aapka bada ka naam vaibhav hai aapke ladke ka",
+   "translation": "Hello, your elder brother's name is Vaibhav and your boy's",
+   "source_text": "नमस्ते आपके बड़ी का नाम वैभव है आपके लड़के का",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 9.43,
+   "end": 12.15,
+   "text": "जी हाँ और वो लोग अच्छा दर्श में पड़ता है",
+   "hinglish": "ji haan aur wo log achha darsh mein padta hai",
+   "translation": "Yes, and those people are good at doing a good deed.",
+   "source_text": "जी हाँ और वो लोग अच्छा दर्श में पड़ता है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 12.9,
+   "end": 25.26,
+   "text": "हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं तो एक बॉक्स का कितना प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ",
+   "hinglish": "hamen do box uske red ke do blue ke aur do black ke chahiye hain to ek box ka kitna price padega to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon",
+   "translation": "We need two boxes of his red, two boxes of blue, and two boxes of black, and how much would it cost for one box?",
+   "source_text": "हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं तो एक बॉक्स का कितना प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 23.49,
+   "end": 33.62,
+   "text": "वो साथ में उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है",
+   "hinglish": "wo saath mein usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka saath badh gaya hai",
+   "translation": "He was sent to school with her in the morning and she got sick and her body temperature rose, and her body became swollen.",
+   "source_text": "वो साथ में उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 33.99,
+   "end": 40.71,
+   "text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसकी प्राइस बता दीजिए तो अभी जो भी हो",
+   "hinglish": "haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uski price bata dijie to abhi jo bhi ho",
+   "translation": "Yes, do an item note and tell me the price of the item.",
+   "source_text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसकी प्राइस बता दीजिए तो अभी जो भी हो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 39.15,
+   "end": 50.37,
+   "text": "अगर जो भी हो यहाँ आने के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो मिल गया है",
+   "hinglish": "agar jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo mil gaya hai",
+   "translation": "If anyone comes here after the heat has been so bad that water shortages have occurred, he has gotten it by his own means.",
+   "source_text": "अगर जो भी हो यहाँ आने के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो मिल गया है",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 48.32,
+   "end": 55.81,
+   "text": "अगर बीमार हो जाएगा",
+   "hinglish": "agar bimar ho jaega",
+   "translation": "If he gets sick.",
+   "source_text": "बीमार हो जाएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 52.75,
+   "end": 67.05,
+   "text": "हाँ सवा तो हम लगवा देंगे लेकिन आप तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+   "hinglish": "haan sava to hum lagva denge lekin aap to agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar dega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega achha to kab tak aaenge",
+   "translation": "Yes, we will get him a ride, but if you are, come and get your child home for a few days, then you will send him to school as soon as possible.",
+   "source_text": "हाँ सवा तो हम लगवा देंगे लेकिन आप तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 43.416,
+  "prompt_tokens": 1826,
+  "completion_tokens": 922,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 1,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 9,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 2,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "3a04f5432fa3bc1f56b5c8a33b965d3c298494fa0e7f02872a9a2318b84cab48",
+  "source_line_count": 9,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-03T13:32:51Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 67.49
+ }
+}
