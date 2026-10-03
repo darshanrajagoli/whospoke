@@ -1,0 +1,44 @@
+<section id="next" data-transition="fade" style="background:#FAF9F5;color:#141413;font-family:'Lora', Georgia, serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.15;color:#141413">The report, and where we go next</h2>
+<div style="flex:1;display:flex;flex-direction:row;gap:40px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#141413;padding:36px;border-radius:16px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:#B0AEA5">Real report output</p>
+<p style="font-size:24px;color:#B0AEA5">Key point</p>
+<p style="font-size:28px;line-height:1.35;color:#FAF9F5">Speaker A lost his ID card</p>
+<hr style="border-top:1px solid #3D3D3A">
+<p style="font-size:24px;color:#B0AEA5">Line 13 · Speaker_A · 00:51</p>
+<p style="font-size:28px;line-height:1.35;color:#FAF9F5">to ab kab tak kitne baje tak office khula hai sir apna</p>
+<p style="font-size:28px;line-height:1.35;color:#D97757"><i>“The office is open until what time?”</i></p>
+<div style="flex:1"></div>
+<p style="font-size:24px;line-height:1.35;color:#B0AEA5">Summary, keywords and an English line for every line, written by Airavata 7B.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:24px;padding:36px 0 0 0">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#141413">What we learned</h3>
+<p style="font-size:26px;line-height:1.4;color:#3D3D3A"><b>It never touches who or when.</b> Speakers and times are copied from Stage 2, not written by the LLM.</p>
+<p style="font-size:26px;line-height:1.4;color:#3D3D3A"><b>Its “repair” does not help.</b> It adds 0.9 points of error, so the transcript stays the record.</p>
+<p style="font-size:26px;line-height:1.4;color:#3D3D3A"><b>Errors cascade.</b> Keywords really said: 99% from a perfect transcript, 60% from real ASR.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:24px;padding:36px 0 0 0">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#141413">Where we go next</h3>
+<p style="font-size:26px;line-height:1.4;color:#3D3D3A"><b>Who-spoke-when.</b> About 20 of the 49.5 points. Next: voice fingerprints tuned on Hindi conversations.</p>
+<p style="font-size:26px;line-height:1.4;color:#3D3D3A"><b>Action items.</b> A larger instruction-tuned LLM, one setting away.</p>
+<p style="font-size:26px;line-height:1.4;color:#3D3D3A"><b>Separation.</b> Trained on English speech today. Next: train it on Indian voices and noise.</p>
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;height:40px;display:flex;flex-direction:row;gap:24px;align-items:center">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:24px;font-weight:500;color:#5E5D59">One command, recording to report:</p>
+<p style="font-family:'Courier New', monospace;font-size:24px;font-weight:600;color:#141413">python -m whospoke run recording.wav --postprocess</p>
+</div>
+<aside>DARSHAN (about 60 seconds)
+
+Finally, the report. A local Hindi LLM, AI4Bharat's Airavata, writes a summary, keywords and an English translation of every line. Here it picks out that the speaker lost his ID card, and translates his question about office hours.
+
+We tested the LLM as carefully as the rest, and learned three things.
+First, it never touches who spoke or when. Those come straight from diarization.
+Second, its attempt to repair the transcript does not help. It adds about one point of error, so the transcript stays the record.
+Third, errors cascade. From a perfect transcript, 99 percent of its keywords were really said. From real speech recognition, 60.
+
+The breakdown also tells us where to go next. Who-spoke-when is the largest share of the error, so first: voice fingerprints tuned on Hindi conversations. Then a larger LLM to pull out action items, and separation trained on Indian voices and noise.
+
+All of it runs with one command, from a recording to a report. Thank you.</aside>
+</section>
