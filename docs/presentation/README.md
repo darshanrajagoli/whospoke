@@ -10,7 +10,7 @@ and Darshan slides 2–3. Abhinav and Shrivaths stand with the team; all four mu
 | File | [demo-video/vismAI.pptx](demo-video/vismAI.pptx) (and a [PDF](demo-video/vismAI.pdf)) | — |
 | Slide 1 | Pipeline with owners and tools; an 18 s clip of a test conversation with whospoke's timeline and transcript in sync; Speaker A and Speaker B separated from the overlap, each playable | Pipeline, owners, one real output line |
 | Script | [demo-video/SCRIPT.md](demo-video/SCRIPT.md), about 3:55 | [main/SCRIPT.md](main/SCRIPT.md), about 3:25 |
-| What every line means | [demo-video/EXPLAINER.md](demo-video/EXPLAINER.md) | [main/EXPLAINER.md](main/EXPLAINER.md) |
+| What every line means | [demo-video/EXPLAINER.md](demo-video/EXPLAINER.md): every slide, number and clip in the submitted deck | [main/EXPLAINER.md](main/EXPLAINER.md) (older wording) |
 | Slides' source | [demo-video/deck/](demo-video/deck/) | [main/deck/](main/deck/) |
 
 Who built what (the contributions statement the FAQ asks for):
