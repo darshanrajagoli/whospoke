@@ -1,28 +1,28 @@
 <section id="results" data-transition="fade" style="background:#FAF9F5;color:#141413;font-family:'Lora', Georgia, serif;padding:128px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:16px">
 <h2 style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.15;color:#141413">All four milestones work on unseen test audio</h2>
-<p style="font-size:28px;line-height:1.4;color:#5E5D59">72 test conversations (83 min) of real conversational Hindi with real village and market noise. Test speakers were never used for tuning.</p>
+<p style="font-size:28px;line-height:1.4;color:#5E5D59">Held-out test set: 72 conversations (83 min) built from real conversational Hindi (IndicVoices) and real village and market noise. Test speakers never used for tuning.</p>
 </div>
 <div style="flex:1;display:flex;flex-direction:row;gap:64px">
 <div style="flex:1.2;display:flex;flex-direction:column;gap:18px">
 <h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#141413">Where the errors come from</h3>
-<p style="font-size:24px;line-height:1.35;color:#5E5D59">Error = words misheard or given to the wrong speaker (cpWER)</p>
+<p style="font-size:24px;line-height:1.35;color:#5E5D59">cpWER: a word is wrong if misheard or given to the wrong speaker</p>
 <div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:24px;color:#3D3D3A">Speech recogniser alone, one clean voice</p>
+<p style="font-size:24px;color:#3D3D3A">ASR alone: clean voices, true speaker timeline</p>
 <div style="display:flex;flex-direction:row;gap:16px;align-items:center">
 <div style="width:212px;height:40px;background:#6A9BCC;border-radius:6px"></div>
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#141413">17.7%</p>
 </div>
 </div>
 <div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:24px;color:#3D3D3A">+ noise and overlapping speech</p>
+<p style="font-size:24px;color:#3D3D3A">+ noise and overlapping speech (true timeline)</p>
 <div style="display:flex;flex-direction:row;gap:16px;align-items:center">
 <div style="width:356px;height:40px;background:#6A9BCC;border-radius:6px"></div>
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#141413">29.7%</p>
 </div>
 </div>
 <div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:24px;color:#141413"><b>+ automatic who-spoke-when = our full pipeline</b></p>
+<p style="font-size:24px;color:#141413"><b>+ our diarization = full pipeline (Order B)</b></p>
 <div style="display:flex;flex-direction:row;gap:16px;align-items:center">
 <div style="width:594px;height:40px;background:#D97757;border-radius:6px"></div>
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#141413">49.5%</p>
@@ -30,7 +30,7 @@
 </div>
 <hr style="border-top:2px dashed #E8E6DC">
 <div style="display:flex;flex-direction:column;gap:6px">
-<p style="font-size:24px;color:#3D3D3A">Proposal's order: separate everything first</p>
+<p style="font-size:24px;color:#3D3D3A">Proposal's order (A): separate first, then diarize · DER 26.2%</p>
 <div style="display:flex;flex-direction:row;gap:16px;align-items:center">
 <div style="width:670px;height:40px;background:#B0AEA5;border-radius:6px"></div>
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#141413">55.8%</p>
@@ -42,40 +42,41 @@
 <div style="display:flex;flex-direction:column;gap:8px;background:#F0EEE6;padding:28px;border-radius:16px">
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:#5E5D59">M1 Separation</p>
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1;color:#141413">+9.6 dB</p>
-<p style="font-size:24px;line-height:1.35;color:#3D3D3A">clearer speech where two voices overlap</p>
+<p style="font-size:24px;line-height:1.35;color:#3D3D3A">SI-SDR gain on overlapping speech (Conv-TasNet)</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:8px;background:#F0EEE6;padding:28px;border-radius:16px">
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:#5E5D59">M2 Diarization</p>
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1;color:#141413">20.3%</p>
-<p style="font-size:24px;line-height:1.35;color:#3D3D3A">error, built from scratch; standard pyannote: 18.4%</p>
+<p style="font-size:24px;line-height:1.35;color:#3D3D3A">DER, our clustering; pyannote 3.1: 18.4%</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:8px;background:#F0EEE6;padding:28px;border-radius:16px">
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:#5E5D59">M3 Transcription</p>
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1;color:#141413">21%</p>
-<p style="font-size:24px;line-height:1.35;color:#3D3D3A">word error on real-world Hindi; IndicWav2Vec: 38%</p>
+<p style="font-size:24px;line-height:1.35;color:#3D3D3A">WER on real-world Hindi (Vaani); IndicWav2Vec: 38%</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:8px;background:#F0EEE6;padding:28px;border-radius:16px">
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:#5E5D59">M4 LLM report</p>
 <p style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1;color:#141413">~1 min</p>
-<p style="font-size:24px;line-height:1.35;color:#3D3D3A">per minute of audio, fully local on a 6 GB laptop GPU</p>
+<p style="font-size:24px;line-height:1.35;color:#3D3D3A">per minute of audio: Airavata 7B, 4-bit, 6 GB laptop GPU</p>
 </div>
 </div>
 </div>
-<aside>DARSHAN (about 70 seconds)
+<aside>DARSHAN (about 80 seconds)
 
-Thanks, Vismay. Everything here is measured on 72 test conversations, 83 minutes of real conversational Hindi with real village and market noise. None of the test speakers were used for tuning.
+Thanks, Vismay. Everything here is measured on a held-out test set: 72 conversations, 83 minutes, built from real conversational Hindi and real village and market noise.
 
-Our main measure is strict. A word counts as wrong if it is misheard, or if it is given to the wrong speaker.
+Our main metric is cpWER, from the CHiME-6 challenge. A word counts as wrong if it is misheard, or if it is given to the wrong speaker.
 
 [Point to the bars, top to bottom.]
-This chart shows where the errors come from. The speech recogniser alone, on one clean voice: 17.7 percent. Add noise and overlapping speech: 29.7. Add fully automatic who-spoke-when: 49.5.
+The ASR alone, on clean voices with the true speaker timeline: 17.7 percent. Add noise and overlap: 29.7. Replace the true timeline with our diarization: 49.5.
 
-That last step, telling apart two people who talk over each other in a noisy market, is the largest source of error. Our clustering, both the spectral clustering and the Gaussian mixture the proposal asks for, is written from scratch, and it comes within error bars of pyannote, the standard tool.
+So diarization adds about 20 points, the largest share. Our clustering, spectral and GMM as the proposal asks, is implemented from scratch, and its diarization error, 20.3 percent, is within the confidence interval of pyannote 3.1, the standard tool.
 
 [Point to the grey bar.]
-And diarization works best on the original recording, before separation touches it. The proposal's order, separating everything first, gets 55.8. Ours makes 11 percent fewer errors, and wins in 50 of the 72 conversations.
+And diarization works best on the original audio. On separated audio its error rises from 20 to 26 percent, so the proposal's order, separating everything first, ends at 55.8. Ours makes 11 percent fewer errors, and wins in 50 of the 72 conversations.
 
-(Leave the cards on the right for the audience to read; the clip used the time.)
+[Point to the M1 and M3 cards.]
+Per stage: separation gains 9.6 dB SI-SDR where voices overlap, and IndicConformer gets 21 percent word error on real-world Hindi, against 38 for IndicWav2Vec, the proposal's alternative.
 
 [NEXT SLIDE.]</aside>
 </section>
