@@ -43,6 +43,10 @@ it to the audio.
 
 ## How to run it on the day
 
+**Plan on the day:** Vismay plays all three clips from his phone, held to the mic (links and steps at the top of
+[SCRIPT.md](SCRIPT.md)); the slide shows the clip's still, which already has the full timeline and transcript. The
+embedded clips below are there if the PC plays them.
+
 [vismAI.pptx](vismAI.pptx) already has all three clips embedded ([build_pptx.py](build_pptx.py)). A click on a clip
 plays it with sound and a second click pauses it; a click anywhere else moves to the next slide. Order on slide 1:
 the big clip, then "Speaker A", then "Speaker B".
