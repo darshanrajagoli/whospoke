@@ -9,12 +9,17 @@ Lines in [brackets] are cues. Don't read them out.
 
 ---
 
-## The audio: Vismay plays all three from his phone
+## Worst case: the audio from Vismay's phone
 
-**Download all three to your phone before 4 PM** (tap each link, then save), so they play without internet. Turn the
-volume to full and silence notifications. On stage, play each one from the phone's files or gallery and hold the
-phone's speaker close to the mic. Don't click the clips on the PC; the slide already shows whospoke's full timeline
-and transcript for the clip.
+First choice is the PC: click each clip on slide 1. **If the PC won't play them** (the file opened in a browser, or
+no sound), play all three from your phone instead, held close to the mic. The slide still shows whospoke's full
+timeline and transcript, so nothing is lost.
+
+You'll be reading this script on the same phone, so set it up before 4 PM:
+
+- **Download all three** (tap each link, then save), so they play without internet, and keep them in one folder.
+- **Keep the folder open in a second app** (Files or Gallery), so switching from the script to the audio is one swipe.
+- Volume to full; notifications and calls silenced (Do Not Disturb).
 
 1. [Main clip, 18 s](https://github.com/darshanrajagoli/whospoke/raw/main/docs/presentation/demo-video/whospoke_demo.mp4): the noisy conversation
 2. [Speaker A, 7.5 s](https://github.com/darshanrajagoli/whospoke/raw/main/docs/presentation/demo-video/speaker_a.mp4): first separated voice
@@ -28,12 +33,13 @@ Good evening. We are team vismAI, and our project is whospoke: speaker-attribute
 
 Here are eighteen seconds of one of our test conversations: two speakers overlapping, with market noise behind them. On screen: whospoke's speaker timeline and transcript, from the audio alone.
 
-[PHONE: play file 1, the main clip, held to the mic. Let it play to the end, about 18 seconds. Say nothing.]
+[CLICK THE BIG CLIP on the PC. Let it play to the end, about 18 seconds. Say nothing.]
+[Won't play? Phone: file 1, held to the mic.]
 
 The pipeline is the proposal's four milestones, and each of us owned one. I built separation, using Conv-TasNet, a neural network that splits a recording into one track per speaker. This is the part of that clip where both of them talk at once, separated.
 
-[PHONE: play file 2, Speaker A, about 7 seconds.]
-[PHONE: play file 3, Speaker B, about 7 seconds.]
+[CLICK "Speaker A", about 7 seconds. Then CLICK "Speaker B", about 7 seconds.]
+[Won't play? Phone: file 2, then file 3.]
 
 Darshan built diarization, which uses speaker embeddings and our own clustering to work out who is speaking when. Abhinav built transcription, with AI4Bharat's IndicConformer and a Hinglish romaniser. Shrivaths built the report, with Airavata, a 7-billion-parameter Hindi LLM, running 4-bit on a laptop GPU.
 
@@ -78,7 +84,8 @@ All of it runs with one command, from a recording to a report. Thank you.
 ## Rehearsal checklist
 
 - Time it out loud. Aim for 3:50 to 3:58; talk a little fast.
-- Vismay: practise playing the three phone files in order, 1, 2, 3, with the phone held to a mic or speaker. Keep them in one folder so they're one tap apart.
+- Vismay: on the PC, click the big clip, then "Speaker A", then "Speaker B", on the clip itself (a click beside it moves to the next slide).
+- Vismay: practise the worst case once too: switch from the script to the audio folder and play files 1, 2, 3 with the phone held to a speaker.
 - Practise the handover: "Darshan will show you why" is the cue for Darshan to step forward.
 - Say "error", never "accuracy". Lower is better.
 - Say "test conversation", not "real recording": the speech and noise are real, the mix is ours.
