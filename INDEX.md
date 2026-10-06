@@ -14,6 +14,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | 6 | [docs/MILESTONE4.md](docs/MILESTONE4.md) | Stage 4 in full: running the LLM, the report, the prompts, the guardrails, settings |
 | 7 | [docs/RESULTS_TABLES.md](docs/RESULTS_TABLES.md) | Raw result tables with 95 % confidence intervals (generated, not hand-written) |
 | 8 | [Audio_Engineering_AI_Project_Proposal.docx](Audio_Engineering_AI_Project_Proposal.docx) | The original brief |
+| — | [docs/DATASETS.md](docs/DATASETS.md) | Every dataset: where it comes from, how big it is, what it is used for, and how test data is kept apart |
 | — | [docs/notes_asr_backends.md](docs/notes_asr_backends.md) | Notes on the ASR decoding modes and their benchmark |
 
 ## For the team
