@@ -20,7 +20,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 
 | File | Purpose |
 |---|---|
-| [docs/presentation/](docs/presentation/README.md) | **Midsem flash talk (6 Oct):** the 3-slide deck in two versions (main, and a backup with a demo video), each with its script and an explainer of every line |
+| [docs/presentation/](docs/presentation/README.md) | **Midsem flash talk (6 Oct):** the submitted deck (`vismAI.pptx`, with playable audio), its script and an explainer of every line; plus the first version |
 | [docs/team/WHATSAPP_MESSAGE.md](docs/team/WHATSAPP_MESSAGE.md) | The message that split the mid-sem review tasks (sent; kept as written) |
 | [docs/team/RED_TEAM_AUDIT_PROMPT.md](docs/team/RED_TEAM_AUDIT_PROMPT.md) | Prompt for the independent audit (output → `audit/RED_TEAM_AUDIT.md`) |
 | [docs/team/EMAIL_TO_PROFESSOR.md](docs/team/EMAIL_TO_PROFESSOR.md) | Draft email flagging the two design decisions before the review |

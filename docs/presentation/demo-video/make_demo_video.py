@@ -1,6 +1,6 @@
 """Render the flash-talk demo clip (whospoke_demo.mp4 + whospoke_demo_still.png).
 
-The real test recording (test_g02_2spk_ovl-high_market5, the one in results/demo) plays while whospoke's own
+The test conversation (test_g02_2spk_ovl-high_market5, the one in results/demo) plays while whospoke's own
 output for it, the speaker timeline and the Hinglish transcript in results/demo, appears in sync. Nothing is
 re-run: the clip replays the committed output against the audio. 1920x1080, 25 fps, H.264 + AAC.
 
@@ -66,7 +66,7 @@ def wrap(text, font, width):
 def frame(t):
     im = Image.new("RGB", (W, H), IVORY)
     d = ImageDraw.Draw(im)
-    d.text((M, 96), "REAL TEST CONVERSATION  ·  2 SPEAKERS  ·  HEAVY OVERLAP  ·  MARKET NOISE", font=EYEBROW, fill=GRAY)
+    d.text((M, 96), "TEST CONVERSATION  ·  2 SPEAKERS  ·  HEAVY OVERLAP  ·  MARKET NOISE", font=EYEBROW, fill=GRAY)
     s = int(t)
     d.text((R, 96), f"00:{s:02d}", font=CLOCK, fill=DARK, anchor="ra")
     # waveform
