@@ -21,7 +21,8 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from whospoke.corpora import conversation_sides, fetch, read_indicvoices, recording_utterances  # noqa: E402
+from whospoke.corpora import (conversation_sides, fetch, fetch_indicvoices, read_indicvoices,
+                              recording_utterances)  # noqa: E402
 from whospoke.noise import NoiseBank  # noqa: E402
 from whospoke.paths import DATA, SYNTH, conversation  # noqa: E402
 from whospoke.synth import SynthConfig, simulate  # noqa: E402
@@ -119,6 +120,8 @@ def main() -> None:
     ap.add_argument("--dev-groups", type=int, default=4)
     ap.add_argument("--target-s", type=float, default=60.0)
     ap.add_argument("--seed", type=int, default=407)
+    ap.add_argument("--language", "-l", default="hindi",
+                    help="IndicVoices language (name or code, default: 'hindi')")
     ap.add_argument("--refresh-references", action="store_true",
                     help="only recompute reference activity/RTTM/overlap for already-built conversations")
     args = ap.parse_args()
@@ -126,8 +129,8 @@ def main() -> None:
         refresh_references()
         return
 
-    valid = fetch("ai4bharat/IndicVoices", "hindi/valid-00000-of-00001.parquet", "indicvoices")
-    train0 = fetch("ai4bharat/IndicVoices", "hindi/train-00000-of-00082.parquet", "indicvoices")
+    valid = fetch_indicvoices(args.language, "valid", 0)
+    train0 = fetch_indicvoices(args.language, "train", 0)
 
     test_df = read_indicvoices(valid, with_audio=True)
     test_sides = conversation_sides(test_df)

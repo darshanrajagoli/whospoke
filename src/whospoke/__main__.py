@@ -49,9 +49,10 @@ def add_llm_args(parser: argparse.ArgumentParser) -> None:
                    help="do not ask the server to enforce the JSON schema (the Python checks still run)")
 
 
-def build_postprocessor(args: argparse.Namespace) -> PostProcessor:
+def build_postprocessor(args: argparse.Namespace, language: str | None = None) -> PostProcessor:
+    lang = getattr(args, "language", None) or language or "hi"
     return PostProcessor(model=args.llm_model, base_url=args.llm_url, context_tokens=args.llm_context,
-                         timeout_s=args.llm_timeout, json_schema=not args.llm_no_schema)
+                         timeout_s=args.llm_timeout, json_schema=not args.llm_no_schema, language=lang)
 
 
 def default_out(audio: str) -> Path:
@@ -78,15 +79,15 @@ def separate_audio(args: argparse.Namespace) -> None:
 def run_audio(args: argparse.Namespace) -> None:
     from .pipeline import Pipeline
 
-    post = build_postprocessor(args) if args.postprocess else None
+    post = build_postprocessor(args, language=args.language) if args.postprocess else None
     if post is not None:
         post.backend.ping()           # fail now, not after minutes of audio processing
     pipe = Pipeline(args.order, diarizer=tuned_diarizer(args.order, args.clustering), asr=args.asr,
-                    postprocessor=post)
+                    postprocessor=post, language=args.language)
     result = pipe.run(load(args.audio), n_speakers=args.speakers)
     out = Path(args.out) if args.out else default_out(args.audio)
     result.save(out)
-    print(result.transcript(hinglish=True))
+    print(result.transcript(latin=True))
     if result.report is not None:
         print(f"\n{result.report['title']}\n{result.report['executive_summary']}\nreport: {out / 'report.md'}")
     elif result.report_error:
@@ -109,11 +110,11 @@ def postprocess_transcript(args: argparse.Namespace) -> None:
 
 
 def main() -> None:
-    # Devanagari output: a Windows console redirected to a file or pipe would otherwise use cp1252 and crash
+    # Native script output: a Windows console redirected to a file or pipe would otherwise use cp1252 and crash
     for stream in (sys.stdout, sys.stderr):
         if hasattr(stream, "reconfigure"):
             stream.reconfigure(encoding="utf-8", errors="replace")
-    ap = argparse.ArgumentParser(prog="whospoke", description="Who spoke what and when — Hindi/Hinglish audio.")
+    ap = argparse.ArgumentParser(prog="whospoke", description="Who spoke what and when — multilingual Indian audio (22 languages).")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     run = sub.add_parser("run", help="process one audio file")
@@ -122,6 +123,8 @@ def main() -> None:
     run.add_argument("--order", choices=["A", "B"], default="B")
     run.add_argument("--clustering", choices=["spectral", "gmm"], default="spectral")
     run.add_argument("--asr", choices=["indicconformer", "indicwav2vec"], default="indicconformer")
+    run.add_argument("--language", "-l", default="hi",
+                     help="regional language code or name (e.g. 'hi', 'bn', 'ta', 'telugu'; default: 'hi')")
     run.add_argument("--speakers", type=int, default=None, help="number of speakers, if known")
     run.add_argument("--postprocess", action="store_true",
                      help="also run Stage 4 (LLM report: summary, keywords, actions, cleaned dialogue)")
@@ -130,6 +133,8 @@ def main() -> None:
     post = sub.add_parser("postprocess", help="run Stage 4 on an existing transcript.json")
     post.add_argument("transcript")
     post.add_argument("--out", default=None, help="output folder (default: the transcript's folder)")
+    post.add_argument("--language", "-l", default=None,
+                      help="language code or name (default: auto-detect from transcript.json or 'hi')")
     add_llm_args(post)
 
     sep = sub.add_parser("separate", help="Stage 1 only: write one .wav per separated voice")

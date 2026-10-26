@@ -30,8 +30,10 @@ def test_pit_finds_the_swap():
 
 
 def test_der_perfect_and_confused():
+    pytest.importorskip("pyannote.metrics")
     ref = [(0, 5, "A"), (5, 10, "B")]
     assert metrics.der(ref, [(0, 5, "x"), (5, 10, "y")], collar=0)["der"] == pytest.approx(0)
+
     swapped_half = metrics.der(ref, [(0, 10, "x")], collar=0)
     assert swapped_half["confusion"] == pytest.approx(0.5)
     missed = metrics.der(ref, [(0, 5, "x")], collar=0)

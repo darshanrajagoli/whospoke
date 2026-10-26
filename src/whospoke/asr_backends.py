@@ -1,15 +1,16 @@
-"""Hindi ASR backends with a common ``transcribe(wavs, sr) -> list[str]`` interface.
+"""Regional Indian ASR backends with a common ``transcribe(wavs, sr) -> list[str]`` interface.
 
 Two pretrained AI4Bharat models are wrapped:
 
 * :class:`IndicConformerASR` -- ``ai4bharat/indic-conformer-600m-multilingual``
-  (hybrid CTC/RNNT Conformer, exported as TorchScript preprocessor + ONNX graphs).
-* :class:`IndicWav2VecASR` -- ``ai4bharat/indicwav2vec-hindi`` (wav2vec2 CTC,
-  greedy decoding, no LM).
+  (hybrid CTC/RNNT Conformer, exported as TorchScript preprocessor + ONNX graphs;
+  supports all 22 official scheduled Indian languages).
+* :class:`IndicWav2VecASR` -- ``ai4bharat/indicwav2vec-*`` (wav2vec2 CTC,
+  greedy decoding, no LM; available for Hindi, Bengali, Gujarati, Telugu, Odia, Tamil).
 
 Both take mono float32 audio (resampled to 16 kHz if needed), skip clips shorter
 than 0.1 s, split clips longer than ``max_chunk_s`` at low-energy points, and
-return Devanagari text. Heavy dependencies (torch, onnxruntime, transformers)
+return native-script text. Heavy dependencies (torch, onnxruntime, transformers)
 are imported lazily inside the constructors.
 """
 from __future__ import annotations
@@ -21,6 +22,8 @@ import os
 import re
 
 import numpy as np
+
+from .languages import resolve_language
 
 SAMPLE_RATE = 16000
 MIN_DURATION_S = 0.1
@@ -170,16 +173,24 @@ class IndicConformerASR(_ASRBackend):
         import onnxruntime as ort
         from huggingface_hub import snapshot_download
 
+        lang_info = resolve_language(language)
+        self.language = lang_info.conformer_code
         self.device = _resolve_device(device)
-        self.decoding, self.language = decoding, language
+        self.decoding = decoding
         self.batch_size, self.max_chunk_s = batch_size, max_chunk_s
         self._ort = ort
         self._assets = os.path.join(snapshot_download(self.repo_id), "assets")
 
         with open(os.path.join(self._assets, "vocab.json"), encoding="utf-8") as f:
-            self.vocab: list[str] = json.load(f)[language]
+            vocabs = json.load(f)
+            if self.language not in vocabs:
+                raise ValueError(f"Language {self.language!r} not in IndicConformer vocab.json. Available: {list(vocabs.keys())}")
+            self.vocab: list[str] = vocabs[self.language]
         with open(os.path.join(self._assets, "language_masks.json")) as f:
-            self._lang_idx = np.flatnonzero(np.asarray(json.load(f)[language], dtype=bool))
+            masks = json.load(f)
+            if self.language not in masks:
+                raise ValueError(f"Language {self.language!r} not in IndicConformer language_masks.json. Available: {list(masks.keys())}")
+            self._lang_idx = np.flatnonzero(np.asarray(masks[self.language], dtype=bool))
 
         self._torch = torch
         self.preprocessor = torch.jit.load(os.path.join(self._assets, "preprocessor.ts"),
@@ -299,12 +310,16 @@ class IndicConformerASR(_ASRBackend):
 
 # ------------------------------------------------------------------ IndicWav2Vec
 class IndicWav2VecASR(_ASRBackend):
-    """AI4Bharat IndicWav2Vec-Hindi (wav2vec2-large CTC) with greedy decoding.
+    """AI4Bharat IndicWav2Vec (wav2vec2-large CTC) with greedy decoding.
+
+    Available for Hindi, Bengali, Gujarati, Telugu, Odia, and Tamil. For other
+    languages, use :class:`IndicConformerASR` which covers all 22 scheduled languages.
 
     Args:
         device: ``"cuda"``, ``"cpu"`` or ``None`` (auto).
         fp16: run in half precision on GPU (default True; ~2x faster, same output
             in practice). Ignored on CPU.
+        language: language code or name (default ``"hi"``).
         batch_size: utterances per forward pass (padded, with attention mask).
         max_chunk_s: longer inputs are split at pauses into pieces of this size.
     """
@@ -313,11 +328,19 @@ class IndicWav2VecASR(_ASRBackend):
     repo_id = "ai4bharat/indicwav2vec-hindi"
 
     def __init__(self, device: str | None = None, fp16: bool = True, batch_size: int = 4,
-                 max_chunk_s: float = 20.0):
+                 max_chunk_s: float = 20.0, language: str = "hi"):
         import torch
         from huggingface_hub import hf_hub_download
         from transformers import Wav2Vec2Config, Wav2Vec2ForCTC, Wav2Vec2Processor
 
+        lang_info = resolve_language(language)
+        if not lang_info.wav2vec_repo:
+            raise ValueError(
+                f"AI4Bharat does not provide a standalone IndicWav2Vec CTC model for {lang_info.name} ({lang_info.code}). "
+                f"Please use 'indicconformer' (IndicConformerASR), which supports all 22 Indian languages including {lang_info.name}."
+            )
+        self.repo_id = lang_info.wav2vec_repo
+        self.language = lang_info.code
         self._torch = torch
         self.device = _resolve_device(device)
         self.batch_size, self.max_chunk_s = batch_size, max_chunk_s

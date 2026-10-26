@@ -1,8 +1,11 @@
 """Timeline-building logic of the diarizer (no neural models needed)."""
 import numpy as np
+import pytest
 
+pytest.importorskip("torch")
 from whospoke.diarization import (FRAME, Diarization, Turn, _frame_labels, _smooth, _turns_from_frames,
                                   add_overlap_speakers, merge_turns, sliding_windows)
+
 from whospoke.vad import complement, intersect, total
 
 
