@@ -66,5 +66,39 @@
    -0.0585,
    -0.0017
   ]
+ },
+ "pyannote-auto": {
+  "der": 0.1843,
+  "confusion": 0.1202,
+  "der_2spk": 0.2277,
+  "exact_count": 0.5833,
+  "found_one_of_2spk": 3,
+  "n": 72
+ },
+ "pyannote-given": {
+  "der": 0.1305,
+  "confusion": 0.0664,
+  "der_2spk": 0.1416,
+  "exact_count": 0.9444,
+  "found_one_of_2spk": 0,
+  "n": 72,
+  "delta_vs_auto": -0.0537,
+  "delta_ci95": [
+   -0.0798,
+   -0.0285
+  ]
+ },
+ "pyannote-hybrid": {
+  "der": 0.1461,
+  "confusion": 0.082,
+  "der_2spk": 0.1727,
+  "exact_count": 0.9444,
+  "found_one_of_2spk": 0,
+  "n": 72,
+  "delta_vs_auto": -0.0382,
+  "delta_ci95": [
+   -0.0619,
+   -0.016
+  ]
  }
 }

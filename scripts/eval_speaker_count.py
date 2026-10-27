@@ -2,7 +2,7 @@
 
     python scripts/eval_speaker_count.py
 
-Runs our tuned Order-B diarizers (spectral, GMM) on the 72 test conversations three ways:
+Runs our tuned Order-B diarizers (spectral, GMM) and pyannote 3.1 on the 72 test conversations three ways:
 
 * ``auto``   the speaker count is found by the clustering (the published system: DER 20.3 %),
 * ``given``  the true count is passed in (``python -m whospoke run --speakers N``),
@@ -10,10 +10,12 @@ Runs our tuned Order-B diarizers (spectral, GMM) on the 72 test conversations th
              (what demo/live.py does when it is told how many people are talking).
 
 Same features (results/cache/features, built by scripts/tune_diarization.py or evaluate.py) and the same DER scoring
-(0.25 s collar, overlap scored) as scripts/evaluate.py. Writes results/speaker_count_test.{csv,json}.
+(0.25 s collar, overlap scored) as scripts/evaluate.py. pyannote is run on the audio (GPU, ~8 min; --no-pyannote
+skips it). Writes results/speaker_count_test.{csv,json}.
 """
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -26,22 +28,29 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from tune_diarization import cached_features, reference  # noqa: E402
 from whospoke.__main__ import tuned_diarizer  # noqa: E402
-from whospoke.diarization import Diarizer  # noqa: E402
+from whospoke.audio import load  # noqa: E402
+from whospoke.diarization import Diarizer, PyannoteDiarizer  # noqa: E402
 from whospoke.metrics import der  # noqa: E402
 from whospoke.paths import RESULTS, SYNTH, conversation  # noqa: E402
 
 
 def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--no-pyannote", action="store_true", help="only our clusterings (no GPU needed)")
+    args = ap.parse_args()
     index = pd.read_csv(SYNTH / "test" / "index.csv")
     base, sep_cache, rows = Diarizer(), {}, []
     systems = {name: tuned_diarizer("B", name) for name in ("spectral", "gmm")}
+    pya = None if args.no_pyannote else PyannoteDiarizer()
     for r in index.itertuples():
         path = conversation(r.path)
         feats = cached_features(r.id, path, "convtasnet", base, sep_cache)["mix"]
         ref_turns, n_true = reference(path)
-        for name, d in systems.items():
-            auto = d.assign(feats)
-            given = d.assign(feats, n_speakers=n_true)
+        runs = {name: (d.assign(feats), d.assign(feats, n_speakers=n_true)) for name, d in systems.items()}
+        if pya is not None:
+            wav = load(path / "mixture.wav")
+            runs["pyannote"] = (pya(wav), pya(wav, n_true))
+        for name, (auto, given) in runs.items():
             for mode, hyp in (("auto", auto), ("given", given),
                               ("hybrid", auto if len(auto.speakers) == n_true else given)):
                 score = der(ref_turns, hyp.tuples())
@@ -59,7 +68,7 @@ def main() -> None:
             "der": round(x.der.mean(), 4), "confusion": round(x.confusion.mean(), 4),
             "der_2spk": round(two.der.mean(), 4), "exact_count": round((x.n_found == x.n_speakers).mean(), 4),
             "found_one_of_2spk": int((two.n_found == 1).sum()), "n": len(x)}
-    for name in systems:
+    for name in runs:
         a = df[(df.clustering == name) & (df["mode"] == "auto")].set_index("id").der
         for mode in ("given", "hybrid"):
             diff = (df[(df.clustering == name) & (df["mode"] == mode)].set_index("id").der - a).to_numpy()

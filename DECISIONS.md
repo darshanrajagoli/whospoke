@@ -377,3 +377,41 @@ so results from them alone would not describe the test set. On the GPU a report 
 several minutes, so the remaining groups cost about 1.5 hours. Group 7 stays excluded (D32). Averaging the speed of two
 very different machines would describe neither.
 
+## D34 · The live demo is told how many people are talking
+**Decided:** 2026-10-27
+**Context:** `demo/live.py` (two people, one laptop microphone) re-runs the pipeline on the recording so far every
+~2 s. In a rehearsal with a test conversation, the automatic count jumped between 3 and 6 speakers during the first
+30 s before settling on 2. On the full test set, our spectral clustering finds the count exactly in 31 % of the
+conversations and says "one speaker" for 13 of the 36 two-person ones.
+**Measured** (`scripts/eval_speaker_count.py`, the 72 test conversations, same features and scoring as
+`evaluate.py`): with the true count given, DER is 15.2 % instead of 20.3 % (−5.1 points, 95 % CI −8.0 to −2.4).
+Keeping the automatic result when it found the given count, and clustering again with the count otherwise, gives
+14.8 %. pyannote 3.1 gains as much (18.4 % → 13.1 % given). Details in RESULTS.md, "When the number of people is
+known".
+**Choice:** the demo has a People setting, 2 by default. With a count set, it keeps the automatic clustering when
+that found the count, and otherwise clusters again with the count fixed. "Count them" (the published behaviour) is
+one click away. The published results keep the automatic count. The known-count numbers are reported separately.
+**Why:** two presenters on stage know they are two, giving the count is an existing option of the pipeline
+(`--speakers`), and the clustering still decides who is who and when. The "kept if right" rule rather than always
+fixing the count: with a fixed count the clean-up (D17) does not run, so on a short recording a small noisy cluster
+can take the second label. Keeping a correct automatic result avoids that, and is also slightly better over the
+full test set (14.8 % vs 15.2 %).
+
+## D35 · An English line in the live demo, from a translation model that is not ours
+**Decided:** 2026-10-27
+**Context:** the live demo may be shown to people who read neither Devanagari nor Kannada. The Stage-4 report
+gives English for Hindi only, about two minutes after a take, and not at all for Kannada.
+**Choice:** `demo/indictrans.py` puts an English line under each transcript line during the take: AI4Bharat's
+IndicTrans2 (Indic → English, distilled 200M) when its gated weights are available, else Meta's NLLB-200 (distilled
+600M). It runs on the CPU in a background thread, because Stages 1–3 use 5.98 of the 6.14 GB GPU, and it translates
+only lines that have stopped changing (ended at least 3 s before the newest audio), plus every line after Stop. The
+side panel names the model and marks it "not ours". It is a presentation aid only: nothing in the pipeline, the
+evaluation or the report uses it.
+**How:** IndicTrans2's preprocessing (normalisation, placeholders, transliteration into Devanagari) is AI4Bharat's
+IndicTransToolkit (MIT), which ships as a Cython extension, and this laptop has no C compiler. So its Indic-to-English
+part is reproduced in plain Python, with attribution. Both models publish `pytorch_model.bin` only, which transformers
+refuses to load with torch 2.5 (CVE-2025-32434). So the official file is read once with torch's safe loader and
+saved as safetensors under the data folder. Community safetensors uploads are not used.
+**Why:** the English line lets everyone follow a Hindi or Kannada take without waiting for the report. Keeping it
+off the GPU and off the pipeline's critical path costs the live passes about half a second. In a rehearsal take,
+9 of 15 lines had English before Stop and all 16 by the end of the final pass.
