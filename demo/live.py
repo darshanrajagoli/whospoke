@@ -318,7 +318,7 @@ class Hub:
                     import torch
                     from indictrans import load_translator
 
-                    torch.set_num_threads(max(1, (os.cpu_count() or 4) - 2))
+                    torch.set_num_threads(4)              # leave the other cores to Stages 1-3
                     translator = load_translator("cpu")
                     with self.lock:
                         self.translator_name, self.translator_note = translator.name, "on"
@@ -328,7 +328,10 @@ class Hub:
                         self.translator_note = f"English line unavailable: {type(exc).__name__}: {str(exc)[:160]}"
                         self.result_version += 1
                     return
-            todo = [x["text"] for x in reversed(lines) if (lang, x["text"]) not in self.translations][:3]
+            with self.lock:                     # only settled lines: the newest ones still change from pass to pass
+                end = self.result["duration"] - 3.0 if self.result and self.recording else float("inf")
+            todo = [x["text"] for x in reversed(lines)
+                    if x["end"] <= end and (lang, x["text"]) not in self.translations][:3]
             if not todo:
                 time.sleep(0.15)
                 continue

@@ -62,7 +62,7 @@ class NLLBToEnglish:
 
     name = "NLLB-200"
 
-    def __init__(self, device: str = "cpu", num_beams: int = 2):
+    def __init__(self, device: str = "cpu", num_beams: int = 1):
         import torch
         from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
