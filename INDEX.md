@@ -24,6 +24,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | [Current presentation package](docs/presentation/2026-10-16/README.md) | **16 October, 11:00 AM:** three-slide PPT, PDF, script, individual preparation and phone-audio fallback |
 | [Data and slide sources](docs/presentation/2026-10-16/DATA_AND_SOURCES.md) | Plain-language provenance of clips, outputs, metrics, datasets and models |
 | [Presentation index and archive](docs/presentation/README.md) | Current package and preserved October 6 presentation versions |
+| [Live demo](demo/README.md) | Two people talk into one laptop mic; the timeline, transcript, separated voices and report build up on screen (`python demo/live.py`) |
 | [Vismay: M1 preparation](docs/presentation/2026-10-16/M1_PREP_VISMAY.md) | Separation, board explanation, questions and phone-audio responsibility |
 | [Darshan: M2 preparation](docs/presentation/2026-10-16/M2_PREP.md) | Diarization, exact selected settings, board explanation and questions |
 | [Abhinav: M3 preparation](docs/presentation/2026-10-16/M3_PREP_ABHINAV.md) | ASR, Hinglish, evaluation and questions |
@@ -81,6 +82,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `tune_separation_policy.py` | `results/separation_policy_dev.csv` — how Order B feeds separated audio to the ASR (**dev** only) |
 | `eval_asr.py` | `results/asr_comparison.*` — Stage 3 model choice (on Vaani) |
 | `eval_asr_nirantar.py` | `results/asr_nirantar.*` — Stage 3 cross-check on a Nirantar Hindi sample (D7) |
+| `eval_speaker_count.py` | `results/speaker_count_test.*` — Stage 2 with the number of speakers given vs found automatically |
 | `evaluate.py` | `results/eval_test_*.csv` — every system end to end on the **test** set |
 | `serve_llm.py` | Starts the Stage-4 LLM server (builds llama-server and the 4-bit Airavata on first use) |
 | `eval_postprocess.py` | `results/eval_postprocess.csv` — Stage 4 on the **test** transcripts (D31) |
@@ -108,6 +110,7 @@ to end, including the Stage-4 LLM if its server is running.
 | `eval_postprocess.csv`, `eval_postprocess/*.json`, `eval_postprocess_summary_g*.json` | Stage 4 on the 63 test conversations: scores per conversation, every report, and the settings, machine and cost of each run |
 | `LAPTOP_RUN_REPORT.md` | How the Stage-4 runs on the laptop GPU went: GPU layers, speed, what went wrong |
 | `crosscheck_g00_gpu/` | Test group 0's Stage-4 reports made again on the GPU and compared with the CPU-made ones: the conclusions do not depend on the machine (D33, audit F12) |
+| `speaker_count_test.{csv,json}` | Diarization error with the speaker count found automatically, given, or given only when the automatic count differs (the live demo's setting) |
 | `benchmark_{stages,scaling,llm}.csv` | Speed and memory per stage (from the benchmark notebook) |
 | `demo/` | Example output of one full run (timeline, transcripts, subtitles, Stage-4 report) |
 | `runs/` | Your own runs (git-ignored) |

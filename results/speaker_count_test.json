@@ -1,0 +1,70 @@
+{
+ "spectral-auto": {
+  "der": 0.2028,
+  "confusion": 0.1192,
+  "der_2spk": 0.2453,
+  "exact_count": 0.3056,
+  "found_one_of_2spk": 13,
+  "n": 72
+ },
+ "spectral-given": {
+  "der": 0.1517,
+  "confusion": 0.0681,
+  "der_2spk": 0.1465,
+  "exact_count": 1.0,
+  "found_one_of_2spk": 0,
+  "n": 72,
+  "delta_vs_auto": -0.0511,
+  "delta_ci95": [
+   -0.0803,
+   -0.0241
+  ]
+ },
+ "spectral-hybrid": {
+  "der": 0.1479,
+  "confusion": 0.0643,
+  "der_2spk": 0.1461,
+  "exact_count": 1.0,
+  "found_one_of_2spk": 0,
+  "n": 72,
+  "delta_vs_auto": -0.0549,
+  "delta_ci95": [
+   -0.0824,
+   -0.0293
+  ]
+ },
+ "gmm-auto": {
+  "der": 0.2032,
+  "confusion": 0.1287,
+  "der_2spk": 0.2643,
+  "exact_count": 0.375,
+  "found_one_of_2spk": 9,
+  "n": 72
+ },
+ "gmm-given": {
+  "der": 0.1636,
+  "confusion": 0.0909,
+  "der_2spk": 0.1685,
+  "exact_count": 1.0,
+  "found_one_of_2spk": 0,
+  "n": 72,
+  "delta_vs_auto": -0.0396,
+  "delta_ci95": [
+   -0.0709,
+   -0.01
+  ]
+ },
+ "gmm-hybrid": {
+  "der": 0.1735,
+  "confusion": 0.1018,
+  "der_2spk": 0.19,
+  "exact_count": 1.0,
+  "found_one_of_2spk": 0,
+  "n": 72,
+  "delta_vs_auto": -0.0298,
+  "delta_ci95": [
+   -0.0585,
+   -0.0017
+  ]
+ }
+}

@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>whospoke live</title>
+<style>
+@font-face { font-family: "Poppins"; src: url(/fonts/Poppins-Medium.ttf) format("truetype"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url(/fonts/Poppins-SemiBold.ttf) format("truetype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Lora"; src: url(/fonts/Lora.ttf) format("truetype"); font-weight: 400; font-display: swap; }
+
+/* Layout: control bar, a full-width "who speaks when" band, then the transcript (wide) beside a narrow column
+   for the speaker count, the pipeline timings, the separated voices and the report. One light look on purpose:
+   it sits inside the flash-talk deck (ivory, clay, the clip's speaker colours) and is shown on a projector. */
+:root {
+  color-scheme: light;
+  --paper: #FAF9F5;
+  --panel: #F1EFE7;
+  --ink: #141413;
+  --muted: #5E5D59;
+  --faint: #8C8981;
+  --line: #E0DDD2;
+  --clay: #D97757;
+  --sky: #6A9BCC;
+  --olive: #788C5D;
+  --kraft: #B08A5B;
+  --live: #C2412D;
+  --display: "Poppins", "Nirmala UI", system-ui, sans-serif;
+  --body: "Lora", Georgia, "Times New Roman", serif;
+  --native: "Poppins", "Nirmala UI", "Noto Sans Devanagari", "Noto Sans Kannada", sans-serif;
+  --t-xs: .78rem; --t-s: .9rem; --t-m: 1.05rem; --t-l: 1.35rem; --t-xl: 1.75rem; --t-xxl: 3.2rem;
+}
+[hidden] { display: none !important; }
+html { font-size: clamp(15px, .5vw + 9.5px, 20px); height: 100%; }
+body {
+  margin: 0; height: 100%; background: var(--paper); color: var(--ink); font-family: var(--body);
+  display: flex; flex-direction: column;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 14px;
+}
+h2 { font-family: var(--display); font-weight: 500; font-size: var(--t-xs); letter-spacing: .12em; text-transform: uppercase;
+     color: var(--muted); margin: 0; }
+button { font: inherit; cursor: pointer; }
+button:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+button:disabled { cursor: not-allowed; opacity: .45; }
+
+/* ---------- control bar */
+.bar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; padding-block: 14px 10px; }
+.brand { display: flex; align-items: baseline; gap: 12px; margin-right: auto; }
+.mark { font-family: var(--display); font-weight: 600; font-size: var(--t-xl); letter-spacing: -.02em; }
+.livetag { display: inline-flex; align-items: center; gap: 7px; font-family: var(--display); font-weight: 600;
+           font-size: var(--t-xs); letter-spacing: .14em; text-transform: uppercase; color: var(--faint); }
+.livetag i { width: 9px; height: 9px; border-radius: 50%; background: var(--faint); }
+.livetag.on { color: var(--live); }
+.livetag.on i { background: var(--live); animation: pulse 1.2s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .25; } }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--panel); }
+.seg button { border: 0; background: transparent; color: var(--muted); font-family: var(--display); font-weight: 500;
+              font-size: var(--t-s); padding: 6px 14px; border-radius: 999px; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; }
+.rec { display: flex; align-items: center; gap: 14px; }
+.clock { font-family: var(--display); font-weight: 500; font-size: var(--t-l); font-variant-numeric: tabular-nums; min-width: 3.2em; text-align: right; }
+.meter { width: 90px; height: 8px; border-radius: 4px; background: var(--line); overflow: hidden; }
+.meter span { display: block; height: 100%; width: 0; background: var(--olive); transition: width .08s linear; }
+.primary { border: 0; border-radius: 999px; background: var(--clay); color: var(--ink); font-family: var(--display);
+           font-weight: 600; font-size: var(--t-m); padding: 10px 26px; min-width: 7.5em; }
+.primary.stop { background: var(--ink); color: var(--paper); }
+.ghost { border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--muted);
+         font-family: var(--display); font-weight: 500; font-size: var(--t-s); padding: 8px 16px; }
+.status { margin: 0 0 12px; font-family: var(--display); font-weight: 500; font-size: var(--t-s); color: var(--muted); min-height: 1.4em; }
+.status.err { color: var(--live); }
+
+/* ---------- timeline band */
+.timeline { background: var(--panel); border-radius: 14px; padding: 14px 18px 10px; display: flex; flex-direction: column; gap: 8px; }
+.tl-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 18px; }
+.key { display: flex; flex-wrap: wrap; gap: 4px 18px; font-family: var(--display); font-size: var(--t-xs); color: var(--muted); }
+.key span { display: inline-flex; align-items: center; gap: 7px; }
+.swatch { width: 18px; height: 11px; border-radius: 2px; display: inline-block; }
+.swatch.hatch { background: repeating-linear-gradient(135deg, rgba(20,20,19,.32) 0 2px, transparent 2px 6px); border: 1px solid rgba(20,20,19,.2); }
+.swatch.wave { background: var(--ink); opacity: .7; height: 3px; }
+#tl { width: 100%; height: 190px; display: block; }
+
+/* ---------- transcript + side column */
+.grid { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr); gap: 0 36px; margin-top: 16px; }
+.transcript { min-height: 0; display: flex; flex-direction: column; }
+.transcript .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+.hint { font-family: var(--display); font-size: var(--t-xs); color: var(--faint); }
+.scroll { overflow-y: auto; min-height: 0; flex: 1; padding-right: 6px; }
+#lines { list-style: none; margin: 0; padding: 0; }
+.line { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr); gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.line.fresh { animation: fadein .5s ease-out; }
+@keyframes fadein { from { background: rgba(217,119,87,.10); } }
+.who { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding-top: 2px; }
+.chip { display: inline-grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 50%; background: var(--c);
+        color: var(--ink); font-family: var(--display); font-weight: 600; font-size: var(--t-s); }
+.who time { font-family: var(--display); font-size: var(--t-xs); color: var(--muted); font-variant-numeric: tabular-nums; }
+.tag { font-family: var(--display); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
+       border: 1px solid var(--line); border-radius: 999px; padding: 1px 7px; background: var(--paper); }
+.said { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.native { margin: 0; font-family: var(--native); font-weight: 500; font-size: var(--t-l); line-height: 1.45; overflow-wrap: anywhere; }
+.latin { margin: 0; font-size: var(--t-m); color: var(--muted); line-height: 1.45; }
+.english { margin: 0; font-size: var(--t-m); line-height: 1.45; }
+.english::before { content: "EN"; font-family: var(--display); font-size: .62rem; letter-spacing: .1em; color: var(--faint); margin-right: 8px; vertical-align: 2px; }
+.empty { padding: 28px 0; max-width: 34rem; display: flex; flex-direction: column; gap: 10px; }
+.empty p { margin: 0; font-size: var(--t-m); line-height: 1.55; color: var(--muted); }
+.empty strong { font-family: var(--display); font-weight: 600; font-size: var(--t-l); color: var(--ink); }
+
+.report { padding: 16px 0 18px; border-bottom: 2px solid var(--ink); display: flex; flex-direction: column; gap: 10px; }
+.report h3 { margin: 0; font-family: var(--display); font-weight: 600; font-size: var(--t-xl); line-height: 1.2; text-wrap: balance; }
+.report p { margin: 0; font-size: var(--t-m); line-height: 1.6; max-width: 60ch; }
+.report ul { margin: 0; padding-left: 1.2em; font-size: var(--t-m); line-height: 1.6; }
+.kw { display: flex; flex-wrap: wrap; gap: 6px; }
+.kw span { font-family: var(--native); font-size: var(--t-s); background: var(--panel); border-radius: 6px; padding: 2px 9px; }
+.byline { font-family: var(--display); font-size: var(--t-xs); color: var(--muted); }
+
+.side { display: flex; flex-direction: column; min-height: 0; overflow-y: auto; }
+.side section { padding: 14px 0 16px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; }
+.side section:first-child { padding-top: 0; }
+.count { display: flex; align-items: baseline; gap: 14px; }
+.big { font-family: var(--display); font-weight: 600; font-size: var(--t-xxl); line-height: 1; font-variant-numeric: tabular-nums; }
+.legend { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; font-family: var(--display); font-size: var(--t-s); }
+.legend li { display: flex; align-items: center; gap: 8px; }
+.legend .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--c); }
+.legend .t { color: var(--muted); margin-left: auto; font-variant-numeric: tabular-nums; }
+.fine { margin: 0; font-size: var(--t-s); line-height: 1.5; color: var(--muted); }
+.stages { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-family: var(--display); font-size: var(--t-s); }
+.stages li { display: grid; grid-template-columns: 2.4rem 1fr auto; align-items: baseline; gap: 6px; }
+.stages b { font-weight: 600; color: var(--muted); }
+.stages .ms { font-variant-numeric: tabular-nums; color: var(--ink); }
+.speed { margin: 0; font-family: var(--display); font-weight: 500; font-size: var(--t-m); }
+.speed small { display: block; font-weight: 500; font-size: var(--t-xs); color: var(--muted); }
+.vbtns { display: flex; flex-wrap: wrap; gap: 8px; }
+.vbtn { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--paper); border-radius: 999px;
+        padding: 7px 14px 7px 10px; font-family: var(--display); font-weight: 500; font-size: var(--t-s); color: var(--ink); }
+.vbtn .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--c); }
+.vbtn[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.secondary { align-self: flex-start; border: 0; border-radius: 999px; background: var(--ink); color: var(--paper); font-family: var(--display);
+             font-weight: 600; font-size: var(--t-s); padding: 9px 20px; }
+.steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; font-family: var(--display); font-size: var(--t-s); color: var(--faint); }
+.steps li { display: flex; align-items: center; gap: 9px; }
+.steps li::before { content: ""; width: 9px; height: 9px; border-radius: 50%; border: 2px solid currentColor; flex: none; }
+.steps li.done { color: var(--muted); }
+.steps li.done::before { background: currentColor; }
+.steps li.now { color: var(--ink); }
+.steps li.now::before { border-color: var(--clay); background: var(--clay); animation: pulse 1.2s ease-in-out infinite; }
+
+@media (max-width: 900px) {
+  body { height: auto; }
+  .grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .scroll, .side { overflow: visible; }
+  .rec { width: 100%; flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .livetag.on i, .steps li.now::before, .line.fresh { animation: none; }
+}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="brand">
+    <span class="mark">whospoke</span>
+    <span class="livetag" id="livetag"><i></i><span id="livetext">Live</span></span>
+  </div>
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Language" id="langSeg"></div>
+    <div class="seg" role="group" aria-label="How many people are talking" id="pplSeg">
+      <button type="button" id="ppl-2" data-ppl="2">2 people</button>
+      <button type="button" id="ppl-3" data-ppl="3">3</button>
+      <button type="button" id="ppl-auto" data-ppl="auto">Count them</button>
+    </div>
+    <div class="seg" role="group" aria-label="Audio source" id="srcSeg">
+      <button type="button" id="src-mic" data-src="mic" aria-pressed="true">Microphone</button>
+      <button type="button" id="src-test" data-src="test" aria-pressed="false">Test recording</button>
+    </div>
+  </div>
+  <div class="rec">
+    <span class="clock" id="clock">0:00</span>
+    <span class="meter" title="Microphone level"><span id="meter"></span></span>
+    <button type="button" class="primary" id="recBtn" disabled>Start</button>
+    <button type="button" class="ghost" id="resetBtn">Clear</button>
+  </div>
+</header>
+<p class="status" id="status" aria-live="polite">Connecting…</p>
+
+<section class="timeline" aria-label="Who speaks when">
+  <div class="tl-head">
+    <h2>Who speaks when</h2>
+    <div class="key">
+      <span><i class="swatch wave"></i>sound processed</span>
+      <span><i class="swatch hatch"></i>two voices at once, separated by Conv-TasNet</span>
+    </div>
+  </div>
+  <canvas id="tl" aria-label="Speaker timeline"></canvas>
+</section>
+
+<main class="grid">
+  <section class="transcript" aria-label="Transcript">
+    <div class="head"><h2>Transcript</h2><span class="hint" id="trHint"></span></div>
+    <div class="scroll" id="scroll">
+      <div class="report" id="report" hidden></div>
+      <ol id="lines"></ol>
+      <div class="empty" id="empty">
+        <strong>Press Start and talk.</strong>
+        <p>Two people, one microphone. Every couple of seconds the whole recording so far goes through the pipeline again, so the timeline and the transcript fill in while you speak.</p>
+        <p>Talk over each other a couple of times: those stretches get separated before they are transcribed.</p>
+      </div>
+    </div>
+  </section>
+
+  <aside class="side">
+    <section aria-label="Speakers found">
+      <h2 id="spkHead">Speakers</h2>
+      <div class="count"><span class="big" id="nspk">0</span><ul class="legend" id="legend"></ul></div>
+      <p class="fine" id="spkNote"></p>
+    </section>
+    <section aria-label="Pipeline">
+      <h2>Last pass, in pipeline order</h2>
+      <ol class="stages">
+        <li><b>M2</b><span>Who speaks when</span><span class="ms" id="ms-diarization">–</span></li>
+        <li><b>M1</b><span id="sepLabel">Separate overlaps</span><span class="ms" id="ms-separation">–</span></li>
+        <li><b>M3</b><span>Transcribe</span><span class="ms" id="ms-asr">–</span></li>
+        <li><b>M4</b><span>Report</span><span class="ms" id="ms-llm">after Stop</span></li>
+      </ol>
+      <p class="speed" id="speed"></p>
+    </section>
+    <section aria-label="Separated voices" id="voicesCard" hidden>
+      <h2>Hear each voice</h2>
+      <div class="vbtns" id="vbtns"></div>
+      <p class="fine">The whole recording through Conv-TasNet (M1). Each track is named after the speaker whose voice fingerprint it matches.</p>
+    </section>
+    <section aria-label="Report">
+      <h2>Report</h2>
+      <button type="button" class="secondary" id="reportBtn" disabled>Write the report</button>
+      <ol class="steps" id="steps" hidden></ol>
+      <p class="fine" id="reportNote"></p>
+    </section>
+  </aside>
+</main>
+<audio id="player" preload="none"></audio>
+
+<script>
+const $ = s => document.querySelector(s);
+const ROOT = getComputedStyle(document.documentElement);
+const C = n => ROOT.getPropertyValue(n).trim();
+const SPK = ["--clay", "--sky", "--olive", "--kraft"];
+const spkVar = name => SPK[Math.max(0, name.charCodeAt(name.length - 1) - 65) % SPK.length];
+const spkColor = name => C(spkVar(name));
+const letter = name => name.replace("Speaker_", "");
+const clock = s => { s = Math.max(0, s); return `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`; };
+const sec = s => s == null ? "–" : (s < 1 ? `${Math.round(s * 1000)} ms` : `${s.toFixed(1)} s`);
+
+let S = null, take = 0, env = [], ver = -1, R = null, REP = null, src = "mic", busy = false, seen = new Set();
+
+async function post(path, body) {
+  busy = true;
+  try {
+    const r = await fetch(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body || {}) });
+    const j = await r.json();
+    if (!j.ok) flash(j.message);
+    return j.ok;
+  } catch (e) { flash("The demo server is not answering. Is live.py still running?"); return false; }
+  finally { busy = false; }
+}
+let flashUntil = 0, flashMsg = "";
+function flash(msg) { flashMsg = msg; flashUntil = Date.now() + 4000; renderState(); }
+
+async function poll() {
+  try {
+    const s = await (await fetch(`/api/state?env=${env.length}&take=${take}`)).json();
+    if (s.take !== take) { take = s.take; env = []; ver = -1; R = null; REP = null; seen = new Set(); renderResult(); }
+    env = env.slice(0, s.env_from).concat(s.env);
+    S = s;
+    if (s.result_version !== ver) {
+      const r = await (await fetch("/api/result")).json();
+      if (r.take === take) { ver = r.version; R = r.result; REP = r.report; renderResult(); }
+    }
+    renderState();
+  } catch (e) {
+    S = null; $("#status").textContent = "The demo server is not answering. Is live.py still running?"; $("#status").className = "status err";
+  }
+  draw();
+  setTimeout(poll, S && S.recording ? 150 : 350);
+}
+
+// ---------------------------------------------------------------- controls and status
+function buildLangs(langs) {
+  const seg = $("#langSeg");
+  if (seg.childElementCount) return;
+  for (const [code, label] of Object.entries(langs)) {
+    const b = document.createElement("button");
+    b.type = "button"; b.id = `lang-${code}`; b.dataset.lang = code; b.textContent = label;
+    b.addEventListener("click", () => { if (S && code !== S.language) post("/api/language", { language: code }); });
+    seg.appendChild(b);
+  }
+}
+for (const b of document.querySelectorAll("#srcSeg button")) b.addEventListener("click", () => { src = b.dataset.src; renderState(); });
+for (const b of document.querySelectorAll("#pplSeg button")) b.addEventListener("click", () => {
+  const v = b.dataset.ppl === "auto" ? "auto" : Number(b.dataset.ppl);
+  if (S && String(S.people ?? "auto") !== String(v)) post("/api/people", { people: v });
+});
+$("#recBtn").addEventListener("click", toggle);
+$("#resetBtn").addEventListener("click", () => post("/api/reset"));
+$("#reportBtn").addEventListener("click", () => post("/api/report"));
+document.addEventListener("keydown", e => {
+  if (e.code === "Space" && e.target === document.body) { e.preventDefault(); toggle(); }
+});
+function toggle() {
+  if (!S || busy) return;
+  if (S.recording) post("/api/stop"); else if (!$("#recBtn").disabled) post("/api/start", { source: src });
+}
+
+function renderState() {
+  if (!S) return;
+  buildLangs(S.languages);
+  const idle = !S.recording && ["ready", "done"].includes(S.status);
+  for (const b of document.querySelectorAll("#langSeg button")) { b.setAttribute("aria-pressed", String(b.dataset.lang === S.language)); b.disabled = !idle; }
+  for (const b of document.querySelectorAll("#pplSeg button")) {
+    b.setAttribute("aria-pressed", String(b.dataset.ppl === String(S.people ?? "auto"))); b.disabled = !idle;
+  }
+  $("#spkHead").textContent = S.people ? "Speakers" : "Speakers found";
+  $("#spkNote").textContent = S.people
+    ? `Told: ${S.people} people. Who is who, and when, comes from clustering their voice fingerprints.`
+    : "Counted by clustering voice fingerprints. Nobody tells it how many people are talking.";
+  if (S.recording) src = S.source;
+  for (const b of document.querySelectorAll("#srcSeg button")) {
+    b.setAttribute("aria-pressed", String(b.dataset.src === src));
+    b.disabled = S.recording || (b.dataset.src === "test" && !S.test_available);
+  }
+  $("#livetag").classList.toggle("on", S.recording);
+  $("#livetext").textContent = S.recording ? (S.source === "test" ? "Test recording" : "Listening") : "Live";
+  $("#clock").textContent = clock(S.elapsed);
+  $("#meter").style.width = `${Math.min(100, Math.sqrt(S.level) * 110)}%`;
+  const rec = $("#recBtn");
+  rec.textContent = S.recording ? "Stop" : "Start";
+  rec.classList.toggle("stop", S.recording);
+  rec.disabled = !(S.recording || idle);
+
+  let msg = S.message || "", err = Boolean(S.error) && !S.recording;
+  if (S.recording) {
+    msg = S.runs ? `Listening. Pass ${S.runs}, updated ${S.updated_ago ?? 0} s ago` : (S.elapsed < 3 ? "Listening. First pass after 3 s of audio" : "Listening. Running the first pass");
+    msg += `  ·  stops by itself at ${clock(S.max_seconds)}`;
+  } else if (S.status === "loading") msg += " (first start takes about half a minute)…";
+  else if (S.status === "finishing") msg += "…";
+  else if (S.status === "done" && !S.error) msg = REP ? `Report written in ${REP.seconds} s.` : "Done. Play each voice, or write the report.";
+  else if (S.status === "ready" && !S.error) msg = "Ready. Press Start (or the space bar) and talk.";
+  if (Date.now() < flashUntil) { msg = flashMsg; err = true; }
+  $("#status").textContent = msg;
+  $("#status").className = err ? "status err" : "status";
+
+  const v = S.voices || [];
+  $("#voicesCard").hidden = !v.length;
+  const vb = $("#vbtns");
+  if (vb.dataset.key !== `${take}:${v.join()}`) {
+    vb.dataset.key = `${take}:${v.join()}`; vb.replaceChildren();
+    for (const name of v) {
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "vbtn"; b.dataset.name = name; b.setAttribute("aria-pressed", "false");
+      const dot = document.createElement("i"); dot.className = "dot";
+      b.style.setProperty("--c", name === "original" ? "var(--faint)" : `var(${spkVar(name)})`);
+      b.append(dot, name === "original" ? "As recorded" : `Speaker ${letter(name)} alone`);
+      b.addEventListener("click", () => play(name, b));
+      vb.appendChild(b);
+    }
+  }
+
+  const rp = S.report, btn = $("#reportBtn"), steps = $("#steps");
+  btn.disabled = !(rp.available && S.status === "done");
+  btn.textContent = REP ? "Write it again" : "Write the report";
+  steps.hidden = rp.state !== "running";
+  if (rp.state === "running") {
+    steps.replaceChildren(...rp.steps.map((t, i) => {
+      const li = document.createElement("li");
+      li.className = i < rp.step ? "done" : i === rp.step ? "now" : "";
+      li.textContent = i === rp.step ? `${t} · ${Math.round(rp.elapsed || 0)} s` : t;
+      return li;
+    }));
+  }
+  $("#reportNote").textContent = rp.state === "error" ? `The report failed: ${rp.error}` :
+    rp.state === "running" ? "Stages 1 to 3 and the LLM do not fit on the 6 GB GPU together, so the speech models step aside while Airavata writes." :
+    !rp.available && rp.reason ? rp.reason :
+    "Airavata (7B, 4-bit, on this laptop) writes a summary, key points and an English line for every line. About a minute per minute of speech.";
+  $("#ms-llm").textContent = REP ? sec(REP.seconds) : rp.state === "running" ? "writing" : "after Stop";
+}
+
+const player = $("#player");
+function play(name, btn) {
+  const playing = btn.getAttribute("aria-pressed") === "true";
+  for (const b of document.querySelectorAll(".vbtn")) b.setAttribute("aria-pressed", "false");
+  player.pause();
+  if (playing) return;
+  player.src = `/api/audio/${name}.wav?take=${take}`;
+  player.play().then(() => btn.setAttribute("aria-pressed", "true")).catch(() => flash("The browser did not play the audio."));
+  player.onended = () => btn.setAttribute("aria-pressed", "false");
+}
+
+// ---------------------------------------------------------------- transcript and side column
+function renderResult() {
+  const lines = R ? R.lines : [];
+  $("#empty").hidden = lines.length > 0 || Boolean(S && (S.recording || S.status === "finishing"));
+  const en = new Map();
+  if (REP) for (const d of REP.dialogue) if (d.english) en.set(`${d.speaker}@${d.start.toFixed(2)}`, d.english);
+
+  const box = $("#scroll"), stick = box.scrollHeight - box.scrollTop - box.clientHeight < 60;
+  $("#lines").replaceChildren(...lines.map(ln => {
+    const li = document.createElement("li");
+    const key = `${ln.speaker}|${ln.text}`;
+    li.className = "line" + (seen.has(key) ? "" : " fresh");
+    seen.add(key);
+    li.style.setProperty("--c", `var(${spkVar(ln.speaker)})`);
+    const who = document.createElement("div"); who.className = "who";
+    const chip = document.createElement("span"); chip.className = "chip"; chip.textContent = letter(ln.speaker);
+    const t = document.createElement("time"); t.textContent = clock(ln.start);
+    who.append(chip, t);
+    if (ln.separated) { const tag = document.createElement("span"); tag.className = "tag"; tag.textContent = "separated"; who.append(tag); }
+    const said = document.createElement("div"); said.className = "said";
+    const p = (cls, text) => { const e = document.createElement("p"); e.className = cls; e.textContent = text; return e; };
+    said.append(p("native", ln.text));
+    if (ln.latin && ln.latin !== ln.text) said.append(p("latin", ln.latin));
+    const e = en.get(`${ln.speaker}@${Number(ln.start).toFixed(2)}`);
+    if (e) said.append(p("english", e));
+    li.append(who, said);
+    return li;
+  }));
+  if (stick) box.scrollTop = box.scrollHeight;
+  $("#trHint").textContent = lines.length ? `${lines.length} lines · ${R.lines.filter(l => l.separated).length} from separated audio` : "";
+
+  renderReport();
+
+  const talk = {};
+  if (R) for (const [a, b, s] of R.turns) talk[s] = (talk[s] || 0) + (b - a);
+  const spk = R ? R.speakers : [];
+  $("#nspk").textContent = spk.length;
+  $("#legend").replaceChildren(...spk.map(s => {
+    const li = document.createElement("li"); li.style.setProperty("--c", `var(${spkVar(s)})`);
+    const d = document.createElement("i"); d.className = "dot";
+    const t = document.createElement("span"); t.className = "t"; t.textContent = `${Math.round(talk[s] || 0)} s`;
+    li.append(d, `Speaker ${letter(s)}`, t);
+    return li;
+  }));
+  for (const k of ["diarization", "separation", "asr"]) $(`#ms-${k}`).textContent = R ? sec(R.timings[k]) : "–";
+  const nov = R ? R.overlaps.length : 0;
+  $("#sepLabel").textContent = R ? `Separate ${nov} overlap${nov === 1 ? "" : "s"}` : "Separate overlaps";
+  const total = R ? R.timings.total : null;
+  $("#speed").innerHTML = "";
+  if (R && total) {
+    $("#speed").append(`${R.duration.toFixed(1)} s of audio in ${total.toFixed(1)} s`);
+    const sm = document.createElement("small"); sm.textContent = `${(R.duration / total).toFixed(0)}× faster than real time, on this laptop's GPU`;
+    $("#speed").append(sm);
+  }
+}
+
+function renderReport() {
+  const box = $("#report");
+  box.hidden = !REP;
+  if (!REP) return;
+  const h = document.createElement("h3"); h.textContent = REP.title || "Report";
+  const by = document.createElement("span"); by.className = "byline"; by.textContent = `Written by Airavata 7B (4-bit) in ${REP.seconds} s. English lines are in the transcript below.`;
+  const parts = [h, by];
+  if (REP.executive_summary) { const p = document.createElement("p"); p.textContent = REP.executive_summary; parts.push(p); }
+  if (REP.key_points && REP.key_points.length) {
+    const ul = document.createElement("ul");
+    for (const k of REP.key_points) { const li = document.createElement("li"); li.textContent = k; ul.append(li); }
+    parts.push(ul);
+  }
+  if (REP.keywords && REP.keywords.length) {
+    const kw = document.createElement("div"); kw.className = "kw";
+    for (const k of REP.keywords) { const s = document.createElement("span"); s.textContent = k; kw.append(s); }
+    parts.push(kw);
+  }
+  box.replaceChildren(...parts);
+}
+
+// ---------------------------------------------------------------- timeline canvas
+const cv = $("#tl"), ctx = cv.getContext("2d");
+let hatch = null;
+function draw() {
+  const lanes = Math.max(2, R ? R.speakers.length : 2);
+  const WAVE = 66, LANE = 26, GAP = 8, TOP = 6, AX = 22;
+  const Hcss = TOP + WAVE + 14 + lanes * (LANE + GAP) + AX;
+  if (cv.style.height !== `${Hcss}px`) cv.style.height = `${Hcss}px`;
+  const dpr = window.devicePixelRatio || 1, W = cv.clientWidth, H = Hcss;
+  if (cv.width !== Math.round(W * dpr) || cv.height !== Math.round(H * dpr)) { cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); }
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  const elapsed = S ? S.elapsed : 0, done = R ? R.duration : 0, bin = S ? S.env_bin_s : .05;
+  const span = Math.max(30, Math.ceil((Math.max(elapsed, done) + 3) / 10) * 10);
+  const L = 40, plotW = W - L - 6, x = t => L + (t / span) * plotW;
+  const mid = TOP + WAVE / 2, laneY = i => TOP + WAVE + 14 + i * (LANE + GAP), bottom = laneY(lanes) - GAP;
+
+  if (!hatch) {
+    const p = document.createElement("canvas"); p.width = p.height = 8;
+    const c = p.getContext("2d"); c.strokeStyle = "rgba(20,20,19,.30)"; c.lineWidth = 1.5;
+    c.beginPath(); c.moveTo(-2, 10); c.lineTo(10, -2); c.moveTo(-2, 2); c.lineTo(2, -2); c.moveTo(6, 10); c.lineTo(10, 6); c.stroke();
+    hatch = ctx.createPattern(p, "repeat");
+  }
+  // overlaps that were separated (behind everything)
+  if (R) for (const [a, b] of R.overlaps) {
+    ctx.fillStyle = "rgba(20,20,19,.05)"; ctx.fillRect(x(a), TOP, Math.max(2, x(b) - x(a)), bottom - TOP);
+    ctx.fillStyle = hatch; ctx.fillRect(x(a), TOP, Math.max(2, x(b) - x(a)), bottom - TOP);
+  }
+  // waveform: processed part dark, the rest light
+  ctx.fillStyle = C("--line"); ctx.fillRect(L, mid - .5, plotW, 1);
+  const bw = Math.max(1, (bin / span) * plotW - .6);
+  for (let i = 0; i < env.length; i++) {
+    const t = i * bin, h = Math.max(1, Math.sqrt(env[i]) * (WAVE / 2 - 2));
+    ctx.fillStyle = t < done ? "rgba(20,20,19,.72)" : C("--faint");
+    ctx.globalAlpha = t < done ? 1 : .45;
+    ctx.fillRect(x(t), mid - h, bw, 2 * h);
+  }
+  ctx.globalAlpha = 1;
+  // speaker lanes
+  const names = R && R.speakers.length ? R.speakers : [];
+  ctx.font = `600 13px ${C("--display")}`; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  for (let i = 0; i < lanes; i++) {
+    const y = laneY(i), name = names[i];
+    ctx.fillStyle = C("--paper"); roundRect(L, y, plotW, LANE, 5); ctx.fill();
+    ctx.fillStyle = name ? spkColor(name) : C("--line");
+    ctx.beginPath(); ctx.arc(L / 2 - 2, y + LANE / 2, 11, 0, 2 * Math.PI); ctx.fill();
+    ctx.fillStyle = C("--ink"); ctx.fillText(name ? letter(name) : "?", L / 2 - 2, y + LANE / 2 + 1);
+    if (!name || !R) continue;
+    ctx.fillStyle = spkColor(name);
+    for (const [a, b, s] of R.turns) if (s === name) { roundRect(x(a), y + 3, Math.max(3, x(b) - x(a)), LANE - 6, 4); ctx.fill(); }
+  }
+  // playhead while recording
+  if (S && S.recording) {
+    ctx.fillStyle = C("--live"); ctx.fillRect(x(elapsed) - 1, TOP, 2, bottom - TOP);
+  }
+  // time axis
+  const step = span <= 40 ? 5 : span <= 90 ? 10 : 15;
+  ctx.font = `500 12px ${C("--display")}`; ctx.fillStyle = C("--muted"); ctx.textBaseline = "alphabetic";
+  for (let t = 0; t <= span; t += step) {
+    ctx.fillRect(x(t), bottom + 2, 1, 5);
+    ctx.textAlign = t === 0 ? "left" : t === span ? "right" : "center";
+    ctx.fillText(clock(t), x(t), bottom + 20);
+  }
+}
+function roundRect(x, y, w, h, r) {
+  r = Math.min(r, w / 2, h / 2);
+  ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
+}
+window.addEventListener("resize", draw);
+document.fonts.ready.then(draw);
+renderResult();
+poll();
+</script>
+</body>
+</html>
