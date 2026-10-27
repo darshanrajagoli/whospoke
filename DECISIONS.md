@@ -396,3 +396,22 @@ one click away. The published results keep the automatic count. The known-count 
 fixing the count: with a fixed count the clean-up (D17) does not run, so on a short recording a small noisy cluster
 can take the second label. Keeping a correct automatic result avoids that, and is also slightly better over the
 full test set (14.8 % vs 15.2 %).
+
+## D35 · An English line in the live demo, from a translation model that is not ours
+**Decided:** 2026-10-27
+**Context:** the live demo may be shown to people who read neither Devanagari nor Kannada. The Stage-4 report
+gives English for Hindi only, about two minutes after a take, and not at all for Kannada.
+**Choice:** `demo/indictrans.py` puts an English line under each transcript line during the take: AI4Bharat's
+IndicTrans2 (Indic → English, distilled 200M) when its gated weights are available, else Meta's NLLB-200 (distilled
+600M). It runs on the CPU in a background thread, because Stages 1–3 use 5.98 of the 6.14 GB GPU, and it translates
+only lines that have stopped changing (ended at least 3 s before the newest audio), plus every line after Stop. The
+side panel names the model and marks it "not ours". It is a presentation aid only: nothing in the pipeline, the
+evaluation or the report uses it.
+**How:** IndicTrans2's preprocessing (normalisation, placeholders, transliteration into Devanagari) is AI4Bharat's
+IndicTransToolkit (MIT), which ships as a Cython extension, and this laptop has no C compiler. So its Indic-to-English
+part is reproduced in plain Python, with attribution. Both models publish `pytorch_model.bin` only, which transformers
+refuses to load with torch 2.5 (CVE-2025-32434). So the official file is read once with torch's safe loader and
+saved as safetensors under the data folder. Community safetensors uploads are not used.
+**Why:** the English line lets everyone follow a Hindi or Kannada take without waiting for the report. Keeping it
+off the GPU and off the pipeline's critical path costs the live passes about half a second. In a rehearsal take,
+9 of 15 lines had English before Stop and all 16 by the end of the final pass.

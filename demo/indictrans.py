@@ -80,7 +80,8 @@ class NLLBToEnglish:
             enc = self.tokenizer(todo, return_tensors="pt", padding=True, truncation=True).to(self.device)
             with self.torch.inference_mode():
                 out = self.model.generate(**enc, forced_bos_token_id=self.eng, max_length=200, num_beams=self.num_beams)
-            for text, eng in zip(todo, self.tokenizer.batch_decode(out, skip_special_tokens=True)):
+            for text, eng in zip(todo, self.tokenizer.batch_decode(out, skip_special_tokens=True,
+                                                                           clean_up_tokenization_spaces=True)):
                 self.cache[(language, text)] = eng.strip()
         return [self.cache.get((language, t), "") for t in texts]
 

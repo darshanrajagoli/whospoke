@@ -20,7 +20,7 @@ to load the first time. No internet is needed: every model loads from the local 
 |---|---|
 | Waveform | What the microphone heard. It turns dark once a pass has processed it. |
 | A / B lanes | M2: who speaks when. Hatched stripes are stretches with two voices at once. M1 separates those before transcription. |
-| Transcript | M3: Devanagari, then Hinglish. After the report, each line also gets the LLM's English translation. The "separated" tag means the line was transcribed from the separated voice. |
+| Transcript | M3: Devanagari (or Kannada), then Hinglish, then an English line (see below). The "separated" tag means the line was transcribed from the separated voice. |
 | Last pass | Time per stage, in pipeline order, and how much faster than real time it ran (about 20× on this GPU). |
 | Hear each voice | After Stop: the whole recording through Conv-TasNet, each track matched to a speaker by voice fingerprint. |
 | Report | M4, Hindi only: Airavata 7B writes a summary, key points and an English line for every line. |
@@ -35,6 +35,15 @@ result when it found two speakers, and otherwise clusters again with two. On the
 DER from 20.3 % (count found automatically, as published) to **14.8 %**, and it never merges two people into one.
 With "Count them" it said "1 speaker" for 13 of the 36 two-person test conversations
 ([scripts/eval_speaker_count.py](../scripts/eval_speaker_count.py), `results/speaker_count_test.json`).
+
+**The English line** (switch: "English line") is there so people who read neither Devanagari nor Kannada can
+follow. It is not one of the four milestones, and the side panel says which model wrote it, marked "not ours".
+It comes from AI4Bharat's IndicTrans2 (Indic → English, 200M) once its Hugging Face terms are accepted at
+https://huggingface.co/ai4bharat/indictrans2-indic-en-dist-200M, and until then from Meta's NLLB-200 (distilled,
+600M). It runs on the CPU, because Stages 1–3 fill the GPU, and only translates lines that have stopped changing, so
+each line gets its English a few seconds after it appears. In the rehearsal take, 9 of 15 lines had English before
+Stop and all 16 by the end of the final pass. It costs the live passes about half a second. IndicTrans2 also needs
+`pip install sacremoses indic-nlp-library-itt regex` (already installed on this laptop).
 
 **The report** needs the whole 6 GB GPU (D33), so the app closes the speech models, starts llama-server, writes the
 report and loads the speech models again: about 2 minutes in all (on a 1-minute take: ~20 s to start the LLM,
@@ -63,8 +72,8 @@ report and loads the speech models again: about 2 minutes in all (on a 1-minute 
 6. Play **Speaker A alone**, then **Speaker B alone**.
 7. Optional: **Write the report** (Hindi).
 8. Optional second take in **Kannada**: switching language reloads the recogniser (about 10 seconds). Kannada lines
-   appear in Kannada script only: no romanised line yet (the romaniser is Hindi-only until Abhinav's languages PR is
-   merged), and no report (Airavata reads Hindi only).
+   appear in Kannada script with the English line, but with no romanised line yet (the romaniser is Hindi-only until
+   Abhinav's languages PR is merged) and no report (Airavata reads Hindi only).
 
 Pure English also goes through the Hindi model. English words inside Hindi come out well, but whole English
 sentences come out as Devanagari spellings of English. Keep it Hinglish.
@@ -76,6 +85,7 @@ sentences come out as Devanagari spellings of English. Keep it Hinglish.
 | "Could not open the microphone" | `python demo\live.py --list-mics`, then restart with `--mic <number>` |
 | The level bar does not move | Wrong input device, or the mic is muted in Windows |
 | A take went badly | **Clear**, then start again |
+| No English lines | The side panel says why. The first start converts the translation model (about a minute); after that it loads in seconds |
 | The report failed | The reason is in the status line; llama-server's log is `%TEMP%\whospoke_live_llm.log`. The speech models reload either way. |
 | Anything stuck | Ctrl+C in the terminal and start it again (about 30 s) |
 
