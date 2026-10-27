@@ -377,3 +377,22 @@ so results from them alone would not describe the test set. On the GPU a report 
 several minutes, so the remaining groups cost about 1.5 hours. Group 7 stays excluded (D32). Averaging the speed of two
 very different machines would describe neither.
 
+## D34 · The live demo is told how many people are talking
+**Decided:** 2026-10-27
+**Context:** `demo/live.py` (two people, one laptop microphone) re-runs the pipeline on the recording so far every
+~2 s. In a rehearsal with a test conversation, the automatic count jumped between 3 and 6 speakers during the first
+30 s before settling on 2. On the full test set, our spectral clustering finds the count exactly in 31 % of the
+conversations and says "one speaker" for 13 of the 36 two-person ones.
+**Measured** (`scripts/eval_speaker_count.py`, the 72 test conversations, same features and scoring as
+`evaluate.py`): with the true count given, DER is 15.2 % instead of 20.3 % (−5.1 points, 95 % CI −8.0 to −2.4).
+Keeping the automatic result when it found the given count, and clustering again with the count otherwise, gives
+14.8 %. pyannote 3.1 gains as much (18.4 % → 13.1 % given). Details in RESULTS.md, "When the number of people is
+known".
+**Choice:** the demo has a People setting, 2 by default. With a count set, it keeps the automatic clustering when
+that found the count, and otherwise clusters again with the count fixed. "Count them" (the published behaviour) is
+one click away. The published results keep the automatic count. The known-count numbers are reported separately.
+**Why:** two presenters on stage know they are two, giving the count is an existing option of the pipeline
+(`--speakers`), and the clustering still decides who is who and when. The "kept if right" rule rather than always
+fixing the count: with a fixed count the clean-up (D17) does not run, so on a short recording a small noisy cluster
+can take the second label. Keeping a correct automatic result avoids that, and is also slightly better over the
+full test set (14.8 % vs 15.2 %).

@@ -100,7 +100,31 @@ Per conversation, splicing removes on average 3.0 points of error (paired CI +1.
 - **Two speakers are harder than three for our diarizer** (DER 24.5 % vs 16.0 %). With only two voices, the speaker
   count is wrong in two thirds of the conversations. It finds just *one* speaker 36 % of the time and too many 31 % of
   the time, and merging two people into one is expensive. Fixing the count estimate for the two-speaker case is the
-  most valuable next step.
+  most valuable next step: knowing the count is worth about 5 DER points (below).
+
+### When the number of people is known
+
+The speaker count is our diarizer's weak spot: it is exactly right in 31 % of the test conversations (pyannote: 58 %).
+To measure what that costs, the same diarizers were run on the same 72 conversations with the true count passed in
+(`python -m whospoke run --speakers N`), and with a "kept if right" rule: keep the automatic result when it found N
+speakers, else cluster again with N (what the live demo does, D34). Same features and DER scoring as above
+(`scripts/eval_speaker_count.py`, `results/speaker_count_test.json`).
+
+| DER | count found automatically (as published) | count given | kept if right, else given |
+|---|---|---|---|
+| our spectral clustering | 20.3 % | 15.2 % | **14.8 %** |
+| our GMM | 20.3 % | 16.4 % | 17.3 % |
+| pyannote 3.1 | 18.4 % | **13.1 %** | 14.6 % |
+
+- **Knowing the count helps every system by 4–5 points** (spectral −5.1, 95 % CI −8.0 to −2.4; pyannote −5.4,
+  −8.0 to −2.9). Nearly all of it is wrong-speaker time, which almost halves (spectral 11.9 → 6.8 %, pyannote
+  12.0 → 6.6 %): two-person conversations are no longer merged into one speaker (13 of 36 for spectral, 0 with the
+  count).
+- **With the count given, our clustering assigns speech to speakers as well as pyannote does** (wrong-speaker time
+  6.8 % vs 6.6 %). The gap that remains (15.2 % vs 13.1 %, +2.1 points, CI −0.0 to +4.2) is missed speech (6.7 % vs
+  3.9 %), so it comes from speech detection and turn building, not from the clustering.
+- **This is not the headline number.** In a real recording the count is usually unknown, and every result above finds
+  it automatically. Giving the count is a separate setting for when the user knows it.
 
 ## Stage 3 — regional & code-switched transcription
 
@@ -240,8 +264,9 @@ of its own memory (plus the 4 GB model file, memory-mapped). Per-run times of th
 ## What limits the system (and what we will do next)
 
 1. **Diarization errors dominate** (23 of the ~50 cpWER points). Next steps: a better speaker-count estimate for
-   the two-speaker case (it finds only one speaker in 36 % of two-speaker conversations), and using the overlap
-   detector to add the second speaker without hurting the timeline.
+   the two-speaker case (it finds only one speaker in 36 % of two-speaker conversations; given the count, DER falls
+   from 20.3 % to 15.2 %), less missed speech (6.7 % vs pyannote's 3.9 %, the gap that remains once the count is
+   known), and using the overlap detector to add the second speaker without hurting the timeline.
 2. **Simulated test data.** The conversations are built from real speech and real noise, but not recorded as real
    conversations. There is no room echo, no phone codec and at most two people at once. A real broadcast has no
    ground truth, so it cannot be scored.

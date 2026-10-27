@@ -57,7 +57,8 @@ REPORT_STEPS = ["Free the GPU for the LLM", "Start Airavata 7B (4-bit)", "Write 
 
 # ====================================================================== engine (child process)
 def engine_main(conn, language: str) -> None:
-    """Holds the speech models on the GPU and answers ("run", wav) | ("voices", None) | ("language", code) | ("quit", None)."""
+    """Holds the speech models on the GPU and answers ("run", (wav, people)) | ("voices", None) |
+    ("language", code) | ("quit", None)."""
     sys.path.insert(0, str(PROJECT / "src"))
     try:
         from whospoke.__main__ import tuned_diarizer
@@ -166,6 +167,9 @@ class Hub:
         self.lock = threading.RLock()
         self.language = "hi"
         self.people: int | None = 2               # how many people are talking (None: count them automatically)
+        self.english = not args.no_english        # English line under each transcript line (demo/indictrans.py)
+        self.translations: dict[tuple[str, str], str] = {}
+        self.translator_name, self.translator_note = None, "loading"
         self.status, self.message, self.error = "loading", "Loading the speech models", None
         self.engine_ready = False
         self.pending_language: str | None = None
@@ -175,6 +179,7 @@ class Hub:
         self._new_take()
         self.conn = self.proc = None
         threading.Thread(target=self._worker, daemon=True).start()
+        threading.Thread(target=self._translate_worker, daemon=True).start()
 
     # ------------------------------------------------------------------ take state
     def _new_take(self) -> None:
@@ -288,6 +293,54 @@ class Hub:
                 return False, "Change this between takes."
             self.people = people
         return True, "Automatic" if people is None else f"{people} people"
+
+    def set_english(self, on) -> tuple[bool, str]:
+        with self.lock:
+            self.english = bool(on)
+            self.result_version += 1
+        return True, "English line on" if on else "English line off"
+
+    def _translate_worker(self) -> None:
+        """English for new transcript lines, on the CPU (Stages 1-3 fill the GPU) and off the pipeline's critical
+        path: a line appears at once and gets its English a few seconds later. Newest lines first, three at a time."""
+        translator = None
+        while True:
+            with self.lock:
+                want = self.english
+                lines = list(self.result["lines"]) if self.result else []
+                lang = self.language
+            if not want:
+                time.sleep(0.2)
+                continue
+            if translator is None:
+                try:
+                    sys.path.insert(0, str(Path(__file__).resolve().parent))
+                    import torch
+                    from indictrans import load_translator
+
+                    torch.set_num_threads(max(1, (os.cpu_count() or 4) - 2))
+                    translator = load_translator("cpu")
+                    with self.lock:
+                        self.translator_name, self.translator_note = translator.name, "on"
+                        self.result_version += 1
+                except Exception as exc:
+                    with self.lock:
+                        self.translator_note = f"English line unavailable: {type(exc).__name__}: {str(exc)[:160]}"
+                        self.result_version += 1
+                    return
+            todo = [x["text"] for x in reversed(lines) if (lang, x["text"]) not in self.translations][:3]
+            if not todo:
+                time.sleep(0.15)
+                continue
+            try:
+                done = translator(todo, lang)
+                with self.lock:
+                    self.translations.update({(lang, t): e for t, e in zip(todo, done)})
+                    self.result_version += 1
+            except Exception as exc:
+                with self.lock:
+                    self.translator_note = f"Translation failed: {type(exc).__name__}: {str(exc)[:160]}"
+                time.sleep(1.0)
 
     def request_report(self) -> tuple[bool, str]:
         with self.lock:
@@ -576,6 +629,7 @@ class Hub:
             return {
                 "take": self.take, "status": self.status, "message": self.message, "error": self.error,
                 "language": self.language, "languages": LANGUAGES, "source": self.source, "people": self.people,
+                "english": self.english,
                 "recording": self.recording, "elapsed": round(elapsed, 2), "max_seconds": self.args.max_seconds,
                 "level": round(self.level, 4), "env_from": env_from, "env": self.env[env_from:],
                 "env_bin_s": ENV_BIN_S, "result_version": self.result_version, "runs": self.runs,
@@ -589,7 +643,13 @@ class Hub:
 
     def result_payload(self) -> dict:
         with self.lock:
-            return {"take": self.take, "version": self.result_version, "result": self.result, "report": self.report}
+            res = self.result
+            if res is not None and self.english:
+                res = {**res, "lines": [{**x, "english": self.translations.get((self.language, x["text"]), "")}
+                                        for x in res["lines"]]}
+            return {"take": self.take, "version": self.result_version, "result": res, "report": self.report,
+                    "translator": self.translator_name if self.english else None,
+                    "translator_note": self.translator_note if self.english else "off"}
 
     def audio(self, name: str) -> bytes | None:
         with self.lock:
@@ -644,7 +704,8 @@ class Handler(BaseHTTPRequestHandler):
         actions = {"/api/start": lambda: hub.start(body.get("source", "mic"), bool(body.get("audible", True))),
                    "/api/stop": hub.stop, "/api/reset": hub.reset, "/api/report": hub.request_report,
                    "/api/language": lambda: hub.set_language(body.get("language", "")),
-                   "/api/people": lambda: hub.set_people(body.get("people"))}
+                   "/api/people": lambda: hub.set_people(body.get("people")),
+                   "/api/english": lambda: hub.set_english(body.get("on", True))}
         act = actions.get(urlparse(self.path).path)
         if act is None:
             return self._json({"ok": False, "message": "unknown action"}, 404)
@@ -663,6 +724,7 @@ def main() -> None:
     ap.add_argument("--gguf", default=None, help="4-bit Airavata model file (default: models/airavata-q4_k_m.gguf)")
     ap.add_argument("--llama-bin", default=None, help="llama-server executable or its folder")
     ap.add_argument("--gpu-layers", type=int, default=99, help="LLM layers on the GPU (99 = all, as in D33)")
+    ap.add_argument("--no-english", action="store_true", help="start with the IndicTrans2 English line switched off")
     ap.add_argument("--no-browser", action="store_true")
     ap.add_argument("--allow-downloads", action="store_true",
                     help="let the models check Hugging Face for updates (default: cached models only, no internet)")

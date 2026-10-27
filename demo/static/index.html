@@ -169,6 +169,9 @@ button:disabled { cursor: not-allowed; opacity: .45; }
       <button type="button" id="ppl-3" data-ppl="3">3</button>
       <button type="button" id="ppl-auto" data-ppl="auto">Count them</button>
     </div>
+    <div class="seg" role="group" aria-label="English line" id="enSeg">
+      <button type="button" id="en-toggle" aria-pressed="true">English line</button>
+    </div>
     <div class="seg" role="group" aria-label="Audio source" id="srcSeg">
       <button type="button" id="src-mic" data-src="mic" aria-pressed="true">Microphone</button>
       <button type="button" id="src-test" data-src="test" aria-pressed="false">Test recording</button>
@@ -221,7 +224,9 @@ button:disabled { cursor: not-allowed; opacity: .45; }
         <li><b>M1</b><span id="sepLabel">Separate overlaps</span><span class="ms" id="ms-separation">–</span></li>
         <li><b>M3</b><span>Transcribe</span><span class="ms" id="ms-asr">–</span></li>
         <li><b>M4</b><span>Report</span><span class="ms" id="ms-llm">after Stop</span></li>
+        <li id="row-translate" hidden><b>+</b><span id="trName">English</span><span class="ms" id="ms-translate">–</span></li>
       </ol>
+      <p class="fine" id="enNote" hidden></p>
       <p class="speed" id="speed"></p>
     </section>
     <section aria-label="Separated voices" id="voicesCard" hidden>
@@ -250,7 +255,7 @@ const letter = name => name.replace("Speaker_", "");
 const clock = s => { s = Math.max(0, s); return `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`; };
 const sec = s => s == null ? "–" : (s < 1 ? `${Math.round(s * 1000)} ms` : `${s.toFixed(1)} s`);
 
-let S = null, take = 0, env = [], ver = -1, R = null, REP = null, src = "mic", busy = false, seen = new Set();
+let S = null, take = 0, env = [], ver = -1, R = null, REP = null, TR = {}, src = "mic", busy = false, seen = new Set();
 
 async function post(path, body) {
   busy = true;
@@ -273,7 +278,7 @@ async function poll() {
     S = s;
     if (s.result_version !== ver) {
       const r = await (await fetch("/api/result")).json();
-      if (r.take === take) { ver = r.version; R = r.result; REP = r.report; renderResult(); }
+      if (r.take === take) { ver = r.version; R = r.result; REP = r.report; TR = r; renderResult(); }
     }
     renderState();
   } catch (e) {
@@ -299,6 +304,7 @@ for (const b of document.querySelectorAll("#pplSeg button")) b.addEventListener(
   const v = b.dataset.ppl === "auto" ? "auto" : Number(b.dataset.ppl);
   if (S && String(S.people ?? "auto") !== String(v)) post("/api/people", { people: v });
 });
+$("#en-toggle").addEventListener("click", () => { if (S) post("/api/english", { on: !S.english }); });
 $("#recBtn").addEventListener("click", toggle);
 $("#resetBtn").addEventListener("click", () => post("/api/reset"));
 $("#reportBtn").addEventListener("click", () => post("/api/report"));
@@ -318,6 +324,7 @@ function renderState() {
   for (const b of document.querySelectorAll("#pplSeg button")) {
     b.setAttribute("aria-pressed", String(b.dataset.ppl === String(S.people ?? "auto"))); b.disabled = !idle;
   }
+  $("#en-toggle").setAttribute("aria-pressed", String(S.english)); $("#en-toggle").disabled = !idle;
   $("#spkHead").textContent = S.people ? "Speakers" : "Speakers found";
   $("#spkNote").textContent = S.people
     ? `Told: ${S.people} people. Who is who, and when, comes from clustering their voice fingerprints.`
@@ -417,7 +424,7 @@ function renderResult() {
     const p = (cls, text) => { const e = document.createElement("p"); e.className = cls; e.textContent = text; return e; };
     said.append(p("native", ln.text));
     if (ln.latin && ln.latin !== ln.text) said.append(p("latin", ln.latin));
-    const e = en.get(`${ln.speaker}@${Number(ln.start).toFixed(2)}`);
+    const e = ln.english || en.get(`${ln.speaker}@${Number(ln.start).toFixed(2)}`);
     if (e) said.append(p("english", e));
     li.append(who, said);
     return li;
@@ -439,6 +446,15 @@ function renderResult() {
     return li;
   }));
   for (const k of ["diarization", "separation", "asr"]) $(`#ms-${k}`).textContent = R ? sec(R.timings[k]) : "–";
+  const tr = Boolean(TR.translator);
+  $("#row-translate").hidden = !tr;
+  if (tr) {
+    const done = R ? R.lines.filter(l => l.english).length : 0, all = R ? R.lines.length : 0;
+    $("#trName").textContent = `English (${TR.translator}, not ours)`;
+    $("#ms-translate").textContent = all ? `${done} of ${all} lines` : "";
+  }
+  const note = TR.translator_note && !["on", "off", "loading"].includes(TR.translator_note) ? TR.translator_note : "";
+  $("#enNote").hidden = !note; $("#enNote").textContent = note;
   const nov = R ? R.overlaps.length : 0;
   $("#sepLabel").textContent = R ? `Separate ${nov} overlap${nov === 1 ? "" : "s"}` : "Separate overlaps";
   const total = R ? R.timings.total : null;
@@ -455,7 +471,8 @@ function renderReport() {
   box.hidden = !REP;
   if (!REP) return;
   const h = document.createElement("h3"); h.textContent = REP.title || "Report";
-  const by = document.createElement("span"); by.className = "byline"; by.textContent = `Written by Airavata 7B (4-bit) in ${REP.seconds} s. English lines are in the transcript below.`;
+  const by = document.createElement("span"); by.className = "byline"; const live = R && R.lines.some(l => l.english);
+  by.textContent = `Written by Airavata 7B (4-bit) in ${REP.seconds} s.` + (live ? "" : " Its English for each line is in the transcript below.");
   const parts = [h, by];
   if (REP.executive_summary) { const p = document.createElement("p"); p.textContent = REP.executive_summary; parts.push(p); }
   if (REP.key_points && REP.key_points.length) {
