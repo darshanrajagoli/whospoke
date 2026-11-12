@@ -485,3 +485,21 @@ moved by a few points (keywords really said, full pipeline: 60 → 64 %; summary
   configuration and log are in `results/stage4_probe/2026-11-10_s4eval_r1/`.
 **Why:** all scored reports now come from one machine, one build and the code in the repository. So the CPU-vs-GPU
 caveat of D33 (and `results/crosscheck_g00_gpu/`, which compares the October reports) no longer applies to them.
+
+## D40 · Other Indian languages run, but only Hindi is evaluated
+**Decided:** 2026-11-12
+**Context:** D4 keeps the project to Hindi and English. IndicConformer and IndicVoices cover 22 Indian languages, and
+the live demo is also run in Kannada.
+**Choice:** `src/whospoke/languages.py` lists the 22 languages: each one's IndicConformer code, IndicVoices folder,
+script and Latin name, and its IndicWav2Vec model where AI4Bharat publishes one (Hindi, Bengali, Gujarati, Odia).
+`--language` (the CLI, `Pipeline`, `make_asr`, `PostProcessor`, `scripts/eval_asr.py`, `scripts/build_dataset.py`)
+picks one; Hindi stays the default. `romanise` detects the script and writes any Indic script in Latin letters
+(Kannada `ನಾಳೆ ಮೀಟಿಂಗ್ ಇದೆ` → `naale meeting ide`); the lexicon of English words exists for Hindi only. For Hindi
+nothing changes: the romanised test transcripts, the Stage-4 prompts and their revision (`b03fa93a833a`) are
+identical, re-scoring the 252 Stage-4 reports gives the same CSV, and `eval_asr.py` gives the same Hindi output.
+**Not evaluated:** D4 stands. There is no WER, DER or report score for any other language, and Stage 4 uses
+Airavata, a Hindi model: it runs on another language but nobody has checked the result, and the CLI warns. The
+IndicWav2Vec models for Bengali, Gujarati and Odia are gated on Hugging Face (accept their terms first); Tamil and
+Telugu have none, so `--asr indicwav2vec` refuses them.
+**Why:** it changes nothing for Hindi and lets Stages 1–3 (and the demo's Kannada lines) work on other languages.
+Saying more than "it runs" would need test sets in those languages.

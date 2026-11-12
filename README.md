@@ -116,6 +116,7 @@ python -m whospoke run my_recording.wav --postprocess   # the same, plus the Sta
 python -m whospoke postprocess results/runs/my_recording/transcript.json   # Stage 4 on its own, after a run
 python -m whospoke run my_recording.wav --order A --clustering gmm --asr indicwav2vec --speakers 2
 python -m whospoke separate my_recording.wav             # Stage 1 alone: one .wav per separated voice
+python -m whospoke run my_recording.wav --language kn    # another Indian language (runs, but not evaluated: D40)
 ```
 
 Outputs go to `results/runs/<file>/`. An example is in [results/demo/](results/demo/): a two-speaker test conversation with heavy overlap in 5 dB market noise, picked because its error is close to the test-set median (a typical case, not the best one).
@@ -154,4 +155,5 @@ pytest                                                # fast tests; `pytest -m s
   wrong, its summary repeats the ASR's mistakes, and it extracts no action items (the section stays empty). Read
   the report next to the Stage-3 transcript, not instead of it. It cannot recover words the ASR never heard. A summary has no single right answer, so it is measured
   indirectly (D31): against the true transcript, and against the report made from it.
-- Hindi and English only. Other Indian languages are a possible extension (D4).
+- Evaluated on Hindi and English only (D4). Stages 1–3 also run on the other languages IndicConformer covers
+  (`--language`, D40), but no number in this repository is about them, and Stage 4 (Airavata) reads Hindi only.

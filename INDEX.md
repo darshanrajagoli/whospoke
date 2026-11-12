@@ -9,7 +9,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | 1 | [README.md](README.md) | What the project does, the headline numbers, how to install and run it |
 | 2 | [docs/RESULTS.md](docs/RESULTS.md) | Every result, explained in plain English, with the evidence for each design choice |
 | 3 | [DEVIATIONS.md](DEVIATIONS.md) | Every place we differ from the professor's proposal, and why |
-| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D39), recorded as it was made |
+| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D40), recorded as it was made |
 | 5 | [docs/PIPELINE.md](docs/PIPELINE.md) | Technical reference: how each stage works, stage by stage |
 | 6 | [docs/MILESTONE4.md](docs/MILESTONE4.md) | Stage 4 in full: running the LLM, the report, the prompts, the guardrails, settings |
 | 7 | [docs/RESULTS_TABLES.md](docs/RESULTS_TABLES.md) | Raw result tables with 95 % confidence intervals (generated, not hand-written) |
@@ -61,7 +61,8 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `diarization.py` | 2 | Voice fingerprints → clusters → a who-spoke-when timeline (both orders) |
 | `clustering.py` | 2 | Custom spectral/GMM workflows and cluster clean-up using SciPy and scikit-learn components |
 | `asr_backends.py` | 3 | IndicConformer and IndicWav2Vec speech recognisers |
-| `hinglish.py` | 3 | Devanagari → Hinglish (Latin) romaniser with an English-loanword lexicon |
+| `hinglish.py` | 3 | Devanagari → Hinglish (Latin) romaniser with an English-loanword lexicon; other Indic scripts → Latin (D40) |
+| `languages.py` | — | The 22 languages `--language` accepts: model codes, IndicVoices folders, scripts (only Hindi is evaluated, D40) |
 | `resources/loanwords.tsv` | 3 | 2,600 Devanagari → English spellings (hand-made + mined from Vaani *train*) |
 | `llm_postprocess.py` | 4 | LLM client, prompts, chunking, guardrails, and the report (`report.md`, `report.json`) |
 | `resources/airavata_chat_template.jinja` | 4 | Airavata's chat format, for llama-server |

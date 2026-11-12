@@ -4,6 +4,7 @@ import pytest
 from whospoke import clustering as clu
 
 
+
 def blobs(k: int, n: int = 40, dim: int = 64, spread: float = 0.15, seed: int = 0):
     """``k`` well-separated speakers, ``n`` windows each, on the unit sphere."""
     rng = np.random.default_rng(seed)

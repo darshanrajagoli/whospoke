@@ -6,6 +6,7 @@ from whospoke.metrics import pit_si_sdr
 from whospoke.separation import Separator
 
 
+
 class OracleSeparator(Separator):
     """Returns the true sources for each window, in random order, sign and scale — like a real model."""
 

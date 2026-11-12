@@ -24,6 +24,7 @@ import torch
 from .audio import SR, fmt_ts
 from .diarization import Diarization, Diarizer, PyannoteDiarizer, Turn, embed
 from .hinglish import romanise
+from .languages import resolve_language
 from .separation import Separator
 
 
@@ -32,12 +33,17 @@ class Line:
     speaker: str
     start: float
     end: float
-    text: str                 # Devanagari, as recognised
-    hinglish: str             # romanised (Latin) version
+    text: str                 # Native script, as recognised
+    hinglish: str             # Romanised (Latin) version (Hinglish/Benglish/Tanglish/etc.)
     audio: str = "mixture"    # which audio was transcribed: mixture | separated | track-<k>
 
-    def render(self, hinglish: bool = False) -> str:
-        return f"[{fmt_ts(self.start)} - {fmt_ts(self.end)}] {self.speaker}: {self.hinglish if hinglish else self.text}"
+    @property
+    def latin(self) -> str:
+        return self.hinglish
+
+    def render(self, hinglish: bool = False, latin: bool = False) -> str:
+        use_latin = hinglish or latin
+        return f"[{fmt_ts(self.start)} - {fmt_ts(self.end)}] {self.speaker}: {self.hinglish if use_latin else self.text}"
 
 
 @dataclass
@@ -48,6 +54,7 @@ class Result:
     timings: dict[str, float] = field(default_factory=dict)
     gpu_peak_mb: dict[str, float] = field(default_factory=dict)
     duration_s: float = 0.0
+    language: str = "hi"
     report: dict | None = None          # Stage-4 LLM report (only when a postprocessor is given)
     report_markdown: str | None = None
     report_error: str | None = None     # why Stage 4 failed; Stages 1-3 are still saved
@@ -58,25 +65,29 @@ class Result:
             out.setdefault(ln.speaker, []).append(ln.text)
         return {k: " ".join(v) for k, v in out.items()}
 
-    def transcript(self, hinglish: bool = False) -> str:
-        return "\n".join(ln.render(hinglish) for ln in sorted(self.lines, key=lambda l: l.start) if ln.text)
+    def transcript(self, hinglish: bool = False, latin: bool = False) -> str:
+        use_latin = hinglish or latin
+        return "\n".join(ln.render(hinglish=use_latin) for ln in sorted(self.lines, key=lambda l: l.start) if ln.text)
 
-    def srt(self, hinglish: bool = True) -> str:
+    def srt(self, hinglish: bool = True, latin: bool = False) -> str:
+        use_latin = hinglish or latin
+
         def ts(t: float) -> str:
             ms = int(round(t * 1000))
             h, ms = divmod(ms, 3_600_000)
             m, ms = divmod(ms, 60_000)
             s, ms = divmod(ms, 1000)
             return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
-        blocks = [f"{i}\n{ts(l.start)} --> {ts(l.end)}\n{l.speaker}: {l.hinglish if hinglish else l.text}"
+        blocks = [f"{i}\n{ts(l.start)} --> {ts(l.end)}\n{l.speaker}: {l.hinglish if use_latin else l.text}"
                   for i, l in enumerate(sorted(self.lines, key=lambda l: l.start), 1) if l.text]
         return "\n\n".join(blocks) + "\n"
 
     def transcript_json(self) -> dict:
         """The Stage-3 deliverable as a dict: written to transcript.json and read by Stage 4."""
-        return {"order": self.order, "duration_s": self.duration_s, "timings_s": self.timings,
-                "gpu_peak_mb": self.gpu_peak_mb, "speakers": self.diarization.speakers,
-                "lines": [asdict(l) for l in sorted(self.lines, key=lambda l: l.start)]}
+        return {"order": self.order, "language": self.language, "duration_s": self.duration_s,
+                "timings_s": self.timings, "gpu_peak_mb": self.gpu_peak_mb,
+                "speakers": self.diarization.speakers,
+                "lines": [{**asdict(l), "latin": l.latin} for l in sorted(self.lines, key=lambda l: l.start)]}
 
     def save(self, out_dir: str | Path) -> Path:
         out = Path(out_dir)
@@ -84,6 +95,7 @@ class Result:
         self.diarization.save(out / "timeline.json")
         (out / "transcript.txt").write_text(self.transcript() + "\n", encoding="utf-8")
         (out / "transcript_hinglish.txt").write_text(self.transcript(hinglish=True) + "\n", encoding="utf-8")
+        (out / "transcript_latin.txt").write_text(self.transcript(latin=True) + "\n", encoding="utf-8")
         (out / "transcript.srt").write_text(self.srt(), encoding="utf-8")
         (out / "transcript.json").write_text(json.dumps(self.transcript_json(), ensure_ascii=False, indent=1),
                                              encoding="utf-8")
@@ -94,14 +106,15 @@ class Result:
         return out
 
 
-def make_asr(name: str = "indicconformer", device: str | None = None, decoding: str = "rnnt"):
+def make_asr(name: str = "indicconformer", device: str | None = None, decoding: str = "rnnt",
+             language: str = "hi"):
     """IndicConformer uses RNNT decoding by default (≈2 WER points better than CTC, still ~27× real time on GPU)."""
     from . import asr_backends
 
     if name == "indicconformer":
-        return asr_backends.IndicConformerASR(device=device, decoding=decoding)
+        return asr_backends.IndicConformerASR(device=device, decoding=decoding, language=language)
     if name == "indicwav2vec":
-        return asr_backends.IndicWav2VecASR(device=device)
+        return asr_backends.IndicWav2VecASR(device=device, language=language)
     raise ValueError(f"unknown ASR backend {name!r}")
 
 
@@ -176,16 +189,19 @@ class Pipeline:
     def __init__(self, order: str = "B", separator: str | None = "convtasnet",
                  diarizer: Diarizer | PyannoteDiarizer | None = None, asr: str = "indicconformer",
                  max_segment_s: float = 25.0, device: str | None = None, asr_model=None,
-                 sep_mode: str = "splice", sep_context_s: float = 0.5, postprocessor=None):
+                 sep_mode: str = "splice", sep_context_s: float = 0.5, postprocessor=None,
+                 language: str = "hi"):
         if order not in ("A", "B"):
             raise ValueError("order must be 'A' or 'B'")
         if order == "A" and separator is None:
             raise ValueError("Order A needs a separator")
         self.order = order
         self.device = device
+        self.language_info = resolve_language(language)
+        self.language = self.language_info.code
         self.separator = Separator(separator, device=device) if separator else None
         self.diarizer = diarizer or Diarizer(device=device)
-        self.asr = asr_model or make_asr(asr, device)
+        self.asr = asr_model or make_asr(asr, device, language=self.language)
         self.max_segment_s = max_segment_s
         if sep_mode not in ("splice", "turn"):
             raise ValueError("sep_mode must be 'splice' or 'turn'")
@@ -196,7 +212,7 @@ class Pipeline:
     @property
     def name(self) -> str:
         sep = self.separator.name if self.separator else "nosep"
-        return f"{self.order}|{sep}|{self.diarizer.name}|{self.asr.name}"
+        return f"{self.order}|{sep}|{self.diarizer.name}|{self.asr.name}|{self.language}"
 
     def warmup(self) -> None:
         """Load every model once so that timings measure processing, not loading."""
@@ -211,7 +227,7 @@ class Pipeline:
         Stage 4 runs when the pipeline was given a ``postprocessor``; ``postprocess=False`` skips it for one call.
         """
         wav = np.asarray(wav, np.float32)
-        res = Result(self.order, Diarization([]), [], duration_s=round(len(wav) / SR, 3))
+        res = Result(self.order, Diarization([]), [], duration_s=round(len(wav) / SR, 3), language=self.language)
         t0 = time.perf_counter()
         if self.order == "A":
             with _Stage(res, "separation"):
@@ -363,5 +379,6 @@ class Pipeline:
         lines = []
         for ui, (t, _, src) in enumerate(units):
             text = " ".join(x for x in joined.get(ui, []) if x)
-            lines.append(Line(t.speaker, round(t.start, 2), round(t.end, 2), text, romanise(text), src))
+            lines.append(Line(t.speaker, round(t.start, 2), round(t.end, 2), text,
+                              romanise(text, language=self.language), src))
         return lines
