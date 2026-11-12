@@ -1,5 +1,8 @@
 # Stage-4 laptop run — test groups 2–6 and the benchmark notebook's Stage-4 section
 
+*November note (D39): all 252 scored reports were later made again in one CPU run, so the summaries named below
+were replaced; they are in git at commit `df497d8`.*
+
 Run on 3 October 2026 on the team laptop, branch `claude/stage4-eval-g02-g03`. Groups 2–3 were the planned run;
 groups 4–6 were added the same evening, so that Stage 4 is scored on every test group except 7 (D33).
 

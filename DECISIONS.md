@@ -458,7 +458,9 @@ two probe scripts and their logs).
 - *Action items.* `_actions` now also drops information questions ("…, what is it?"), suggestions and hypotheticals
   ("Maybe…", "We should…") and first-person wishes ("I want…"). It keeps instructions ("Bring…"), promises
   ("… will …"), items with an unspecified owner, and polite requests ("Will you…?"). This raised
-  `VALIDATOR_RULES_VERSION` to 2; the current revision is `b03fa93a833a`.
+  `VALIDATOR_RULES_VERSION` to 2; the current revision is `b03fa93a833a`. Known gap: a request phrased as a need
+  ("I need you to bring the file") is dropped too. Fixing it would change the revision and remake all 252 reports,
+  and the model proposes almost no action items anyway (D37), so it is left as it is.
 **Why:** cached reports are reused only when nothing that changes their content has changed. An action list should
 hold only things someone was asked or promised to do. Tests: `test_cache_compatible_*`,
 `test_actions_reject_information_questions_suggestions_and_wishes`,
@@ -496,7 +498,8 @@ script and Latin name, and its IndicWav2Vec model where AI4Bharat publishes one 
 picks one; Hindi stays the default. `romanise` detects the script and writes any Indic script in Latin letters
 (Kannada `ನಾಳೆ ಮೀಟಿಂಗ್ ಇದೆ` → `naale meeting ide`); the lexicon of English words exists for Hindi only. For Hindi
 nothing changes: the romanised test transcripts, the Stage-4 prompts and their revision (`b03fa93a833a`) are
-identical, re-scoring the 252 Stage-4 reports gives the same CSV, and `eval_asr.py` gives the same Hindi output.
+identical, re-scoring the 252 Stage-4 reports gives the same CSV, and `eval_asr.py` runs for Hindi as before (the
+romaniser's English-spelling accuracy is still 82.0 %).
 **Not evaluated:** D4 stands. There is no WER, DER or report score for any other language, and Stage 4 uses
 Airavata, a Hindi model: it runs on another language but nobody has checked the result, and the CLI warns. The
 IndicWav2Vec models for Bengali, Gujarati and Odia are gated on Hugging Face (accept their terms first); Tamil and
