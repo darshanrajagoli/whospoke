@@ -170,19 +170,26 @@ def test_indicconformer_accepts_all_scheduled_languages():
         asr = IndicConformerASR(language=code)
         assert asr.language == code
         assert asr.lang_info.code == code
+        asr.close()
 
 
 @pytest.mark.slow
 def test_indicwav2vec_language_support_and_error():
     from whospoke.asr_backends import IndicWav2VecASR
 
-    for code in ["hi", "bn", "gu", "or"]:
-        asr = IndicWav2VecASR(language=code)
-        assert asr.language == code
-
-    # Language without CTC checkpoint should raise descriptive error
+    # Language without CTC checkpoint should raise descriptive error (before anything is downloaded)
     with pytest.raises(ValueError, match="AI4Bharat does not provide a standalone IndicWav2Vec CTC model"):
         IndicWav2VecASR(language="ks")
+
+    for code in ["hi", "bn", "gu", "or"]:
+        try:
+            asr = IndicWav2VecASR(language=code)
+        except OSError as exc:       # the Bengali, Gujarati and Odia repos are gated on Hugging Face (D40)
+            if "gated" in str(exc).lower():
+                pytest.skip(f"accept the terms of {resolve_language(code).wav2vec_repo} on Hugging Face first")
+            raise
+        assert asr.language == code
+        asr.close()
 
 
 # =====================================================================
