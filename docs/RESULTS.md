@@ -78,13 +78,6 @@ with the true timeline:
 
 Per conversation, splicing removes on average 3.0 points of error (paired CI +1.8 to +4.3).
 
-**Tried and rejected on dev: using the second separated voice (D41).** With our diarization an overlap usually lies
-inside one turn, so only that speaker gets a separated voice and the interrupter's output is discarded. Giving that
-output to the speaker it sounds like, as an extra turn, did **not** help on dev (cpWER with our diarization: 46.42 %
-for splice-0.5, 46.46–46.98 % with the second voice, depending on the score threshold). The extra turns are fragments
-(median 0.58 s, one word), and 33 of 76 come from overlaps the detector found where there were none. The test set was
-not run for it. Data: `results/separation_policy_dev_second.csv`, `results/second_voice_candidates_dev.csv`.
-
 ## Stage 2 — diarization
 
 | system (all Order B unless stated) | DER | missed | false alarm | wrong speaker | speaker-count error |
@@ -271,7 +264,7 @@ of its own memory (plus the 4 GB model file, memory-mapped). The scored evaluati
 reports. Per-run times of the evaluation are in
 [RESULTS_TABLES.md](RESULTS_TABLES.md), by machine.
 
-## Extension: music (voice + mridangam, D42)
+## Extension: music (voice + mridangam, D41)
 
 The pipeline's Stages 1–2 were run on music built like the speech set: real solo Carnatic singing (Carnatic Varnam) with
 real mridangam strokes (Mridangam Stroke) placed on the singer's annotated beats, in 3 overlap levels × 3 noise

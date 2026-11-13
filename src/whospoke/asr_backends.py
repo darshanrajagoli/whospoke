@@ -38,10 +38,6 @@ def _no_jit_fusion(torch):
 
     Same effect as ``torch.jit.fuser("none")``, without its per-call deprecation warnings about nvfuser.
     """
-    if not all(hasattr(torch._C, f) for f in ("_jit_can_fuse_on_cpu", "_jit_override_can_fuse_on_cpu",
-                                                  "_jit_texpr_fuser_enabled", "_jit_set_texpr_fuser_enabled")):
-        yield                    # a torch without these switches (newer releases): nothing to turn off
-        return
     old = (torch._C._jit_can_fuse_on_cpu(), torch._C._jit_can_fuse_on_gpu(), torch._C._jit_texpr_fuser_enabled())
     torch._C._jit_override_can_fuse_on_cpu(False)
     torch._C._jit_override_can_fuse_on_gpu(False)
@@ -180,14 +176,7 @@ class IndicConformerASR(_ASRBackend):
         self.lang_info = resolve_language(language)
         self.language = self.lang_info.conformer_code
         self.device = _resolve_device(device)
-        if self.device.startswith("cuda") and hasattr(ort, "preload_dlls"):
-            # onnxruntime-gpu >= 1.21 needs CUDA 12 + cuDNN 9; when torch ships another CUDA (Colab: 13), load the
-            # copies from pip's nvidia-*-cu12 packages. Older onnxruntime (the pinned 1.19.2) has no such call.
-            try:
-                ort.preload_dlls()
-            except Exception:
-                pass
-        self.decoding = decoding        # self.language is set above from resolve_language (main, D40)
+        self.decoding = decoding
         self.batch_size, self.max_chunk_s = batch_size, max_chunk_s
         self._ort = ort
         self._assets = os.path.join(snapshot_download(self.repo_id), "assets")

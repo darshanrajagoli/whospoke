@@ -9,7 +9,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | 1 | [README.md](README.md) | What the project does, the headline numbers, how to install and run it |
 | 2 | [docs/RESULTS.md](docs/RESULTS.md) | Every result, explained in plain English, with the evidence for each design choice |
 | 3 | [DEVIATIONS.md](DEVIATIONS.md) | Every place we differ from the professor's proposal, and why |
-| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D42), recorded as it was made |
+| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D41), recorded as it was made |
 | 5 | [docs/PIPELINE.md](docs/PIPELINE.md) | Technical reference: how each stage works, stage by stage |
 | 6 | [docs/MILESTONE4.md](docs/MILESTONE4.md) | Stage 4 in full: running the LLM, the report, the prompts, the guardrails, settings |
 | 7 | [docs/RESULTS_TABLES.md](docs/RESULTS_TABLES.md) | Raw result tables with 95 % confidence intervals (generated, not hand-written) |
@@ -49,7 +49,6 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `docs/explainers/stage4_llm_report.md` | Stage 4: the LLM report, its guardrails, and what it really achieves |
 | `docs/explainers/order_a_vs_b.md` | Why the order of the stages matters |
 | `docs/explainers/testing_and_metrics.md` | How we test and what the numbers mean |
-| `docs/explainers/task1_separation/` | Task 1 (separation) from scratch, for a reader with school maths only: 10 short files, start at `00_START_HERE.md` |
 
 ## Code — `src/whospoke/`
 
@@ -83,7 +82,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `mine_loanwords.py` | The mined part of `loanwords.tsv` |
 | `eval_separation.py` | `results/separation_{split}.csv` — Stage 1 |
 | `tune_diarization.py` | `results/tuned_params.json` — Stage 2 settings, chosen on **dev** only |
-| `tune_separation_policy.py` | `results/separation_policy_dev.csv` — how Order B feeds separated audio to the ASR (**dev** only); `--policies ... splice-0.5+second` gives `results/separation_policy_dev_second.csv` + `results/second_voice_candidates_dev.csv` (D41, rejected) |
+| `tune_separation_policy.py` | `results/separation_policy_dev.csv` — how Order B feeds separated audio to the ASR (**dev** only) |
 | `eval_asr.py` | `results/asr_comparison.*` — Stage 3 model choice (on Vaani) |
 | `eval_asr_nirantar.py` | `results/asr_nirantar.*` — Stage 3 cross-check on a Nirantar Hindi sample (D7) |
 | `eval_speaker_count.py` | `results/speaker_count_test.*` — Stage 2 with the number of speakers given vs found automatically |
@@ -96,7 +95,6 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `build_music_dataset.py` | `<data>/synth_music/{dev,test}/` — the music sets (36 dev, 72 test pieces) |
 | `eval_music_diarization.py` | `results/music_diarization_{split}.csv` — who plays when on the music sets (DER) |
 | `export_music_demo.py` | `results/demo_music/` — playable separated audio for one typical test piece per condition |
-| `check_environment.py` | One-minute check that every model loads and runs (and whether speech-to-text is on the GPU) |
 | `postprocess.py` | Same as `python -m whospoke postprocess`: `transcript.json` → `report.md` + `report.json` |
 
 ## Tests — `tests/`
@@ -119,9 +117,8 @@ to end, including the Stage-4 LLM if its server is running.
 | `stage4_probe/` | Evidence for D37–D39: the full run's command and log, two real end-to-end report runs, and the group-7 action-item probe |
 | `LAPTOP_RUN_REPORT.md` | How the Stage-4 runs on the laptop GPU went: GPU layers, speed, what went wrong |
 | `crosscheck_g00_gpu/` | Test group 0's October Stage-4 reports made again on the GPU and compared with the CPU-made ones (both kept there): the conclusions do not depend on the machine (D33, audit F12) |
-| `separation_{dev,test}_music*.csv`, `music_diarization_{dev,test}.csv` | Music extension (D42): separation and who-plays-when on the voice + mridangam sets |
+| `separation_{dev,test}_music*.csv`, `music_diarization_{dev,test}.csv` | Music extension (D41): separation and who-plays-when on the voice + mridangam sets |
 | `demo_music/` | Playable music examples: mixture, true voice and drum, every separator's outputs (WAVs local only; READMEs with scores) |
-| `separation_policy_dev_second.csv`, `second_voice_candidates_dev.csv` | Dev only, CPU run: the second-voice experiment (D41, rejected), with one row per conversation × timeline × policy, and every candidate extra turn with its score and recognised text |
 | `speaker_count_test.{csv,json}` | Diarization error with the speaker count found automatically, given, or given only when the automatic count differs (the live demo's setting) |
 | `benchmark_{stages,scaling,llm}.csv` | Speed and memory per stage (from the benchmark notebook) |
 | `demo/` | Example output of one full run (timeline, transcripts, subtitles, Stage-4 report) |
