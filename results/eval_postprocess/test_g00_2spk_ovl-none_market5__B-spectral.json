@@ -1,13 +1,16 @@
 {
- "title": "Transcript of a conversation between two speakers",
- "topic": "Furniture and common wood types",
- "executive_summary": "Speaker A is looking for furniture and says they will get everything they want. They mention a living bed, a sofa, and a dining table. They also mention workers who work well and will get you everything you want.",
+ "title": "Living Bed, Sofa, and Dining Table",
+ "topic": "Furniture",
+ "executive_summary": "Speaker A is looking for a living bed, a sofa, and a dining table.",
  "key_points": [
-  "Hello, name, budget, car, problem, problem, living bed, sofa, dining table, furniture, drying room, common wood types"
+  "Speaker A is looking for a living bed, a sofa, and a dining table.",
+  "Speaker A says they have seen the engine and will also get good things for you.",
+  "Speaker A says they have a worker who works well and will get you every single thing."
  ],
  "keywords": [
   "बजट",
-  "कार"
+  "कार",
+  "सोफा,"
  ],
  "action_items": [],
  "speakers": [
@@ -130,7 +133,7 @@
    "end": 66.55,
    "text": "सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो आम की लकड़ी का मैम मैम यहाँ पे हर एक चीज अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज अच्छा मिलता है हम लोग के यहाँ पे वर्कर है अच्छे से काम करते हैं और आपको हर एक चीज अवेलेबल मिल जाएगा",
    "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo aam ki lakdi ka ma'am ma'am yahan pe har ek cheej achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheej achha milta hai hum log ke yahan pe worker hai achhe se kaam karte hain aur aapko har ek cheej available mil jaega",
-   "translation": "The speaker says they have workers who work well and will get you everything you want.",
+   "translation": "The speaker says they have a worker who works well and will get you every single thing.",
    "source_text": "सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो आम की लकड़ी का मैम मैम यहाँ पे हर एक चीज अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज अच्छा मिलता है हम लोग के यहाँ पे वर्कर है अच्छे से काम करते हैं और आपको हर एक चीज अवेलेबल मिल जाएगा",
    "changed": false,
    "uncertain": true,
@@ -144,9 +147,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 379.491,
-  "prompt_tokens": 1762,
-  "completion_tokens": 916,
+  "llm_seconds": 164.671,
+  "prompt_tokens": 1758,
+  "completion_tokens": 956,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -168,8 +171,10 @@
   "source_sha256": "c4438d24e0417b2cd92786782add21dee3d045f63140b1232b363c159bff74bd",
   "source_line_count": 9,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:35:45Z",
+  "generated_at_utc": "2026-11-10T18:48:29Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 67.03
+  "source_audio_duration_s": 67.03,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

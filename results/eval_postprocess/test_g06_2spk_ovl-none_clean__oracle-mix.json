@@ -1,19 +1,18 @@
 {
- "title": "Renting a saree",
- "topic": "Renting a saree",
- "executive_summary": "Two people will remain and the computer will work like a computer.",
+ "title": "Renting a saree in Banarasi sari",
+ "topic": "Renting a saree in Banarasi sari",
+ "executive_summary": "A conversation about renting a saree in Banarasi sari.",
  "key_points": [
-  "System, please",
-  "We want the trust computer to be in the city, not on the link road.",
-  "Yes, I want a saree.",
-  "Yes, two people will remain and the computer will work like a computer."
+  "Two people will remain and the computer will work like a computer.",
+  "Trust computer to be in the city, not on the link road.",
+  "Yes, yes, good, yes, new fashion is out there in Banarasi sari."
  ],
  "keywords": [
   "saree",
   "link road",
+  "city",
   "trust computer",
-  "do log rahenge",
-  "computer"
+  "new fashion is out there in Banarasi s"
  ],
  "action_items": [],
  "speakers": [
@@ -49,11 +48,11 @@
    "speaker": "S1",
    "start": 9.04,
    "end": 10.02,
-   "text": "प्रणाली दीदी",
-   "hinglish": "pranali didi",
-   "translation": "System, please",
+   "text": "प्रणाम दीदी",
+   "hinglish": "pranam didi",
+   "translation": "Prayers, please",
    "source_text": "प्रणाम दीदी",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -114,11 +113,11 @@
    "speaker": "S2",
    "start": 36.88,
    "end": 44.83,
-   "text": "कोई नहीं लो तो नहीं लोते हूँ हूँ हूँ हाँ दो लोग रहेंगे हम लोग",
-   "hinglish": "koi nahi lo to nahi lote hoon hoon hoon haan do log rahenge hum log",
+   "text": "नहीं लो तो नहीं लोते हूँ हूँ हूँ हाँ दो लोग रहेंगे हम लोग",
+   "hinglish": "nahi lo to nahi lote hoon hoon hoon haan do log rahenge hum log",
    "translation": "",
    "source_text": "नहीं लो तो नहीं लोते हूँ हूँ हूँ हाँ दो लोग रहेंगे हम लोग",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
    "note": "The same English was returned for different lines."
   },
@@ -140,13 +139,13 @@
    "speaker": "S2",
    "start": 46.07,
    "end": 50.53,
-   "text": "हाँ दो लोग रहेंगे और कंप्यूटर काम जैसा काम चल करेंगे",
-   "hinglish": "haan do log rahenge aur computer kaam jaisa kaam chal karenge",
+   "text": "हाँ दो लोग रहेंगे और कंप्यूटर काम जैसा काम चल जाएंगे",
+   "hinglish": "haan do log rahenge aur computer kaam jaisa kaam chal jaenge",
    "translation": "",
    "source_text": "हाँ दो लोग रहेंगे और कंप्यूटर काम जैसा काम चल करेंगे",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the same English was returned for different lines."
+   "note": "The same English was returned for different lines."
   },
   {
    "line_id": 10,
@@ -155,7 +154,7 @@
    "end": 56.6,
    "text": "हाँ हाँ अच्छा है अरे नया फैशन में तो निकला है बनारसी साड़ी",
    "hinglish": "haan haan achha hai are naya fashion mein to nikla hai banarsi sadi",
-   "translation": "Yes, yes, good, it's new fashion, it's Banarasi sari.",
+   "translation": "Yes, yes, good, yes, new fashion is out there in Banarasi sari.",
    "source_text": "हाँ हाँ अच्छा हाँ अरे नया फैशन में तो निकला है बनारसी साड़ी",
    "changed": true,
    "uncertain": false,
@@ -168,11 +167,11 @@
    "end": 77.42,
    "text": "नहीं बस नहीं दिला होता हो दो कर बस",
    "hinglish": "nahi bas nahi dila hota ho do kar bas",
-   "translation": "No, no, it's not possible, two people will do it.",
+   "translation": "No, no, just do it.",
    "source_text": "नहीं बस नहीं दिला होता हो दो कर बस",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
   }
  ],
  "uncertain_lines": [
@@ -188,22 +187,22 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 40.522,
-  "prompt_tokens": 1715,
-  "completion_tokens": 868,
+  "llm_seconds": 152.08,
+  "prompt_tokens": 1707,
+  "completion_tokens": 888,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 4,
-  "lines_reverted": 3,
+  "lines_changed": 3,
+  "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 7,
+  "lines_flagged_by_llm": 6,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -212,8 +211,10 @@
   "source_sha256": "63e6a71a7fa39be4e01ec5dcf24bcfd627ecda0bbf0d02e81073db0af60fb55c",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:10:04Z",
+  "generated_at_utc": "2026-11-11T06:21:48Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 77.85
+  "source_audio_duration_s": 77.85,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

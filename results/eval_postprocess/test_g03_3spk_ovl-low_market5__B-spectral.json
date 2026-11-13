@@ -1,18 +1,23 @@
 {
- "title": "Hindi and Hinglish Conversation",
- "topic": "Hindi and Hinglish Conversation",
- "executive_summary": "A conversation between two speakers in Hindi and Hinglish.",
+ "title": "Hindi and Hinglish Conversations",
+ "topic": "Hindi and Hinglish Conversations",
+ "executive_summary": "This report summarizes the evidence from a transcribed conversation between two speakers.",
  "key_points": [
   "Part 1: A conversation between two speakers.",
-  "Part 2: A conversation in Hindi and Hinglish.",
+  "Part 2: A conversation between two speakers.",
   "Part 3: Speaker A says how good they are.",
-  "Part 4: Once again, let's give it a try.",
-  "Part 5: No more interruptions."
+  "Part 4: Speaker A says how good they are.",
+  "Part 5: Speaker A says how good they are."
  ],
  "keywords": [
   "सरकार",
   "वोट",
-  "वोट खत्म हो गया है"
+  "जीवन है",
+  "वोट खत्म हो गया",
+  "वोट आएगा",
+  "कुछ लाभ नहीं दिया गया है",
+  "Very",
+  "make"
  ],
  "action_items": [],
  "speakers": [
@@ -31,7 +36,7 @@
    "end": 0.85,
    "text": "हाँ",
    "hinglish": "haan",
-   "translation": "Yes",
+   "translation": "Hello",
    "source_text": "हाँ",
    "changed": false,
    "uncertain": false,
@@ -44,7 +49,7 @@
    "end": 3.7,
    "text": "हेलो हर कुछ",
    "hinglish": "hello har kuch",
-   "translation": "Hello everyone",
+   "translation": "Hello, everyone",
    "source_text": "हेलो हर कुछ",
    "changed": false,
    "uncertain": true,
@@ -57,7 +62,7 @@
    "end": 9.6,
    "text": "एक बार तो देना है ना कोई छापड़ भी देना है अब तो बहुत अठी हो गया",
    "hinglish": "ek baar to dena hai na koi chhapad bhi dena hai ab to bahut athi ho gaya",
-   "translation": "Once again, let's give it a try. No more interruptions.",
+   "translation": "Once again, let's not forget to give credit where credit is due. It's important to acknowledge the contributions of others.",
    "source_text": "एक बार तो देना है ना कोई छापड़ भी देना है अब तो बहुत अठी हो गया",
    "changed": false,
    "uncertain": false,
@@ -83,7 +88,7 @@
    "end": 21.25,
    "text": "हो तो देना है अब देना है देखिए न कोई छापा कोई छापा पर देना है तो",
    "hinglish": "ho to dena hai ab dena hai dekhie na koi chhapa koi chhapa par dena hai to",
-   "translation": "Let's give it a try. No more interruptions.",
+   "translation": "Let's give it a try. Do you want to give it a shot?",
    "source_text": "हो तो देना है अब देना है देखिए न कोई छापा कोई छापा पर देना है तो",
    "changed": false,
    "uncertain": false,
@@ -96,7 +101,7 @@
    "end": 23.2,
    "text": "हेम हाँ हेलो सर",
    "hinglish": "hem haan hello sir",
-   "translation": "Hello sir.",
+   "translation": "Hello, sir.",
    "source_text": "हेम हाँ हेलो सर",
    "changed": false,
    "uncertain": false,
@@ -174,7 +179,7 @@
    "end": 51.05,
    "text": "तो आप उसका देना है जी उसी का भूस देना है जी आगे उन्हें बताएगा विकास करेगा हम लोग का जिंदाबाद को बच्चों सहारा हो मैंने ये भी चीज़ का सहारा हो उसी का घूस दिया गया है फिर भी देना है नहीं दिया गया है लेकिन फिर भी घूस देना है",
    "hinglish": "to aap uska dena hai ji usi ka bhoos dena hai ji aage unhen bataega vikas karega hum log ka jindabad ko bacchon sahara ho mainne ye bhi cheez ka sahara ho usi ka ghoos diya gaya hai phir bhi dena hai nahi diya gaya hai lekin phir bhi ghoos dena hai",
-   "translation": "So you give him, give him the same as the goose, give him the same as the goose, give him the same as the goose, give him the same as the goose, give him the same as the goose, give him the same as the goose, give him the same as the goose, give him the same as the goose, give him the same as the goose, give him the same as the goose, give him the same as the goose, give him the same as the goose, give him the same as the goose, give him the same as the goose, give,",
+   "translation": "So you give him, give him the same amount of food, and tell them that we will make the country strong, we will make the country strong",
    "source_text": "तो आप उसका देना है जी उसी का भूस देना है जी आगे उन्हें बताएगा विकास कराएगा हम लोग का जिंदाबाद को बच्चों सहारा हो मैंने ये भी चीज़ का सहारा हो उसी का घूस दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी घूस देना है",
    "changed": true,
    "uncertain": true,
@@ -200,7 +205,7 @@
    "end": 59.55,
    "text": "और कितना अच्छा बनाते हैं ये",
    "hinglish": "aur kitna achha banate hain ye",
-   "translation": "And how much do you make.",
+   "translation": "And how much do they make.",
    "source_text": "और कितना अच्छा बनाते हैं ये",
    "changed": false,
    "uncertain": false,
@@ -215,9 +220,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 51.6,
-  "prompt_tokens": 2325,
-  "completion_tokens": 1142,
+  "llm_seconds": 180.293,
+  "prompt_tokens": 2243,
+  "completion_tokens": 1055,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -230,7 +235,7 @@
   "lines_flagged_by_llm": 2,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 7,
   "actions_dropped": 0,
   "empty_lines_skipped": 2,
   "schema_enforced": true
@@ -239,8 +244,10 @@
   "source_sha256": "c6bd7a94c60952b0ff1f6d2da06c4dd60b62b4bfaf7394be96ab5aa34f126358",
   "source_line_count": 16,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:47:43Z",
+  "generated_at_utc": "2026-11-11T01:39:43Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 61.35
+  "source_audio_duration_s": 61.35,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

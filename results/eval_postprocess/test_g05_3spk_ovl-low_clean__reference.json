@@ -1,19 +1,14 @@
 {
- "title": "Hindi and Hinglish Conversation Summaries",
- "topic": "Hindi and Hinglish Conversation Summaries",
- "executive_summary": "This report summarizes a conversation in Hindi and Hinglish, with a short factual title, a few words about the main topic, an executive summary in 2 to 4 English sentences, up to 5 short factual points, up to 8 keywords, and up to 5 short factual points. The evidence is a transcript of the conversation, with lines translated into English, and candidate keywords and actions.",
+ "title": "Hindi and Hinglish Conversation",
+ "topic": "Leg Swelling, Coughing, and Photography",
+ "executive_summary": "A conversation in Hindi and Hinglish about leg swelling, coughing, and photography.",
  "key_points": [
-  "Hindi and Hinglish Conversation Summaries"
+  "Leg Swelling",
+  "Coughing",
+  "Photography"
  ],
  "keywords": [
-  "नमस्ते",
-  "मैम",
-  "लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
-  "सर्व हो पाएगा",
-  "पैर का",
-  "गुलाब जामुन",
-  "वमोसा",
-  "coughing"
+  "Coughing"
  ],
  "action_items": [],
  "speakers": [
@@ -174,11 +169,11 @@
    "end": 27.421,
    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फ़ी छेना वोना समोसा वमोसा यह सब",
    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barfi chhena wona samosa wamosa yeh sab",
-   "translation": "Rose berries, snowy chenna, and this all",
+   "translation": "Rose berries, snowy chenna, and moss, all of this",
    "source_text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फ़ी छेना वोना समोसा वमोसा यह सब",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 12,
@@ -187,7 +182,7 @@
    "end": 38.495,
    "text": "तो सर वह कह रहे थे वह वह सभी पूछ रहे थे कि वह जो यह है गुलाब जामुन यह कितने रुपये पीस मिलेगा",
    "hinglish": "to sir woh kah rahe the woh woh sabhi poochh rahe the ki woh jo yeh hai gulab jamun yeh kitne rupye piece milega",
-   "translation": "So Sir, he was asking about what he wanted, how much money would he get for this.",
+   "translation": "So Sir, he was asking about what he wanted, how much money would he get for it.",
    "source_text": "तो सर वह कह रहे थे वह वह सभी पूछ रहे थे कि वह जो यह है गुलाब जामुन यह कितने रुपये पीस मिलेगा",
    "changed": false,
    "uncertain": true,
@@ -239,7 +234,7 @@
    "end": 47.791,
    "text": "जी मेरी क्या आप की बात फोटोग्राफर से हो रही है",
    "hinglish": "ji meri kya aap ki baat photographer se ho rahi hai",
-   "translation": "What do you want to say to the photographer?",
+   "translation": "What do you say to the photographer?",
    "source_text": "जी मेरी क्या आप की बात फोटोग्राफर से हो रही है",
    "changed": false,
    "uncertain": true,
@@ -281,8 +276,8 @@
    "translation": "He was asking if the discount count can be used.",
    "source_text": "तो पूछ रहे थे कि अगर सर यह कुछ डिस्काउंट उस्काउंट हो सकता है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 20,
@@ -291,11 +286,11 @@
    "end": 78.724,
    "text": "नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर वह मिल जाता तो कुछ दिन रहते हैं पर तो फिर मतलब जो होता है अगर रूम उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हम लोग",
    "hinglish": "nahi to sir matlab hum log tourist hain to aae the yahin par matlab rahne ke liye to agar woh mil jata to kuch din rahte hain par to phir matlab jo hota hai agar room uchit rate mein mil jata to phir dusre restaurant par kyon jate hum log",
-   "translation": "He said we were tourists and we came here to stay, but then what happens if we get a room at a reasonable rate.",
+   "translation": "He said we were tourists and we came here to stay, but then what happens if we get a room at a reasonable rate?",
    "source_text": "नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर वह मिल जाता तो कुछ दिन रहते हैं पर तो फिर मतलब जो होता है अगर रूम उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हम लोग",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   }
  ],
  "uncertain_lines": [
@@ -315,15 +310,13 @@
   15,
   16,
   17,
-  18,
-  19,
-  20
+  18
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 73.336,
-  "prompt_tokens": 2994,
-  "completion_tokens": 1590,
+  "llm_seconds": 241.221,
+  "prompt_tokens": 2993,
+  "completion_tokens": 1423,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -333,10 +326,10 @@
   "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 19,
+  "lines_flagged_by_llm": 17,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 7,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -345,8 +338,10 @@
   "source_sha256": "3d71049b4f8311e23a5e6316b82ba2b1927a8c501de89bab6dfa18d781ae55f5",
   "source_line_count": 20,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:45:14Z",
+  "generated_at_utc": "2026-11-11T04:50:26Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 79.05
+  "source_audio_duration_s": 79.05,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,21 +1,18 @@
 {
- "title": "Harish Chaurasia and Sir's Wedding Requests",
- "topic": "wedding",
- "executive_summary": "Harish Chaurasia and Sir discuss a wedding, requesting rose berries, snowy chenna, and a samosa. Sir also asks for discounts on the count.",
+ "title": "Harish Chaurasia and Sir",
+ "topic": "wedding, pre-wedding, photo shoot, voice, clear, rose, berries, discounts, price",
+ "executive_summary": "A conversation between Harish Chaurasia and Sir about a wedding, a pre-wedding photo shoot, and the price of rose berries.",
  "key_points": [
-  "rose",
-  "berries",
-  "snowy",
-  "chenna",
-  "samosa"
+  "What is your question about photography?",
+  "Sure, he wanted some sweet too like rose berries and snowy chenna. It was all about that.",
+  "Sixty rupees is the price, if you want."
  ],
  "keywords": [
   "Harish Chaurasia",
   "wedding",
-  "rose",
-  "berries",
-  "snowy",
-  "chenna"
+  "pre-wedding",
+  "voice",
+  "clear"
  ],
  "action_items": [],
  "speakers": [
@@ -163,7 +160,7 @@
    "end": 25.203,
    "text": "हमारी डाक्टरी लखनऊ में है",
    "hinglish": "hamari daktari lakhnau mein hai",
-   "translation": "Our medical facility is in Lucknow.",
+   "translation": "Our clinic is in Lucknow.",
    "source_text": "हमारी डाक्टरी लखनऊ में है",
    "changed": false,
    "uncertain": true,
@@ -202,7 +199,7 @@
    "end": 40.827,
    "text": "हां और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फ़ी छेना वोना समोसा वमोसा यह सब",
    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barfi chhena wona samosa wamosa yeh sab",
-   "translation": "Yes, he also wanted something sweet like rose berries, snowy chenna and a samosa. It's all that.",
+   "translation": "Sure, he wanted some sweet too like rose berries and snowy chenna. It was all about that.",
    "source_text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फ़ी छेना वोना समोसा वमोसा यह सब",
    "changed": true,
    "uncertain": false,
@@ -215,7 +212,7 @@
    "end": 43.392,
    "text": "तो सर उसका कैसा क्या रहता है",
    "hinglish": "to sir uska kaisa kya rahta hai",
-   "translation": "So, how does Sir's health hold up?",
+   "translation": "So, how was Sir?",
    "source_text": "तो सर उसका कैसा क्या रहता है",
    "changed": false,
    "uncertain": false,
@@ -228,7 +225,7 @@
    "end": 48.3,
    "text": "दस जून को मतलब मेरे जो है प्री वेडिंग फोटोशूट उससे पहले होगा आपको",
    "hinglish": "das joon ko matlab mere jo hai pri wedding photoshoot usse pahle hoga aapko",
-   "translation": "But Sir was asking for how much money he would get for rose berries, snowy chenna and a samosa.",
+   "translation": "But Sir was asking about the price of rose berries and how much he would get.",
    "source_text": "दस जून को मतलब मेरे जो है प्री वेडिंग फोटोशूट उससे पहले होगा आपको",
    "changed": false,
    "uncertain": true,
@@ -241,11 +238,11 @@
    "end": 59.852,
    "text": "तो सर वह कह रहे थे वह वह सभी पूछ रहे थे कि वह जो यह है गुलाब जामुन यह कितने रुपये पीस मिलेगा",
    "hinglish": "to sir woh kah rahe the woh woh sabhi poochh rahe the ki woh jo yeh hai gulab jamun yeh kitne rupye piece milega",
-   "translation": "So, Sir was asking for how much money he would get for rose berries, snowy chenna and a samosa.",
+   "translation": "",
    "source_text": "तो सर वह कह रहे थे वह वह सभी पूछ रहे थे कि वह जो यह है गुलाब जामुन यह कितने रुपये पीस मिलेगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 17,
@@ -254,7 +251,7 @@
    "end": 63.992,
    "text": "सठ रुपये पीस है तो अगर मतलब",
    "hinglish": "sath rupye piece hai to agar matlab",
-   "translation": "Sixty rupees is what if you want.",
+   "translation": "Sixty rupees is the price, if you want.",
    "source_text": "साठ रुपये पीस है तो अगर मतलब",
    "changed": true,
    "uncertain": true,
@@ -267,11 +264,11 @@
    "end": 68.809,
    "text": "तो पूछ रहे थे कि अगर सर यह कुछ डिस्काउंट उस्काउंट हो सक्ता है",
    "hinglish": "to poochh rahe the ki agar sir yeh kuch discount uskaunt ho sakta hai",
-   "translation": "So, if Sir discounts the count.",
+   "translation": "",
    "source_text": "तो पूछ रहे थे कि अगर सर यह कुछ डिस्काउंट उस्काउंट हो सकता है",
    "changed": true,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
   }
  ],
  "uncertain_lines": [
@@ -293,22 +290,22 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 63.607,
-  "prompt_tokens": 2528,
-  "completion_tokens": 1362,
+  "llm_seconds": 235.172,
+  "prompt_tokens": 2537,
+  "completion_tokens": 1380,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 3,
-  "lines_reverted": 5,
+  "lines_reverted": 6,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 13,
-  "missing_translations": 2,
+  "missing_translations": 4,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -317,8 +314,10 @@
   "source_sha256": "bde8ebf893b5bf185abc4124cfb2f51d8a6fbe3c5b810211ff3f5bb36fb8985e",
   "source_line_count": 18,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:41:50Z",
+  "generated_at_utc": "2026-11-11T04:37:54Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 69.5
+  "source_audio_duration_s": 69.5,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

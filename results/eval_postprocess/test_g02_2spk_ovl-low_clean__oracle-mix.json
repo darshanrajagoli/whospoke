@@ -1,15 +1,16 @@
 {
- "title": "Transcript of a Hindi-Hinglish Conversation",
- "topic": "Lost ID Card, Crop Prices, Weather Update",
- "executive_summary": "Two people discuss a lost ID card, crop prices, and weather updates.",
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Getting an ID Card and Two Items at the Office",
+ "executive_summary": "Two people in Hindi discuss getting an ID card and two items at the office.",
  "key_points": [
-  "Lost ID Card",
-  "Crop Prices",
-  "Weather Update"
+  "Getting an ID Card and Two Items at the Office",
+  "Requesting an ID Card and Two Items at the Office"
  ],
  "keywords": [
-  "कार",
-  "चेक"
+  "Hello",
+  "Hello Sir",
+  "My ID Card was a pocket mine",
+  "A photo of a base card and a car will be"
  ],
  "action_items": [],
  "speakers": [
@@ -86,11 +87,11 @@
    "end": 31.3,
    "text": "तो हम बी एस का पेपर दे रहे थे आपके स्कूल में मेरा फ़र्स वहीं छूट गया था उसमें कुछ छूटे सामान है ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था",
    "hinglish": "to hum B S ka paper de rahe the aapke school mein mera fars wahin chhoot gaya tha usmen kuch chhute saman hai zarurat ki to wo mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein chhuta tha",
-   "translation": "They were asking for a check from their Karma Chari to pay for the BS paper, which was missing in their school.",
+   "translation": "They were giving me a discount on my BS papers at your school, but I needed to get a form from your office.",
    "source_text": "तो हम बी एस का पेपर देने गए थे आपके स्कूल में मेरा फर्स वहीं छूट गया था उसमें कुछ छूटे सामान है ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -99,7 +100,7 @@
    "end": 37.53,
    "text": "मेरा आई डी कार्ड घुम हो गया है सर पाँच सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर",
    "hinglish": "mera aai D card ghum ho gaya hai sir paanch sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir",
-   "translation": "They were saying that they needed an ID card from the base card, which had a photo of the person.",
+   "translation": "My ID card had gone missing, and I needed an Aadhaar card and a photo copy of my base card.",
    "source_text": "मेरा आई डी कार्ड घुम हो गया है सर पाँच सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर",
    "changed": false,
    "uncertain": true,
@@ -185,7 +186,6 @@
   }
  ],
  "uncertain_lines": [
-  5,
   6,
   8,
   10,
@@ -194,9 +194,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 54.37,
-  "prompt_tokens": 2051,
-  "completion_tokens": 1213,
+  "llm_seconds": 212.82,
+  "prompt_tokens": 2030,
+  "completion_tokens": 1225,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -206,10 +206,10 @@
   "lines_reverted": 1,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 6,
+  "lines_flagged_by_llm": 5,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 6,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -218,8 +218,10 @@
   "source_sha256": "c6734077f0257ea4513cdf0bd1ad56589ff9ed5be1a6623e2469dc358ce77205",
   "source_line_count": 12,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:09:03Z",
+  "generated_at_utc": "2026-11-10T23:12:59Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 67.53
+  "source_audio_duration_s": 67.53,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,19 +1,19 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation about an ID card, a college, a principal, a discount, opening hours, and a camera. The conversation also mentions a photocopy and an application. The speaker requests the speaker to write an application and to give him the ID card. The speaker also asks about the fee and tax.",
+ "title": "Lost ID Card",
+ "topic": "Lost ID Card",
+ "executive_summary": "A conversation about a lost ID card and the need for a photocopy and application.",
  "key_points": [
-  "ID card",
+  "Lost ID Card",
   "Photocopy",
-  "Exam papers",
-  "college",
-  "principal"
+  "Exam",
+  "College",
+  "Babu Maan Sankey Inter College"
  ],
  "keywords": [
   "ID card",
-  "Exam papers",
-  "college",
-  "principal"
+  "Exam",
+  "College",
+  "Babu Maan Sankey Inter College"
  ],
  "action_items": [],
  "speakers": [
@@ -51,7 +51,7 @@
    "end": 4.698,
    "text": "हाँ सर मेरे कोई गलती हो गई है मेरे हाथ से",
    "hinglish": "haan sir mere koi galti ho gayi hai mere haath se",
-   "translation": "Yes, my hand is gone.",
+   "translation": "Yes, sir, I have lost my card.",
    "source_text": "हाँ सर मेरे कोई गलती हो गई है मेरे हाथ से",
    "changed": false,
    "uncertain": true,
@@ -90,7 +90,7 @@
    "end": 9.503,
    "text": "हाँ सर वह एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
    "hinglish": "haan sir woh exam paas aa rahe hain to aai D card chahiye sir",
-   "translation": "Yes, he is coming with the exam papers, but I need an ID card.",
+   "translation": "Yes, sir, they are coming for the exam, so I need my ID card.",
    "source_text": "हाँ सर वह एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
    "changed": false,
    "uncertain": true,
@@ -103,7 +103,7 @@
    "end": 11.695,
    "text": "बेस कार्ड की फोटोकॉपी और क्या लाना है सर",
    "hinglish": "base card ki photokopi aur kya lana hai sir",
-   "translation": "The base card is photocopied and what to do.",
+   "translation": "The base card is photocopied and what do I need to do?",
    "source_text": "आधार कार्ड की फोटोकॉपी और क्या क्या लाना है सर",
    "changed": true,
    "uncertain": true,
@@ -220,7 +220,7 @@
    "end": 49.127,
    "text": "आई डी कार्ड के दो सामान लूँगा तो हमें सबसे पहले किसके पास जाना पड़ेगा यह कौन बनाएगा",
    "hinglish": "aai D card ke do saman lunga to hamen sabse pahle kiske paas jana padega yeh kaun banaega",
-   "translation": "I will get two items of ID card and who will be the first to get it",
+   "translation": "I will get two items of ID card then who will go to us first?",
    "source_text": "आई डी कार्ड के दो सामान लूँगा तो हमें सबसे पहले किसके पास जाना पड़ेगा यह कौन बनाएगा",
    "changed": false,
    "uncertain": true,
@@ -337,11 +337,11 @@
    "end": 64.425,
    "text": "अच्छा और वह साब को दे दूँगा उसके बाद में अगर मान लो फिर आई डी कार्ड आने में कितना दिन लगेगा",
    "hinglish": "achha aur woh saab ko de dunga uske baad mein agar maan lo phir aai D card aane mein kitna din lagega",
-   "translation": "How long will it take for me to give him the card, and then I will give him the ID card.",
+   "translation": "If you believe it, then how long will it take for the ID card to come.",
    "source_text": "अच्छा और वह साब को दे दूँगा उसके बाद में अगर मान लो फिर आई डी कार्ड आने में कितना दिन लगेगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 25,
@@ -350,7 +350,7 @@
    "end": 65.535,
    "text": "क्या फीस और रसीद",
    "hinglish": "kya phees aur rasid",
-   "translation": "What is the fee and tax",
+   "translation": "What is the price and the rate?",
    "source_text": "क्या फीस और रसीद",
    "changed": false,
    "uncertain": true,
@@ -381,9 +381,9 @@
  ],
  "diagnostics": {
   "llm_calls": 6,
-  "llm_seconds": 78.331,
-  "prompt_tokens": 3588,
-  "completion_tokens": 1770,
+  "llm_seconds": 289.485,
+  "prompt_tokens": 3568,
+  "completion_tokens": 1721,
   "chunks": 5,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -405,8 +405,10 @@
   "source_sha256": "bcb0ceba2b10a9e3ed483b33ad96c3c9ad04caf1dce629a251b6c7242cd3e9d9",
   "source_line_count": 25,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:22:07Z",
+  "generated_at_utc": "2026-11-11T00:03:07Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 66.1
+  "source_audio_duration_s": 66.1,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

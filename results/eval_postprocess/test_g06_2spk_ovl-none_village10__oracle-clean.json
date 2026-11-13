@@ -1,18 +1,17 @@
 {
  "title": "Transcript of Hindi and Hinglish Conversation",
- "topic": "Computer and Online Services",
+ "topic": "Computer and Clothes",
  "executive_summary": "Two people will stay and the computers will work.",
  "key_points": [
   "Two people will stay and the computers will work.",
-  "Computer and Online Services"
+  "Computer and Clothes"
  ],
  "keywords": [
   "Didi",
-  "Sari",
-  "Computer",
-  "Online",
-  "saree",
-  "two people will stay and the computers"
+  "computer",
+  "clothes",
+  "online",
+  "saree"
  ],
  "action_items": [],
  "speakers": [
@@ -37,7 +36,7 @@
    "end": 3.87,
    "text": "नमस्कार दीदी और सब तो ठीक है अपना बताइए",
    "hinglish": "namaskar didi aur sab to theek hai apna bataie",
-   "translation": "Hello, Didi and everyone else. Say your name.",
+   "translation": "Hello, Didi and everyone else, it's fine. Tell me your name.",
    "source_text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
    "changed": true,
    "uncertain": false,
@@ -89,7 +88,7 @@
    "end": 24.12,
    "text": "सारी लेना है",
    "hinglish": "sari lena hai",
-   "translation": "Take all the clothes.",
+   "translation": "Taking all the clothes.",
    "source_text": "साड़ी लेना है",
    "changed": true,
    "uncertain": true,
@@ -131,8 +130,8 @@
    "translation": "No, not lo, not lo, Sir, two people will stay, we people",
    "source_text": "नहीं लो तो नहीं लो सर हूँ हूँ हाँ दो लोग रहेंगे हम लोग",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 9,
@@ -144,8 +143,8 @@
    "translation": "Poonam kar and",
    "source_text": "पूनम कर और",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 10,
@@ -157,8 +156,8 @@
    "translation": "Yes, you two will stay and the computers will work, yes, yes, no, no, in the nearby Naini if you say so",
    "source_text": "हाँ आप दो लोग रहेंगे और कंप्यूटर काम से काम चलिए करेंगे हाँ हाँ नहीं यही पास में बस नैनी में दिला दीजिए अगर हो तो बताओ के",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 11,
@@ -170,8 +169,8 @@
    "translation": "Yes",
    "source_text": "हाँ हाँ",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 12,
@@ -184,7 +183,7 @@
    "source_text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस जैसा कहोग कैप कर देंगे नहीं चेक कर देंगे जैसा कहोगे",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -192,13 +191,17 @@
   4,
   5,
   6,
+  8,
+  9,
+  10,
+  11,
   12
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 40.057,
-  "prompt_tokens": 1734,
-  "completion_tokens": 863,
+  "llm_seconds": 155.358,
+  "prompt_tokens": 1744,
+  "completion_tokens": 900,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -208,10 +211,10 @@
   "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 4,
+  "lines_flagged_by_llm": 9,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -220,8 +223,10 @@
   "source_sha256": "d77e1cd18354ccd337bcecc202b83b922c93b4b7c2df82ddfa83f9828b29fc40",
   "source_line_count": 12,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:13:06Z",
+  "generated_at_utc": "2026-11-11T06:32:58Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 76.07
+  "source_audio_duration_s": 76.07,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

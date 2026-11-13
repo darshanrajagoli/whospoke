@@ -6,8 +6,7 @@
   "Car Repairs and Finding a Good Price for Wood"
  ],
  "keywords": [
-  "wood",
-  "good price"
+  "good price for wood"
  ],
  "action_items": [],
  "speakers": [
@@ -97,7 +96,7 @@
    "end": 66.39,
    "text": "लकड़ी सागवान की लकड़ी शीशम की लकड़ी एक एक चीज अच्छी मिलती है हम लोग के यहाँ पे वर्कर है अच्छे से काम करते हैं और आपको हर एक चीज अवेलेबल मिल जाएगी",
    "hinglish": "lakdi sagvan ki lakdi shisham ki lakdi ek ek cheej achhi milti hai hum log ke yahan pe worker hai achhe se kaam karte hain aur aapko har ek cheej available mil jaegi",
-   "translation": "The wood that I want is the wood from Sagwan, the wood from Shisham, and the wood from a place called 'good'. We have workers here who work well and will get you everything you want.",
+   "translation": "The wood from Sagwan, Sisham and Shisham is good and we have workers who work well and will get you everything you need.",
    "source_text": "लकड़ी सागवान की लकड़ी शीशम की लकड़ी एक एक चीज अच्छी मिलता है हम लोग के यहाँ पे वर्कर है अच्छे से काम करते हैं और आपको हर एक चीज अवेलेबल मिल जाएगा",
    "changed": true,
    "uncertain": true,
@@ -114,9 +113,9 @@
  ],
  "diagnostics": {
   "llm_calls": 2,
-  "llm_seconds": 334.001,
-  "prompt_tokens": 1264,
-  "completion_tokens": 758,
+  "llm_seconds": 116.408,
+  "prompt_tokens": 1250,
+  "completion_tokens": 627,
   "chunks": 1,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -129,7 +128,7 @@
   "lines_flagged_by_llm": 6,
   "missing_translations": 5,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -138,8 +137,10 @@
   "source_sha256": "89e4624c4ae79405a25b8f68a1451146a3e141a456bf6135c2d9c0c72d59c8de",
   "source_line_count": 6,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:32:43Z",
+  "generated_at_utc": "2026-11-10T18:45:44Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 67.03
+  "source_audio_duration_s": 67.03,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

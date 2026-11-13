@@ -1,17 +1,19 @@
 {
  "title": "Hindi and Hinglish Conversations",
  "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation in Hindi and Hinglish about diqqat, photography, medical services, wedding, pre-wedding photos, count, discount.",
+ "executive_summary": "This report summarizes a conversation in Hindi and Hinglish between two individuals, with a focus on topics such as wedding, photography, and count of items.",
  "key_points": [
-  "Hello Sir",
-  "Hello Ma'am, I was saying that Harish Chaurasia was speaking.",
-  "Yes, and also wanted something sweet like roses, berries, and sugar-sweet candy.",
-  "Everyone is sick, when did you start getting sick?",
-  "So, sir, he was asking about the price of the roseberry candy."
+  "Hello sir",
+  "Hello sir, hello sir, I was talking to Harish Chaurasia",
+  "G, my question is about photography.",
+  "Yes, and also wanted something sweet like rose berries, snowy chenna, and samosa.",
+  "So, sir, he was asking about the price of rose berries."
  ],
  "keywords": [
-  "Hello",
-  "Harish Chaurasia"
+  "नमस्ते, सर",
+  "बोल रहा है",
+  "फोटोग्राफर",
+  "गुलाब"
  ],
  "action_items": [],
  "speakers": [
@@ -42,7 +44,7 @@
    "end": 1.582,
    "text": "नमस्ते सर",
    "hinglish": "namaste sir",
-   "translation": "Hello Sir",
+   "translation": "Hello sir",
    "source_text": "नमस्कार सर",
    "changed": true,
    "uncertain": false,
@@ -55,11 +57,11 @@
    "end": 7.04,
    "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "hinglish": "sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
-   "translation": "We were talking about Lakhnavi-style biryanis that we wanted to have",
+   "translation": "We were talking about Lakhnavi style biryanis that we wanted to have",
    "source_text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "changed": false,
-   "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 3,
@@ -81,7 +83,7 @@
    "end": 11.495,
    "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको",
    "hinglish": "namaste ma'am bataie kya dikkat hai aapko",
-   "translation": "Hello Ma'am, tell me what's the deal?",
+   "translation": "Hello ma'am, tell me what's the deal?",
    "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको",
    "changed": false,
    "uncertain": true,
@@ -97,8 +99,8 @@
    "translation": "Hello",
    "source_text": "हलो",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 6,
@@ -107,7 +109,7 @@
    "end": 12.256,
    "text": "हलो सर नमस्कार मैं हरीश चौरसिया बोल रहा था",
    "hinglish": "hello sir namaskar main harish chaursiya bol raha tha",
-   "translation": "Hello Sir, hello Ma'am, I was saying that Harish Chaurasia was speaking.",
+   "translation": "Hello sir, hello sir, I was talking to Harish Chaurasia",
    "source_text": "हलो सर नमस्कार मैं हरीश चौरसिया बोल रहा था",
    "changed": false,
    "uncertain": true,
@@ -123,8 +125,8 @@
    "translation": "G, my question is about photography.",
    "source_text": "जी मेरी क्या आप की बात फोटोग्राफर से हो रही है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 8,
@@ -133,7 +135,7 @@
    "end": 15.235,
    "text": "नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
    "hinglish": "namaste namaste ma'am bataie kya dikkat hai aapko",
-   "translation": "Hello, sir. What is the price of the diqqat you want?",
+   "translation": "Hello, sir, tell me what is the price.",
    "source_text": "नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
    "changed": false,
    "uncertain": true,
@@ -159,7 +161,7 @@
    "end": 22.778,
    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फ़ी छेना वोना समोसा वमोसा यह सब",
    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barfi chhena wona samosa wamosa yeh sab",
-   "translation": "Yes, and also wanted something sweet like roses, berries, and sugar-sweet candy.",
+   "translation": "Yes, and also wanted something sweet like rose berries, snowy chenna, and samosa.",
    "source_text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फ़ी छेना वोना समोसा वमोसा यह सब",
    "changed": false,
    "uncertain": true,
@@ -172,7 +174,7 @@
    "end": 33.815,
    "text": "तो सर वह कह रहे थे वह वह सभी पूछ रहे थे कि वह जो यह है गुलाब जामुन यह कितने रुपये पीस मिलेगा",
    "hinglish": "to sir woh kah rahe the woh woh sabhi poochh rahe the ki woh jo yeh hai gulab jamun yeh kitne rupye piece milega",
-   "translation": "So, sir, he was asking about the price of the roseberry candy.",
+   "translation": "So, sir, he was asking about the price of rose berries.",
    "source_text": "तो सर वह कह रहे थे वह वह सभी पूछ रहे थे कि वह जो यह है गुलाब जामुन यह कितने रुपये पीस मिलेगा",
    "changed": false,
    "uncertain": true,
@@ -328,7 +330,7 @@
    "end": 76.824,
    "text": "नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर वह मिल जाता तो कुछ दिन रहते हैं पर तो फिर मतलब जो होता है अगर रूम उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हम लोग",
    "hinglish": "nahi to sir matlab hum log tourist hain to aae the yahin par matlab rahne ke liye to agar woh mil jata to kuch din rahte hain par to phir matlab jo hota hai agar room uchit rate mein mil jata to phir dusre restaurant par kyon jate hum log",
-   "translation": "If the room is within reasonable price, then why do we go to other restaurants.",
+   "translation": "If the room is reasonable, why do we go to other restaurants?",
    "source_text": "नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर वह मिल जाता तो कुछ दिन रहते हैं पर तो फिर मतलब जो होता है अगर रूम उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हम लोग",
    "changed": false,
    "uncertain": true,
@@ -349,11 +351,10 @@
   }
  ],
  "uncertain_lines": [
-  2,
   3,
   4,
+  5,
   6,
-  7,
   8,
   9,
   10,
@@ -373,22 +374,22 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 80.043,
-  "prompt_tokens": 3190,
-  "completion_tokens": 1715,
+  "llm_seconds": 288.709,
+  "prompt_tokens": 3171,
+  "completion_tokens": 1717,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 5,
-  "lines_reverted": 3,
+  "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 19,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 4,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -397,8 +398,10 @@
   "source_sha256": "ba5022cd57f29bcaff854aeb362266e1d5246a9fc3639d92d095b0fdf2993e5c",
   "source_line_count": 24,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:56:51Z",
+  "generated_at_utc": "2026-11-11T05:32:21Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 77.24
+  "source_audio_duration_s": 77.24,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,19 +1,19 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Budget and Pay",
- "executive_summary": "Speakers discuss budget, Maam, Will Get, pay, prize, car trouble, sofa, bed, mam, good stuff, divan bed, sofa bed, common, wood, products, available, for, sale",
+ "title": "Hindi and Hinglish Conversation Report",
+ "topic": "Budget and Prizes",
+ "executive_summary": "Speakers A and B talk about budget and prizes. Speaker C mentions a place where they can find good quality wood. Speaker A mentions a sofa and matlab bed. Speaker C says she will get furniture drying room. Speaker A says good good. Speaker B mentions a place where they can find good quality wood. Speaker C mentions a place where they can find good quality wood. Speaker A mentions a sofa and matlab bed. Speaker C says she will get furniture drying room. Speaker A says good good. Speaker B mentions a place where they can find good quality wood. Speaker C mentions a place where they can find good quality wood. Speaker A mentions a sofa and matlab bed. Speaker C says she will get furniture drying room. Speaker A says good good. Speaker B mentions a place where they can find good quality wood.",
  "key_points": [
   "budget",
-  "Maam",
-  "Will Get",
+  "prize",
+  "price",
   "pay",
-  "prize"
+  "car"
  ],
  "keywords": [
   "budget",
-  "Maam",
-  "Will Get",
-  "pay"
+  "price",
+  "pay",
+  "car"
  ],
  "action_items": [],
  "speakers": [
@@ -125,19 +125,19 @@
    "translation": "Good good where is pay",
    "source_text": "अच्छा अच्छा कहाँ पे",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 8,
    "speaker": "Speaker_C",
    "start": 12.95,
    "end": 14.05,
-   "text": "मैंने आपू क्या चल",
-   "hinglish": "mainne aapu kya chal",
-   "translation": "I went what did you do",
+   "text": "मैंने आपू क्या क्या चल",
+   "hinglish": "mainne aapu kya kya chal",
+   "translation": "I'm sorry, I don't understand what you're saying",
    "source_text": "मैंने आपू क्या क्या चल",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -148,11 +148,11 @@
    "end": 14.85,
    "text": "आइए ये बताइए",
    "hinglish": "aaie ye bataie",
-   "translation": "Let's tell you",
+   "translation": "Let's talk about it",
    "source_text": "आइए ये बताइए",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 10,
@@ -161,11 +161,11 @@
    "end": 18.6,
    "text": "मैम आपको बहुत सारे प्राइजे मिल जाएंगे आपको किस",
    "hinglish": "ma'am aapko bahut sare praije mil jaenge aapko kis",
-   "translation": "Mama will give you a lot of prizes, what do you want",
+   "translation": "Mama, you'll get a lot of prizes, which one do you want?",
    "source_text": "मैम आपको बहुत सारे प्राइजे मिल जाएंगे आपको किस",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 11,
@@ -174,11 +174,11 @@
    "end": 23.9,
    "text": "प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "hinglish": "price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
-   "translation": "Tell us what price you want, we will get you that price",
+   "translation": "What price do you want?",
    "source_text": "प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
   },
   {
    "line_id": 12,
@@ -187,7 +187,7 @@
    "end": 27.45,
    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise",
-   "translation": "What is the trouble in your car like",
+   "translation": "What's wrong with your car?",
    "source_text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
    "changed": false,
    "uncertain": true,
@@ -211,24 +211,24 @@
    "speaker": "Speaker_B",
    "start": 29.05,
    "end": 32.45,
-   "text": "बंद हो गई है ना तो आपने उसका इंजन देखा",
-   "hinglish": "band ho gayi hai na to aapne uska engine dekha",
+   "text": "बंद हो गया है ना तो आपने उसका इंजन देखा",
+   "hinglish": "band ho gaya hai na to aapne uska engine dekha",
    "translation": "Closed",
    "source_text": "बंद हो गई है ना तो आपने उसका इंजन देखा",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 15,
    "speaker": "Speaker_C",
    "start": 32.45,
    "end": 42.4,
-   "text": "मैम आपको अच्छा ही सामान मिलेगा हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगी आपको और",
-   "hinglish": "ma'am aapko achha hi saman milega haan aapko milega divan bed milega ek sofa milega daining table milegi aapko aur",
+   "text": "मैम आपको अच्छा ही सामान मिलेगा हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको और",
+   "hinglish": "ma'am aapko achha hi saman milega haan aapko milega divan bed milega ek sofa milega daining table milega aapko aur",
    "translation": "Mam will get you good stuff, yes you will get a divan bed, a sofa, and a dining table, and then you will get furniture drying room",
    "source_text": "मैम आपको अच्छा ही सामान मिलेगा हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको और",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -239,7 +239,7 @@
    "end": 50.55,
    "text": "सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस",
    "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us",
-   "translation": "Soft bed and dining table and then you will get furniture drying room",
+   "translation": "Sofa dining table and matlab bed will come and then you will get furniture drying room",
    "source_text": "सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस",
    "changed": false,
    "uncertain": true,
@@ -278,20 +278,17 @@
    "end": 70.75,
    "text": "आम की लकड़ी का मैम मैम यहाँ पे हर एक चीज अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीसम की लकड़ी हर एक एक चीज अच्छा मिलता है हम लोग के यहाँ पे वर्कर है अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज अवेलेबल मिल जाएगा",
    "hinglish": "aam ki lakdi ka ma'am ma'am yahan pe har ek cheej achha milta hai aam ki lakdi sagvan ki lakdi shisam ki lakdi har ek ek cheej achha milta hai hum log ke yahan pe worker hai achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheej available mil jaega",
-   "translation": "The speaker mentions that they have a good selection of wood products available for sale, including common, saagwan, shesham, and sheesham wood. They also mention that they have workers who do good work and have good hand finishing skills.",
+   "translation": "The speaker mentions a place where they can find good quality wood, such as mahogany, saagwan, and shesham. They also mention that they have workers who do good work and have good hand finishing. They mention that they can find good quality wood at this place.",
    "source_text": "आम की लकड़ी का मैम मैम यहाँ पे हर एक चीज अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीसम की लकड़ी हर एक एक चीज अच्छा मिलता है हम लोग के यहाँ पे वर्कर है अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज अवेलेबल मिल जाएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
   }
  ],
  "uncertain_lines": [
   1,
   6,
-  7,
   8,
-  9,
-  10,
   11,
   12,
   13,
@@ -303,19 +300,19 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 606.188,
-  "prompt_tokens": 3026,
-  "completion_tokens": 1442,
+  "llm_seconds": 289.969,
+  "prompt_tokens": 3075,
+  "completion_tokens": 1636,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 3,
-  "lines_reverted": 6,
+  "lines_changed": 2,
+  "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 12,
+  "lines_flagged_by_llm": 7,
   "missing_translations": 0,
   "unknown_line_ids": 0,
   "keywords_dropped": 1,
@@ -327,8 +324,10 @@
   "source_sha256": "4a51894b62e3a78f8b91ed7e0f53887466bcc4e31f5a6ecc5e5349f36d1d39ea",
   "source_line_count": 19,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T02:01:13Z",
+  "generated_at_utc": "2026-11-10T19:17:11Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 71.14
+  "source_audio_duration_s": 71.14,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

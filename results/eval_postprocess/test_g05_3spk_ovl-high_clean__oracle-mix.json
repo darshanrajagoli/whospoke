@@ -1,17 +1,21 @@
 {
  "title": "Lucknowi Style Biryanis",
  "topic": "Lucknowi Style Biryanis",
- "executive_summary": "Speaker requests a discount for five people for Lucknowi style biryanis.",
+ "executive_summary": "Speakers discuss the availability of Lucknowi style biryanis for five people.",
  "key_points": [
   "Lucknowi style biryanis",
   "five people",
-  "discount"
+  "discount",
+  "hotel",
+  "room"
  ],
  "keywords": [
   "biryanis",
   "Lucknowi style",
   "five people",
-  "discount"
+  "discount",
+  "hotel",
+  "room"
  ],
  "action_items": [],
  "speakers": [
@@ -120,11 +124,11 @@
    "end": 76.82,
    "text": "साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो गया है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं हम लोग",
    "hinglish": "saath rupye piece hai to agar matlab to wo poochh rahe the ki agar sir kuch discount uskaunt ho gaya hai nahi to sir matlab hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar uchit rate mein mil jata to phir dusre restaurant par kyon jate hain hum log",
-   "translation": "Sar asked if there is a discount if the amount is not specified.",
+   "translation": "Sir, there is a discount of 50% on the hotel room.",
    "source_text": "साठ रुपये पीस है तो अगर मतलब तो वो पूछ रहे थे कि अगर सर कुछ डिस्काउंट उस्काउंट हो गया है नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं हम लोग",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 10,
@@ -133,11 +137,11 @@
    "end": 58.75,
    "text": "सब कुछ है",
    "hinglish": "sab kuch hai",
-   "translation": "Sar asked if everything is okay.",
+   "translation": "Sir, everything is available.",
    "source_text": "सब भी है",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   }
  ],
  "uncertain_lines": [
@@ -147,14 +151,13 @@
   6,
   7,
   8,
-  9,
-  10
+  9
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 38.415,
-  "prompt_tokens": 1797,
-  "completion_tokens": 812,
+  "llm_seconds": 147.854,
+  "prompt_tokens": 1800,
+  "completion_tokens": 825,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -164,7 +167,7 @@
   "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 8,
+  "lines_flagged_by_llm": 6,
   "missing_translations": 2,
   "unknown_line_ids": 0,
   "keywords_dropped": 0,
@@ -176,8 +179,10 @@
   "source_sha256": "54dfbbc7116626874fe311c332f66fbb99026edc70d729cafa2d923690fd6d17",
   "source_line_count": 10,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:58:34Z",
+  "generated_at_utc": "2026-11-11T05:38:37Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 77.24
+  "source_audio_duration_s": 77.24,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

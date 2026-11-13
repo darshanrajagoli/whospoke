@@ -3,15 +3,12 @@
  "topic": "Lost ID Card Conversation",
  "executive_summary": "A conversation between two people about a missing ID card.",
  "key_points": [
-  "Speaker A asks Speaker B for an ID card.",
-  "Speaker B asks Speaker A to help him with his application.",
-  "Speaker A asks Speaker B to check his Karma Chari.",
-  "Speaker B asks Speaker A to check his Karma Chari."
+  "Speaker_A was speaking"
  ],
  "keywords": [
-  "ID card",
-  "check",
-  "application"
+  "speaking",
+  "speaker_a_was_speaking",
+  "ID card"
  ],
  "action_items": [],
  "speakers": [
@@ -39,8 +36,8 @@
    "translation": "Good",
    "source_text": "अच्छा",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 2,
@@ -49,11 +46,11 @@
    "end": 2.55,
    "text": "बोल रहे थे",
    "hinglish": "bol rahe the",
-   "translation": "Speaking",
+   "translation": "Speaker_A was speaking",
    "source_text": "बोल रहे थे",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 3,
@@ -62,11 +59,11 @@
    "end": 4.5,
    "text": "ठीक आप",
    "hinglish": "theek aap",
-   "translation": "Okay",
+   "translation": "OK",
    "source_text": "ठीक आप",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 5,
@@ -75,11 +72,11 @@
    "end": 8.2,
    "text": "बाबू माँ शंकर इंटर कॉलेज के",
    "hinglish": "babu man shankar intar college ke",
-   "translation": "Babu Maa Shankar Inter College",
+   "translation": "Babu Maa Shankar Inter College is in",
    "source_text": "बाबू माँ शंकर इंटर कॉलेज के",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -88,11 +85,11 @@
    "end": 9.95,
    "text": "रोज रोजाना कार है",
    "hinglish": "roj rojana car hai",
-   "translation": "Car",
+   "translation": "Car is always there",
    "source_text": "रोज रोजाना कार है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 7,
@@ -104,8 +101,8 @@
    "translation": "Hello Sir",
    "source_text": "नमस्ते सर",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 8,
@@ -153,7 +150,7 @@
    "end": 22.0,
    "text": "तो हम बी एस का पेपर दे रहे थे आपके स्कूल में मेरा फर्स्ट",
    "hinglish": "to hum B S ka paper de rahe the aapke school mein mera first",
-   "translation": "They were giving me a BS paper at your school.",
+   "translation": "We were giving out BS papers to your school, your first.",
    "source_text": "तो हम बी एस का पेपर देने गए थे आपके स्कूल में मेरा फर्स्ट",
    "changed": true,
    "uncertain": true,
@@ -183,7 +180,7 @@
    "source_text": "तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 14,
@@ -205,7 +202,7 @@
    "end": 40.65,
    "text": "आधार कार्ड की फ़ोटो कापी और क्या काना है सर",
    "hinglish": "aadhar card ki photo kapi aur kya kana hai sir",
-   "translation": "The photo of the base card and what is it.",
+   "translation": "Base card photo copy and what is it.",
    "source_text": "आधार कार्ड की फ़ोटो कापी और क्या काना है सर",
    "changed": false,
    "uncertain": true,
@@ -218,7 +215,7 @@
    "end": 42.75,
    "text": "एक उसका फोटो एक आधार कार्ड यहाँ",
    "hinglish": "ek uska photo ek aadhar card yahan",
-   "translation": "A photo of him with a base card.",
+   "translation": "A photo of him on a base card.",
    "source_text": "एक उसका फोटो एक आधार कार्ड यहाँ",
    "changed": false,
    "uncertain": true,
@@ -283,7 +280,7 @@
    "end": 51.6,
    "text": "तो ऑफिस तो ऑफिस अब कब तक केतने बजे तक ऑफिस खुला है सर अपना",
    "hinglish": "to office to office ab kab tak ketne baje tak office khula hai sir apna",
-   "translation": "So office office will be open until what time in the morning, sir?",
+   "translation": "So office office will be open until what time in the morning, sir",
    "source_text": "तो ऑफिस तो ऑफिस अब कब तक कितने बजे तक ऑफिस खुला है सर अपना",
    "changed": true,
    "uncertain": true,
@@ -343,11 +340,8 @@
   }
  ],
  "uncertain_lines": [
+  1,
   2,
-  3,
-  5,
-  6,
-  7,
   8,
   9,
   10,
@@ -367,9 +361,9 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 73.991,
-  "prompt_tokens": 3185,
-  "completion_tokens": 1637,
+  "llm_seconds": 270.714,
+  "prompt_tokens": 3149,
+  "completion_tokens": 1595,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -379,10 +373,10 @@
   "lines_reverted": 6,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 21,
+  "lines_flagged_by_llm": 16,
   "missing_translations": 4,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 5,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -391,8 +385,10 @@
   "source_sha256": "49db23dec29d4c074e6daa035506c00d1fd81055b18dcedf54fdc027133772ac",
   "source_line_count": 25,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T11:59:03Z",
+  "generated_at_utc": "2026-11-10T22:34:43Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 60.67
+  "source_audio_duration_s": 60.67,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

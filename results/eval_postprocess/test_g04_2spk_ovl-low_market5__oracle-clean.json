@@ -1,23 +1,22 @@
 {
- "title": "Transcript of a conversation about buying pens",
- "topic": "Pen buying",
- "executive_summary": "A conversation about buying pens.",
+ "title": "Transcribed Conversation from Jain Brothers Stationery and Book Shop",
+ "topic": "Purchase of Pen Boxes, Class 10, Teps, Colorbirange Wallet, Securities, Water",
+ "executive_summary": "A conversation about buying pens, class 10, teps, colorbirange wallet, securities, and water for a sick child.",
  "key_points": [
-  "Hello",
-  "Hello, am I speaking at Jain Brothers Stationery & Book Shop?",
-  "Your child's name is Vaibhav, your boy's",
-  "We want two boxes of pens, red, blue and black.",
-  "Yes, and he is in Class 10."
+  "boxes of pens",
+  "red, blue and black",
+  "2 boxes of pens",
+  "special discounts",
+  "tapes and colorbirange wallet"
  ],
  "keywords": [
+  "boxes",
   "pen",
-  "box",
-  "price",
-  "discount",
-  "school",
-  "tapes",
+  "class 10",
+  "teps",
   "colorbirange wallet",
-  "heat"
+  "securities",
+  "water"
  ],
  "action_items": [],
  "speakers": [
@@ -55,7 +54,7 @@
    "end": 4.39,
    "text": "हेलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ",
    "hinglish": "hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon",
-   "translation": "Hello, am I speaking at Jain Brothers Stationery & Book Shop?",
+   "translation": "Hello, am I speaking at Jain Brothers Stationery and Book Shop?",
    "source_text": "हेलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ",
    "changed": false,
    "uncertain": true,
@@ -71,8 +70,8 @@
    "translation": "Your child's name is Vaibhav, your boy's",
    "source_text": "आपके बच्चे का नाम वैभव है आपके लड़के का",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 4,
@@ -97,8 +96,8 @@
    "translation": "Yes, and he is in Class 10.",
    "source_text": "हाँ और वो कक्षा दस में पढ़ता है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -107,7 +106,7 @@
    "end": 33.17,
    "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगी हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
    "hinglish": "to ek box ka kitna price padega to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milegi haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie",
-   "translation": "So, how much will a box cost and will there be a discount?",
+   "translation": "So, how much will a box cost? I'm taking a box for two hundred rupees, and I'll also get some special discounts.",
    "source_text": "तो एक बॉक्स का कितना प्राइस पड़ेगा तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
    "changed": true,
    "uncertain": true,
@@ -120,24 +119,24 @@
    "end": 42.85,
    "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
    "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
-   "translation": "You sent him to school in the morning, but he got sick and caught a fever. His body temperature rose.",
+   "translation": "He sent him to school in the morning and he got sick after coming here and his fever has gone up, his body temperature has increased",
    "source_text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 8,
    "speaker": "S2",
    "start": 43.03,
    "end": 49.67,
-   "text": "मेरे को टेप्स चाहिए हैं मुझे रंग बिरंगे वाले चाहिए हैं आठ आठ सेट",
-   "hinglish": "mere ko teps chahiye hain mujhe rang birange wale chahiye hain aath aath set",
-   "translation": "I want tapes and colorbirange wallet. Eight eight sets please.",
+   "text": "मैं टेप्स चाहता हूँ मैं रंग बिरंगे वाले चाहता हूँ आठ आठ सेट",
+   "hinglish": "main teps chahta hoon main rang birange wale chahta hoon aath aath set",
+   "translation": "I want the tapes and the colorbirange wallet, eight sets each",
    "source_text": "मेरे को टेप्स चाहिए हैं मुझे रंग बिरंगे वाले चाहिए हैं आठ आठ सेट",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 9,
@@ -146,22 +145,22 @@
    "end": 53.23,
    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है",
    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
-   "translation": "Whoever can come here can do it. The heat is very high.",
+   "translation": "Whoever comes here after this, it will be too hot",
    "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 10,
    "speaker": "S2",
    "start": 52.0,
    "end": 58.4,
-   "text": "और सीज़र्स चाहिए हैं बारह पीस बस मैम अब आप मेरे को इन सब का प्राइस के बारे में बताइए हाँ जी",
-   "hinglish": "aur sizars chahiye hain barah piece bas ma'am ab aap mere ko in sab ka price ke bare mein bataie haan ji",
-   "translation": "And cashiers are needed. Twelve pieces please.",
+   "text": "और सीजर्स चाहिए हैं बारह पीस बस मैम अब आप मेरे को इन सब का प्राइस के बारे में बताइए हाँ जी",
+   "hinglish": "aur sijars chahiye hain barah piece bas ma'am ab aap mere ko in sab ka price ke bare mein bataie haan ji",
+   "translation": "And the securities are twelve pieces just tell me the price, please",
    "source_text": "और सीजर्स चाहिए हैं बारह पीस बस मैम अब आप मेरे को इन सब का प्राइस के बारे में बताइए हाँ जी",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -170,20 +169,18 @@
    "speaker": "S1",
    "start": 58.76,
    "end": 76.16,
-   "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
-   "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega",
-   "translation": "It must have been water shortage because of her, but she got sick. If you are there, come and take your child home. Some days rest and then he will be fine.",
+   "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबेयता उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
+   "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabeyta uski theek ho jaegi to phir aap dobara se usko school bhejiega",
+   "translation": "Because of his condition, water shortage may have occurred, so he got sick, but we will take care of him, but if you are, come and take your child home, rest for a few days, and then we will send him to school again.",
    "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
   2,
-  3,
   4,
-  5,
   6,
   7,
   8,
@@ -193,19 +190,19 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 49.71,
-  "prompt_tokens": 1951,
-  "completion_tokens": 1067,
+  "llm_seconds": 207.776,
+  "prompt_tokens": 1993,
+  "completion_tokens": 1201,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 3,
-  "lines_reverted": 5,
+  "lines_changed": 4,
+  "lines_reverted": 1,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 10,
+  "lines_flagged_by_llm": 8,
   "missing_translations": 0,
   "unknown_line_ids": 0,
   "keywords_dropped": 0,
@@ -217,8 +214,10 @@
   "source_sha256": "1c3287f708493c6d0371055cc304bebded7d6a3a43f888441c5c619a37af260f",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:22:03Z",
+  "generated_at_utc": "2026-11-11T03:25:40Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 76.75
+  "source_audio_duration_s": 76.75,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

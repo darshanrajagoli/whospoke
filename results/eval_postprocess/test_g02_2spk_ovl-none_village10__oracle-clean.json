@@ -5,15 +5,13 @@
  "key_points": [
   "Lost ID Card",
   "Discount at School",
-  "ID Card",
-  "Camera",
-  "Check"
+  "Check ID Card",
+  "Check Camera for CCTV"
  ],
  "keywords": [
   "ID Card",
   "Discount",
   "School",
-  "Camera",
   "Check"
  ],
  "action_items": [],
@@ -39,7 +37,7 @@
    "end": 1.56,
    "text": "नमस्ते सर",
    "hinglish": "namaste sir",
-   "translation": "Hello Mr.",
+   "translation": "Hello Mr. Sir",
    "source_text": "नमस्ते सर",
    "changed": false,
    "uncertain": false,
@@ -130,7 +128,7 @@
    "end": 53.16,
    "text": "संगीता जी",
    "hinglish": "sangita ji",
-   "translation": "I'm sorry, I'm not sure what you mean.",
+   "translation": "Sure, what is the name of the group?",
    "source_text": "संगीता जी",
    "changed": false,
    "uncertain": true,
@@ -143,7 +141,7 @@
    "end": 57.79,
    "text": "आईडी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा",
    "hinglish": "aaidi card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega",
-   "translation": "I'm sorry, I'm not sure who will be able to help you with that.",
+   "translation": "Sure, will you get two ID cards?",
    "source_text": "आईडी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा",
    "changed": false,
    "uncertain": true,
@@ -156,7 +154,7 @@
    "end": 62.85,
    "text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
    "hinglish": "haan to apne camera si si ti V camera check karva lijie",
-   "translation": "Sure, can you check my camera to see if it's working?",
+   "translation": "Sure, will you check your camera for CCTV?",
    "source_text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
    "changed": false,
    "uncertain": true,
@@ -175,9 +173,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 43.191,
-  "prompt_tokens": 1836,
-  "completion_tokens": 970,
+  "llm_seconds": 167.07,
+  "prompt_tokens": 1820,
+  "completion_tokens": 957,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -199,8 +197,10 @@
   "source_sha256": "af4cca4804a916b5e9e6a330d6eb321e4b5e4bdb4ebe31c8e5991c15f9be8e24",
   "source_line_count": 10,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:00:48Z",
+  "generated_at_utc": "2026-11-10T22:41:22Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 63.35
+  "source_audio_duration_s": 63.35,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

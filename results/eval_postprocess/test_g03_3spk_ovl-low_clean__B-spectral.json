@@ -1,19 +1,23 @@
 {
  "title": "Hindi and Hinglish Conversations",
  "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes the evidence from a transcribed conversation in Hindi and Hinglish, including summaries of its parts, lines translated into English, and candidate keywords and actions.",
+ "executive_summary": "This report summarizes a conversation between two speakers in Hindi and Hinglish, with a focus on the topic of government and the upcoming election.",
  "key_points": [
-  "Vote",
-  "Record",
-  "Chhachch Puja",
-  "Deepavali",
-  "vote for the government"
+  "Speaker_B and Speaker_B agree that Chhachch Puja is celebrated and Deepavali is also celebrated.",
+  "Speaker_D speaks about voting in the government.",
+  "Speaker_B and Speaker_D talk about bringing in uniforms and making noise for worship.",
+  "Speaker_C and Speaker_D are talking.",
+  "Speaker_A and Speaker_D discuss the upcoming vote."
  ],
  "keywords": [
+  "chhachch",
+  "puja",
+  "Deepavali",
   "vote",
-  "chhachch puja",
-  "deepavali",
-  "vote for the government"
+  "government",
+  "temple",
+  "uniforms",
+  "make a noise for worship."
  ],
  "action_items": [],
  "speakers": [
@@ -258,11 +262,11 @@
    "end": 47.0,
    "text": "ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
    "hinglish": "thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
-   "translation": "make up the cassava and make the cassava for worship",
+   "translation": "make a noise and make a noise for worship",
    "source_text": "ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 19,
@@ -274,8 +278,8 @@
    "translation": "yes I",
    "source_text": "हाँ मैं",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 20,
@@ -362,11 +366,11 @@
    "end": 63.0,
    "text": "अब तो वोट ख़त्म हो गया अब वोट आएगा",
    "hinglish": "ab to vote khatm ho gaya ab vote aaega",
-   "translation": "Now the vote is over. The vote will come",
+   "translation": "Now the vote is over, the vote will come",
    "source_text": "अब तो वोट ख़त्म हो गया अब वोट आएगा",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 27,
@@ -378,8 +382,8 @@
    "translation": "No then",
    "source_text": "नहीं तब",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 28,
@@ -388,7 +392,7 @@
    "end": 67.05,
    "text": "कुछ नहीं दिया सरकार कुछ लाभ नहीं दिया",
    "hinglish": "kuch nahi diya sarkar kuch laabh nahi diya",
-   "translation": "Nothing given by the government, no benefits",
+   "translation": "Nothing given by the government, some benefits",
    "source_text": "कुछ न दिया सरकार कुछ लाभ नहीं दिया",
    "changed": true,
    "uncertain": true,
@@ -401,7 +405,7 @@
    "end": 77.8,
    "text": "तो आप किसका देना है जी उसका का वोट देना है जी आगे समय बढ़ाएगा विकास करेगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारे हो",
    "hinglish": "to aap kiska dena hai ji uska ka vote dena hai ji aage samay badhaega vikas karega hum log ka indirabad ho bathroom ho sahara ho mana jo bhi cheez ke sahare ho",
-   "translation": "So you give to whom you want. Give to whom you want. Give to whom you want. Give to whom you want. Give to whom you want. Give to whom you want. Give to whom you want. Give to whom you want. Give to whom you want. Give to whom you want. Give to whom you want. Give to whom you want. Give to whom you want. Give to whom",
+   "translation": "So you give to whom you want, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him, give to him,",
    "source_text": "तो आप किसका देना है जी उसकी का वोट देना है जी आगे समय बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो",
    "changed": true,
    "uncertain": true,
@@ -433,19 +437,15 @@
   11,
   12,
   15,
-  18,
-  19,
-  26,
-  27,
   28,
   29,
   30
  ],
  "diagnostics": {
   "llm_calls": 6,
-  "llm_seconds": 79.831,
-  "prompt_tokens": 3697,
-  "completion_tokens": 1777,
+  "llm_seconds": 319.709,
+  "prompt_tokens": 3739,
+  "completion_tokens": 1903,
   "chunks": 5,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -455,10 +455,10 @@
   "lines_reverted": 3,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 16,
+  "lines_flagged_by_llm": 12,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -467,8 +467,10 @@
   "source_sha256": "f345c570b6311389119023de42deb2d8a5b68c794b3fc9c3989bb8f8fc929a0a",
   "source_line_count": 30,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:41:54Z",
+  "generated_at_utc": "2026-11-11T01:18:08Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 79.8
+  "source_audio_duration_s": 79.8,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

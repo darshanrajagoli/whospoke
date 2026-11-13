@@ -131,7 +131,7 @@ was mostly the Devanagari copied, and "repairs" that replaced English loanwords 
   llama-server's extra RAM prompt cache (8 GB by default) is turned off.
 - **Memory, measured on CPU.** With one request at a time the server's resident memory reads 10 GB, of which 4 GB is
   the memory-mapped model file (page cache the system can reclaim) and 6 GB its own memory (weights rearranged for
-  the CPU, plus the 2 GB cache). With `--parallel 3` it peaked at 12.5 GB (`results/eval_postprocess_summary_g00_g01_cloud.json`).
+  the CPU, plus the 2 GB cache). With `--parallel 3` it peaked at 12.5 GB (the October cloud run, D33).
   A 16 GB machine should use `--parallel 1` or `2`.
 - **Memory, measured on the GPU.** With every layer on the GPU the server holds about 1 GB of RAM while it generates
   (4.4 GB at its peak, while the memory-mapped model file is copied to the GPU).
@@ -177,11 +177,11 @@ keywords and summary words were really said, how close the report is to the one 
 and how long it takes. `scripts/make_report.py` turns that into the Stage-4 tables in
 [RESULTS_TABLES.md](RESULTS_TABLES.md) and `results/figures/stage4_cascade.png` (D31).
 
-**Result, on all 63 test conversations that may be scored (groups 0–6, D33):** the repair does not fix the
-transcript. It raises cpWER by about one point on every ASR input (full pipeline 51.8 % → 52.8 %, +0.9 points,
-CI +0.8 to +1.1; lower in 1 conversation, higher in 50), and by two points on the true transcript. 60 % of the
+**Result, on all 63 test conversations that may be scored (groups 0–6, D33, D39):** the repair does not fix the
+transcript. It raises cpWER by about one point on every ASR input (full pipeline 51.8 % → 52.7 %, +0.9 points,
+CI +0.7 to +1.1; lower in 1 conversation, higher in 48), and by two points on the true transcript. 64 % of the
 keywords from the full pipeline were really said (99 % from the true transcript), and the summary drifts far from
-the one made from the true transcript (word F1 0.14–0.18). No action items are extracted. So the Stage-3
+the one made from the true transcript (word F1 0.17–0.21). No action items are extracted. So the Stage-3
 transcript stays the record, and the report is a reading aid next to it ([RESULTS.md](RESULTS.md#stage-4--llm-post-processing)).
 
 ## Files

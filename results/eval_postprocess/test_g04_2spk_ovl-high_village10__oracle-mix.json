@@ -1,18 +1,20 @@
 {
- "title": "Transcript of a conversation at Jain Brothers Stationery and Book Shop",
- "topic": "Personal information about Vaibhav",
- "executive_summary": "The conversation is about the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the heat, the person who came here after the",
+ "title": "Jain Brothers Stationery and Book Shop",
+ "topic": "Job search and tape",
+ "executive_summary": "A conversation at Jain Brothers Stationery and Book Shop about a person looking for a job and a tape.",
  "key_points": [
-  "Personal information about Vaibhav"
+  "Jain Brothers Stationery and Book Shop",
+  "Vaibhav",
+  "Blue",
+  "Black",
+  "School"
  ],
  "keywords": [
   "Jain Brothers Stationery and Book Shop",
   "Vaibhav",
   "Blue",
   "Black",
-  "School",
-  "heat",
-  "water"
+  "School"
  ],
  "action_items": [],
  "speakers": [
@@ -37,7 +39,7 @@
    "end": 8.02,
    "text": "हेलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेस चाहिए",
    "hinglish": "hello kya main jain bradars steshanri and book shop mein baat kar rahi hoon hamen kya kahte hain pen ke boxes chahiye",
-   "translation": "Hello, what do you say at Jain Brothers Stationery and Book Shop?",
+   "translation": "Hello, what do we say at Jain Brothers Stationery and Book Shop?",
    "source_text": "हेलो क्या मैं जैन ब्रदर्स स्टेशनरी एंड बुक शॉप में बात कर रही हूँ हमें क्या कहते हैं पेन के बॉक्सेस चाहिए",
    "changed": false,
    "uncertain": true,
@@ -63,7 +65,7 @@
    "end": 12.61,
    "text": "हां जी",
    "hinglish": "haan ji",
-   "translation": "Yes, that's right.",
+   "translation": "Yes, G.",
    "source_text": "हां जी",
    "changed": false,
    "uncertain": false,
@@ -76,7 +78,7 @@
    "end": 14.51,
    "text": "और वो कट गया था दो वज्ता",
    "hinglish": "aur wo kat gaya tha do wajta",
-   "translation": "And he got cut by two knives.",
+   "translation": "And he cut himself with two knives.",
    "source_text": "और वो कट गया था दो वज्ता",
    "changed": false,
    "uncertain": true,
@@ -89,7 +91,7 @@
    "end": 18.07,
    "text": "दो ब्लू के और दो ब्लैक के चाहिए हैं",
    "hinglish": "do blue ke aur do black ke chahiye hain",
-   "translation": "Two blue and two black.",
+   "translation": "Two blue and two black are needed.",
    "source_text": "दो ब्लू के और दो ब्लैक के चाहिए हैं",
    "changed": false,
    "uncertain": true,
@@ -141,7 +143,7 @@
    "end": 65.41,
    "text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबैयत इसको ठीक हो जाएगी तो फिर आप दोबारा से इस्कूल कूल भेजिएगा तो कब तक आएँगे",
    "hinglish": "haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar dega tabaiyat isko theek ho jaegi to phir aap dobara se school kool bhejiega to kab tak aaenge",
-   "translation": "Yes, we will give in, but if you are, come and take your child home, rest for a while, then send us a message saying when you will come.",
+   "translation": "Yes, we will help you, but if you are, come and take your child home. Rest for a while, then send us a message saying when you will be back.",
    "source_text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबीयत इसको ठीक हो जाएगी तो फिर आप दोबारा से इस्कूल कूल भेजिएगा तो कब तक आएँगे",
    "changed": true,
    "uncertain": true,
@@ -160,9 +162,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 53.864,
-  "prompt_tokens": 1856,
-  "completion_tokens": 1164,
+  "llm_seconds": 159.18,
+  "prompt_tokens": 1784,
+  "completion_tokens": 917,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -175,7 +177,7 @@
   "lines_flagged_by_llm": 6,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -184,8 +186,10 @@
   "source_sha256": "de94b7b2398a046cb9f6a1a7b3e7d32afecf1c891891249b1804ba7a6075c393",
   "source_line_count": 10,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:29:56Z",
+  "generated_at_utc": "2026-11-11T03:53:18Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 66.09
+  "source_audio_duration_s": 66.09,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,17 +1,12 @@
 {
- "title": "Restaurant Conversation",
- "topic": "Food and Service",
- "executive_summary": "A conversation about a restaurant and the speaker cutting their hair for someone.",
+ "title": "A Conversation at a Restaurant",
+ "topic": "Market Update",
+ "executive_summary": "The speaker is cutting their hair for someone and mentions a market.",
  "key_points": [
-  "Restaurant",
-  "Food",
-  "Service",
-  "Market",
-  "Cut Hair"
+  "Hello"
  ],
  "keywords": [
-  "restaurant",
-  "market"
+  "Hello"
  ],
  "action_items": [],
  "speakers": [
@@ -146,7 +141,7 @@
    "end": 61.68,
    "text": "हाँ मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा की",
    "hinglish": "haan market hai aapke yahan vaise to hamare yahan sabse zyada matlab hamare shop ka bole to sabse pasandida ki",
-   "translation": "Market is good. It's the best place to buy a hummer.",
+   "translation": "Market is good. It's the best shop.",
    "source_text": "हाँ मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा की",
    "changed": false,
    "uncertain": false,
@@ -164,9 +159,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 273.77,
-  "prompt_tokens": 1712,
-  "completion_tokens": 647,
+  "llm_seconds": 118.067,
+  "prompt_tokens": 1717,
+  "completion_tokens": 642,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -179,7 +174,7 @@
   "lines_flagged_by_llm": 0,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -188,8 +183,10 @@
   "source_sha256": "d5700fdc3b01390e63f642015b86d8db20918f304c3f9b0b6840a5d8b34ca1bb",
   "source_line_count": 10,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T04:11:16Z",
+  "generated_at_utc": "2026-11-10T22:03:11Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 62.43
+  "source_audio_duration_s": 62.43,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

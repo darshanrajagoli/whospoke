@@ -1,17 +1,17 @@
 {
- "title": "Lost ID Card and Phone Number",
- "topic": "Location of Office and Camera CCTV",
- "executive_summary": "A conversation between two friends about the location of an office and the availability of camera CCTV cameras.",
+ "title": "Lost ID Card and Fire in House",
+ "topic": "Lost ID Card and Fire in House",
+ "executive_summary": "A conversation between two people about a lost ID card and a fire in a house.",
  "key_points": [
-  "ID card and phone number lost",
-  "Location of office and camera CCTV",
-  "Availability of camera CCTV cameras"
+  "Lost ID Card",
+  "Fire in House",
+  "Location of Office",
+  "Status of Camera CCTV Camera",
+  "ID Card of Friend"
  ],
  "keywords": [
-  "ID card",
-  "Phone number",
-  "Camera",
-  "CCTV"
+  "Fire in House",
+  "ID Card of Friend"
  ],
  "action_items": [],
  "speakers": [
@@ -62,7 +62,7 @@
    "end": 34.21,
    "text": "वो मेरा आई डी कार्ड घुम हो गया है सर पाँच सर वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फोटोकॉपी और लेके लगना चाहिए",
    "hinglish": "wo mera aai D card ghum ho gaya hai sir paanch sir wo exam paas aa rahe hain to aai D card chahiye sir aadhar card ki photokopi aur leke lagna chahiye",
-   "translation": "The ID card of my friend has gone missing. I need an ID card from the base camp.",
+   "translation": "The ID card of my friend has gone missing. I need an ID card for my friend.",
    "source_text": "वो मेरा आई डी कार्ड घुम हो गया है सर पाँच सर वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फोटोकॉपी और लेके लगना चाहिए",
    "changed": false,
    "uncertain": true,
@@ -75,7 +75,7 @@
    "end": 35.3,
    "text": "मेरा नंबर तीन में छुजा था",
    "hinglish": "mera number teen mein chhuja tha",
-   "translation": "My number was written in my friend's phone.",
+   "translation": "My friend's number was 3.",
    "source_text": "मेरा नंबर तीन में छुजा था",
    "changed": false,
    "uncertain": true,
@@ -101,7 +101,7 @@
    "end": 42.04,
    "text": "हाँ मेरा था उपट मेरा था संगीता जी",
    "hinglish": "haan mera tha upat mera tha sangita ji",
-   "translation": "Yes, my friend was a teacher.",
+   "translation": "Yes, my friend's name was Sangita G.",
    "source_text": "हाँ मेरा था उपट मेरा था संगीता जी",
    "changed": false,
    "uncertain": true,
@@ -112,9 +112,9 @@
    "speaker": "S2",
    "start": 42.61,
    "end": 43.93,
-   "text": "ठीक है, कहाँ जाना पड़ेगा",
-   "hinglish": "theek hai, kahan jana padega",
-   "translation": "Where do we have to go?",
+   "text": "ठीक है कहाँ करनी पड़ेगी",
+   "hinglish": "theek hai kahan karni padegi",
+   "translation": "Where do you want to go?",
    "source_text": "ठीक है कहां करनी पड़ेगी",
    "changed": true,
    "uncertain": true,
@@ -127,7 +127,7 @@
    "end": 48.51,
    "text": "हाँ तो अपने कैमरे सीसीटीवी कैमरे चेक करवा लीजिए",
    "hinglish": "haan to apne camera c.c.t.v camera check karva lijie",
-   "translation": "Yes, let's check our camera CCTV cameras.",
+   "translation": "Yes, please check your camera CCTV camera.",
    "source_text": "हाँ तो अपने कैमरे सीसीटीवी कैमरे चेक करवा लीजिए",
    "changed": false,
    "uncertain": true,
@@ -140,7 +140,7 @@
    "end": 58.66,
    "text": "ऑफिस तो कितने बच्चे का ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद",
    "hinglish": "office to kitne bacche ka office khula hai sir apna aai D card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega achha uske baad",
-   "translation": "Office, how many children have an office open? Who will we have to go to first, to get two items from their ID card?",
+   "translation": "Office, how many children have an office open? Please get the two items from the owner first.",
    "source_text": "ऑफिस तो कितने बच्चे का ऑफिस खुला है सर अपना आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद",
    "changed": false,
    "uncertain": true,
@@ -173,9 +173,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 38.869,
-  "prompt_tokens": 1729,
-  "completion_tokens": 876,
+  "llm_seconds": 149.773,
+  "prompt_tokens": 1721,
+  "completion_tokens": 865,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -188,7 +188,7 @@
   "lines_flagged_by_llm": 9,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -197,8 +197,10 @@
   "source_sha256": "313f10fcb154345a8ff89f33c4ce714046ed3a0bcda0c032813d67503c4bea32",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:12:47Z",
+  "generated_at_utc": "2026-11-10T23:27:10Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 62.94
+  "source_audio_duration_s": 62.94,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

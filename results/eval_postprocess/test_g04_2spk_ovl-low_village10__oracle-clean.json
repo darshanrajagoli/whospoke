@@ -1,19 +1,20 @@
 {
- "title": "Transcript of a conversation about buying boxes at Jain Brothers Stationery and Book Shop",
- "topic": "buying boxes at Jain Brothers Stationery and Book Shop",
- "executive_summary": "A conversation about buying boxes at Jain Brothers Stationery and Book Shop.",
+ "title": "A Conversation about Buying Boxes",
+ "topic": "Buying Boxes",
+ "executive_summary": "A conversation about buying boxes.",
  "key_points": [
+  "box",
+  "discount",
   "Jain Brothers Stationery and Book Shop",
-  "boxes",
   "school",
-  "sickness",
-  "temperature"
+  "item"
  ],
  "keywords": [
-  "boxes",
+  "box",
+  "discount",
   "Jain Brothers Stationery and Book Shop",
   "school",
-  "temperature"
+  "item"
  ],
  "action_items": [],
  "speakers": [
@@ -103,7 +104,7 @@
    "end": 39.29,
    "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
    "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega",
-   "translation": "So, if I buy a box for two hundred rupees, will I also get some special discount?",
+   "translation": "So, if I buy a box for two hundred rupees, will I get a discount?",
    "source_text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
    "changed": false,
    "uncertain": true,
@@ -116,7 +117,7 @@
    "end": 45.02,
    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है",
    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
-   "translation": "It's too hot here, can anyone come and take a look?",
+   "translation": "It's too hot here, can you take an item note and tell me its price?",
    "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है",
    "changed": false,
    "uncertain": true,
@@ -129,7 +130,7 @@
    "end": 50.78,
    "text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
    "hinglish": "haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie",
-   "translation": "Sure, I'll make a note of the item and tell you its price.",
+   "translation": "Can you take an item note and tell me its price?",
    "source_text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
    "changed": false,
    "uncertain": true,
@@ -140,13 +141,13 @@
    "speaker": "S1",
    "start": 48.97,
    "end": 68.81,
-   "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबेयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
-   "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabeyat uski theek ho jaegi to phir aap dobara se usko school bhejiega achha to kab tak aaenge",
-   "translation": "Because of her, water shortages may have occurred, but she's sick, so we'll take care of her, but if you're here, come and get your child home for a few days, then we'll take care of her when she gets better.",
+   "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+   "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega achha to kab tak aaenge",
+   "translation": "It's because of water shortage, he got sick. When will you come, when will you bring your child home?",
    "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -160,22 +161,22 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 48.059,
-  "prompt_tokens": 1895,
-  "completion_tokens": 1020,
+  "llm_seconds": 158.722,
+  "prompt_tokens": 1861,
+  "completion_tokens": 891,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 2,
-  "lines_reverted": 2,
+  "lines_changed": 1,
+  "lines_reverted": 3,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 7,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -184,8 +185,10 @@
   "source_sha256": "201194545e84a5a4a8c23251c024043feb431f3381de375bad0845374c35c36d",
   "source_line_count": 9,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:18:39Z",
+  "generated_at_utc": "2026-11-11T03:12:28Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 69.37
+  "source_audio_duration_s": 69.37,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

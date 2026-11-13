@@ -1,13 +1,18 @@
 {
- "title": "Jain Brother's Health Concerns",
- "topic": "Jain Brother's Health Concerns",
- "executive_summary": "Speaker A is concerned about the Jain brother's health and wants to know how to get him to school. The speaker confirms that the Jain brother is in class 10 and that he has a fever. The speaker says that they need two boxes of red, two boxes of blue, and two boxes of black, and that the price of one box is Rs. 200. The speaker says that the Jain brother may have been deprived of water due to his illness and that he may have become sick because of this. The speaker says that they will give him medication, but if they are available, they will come and take him home for a few days, and then they will send him back to school. The speaker says that they will send him back to school, but if he is not able to attend, they will give him medication.",
+ "title": "Request for Help in Getting Jain Brother's Son a Box of Water",
+ "topic": "Getting Jain Brother's Son a Box of Water",
+ "executive_summary": "Speaker A is asking for help in getting the Jain brother's son a box of water, and also asking for help in getting the Jain brother to school. They also mention that the Jain brother has a fever and that they need to use an item to help him. They say that the Jain brother's water shortage may have caused him to get sick, and that they will give him medication, but that they will need to come back if he is still sick. The speaker also mentions that the Jain brother's son is in class 10.",
  "key_points": [
-  "Jain Brother's Health Concerns",
-  "school",
-  "health"
+  "box",
+  "water",
+  "Jain brother",
+  "son",
+  "school"
  ],
  "keywords": [
+  "box",
+  "water",
+  "Jain brother",
   "school"
  ],
  "action_items": [],
@@ -66,7 +71,7 @@
    "end": 44.9,
    "text": "और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है तो आप मेरा एक काम करिए आइटम यूज कर लीजिए और मुझे उसकी प्राइस बताती चाहिए अब कुछ जो भी हो यहाँ आने के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है",
    "hinglish": "aur usko bukhar ho gaya hai uske sharir ka saath badh gaya hai to aap mera ek kaam karie item use kar lijie aur mujhe uski price batati chahiye ab kuch jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
-   "translation": "The speaker says that the Jain brother has a fever and that his body has become stiff, and that they should use an item to help him and tell him the price of the item.",
+   "translation": "The speaker says that the Jain brother has a fever and that his body has become weak, and that they need to use an item to help him. They also say that the Jain brother is getting sick again, and that they need to get him to school as soon as possible.",
    "source_text": "और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है तो आप मेरा एक काम करिए आइटम यूज कर लीजिए और मुझे उसकी प्राइस बताती चाहिए अब कुछ जो भी हो यहाँ आने के बाद हो सकता है की इतनी ज्यादा गर्मी हो रही है",
    "changed": false,
    "uncertain": true,
@@ -77,11 +82,11 @@
    "speaker": "Speaker_A",
    "start": 45.0,
    "end": 67.55,
-   "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर दवा तो हम दिवा देंगे लेकिन अब तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अठारह तो कब तक आएंगे",
-   "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai har dava to hum diva denge lekin ab to agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar dega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega atharah to kab tak aaenge",
-   "translation": "The speaker says that the Jain brother may have been deprived of water due to his illness, and that he may have become sick because of this, and that they will give him medication, but if they are available, they will come and take him home for a few days, and then they will send him back to school.",
+   "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर दवा तो हम दिवा देंगे लेकिन अब तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबेयता उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अठारह तो कब तक आएंगे",
+   "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai har dava to hum diva denge lekin ab to agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar dega tabeyta uski theek ho jaegi to phir aap dobara se usko school bhejiega atharah to kab tak aaenge",
+   "translation": "The speaker says that the Jain brother's water shortage may have caused him to get sick, and that they will give him medication, but that they will need to come back if he is still sick.",
    "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर दवा तो हम दिवा देंगे लेकिन अब तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अठारह तो कब तक आएंगे",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   }
@@ -93,22 +98,22 @@
  ],
  "diagnostics": {
   "llm_calls": 2,
-  "llm_seconds": 44.376,
-  "prompt_tokens": 1349,
-  "completion_tokens": 930,
+  "llm_seconds": 157.722,
+  "prompt_tokens": 1358,
+  "completion_tokens": 884,
   "chunks": 1,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 1,
+  "lines_changed": 2,
   "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 3,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -117,8 +122,10 @@
   "source_sha256": "24b809a29af32be8c742762dc48fdf8c7b80619478a9feb6d665a20ecf154f1c",
   "source_line_count": 6,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:33:35Z",
+  "generated_at_utc": "2026-11-11T04:07:23Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 67.49
+  "source_audio_duration_s": 67.49,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,7 +1,7 @@
 {
  "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes the evidence from a transcribed conversation between two people, with a focus on buying medication and taking a child to school. The evidence includes summaries of the parts, lines translated into English, and candidate keywords and actions.",
+ "topic": "Medicine and Water Shortage",
+ "executive_summary": "A conversation between two people about medication and the water shortage.",
  "key_points": [
   "Hello",
   "Your boy's name is Vaibhav",
@@ -11,7 +11,8 @@
  "keywords": [
   "namaste",
   "class",
-  "school"
+  "medicine",
+  "water shortage"
  ],
  "action_items": [],
  "speakers": [
@@ -114,11 +115,11 @@
    "end": 24.47,
    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज्यादा गर्मी हो रही है",
    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
-   "translation": "It seems that the heat is causing a lot of discomfort.",
+   "translation": "It seems that the heat is causing discomfort.",
    "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज्यादा गर्मी हो रही है",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
   },
   {
    "line_id": 8,
@@ -127,11 +128,11 @@
    "end": 26.343,
    "text": "क्या मैं जैन ब्रदर्स स्टेसनरी एण्ड बुक शॉप में बात कर रही हूँ",
    "hinglish": "kya main jain bradars stesanri and book shop mein baat kar rahi hoon",
-   "translation": "Am I talking at the Jain Brothers Steneryy and Book Shop.",
+   "translation": "Am I speaking at the Jain Brothers Stennery & Book Shop.",
    "source_text": "क्या मैं जैन ब्रदर्स स्टेसनरी एण्ड बुक शॉप में बात कर रही हूँ",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
   },
   {
    "line_id": 9,
@@ -144,7 +145,7 @@
    "source_text": "हमें क्या कहते हैं पेन के बोक्सेस चाहिए थे छः बॉक्स",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
   },
   {
    "line_id": 10,
@@ -153,7 +154,7 @@
    "end": 33.718,
    "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
    "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
-   "translation": "It seems that the lack of water may have caused his illness.",
+   "translation": "Because of her, the water shortage may have occurred, and she got sick.",
    "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
    "changed": false,
    "uncertain": true,
@@ -166,7 +167,7 @@
    "end": 45.777,
    "text": "हाँ दवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तो स्वास्थ्य उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
    "hinglish": "haan dava to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega to svaasthy uski theek ho jaegi to phir aap dobara se usko school bhejiega",
-   "translation": "Yes, we will give medicine, but if you are, come and take your child home for a few days, then we will send him to school.",
+   "translation": "Yes, we will provide medicine, but if you are, come and take your child home for a few days, and then we will send him to school.",
    "source_text": "हाँ दवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
    "changed": true,
    "uncertain": true,
@@ -182,8 +183,8 @@
    "translation": "Yes, we are.",
    "source_text": "हाँ जी हमें",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 13,
@@ -247,7 +248,6 @@
   9,
   10,
   11,
-  12,
   13,
   14,
   15,
@@ -255,22 +255,22 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 61.196,
-  "prompt_tokens": 2452,
-  "completion_tokens": 1282,
+  "llm_seconds": 206.542,
+  "prompt_tokens": 2400,
+  "completion_tokens": 1210,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 3,
-  "lines_reverted": 7,
+  "lines_reverted": 8,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 10,
+  "lines_flagged_by_llm": 6,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 5,
+  "keywords_dropped": 4,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -279,8 +279,10 @@
   "source_sha256": "f6ffc28b97603bedff0dd5df4f58a2fac282620575727b6cdbc0ce1309834ad7",
   "source_line_count": 16,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:14:53Z",
+  "generated_at_utc": "2026-11-11T02:58:47Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 63.39
+  "source_audio_duration_s": 63.39,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,19 +1,18 @@
 {
  "title": "Hindi and Hinglish Conversations",
- "topic": "Marriage, Haircuts, and Vegetable Cuts",
- "executive_summary": "A conversation between two people about marriage, haircuts, and vegetable cuts.",
+ "topic": "Marriage, Salad, Hair, Gearheads",
+ "executive_summary": "A conversation between two people about marriage, vegetable salad, and hair cutting.",
  "key_points": [
   "Hello",
-  "How are you?",
-  "Hello, I'm talking to the restaurant owner.",
-  "Our specialty is seafood.",
-  "Yes, yes."
+  "Hello, how are you?",
+  "Hello, I'm talking to the restaurant owner. Our specialty is seafood.",
+  "Yes, yes.",
+  "ji"
  ],
  "keywords": [
-  "नमस्ते",
-  "रेस्टोरेंट",
-  "player",
-  "gharah"
+  "Hello",
+  "Speak",
+  "namaste"
  ],
  "action_items": [],
  "speakers": [
@@ -96,7 +95,7 @@
    "end": 10.24,
    "text": "हाँ बोलिए",
    "hinglish": "haan bolie",
-   "translation": "Say hello.",
+   "translation": "Speak.",
    "source_text": "हाँ बोलिए",
    "changed": false,
    "uncertain": false,
@@ -161,7 +160,7 @@
    "end": 29.44,
    "text": "आपको बता दें अगर आप शादी ले जाएँगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे फ्राई करवा के या सब्जी बनवा के ले जाएँगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो",
    "hinglish": "aapko bata den agar aap shadi le jaenge to teen sau rupye milenge aapko aur agar aap use fry karva ke ya sabji banva ke le jaenge to aapko sadhe chaar sau rupye ki pad jaegi to",
-   "translation": "You will get three hundred rupees if you marry and if you get him a haircut or a vegetable cut, you will get four and a half hundred rupees",
+   "translation": "Tell me if you want to marry and I will give you three hundred rupees and if you want to make a vegetable salad or fry it, you will get four hundred rupees",
    "source_text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे फ्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो",
    "changed": true,
    "uncertain": true,
@@ -174,7 +173,7 @@
    "end": 51.08,
    "text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको सामने मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट करें हैं",
    "hinglish": "mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V V seb hai aur yu seb bhi hai aapko kaun si karani hai okay theek hai uski phees bata deti hoon meri meri yu cutting ke liye jo aapko samne matlab face uske according katani hai ya phir samne se bhi hair kat karen hain",
-   "translation": "You will get three steps in my parlour and four steps out, and a cut of the apple and a cut of the vegetable, and you will get four and a half hundred rupees",
+   "translation": "In my parlour, there are three steps and four steps, and the floor is made of VV seab and U seab, and the seab is also used for cutting my hair, and I will tell you the price of the seab",
    "source_text": "मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको सामने मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट करें हैं",
    "changed": false,
    "uncertain": true,
@@ -187,7 +186,7 @@
    "end": 59.42,
    "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से भुलवा के भी आपको दे सकते हैं",
    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bhulva ke bhi aapko de sakte hain",
-   "translation": "Yes, the varity is there and you can see it, like the need for a different kind of thing, and we can also give it to you outside",
+   "translation": "Yes, the arrangement is good, and we can also give it to you outside",
    "source_text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है तो हम उसे बाहर से भुलवा के भी आपको दे सकते हैं",
    "changed": true,
    "uncertain": true,
@@ -200,7 +199,7 @@
    "end": 62.79,
    "text": "हाँ हाँ पूछो ग्यारह ही खिलाड़ी होते हैं",
    "hinglish": "haan haan puchho gyarah hi khiladi hote hain",
-   "translation": "Yes, yes, ask for a gharah he is a player",
+   "translation": "Yes, yes, ask for gearheads only",
    "source_text": "हाँ हाँ पूछो ग्यारह ही खिलाड़ी होते हैं",
    "changed": false,
    "uncertain": false,
@@ -217,9 +216,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 493.579,
-  "prompt_tokens": 2367,
-  "completion_tokens": 1206,
+  "llm_seconds": 205.219,
+  "prompt_tokens": 2350,
+  "completion_tokens": 1194,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -232,7 +231,7 @@
   "lines_flagged_by_llm": 3,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 7,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -241,8 +240,10 @@
   "source_sha256": "0e82f3d4255b6e4e8d7501776193a5aba9526c5bfcb8b338be28c1813e9eaab7",
   "source_line_count": 13,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:42:28Z",
+  "generated_at_utc": "2026-11-10T21:30:00Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 63.31
+  "source_audio_duration_s": 63.31,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

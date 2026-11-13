@@ -46,7 +46,7 @@ are in [docs/RESULTS.md](docs/RESULTS.md).
 | 1 · Separation | Conv-TasNet: +9.6 dB on overlaps. With the true timeline, splicing separated overlaps cuts heavy-overlap transcript errors from 35.5 % to 27.6 % |
 | 2 · Diarization | Our spectral clustering: DER 20.3 %. GMM: 20.3 %. Off-the-shelf pyannote 3.1: 18.4 %. Ours and pyannote are within error bars |
 | 3 · Transcription | IndicConformer: 21.0 % WER on real-world Vaani audio, vs 38.0 % for IndicWav2Vec. 78 % of English words inside Hindi recognised. 82 % of them spelled correctly in the Hinglish output. Same ranking on a Nirantar Hindi sample (11.0 % vs 30.2 %) |
-| 4 · LLM report | Airavata (4-bit, local; runs fully on the 6 GB GPU) writes the report, but its "repair" does not fix the transcript: on the full pipeline 51.8 % → 52.8 % (+0.9 points, CI +0.8 to +1.1; 63 conversations, better in 1, worse in 50). 60 % of its keywords were really said (99 % from the true transcript). It extracts no action items. Speakers and times pass through unchanged |
+| 4 · LLM report | Airavata (4-bit, local; runs fully on the 6 GB GPU) writes the report, but its "repair" does not fix the transcript: on the full pipeline 51.8 % → 52.7 % (+0.9 points, CI +0.7 to +1.1; 63 conversations, better in 1, worse in 48). 64 % of its keywords were really said (99 % from the true transcript). It extracts no action items. Speakers and times pass through unchanged |
 
 ![Order A vs Order B](results/figures/order_A_vs_B.png)
 
@@ -116,6 +116,7 @@ python -m whospoke run my_recording.wav --postprocess   # the same, plus the Sta
 python -m whospoke postprocess results/runs/my_recording/transcript.json   # Stage 4 on its own, after a run
 python -m whospoke run my_recording.wav --order A --clustering gmm --asr indicwav2vec --speakers 2
 python -m whospoke separate my_recording.wav             # Stage 1 alone: one .wav per separated voice
+python -m whospoke run my_recording.wav --language kn    # another Indian language (runs, but not evaluated: D40)
 ```
 
 Outputs go to `results/runs/<file>/`. An example is in [results/demo/](results/demo/): a two-speaker test conversation with heavy overlap in 5 dB market noise, picked because its error is close to the test-set median (a typical case, not the best one).
@@ -154,4 +155,5 @@ pytest                                                # fast tests; `pytest -m s
   wrong, its summary repeats the ASR's mistakes, and it extracts no action items (the section stays empty). Read
   the report next to the Stage-3 transcript, not instead of it. It cannot recover words the ASR never heard. A summary has no single right answer, so it is measured
   indirectly (D31): against the true transcript, and against the report made from it.
-- Hindi and English only. Other Indian languages are a possible extension (D4).
+- Evaluated on Hindi and English only (D4). Stages 1–3 also run on the other languages IndicConformer covers
+  (`--language`, D40), but no number in this repository is about them, and Stage 4 (Airavata) reads Hindi only.

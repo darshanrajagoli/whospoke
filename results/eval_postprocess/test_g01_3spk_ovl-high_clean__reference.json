@@ -3,14 +3,21 @@
  "topic": "Hindi and Hinglish Conversations",
  "executive_summary": "This report summarizes a conversation between two people in Hindi and Hinglish, with a focus on hair cutting and flower charges.",
  "key_points": [
-  "Hair cutting and flower charges are discussed in Hindi and Hinglish.",
-  "The speaker asks the listener to speak.",
-  "The listener agrees to speak.",
-  "The speaker asks the listener to speak again.",
-  "The listener agrees to speak again."
+  "Hindi and Hinglish conversations",
+  "Hair cutting and flower charges",
+  "Speakers ask for help with a queue",
+  "Speakers ask for help with a flower charge",
+  "Speakers ask for help with a saadi charge"
  ],
  "keywords": [
-  "फूल चार्ज"
+  "हैलो",
+  "बोलो",
+  "नमस्ते",
+  "इस्टेप",
+  "नमस्कार",
+  "सर रेस्टोरेंट",
+  "जी जी ये तो हमारी इस्पेशिलिटी है सर",
+  "fees"
  ],
  "action_items": [],
  "speakers": [
@@ -44,8 +51,8 @@
    "translation": "Hello",
    "source_text": "हाँ हैलो",
    "changed": false,
-   "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 2,
@@ -93,7 +100,7 @@
    "end": 4.678,
    "text": "हाँ बोलो",
    "hinglish": "haan bolo",
-   "translation": "There are three steps for the establishment of",
+   "translation": "There are three steps in my parlour and there'",
    "source_text": "हाँ बोलो",
    "changed": false,
    "uncertain": true,
@@ -106,11 +113,11 @@
    "end": 12.756,
    "text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है",
    "hinglish": "mere parlour mein mein three istep hote hain four istep off hoti hain aur phaizal hoti hai V V shebh hai aur yu shape bhi hai",
-   "translation": "Faizal is a shepherd and also has sheep.",
+   "translation": "For the sake of the sake of it and there's a shovel and you're also there",
    "source_text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 7,
@@ -327,7 +334,7 @@
    "end": 55.938,
    "text": "आपको बता दें अगर आप सादी ले जाएँगे तो तीन सौ रुपए मिलेंगे आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाएँगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
    "hinglish": "aapko bata den agar aap sadi le jaenge to teen sau rupae milenge aapko aur agar aap use ye frai karva ke ya sabji banva ke le jaenge to aapko sadhe chaar sau rupae ki pad jaegi to",
-   "translation": "Tell me if you take a salaad, you will get three hundred rupees and if you get it fried or cooked, you will get four hundred rupees.",
+   "translation": "If you take a saadi, you will get three hundred rupees. If you take a saadi and a vegetable, you will get four hundred rupees.",
    "source_text": "आपको बता दें अगर आप सादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
    "changed": true,
    "uncertain": true,
@@ -353,7 +360,7 @@
    "end": 64.346,
    "text": "हां वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheej ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain",
-   "translation": "Yes, the queue is full. You can see it. We can also tell you if you need something else.",
+   "translation": "Yes, the queue is full. You can see it. If you need something, just ask us to get it for you.",
    "source_text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": true,
    "uncertain": false,
@@ -366,7 +373,7 @@
    "end": 70.376,
    "text": "तो आप सॉप पे एक बार आ जाऍं तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "hinglish": "to aap shop pe ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai",
-   "translation": "So you can come back and tell us what you want.",
+   "translation": "So you can come over and ask us what you need.",
    "source_text": "तो आप सॉप पे एक बार आ जाऍं तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "changed": false,
    "uncertain": false,
@@ -374,7 +381,6 @@
   }
  ],
  "uncertain_lines": [
-  1,
   2,
   3,
   4,
@@ -394,22 +400,22 @@
  ],
  "diagnostics": {
   "llm_calls": 6,
-  "llm_seconds": 771.341,
-  "prompt_tokens": 3692,
-  "completion_tokens": 1865,
+  "llm_seconds": 310.478,
+  "prompt_tokens": 3668,
+  "completion_tokens": 1852,
   "chunks": 5,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 3,
-  "lines_reverted": 15,
+  "lines_reverted": 14,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 2,
+  "lines_flagged_by_llm": 3,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 7,
+  "keywords_dropped": 14,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -418,8 +424,10 @@
   "source_sha256": "cd2990fb07a39088fe547ecca0c15f7e0ea40d88ecdf6f69ec6356e3db2cade3",
   "source_line_count": 26,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:55:19Z",
+  "generated_at_utc": "2026-11-10T21:42:16Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 70.93
+  "source_audio_duration_s": 70.93,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

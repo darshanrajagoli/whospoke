@@ -1,12 +1,12 @@
 {
  "title": "Hindi and Hinglish Conversation Report",
  "topic": "Hindi and Hinglish Conversation",
- "executive_summary": "This report summarizes a conversation between two speakers in Hindi and Hinglish, with a focus on the topics discussed and the actions taken by the speakers.",
+ "executive_summary": "This report summarizes a conversation between two speakers in Hindi and Hinglish, with a focus on the main topic of the conversation and the key points and keywords discussed.",
  "key_points": [
   "Speaker A says yes and two",
   "Speaker B says he wants it",
   "Speaker A says yes",
-  "Speaker B says he agrees",
+  "Speaker B says he wants to go to the top",
   "Speaker A says he wants a saree"
  ],
  "keywords": [
@@ -133,7 +133,7 @@
    "end": 21.25,
    "text": "क्या चाहिएगा साड़ी लेना है",
    "hinglish": "kya chahiega sadi lena hai",
-   "translation": "Speaker_A wants to buy a saree",
+   "translation": "Speaker_A wants a saree",
    "source_text": "क्या चाहिएगा साड़ी लेना है",
    "changed": false,
    "uncertain": true,
@@ -159,7 +159,7 @@
    "end": 25.7,
    "text": "अरे हमको मतलब के लेंगर पे शहर में सही हमको",
    "hinglish": "are hamko matlab ke lengar pe shahar mein sahi hamko",
-   "translation": "Speaker_B says he doesn't want to go to the city",
+   "translation": "Speaker_B doesn't want to go to the city",
    "source_text": "अरे हमको मतलब के लेंगर पे शहर में सही हमको",
    "changed": false,
    "uncertain": true,
@@ -189,7 +189,7 @@
    "source_text": "हाँ नीचेगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 15,
@@ -237,7 +237,7 @@
    "end": 36.35,
    "text": "मेल हुए मेल",
    "hinglish": "mail hue mail",
-   "translation": "Mail received mail",
+   "translation": "Mail received",
    "source_text": "मेल उठे मेल",
    "changed": true,
    "uncertain": false,
@@ -397,7 +397,7 @@
    "source_text": "हम्म",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 31,
@@ -410,20 +410,20 @@
    "source_text": "हम्म",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 32,
    "speaker": "Speaker_B",
    "start": 62.2,
    "end": 66.15,
-   "text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम है बस",
-   "hinglish": "haan bas do log do log rahenge aur computer hamara kaam hai bas",
-   "translation": "Yes, just two people, two people will stay and computer is our work",
+   "text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस",
+   "hinglish": "haan bas do log do log rahenge aur computer hamara kaam kaam hai bas",
+   "translation": "Yes, just two people will stay and the computer is our work, just",
    "source_text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस",
-   "changed": true,
-   "uncertain": false,
-   "note": ""
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 33,
@@ -473,23 +473,24 @@
   28,
   29,
   30,
-  31
+  31,
+  32
  ],
  "diagnostics": {
   "llm_calls": 7,
-  "llm_seconds": 93.713,
-  "prompt_tokens": 4153,
-  "completion_tokens": 2002,
+  "llm_seconds": 367.109,
+  "prompt_tokens": 4131,
+  "completion_tokens": 1979,
   "chunks": 6,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 4,
-  "lines_reverted": 11,
+  "lines_changed": 3,
+  "lines_reverted": 14,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 13,
+  "lines_flagged_by_llm": 14,
   "missing_translations": 0,
   "unknown_line_ids": 0,
   "keywords_dropped": 6,
@@ -501,8 +502,10 @@
   "source_sha256": "f4276a746a38ddc051d3a2f11364f0f6c96798d4a5d84796b63ab84685453363",
   "source_line_count": 35,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:25:34Z",
+  "generated_at_utc": "2026-11-11T07:21:37Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 83.94
+  "source_audio_duration_s": 83.94,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

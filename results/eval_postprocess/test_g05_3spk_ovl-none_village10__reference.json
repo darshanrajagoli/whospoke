@@ -1,20 +1,17 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation between two people, one of whom is a photographer, about a wedding and pre-wedding photos.",
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Lakhnavi-style biryanis",
+ "executive_summary": "Two people discuss the price of rose petals and berries, and the time for a photoshoot.",
  "key_points": [
   "Hello Sir",
   "Hello Ma'am, tell me what's the deal?",
   "Hello Sir, hello Sir, I was talking to Harish Chaurasia",
   "Hello, sir, tell me what is your name?",
-  "Greetings, sir, are you talking to a photographer?,"
+  "Greetings, sir, are you talking to a photographer?"
  ],
  "keywords": [
-  "नमस्ते, सर",
-  "चौरसिया",
-  "हम बोल रहे थे",
-  "शादी",
-  "फोटोग्राफर"
+  "Hello",
+  "Harish Chaurasia"
  ],
  "action_items": [],
  "speakers": [
@@ -58,7 +55,7 @@
    "end": 7.266,
    "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "hinglish": "sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
-   "translation": "We were talking about Lakhnavi style biryanis that we wanted to have",
+   "translation": "We were talking about Lakhnavi-style biryanis that we wanted to have",
    "source_text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "changed": false,
    "uncertain": true,
@@ -100,8 +97,8 @@
    "translation": "Hello",
    "source_text": "हलो",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 6,
@@ -188,7 +185,7 @@
    "end": 38.98,
    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फ़ी छेना वोना समोसा वमोसा यह सब",
    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barfi chhena wona samosa wamosa yeh sab",
-   "translation": "Yes, and also wanted something sweet like roses, berries, and sugar-coated gum.",
+   "translation": "Yes, and also wanted something sweet like roses, berries, and sugar-coated snacks.",
    "source_text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फ़ी छेना वोना समोसा वमोसा यह सब",
    "changed": false,
    "uncertain": true,
@@ -201,7 +198,7 @@
    "end": 49.951,
    "text": "तो सर वह कह रहे थे वह वह सभी पूछ रहे थे कि वह जो यह है गुलाब जामुन यह कितने रुपये पीस मिलेगा",
    "hinglish": "to sir woh kah rahe the woh woh sabhi poochh rahe the ki woh jo yeh hai gulab jamun yeh kitne rupye piece milega",
-   "translation": "He was asking for the rose flower and how much it would cost.",
+   "translation": "He was asking for the price of rose petals and berries.",
    "source_text": "तो सर वह कह रहे थे वह वह सभी पूछ रहे थे कि वह जो यह है गुलाब जामुन यह कितने रुपये पीस मिलेगा",
    "changed": false,
    "uncertain": true,
@@ -253,7 +250,7 @@
    "end": 65.34,
    "text": "तो कब टाइम है मतलब फोटोशूट करने के लिए आप वही दूसरी डेट में आप",
    "hinglish": "to kab time hai matlab photoshoot karne ke liye aap wahi dusri date mein aap",
-   "translation": "When is the time for photoshoot?",
+   "translation": "When is the time for photoshoot, you in the same date.",
    "source_text": "तो कब टाइम है मतलब फोटोशूट करने के लिए आप वही दूसरी डेट में आप",
    "changed": false,
    "uncertain": true,
@@ -264,6 +261,7 @@
   2,
   3,
   4,
+  5,
   6,
   7,
   8,
@@ -279,9 +277,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 62.381,
-  "prompt_tokens": 2454,
-  "completion_tokens": 1347,
+  "llm_seconds": 224.815,
+  "prompt_tokens": 2462,
+  "completion_tokens": 1323,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -291,10 +289,10 @@
   "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 13,
+  "lines_flagged_by_llm": 14,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -303,8 +301,10 @@
   "source_sha256": "c636229922bb863cffe4b547e2a23502e94e043b60617b9387c1a31ed08099a8",
   "source_line_count": 17,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:38:20Z",
+  "generated_at_utc": "2026-11-11T04:24:53Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 65.83
+  "source_audio_duration_s": 65.83,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

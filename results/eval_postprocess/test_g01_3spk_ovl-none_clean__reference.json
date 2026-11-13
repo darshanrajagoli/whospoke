@@ -1,18 +1,21 @@
 {
  "title": "Hindi and Hinglish Conversations at a Restaurant",
- "topic": "Market Prices and Requests",
- "executive_summary": "A conversation between two people at a restaurant, with topics including market prices, requests, and greetings.",
+ "topic": "Market Prices and Staples",
+ "executive_summary": "A conversation between two people at a restaurant, with Priyans and an unidentified speaker discussing market prices and staples.",
  "key_points": [
-  "Hello",
   "Speak",
   "Gee",
   "Bill",
-  "Yes, tell me if you take a sack, you'll get three hundred, and if you get it fried or make it vegetable, you'll get four and a half hundred."
+  "Tell me if you take a sack, you'll get three hundred, and if you take it to a restaurant or a vegetable stall, you'll get four and a half hundred.",
+  "Understanding you"
  ],
  "keywords": [
+  "Speak",
+  "Gee",
   "Bill",
-  "Yes",
-  "Tell me if you take a sack, you'll get"
+  "Tell me if you take a sack, you'll get",
+  "three hundred",
+  "and if you take it to a restaurant or a,"
  ],
  "action_items": [],
  "speakers": [
@@ -147,7 +150,7 @@
    "end": 23.52,
    "text": "आपको बता दें अगर आप सादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
    "hinglish": "aapko bata den agar aap sadi le jaoge to teen sau rupae milegi aapko aur agar aap use ye frai karva ke ya sabji banva ke le jaoge to aapko sadhe chaar sau rupae ki pad jaegi to",
-   "translation": "Tell me if you take a sack, you'll get three hundred, and if you get it fried or make it vegetable, you'll get four and a half hundred.",
+   "translation": "Tell me if you take a sack, you'll get three hundred, and if you take it to a restaurant or a vegetable stall, you'll get four and a half hundred.",
    "source_text": "आपको बता दें अगर आप सादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
    "changed": false,
    "uncertain": true,
@@ -160,7 +163,7 @@
    "end": 31.768,
    "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheej ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain",
-   "translation": "Then you come over and tell us what you need.",
+   "translation": "Then you come to me once and tell me what you need.",
    "source_text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": false,
    "uncertain": true,
@@ -186,11 +189,11 @@
    "end": 39.055,
    "text": "हाँ बोलो",
    "hinglish": "haan bolo",
-   "translation": ".",
+   "translation": "",
    "source_text": "हाँ बोलो",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "No English translation was returned."
   },
   {
    "line_id": 13,
@@ -277,7 +280,7 @@
    "end": 52.086,
    "text": "प्रियंस",
    "hinglish": "priyans",
-   "translation": "Hello",
+   "translation": "Priyans",
    "source_text": "प्रियांस",
    "changed": true,
    "uncertain": false,
@@ -290,7 +293,7 @@
    "end": 53.065,
    "text": "समझ रहे हो ना आप",
    "hinglish": "samajh rahe ho na aap",
-   "translation": "I understand",
+   "translation": "Understanding you",
    "source_text": "समझ रहे हो ना आप",
    "changed": false,
    "uncertain": false,
@@ -303,11 +306,11 @@
    "end": 54.138,
    "text": "एक तरीके से वो",
    "hinglish": "ek tarike se wo",
-   "translation": "In a different way",
+   "translation": "By the way, she",
    "source_text": "एक तरीके से वो",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 22,
@@ -316,7 +319,7 @@
    "end": 56.784,
    "text": "हाँ दिखा देंगे",
    "hinglish": "haan dikha denge",
-   "translation": "Yes, I will show",
+   "translation": "Will show",
    "source_text": "हाँ दिखा देंगे",
    "changed": false,
    "uncertain": false,
@@ -329,11 +332,11 @@
    "end": 58.113,
    "text": "दो चार दिन लगेंगे",
    "hinglish": "do chaar din lagenge",
-   "translation": "Two and four days will pass",
+   "translation": "Two four days",
    "source_text": "दो चार दिन लगेंगे",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 24,
@@ -342,7 +345,7 @@
    "end": 66.466,
    "text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है",
    "hinglish": "mere parlour mein mein three istep hote hain four istep off hoti hain aur phaizal hoti hai V V shebh hai aur yu shape bhi hai",
-   "translation": "My parlour has three steps for the stairs and a foyer and a shelf and you also have a shelf",
+   "translation": "Three staples in my parlor for stapling and a shabby and you also have a shabby",
    "source_text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है",
    "changed": false,
    "uncertain": true,
@@ -374,16 +377,14 @@
   16,
   17,
   18,
-  21,
-  23,
   24,
   25
  ],
  "diagnostics": {
   "llm_calls": 6,
-  "llm_seconds": 686.99,
-  "prompt_tokens": 3558,
-  "completion_tokens": 1654,
+  "llm_seconds": 313.216,
+  "prompt_tokens": 3555,
+  "completion_tokens": 1672,
   "chunks": 5,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -393,10 +394,10 @@
   "lines_reverted": 10,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 12,
-  "missing_translations": 5,
+  "lines_flagged_by_llm": 9,
+  "missing_translations": 6,
   "unknown_line_ids": 0,
-  "keywords_dropped": 5,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -405,8 +406,10 @@
   "source_sha256": "a12c8a5418451f13ba6a5a0ecd004344dca8ba4367911c0966781de669cc18d3",
   "source_line_count": 25,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T02:41:32Z",
+  "generated_at_utc": "2026-11-10T20:08:01Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 68.25
+  "source_audio_duration_s": 68.25,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

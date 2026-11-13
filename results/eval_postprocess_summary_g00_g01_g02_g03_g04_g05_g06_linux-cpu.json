@@ -1,0 +1,23 @@
+{
+ "model": "ai4bharat/Airavata",
+ "prompt_schema_revision": "b03fa93a833a",
+ "context_tokens": 4096,
+ "conversations": 63,
+ "server_peak_rss_mb": 5011.7,
+ "workers": 1,
+ "wall_s_this_run": 51836.8,
+ "groups": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "machine": "Linux PC (Arch Linux), CPU only, no GPU used",
+ "gpu_layers": 0,
+ "llama_cpp": "0.5.0-dev (build 0, commit unknown)",
+ "server": "scripts/serve_llm.py --gpu-layers 0 --ctx 4096 --threads 8 --parallel 1",
+ "run": "results/stage4_probe/2026-11-10_s4eval_r1/run_meta.json"
+}

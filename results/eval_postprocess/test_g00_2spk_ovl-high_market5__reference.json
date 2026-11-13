@@ -11,8 +11,7 @@
  ],
  "keywords": [
   "हैलो",
-  "हां मैम",
-  "अच्छा अच्छा कहाँ पे"
+  "हां मैम"
  ],
  "action_items": [],
  "speakers": [
@@ -245,7 +244,7 @@
    "end": 69.789,
    "text": "मैम यहाँ पर हर एक चीज अच्छा मिलता है आम की लकड़ी सागवन की लकड़ी शीशम की लकड़ी हर एक एक चीज अच्छा मिलता है हम लोग यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनके हाथ की यानि फिनिसिंग भी बहुत ही अच्छी है और आपको हर एक चीज ए वन मिल जाएगा",
    "hinglish": "ma'am yahan par har ek cheej achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheej achha milta hai hum log yahan par worker hain achhe se kaam karte hain unke haath ki yani phinising bhi bahut hi achhi hai aur aapko har ek cheej e one mil jaega",
-   "translation": "Mam sells every single thing good here, common wood of mam, saagvan wood, and fishwood. We are workers here, working well. Their handiwork is very good and you will get one by one.",
+   "translation": "Mam sells every single thing good here, common wood of mam, saagvan wood, and sisham wood. We are workers here, working well. Their hands are very good at finishing and you will get every single thing a van.",
    "source_text": "मैम यहाँ पर हर एक चीज अच्छा मिलता है आम की लकड़ी सागवन की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनके हाथ की यानि फिनिसिंग भी बहुत ही अच्छी है और आपको हर एक चीज ए वन मिल जाएगा",
    "changed": true,
    "uncertain": true,
@@ -258,7 +257,7 @@
    "end": 77.658,
    "text": "मैम मेरा दुकान पड़ेगा गाज़ीपुर में और मैम आप अपना पेमेंट कैसे करेंगे ऑनलाइन करेंगे कैस ऑन डिलीवरी करेंगे कैसे",
    "hinglish": "ma'am mera dukan padega gazipur mein aur ma'am aap apna payment kaise karenge online karenge kais on delivery karenge kaise",
-   "translation": "Mam will have a shop in Ghazipur and how will you pay online? Will deliver it right away.",
+   "translation": "Mam will have a shop in Ghazipur and will pay you online. You will get a van.",
    "source_text": "मैम मेरा दुकान पड़ेगा गाज़ीपुर में और मैम आप अपना पेमेंट कैसे करेंगे ऑनलाइन करेंगे कैस ऑन डिलीवरी करेंगे कैसे",
    "changed": false,
    "uncertain": true,
@@ -278,9 +277,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 612.475,
-  "prompt_tokens": 2574,
-  "completion_tokens": 1490,
+  "llm_seconds": 245.888,
+  "prompt_tokens": 2593,
+  "completion_tokens": 1487,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -293,7 +292,7 @@
   "lines_flagged_by_llm": 9,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -302,8 +301,10 @@
   "source_sha256": "4b1a5d91b9b92cadb81b764e6516adea8a6bdc8d57e2a71e265d7d0f6eebfdc9",
   "source_line_count": 18,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T02:29:15Z",
+  "generated_at_utc": "2026-11-10T19:54:16Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 78.17
+  "source_audio_duration_s": 78.17,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -39,6 +39,7 @@ from typing import Any, Protocol
 
 from .audio import fmt_ts
 from .hinglish import lexicon, romanise
+from .languages import LanguageInfo, resolve_language
 from .metrics import error_counts, normalise
 
 DEFAULT_MODEL = os.getenv("WHOSPOKE_LLM_MODEL", "ai4bharat/Airavata")
@@ -49,30 +50,45 @@ DEFAULT_TIMEOUT = int(os.getenv("WHOSPOKE_LLM_TIMEOUT", "900"))      # a 7B mode
 MAX_LINES_PER_CHUNK = 6         # with longer lists Airavata's translations drift onto neighbouring lines (D32)
 MAX_EDIT_RATIO = 0.5            # a repair may change at most half of a line's characters (D29)
 UNSPECIFIED = "unspecified"     # action-item owner when the transcript does not say who must act
+VALIDATOR_RULES_VERSION = 2     # bump when the Python grounding rules change (part of the cache-identity revision):
+                                # 1 = pre-checks; 2 = adds question-shaped / non-commitment action rejection
 
-SYSTEM_PROMPT = """You clean up automatic speech recognition (ASR) transcripts of Hindi and Hinglish \
-conversations recorded in noisy places. The transcript is the only source of truth. Never add facts, names, \
-numbers, dates, places, events or actions that are not in it. Reply with JSON only."""
 
-CHUNK_PROMPT = """Below are numbered lines of a conversation: line number | speaker | time | ASR text in Devanagari.
-The ASR text has mistakes caused by noise and people talking over each other.
+def system_prompt(lang: LanguageInfo | str = "hi") -> str:
+    info = resolve_language(lang) if isinstance(lang, str) else lang
+    return (
+        f"You clean up automatic speech recognition (ASR) transcripts of {info.name} and {info.latin_name} "
+        f"conversations recorded in noisy places. The transcript is the only source of truth. Never add facts, names, "
+        f"numbers, dates, places, events or actions that are not in it. Reply with JSON only."
+    )
 
-For every line, in the same order, return an object with:
-- "id": the line number.
-- "text": the line in Devanagari. Copy it unchanged unless a word is clearly broken or repeated by mistake. Never \
-replace a word with a synonym, never drop or add words. English words written in Devanagari (like ऑफिस, टाइम, \
-मैडम) stay exactly as they are.
-- "english": this line translated into English. Translate only this line. Do not describe it, do not add anything.
-- "uncertain": true if the line is too garbled to understand, otherwise false.
 
-Also return:
-- "summary": one or two English sentences saying what these lines are about. Only what is said.
-- "keywords": up to 6 words or short phrases that actually occur in these lines.
-- "actions": explicit requests, instructions or promises only. "owner" is the speaker who has to act \
-(or "unspecified"), "action" says what in English, "lines" lists the supporting line numbers. Empty list if none.
+def chunk_prompt(lang: LanguageInfo | str = "hi") -> str:
+    info = resolve_language(lang) if isinstance(lang, str) else lang
+    script_name = info.script.replace("_", " ").title()
+    eg = " (like ऑफिस, टाइम, मैडम)" if info.code == "hi" else ""
+    return (
+        f"Below are numbered lines of a conversation: line number | speaker | time | ASR text in {script_name}.\n"
+        f"The ASR text has mistakes caused by noise and people talking over each other.\n\n"
+        f"For every line, in the same order, return an object with:\n"
+        f'- "id": the line number.\n'
+        f'- "text": the line in {script_name}. Copy it unchanged unless a word is clearly broken or repeated by mistake. Never '
+        f"replace a word with a synonym, never drop or add words. English words written in {script_name}{eg} "
+        f"stay exactly as they are.\n"
+        f'- "english": this line translated into English. Translate only this line. Do not describe it, do not add anything.\n'
+        f'- "uncertain": true if the line is too garbled to understand, otherwise false.\n\n'
+        f"Also return:\n"
+        f'- "summary": one or two English sentences saying what these lines are about. Only what is said.\n'
+        f'- "keywords": up to 6 words or short phrases that actually occur in these lines.\n'
+        f'- "actions": explicit requests, instructions or promises only. "owner" is the speaker who has to act '
+        f'(or "unspecified"), "action" says what in English, "lines" lists the supporting line numbers. Empty list if none.\n\n'
+        f"LINES:\n"
+    )
 
-LINES:
-"""
+
+SYSTEM_PROMPT = system_prompt("hi")
+CHUNK_PROMPT = chunk_prompt("hi")
+
 
 SYNTHESIS_PROMPT = """Below is the evidence from a transcribed conversation: summaries of its parts, its lines \
 translated into English, and candidate keywords and actions. Write the final report.
@@ -278,13 +294,17 @@ class CleanedLine:
     speaker: str              # from Stage 2, never changed
     start: float              # from Stage 2, never changed
     end: float
-    text: str                 # repaired Devanagari
+    text: str                 # repaired Indic script line
     hinglish: str             # romanised from ``text`` by the Stage-3 romaniser
     translation: str          # English
     source_text: str          # the ASR line as Stage 3 wrote it
     changed: bool = False
     uncertain: bool = False
     note: str = ""
+
+    @property
+    def latin(self) -> str:
+        return self.hinglish
 
 
 @dataclass
@@ -336,6 +356,8 @@ class PostProcessedReport:
     diagnostics: Diagnostics = field(default_factory=Diagnostics)
     pipeline_order: str | None = None
     source_audio_duration_s: float | None = None
+    language: str = "hi"
+    context_tokens: int | None = None      # model context the report was made with (part of cache identity)
 
     @property
     def uncertain_lines(self) -> list[int]:
@@ -353,6 +375,7 @@ class PostProcessedReport:
             "cleaned_dialogue": [asdict(x) for x in self.cleaned_dialogue],
             "uncertain_lines": self.uncertain_lines,
             "diagnostics": asdict(self.diagnostics),
+            "language": self.language,
             "provenance": {
                 "source_sha256": self.source_sha256,
                 "source_line_count": self.source_line_count,
@@ -360,15 +383,19 @@ class PostProcessedReport:
                 "generated_at_utc": self.generated_at_utc,
                 "pipeline_order": self.pipeline_order,
                 "source_audio_duration_s": self.source_audio_duration_s,
+                "prompt_schema_revision": PROMPT_SCHEMA_REVISION,
+                "context_tokens": self.context_tokens,
             },
         }
 
     def markdown(self) -> str:
         d = self.diagnostics
         dur = f"{fmt_ts(self.source_audio_duration_s)} of audio · " if self.source_audio_duration_s else ""
+        lang_info = resolve_language(self.language)
+        latin_col = lang_info.latin_name
         out = [f"# {self.title}", "",
                f"*{dur}{len(self.speakers)} speakers · {len(self.cleaned_dialogue)} lines · "
-               f"post-processed by `{self.llm_model}`*", "",
+               f"{lang_info.name} · post-processed by `{self.llm_model}`*", "",
                "## Executive summary", "",
                self.executive_summary or "_No summary could be generated; see the dialogue below._", ""]
         if self.topic:
@@ -390,7 +417,7 @@ class PostProcessedReport:
         out += ["", "## Dialogue", "",
                 "Speaker labels and times come from Stage 2 unchanged. ⚠ marks a line the model could not "
                 "repair or translate with confidence (reasons below).", "",
-                "| # | time | speaker | transcript (repaired) | Hinglish | English |", "|---|---|---|---|---|---|"]
+                f"| # | time | speaker | transcript (repaired) | {latin_col} | English |", "|---|---|---|---|---|---|"]
         for x in self.cleaned_dialogue:
             flag = " ⚠" if x.uncertain else ""
             out.append(f"| {x.line_id} | {fmt_ts(x.start)}–{fmt_ts(x.end)} | {x.speaker} | {_md(x.text)}{flag} | "
@@ -409,12 +436,15 @@ class PostProcessedReport:
         out += ["", "## How this report was made", "",
                 f"- Source: Stage-3 `transcript.json`, {self.source_line_count} lines "
                 f"(SHA-256 `{self.source_sha256[:16]}…`), pipeline order {self.pipeline_order or 'unknown'}.",
+                f"- Language: {lang_info.name} (`{self.language}`).",
                 f"- Model: `{self.llm_model}`, {d.llm_calls} calls, {d.llm_seconds:.0f} s"
                 f"{', JSON schema enforced by the server' if d.schema_enforced else ''}.",
+                f"- Prompt/schema revision: `{PROMPT_SCHEMA_REVISION}`.",
                 f"- Guardrails: {d.lines_changed} lines repaired, {d.lines_reverted} over-edited repairs reverted, "
                 f"{d.lines_restored} skipped lines restored, {d.keywords_dropped} ungrounded keywords and "
                 f"{d.actions_dropped} unsupported action items dropped.",
                 f"- Generated {self.generated_at_utc}.", ""]
+
         return "\n".join(out)
 
     def save(self, out_dir: str | Path) -> Path:
@@ -495,19 +525,94 @@ MERGE_SCHEMA = {"type": "object", "properties": {"summary": {"type": "string", "
                 "required": ["summary"], "additionalProperties": False}
 
 
-_DEVANAGARI = re.compile("[\u0900-\u097f]")
+# ============================================== prompt/schema revision (cache identity for evaluation)
+def prompt_schema_revision() -> str:
+    """Stable id for everything here that changes the model's output *without* changing the transcript: the four
+    prompts, every JSON schema they constrain, and the hard behaviour constants (Stage-4 cache identity, D33/F8).
+
+    ``scripts/eval_postprocess.py`` keys its report cache on the transcript **and** this id, so editing a prompt,
+    schema or these constants here automatically invalidates cached reports; identical transcripts keep sharing one
+    report only while this id is unchanged. Temperature 0 makes each revision deterministic for a given server/model.
+    """
+    material = {"system_prompt": SYSTEM_PROMPT, "chunk_prompt": CHUNK_PROMPT,
+                "synthesis_prompt": SYNTHESIS_PROMPT, "merge_prompt": MERGE_PROMPT,
+                "action_schema": _ACTION_SCHEMA, "synthesis_schema": SYNTHESIS_SCHEMA, "merge_schema": MERGE_SCHEMA,
+                # chunk_schema() varies with the lines; a fixed probe chunk pins its fixed structure and caps
+                "chunk_schema": chunk_schema([{"line_id": 0, "text": "त"}]),
+                "max_lines_per_chunk": MAX_LINES_PER_CHUNK, "max_edit_ratio": MAX_EDIT_RATIO,
+                "unspecified": UNSPECIFIED, "validator_rules_version": VALIDATOR_RULES_VERSION}
+    blob = json.dumps(material, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(blob.encode("utf-8")).hexdigest()[:12]
+
+
+def revision_matches(stored: str | None, current: str | None = None) -> bool:
+    """May a cached report recorded under ``stored`` be reused for code at ``current`` (default: this module)?
+
+    ``None`` is a report written before prompt/schema revisions were recorded: it is grandfathered, so a fresh
+    evaluation never silently regenerates (and overwrites) previously measured evidence. Any *different* recorded
+    revision returns False — those prompts/schemas differ, so that report must be remade rather than reused.
+    """
+    return stored is None or stored == (PROMPT_SCHEMA_REVISION if current is None else current)
+
+
+def cache_compatible(provenance: dict | None, *, sha256: str | None = None, model: str | None = None,
+                     context: int | None = None) -> bool:
+    """May a cached report (its ``provenance`` dict) be reused for a run made with ``sha256`` (the current
+    transcript fingerprint), ``model`` and ``context``?
+
+    Completes the Stage-4 cache identity used by ``scripts/eval_postprocess.py`` (D38): beyond the
+    transcript content and the prompt/schema/validator revision, a report is reusable only for the same **model
+    identity** and the same **model context**. A dimension that was never recorded (a report written before we
+    recorded it) is grandfathered only at the value it was certainly made with (model unchanged, context equal to
+    ``DEFAULT_CONTEXT``), so today's evidence is reused as-is, but a run with a different model or a non-default
+    context never reuses an unknown-configuration report (it is regenerated). Any recorded dimension that differs
+    makes it stale. (Model *file* bytes are not available over the HTTP API; the alias is the identity the evaluator
+    passes, and ``--force`` covers a changed file under the same alias.)
+    """
+    prov = provenance or {}
+    rev = prov.get("prompt_schema_revision")
+    if rev is not None and rev != PROMPT_SCHEMA_REVISION:
+        return False
+    if sha256 is not None and prov.get("source_sha256") != sha256:
+        return False          # a report made from a different transcript is stale even if id/system/model/ctx match
+    if model is not None:
+        m = prov.get("llm_model")
+        if m is not None:
+            if m != model:
+                return False
+        elif model != DEFAULT_MODEL:      # identity never recorded: grandfather only for the default model
+            return False
+    if context is not None:
+        c = prov.get("context_tokens")
+        if c is not None:
+            if c != context:
+                return False
+        elif context != DEFAULT_CONTEXT:
+            return False
+    return True
+
+
+# PROMPT_SCHEMA_REVISION is computed further down, after _max_en, so chunk_schema() is fully resolved when it runs.
+
+
+_INDIC_SCRIPTS = re.compile(r"[\u0600-\u06ff\u0900-\u0d7f\u1c50-\u1c7f]")
+_DEVANAGARI = _INDIC_SCRIPTS
 
 
 def _max_en(text: str) -> int:
-    """Longest acceptable English translation of a line: English is rarely more than ~1.5× the Devanagari."""
+    """Longest acceptable English translation of a line: English is rarely more than ~1.5× the Indic text."""
     return 2 * len(text) + 30
+
+
+PROMPT_SCHEMA_REVISION = prompt_schema_revision()
 
 
 # ====================================================================== token budget
 def estimate_tokens(text: str) -> int:
-    """Conservative token estimate without a tokenizer: Devanagari ≈ 2 characters per token, other text ≈ 3."""
-    deva = sum(1 for c in text if "\u0900" <= c <= "\u097f")
-    return int((deva / 2 + (len(text) - deva) / 3) * 1.1) + 1
+    """Conservative token estimate without a tokenizer: Indic/Perso-Arabic characters ≈ 2 per token, other text ≈ 3."""
+    indic = sum(1 for c in text if "\u0600" <= c <= "\u06ff" or "\u0900" <= c <= "\u0d7f" or "\u1c50" <= c <= "\u1c7f")
+    return int((indic / 2 + (len(text) - indic) / 3) * 1.1) + 1
+
 
 
 def _line_prompt(src: dict) -> str:
@@ -523,11 +628,13 @@ def _reply_tokens(chunk: list[dict]) -> int:
 class PostProcessor:
     """Stage 4. ``process_transcript`` takes a Stage-3 ``transcript.json`` dict and returns a checked report."""
 
-    def __init__(self, backend: LLMBackend | None = None, *, model: str = DEFAULT_MODEL,
+    def __init__(self, backend: LLMBackend | None = None, *, language: str = "hi", model: str = DEFAULT_MODEL,
                  base_url: str = DEFAULT_BASE_URL, temperature: float = DEFAULT_TEMPERATURE,
                  context_tokens: int = DEFAULT_CONTEXT, timeout_s: int = DEFAULT_TIMEOUT,
                  max_lines_per_chunk: int = MAX_LINES_PER_CHUNK, max_edit_ratio: float = MAX_EDIT_RATIO,
                  json_schema: bool = True):
+        self.lang_info = resolve_language(language)
+        self.language = self.lang_info.code
         self.backend = backend or OpenAICompatibleLLM(base_url, model, timeout_s, json_schema)
         self.temperature = temperature
         self.context_tokens = context_tokens
@@ -541,6 +648,9 @@ class PostProcessor:
 
     def process_transcript(self, transcript: dict[str, Any]) -> PostProcessedReport:
         self.diag = Diagnostics()
+        if transcript.get("language"):
+            self.lang_info = resolve_language(transcript["language"])
+            self.language = self.lang_info.code
         all_lines = _line_records(transcript)
         source = [x for x in all_lines if normalise(x["text"])]
         self.diag.empty_lines_skipped = len(all_lines) - len(source)
@@ -557,7 +667,7 @@ class PostProcessor:
 
         haystack = _token_set([x.source_text for x in cleaned] + [x.text for x in cleaned]
                               + [x.hinglish for x in cleaned] + [x.translation for x in cleaned]
-                              + [romanise(x.source_text) for x in cleaned])
+                              + [romanise(x.source_text, language=self.language) for x in cleaned])
         by_id = {x.line_id: x for x in cleaned}
         synth = self._synthesise(cleaned, chunk_notes) if cleaned else {}
 
@@ -592,11 +702,13 @@ class PostProcessor:
             diagnostics=d,
             pipeline_order=transcript.get("order"),
             source_audio_duration_s=transcript.get("duration_s"),
+            language=self.language,
+            context_tokens=self.context_tokens,
         )
 
     # ------------------------------------------------------------------ LLM calls
     def _call(self, user: str, schema: dict, max_tokens: int) -> LLMReply:
-        reply = self.backend.complete(SYSTEM_PROMPT, user, temperature=self.temperature,
+        reply = self.backend.complete(system_prompt(self.lang_info), user, temperature=self.temperature,
                                       max_tokens=max_tokens, schema=schema)
         d = self.diag
         d.llm_calls += 1
@@ -606,11 +718,11 @@ class PostProcessor:
         return reply
 
     def _budget(self) -> int:
-        return self.context_tokens - estimate_tokens(SYSTEM_PROMPT) - 64
+        return self.context_tokens - estimate_tokens(system_prompt(self.lang_info)) - 64
 
     def _plan_chunks(self, source: list[dict]) -> list[list[dict]]:
         """Consecutive lines, as many as fit the context window (prompt + expected reply), at most N lines."""
-        budget = self._budget() - estimate_tokens(CHUNK_PROMPT)
+        budget = self._budget() - estimate_tokens(chunk_prompt(self.lang_info))
         chunks: list[list[dict]] = []
         cur: list[dict] = []
         for line in source:
@@ -624,7 +736,7 @@ class PostProcessor:
 
     def _run_chunk(self, chunk: list[dict]) -> list[tuple[list[CleanedLine], dict]]:
         """Process one chunk. If the reply is unusable, halve the chunk and retry; one line that fails keeps its ASR text."""
-        user = CHUNK_PROMPT + "\n".join(_line_prompt(x) for x in chunk)
+        user = chunk_prompt(self.lang_info) + "\n".join(_line_prompt(x) for x in chunk)
         max_tokens = max(_reply_tokens(chunk), self._budget() - estimate_tokens(user))
         reason = "the model's reply could not be used"
         try:
@@ -643,7 +755,7 @@ class PostProcessor:
             mid = len(chunk) // 2
             return self._run_chunk(chunk[:mid]) + self._run_chunk(chunk[mid:])
         self.diag.failed_chunks += 1
-        return [([_kept(chunk[0], f"{reason}; ASR wording kept.")], {"summary": "", "keywords": [], "actions": []})]
+        return [([_kept(chunk[0], f"{reason}; ASR wording kept.", language=self.language)], {"summary": "", "keywords": [], "actions": []})]
 
     def _check_chunk(self, obj: dict, chunk: list[dict]) -> tuple[list[CleanedLine], dict]:
         by_id = {x["line_id"]: x for x in chunk}
@@ -664,11 +776,11 @@ class PostProcessor:
             item = got.get(src["line_id"])
             if item is None:
                 self.diag.lines_restored += 1
-                lines.append(_kept(src, "the model skipped this line; ASR wording kept."))
+                lines.append(_kept(src, "the model skipped this line; ASR wording kept.", language=self.language))
                 continue
             text = _text(item.get("text", item.get("cleaned"))) or src["text"]
             en = _text(item.get("english", item.get("en", item.get("translation"))))
-            if _DEVANAGARI.search(en):         # a copy of the line, not a translation (servers without a schema)
+            if _INDIC_SCRIPTS.search(en):         # a copy of the line, not a translation (servers without a schema)
                 en = ""
             notes = []
             if normalise(text) != normalise(src["text"]):      # punctuation-only repairs are always accepted
@@ -686,7 +798,7 @@ class PostProcessor:
                     self.diag.lines_reverted += 1      # only a word repeated by mistake may go (D29)
                     notes.append("the model dropped words that the ASR line contains; ASR wording kept")
                     text = src["text"]
-                elif _loanwords(src["text"]) - set(_tokens(text)):
+                elif self.language == "hi" and _loanwords(src["text"]) - set(_tokens(text)):
                     self.diag.lines_reverted += 1      # e.g. कंट्रोल → नियंत्रण: a "repair" into Hindi (D29)
                     notes.append("the model replaced English words spoken in the line; ASR wording kept")
                     text = src["text"]
@@ -704,7 +816,7 @@ class PostProcessor:
             changed = text != src["text"]
             lines.append(CleanedLine(
                 src["line_id"], src["speaker"], src["start"], src["end"], text,
-                src["hinglish"] if not changed and src["hinglish"] else romanise(text), en, src["text"],
+                src["hinglish"] if not changed and src["hinglish"] else romanise(text, language=self.language), en, src["text"],
                 changed, uncertain, _sentence("; ".join(notes))))
         # a degenerate reply repeats one English sentence for several different lines: none of them is a translation
         seen: dict[str, set[str]] = {}
@@ -800,7 +912,8 @@ class PostProcessor:
         return out
 
     def _actions(self, value: Any, lines: dict[int, CleanedLine], owners: set[str]) -> list[ActionItem]:
-        """Keep an action only if its owner exists, it cites real lines, and it shares a word with those lines."""
+        """Keep an action only if its owner exists, it cites real lines, it shares a word with those lines, and it
+        is a genuine request, instruction or promise, not an information question, a suggestion or a wish (D38)."""
         out: list[ActionItem] = []
         for item in _as_list(value):
             if not isinstance(item, dict):
@@ -808,6 +921,9 @@ class PostProcessor:
             owner = _text(item.get("owner"))
             owner = UNSPECIFIED if owner.lower() in ("", UNSPECIFIED, "unknown", "none") else owner
             action = _text(item.get("action"))
+            if not action or _is_non_commitment(action):
+                self.diag.actions_dropped += 1
+                continue
             ids = []
             for x in _as_list(item.get("lines", item.get("evidence_line_ids"))):
                 try:
@@ -817,7 +933,7 @@ class PostProcessor:
                 if i in lines and i not in ids:
                     ids.append(i)
             evidence = _token_set([t for i in ids for t in (lines[i].source_text, lines[i].text, lines[i].hinglish,
-                                                            lines[i].translation, romanise(lines[i].source_text))])
+                                                            lines[i].translation, romanise(lines[i].source_text, language=self.language))])
             if owner not in owners or not action or not ids or not (set(_content_tokens(action)) & evidence):
                 self.diag.actions_dropped += 1
                 continue
@@ -844,8 +960,33 @@ def _content_tokens(text: str) -> list[str]:
     return [t for t in _tokens(text) if len(t) >= 3 and t not in _STOP]
 
 
+# Hedges / suggestions / hypotheticals / first-person wishes: not an explicit request, instruction or promise (D38).
+_NONCOMMIT_LEAD = (
+    "maybe ", "perhaps ", "probably ", "possibly ", "i think ", "i guess ", "i believe ",
+    "we could ", "we might ", "we may ", "we should ", "should we ", "i could ", "i might ",
+    "i want ", "i need ", "i wish ", "i would like ", "i'd like ",
+)
+_Q_WORD = re.compile(r"\b(what|which|why|when|where|who|whom|how)\b", re.I)
+_Q_START = ("is ", "are ", "was ", "were ", "do ", "does ", "did ")   # copula/do information-questions, NOT aux requests
+
+
+def _is_non_commitment(text: str) -> bool:
+    """True when an action item is not an explicit request, instruction or promise (D38): an information
+    question, a suggestion/hypothetical, or a first-person wish. Directives ("Bring X"), commitments ("S will do
+    X") and polite requests ("Will you bring X?") are NOT matched, so legitimate items survive. An item this
+    rejects is dropped and counted, never invented; a wh-question or copula/do question is information-seeking,
+    not something to do.
+    """
+    low = text.strip().lower()
+    if not low:
+        return True
+    if low.endswith("?") and (_Q_WORD.search(low) or low.startswith(_Q_START)):
+        return True                      # information question ("Motorcade is moving, what is it?")
+    return low.startswith(_NONCOMMIT_LEAD)   # suggestion/hypothetical/wish ("Maybe we should...", "I want a car")
+
+
 def _tokens(text: str) -> list[str]:
-    return re.findall(r"[\w\u0900-\u097f]+", normalise(text))
+    return re.findall(r"[\w\u0600-\u06ff\u0900-\u0d7f\u1c50-\u1c7f]+", normalise(text))
 
 
 _LOANWORDS: set[str] = set()
@@ -888,10 +1029,10 @@ def _sentence(s: str) -> str:
     return f"{s[:1].upper()}{s[1:]}." if s else ""
 
 
-def _kept(src: dict, note: str) -> CleanedLine:
+def _kept(src: dict, note: str, language: str = "hi") -> CleanedLine:
     """The Stage-3 line, unchanged and flagged (used when the LLM gave nothing usable for it)."""
     return CleanedLine(src["line_id"], src["speaker"], src["start"], src["end"], src["text"],
-                       src["hinglish"] or romanise(src["text"]), "", src["text"], False, True, _sentence(note))
+                       src["hinglish"] or romanise(src["text"], language=language), "", src["text"], False, True, _sentence(note))
 
 
 def _fingerprint(source: dict[str, Any]) -> str:
@@ -910,7 +1051,8 @@ def _line_records(transcript: dict[str, Any]) -> list[dict[str, Any]]:
             raise ValueError(f"transcript line {i} is not an object")
         out.append({"line_id": i, "speaker": str(line.get("speaker", "Speaker_?")),
                     "start": float(line.get("start", 0.0)), "end": float(line.get("end", 0.0)),
-                    "text": str(line.get("text", "")).strip(), "hinglish": str(line.get("hinglish", "")).strip()})
+                    "text": str(line.get("text", "")).strip(),
+                    "hinglish": str(line.get("latin", line.get("hinglish", ""))).strip()})
     return out
 
 
@@ -930,4 +1072,6 @@ __all__ = [
     "DEFAULT_MODEL", "DEFAULT_BASE_URL", "DEFAULT_CONTEXT", "LLMError", "LLMConnectionError", "LLMContextError",
     "LLMReply", "LLMBackend", "OpenAICompatibleLLM", "StaticLLM", "CleanedLine", "ActionItem", "Diagnostics",
     "PostProcessedReport", "PostProcessor", "parse_json_object", "chunk_schema", "estimate_tokens",
+    "system_prompt", "chunk_prompt",
+    "prompt_schema_revision", "PROMPT_SCHEMA_REVISION", "revision_matches", "cache_compatible",
 ]

@@ -1,18 +1,18 @@
 {
- "title": "Hindi and Hinglish Conversation Transcript",
- "topic": "Parlour and Haircut",
- "executive_summary": "A conversation between two people about a parlour and hair cutting.",
+ "title": "Hindi and Hinglish Conversation",
+ "topic": "Hindi and Hinglish Conversation",
+ "executive_summary": "This report summarizes a conversation between two people in Hindi and Hinglish, with a focus on the main topic of hair cutting and the speaker's knowledge of the answer.",
  "key_points": [
-  "Parlour has three steps and a step of four steps and a step of vegetables.",
-  "The speaker says that they know the answer to the s2 and the u.",
-  "The speaker says that they can help you with your hair cut."
+  "The speaker says that they have a lot of work to do, but they can also help you with your hair cut.",
+  "The speaker says that they know the answer, but they are not sure if they are correct."
  ],
  "keywords": [
   "hello",
   "namaste",
   "parlour",
-  "step",
-  "vegetables",
+  "steps",
+  "seab",
+  "yu seab",
   "jana"
  ],
  "action_items": [],
@@ -70,24 +70,24 @@
    "end": 8.12,
    "text": "हाँ हेलो हाँ बोलिए",
    "hinglish": "haan hello haan bolie",
-   "translation": "Hello",
+   "translation": "Hello, say hello.",
    "source_text": "हाँ हेलो हाँ बोलिए",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 4,
    "speaker": "S3",
    "start": 8.39,
    "end": 9.74,
-   "text": "हाँ बोलो हाँ",
-   "hinglish": "haan bolo haan",
-   "translation": "Speak",
+   "text": "हैलो बोलो हाँ",
+   "hinglish": "hello bolo haan",
+   "translation": "Hello.",
    "source_text": "हाँ बोलो हाँ",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 5,
@@ -109,7 +109,7 @@
    "end": 29.78,
    "text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है",
    "hinglish": "haan ji bolie mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V V seb hai aur yu seb bhi hai aapko kaun si karani hai",
-   "translation": "Yes, you speak about my parlour. There are three steps and a step of four steps and a step of vegetables. You also have a seb and a yu seb.",
+   "translation": "Yes, say hello. My parlour has three steps and four steps. There's a seab and a yu seab.",
    "source_text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है",
    "changed": false,
    "uncertain": true,
@@ -122,7 +122,7 @@
    "end": 44.47,
    "text": "हां वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की ज़रूरत मतलब किसी अलग तरीके की ज़रूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं तो आप सॉफ्ट एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki zarurat matlab kisi alag tarike ki zarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain to aap soft ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai",
-   "translation": "The speaker says that they have a lot of work to do, but they can also help you with your hair cut. They will tell you what to do if you want to cut your hair.",
+   "translation": "The speaker says that they have a lot of work to do, but they can also help you with your hair cut. They will tell you what you need to do.",
    "source_text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की ज़रूरत मतलब किसी अलग तरीके की ज़रूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं तो आप सॉफ्ट एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "changed": true,
    "uncertain": false,
@@ -135,7 +135,7 @@
    "end": 46.16,
    "text": "हाँ जना हलो",
    "hinglish": "haan jana hello",
-   "translation": "The speaker says that they know the answer to the s2",
+   "translation": "The speaker says that they know the answer.",
    "source_text": "हाँ जना हलो",
    "changed": false,
    "uncertain": false,
@@ -148,11 +148,11 @@
    "end": 60.92,
    "text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग",
    "hinglish": "okay theek hai uski phees bata deti hoon meri meri yu cutting ke liye jo aapko saam matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay haan to uske three hundred teen sau something",
-   "translation": "The speaker says that they know the answer to the u, and that they can help you with your hair cut.",
+   "translation": "The speaker says that they know the answer, but they are not sure if they are correct.",
    "source_text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -161,26 +161,27 @@
   3,
   4,
   5,
-  6
+  6,
+  9
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 424.448,
-  "prompt_tokens": 1872,
-  "completion_tokens": 1025,
+  "llm_seconds": 188.441,
+  "prompt_tokens": 1856,
+  "completion_tokens": 1097,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 1,
-  "lines_reverted": 5,
+  "lines_changed": 2,
+  "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 4,
+  "lines_flagged_by_llm": 6,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -189,8 +190,10 @@
   "source_sha256": "72440f1a89a44a6d50a04a0860fd5d5e3a7338ed566f36d5279c2308ba62afc2",
   "source_line_count": 9,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:31:33Z",
+  "generated_at_utc": "2026-11-10T21:16:00Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 61.68
+  "source_audio_duration_s": 61.68,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

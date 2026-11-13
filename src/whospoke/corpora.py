@@ -28,6 +28,38 @@ def fetch(repo: str, filename: str, subdir: str) -> Path:
     return Path(hf_hub_download(repo, filename, repo_type="dataset", local_dir=RAW / subdir))
 
 
+def indicvoices_split_path(language: str = "hindi", split: str = "valid", shard: int = 0) -> str:
+    """Return the relative path in ``ai4bharat/IndicVoices`` for any supported language."""
+    from .languages import resolve_language
+
+    folder = resolve_language(language).indicvoices_name
+    if split == "valid":
+        return f"{folder}/valid-00000-of-00001.parquet"
+    return f"{folder}/train-{shard:05d}-of-*.parquet"
+
+
+def fetch_indicvoices(language: str = "hindi", split: str = "valid", shard: int = 0) -> Path:
+    """Download an IndicVoices shard for any of the 22 regional languages."""
+    from .languages import resolve_language
+
+    folder = resolve_language(language).indicvoices_name
+    if split == "valid":
+        filename = f"{folder}/valid-00000-of-00001.parquet"
+    else:
+        try:
+            from huggingface_hub import HfFileSystem
+
+            fs = HfFileSystem()
+            matches = fs.glob(f"datasets/{INDICVOICES_REPO}/{folder}/train-{shard:05d}-of-*.parquet")
+            if matches:
+                filename = matches[0].replace(f"datasets/{INDICVOICES_REPO}/", "")
+            else:
+                filename = f"{folder}/train-{shard:05d}-of-00082.parquet"
+        except Exception:
+            filename = f"{folder}/train-{shard:05d}-of-00082.parquet"
+    return fetch(INDICVOICES_REPO, filename, "indicvoices")
+
+
 # ---------------------------------------------------------------- IndicVoices
 
 _CHUNK_RE = re.compile(r"^(?P<rec>.+)_chunk_(?P<idx>\d+)\.\w+$")

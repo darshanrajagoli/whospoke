@@ -1,14 +1,14 @@
 {
- "title": "Jain Brother Stationery and Book Shop",
- "topic": "child's condition",
- "executive_summary": "Speaker A is talking about a child named Vaibhav and his father's request to test an item.",
+ "title": "Lost ID Card",
+ "topic": "Lost ID Card",
+ "executive_summary": "Speaker A is talking about a boy who got sick after being sent to school.",
  "key_points": [
-  "Jain Brother Stationery and Book Shop",
-  "child's condition",
-  "father's request to test an item"
+  "Lost ID Card",
+  "Speaker A is talking about a boy who got sick after being sent to school."
  ],
  "keywords": [
-  "Jain Brother Stationery and Book Shop"
+  "school",
+  "price"
  ],
  "action_items": [],
  "speakers": [
@@ -95,9 +95,9 @@
  ],
  "diagnostics": {
   "llm_calls": 2,
-  "llm_seconds": 25.521,
-  "prompt_tokens": 1237,
-  "completion_tokens": 525,
+  "llm_seconds": 98.698,
+  "prompt_tokens": 1215,
+  "completion_tokens": 518,
   "chunks": 1,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -110,7 +110,7 @@
   "lines_flagged_by_llm": 3,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -119,8 +119,10 @@
   "source_sha256": "55337b875b69bb28dfbbb3b8623706d7669356bb74c93de4791ea34a40664636",
   "source_line_count": 5,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:30:21Z",
+  "generated_at_utc": "2026-11-11T03:54:57Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 66.09
+  "source_audio_duration_s": 66.09,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,19 +1,17 @@
 {
  "title": "Hindi and Hinglish Conversation Transcript",
- "topic": "Car and Travel",
- "executive_summary": "Speakers discuss a car and travel plans.",
+ "topic": "Car Prices and Travel Plans",
+ "executive_summary": "Speakers discuss car prices and travel plans.",
  "key_points": [
-  "Speaker_A asks Speaker_B to do something.",
-  "Speaker_B agrees.",
-  "Speaker_C sends a sofa and a dining table to his wife.",
-  "Speaker_A sends furniture drenching room.",
-  "Speaker_B sends his location to his wife."
+  "Speaker A and Speaker B talk about a car.",
+  "Speaker C sends his location to his wife.",
+  "Speaker B sends a sofa and a dining table to his wife.",
+  "Speaker A sends a sofa and a dining table and then finds furniture drenching room with all the wood from the common, sagaan, and shisham.",
+  "Speaker B asks about the price of the product and requests a price."
  ],
  "keywords": [
   "car",
-  "closed",
-  "price",
-  "tell me"
+  "price"
  ],
  "action_items": [],
  "speakers": [
@@ -73,8 +71,8 @@
    "translation": "Hello, sir, sir, sir",
    "source_text": "नमस्ते मैम हाँ मैम हाँ मैम",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 4,
@@ -109,7 +107,7 @@
    "end": 13.3,
    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise",
-   "translation": "What's wrong with your car like",
+   "translation": "What's wrong with your car, like",
    "source_text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
    "changed": false,
    "uncertain": true,
@@ -211,11 +209,11 @@
    "speaker": "Speaker_B",
    "start": 35.1,
    "end": 37.0,
-   "text": "किसी यात्रा पे जा रहे हो क्या मिलेगा।",
-   "hinglish": "kisi yatra pe ja rahe ho kya milega.",
-   "translation": "What will happen if I go on a trip.",
+   "text": "किसी यात्रा पे जा रहे हो क्या मिलेगा",
+   "hinglish": "kisi yatra pe ja rahe ho kya milega",
+   "translation": "What will happen if I go on a trip?",
    "source_text": "किसी यात्रा पे जा रहे हो क्या मिलेगा",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -224,8 +222,8 @@
    "speaker": "Speaker_C",
    "start": 37.0,
    "end": 43.7,
-   "text": "हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको।",
-   "hinglish": "haan aapko milega divan bed milega ek sofa milega daining table milega aapko.",
+   "text": "हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगी आपको",
+   "hinglish": "haan aapko milega divan bed milega ek sofa milega daining table milegi aapko",
    "translation": "Yes, you will find a divan bed, a sofa, and a dining table.",
    "source_text": "हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको",
    "changed": true,
@@ -239,7 +237,7 @@
    "end": 44.7,
    "text": "और",
    "hinglish": "aur",
-   "translation": "And.",
+   "translation": "And",
    "source_text": "और",
    "changed": false,
    "uncertain": true,
@@ -252,7 +250,7 @@
    "end": 69.9,
    "text": "सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनके हाथ की इन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
    "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unke haath ki in finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
-   "translation": "The sofa and dining table will be available, and then you will find furniture drenching room with all the wood from the common, sagaan, and shisham, and every single piece will be good.",
+   "translation": "The sofa and dining table will be available, and then you will find furniture drenching room with all the wood from the common, sagaan, and shisham, and every single thing is good.",
    "source_text": "सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनके हाथ की इन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
    "changed": false,
    "uncertain": true,
@@ -261,6 +259,7 @@
  ],
  "uncertain_lines": [
   1,
+  3,
   5,
   6,
   7,
@@ -277,22 +276,22 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 530.137,
-  "prompt_tokens": 2514,
-  "completion_tokens": 1260,
+  "llm_seconds": 240.234,
+  "prompt_tokens": 2557,
+  "completion_tokens": 1355,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 3,
+  "lines_changed": 2,
   "lines_reverted": 10,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 7,
+  "lines_flagged_by_llm": 8,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 6,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -301,8 +300,10 @@
   "source_sha256": "96a5835791685baf86ffc92bb256c33f6b9485bca2fab09f9d591fdbcf7f430a",
   "source_line_count": 17,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T02:17:54Z",
+  "generated_at_utc": "2026-11-10T19:38:41Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 70.59
+  "source_audio_duration_s": 70.59,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

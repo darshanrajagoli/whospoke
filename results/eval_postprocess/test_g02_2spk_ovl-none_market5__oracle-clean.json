@@ -1,19 +1,19 @@
 {
- "title": "Lost ID Card",
- "topic": "Missing ID Card",
- "executive_summary": "A conversation between two people about a missing ID card.",
+ "title": "Lost ID Card and Base Card",
+ "topic": "Lost ID Card and Base Card",
+ "executive_summary": "A conversation about a missing ID card and a base card.",
  "key_points": [
-  "ID card",
-  "Missing ID card",
-  "Babu Manshankar Inter College",
-  "Principal",
-  "Exam"
+  "Lost ID Card",
+  "Base Card",
+  "Photos",
+  "Office Hours",
+  "Application"
  ],
  "keywords": [
-  "ID card",
-  "Babu Manshankar Inter College",
   "Principal",
-  "Exam"
+  "ID Card",
+  "Base Card",
+  "Application"
  ],
  "action_items": [],
  "speakers": [
@@ -38,11 +38,11 @@
    "end": 26.22,
    "text": "नमस्ते बोल रहे थे कि आप बाबू मशंकर इंटर कॉलेज के प्रधानाचार्य हैं तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा फर्स्ट वहीं छूट गया था जिसमें कुछ सामान हैं जरूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए",
    "hinglish": "namaste bol rahe the ki aap babu mashankar intar college ke pradhanachary hain to hum B e ka paper dene gaye the aapke school mein mera first wahin chhoot gaya tha jismen kuch saman hain jarurat ki to wo mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie",
-   "translation": "Hello, they were talking about me being the principal of Babu Manshankar Inter College and I went to give them a BA paper, but they missed my first one in their school. They said they needed it, so I asked my Karma Chari to check for me.",
+   "translation": "Hello, they were talking about me being the principal of Babu Manshankar Inter College and how I missed out on the BA paper. They asked their Karma Chari to check with the school.",
    "source_text": "नमस्ते बोल रहे थे कि आप आप बाबू मशंकर इंटर कॉलेज के प्रधानाचार्य हैं तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा फर्स्ट वहीं छूट गया था उसमें कुछ सामान हैं जरूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 2,
@@ -54,8 +54,8 @@
    "translation": "Hello, sir.",
    "source_text": "नमस्ते सर",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 3,
@@ -64,11 +64,11 @@
    "end": 30.41,
    "text": "कमरा नंबर तीन में छूटा थी",
    "hinglish": "kamra number teen mein chhuta thi",
-   "translation": "There was a discount in room number three.",
+   "translation": "There was a discount in Room Number Three.",
    "source_text": "कमरा नंबर तीन में छूटा था",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 4,
@@ -101,8 +101,8 @@
    "speaker": "S2",
    "start": 42.94,
    "end": 47.07,
-   "text": "बेस कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फ़ोटो एक आधार कार्ड ही और",
-   "hinglish": "base card ki photo kapi aur kya kya lana hai sir ek khud ka photo ek aadhar card hi aur",
+   "text": "आधार कार्ड की फ़ोटो कापी और क्या लाना है सर एक खुद का फ़ोटो एक आधार कार्ड ही और",
+   "hinglish": "aadhar card ki photo kapi aur kya lana hai sir ek khud ka photo ek aadhar card hi aur",
    "translation": "The photo of the base card and what else do I need.",
    "source_text": "आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फ़ोटो एक आधार कार्ड ही और",
    "changed": true,
@@ -114,13 +114,13 @@
    "speaker": "S1",
    "start": 47.31,
    "end": 48.22,
-   "text": "संगीता जी",
-   "hinglish": "sangita ji",
-   "translation": "Sangiata G",
+   "text": "संगठना जी",
+   "hinglish": "sangathna ji",
+   "translation": "Sure, we'll go to the office. When will it open?",
    "source_text": "संगीता जी",
-   "changed": false,
-   "uncertain": false,
-   "note": ""
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 8,
@@ -129,7 +129,7 @@
    "end": 53.5,
    "text": "ठीक है सर ये कहाँ आनी पड़ेगी ऑफिस तो कब तक केतने घंटे तक ऑफिस खुला है सर अपना",
    "hinglish": "theek hai sir ye kahan aani padegi office to kab tak ketne ghante tak office khula hai sir apna",
-   "translation": "Okay sir, where will you have to go to the office and how long will the office be open until 10 pm sir?",
+   "translation": "Sure, where will you go to the office? How long will it be open?",
    "source_text": "ठीक है सर ये कहाँ आनी पड़ेगी ऑफिस तो कब तक कितने बजे तक ऑफिस खुला है सर अपना",
    "changed": true,
    "uncertain": true,
@@ -142,7 +142,7 @@
    "end": 58.22,
    "text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
    "hinglish": "haan to apne camera si si ti V camera check karva lijie",
-   "translation": "Yes, get your camera checked at CCTV cameras.",
+   "translation": "Sure, check your camera, your camera, your camera.",
    "source_text": "हाँ तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए",
    "changed": false,
    "uncertain": true,
@@ -155,7 +155,7 @@
    "end": 65.97,
    "text": "आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद अच्छा एप्लीकेशन भी लिखनी पड़ेगी",
    "hinglish": "aai D card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega achha uske baad achha eplikeshan bhi likhni padegi",
-   "translation": "Get two items from the ID card and who will be the first to get them, followed by an application for the same.",
+   "translation": "Sure, we'll get two items from the ID card. Who will we have to go to first? Who will make the application?",
    "source_text": "आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद अच्छा एप्लीकेशन भी लिखनी पड़ेगी",
    "changed": false,
    "uncertain": true,
@@ -163,31 +163,35 @@
   }
  ],
  "uncertain_lines": [
+  1,
+  2,
+  3,
   4,
   5,
   6,
+  7,
   8,
   9,
   10
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 43.919,
-  "prompt_tokens": 1852,
-  "completion_tokens": 983,
+  "llm_seconds": 171.722,
+  "prompt_tokens": 1856,
+  "completion_tokens": 982,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 4,
+  "lines_changed": 5,
   "lines_reverted": 1,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 6,
+  "lines_flagged_by_llm": 10,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -196,8 +200,10 @@
   "source_sha256": "3caf570e3917b7cc54c70ce6483ce1da79c290b09b2cd599dfadfe17e2b2cdad",
   "source_line_count": 10,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:04:28Z",
+  "generated_at_utc": "2026-11-10T22:55:13Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 66.49
+  "source_audio_duration_s": 66.49,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

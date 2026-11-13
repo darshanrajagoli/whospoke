@@ -1,7 +1,7 @@
 {
  "title": "Jain Brothers Stationery and Book Shop",
- "topic": "Sugar flowers, tapes, color birange wallet, and water shortage",
- "executive_summary": "A conversation at Jain Brothers Stationery and Book Shop.",
+ "topic": "Sugar flowers, tapes, color birange wallets, and healthcare",
+ "executive_summary": "A conversation at Jain Brothers Stationery and Book Shop about sugar flowers, tapes, color birange wallets, and healthcare.",
  "key_points": [
   "Jain Brothers Stationery and Book Shop",
   "Ten boxes",
@@ -114,11 +114,11 @@
    "speaker": "S1",
    "start": 32.07,
    "end": 42.85,
-   "text": "वो तो आपने उसको शुगर फूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
-   "hinglish": "wo to aapne usko shugar phool bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
+   "text": "वो तो आपने उसको चीनी फूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
+   "hinglish": "wo to aapne usko chini phool bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
    "translation": "He sent her sugar flowers and she got sick and had a fever, her body temperature rose",
    "source_text": "वो तो आपने उसको शुगर फूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -140,11 +140,11 @@
    "speaker": "S1",
    "start": 48.17,
    "end": 53.23,
-   "text": "अब जो भी होने के बाद हो सक्ता है की इतनी ज्यादा गर्मी हो गई है",
+   "text": "अब जो भी होने के बाद हो सकता है की इतनी ज्यादा गर्मी हो गई है",
    "hinglish": "ab jo bhi hone ke baad ho sakta hai ki itni zyada garmi ho gayi hai",
-   "translation": "Whoever is there, please tell me about the good prices",
+   "translation": "Whoever is there can do it, it's too hot",
    "source_text": "अब जो भी होने के बाद हो सकता है की इतनी ज्यादा गर्मी हो गई है",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -155,7 +155,7 @@
    "end": 58.4,
    "text": "बारह सौ बस हाँ अब आप मेरे को इन अच्छा प्राइस के बारे में बताइए हाँ सर",
    "hinglish": "barah sau bas haan ab aap mere ko in achha price ke bare mein bataie haan sir",
-   "translation": "Twelve hundred buses, please tell me about the good prices",
+   "translation": "Twelve hundred buses, please",
    "source_text": "बारह सौ बस हाँ अब आप मेरे को इन अच्छा प्राइस के बारे में बताइए हाँ सर",
    "changed": false,
    "uncertain": true,
@@ -168,7 +168,7 @@
    "end": 76.16,
    "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर तवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ गई है तो घर ले जाइए कुछ दिन आराम कर देगा तो स्वास्थ्य उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको फूल भेजिएगा",
    "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai har tava to hum dilva denge lekin aap agar hain to aa gayi hai to ghar le jaie kuch din aaram kar dega to svaasthy uski theek ho jaegi to phir aap dobara se usko phool bhejiega",
-   "translation": "Her water shortage may have caused her illness, but she got better with our help. We will provide her with a good price, but if you are here, take her home and rest for a few days. She will get better.",
+   "translation": "Her water shortage may have caused her illness, and she got sick, but we will take care of her and send her flowers twice a day.",
    "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर तवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ गई है तो घर ले जाइए कुछ दिन आराम कर देगा तबियत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको फूल भेजिएगा",
    "changed": true,
    "uncertain": true,
@@ -189,9 +189,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 46.815,
-  "prompt_tokens": 1957,
-  "completion_tokens": 997,
+  "llm_seconds": 174.67,
+  "prompt_tokens": 1930,
+  "completion_tokens": 989,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -213,8 +213,10 @@
   "source_sha256": "4c81b2e7c7852f23c351773f7ee9e9fe6653a0cf4ea9aa182df9c6b1c6ac954c",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:22:50Z",
+  "generated_at_utc": "2026-11-11T03:28:35Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 76.75
+  "source_audio_duration_s": 76.75,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

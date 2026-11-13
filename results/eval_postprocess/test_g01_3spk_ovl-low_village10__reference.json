@@ -1,19 +1,19 @@
 {
- "title": "Hindi and Hinglish Conversation Summaries",
+ "title": "Hindi and Hinglish Conversation",
  "topic": "Hindi and Hinglish Conversation",
- "executive_summary": "This report summarizes a conversation in Hindi and Hinglish between two individuals, with a focus on hair cutting.",
+ "executive_summary": "This report summarizes a conversation between two people in Hindi and Hinglish, with a focus on a conversation about hair cutting.",
  "key_points": [
-  "Hindi and Hinglish Conversation",
-  "Hindi and Hinglish Conversation Summaries"
+  "Hindi and Hinglish Conversation"
  ],
  "keywords": [
   "हैलो",
-  "सर रेस्टोरेंट",
   "बोलिए",
-  "बोलो",
   "बिल",
-  "तीन सौ",
-  "चार सौ"
+  "rice",
+  "vegetables",
+  "sack",
+  "cutting",
+  "hair"
  ],
  "action_items": [],
  "speakers": [
@@ -70,11 +70,11 @@
    "end": 5.141,
    "text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप",
    "hinglish": "namaskar main sir restaurant se baat kar raha hoon aap",
-   "translation": "Hello, I'm talking to the restaurant owner.",
+   "translation": "Hello",
    "source_text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 4,
@@ -83,11 +83,11 @@
    "end": 7.064,
    "text": "जी जी ये तो हमारी इस्पेशिलिटी है सर",
    "hinglish": "ji ji ye to hamari ispeshiliti hai sir",
-   "translation": "Gee, that's our profession, sir.",
+   "translation": "Gee Gee, that's our profession, sir.",
    "source_text": "जी जी ये तो हमारी इस्पेशिलिटी है सर",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 5,
@@ -122,11 +122,11 @@
    "end": 8.992,
    "text": "हाँ बोलो",
    "hinglish": "haan bolo",
-   "translation": "Yes, speak",
+   "translation": "",
    "source_text": "हाँ बोलो",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
   },
   {
    "line_id": 8,
@@ -159,13 +159,13 @@
    "speaker": "S2",
    "start": 9.643,
    "end": 20.649,
-   "text": "आप बता दें अगर आप सादी ले जाएँगे तो तीन सौ रुपए मिलेंगे आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाएँगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
-   "hinglish": "aap bata den agar aap sadi le jaenge to teen sau rupae milenge aapko aur agar aap use ye frai karva ke ya sabji banva ke le jaenge to aapko sadhe chaar sau rupae ki pad jaegi to",
-   "translation": "You tell if you take a salaad, you'll get three hundred rupees and if you take a vegetable, you'll get four hundred rupees.",
+   "text": "आपको बता दें अगर आप सादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
+   "hinglish": "aapko bata den agar aap sadi le jaoge to teen sau rupae milegi aapko aur agar aap use ye frai karva ke ya sabji banva ke le jaoge to aapko sadhe chaar sau rupae ki pad jaegi to",
+   "translation": "Tell me if you take a sack of rice, you'll get three hundred rupees and if you take a sack of vegetables, you'll get four hundred rupees.",
    "source_text": "आपको बता दें अगर आप सादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 11,
@@ -174,11 +174,11 @@
    "end": 20.344,
    "text": "हाँ जी बोलिए",
    "hinglish": "haan ji bolie",
-   "translation": "Yes, speak",
+   "translation": "",
    "source_text": "हाँ जी बोलिए",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
   },
   {
    "line_id": 12,
@@ -187,11 +187,11 @@
    "end": 28.498,
    "text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है",
    "hinglish": "mere parlour mein mein three istep hote hain four istep off hoti hain aur phaizal hoti hai V V shebh hai aur yu shape bhi hai",
-   "translation": "There are three staples in my parlor and they are used for stapling and there is a shovel and you also have a shovel.",
+   "translation": "There are three steps in my parlor and there are three steps in the way to the bathroom and there is a toilet and there is a shower.",
    "source_text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 13,
@@ -213,11 +213,11 @@
    "end": 38.629,
    "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheej ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain",
-   "translation": "",
+   "translation": "Do you need something different?",
    "source_text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 15,
@@ -226,11 +226,11 @@
    "end": 44.47,
    "text": "तो आप सॉप पे एक बार आ जाऍं तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "hinglish": "to aap shop pe ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai",
-   "translation": "",
+   "translation": "Do you need soap?",
    "source_text": "तो आप सॉप पे एक बार आ जाऍं तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 16,
@@ -239,11 +239,11 @@
    "end": 45.415,
    "text": "हाँ आ जाना",
    "hinglish": "haan aa jana",
-   "translation": "",
+   "translation": "Do you need to go?",
    "source_text": "हाँ आ जाना",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 17,
@@ -252,11 +252,11 @@
    "end": 57.082,
    "text": "ओके ठीक है उसकी फीस बता देती हूँ मैं यह मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उस एकॉर्डिंग ही कटानी है या फिर सामने से ही हेयरकट कटाना है",
    "hinglish": "okay theek hai uski phees bata deti hoon main yeh meri yu cutting ke liye jo aapko saam matlab face us ekording hi katani hai ya phir samne se hi heyarkat katana hai",
-   "translation": "",
+   "translation": "Do you need your cutting for your hair?",
    "source_text": "ओके ठीक है उसकी फीस बता देती हूँ मैं यह मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उस एकॉर्डिंग ही कटानी है या फिर सामने से ही हेयरकट कटाना है",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 18,
@@ -289,9 +289,12 @@
   1,
   2,
   3,
+  4,
   5,
   6,
+  7,
   10,
+  11,
   12,
   13,
   14,
@@ -303,20 +306,20 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 563.496,
-  "prompt_tokens": 3024,
-  "completion_tokens": 1371,
+  "llm_seconds": 226.795,
+  "prompt_tokens": 2889,
+  "completion_tokens": 1334,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 1,
+  "lines_changed": 0,
   "lines_reverted": 13,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 8,
-  "missing_translations": 4,
+  "lines_flagged_by_llm": 9,
+  "missing_translations": 2,
   "unknown_line_ids": 0,
   "keywords_dropped": 10,
   "actions_dropped": 0,
@@ -327,8 +330,10 @@
   "source_sha256": "71e7799e91266ec9ee7b8278014b65051b91bb287af8fa6e757cc2187042d7ec",
   "source_line_count": 19,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:28:10Z",
+  "generated_at_utc": "2026-11-10T21:12:52Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 61.68
+  "source_audio_duration_s": 61.68,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

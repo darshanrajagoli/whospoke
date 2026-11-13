@@ -1,19 +1,20 @@
 {
- "title": "Wedding, Doctor, Recipe, Count, Discount, Rose, Berries",
- "topic": "Wedding, Doctor, Recipe, Count, Discount, Rose, Berries",
- "executive_summary": "A conversation about a wedding, a doctor, and a food recipe.",
+ "title": "Wedding, Doctor, Biryanis, Ice Cream, Count, Discount, Rose, Berries",
+ "topic": "Wedding, Doctor, Biryanis, Ice Cream, Count, Discount, Rose, Berries",
+ "executive_summary": "A conversation between two people about a wedding, a doctor, and a food recipe.",
  "key_points": [
   "Wedding",
   "Doctor",
-  "Recipe",
-  "Count",
-  "Discount"
+  "Biryanis",
+  "Ice Cream",
+  "Count"
  ],
  "keywords": [
   "Wedding",
   "Doctor",
-  "Count",
-  "Discount"
+  "Biryanis",
+  "Ice Cream",
+  "Count"
  ],
  "action_items": [],
  "speakers": [
@@ -70,7 +71,7 @@
    "end": 14.78,
    "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
    "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko",
-   "translation": "Hello sir tell me what is the situation",
+   "translation": "Hello sir tell me what is the dijkat",
    "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको",
    "changed": false,
    "uncertain": true,
@@ -83,7 +84,7 @@
    "end": 20.93,
    "text": "जी सर यह मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
    "hinglish": "ji sir yeh mere yahan das joon ki shadi hai to mere ko pri wedding fotoshut karana tha",
-   "translation": "Sir this is my wedding in June and I wanted to take pre wedding photos",
+   "translation": "Sir it was my wedding here on the 10th of June and I wanted to have a pre wedding photography shoot",
    "source_text": "जी सर यह मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
    "changed": false,
    "uncertain": true,
@@ -109,7 +110,7 @@
    "end": 40.83,
    "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर वो हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा वमोसा ये सब",
    "hinglish": "sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi paanch logon ke liye chahiye tha sir wo ho paega haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa wamosa ye sab",
-   "translation": "We were talking about Lucknowi style biryanis and how they should be made for five people, and also sweet dishes like rose jam and snowy cake.",
+   "translation": "We were speaking about Lucknowi style biryanis which we needed for five people and also wanted something sweet like rose jam and ice cream.",
    "source_text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर वो हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना समोसा वमोसा ये सब",
    "changed": false,
    "uncertain": true,
@@ -153,9 +154,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 39.019,
-  "prompt_tokens": 1733,
-  "completion_tokens": 829,
+  "llm_seconds": 151.831,
+  "prompt_tokens": 1748,
+  "completion_tokens": 865,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -168,7 +169,7 @@
   "lines_flagged_by_llm": 6,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -177,8 +178,10 @@
   "source_sha256": "b91b72ff149e3bcc0c38e95e193b4d0e129f360de90a1ae746dfb783f3625e68",
   "source_line_count": 8,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:42:29Z",
+  "generated_at_utc": "2026-11-11T04:40:25Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 69.5
+  "source_audio_duration_s": 69.5,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

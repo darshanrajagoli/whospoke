@@ -1,22 +1,22 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversations",
- "topic": "Biryani and Wedding Photoshoot",
- "executive_summary": "A conversation between two people about a favorite dish and a pre-wedding photoshoot.",
+ "title": "Hindi and Hinglish Conversation",
+ "topic": "Food and voice",
+ "executive_summary": "A conversation in Hindi and Hinglish about food and voice.",
  "key_points": [
-  "Part 1: A conversation between two people about a favorite dish.",
+  "Part 1: A conversation in Hindi and Hinglish about food and voice.",
   "Part 2: The conversation is about a doctor, a pre-wedding photoshoot, and a location for the photoshoot.",
-  "Part 3: The speaker is asking about the price of rose petals and berries.",
+  "Part 3: People were asking about the price of rose petals and berries.",
   "Part 4: They were asking about the price of rose petals and berries.",
-  "Part 5: The speaker is asking about the price of rose petals and berries."
+  "Part 5: People were asking about the price of rose petals and berries."
  ],
  "keywords": [
   "photographer",
   "wedding",
-  "favorite dish",
+  "voice",
   "doctor",
   "pre-wedding photoshoot",
   "photoshoot location",
-  "rose petals and berries"
+  "rose"
  ],
  "action_items": [],
  "speakers": [
@@ -73,7 +73,7 @@
    "end": 10.49,
    "text": "बताइए क्या दिक्कत है आपको",
    "hinglish": "bataie kya dikkat hai aapko",
-   "translation": "Tell me what is your favorite dish. What is your favorite dish?",
+   "translation": "Tell me what is your favorite dish. What is your voice like?",
    "source_text": "बताइए क्या दिक्कत है आपको",
    "changed": false,
    "uncertain": true,
@@ -86,11 +86,11 @@
    "end": 18.93,
    "text": "जी मेरी जरा बात फोटोग्राफर से हो रही है जिस मेरे यहाँ दस जून की शादी है तो क्या दिक्कत है",
    "hinglish": "ji meri jara baat photographer se ho rahi hai jis mere yahan das joon ki shadi hai to kya dikkat hai",
-   "translation": "G, my photo is being taken by a photographer who is here for a ten June wedding. What is your voice like?",
+   "translation": "G, my photo is from a wedding in June. What is your voice like?",
    "source_text": "जी मेरी जरा बात फोटोग्राफर से हो रही है जिस मेरे यहाँ दस जून की शादी है तो क्या दिक्कत है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 5,
@@ -99,11 +99,11 @@
    "end": 21.27,
    "text": "नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ है",
    "hinglish": "namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz hai",
-   "translation": "Hello sir, tell me what is your favorite dish. What is your favorite dish?",
+   "translation": "Hello sir, tell me what is your favorite dish. What is your voice like?",
    "source_text": "नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model added words that the ASR line does not contain; ASR wording kept."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -115,8 +115,8 @@
    "translation": "What is your favorite dish?",
    "source_text": "क्या रहता है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 7,
@@ -138,7 +138,7 @@
    "end": 33.3,
    "text": "पाँच सौ के लिए चाहिए था सर्व हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन सेना वना समोसा सबका इलाज",
    "hinglish": "paanch sau ke liye chahiye tha sarv ho paega haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun sena wana samosa sabka ilaj",
-   "translation": "Five hundred was needed for a service of sweets, including rose berries, army vanilla, and samosa.",
+   "translation": "Five hundred were needed for a service of sweets, including rose berries, army beans, and samosa.",
    "source_text": "पाँच सौ के लिए चाहिए था सर्व हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन सेना वना समोसा सबका इलाज",
    "changed": false,
    "uncertain": true,
@@ -164,7 +164,7 @@
    "end": 45.84,
    "text": "जून को मतलब मेरे जो प्री वेडिंग फोटो शूट उससे पहले होगा आप तो कब टाइम है मतलब फोटो शूट करने के लिए आप दूसरी डेट है यहाँ",
    "hinglish": "joon ko matlab mere jo pri wedding photo shoot usse pahle hoga aap to kab time hai matlab photo shoot karne ke liye aap dusri date hai yahan",
-   "translation": "June means my pre-wedding photoshoot will be before you, when will you be ready for the photoshoot?",
+   "translation": "June is when I'll be getting my pre-wedding photoshoot, when will you be ready for the photoshoot?",
    "source_text": "जून को मतलब मेरे जो प्री वेडिंग फोटो शूट उससे पहले होगा आप तो कब टाइम है मतलब फोटो शूट करने के लिए आप दूसरी डेट है यहाँ",
    "changed": false,
    "uncertain": true,
@@ -177,7 +177,7 @@
    "end": 48.83,
    "text": "कब की आपको दिक्कत आ रहा है पैर",
    "hinglish": "kab ki aapko dikkat aa raha hai pair",
-   "translation": "When will you be getting married?",
+   "translation": "When will you be getting your dikeet?",
    "source_text": "कब की आपको दिक्कत आ रहा है पैर",
    "changed": false,
    "uncertain": true,
@@ -214,9 +214,6 @@
   1,
   2,
   3,
-  4,
-  5,
-  6,
   7,
   8,
   9,
@@ -227,19 +224,19 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 61.69,
-  "prompt_tokens": 2378,
-  "completion_tokens": 1324,
+  "llm_seconds": 216.744,
+  "prompt_tokens": 2372,
+  "completion_tokens": 1279,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 0,
-  "lines_reverted": 6,
+  "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 8,
+  "lines_flagged_by_llm": 7,
   "missing_translations": 2,
   "unknown_line_ids": 0,
   "keywords_dropped": 1,
@@ -251,8 +248,10 @@
   "source_sha256": "416d57e97f9033117c45b645677dea3737258193a1d0699d0adab32b1dc8af9d",
   "source_line_count": 14,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:03:04Z",
+  "generated_at_utc": "2026-11-11T05:55:18Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 67.37
+  "source_audio_duration_s": 67.37,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

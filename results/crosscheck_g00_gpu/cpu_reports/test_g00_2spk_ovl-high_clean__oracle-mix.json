@@ -1,0 +1,150 @@
+{
+ "title": "Buying Furniture",
+ "topic": "Furniture",
+ "executive_summary": "A conversation about buying furniture.",
+ "key_points": [
+  "Buying furniture is a popular activity in India, with many people looking for furniture that is both functional and stylish.",
+  "There are many different types of furniture available, including dining tables, sofas, divan beds, matelb beds, and common wood, saagwan wood, and shisham wood.",
+  "There are many workers who are skilled in furniture finishing, and they can provide high-quality furniture at affordable prices.",
+  "Buying furniture can be a great way to decorate and improve the look of a home."
+ ],
+ "keywords": [
+  "furniture",
+  "location",
+  "worker",
+  "finishing"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 51.67,
+   "turns": 3,
+   "share": 0.687
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 23.49,
+   "turns": 3,
+   "share": 0.313
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S2",
+   "start": 0.62,
+   "end": 5.57,
+   "text": "हलो यश यश बोलिए मैम अच्छा कहाँ पे",
+   "hinglish": "hello yash yash bolie ma'am achha kahan pe",
+   "translation": "Hello Yash Yash speak to Ma'am where is good",
+   "source_text": "हलो यश यश बोलिए मैम अच्छा कहाँ पे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S1",
+   "start": 3.09,
+   "end": 9.47,
+   "text": "नमस्ते मैम मैम हाँ मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+   "hinglish": "namaste ma'am ma'am haan mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+   "translation": "Hello Ma'am will get you in the budget you want, how much budget do you want",
+   "source_text": "नमस्ते मैम मैम हाँ मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S2",
+   "start": 10.23,
+   "end": 18.05,
+   "text": "क्या आपको अपनी कार में क्या ख़राबी हो गई है जैसे अच्छा बंद हो गया है ना तो क्या",
+   "hinglish": "kya aapko apni car mein kya kharabi ho gayi hai jaise achha band ho gaya hai na to kya",
+   "translation": "What is the problem in your car, is it locked or not",
+   "source_text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे अच्छा बंद हो गई है ना तो क्या",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S1",
+   "start": 16.04,
+   "end": 26.72,
+   "text": "मैम आपको क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+   "hinglish": "ma'am aapko kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
+   "translation": "Ma'am, tell me what price you want, what type of furniture you want",
+   "source_text": "मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S2",
+   "start": 27.04,
+   "end": 37.76,
+   "text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप किसी यात्रा से जा रही",
+   "hinglish": "achha achha achha to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waiph theek ho jaegi aap kisi yatra se ja rahi",
+   "translation": "No you will get all the furniture you want, you will get a divan bed, a sofa, a dining table, and a matelb bed, and then you will get furniture in the dining room, which is made of common wood, saagwan wood, and shisham wood",
+   "source_text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप किसी यात्रा से जा रही",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S1",
+   "start": 35.26,
+   "end": 69.87,
+   "text": "नहीं आपको सारे सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की उन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+   "hinglish": "nahi aapko sare saman milega aapko milega divan bed milega ek sofa milega daining table milega aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki un finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
+   "translation": "We have workers here who work well and have good finishing on their hands, and you will get every single thing you want",
+   "source_text": "नहीं आपको सारे सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की उन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 2,
+  "llm_seconds": 358.296,
+  "prompt_tokens": 1331,
+  "completion_tokens": 823,
+  "chunks": 1,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 3,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 6,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "e3b91690a1ba58a0e7c267be211394edf4fd0271471a8cb71afe821c06184fd0",
+  "source_line_count": 6,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-02T02:11:50Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 70.59
+ }
+}

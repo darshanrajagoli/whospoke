@@ -1,17 +1,16 @@
 {
  "title": "Transcript of a conversation in Hindi and Hinglish",
  "topic": "Voting and family",
- "executive_summary": "The speakers discuss the importance of voting and family in their country.",
+ "executive_summary": "The speaker talks about voting and family in Hindi and Hinglish.",
  "key_points": [
-  "Hello",
-  "Hello sir",
-  "Namas",
-  "Prayers"
+  "हैलो",
+  "हैलो सर",
+  "प्रार्थना",
+  "वोट करें"
  ],
  "keywords": [
   "हैलो",
-  "हैलो सर",
-  "नमस"
+  "हैलो सर"
  ],
  "action_items": [],
  "speakers": [
@@ -107,7 +106,7 @@
    "end": 17.624,
    "text": "हमारे देश में छत्त पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
    "hinglish": "hamare desh mein chhatt puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie",
-   "translation": "In our country, Chhat Puja is celebrated and in our country, Deepavali is also celebrated and we speak",
+   "translation": "In our country, Chhat Puja is celebrated and in our country, Deepavali is also celebrated and yes, we speak.",
    "source_text": "हमारे देश में छत्त पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
    "changed": false,
    "uncertain": true,
@@ -253,9 +252,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 48.418,
-  "prompt_tokens": 2236,
-  "completion_tokens": 1074,
+  "llm_seconds": 182.655,
+  "prompt_tokens": 2239,
+  "completion_tokens": 1078,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -268,7 +267,7 @@
   "lines_flagged_by_llm": 4,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -277,8 +276,10 @@
   "source_sha256": "0acebc9aa7b1dfe78d860d281ecf60f21759f81a39da4e2d7ef335d22b8cd305",
   "source_line_count": 16,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:52:16Z",
+  "generated_at_utc": "2026-11-11T01:56:21Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 67.0
+  "source_audio_duration_s": 67.0,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

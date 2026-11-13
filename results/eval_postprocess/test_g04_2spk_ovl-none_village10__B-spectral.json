@@ -1,19 +1,15 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversations",
- "topic": "box, price, schoolwork, tape, colourful wallpaper",
- "executive_summary": "A conversation between two people about a box that needs to be bought for a boy's schoolwork.",
+ "title": "Transcript of a conversation between two people",
+ "topic": "Request for a tape and wallpaper for a child",
+ "executive_summary": "Speaker A requests a tape and wallpaper for his child.",
  "key_points": [
-  "box",
-  "price",
-  "schoolwork",
-  "tape",
-  "colourful wallpaper"
+  "request",
+  "requested",
+  "provide"
  ],
  "keywords": [
-  "box",
-  "price",
-  "tape",
-  "colourful wallpaper"
+  "namaste",
+  "provide"
  ],
  "action_items": [],
  "speakers": [
@@ -69,24 +65,24 @@
    "speaker": "Speaker_A",
    "start": 11.6,
    "end": 23.3,
-   "text": "हमें आपके बच्चे का नाम वैभव है आपके लड़के का हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए थे तो एक बॉक्स का कितना प्राइस पड़ेगा",
-   "hinglish": "hamen aapke bacche ka naam vaibhav hai aapke ladke ka hamen do box uske red ke do blue ke aur do black ke chahiye the to ek box ka kitna price padega",
-   "translation": "We need two boxes for your boy, red, blue and black, and how much will it cost?",
+   "text": "हमें आपके बच्चे का नाम वैभव है आपके लड़के का हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं तो एक बॉक्स का कितना प्राइस पड़ेगा",
+   "hinglish": "hamen aapke bacche ka naam vaibhav hai aapke ladke ka hamen do box uske red ke do blue ke aur do black ke chahiye hain to ek box ka kitna price padega",
+   "translation": "We need two boxes for your boy, red, blue and black. How much will one box cost?",
    "source_text": "हमें आपके बच्चे का नाम वैभव है आपके लड़के का हमें दो बॉक्स उसके रेड के दो ब्लू के और दो ब्लैक के चाहिए हैं तो एक बॉक्स का कितना प्राइस पड़ेगा",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 5,
    "speaker": "Speaker_A",
    "start": 24.05,
    "end": 26.8,
-   "text": "हाँ और वो कक्षा दस में पढ़ता है",
-   "hinglish": "haan aur wo kaksha das mein padhta hai",
-   "translation": "Yes, and he is in class 10",
+   "text": "हां और वह कक्षा दस में पढ़ता है।",
+   "hinglish": "haan aur woh kaksha das mein padhta hai.",
+   "translation": "Yes and he is in Class 10.",
    "source_text": "हाँ और वो कक्षा दस में पढ़ता है",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -95,13 +91,13 @@
    "speaker": "Speaker_A",
    "start": 27.25,
    "end": 43.55,
-   "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बता दी जाइए वो आपने उसे सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
-   "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uske price bata di jaie wo aapne use subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
-   "translation": "So Mam will charge two hundred rupees for the box and also give some special discount, if you note down the price and tell me how much it is",
+   "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बता दी जाइए वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
+   "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uske price bata di jaie wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
+   "translation": "So Mam will charge two hundred rupees for the box and also give some special discount.",
    "source_text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बता दी जाइए वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 7,
@@ -149,7 +145,7 @@
    "end": 79.1,
    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाथ तवा तो हम दिला देंगे लेकिन हाथ तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबियत उसकी ठीक हो जाएगी सुख आप दोबारा से उसको स्कूल भेजिएगा",
    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai haath tava to hum dila denge lekin haath to agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar dega tabiyat uski theek ho jaegi sukh aap dobara se usko school bhejiega",
-   "translation": "He has a fever and he is sick because of the heat. We will give him medicine and take him home. We will also take care of his child for a few days.",
+   "translation": "He got sick because of the heat, and we will provide him with a tape and wallpaper, but if you have a tape, please come and get it.",
    "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाथ तवा तो हम दिला देंगे लेकिन हाथ तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबियत उसकी ठीक हो जाएगी सुख आप दोबारा से उसको स्कूल भेजिएगा",
    "changed": false,
    "uncertain": true,
@@ -169,22 +165,22 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 45.229,
-  "prompt_tokens": 1904,
-  "completion_tokens": 954,
+  "llm_seconds": 158.715,
+  "prompt_tokens": 1882,
+  "completion_tokens": 889,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 2,
-  "lines_reverted": 4,
+  "lines_changed": 1,
+  "lines_reverted": 6,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 7,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -193,8 +189,10 @@
   "source_sha256": "4d9d57deac436bc0de80d6e975dd17985fe04c959556f519f8a74cf8c522ac5b",
   "source_line_count": 10,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:10:40Z",
+  "generated_at_utc": "2026-11-11T02:44:05Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 79.23
+  "source_audio_duration_s": 79.23,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,0 +1,37 @@
+{
+  "run_id": "2026-11-10_s4eval_r1",
+  "started_utc": "2026-11-10T18:09:47Z",
+  "prompt_schema_revision": "b03fa93a833a",
+  "validator_rules_version": 2,
+  "model_alias": "ai4bharat/Airavata",
+  "model_file": "models/airavata-q4_k_m.gguf",
+  "model_file_bytes": 4172544832,
+  "quantization": "Q4_K - Medium",
+  "base_url": "http://127.0.0.1:8080/v1",
+  "context_tokens": 4096,
+  "temperature": 0.0,
+  "server": {
+    "gpu_layers": 0,
+    "threads": 8,
+    "parallel": 1,
+    "chat_template": "src/whospoke/resources/airavata_chat_template.jinja",
+    "llama_cpp": "0.5.0-dev (build 0, commit unknown)"
+  },
+  "os": "Linux-7.2.14-arch1-1-x86_64-with-glibc2.44",
+  "python": "3.14.9",
+  "evaluation": {
+    "groups": "0-6",
+    "group_7": "excluded (D32)",
+    "systems": [
+      "reference",
+      "oracle-clean",
+      "oracle-mix",
+      "B-spectral"
+    ],
+    "expected_pairs": 252,
+    "asr": "indicconformer"
+  },
+  "command": "PYTHONPATH=src venv/bin/python scripts/eval_postprocess.py --force --server-pid 759292",
+  "freeze": "prompts/schema/validator unchanged since b03fa93a833a; --force regenerates all 252 under this revision",
+  "prior_artifacts_backup": "the previous 252 reports, their CSV and the 3 run summaries are in git at commit df497d8 (results/eval_postprocess/, results/eval_postprocess.csv, results/eval_postprocess_summary_g*.json)"
+}

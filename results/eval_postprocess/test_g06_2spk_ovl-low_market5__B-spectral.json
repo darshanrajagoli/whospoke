@@ -1,17 +1,20 @@
 {
  "title": "Hindi and Hinglish Conversation Report",
- "topic": "Two days",
- "executive_summary": "Speakers discuss the topic of two days and mention a saree, bus, and phone.",
+ "topic": "Two days, lengnor, city, right, saree, get, yes, want, haँ, two people, stay, हा",
+ "executive_summary": "Speaker B and Speaker C discuss the topic of two days. Part 1: Speaker B and Speaker C discuss the topic of two days. Part 2: Speaker_A says he will get a saree. Part 3: Two people will stay. Yes, two people will stay. Yes. Part 4: Two people will stay and it will be less. Part 5: Speaker C is looking for a bus. Part 6: Speaker_B says he will get a saree. Part 7: Speaker_C says he will also go online. Part 8: Speaker_B says he will also go. Part 9: Speaker_B says he will go good. Part 10: Speaker_B says he will call. Part 11: Speaker_B says he will go. Part 12: Speaker_B says he will go. Part 13: Speaker_B says he will go. Part 14: Speaker_B says he will go. Part 15: Speaker_B says he will go. Part 16: Speaker_C says yes. Part 17: Speaker_A says yes. Part 18: New fashion is out, a Banarasi",
  "key_points": [
-  "Two people will stay and it will be less."
+  "two days",
+  "lengnor",
+  "city",
+  "right",
+  "saree"
  ],
  "keywords": [
   "two days",
-  "Lengnor",
+  "lengnor",
   "city",
-  "understand",
-  "saree",
-  "get"
+  "right",
+  "saree"
  ],
  "action_items": [],
  "speakers": [
@@ -45,8 +48,8 @@
    "translation": "I need two",
    "source_text": "मैं दो",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 3,
@@ -58,8 +61,8 @@
    "translation": "Two days",
    "source_text": "दो दिन चाहिए था",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 4,
@@ -72,7 +75,7 @@
    "source_text": "और सब तो ठीक है अपना बताइए कहा चाहिएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
   },
   {
    "line_id": 5,
@@ -84,8 +87,8 @@
    "translation": "Our trust to the computer",
    "source_text": "ट्रस्ट टू कंप्यूटर का हमारा",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -97,8 +100,8 @@
    "translation": "These",
    "source_text": "ये",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 7,
@@ -107,7 +110,7 @@
    "end": 23.35,
    "text": "अरे हमको मतलब कि लेंगनोर पर शहर में सही हमको",
    "hinglish": "are hamko matlab ki lengnor par shahar mein sahi hamko",
-   "translation": "We don't understand if we're going to the city on Lengnor",
+   "translation": "We don't mean to say that we're right in the city on Lengnor",
    "source_text": "अरे हमको मतलब कि लेंगनोर पर शहर में सही हमको",
    "changed": false,
    "uncertain": true,
@@ -388,11 +391,7 @@
   }
  ],
  "uncertain_lines": [
-  2,
-  3,
   4,
-  5,
-  6,
   7,
   9,
   10,
@@ -412,9 +411,9 @@
  ],
  "diagnostics": {
   "llm_calls": 6,
-  "llm_seconds": 73.781,
-  "prompt_tokens": 3539,
-  "completion_tokens": 1617,
+  "llm_seconds": 332.415,
+  "prompt_tokens": 3542,
+  "completion_tokens": 1878,
   "chunks": 5,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -424,10 +423,10 @@
   "lines_reverted": 8,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 15,
+  "lines_flagged_by_llm": 10,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 4,
   "schema_enforced": true
@@ -436,8 +435,10 @@
   "source_sha256": "394871d75b8a9be84c8c3cb175e0c30248e1c0f4cfe92a8f135dbd633e06b1b1",
   "source_line_count": 31,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:29:24Z",
+  "generated_at_utc": "2026-11-11T07:37:42Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 80.6
+  "source_audio_duration_s": 80.6,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

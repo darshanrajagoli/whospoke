@@ -1,20 +1,21 @@
 {
  "title": "Hindi and Hinglish Conversations",
  "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation about rooms, a conversation about taking a saree, and a conversation about Main Road and new fashion. The evidence is summarized in English and includes lines, keywords, and actions. The report is based on the evidence alone and does not include any additional information or context.",
+ "executive_summary": "This report summarizes a conversation in Hindi and Hinglish, with a focus on the main topic of buying a saree and staying at a computer.",
  "key_points": [
-  "Two rooms were needed",
-  "A trust is needed",
-  "A saree is needed",
-  "Two people will stay and work the computer",
-  "On Main Road, on Main Road."
+  "A conversation in Hindi and Hinglish.",
+  "A conversation about buying a saree.",
+  "A conversation about Main Road.",
+  "Two people will stay and he room will have a computer.",
+  "Two people will stay and work the computer."
  ],
  "keywords": [
-  "rooms",
+  "dadi",
+  "computer",
   "saree",
-  "take",
   "ring road",
-  "city, go, main, road, fashion, marriage,"
+  "city",
+  "main, road, will, go, on, marriage is, 2"
  ],
  "action_items": [],
  "speakers": [
@@ -65,7 +66,7 @@
    "end": 15.55,
    "text": "वह ट्रस्ट तो कंप्यूटर का है हमारा",
    "hinglish": "woh trast to computer ka hai hamara",
-   "translation": "He has a trust, ours is a computer.",
+   "translation": "He has a trust, it's ours.",
    "source_text": "वह ट्रस्ट तो कंप्यूटर का है है हमारा",
    "changed": true,
    "uncertain": true,
@@ -91,7 +92,7 @@
    "end": 16.604,
    "text": "और सब तो ठीक है अपना बताइए",
    "hinglish": "aur sab to theek hai apna bataie",
-   "translation": "And everything is fine, tell me.",
+   "translation": "And everything else is fine.",
    "source_text": "और सब तो ठीक है अपना बताइए",
    "changed": false,
    "uncertain": true,
@@ -104,7 +105,7 @@
    "end": 18.682,
    "text": "यह",
    "hinglish": "yeh",
-   "translation": "It",
+   "translation": "It.",
    "source_text": "यह",
    "changed": false,
    "uncertain": true,
@@ -133,8 +134,8 @@
    "translation": "Need to take all",
    "source_text": "साड़ी लेना है",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 9,
@@ -143,11 +144,11 @@
    "end": 20.38,
    "text": "हाँ साड़ी चाहिएगा",
    "hinglish": "haan sadi chahiega",
-   "translation": "Yes, a saree is needed",
+   "translation": "Yes, a sari is needed",
    "source_text": "हाँ साड़ी चाहिएगा",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 10,
@@ -156,11 +157,11 @@
    "end": 25.839,
    "text": "अरे हमको मतलब कि रिंग रोड पर शहर में होना चाहिए हमको शहर में",
    "hinglish": "are hamko matlab ki ring road par shahar mein hona chahiye hamko shahar mein",
-   "translation": "Asking if we should go to the city on Ring Road, we should go to the city",
+   "translation": "Don't think we should be in the city on Ring Road",
    "source_text": "अरे हमको मतलब कि रिंग रोड पर शहर में चाहिए हमको शहर में",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 11,
@@ -172,8 +173,8 @@
    "translation": "Poonam saree",
    "source_text": "पूनम साड़ी",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 12,
@@ -185,8 +186,8 @@
    "translation": "And",
    "source_text": "और",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 13,
@@ -378,11 +379,6 @@
   4,
   5,
   6,
-  8,
-  9,
-  10,
-  11,
-  12,
   20,
   21,
   22,
@@ -392,9 +388,9 @@
  ],
  "diagnostics": {
   "llm_calls": 6,
-  "llm_seconds": 75.562,
-  "prompt_tokens": 3407,
-  "completion_tokens": 1608,
+  "llm_seconds": 462.119,
+  "prompt_tokens": 3405,
+  "completion_tokens": 1605,
   "chunks": 5,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -404,10 +400,10 @@
   "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 15,
+  "lines_flagged_by_llm": 10,
   "missing_translations": 4,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -416,8 +412,10 @@
   "source_sha256": "85c8d7f0a67cab8970c5e76292dec3bac0a724fd11eaad60f133f020fd66bab4",
   "source_line_count": 26,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:33:52Z",
+  "generated_at_utc": "2026-11-11T07:58:10Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 73.04
+  "source_audio_duration_s": 73.04,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

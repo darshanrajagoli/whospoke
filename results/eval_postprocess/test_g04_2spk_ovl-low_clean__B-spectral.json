@@ -58,7 +58,7 @@
    "end": 13.9,
    "text": "वो आपने उसको सुबह स्कूल भेजा था वहाँ आने के बाद वह बीमार पड़ गया है",
    "hinglish": "wo aapne usko subah school bheja tha wahan aane ke baad woh bimar pad gaya hai",
-   "translation": "He was sent to school in the morning, but after he came back, he fell sick. He has a fever and his body temperature has increased.",
+   "translation": "He was sent to school in the morning, and he fell sick after arriving there. He has a fever and his body temperature has increased.",
    "source_text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
    "changed": true,
    "uncertain": true,
@@ -179,9 +179,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 48.157,
-  "prompt_tokens": 1927,
-  "completion_tokens": 1016,
+  "llm_seconds": 178.171,
+  "prompt_tokens": 1926,
+  "completion_tokens": 1015,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -203,8 +203,10 @@
   "source_sha256": "70641cbf712307f1ca3c8600c1c3eb3dc6e5581f3c3b9e373506e8b82285f18a",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:16:52Z",
+  "generated_at_utc": "2026-11-11T03:06:12Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 63.39
+  "source_audio_duration_s": 63.39,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

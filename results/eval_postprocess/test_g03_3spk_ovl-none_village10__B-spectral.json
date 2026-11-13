@@ -1,7 +1,7 @@
 {
  "title": "Transcript of Hindi and Hinglish Conversation",
  "topic": "Hindi and Hinglish Conversation",
- "executive_summary": "This transcript is a summary of a conversation between two speakers in Hindi and Hinglish. The speakers discuss various topics, including Chhath, Deepavali, Bihar, yes, boli yes, vo ye bata to nahi no printing, vote to the government many times, sarkar ko vote dena, Speaker_A says he has to vote now, not to give any chappu, Speaker_A says he has to vote for the same thing, Speaker_A says he has to vote for the book, Speaker_B says chhath puja, chhath puja mein hum log naya sab saman late hain uske liye, Speaker_B says the speaker says that new clothes are brought in and worn, Speaker_B says the speaker says that they make cassava and other products.",
+ "executive_summary": "This report summarizes a transcribed conversation between two speakers, Speaker_A and Speaker_B, in Hindi and Hinglish. The conversation includes topics such as voting, government, and new s, as well as actions such as yes, vote, and new s. The report is based on the evidence provided in the transcript.",
  "key_points": [
   "Hindi and Hinglish Conversation"
  ],
@@ -9,11 +9,11 @@
   "chhath",
   "deepavali",
   "bihar",
-  "बोलिए हाँ",
+  "people",
+  "celebrate",
+  "yes",
   "vote",
-  "chappu",
-  "give",
-  "new"
+  "government"
  ],
  "action_items": [],
  "speakers": [
@@ -38,11 +38,11 @@
    "end": 2.35,
    "text": "हेलो हाँ हेलो सर",
    "hinglish": "hello haan hello sir",
-   "translation": "Hello yes yes sir",
+   "translation": "Hello",
    "source_text": "हेलो हाँ हेलो सर",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 2,
@@ -51,7 +51,7 @@
    "end": 3.75,
    "text": "हम",
    "hinglish": "hum",
-   "translation": "us",
+   "translation": "We",
    "source_text": "हम",
    "changed": false,
    "uncertain": false,
@@ -77,11 +77,11 @@
    "end": 6.5,
    "text": "हाँ हम्म",
    "hinglish": "haan hamm",
-   "translation": "Yes we're",
+   "translation": "Yes, sir",
    "source_text": "हाँ हम्म",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 5,
@@ -90,7 +90,7 @@
    "end": 15.0,
    "text": "हम बिहार के लोग हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाई जाती है",
    "hinglish": "hum bihar ke log hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manai jati hai",
-   "translation": "We're from Bihar and celebrate Chhath in our country and also celebrate Deepavali",
+   "translation": "We are people from Bihar and celebrate Chhath Puja in our country and also celebrate Deepavali",
    "source_text": "हम बिहार के लोग हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
    "changed": true,
    "uncertain": true,
@@ -103,11 +103,11 @@
    "end": 15.9,
    "text": "और",
    "hinglish": "aur",
-   "translation": "and",
+   "translation": "And",
    "source_text": "और",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 7,
@@ -194,11 +194,11 @@
    "end": 44.3,
    "text": "वोट देना है अब देना है दिखे ना कोई छप्पर देना है वो अब तो वोट खत्म हो गया अब वोट आएगा दिया सरकार के खिलाफ नहीं दिया",
    "hinglish": "vote dena hai ab dena hai dikhe na koi chhappar dena hai wo ab to vote khatm ho gaya ab vote aaega diya sarkar ke khilaph nahi diya",
-   "translation": "Speaker_A says he has to vote now, not to give any chappu.",
+   "translation": "Speaker_A says he has to vote now, not wait for the government to give him a chance.",
    "source_text": "वोट देना है अब देना है दिखे ना कोई छप्पर देना है वो अब तो वोट खत्म हो गया अब वोट आएगा दिया सरकार के खिलाफ नहीं दिया",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 14,
@@ -207,11 +207,11 @@
    "end": 55.0,
    "text": "तो आप उसी का देना है जी उसी का वोट देना है जी आगे बैठाएगा विकास कराएगा हम लोग का इंदिराबाद का बाथरूम हो सहारा हो मान जो भी चीज़ के सहारा हो",
    "hinglish": "to aap usi ka dena hai ji usi ka vote dena hai ji aage baithaega vikas karaega hum log ka indirabad ka bathroom ho sahara ho maan jo bhi cheez ke sahara ho",
-   "translation": "Speaker_A says he has to vote for the same thing.",
+   "translation": "Speaker_A says he will vote for the same thing.",
    "source_text": "तो आप उसी का देना है जी उसी का वोट देना है जी आगे बैठाएगा विकास कराएगा हम लोग का इंदिराबाद का बाथरूम हो सहारा हो मान जो भी चीज़ के सहारा हो",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 15,
@@ -220,11 +220,11 @@
    "end": 56.6,
    "text": "तो किताब घूस लिया जाएगा",
    "hinglish": "to kitab ghoos liya jaega",
-   "translation": "Speaker_A says he has to vote for the book.",
+   "translation": "Speaker_A says he will vote for the book.",
    "source_text": "तो किताब घूस लिया जाएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 16,
@@ -233,11 +233,11 @@
    "end": 58.2,
    "text": "छठ पूजा",
    "hinglish": "chhath puja",
-   "translation": "",
+   "translation": "Speaker_B says he will bring new s",
    "source_text": "छठ पूजा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 17,
@@ -246,11 +246,11 @@
    "end": 63.8,
    "text": "छठ पूजा में हम लोग नया सब सामान लाते हैं जो",
    "hinglish": "chhath puja mein hum log naya sab saman late hain jo",
-   "translation": "",
+   "translation": "Speaker_B says he is proud of his new s",
    "source_text": "छठ पूजा में हम लोग नया सब सामान लाते हैं जो",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 18,
@@ -259,11 +259,11 @@
    "end": 66.15,
    "text": "गर्व करते हैं उसके लिए",
    "hinglish": "garv karte hain uske liye",
-   "translation": "",
+   "translation": "Speaker_B says he has to vote for the government.",
    "source_text": "गर्व करते हैं उसके लिए",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 19,
@@ -272,7 +272,7 @@
    "end": 69.95,
    "text": "नए वस्त्र खरीद के लाते हैं पहनते हैं उसमें",
    "hinglish": "nae wastr kharid ke late hain pahante hain usmen",
-   "translation": "The speaker says that new clothes are brought in and worn.",
+   "translation": "New clothes are brought in.",
    "source_text": "नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें",
    "changed": true,
    "uncertain": false,
@@ -285,7 +285,7 @@
    "end": 75.55,
    "text": "और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
    "hinglish": "aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye",
-   "translation": "The speaker says that they make cassava and other products.",
+   "translation": "And they make cushions and carpets, and all kinds of furniture.",
    "source_text": "और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
    "changed": false,
    "uncertain": false,
@@ -294,9 +294,7 @@
  ],
  "uncertain_lines": [
   1,
-  4,
   5,
-  6,
   11,
   12,
   13,
@@ -308,9 +306,9 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 82.436,
-  "prompt_tokens": 3089,
-  "completion_tokens": 1720,
+  "llm_seconds": 266.193,
+  "prompt_tokens": 3077,
+  "completion_tokens": 1574,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -320,10 +318,10 @@
   "lines_reverted": 8,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 10,
-  "missing_translations": 4,
+  "lines_flagged_by_llm": 2,
+  "missing_translations": 1,
   "unknown_line_ids": 0,
-  "keywords_dropped": 5,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -332,8 +330,10 @@
   "source_sha256": "6402d1eb8b08c6699f8c61361af75154f9325a7ba09f2f5a6442be3be0b7b840",
   "source_line_count": 20,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:34:54Z",
+  "generated_at_utc": "2026-11-11T00:51:52Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 76.06
+  "source_audio_duration_s": 76.06,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

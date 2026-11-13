@@ -1,18 +1,17 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation in Hindi and Hinglish between two speakers, Speaker_A and Speaker_B. The conversation is about a village and a Chhacha Puja, and Speaker_E asks for a student to give him food. The report includes summaries of the parts, translated lines, and candidate keywords and actions.",
+ "title": "Hindi and Hinglish Conversation Transcript",
+ "topic": "Hindi and Hinglish Conversation",
+ "executive_summary": "This report summarizes a conversation between two speakers in Hindi and Hinglish, with a focus on the main topic of the conversation and the key points discussed.",
  "key_points": [
-  "Hindi and Hinglish Conversations"
+  "Speaker_A and Speaker_B discuss how good they are.",
+  "Speaker_B says he is busy and needs a student to give him food.",
+  "Speaker_C says the village is beautiful when all people look at it.",
+  "Speaker_E says he is busy and needs a student to give him food."
  ],
  "keywords": [
-  "गाँव",
-  "छछ पूजा",
-  "नए सामान",
-  "नए वस्त्र",
-  "student",
-  "give",
-  "food"
+  "ठीक है",
+  "दीपावली",
+  "बहुत अच्छा है।"
  ],
  "action_items": [],
  "speakers": [
@@ -120,7 +119,7 @@
    "end": 14.45,
    "text": "हमारे देश में छठ पूजा मनाई जाती है और हमारे देश में दीपावली भी मनाई जाती है",
    "hinglish": "hamare desh mein chhath puja manai jati hai aur hamare desh mein dipavli bhi manai jati hai",
-   "translation": "In India, Chhath Puja is celebrated and Deepavali is also celebrated.",
+   "translation": "In India, Chaturthi is celebrated and Deepavali is also celebrated.",
    "source_text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है",
    "changed": true,
    "uncertain": true,
@@ -170,13 +169,13 @@
    "speaker": "Speaker_B",
    "start": 19.2,
    "end": 24.85,
-   "text": "हम्म देखते है की बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं",
+   "text": "हम्म देखते है कि बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं",
    "hinglish": "hamm dekhte hai ki bahut achha se dekhte hai aur kitna achha banate hain",
    "translation": "we see how good it is and how good we make it",
    "source_text": "हम्म देखते है की बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 11,
@@ -185,7 +184,7 @@
    "end": 26.6,
    "text": "हाँ ये",
    "hinglish": "haan ye",
-   "translation": "yes, these",
+   "translation": "yes",
    "source_text": "हाँ ये",
    "changed": false,
    "uncertain": false,
@@ -198,7 +197,7 @@
    "end": 29.25,
    "text": "बहुत हम्म",
    "hinglish": "bahut hamm",
-   "translation": "very well",
+   "translation": "very",
    "source_text": "बहुत हम्म",
    "changed": false,
    "uncertain": false,
@@ -341,7 +340,7 @@
    "end": 67.0,
    "text": "अब देना है देखिए ना कोई छापल देना है तो",
    "hinglish": "ab dena hai dekhie na koi chhapal dena hai to",
-   "translation": "Give me a chowder.",
+   "translation": "Give me a watermelon.",
    "source_text": "अब देना है देखिए ना कोई छापल देना है तो",
    "changed": false,
    "uncertain": true,
@@ -360,22 +359,22 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 66.015,
-  "prompt_tokens": 2929,
-  "completion_tokens": 1468,
+  "llm_seconds": 243.611,
+  "prompt_tokens": 2940,
+  "completion_tokens": 1448,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 4,
-  "lines_reverted": 6,
+  "lines_changed": 5,
+  "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 4,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 5,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -384,8 +383,10 @@
   "source_sha256": "7b4b5ab5bc412c6ee250157b1ba668b34f2293662216eccd05582f74a6d74652",
   "source_line_count": 24,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:54:36Z",
+  "generated_at_utc": "2026-11-11T02:05:18Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 67.0
+  "source_audio_duration_s": 67.0,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

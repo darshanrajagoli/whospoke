@@ -1,17 +1,19 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation between Yash Yash and Maam Yes Maam Yes in Hindi. The speaker mentions furniture drying room and asks for the price of various items.",
+ "title": "Hindi and Hinglish Conversation Summaries",
+ "topic": "Hindi and Hinglish Conversation",
+ "executive_summary": "This report summarizes a conversation between Yash Yash and Maam in Hindi. The speaker is asking for a location to send the speaker to. The conversation is in Hindi and English.",
  "key_points": [
-  "Yash Yash",
-  "Maam Yes Maam Yes",
-  "Hindi",
-  "Devanagari",
-  "ASR"
+  "Yash Yash is asking for a location to send the speaker to.",
+  "Maam is willing to send Yash Yash to the location.",
+  "Yash Yash is asking for a price for the location.",
+  "Maam is willing to provide the price for the location.",
+  "Yash Yash is asking for a furniture drying room in the location."
  ],
  "keywords": [
   "Yash Yash",
-  "Maam Yes Maam Yes"
+  "Maam",
+  "location",
+  "send"
  ],
  "action_items": [],
  "speakers": [
@@ -101,11 +103,11 @@
    "end": 32.17,
    "text": "मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "hinglish": "ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
-   "translation": "Maam will get you in plenty of price you want in what price you want in what way you want",
+   "translation": "",
    "source_text": "मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand; no English translation was returned."
   },
   {
    "line_id": 7,
@@ -158,22 +160,22 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 401.26,
-  "prompt_tokens": 1772,
-  "completion_tokens": 956,
+  "llm_seconds": 167.896,
+  "prompt_tokens": 1773,
+  "completion_tokens": 931,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 2,
-  "lines_reverted": 4,
+  "lines_reverted": 3,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 6,
-  "missing_translations": 0,
+  "missing_translations": 1,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 4,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -182,8 +184,10 @@
   "source_sha256": "80052ee8945e473a0a6f367a7fd7425dc85ec2a92687a7f9ce83f0e7382d0a7d",
   "source_line_count": 9,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:10:27Z",
+  "generated_at_utc": "2026-11-10T18:21:03Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 62.07
+  "source_audio_duration_s": 62.07,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

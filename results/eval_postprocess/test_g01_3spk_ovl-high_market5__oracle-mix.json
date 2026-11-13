@@ -1,17 +1,15 @@
 {
  "title": "Lost ID Card",
  "topic": "Lost ID Card",
- "executive_summary": "Speakers discuss the topic of lost ID cards and agree to find a solution.",
+ "executive_summary": "Speakers discuss the topic of lost ID cards and agree to provide information on the market and shop.",
  "key_points": [
-  "Speakers agree to find a solution to the problem of lost ID cards.",
-  "Speakers mention that the shop is busy, but they are the most popular shop in the area.",
-  "Speakers mention that they will tell you what is available when you come to the shop."
+  "Speakers agree to provide information on the market and shop.",
+  "Speakers discuss the topic of lost ID cards."
  ],
  "keywords": [
-  "Shop",
-  "Busy",
-  "Popular",
-  "Tell"
+  "Market",
+  "Available",
+  "Shop"
  ],
  "action_items": [],
  "speakers": [
@@ -120,11 +118,11 @@
    "end": 65.53,
    "text": "तो आप शॉप पे एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है न हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज",
    "hinglish": "to aap shop pe ek baar aa jae to hum aapko bata den ki kya chahiye kaisa lag raha hai na haan ab market hai aapke yahan vaise to hamare yahan sabse zyada matlab hamare shop ka bole to sabse pasandida cheej",
-   "translation": "They said they'll tell you what's available when you come to the shop. They said the shop is busy, but they're the most popular shop in the area. They said they'll tell you what's available when you come to the shop.",
+   "translation": "They said that the market is very good and that they will tell you what is available. They also said that they will tell you what is available at the shop.",
    "source_text": "तो आप शॉप पे एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है न हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -133,13 +131,14 @@
   5,
   6,
   7,
-  9
+  9,
+  10
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 243.805,
-  "prompt_tokens": 1641,
-  "completion_tokens": 617,
+  "llm_seconds": 106.347,
+  "prompt_tokens": 1634,
+  "completion_tokens": 577,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -149,10 +148,10 @@
   "lines_reverted": 6,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 0,
+  "lines_flagged_by_llm": 1,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 3,
   "schema_enforced": true
@@ -161,8 +160,10 @@
   "source_sha256": "e8e3843d797af1f0fae5837cd985dc9dc753eecd40dad3e3c129d45ff5df512c",
   "source_line_count": 10,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T04:21:37Z",
+  "generated_at_utc": "2026-11-10T22:17:00Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 66.14
+  "source_audio_duration_s": 66.14,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

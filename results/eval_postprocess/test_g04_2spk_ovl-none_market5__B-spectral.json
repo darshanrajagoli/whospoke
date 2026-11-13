@@ -1,19 +1,17 @@
 {
- "title": "Transcript of a conversation between two people",
- "topic": "Getting pens, sending child to school, getting special discount on a box",
- "executive_summary": "Speaker_A and Speaker_B discuss getting pens, sending their child to school, and getting a special discount on a box. They also mention that the water shortage may have been caused by the heat and that they will send the child to school.",
+ "title": "Lost ID Card and Crop Prices",
+ "topic": "Lost ID Card and Crop Prices",
+ "executive_summary": "Speaker 1 and 2 discuss the topic of lost ID cards and crop prices. They mention that they have lost their ID cards and that they are looking for a solution. They also mention that they are interested in buying crop prices and that they are willing to pay a high price for them. They also mention that they are looking for a solution to the problem of lost ID cards and crop prices.",
  "key_points": [
-  "Hello",
-  "Your son's name is Vaibhav",
-  "Yes, and he is in Class 10",
-  "And he has a fever and his body has become stiff"
+  "Lost ID Card and Crop Prices"
  ],
  "keywords": [
-  "hello",
-  "class 10",
-  "fever",
-  "body",
-  "stiff"
+  "नमस्ते",
+  "बुखार",
+  "शरीर",
+  "box",
+  "pen",
+  "price"
  ],
  "action_items": [],
  "speakers": [
@@ -71,7 +69,7 @@
    "end": 14.75,
    "text": "हाँ और वो कक्षा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
    "hinglish": "haan aur wo kaksha das mein padhta hai wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai",
-   "translation": "Yes, and he is in Class 10",
+   "translation": "Yes, and he studies in class 10.",
    "source_text": "हाँ और वो कक्षा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है",
    "changed": false,
    "uncertain": true,
@@ -84,7 +82,7 @@
    "end": 22.6,
    "text": "और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है क्या मैं जैन ब्रदर स्टेशनरी एंड बुक शॉप में बात कर रही हूँ",
    "hinglish": "aur usko bukhar ho gaya hai uske sharir ka saath badh gaya hai kya main jain brother steshanri and book shop mein baat kar rahi hoon",
-   "translation": "And he has a fever and his body has become stiff",
+   "translation": "And he has a fever and his body has become stiff.",
    "source_text": "और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है क्या मैं जैन ब्रदर स्टेशनरी एंड बुक शॉप में बात कर रही हूँ",
    "changed": false,
    "uncertain": true,
@@ -97,7 +95,7 @@
    "end": 23.6,
    "text": "हम्म",
    "hinglish": "hamm",
-   "translation": "Hmm",
+   "translation": "Hmm.",
    "source_text": "हम्म",
    "changed": false,
    "uncertain": true,
@@ -110,7 +108,7 @@
    "end": 45.45,
    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से हमें बीमार हो गया है हमें कह रहे थे पेन के बॉक्सेज चाहिए थे छा जी हमें हमें दो बॉक्सेस के रेड के दो ब्लू के और दो ब्लैक के चाहिए",
    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se hamen bimar ho gaya hai hamen kah rahe the pen ke boksej chahiye the chha ji hamen hamen do boxes ke red ke do blue ke aur do black ke chahiye",
-   "translation": "The speaker is saying that the water shortage may have been caused by the heat, and that we were sick because of it. They are asking for pens.",
+   "translation": "The speaker is saying that the water shortage may have been caused by the heat, and that we were sick because of it. They are saying that we should have had boxes of pens.",
    "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से हमें बीमार हो गया है हमें कह रहे थे पेन के बॉक्सेज चाहिए थे छा जी हमें हमें दो बॉक्सेस के रेड के दो ब्लू के और दो ब्लैक के चाहिए",
    "changed": false,
    "uncertain": true,
@@ -123,7 +121,7 @@
    "end": 58.1,
    "text": "हाँ तो हम दिला देंगे लेकिन आप तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबेयता उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
    "hinglish": "haan to hum dila denge lekin aap to agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabeyta uski theek ho jaegi to phir aap dobara se usko school bhejiega",
-   "translation": "The speaker is saying that they will give us what we want, but we should come and get our child. They are also saying that they will send him to school.",
+   "translation": "The speaker is saying that they will give us a box, but we should come and get it. They are also saying that we should send our child to school.",
    "source_text": "हाँ तो हम दिला देंगे लेकिन आप तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
    "changed": true,
    "uncertain": true,
@@ -155,9 +153,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 43.864,
-  "prompt_tokens": 1810,
-  "completion_tokens": 913,
+  "llm_seconds": 155.254,
+  "prompt_tokens": 1808,
+  "completion_tokens": 886,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -170,7 +168,7 @@
   "lines_flagged_by_llm": 5,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 0,
+  "keywords_dropped": 4,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -179,8 +177,10 @@
   "source_sha256": "2298041734f2d27141dce608115b39bf545c9c9520df12f88e6a055c7fa4032f",
   "source_line_count": 9,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:13:51Z",
+  "generated_at_utc": "2026-11-11T02:55:20Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 66.16
+  "source_audio_duration_s": 66.16,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

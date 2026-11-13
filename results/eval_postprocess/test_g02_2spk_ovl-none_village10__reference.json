@@ -1,16 +1,17 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes the evidence from a transcribed conversation between two people.",
+ "title": "Hindi and Hinglish Conversation Transcript",
+ "topic": "Lost ID Card",
+ "executive_summary": "A conversation between two people about a lost ID card.",
  "key_points": [
-  "A conversation about a base card and an exam.",
-  "A conversation about going to the office, getting ID cards, and checking a camera.",
-  "We are here."
+  "Part 1: A conversation between two people.",
+  "Part 2: A conversation about a base card and an ID card.",
+  "Part 3: A conversation about going to the office, getting ID cards, and checking a camera.",
+  "Part 4: We are talking.",
+  "Part 5: A conversation about a lost ID card."
  ],
  "keywords": [
   "नमस्ते",
   "बोल रहे थे",
-  "कोई गलती हो गई है",
   "बेस कार्ड"
  ],
  "action_items": [],
@@ -75,7 +76,7 @@
    "end": 14.322,
    "text": "हाँ सर मेरे कोई गलती हो गई है मेरे हाथ से",
    "hinglish": "haan sir mere koi galti ho gayi hai mere haath se",
-   "translation": "Yes, my hand is missing.",
+   "translation": "Yes, sir, I lost my ID card.",
    "source_text": "हाँ सर मेरे कोई गलती हो गई है मेरे हाथ से",
    "changed": false,
    "uncertain": true,
@@ -101,7 +102,7 @@
    "end": 32.28,
    "text": "तो हम बी ए का पेपर देने गए थे आपके इस्कूल में मेरे पर्स वहीं छूट गया था उसमें सामान हैं जरूरत की ओ ओ मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए",
    "hinglish": "to hum B e ka paper dene gaye the aapke school mein mere pars wahin chhoot gaya tha usmen saman hain jarurat ki o o mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie",
-   "translation": "They went to the office to get a BA paper, but they couldn't find it in their office.",
+   "translation": "They were asking for a check from their Karma Chari to pay for the paper.",
    "source_text": "तो हम बी ए का पेपर देने गए थे आपके इस्कूल में मेरे पर्स वहीं छूट गया था उसमें सामान हैं जरूरत की ओ ओ मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए",
    "changed": false,
    "uncertain": true,
@@ -117,8 +118,8 @@
    "translation": "Room number three was discounted",
    "source_text": "कमरा नम्बर तीन में छूटा था",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 8,
@@ -140,11 +141,11 @@
    "end": 38.637,
    "text": "हां सर वह एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
    "hinglish": "haan sir woh exam paas aa rahe hain to aai D card chahiye sir",
-   "translation": "Yes, sir, he is coming for an exam, so I need an ID card, sir.",
+   "translation": "Yes sir, he is coming for an exam and I need an ID card.",
    "source_text": "हाँ सर वह एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 10,
@@ -153,7 +154,7 @@
    "end": 41.035,
    "text": "बेस कार्ड की फोटोकॉपी और क्या लाना है सर",
    "hinglish": "base card ki photokopi aur kya lana hai sir",
-   "translation": "Base card photocopy and what to do, sir.",
+   "translation": "Base card photocopy and what to do.",
    "source_text": "आधार कार्ड की फोटोकॉपी और क्या क्या लाना है सर",
    "changed": true,
    "uncertain": true,
@@ -166,7 +167,7 @@
    "end": 43.123,
    "text": "एक ख़ुद का फ़ोटो एक आधार कार्ड और",
    "hinglish": "ek khud ka photo ek aadhar card aur",
-   "translation": "A photo of myself on a base card.",
+   "translation": "A photo of myself and an ID card.",
    "source_text": "एक ख़ुद का फ़ोटो एक आधार कार्ड और",
    "changed": false,
    "uncertain": true,
@@ -179,7 +180,7 @@
    "end": 46.255,
    "text": "मेरा था ओ पॉकिट मेरा था",
    "hinglish": "mera tha o pokit mera tha",
-   "translation": "My was a poket mine was.",
+   "translation": "My was a poket my was.",
    "source_text": "मेरा था ओ पॉकिट मेरा था",
    "changed": false,
    "uncertain": true,
@@ -231,7 +232,7 @@
    "end": 57.791,
    "text": "आई डी कार्ड के दो सामान लूँगा तो हमें सबसे पहले किसके पास जाना पड़ेगा यह कौन बनाएगा",
    "hinglish": "aai D card ke do saman lunga to hamen sabse pahle kiske paas jana padega yeh kaun banaega",
-   "translation": "I will get two items of ID card and who will be the one to get it first.",
+   "translation": "I will get two ID cards and who will be the first to get them.",
    "source_text": "आई डी कार्ड के दो सामान लूँगा तो हमें सबसे पहले किसके पास जाना पड़ेगा यह कौन बनाएगा",
    "changed": false,
    "uncertain": true,
@@ -270,7 +271,7 @@
    "end": 62.853,
    "text": "हम्म",
    "hinglish": "hamm",
-   "translation": "We are here.",
+   "translation": "We are talking.",
    "source_text": "हम्म",
    "changed": false,
    "uncertain": false,
@@ -281,8 +282,6 @@
   4,
   5,
   6,
-  7,
-  9,
   10,
   11,
   12,
@@ -295,9 +294,9 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 61.61,
-  "prompt_tokens": 2883,
-  "completion_tokens": 1375,
+  "llm_seconds": 231.852,
+  "prompt_tokens": 2862,
+  "completion_tokens": 1374,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -307,10 +306,10 @@
   "lines_reverted": 0,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 14,
+  "lines_flagged_by_llm": 12,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 5,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -319,8 +318,10 @@
   "source_sha256": "510e66e6bbe3bc0dd24130a1e8f5833188a6d7756b00bb883afc4deaf3162629",
   "source_line_count": 19,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:00:04Z",
+  "generated_at_utc": "2026-11-10T22:38:35Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 63.35
+  "source_audio_duration_s": 63.35,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

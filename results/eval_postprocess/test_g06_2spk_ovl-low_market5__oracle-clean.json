@@ -1,22 +1,23 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversation",
- "topic": "Mama, Pranam, Didi, Everyone else, Let's talk, Trust computer is ours, Two ...",
- "executive_summary": "A transcript of a conversation between two people, with the main topic being the need for two rooms and computer work.",
+ "title": "Hindi and Hinglish Conversation Transcript",
+ "topic": "Mama, didi, everyone else, talk, trust computer, sari is needed, Two people will",
+ "executive_summary": "A transcript of a conversation between two people, with one person asking for two rooms, Pranam, didi and everyone else, let's talk, Trust computer is ours, sari is needed, they're going to walk, and yes, good.",
  "key_points": [
-  "Mama wants two rooms",
-  "Pranam, didi and everyone else, let's talk",
-  "Trust computer is ours, we're not going to take you to the city",
-  "All of them are going to take a saree",
-  "Yes, they're going to walk"
+  "mama",
+  "didi",
+  "everyone else",
+  "talk",
+  "trust computer is ours, we're not going to take it to the city, we're not going to take it to the city"
  ],
  "keywords": [
-  "Mama",
-  "Pranam",
-  "Didi",
-  "Everyone else",
-  "Let's talk",
-  "Trust computer is ours",
-  "No pass, just say if you want us to"
+  "mama",
+  "didi",
+  "everyone else",
+  "talk",
+  "trust computer is ours, we're not going",
+  "sari is needed, Punam sari",
+  "yes, they're going to walk",
+  "and yes, good"
  ],
  "action_items": [],
  "speakers": [
@@ -67,7 +68,7 @@
    "end": 26.24,
    "text": "ट्रस्ट कंप्यूटर का हम है हमारा अरे हमको मतलब कि लेंगे शहर में चाहिए हमको शहर में",
    "hinglish": "trast computer ka hum hai hamara are hamko matlab ki lenge shahar mein chahiye hamko shahar mein",
-   "translation": "Trust computer is ours, we're not going to take you to the city, we're not going to take you to the city",
+   "translation": "Trust computer is ours, we're not going to take it to the city, we're not going to take it to the city",
    "source_text": "ट्रस्ट कंप्यूटर का हम है हमारा अरे हमको मतलब कि लेंगे शहर में चाहिए हमको शहर में",
    "changed": false,
    "uncertain": true,
@@ -80,7 +81,7 @@
    "end": 31.1,
    "text": "सारी लेना है हाँ साड़ी चाहिएगा पूनम साड़ी",
    "hinglish": "sari lena hai haan sadi chahiega punam sadi",
-   "translation": "All of them are going to take a saree, Punam saree",
+   "translation": "Sari is needed, Punam sari",
    "source_text": "साड़ी लेना है हाँ साड़ी चाहिएगा पूनम साड़ी",
    "changed": true,
    "uncertain": true,
@@ -190,9 +191,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 47.45,
-  "prompt_tokens": 1792,
-  "completion_tokens": 1021,
+  "llm_seconds": 195.532,
+  "prompt_tokens": 1785,
+  "completion_tokens": 1031,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -205,7 +206,7 @@
   "lines_flagged_by_llm": 6,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -214,8 +215,10 @@
   "source_sha256": "9d3e9589bdab448bfeee07daa67113b9b7f3a6098a4c08b57cadf2a8c23e3acc",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:27:33Z",
+  "generated_at_utc": "2026-11-11T07:29:54Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 80.6
+  "source_audio_duration_s": 80.6,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

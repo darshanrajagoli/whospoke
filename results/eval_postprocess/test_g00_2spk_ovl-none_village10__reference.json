@@ -1,7 +1,7 @@
 {
  "title": "Hindi and Hinglish Conversation",
  "topic": "Hindi and Hinglish Conversation",
- "executive_summary": "A Hindi and Hinglish conversation with a speaker asking for a prize and a budget for a localization and a bike.",
+ "executive_summary": "A conversation in Hindi and Hinglish between two people.",
  "key_points": [
   "Hindi and Hinglish Conversation"
  ],
@@ -10,10 +10,10 @@
   "यश यश बोलिए",
   "नमस्ते मैम",
   "हाँ मैम",
-  "prize",
-  "budget",
-  "engine",
-  "mam"
+  "मैम",
+  "मिल जाएगा",
+  "बजट में",
+  "bike"
  ],
  "action_items": [],
  "speakers": [
@@ -114,24 +114,24 @@
    "speaker": "S2",
    "start": 11.605,
    "end": 12.435,
-   "text": "अच्छा है",
-   "hinglish": "achha hai",
-   "translation": "Good",
+   "text": "अच्छा",
+   "hinglish": "achha",
+   "translation": "Hello",
    "source_text": "अच्छा",
-   "changed": true,
-   "uncertain": false,
-   "note": ""
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 8,
    "speaker": "S1",
    "start": 13.031,
    "end": 17.784,
-   "text": "हां मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+   "text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
    "hinglish": "haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
-   "translation": "Yes, Mam will get it. What budget do you want? What budget do you want?",
+   "translation": "Yes, Mam will get it. What budget do you want? How much budget do you want?",
    "source_text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -181,7 +181,7 @@
    "end": 35.837,
    "text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए",
    "hinglish": "achha achha achha to aap aisa karie",
-   "translation": "Good",
+   "translation": "Hello",
    "source_text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए",
    "changed": false,
    "uncertain": true,
@@ -194,11 +194,11 @@
    "end": 42.635,
    "text": "अपनी लोकैशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपके आपकी बाइक ठीक हो जाएगी आप किसी यात्रा पे जा रहे हो क्या",
    "hinglish": "apni lokaishan mere ko bhej dijie main udhar hi aa jaunga aapke aapki bike theek ho jaegi aap kisi yatra pe ja rahe ho kya",
-   "translation": "I will send my bike to you.",
+   "translation": "",
    "source_text": "अपनी लोकैशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपके आपकी बाइक ठीक हो जाएगी आप किसी यात्रा पे जा रहे हो क्या",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 14,
@@ -220,11 +220,11 @@
    "end": 62.138,
    "text": "आम की लकड़ी का मैम",
    "hinglish": "aam ki lakdi ka ma'am",
-   "translation": "",
+   "translation": "I will send my bike to Mam.",
    "source_text": "आम की लकड़ी का मैम",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 16,
@@ -233,16 +233,17 @@
    "end": 77.745,
    "text": "मैम यहाँ पर हर एक चीज अच्छा मिलता है आम की लकड़ी सागवन की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनके हाथ की यानि फिनिसिंग भी बहुत ही अच्छी है और आपको हर एक चीज ए वन मिल जाएगा",
    "hinglish": "ma'am yahan par har ek cheej achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log yahan par worker hain achhe se kaam karte hain unke haath ki yani phinising bhi bahut hi achhi hai aur aapko har ek cheej e one mil jaega",
-   "translation": "",
+   "translation": "I will send my bike to Saghan wood.",
    "source_text": "मैम यहाँ पर हर एक चीज अच्छा मिलता है आम की लकड़ी सागवन की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनके हाथ की यानि फिनिसिंग भी बहुत ही अच्छी है और आपको हर एक चीज ए वन मिल जाएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
   4,
   5,
+  7,
   8,
   9,
   10,
@@ -255,22 +256,22 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 506.399,
-  "prompt_tokens": 2569,
-  "completion_tokens": 1176,
+  "llm_seconds": 206.093,
+  "prompt_tokens": 2505,
+  "completion_tokens": 1172,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 3,
-  "lines_reverted": 6,
+  "lines_changed": 1,
+  "lines_reverted": 7,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 10,
-  "missing_translations": 3,
+  "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 5,
+  "keywords_dropped": 4,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -279,8 +280,10 @@
   "source_sha256": "a02a16f8dbbfa147c97ae6991115443e1c91f8a6919ec9756823ff4c1a921b24",
   "source_line_count": 16,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:19:20Z",
+  "generated_at_utc": "2026-11-10T18:29:02Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 78.51
+  "source_audio_duration_s": 78.51,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

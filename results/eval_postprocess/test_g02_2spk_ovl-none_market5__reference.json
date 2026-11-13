@@ -1,21 +1,16 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversation",
- "topic": "Lost ID Card",
- "executive_summary": "Two people talk about the principal of Babu Mann Sankey Inter College and ask for a check from their Karma Chari to pay for the paper. The speaker mentions that Sir Appliceson will also have to write.",
+ "title": "Lost ID Card and Photocopy of Exam Paper",
+ "topic": "Lost ID Card and Photocopy of Exam Paper",
+ "executive_summary": "A conversation between two people about a lost ID card and a photocopy of an exam paper.",
  "key_points": [
-  "Hello",
-  "They were talking about the principal of Babu Mann Sankey Inter College",
-  "They were asking for a check from their Karma Chari to pay for the paper",
-  "Yes, sir, I had a mistake with my hand",
-  "He lost my ID card, sir"
+  "Lost ID Card",
+  "Photocopy of Exam Paper",
+  "Who will get the papers?",
+  "Applicationson will also have to write."
  ],
  "keywords": [
-  "नमस्ते",
-  "बोल रहे थे",
-  "कोई गलती",
-  "गलती",
-  "पेपर",
-  "चेक"
+  "Lost ID Card",
+  "Photocopy of Exam Paper"
  ],
  "action_items": [],
  "speakers": [
@@ -131,7 +126,7 @@
    "end": 38.731,
    "text": "हाँ सर वह एग्जाम पास आ रहे हैं तो आई. डी. कार्ड चाहिए सर",
    "hinglish": "haan sir woh exam paas aa rahe hain to aai. D. card chahiye sir",
-   "translation": "Yes, sir, they're coming for the exam, then I need the ID card.",
+   "translation": "Yes, sir, he's coming with the exam papers, then I need the ID card.",
    "source_text": "हाँ सर वह एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
    "changed": true,
    "uncertain": true,
@@ -160,8 +155,8 @@
    "translation": "My was a poket, my was a poket.",
    "source_text": "मेरा था ओ पॉकिट मेरा था",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 11,
@@ -183,7 +178,7 @@
    "end": 47.074,
    "text": "एक ख़ुद का फ़ोटो एक आधार कार्ड और",
    "hinglish": "ek khud ka photo ek aadhar card aur",
-   "translation": "A photocopy of myself and an ID card.",
+   "translation": "A photocopy of myself and an exam paper.",
    "source_text": "एक ख़ुद का फ़ोटो एक आधार कार्ड और",
    "changed": false,
    "uncertain": true,
@@ -196,11 +191,11 @@
    "end": 48.22,
    "text": "संगीता जी",
    "hinglish": "sangita ji",
-   "translation": "",
+   "translation": "S1",
    "source_text": "संगीता जी",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand; the same English was returned for different lines."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 14,
@@ -209,11 +204,11 @@
    "end": 49.758,
    "text": "ठीक है यह कहाँ आना पड़ेगा",
    "hinglish": "theek hai yeh kahan aana padega",
-   "translation": "",
+   "translation": "S2",
    "source_text": "ठीक है यह कहाँ आनी पड़ेगी",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand; the same English was returned for different lines."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 15,
@@ -222,11 +217,11 @@
    "end": 53.502,
    "text": "ऑफिस तो अब तो ऑफिस आप कब तक केतने बजे तक ऑफिस खुला है सर अपना",
    "hinglish": "office to ab to office aap kab tak ketne baje tak office khula hai sir apna",
-   "translation": "The office will be open until what time in the evening?",
+   "translation": "S2",
    "source_text": "ऑफिस तो अब तो ऑफिस आप कब तक कितने बजे तक ऑफिस खुला है सर अपना",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 16,
@@ -235,7 +230,7 @@
    "end": 54.368,
    "text": "हाँ",
    "hinglish": "haan",
-   "translation": "Yes",
+   "translation": "S1",
    "source_text": "हाँ",
    "changed": false,
    "uncertain": false,
@@ -248,11 +243,11 @@
    "end": 58.217,
    "text": "अपने कैमरे सी सी टी वी कैमरे से चेक करवा लीजिए",
    "hinglish": "apne camera si si ti V camera se check karva lijie",
-   "translation": "Check your camera with your CCTV camera",
+   "translation": "S1",
    "source_text": "अपने कैमरे सी सी टी वी कैमरे से चेक करवा लीजिए",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 18,
@@ -261,11 +256,11 @@
    "end": 63.319,
    "text": "आई डी कार्ड के दो सामान लूँगा तो हमें सबसे पहले किसके पास जाना पड़ेगा यह कौन बनाएगा",
    "hinglish": "aai D card ke do saman lunga to hamen sabse pahle kiske paas jana padega yeh kaun banaega",
-   "translation": "Get two items from the ID card, who will it be necessary to go to first?",
+   "translation": "S2",
    "source_text": "आई डी कार्ड के दो सामान लूँगा तो हमें सबसे पहले किसके पास जाना पड़ेगा यह कौन बनाएगा",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 19,
@@ -300,21 +295,15 @@
   6,
   7,
   8,
-  10,
   11,
   12,
-  13,
-  14,
-  15,
-  17,
-  18,
   20
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 67.237,
-  "prompt_tokens": 2956,
-  "completion_tokens": 1513,
+  "llm_seconds": 238.509,
+  "prompt_tokens": 2902,
+  "completion_tokens": 1418,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -324,8 +313,8 @@
   "lines_reverted": 1,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 14,
-  "missing_translations": 2,
+  "lines_flagged_by_llm": 8,
+  "missing_translations": 0,
   "unknown_line_ids": 0,
   "keywords_dropped": 2,
   "actions_dropped": 0,
@@ -336,8 +325,10 @@
   "source_sha256": "2681eded7764c64253304b3c72129e1b78a3a4265118e0192a1e7ae7e48f897e",
   "source_line_count": 20,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:03:44Z",
+  "generated_at_utc": "2026-11-10T22:52:22Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 66.49
+  "source_audio_duration_s": 66.49,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

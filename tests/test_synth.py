@@ -6,6 +6,7 @@ from whospoke.corpora import Utterance
 from whospoke.synth import SynthConfig, overlap_stats, read_rttm, simulate, trim_silence
 
 
+
 def tone(seconds: float, freq: float, silence: float = 0.0) -> np.ndarray:
     t = np.arange(int(seconds * SR)) / SR
     x = (0.1 * np.sin(2 * np.pi * freq * t)).astype(np.float32)

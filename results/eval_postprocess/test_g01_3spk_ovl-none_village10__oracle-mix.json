@@ -1,15 +1,19 @@
 {
- "title": "Lost ID Card",
- "topic": "Lost ID Card",
- "executive_summary": "Two people discuss the topic of lost ID cards.",
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Market and Stores",
+ "executive_summary": "A conversation between two people about apples, strokes, and a market.",
  "key_points": [
-  "The speaker mentions that they have lost their ID card.",
-  "The speaker asks if the speaker has their ID card.",
-  "The speaker mentions that they have a market and the shop is the most important thing."
+  "Hello",
+  "Yes, there are three apples in my parlor and four strokes and a flash."
  ],
  "keywords": [
-  "market",
-  "shop"
+  "नमस्ते",
+  "बोलो",
+  "स्पेशलिटी",
+  "फ्राई",
+  "apples",
+  "strokes",
+  "market"
  ],
  "action_items": [],
  "speakers": [
@@ -44,7 +48,7 @@
    "source_text": "हाँ जी नमस्ते हाँ बोलो",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
   },
   {
    "line_id": 2,
@@ -66,24 +70,24 @@
    "end": 10.86,
    "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
    "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
-   "translation": "Hello",
+   "translation": "Hello, I'm speaking from Sir's restaurant. Our specialty is vegetarian.",
    "source_text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
   },
   {
    "line_id": 4,
    "speaker": "S3",
    "start": 11.48,
    "end": 13.02,
-   "text": "हाँ हाँ जन",
-   "hinglish": "haan haan jan",
-   "translation": "Hello",
+   "text": "हाँ हाँ",
+   "hinglish": "haan haan",
+   "translation": "Yes",
    "source_text": "हाँ हाँ जन",
-   "changed": false,
-   "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "changed": true,
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 5,
@@ -92,11 +96,11 @@
    "end": 25.37,
    "text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रूपये मिलेगी आपको और अगर आप फ्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रूपये की पड़ जाएगी तो",
    "hinglish": "aapko bata de agar aap shadi le jaoge to teen sau rupye milegi aapko aur agar aap fry karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to",
-   "translation": "Hello",
+   "translation": "If you get married, you'll get three hundred rupees. If you get a fry or a vegetable bun, you'll get four hundred.",
    "source_text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रूपये मिलेगी आपको और अगर आप फ्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रूपये की पड़ जाएगी तो",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 6,
@@ -131,11 +135,11 @@
    "end": 39.48,
    "text": "राम सेगर चौरा हाँ ठीक कर देंगे",
    "hinglish": "raam segar chaura haan theek kar denge",
-   "translation": "Ram will do it well. OK.",
+   "translation": "Ram will fix the chowar, okay.",
    "source_text": "राम सेगर चौरा हाँ ठीक कर देंगे",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 9,
@@ -144,11 +148,11 @@
    "end": 53.98,
    "text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है हम उसे बाहर से बुलवा के भी आपको देख सकते हैं तो आप सॉफ्ट एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "hinglish": "haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai hum use bahar se bulva ke bhi aapko dekh sakte hain to aap soft ek baar aa jae to hum aapko bata den ki kya chahiye kaisa lag raha hai",
-   "translation": "Yes, there is a heap of things you can see outside. We can also see you if you come in softly.",
+   "translation": "Yes, there is a heap of things you can see outside, like a store. We can also see you if you come in once and tell us what you need.",
    "source_text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है हम उसे बाहर से बुलवा के भी आपको देख सकते हैं तो आप सॉफ्ट एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 10,
@@ -181,30 +185,31 @@
   1,
   2,
   3,
-  4,
   5,
   6,
+  8,
+  9,
   10,
   11
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 359.016,
-  "prompt_tokens": 1782,
-  "completion_tokens": 838,
+  "llm_seconds": 193.571,
+  "prompt_tokens": 1861,
+  "completion_tokens": 1002,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 0,
-  "lines_reverted": 8,
+  "lines_changed": 1,
+  "lines_reverted": 7,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 2,
+  "lines_flagged_by_llm": 5,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -213,8 +218,10 @@
   "source_sha256": "26481ea3e2ca2f36aea464003528ada04d50e69bf8cd6d5a9621ea7ac8b0412e",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T02:57:26Z",
+  "generated_at_utc": "2026-11-10T20:32:31Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 65.68
+  "source_audio_duration_s": 65.68,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

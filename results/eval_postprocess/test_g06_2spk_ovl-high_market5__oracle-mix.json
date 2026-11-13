@@ -1,19 +1,17 @@
 {
- "title": "Lost ID Card",
- "topic": "Lost ID Card",
- "executive_summary": "A conversation between two people about a lost ID card.",
+ "title": "Systema didi aur sab to theek hai apna bataayi",
+ "topic": "Systema didi aur sab to theek hai apna bataayi",
+ "executive_summary": "A conversation between two people about shopping.",
  "key_points": [
-  "System",
-  "Didi",
-  "All",
-  "Saree",
+  "Systema didi aur सब to theek hai apna bataayi",
+  "You want",
+  "All take a saree yes saree should",
   "Full"
  ],
  "keywords": [
-  "System",
-  "Didi",
-  "All",
-  "Saree",
+  "Systema didi aur sab to theek hai apna",
+  "You want",
+  "All take a saree yes saree should",
   "Full"
  ],
  "action_items": [],
@@ -52,7 +50,7 @@
    "end": 8.82,
    "text": "प्रणाली दीदी और सब तो ठीक है अपना बताइए",
    "hinglish": "pranali didi aur sab to theek hai apna bataie",
-   "translation": "System, didi and all is fine, tell me your name",
+   "translation": "Systema didi aur sab to theek hai apna bataayi",
    "source_text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए",
    "changed": true,
    "uncertain": false,
@@ -78,7 +76,7 @@
    "end": 18.4,
    "text": "सारी लेना है हाँ साड़ी चाहिए",
    "hinglish": "sari lena hai haan sadi chahiye",
-   "translation": "All the way, yes, a saree is needed",
+   "translation": "All take a saree yes saree should",
    "source_text": "साड़ी लेना है हाँ साड़ी चाहिए",
    "changed": true,
    "uncertain": true,
@@ -104,11 +102,11 @@
    "end": 28.23,
    "text": "हाँ हाँ",
    "hinglish": "haan haan",
-   "translation": "Yes, yes",
+   "translation": "Yes yes",
    "source_text": "हाँ हाँ",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 10,
@@ -143,7 +141,7 @@
    "end": 43.6,
    "text": "अरे मैं फैशन में तो निकलाया बनारसी साड़ी",
    "hinglish": "are main fashion mein to niklaya banarsi sadi",
-   "translation": "Hey, I wore a Banarasi saree.",
+   "translation": "Hey, I wore a Banarasi saree in fashion.",
    "source_text": "अरे मैं फैशन में तो निकलाया बनारसी साड़ी",
    "changed": false,
    "uncertain": true,
@@ -182,7 +180,7 @@
    "end": 67.97,
    "text": "हाँ बस मैं काम है",
    "hinglish": "haan bas main kaam hai",
-   "translation": "Just my job.",
+   "translation": "Just my work.",
    "source_text": "हाँ बस मैं काम है",
    "changed": false,
    "uncertain": true,
@@ -191,7 +189,6 @@
  ],
  "uncertain_lines": [
   6,
-  9,
   12,
   13,
   14,
@@ -199,9 +196,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 32.222,
-  "prompt_tokens": 1581,
-  "completion_tokens": 699,
+  "llm_seconds": 233.671,
+  "prompt_tokens": 1622,
+  "completion_tokens": 826,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -211,7 +208,7 @@
   "lines_reverted": 3,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 6,
+  "lines_flagged_by_llm": 5,
   "missing_translations": 0,
   "unknown_line_ids": 0,
   "keywords_dropped": 0,
@@ -223,8 +220,10 @@
   "source_sha256": "67315c215065b2cb35ec745407378775eabb84d104da8a7d8f96ab0b9b005f78",
   "source_line_count": 15,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:38:45Z",
+  "generated_at_utc": "2026-11-11T08:29:51Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 68.44
+  "source_audio_duration_s": 68.44,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

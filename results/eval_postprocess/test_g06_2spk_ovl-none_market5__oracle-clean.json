@@ -1,17 +1,18 @@
 {
- "title": "Hindi and Hinglish Conversation",
- "topic": "Saree and Going to the City on the Road",
- "executive_summary": "Two people talk about buying a saree and going to the city on the road.",
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Renting rooms and getting a saree",
+ "executive_summary": "Two people will stay and two people will work and computers will work.",
  "key_points": [
-  "Saree",
-  "Going to the City on the Road",
-  "Yes",
-  "No"
+  "Didi",
+  "Ma'am",
+  "Trust to Computers",
+  "Pooonam kar and",
+  "Road to the city, Saree, haँ, हाँ, नहीं"
  ],
  "keywords": [
-  "saree",
-  "go to the city on the road",
-  "yes"
+  "Didi",
+  "Trust to Computers",
+  "Pooonam kar and"
  ],
  "action_items": [],
  "speakers": [
@@ -49,7 +50,7 @@
    "end": 12.3,
    "text": "मैम दो रूम चाहिए था",
    "hinglish": "ma'am do room chahiye tha",
-   "translation": "Ma'am, we need two rooms.",
+   "translation": "Ma'am, I need two rooms.",
    "source_text": "मैम दो रूम चाहिए था",
    "changed": false,
    "uncertain": true,
@@ -78,8 +79,8 @@
    "translation": "Trust to Computers is ours.",
    "source_text": "ट्रस्ट टू कंप्यूटर का है हमारा",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 5,
@@ -176,7 +177,6 @@
  "uncertain_lines": [
   2,
   3,
-  4,
   5,
   6,
   7,
@@ -185,9 +185,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 40.345,
-  "prompt_tokens": 1754,
-  "completion_tokens": 865,
+  "llm_seconds": 159.647,
+  "prompt_tokens": 1767,
+  "completion_tokens": 925,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -197,10 +197,10 @@
   "lines_reverted": 1,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 5,
+  "lines_flagged_by_llm": 4,
   "missing_translations": 3,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -209,8 +209,10 @@
   "source_sha256": "c6b480fe6d7cdaac9991f2cf1b55a9192eb40b77147daa29c3b0ba9d9a50f5c0",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:16:36Z",
+  "generated_at_utc": "2026-11-11T06:46:34Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 65.46
+  "source_audio_duration_s": 65.46,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,15 +1,16 @@
 {
  "title": "Hindi and Hinglish Conversations",
  "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation between two speakers in a restaurant. The speakers talk about marriage, vegetables, a pile of things, and the need for hair cutting. They also mention a restaurant and a speaker's parlor. The speakers agree to cut their hair for 300 rupees and to try or make vegetables. The speaker also mentions hearing outside and excessive hair cutting. The speaker also mentions the need for hair cutting and the need for a different way of doing it. The speaker mentions the need for hair cutting and the need for a different way of doing it. The speaker mentions the need for hair cutting and the need for a different way of doing it. The speaker mentions the need for hair cutting and the need for a different way of doing it. The speaker mentions the need for hair and a",
+ "executive_summary": "This report summarizes a conversation between two speakers in a restaurant. The speakers talk about marriage, vegetable bana, a pile of things, and hair cutting. They also mention excessive talking and need for something. The speakers agree to cut their hair for 300 rupees. The report includes summaries of the parts, lines translated into English, and candidate keywords and actions.",
  "key_points": [
-  "title",
-  "topic",
-  "summary",
-  "key_points"
+  "Hindi and Hinglish Conversations",
+  "speaker",
+  "talking",
+  "speaker_a",
+  "speaker_b"
  ],
  "keywords": [
-  "vegetables",
+  "vegetable bana",
   "pile"
  ],
  "action_items": [],
@@ -51,7 +52,7 @@
    "source_text": "हाँ जी नमस्ते हाँ बोलो हाँ हाँ जना हलो",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the same English was returned for different lines."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 2,
@@ -64,7 +65,7 @@
    "source_text": "नमस्कार मैं रेस्टोरेंट से बात कर रहा हूँ आपका",
    "changed": false,
    "uncertain": true,
-   "note": "The same English was returned for different lines."
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 3,
@@ -77,7 +78,7 @@
    "source_text": "जी जी ये तो हमारी स्पेशलिटी है सर",
    "changed": false,
    "uncertain": true,
-   "note": "The same English was returned for different lines."
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 4,
@@ -90,7 +91,7 @@
    "source_text": "राम सेगर चौरा हाँ",
    "changed": false,
    "uncertain": true,
-   "note": "The same English was returned for different lines."
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 5,
@@ -102,8 +103,8 @@
    "translation": "Hello, I'm speaking from the",
    "source_text": "हाँ",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 6,
@@ -115,8 +116,8 @@
    "translation": "Hello, I'm speaking from the restaurant.",
    "source_text": "बोलिए",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 7,
@@ -138,7 +139,7 @@
    "end": 16.8,
    "text": "हाँ जी बोलिए",
    "hinglish": "haan ji bolie",
-   "translation": "Yes, you speak.",
+   "translation": "Yes, I speak.",
    "source_text": "हाँ जी बोलिए",
    "changed": false,
    "uncertain": true,
@@ -177,7 +178,7 @@
    "end": 31.2,
    "text": "आपको बता दें अगर आप शादी ले जाएँगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले आओगे",
    "hinglish": "aapko bata den agar aap shadi le jaenge to teen sau rupye milenge aapko aur agar aap use trai karva ke ya sabji banva ke le aaoge",
-   "translation": "Tell me if you marry, I will give you three hundred rupees and if you get him to try or make vegetables.",
+   "translation": "Tell me if you will marry and I will give you three hundred rupees and if you will get him to have a vegetable bana.",
    "source_text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले आओगे",
    "changed": true,
    "uncertain": true,
@@ -190,7 +191,7 @@
    "end": 34.1,
    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
-   "translation": "So you will have to pay four hundred and forty rupees.",
+   "translation": "You will get four and a half hundred rupees.",
    "source_text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
    "changed": false,
    "uncertain": true,
@@ -319,6 +320,8 @@
   2,
   3,
   4,
+  5,
+  6,
   7,
   8,
   9,
@@ -332,9 +335,9 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 803.068,
-  "prompt_tokens": 3112,
-  "completion_tokens": 1939,
+  "llm_seconds": 267.795,
+  "prompt_tokens": 3117,
+  "completion_tokens": 1579,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -344,11 +347,11 @@
   "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 7,
+  "lines_flagged_by_llm": 13,
   "missing_translations": 7,
   "unknown_line_ids": 0,
   "keywords_dropped": 6,
-  "actions_dropped": 4,
+  "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
  },
@@ -356,8 +359,10 @@
   "source_sha256": "34663505a58a4292b58f155bb37a62c8c8ed56440ec37dc918aa2e63ca28f211",
   "source_line_count": 21,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:31:57Z",
+  "generated_at_utc": "2026-11-10T21:09:05Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 60.58
+  "source_audio_duration_s": 60.58,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

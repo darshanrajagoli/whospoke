@@ -1,18 +1,17 @@
 {
- "title": "Hindi and Hinglish Conversation in Noisy Places",
- "topic": "Hindi and Hinglish Conversation in Noisy Places",
- "executive_summary": "This report summarizes a conversation in Hindi and Hinglish recorded in noisy places. The transcript is the only source of truth and only facts, names, numbers, dates, places, events or actions that are in it are included. The report is written in JSON format and includes the title, topic, summary, key points, keywords and actions.",
+ "title": "Hindi and Hinglish Conversation Summaries",
+ "topic": "Hindi and Hinglish Conversation",
+ "executive_summary": "This report summarizes a conversation in Hindi and Hinglish between two speakers.",
  "key_points": [
-  "Speaker talks about hair cutting",
-  "Speaker talks about a parlour with three steps and a foyer",
-  "Speaker talks about the market for hair cutting",
-  "Speaker talks about cutting hair at the market",
-  "Speaker talks about the best thing to do is to cut hair at the market"
+  "Hello, I'm talking to Sir's restaurant you",
+  "Gee, that's our profession, sir",
+  "Yes, speak",
+  "Bill, tell me if you take a sack of saffron, or a bag of vegetables, you'll get five hundred rupees."
  ],
  "keywords": [
   "हैलो",
-  "नमस्ते",
-  "बोलो"
+  "बोलिए",
+  "बिल"
  ],
  "action_items": [],
  "speakers": [
@@ -277,7 +276,7 @@
    "end": 54.857,
    "text": "ओके ठीक है उसकी फीस बता देती हूँ मैं यह मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उस एकॉर्डिंग ही कटानी है या फिर सामने से ही हेयरकट कटाना है",
    "hinglish": "okay theek hai uski phees bata deti hoon main yeh meri yu cutting ke liye jo aapko saam matlab face us ekording hi katani hai ya phir samne se hi heyarkat katana hai",
-   "translation": "OK, fine, tell her her fees. I'll tell her it's my cutting, or else a frontal cut.",
+   "translation": "OK, fine, tell her her fees. I'll tell her that I cut my hair using my own clippers, or else I cut it from the front. I'm not sure which one.",
    "source_text": "ओके ठीक है उसकी फीस बता देती हूँ मैं यह मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उस एकॉर्डिंग ही कटानी है या फिर सामने से ही हेयरकट कटाना है",
    "changed": false,
    "uncertain": true,
@@ -290,7 +289,7 @@
    "end": 44.989,
    "text": "है ना",
    "hinglish": "hai na",
-   "translation": "Hai na",
+   "translation": "Yes",
    "source_text": "है ना",
    "changed": false,
    "uncertain": true,
@@ -303,7 +302,7 @@
    "end": 61.676,
    "text": "हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज़्यादा मतलब हमारे सॉप का बोले तो सबसे पसंदीदा चीज",
    "hinglish": "haan ab market hai aapke yahan vaise to hamare yahan sabse zyada matlab hamare shop ka bole to sabse pasandida cheej",
-   "translation": "Yes, now the market is open. The best thing is to cut hair at the market. If you tell him that, he'll cut your hair.",
+   "translation": "Yes",
    "source_text": "हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज़्यादा मतलब हमारे सॉप का बोले तो सबसे पसंदीदा चीज",
    "changed": false,
    "uncertain": true,
@@ -328,9 +327,9 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 683.137,
-  "prompt_tokens": 3068,
-  "completion_tokens": 1660,
+  "llm_seconds": 262.098,
+  "prompt_tokens": 3062,
+  "completion_tokens": 1547,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -352,8 +351,10 @@
   "source_sha256": "740d80dc2d8bfbc4a093ae3d3d28afc3545964383c20a7011a2a280c7caa0904",
   "source_line_count": 21,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T04:06:42Z",
+  "generated_at_utc": "2026-11-10T21:58:22Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 62.43
+  "source_audio_duration_s": 62.43,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

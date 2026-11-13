@@ -1,15 +1,15 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation between two people in Hindi, with a focus on Chhath Puja and Diwali. The evidence includes summaries of the parts, lines translated into English, and candidate keywords and actions.",
+ "title": "Hindi and Hinglish Conversation Transcript",
+ "topic": "Hindi and Hinglish Conversation",
+ "executive_summary": "This report summarizes a conversation between two people in Hindi, with a focus on the topic of Chhath Puja and Diwali in India.",
  "key_points": [
-  "हैलो",
-  "हां",
-  "छछ",
-  "दिवाली"
+  "Hindi and Hinglish are two languages commonly spoken in India.",
+  "The conversation is about Chhath Puja and Diwali, which are important festivals in India."
  ],
  "keywords": [
-  "छछ पूजा"
+  "India",
+  "Chhath Puja",
+  "Diwali"
  ],
  "action_items": [],
  "speakers": [
@@ -53,7 +53,7 @@
    "end": 7.36,
    "text": "हलो हाँ हेलो सर हम ठीक है हाँ हाँ",
    "hinglish": "hello haan hello sir hum theek hai haan haan",
-   "translation": "Hello yes yes yes sir we are fine fine fine",
+   "translation": "Hello yes yes yes sir we are fine yes",
    "source_text": "हलो हाँ हेलो सर हम ठीक है हाँ हाँ",
    "changed": false,
    "uncertain": true,
@@ -66,7 +66,7 @@
    "end": 13.82,
    "text": "हाँ हाँ ये बात तो देना है ना कोई छापड़ भी देना है अब तो बहुत अच्छा हो गया तो",
    "hinglish": "haan haan ye baat to dena hai na koi chhapad bhi dena hai ab to bahut achha ho gaya to",
-   "translation": "Yes yes yes yes no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no",
+   "translation": "Yes yes yes yes yes no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no",
    "source_text": "हाँ हाँ ये बात तो देना है ना कोई छापड़ भी देना है अब तो बहुत अच्छी हो गया तो",
    "changed": true,
    "uncertain": false,
@@ -103,9 +103,9 @@
    "speaker": "S3",
    "start": 25.42,
    "end": 54.46,
-   "text": "एक बार तो सरकार को वोट देना है वोट देना है अब देना है देखिए ना कोई छापड़ भी देना है अब तो वोट खत्म हो गया अब वोट आएगा तो दिया सरकार को लाभ नहीं दिया तो आपका देना है जी वही का वो देना है जी आगे बढ़ाएगा विकास करेगा हम लोग का जिंदाबाद हो बाथरूम हो सहारा हो मानी ये भी चीज़ का सहारा हो सब कुछ दिया जाएगा",
-   "hinglish": "ek baar to sarkar ko vote dena hai vote dena hai ab dena hai dekhie na koi chhapad bhi dena hai ab to vote khatm ho gaya ab vote aaega to diya sarkar ko laabh nahi diya to aapka dena hai ji wahi ka wo dena hai ji aage badhaega vikas karega hum log ka jindabad ho bathroom ho sahara ho mani ye bhi cheez ka sahara ho sab kuch diya jaega",
-   "translation": "Once you vote, vote well. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No printing is allowed. No. No",
+   "text": "एक बार तो सरकार को वोट देना है वोट देना है अब देना है देखिए ना कोई छापड़ भी देना है अब तो वोट खत्म हो गया अब वोट आएगा तो दिया सरकार को लाभ नहीं दिया तो आपका देना है जी उसी का वो देना है जी आगे हमें बढ़ाएगा विकास करेगा हम लोग का जिंदाबाद हो बाथरूम हो सहारा हो मानी ये भी चीज़ का सहारा हो सब कुछ दिया जाएगा",
+   "hinglish": "ek baar to sarkar ko vote dena hai vote dena hai ab dena hai dekhie na koi chhapad bhi dena hai ab to vote khatm ho gaya ab vote aaega to diya sarkar ko laabh nahi diya to aapka dena hai ji usi ka wo dena hai ji aage hamen badhaega vikas karega hum log ka jindabad ho bathroom ho sahara ho mani ye bhi cheez ka sahara ho sab kuch diya jaega",
+   "translation": "Once vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then vote to government then",
    "source_text": "एक बार तो सरकार को वोट देना है वोट देना है अब देना है देखिए ना कोई छापर देना है अब तो वोट खत्म हो गया अब वोट आएगा तो दिया सरकार को लाभ नहीं दिया तो आपका देना है जी उसी का वो देना है जी आगे हमें बढ़ाएगा विकास कराएगा हम लोग का जिंदाबाद हो बाथरूम हो सहारा हो मानी ये भी चीज़ का सहारा हो सब कुछ दिया जाएगा",
    "changed": true,
    "uncertain": true,
@@ -118,7 +118,7 @@
    "end": 64.69,
    "text": "हमारे देश में छठ पूजा मनाई जाती है और हमारे देश में दीपावली भी मनाई जाती है और हाँ बोलिए छठ",
    "hinglish": "hamare desh mein chhath puja manai jati hai aur hamare desh mein dipavli bhi manai jati hai aur haan bolie chhath",
-   "translation": "In India, Chhath Puja is celebrated and also Diwali is celebrated and yes, we say Chhath",
+   "translation": "In India, we celebrate Chhath Puja and Diwali, and we say 'Chhath'",
    "source_text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
    "changed": true,
    "uncertain": false,
@@ -134,9 +134,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 41.263,
-  "prompt_tokens": 1751,
-  "completion_tokens": 897,
+  "llm_seconds": 159.377,
+  "prompt_tokens": 1736,
+  "completion_tokens": 915,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -149,7 +149,7 @@
   "lines_flagged_by_llm": 3,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 10,
+  "keywords_dropped": 4,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -158,8 +158,10 @@
   "source_sha256": "c1b9abd95c910a9725ed84fc74babf143acc2db9f4c8fa646556438c48538c57",
   "source_line_count": 7,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:44:12Z",
+  "generated_at_utc": "2026-11-11T01:27:04Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 65.41
+  "source_audio_duration_s": 65.41,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

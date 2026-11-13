@@ -1,17 +1,23 @@
 {
- "title": "Hindi and Hinglish Conversation Report",
+ "title": "Hindi and Hinglish Conversation Transcript",
  "topic": "Hindi and Hinglish Conversation",
- "executive_summary": "This report summarizes a conversation in Hindi and Hinglish recorded in a noisy place. The transcript is the only source of truth. The speaker's names, locations, and actions are not included in the report.",
+ "executive_summary": "This report summarizes a conversation in Hindi and Hinglish, with a short factual title, a few words on the main topic, an executive summary in 2 to 4 English sentences, up to 5 short factual points, up to 8 keywords, and up to 5 actions. The evidence is a transcript of the conversation.",
  "key_points": [
   "Hindi and Hinglish Conversation",
-  "Hindi and Hinglish Conversation Report"
+  "Hindi and Hinglish Transcript",
+  "Hindi and Hinglish Summary",
+  "Hindi and Hinglish Executive Summary",
+  "Hindi and Hinglish Factual Points"
  ],
  "keywords": [
   "Hindi",
-  "Bihar",
   "Chhath Puja",
+  "Deepavali",
   "vote",
-  "mark"
+  "mark",
+  "give",
+  "good",
+  "Chhass puja"
  ],
  "action_items": [],
  "speakers": [
@@ -126,11 +132,11 @@
    "end": 18.55,
    "text": "वोट एक बार तो देना है ना कोई छापल भी देना है अब तो वो अच्छी हो गया",
    "hinglish": "vote ek baar to dena hai na koi chhapal bhi dena hai ab to wo achhi ho gaya",
-   "translation": "Vote once to give a mark, no one else",
+   "translation": "Vote once to give a mark to no one else, then also give a mark to good",
    "source_text": "वोट एक बार तो देना है ना कोई छापल भी देना है अब तो वो अच्छी हो गया",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 8,
@@ -165,11 +171,11 @@
    "end": 22.45,
    "text": "साठ",
    "hinglish": "saath",
-   "translation": "Six",
+   "translation": "Sat",
    "source_text": "साठ",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 11,
@@ -178,11 +184,11 @@
    "end": 23.55,
    "text": "छठ पूजा",
    "hinglish": "chhath puja",
-   "translation": "Six worship",
+   "translation": "Chhass puja",
    "source_text": "छठ पूजा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 12,
@@ -191,11 +197,11 @@
    "end": 26.0,
    "text": "छठ पूजा में हम लोग",
    "hinglish": "chhath puja mein hum log",
-   "translation": "We people in six worship",
+   "translation": "We people",
    "source_text": "छठ पूजा में हम लोग",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 13,
@@ -360,7 +366,7 @@
    "end": 57.05,
    "text": "अब देना है देखिए ना इच्छा पूरी छापर देना है बहुत",
    "hinglish": "ab dena hai dekhie na ichha puri chhapar dena hai bahut",
-   "translation": "Please give me a copy of the entire document",
+   "translation": "Please give me a copy of the printer's receipt",
    "source_text": "अब देना है देखिए ना इच्छा पूरी छापर देना है बहुत",
    "changed": false,
    "uncertain": true,
@@ -399,11 +405,11 @@
    "end": 62.0,
    "text": "जी देखते है की बहुत अच्छा से देखते हैं",
    "hinglish": "ji dekhte hai ki bahut achha se dekhte hain",
-   "translation": "I see that very well",
+   "translation": "Looking at the printer, it looks like a very good one",
    "source_text": "जी देखते है की बहुत अच्छा से देखते हैं",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 30,
@@ -412,7 +418,7 @@
    "end": 64.5,
    "text": "और कितना अच्छा बनाते हैं",
    "hinglish": "aur kitna achha banate hain",
-   "translation": "And how well do we make it?",
+   "translation": "And how well it prints",
    "source_text": "और कितना अच्छा बनाते हैं",
    "changed": false,
    "uncertain": true,
@@ -431,14 +437,13 @@
   18,
   26,
   28,
-  29,
   30
  ],
  "diagnostics": {
   "llm_calls": 6,
-  "llm_seconds": 76.227,
-  "prompt_tokens": 3595,
-  "completion_tokens": 1703,
+  "llm_seconds": 302.078,
+  "prompt_tokens": 3628,
+  "completion_tokens": 1804,
   "chunks": 5,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -448,10 +453,10 @@
   "lines_reverted": 7,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 10,
+  "lines_flagged_by_llm": 5,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 7,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -460,8 +465,10 @@
   "source_sha256": "0ad36dccef09ec8667f6048b1572b0c07bc0e44c20d22703003132e1ad90a2d3",
   "source_line_count": 30,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:31:34Z",
+  "generated_at_utc": "2026-11-11T00:39:47Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 65.05
+  "source_audio_duration_s": 65.05,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

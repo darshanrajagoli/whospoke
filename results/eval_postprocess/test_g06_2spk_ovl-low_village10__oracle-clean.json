@@ -1,17 +1,17 @@
 {
- "title": "Renting Two Rooms",
- "topic": "Renting Two Rooms",
- "executive_summary": "A conversation about renting two rooms.",
+ "title": "Renting Rooms and Getting a Sari",
+ "topic": "Renting rooms and getting a sari",
+ "executive_summary": "Two people are staying at the city and the computer will work. No checking, just say yes and the agreement will happen first.",
  "key_points": [
-  "Part 1: A conversation about renting two rooms.",
-  "Part 2: The speaker wants to go to the city by road and also online if possible.",
-  "Part 3: Two people will stay and the computer will do our work.",
-  "Part 4: The sari should be worn and the computer should do our work.",
-  "Part 5: Agreement first."
+  "Two people are staying at the city and the computer will work.",
+  "No checking, just say yes and the agreement will happen first."
  ],
  "keywords": [
   "computer",
   "sari",
+  "stay",
+  "work",
+  "Two people",
   "agreement"
  ],
  "action_items": [],
@@ -50,11 +50,11 @@
    "end": 8.93,
    "text": "प्रणाली दीदी",
    "hinglish": "pranali didi",
-   "translation": "Please",
+   "translation": "System, please",
    "source_text": "प्रणाम दीदी",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 3,
@@ -76,11 +76,11 @@
    "end": 11.81,
    "text": "और सब तो ठीक है अपना बताइए",
    "hinglish": "aur sab to theek hai apna bataie",
-   "translation": "And everything is fine, tell me",
+   "translation": "And everything else is fine, tell me",
    "source_text": "और सब तो ठीक है अपना बताइए",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 5,
@@ -92,8 +92,8 @@
    "translation": "Our computer is yours",
    "source_text": "टू कंप्यूटर का है हमारा",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 6,
@@ -102,7 +102,7 @@
    "end": 21.07,
    "text": "क्या चाहिएगा साड़ी लेना है",
    "hinglish": "kya chahiega sadi lena hai",
-   "translation": "Do you want to buy a saree",
+   "translation": "Will you take a sari?",
    "source_text": "क्या चाहिएगा साड़ी लेना है",
    "changed": false,
    "uncertain": true,
@@ -115,11 +115,11 @@
    "end": 30.37,
    "text": "अरे हमको मतलब कि लेंगे रोड पर शहर में चाहिए हमको शहर में हाँ ऑनलाइन भी चल जाएगा",
    "hinglish": "are hamko matlab ki lenge road par shahar mein chahiye hamko shahar mein haan online bhi chal jaega",
-   "translation": "We want to go to the city by road and also online if possible",
+   "translation": "We want to go to the city by road, we will go to the city online too.",
    "source_text": "अरे हमको मतलब कि लेंगे रोड पर शहर में चाहिए हमको शहर में हाँ ऑनलाइन भी चल जाएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 8,
@@ -128,24 +128,24 @@
    "end": 34.74,
    "text": "हाँ साड़ी चाहिएगा पूनम साड़ी और",
    "hinglish": "haan sadi chahiega punam sadi aur",
-   "translation": "The sari should be worn and the",
+   "translation": "We will get a sari, yes, sari and",
    "source_text": "हाँ साड़ी चाहिएगा पूनम साड़ी और",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 9,
    "speaker": "S2",
    "start": 35.02,
    "end": 47.69,
-   "text": "Nah, lotta p two people rahge हम लोग हाँ दो लोग रहेंगे और मैं कंप्यूटर काम से करेंगे",
-   "hinglish": "Nah, lotta p two people rahge hum log haan do log rahenge aur main computer kaam se karenge",
-   "translation": "No, two people will stay and I will work on the computer.",
+   "text": "नहीं लोट प दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और मैं कंप्यूटर काम से करेंगे",
+   "hinglish": "nahi lot pa do log rahenge hum log haan do log rahenge aur main computer kaam se karenge",
+   "translation": "No, two people are staying here, we are people, two people are staying here and I will work on the computer.",
    "source_text": "नहीं लोट प दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और मैं कंप्यूटर काम से करेंगे",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 10,
@@ -154,11 +154,11 @@
    "end": 49.59,
    "text": "हाँ हाँ",
    "hinglish": "haan haan",
-   "translation": "Yes, yeah",
+   "translation": "Yes, yes",
    "source_text": "हाँ हाँ",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 11,
@@ -167,7 +167,7 @@
    "end": 57.4,
    "text": "हाँ हाँ हाँ नहीं यही पास में बस मैंने मिली दिला दिए अगर हो तो बताओ क्या",
    "hinglish": "haan haan haan nahi yahi paas mein bas mainne mili dila die agar ho to batao kya",
-   "translation": "Yes, yeah",
+   "translation": "Yes, yes, yes",
    "source_text": "हाँ हाँ हाँ नहीं यही पास में बस मैंने मिली दिला दिए अगर हो तो बताओ क्या",
    "changed": false,
    "uncertain": true,
@@ -193,7 +193,7 @@
    "end": 83.23,
    "text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम है बस जैसा कहोग कर देंगे नहीं चेक कर देंगे जैसा कहोगे नहीं पहले रजिस्ट्री हाँ एग्रीमेंट पहले होगी",
    "hinglish": "haan bas do log do log rahenge aur computer hamara kaam hai bas jaisa kahog kar denge nahi check kar denge jaisa kahoge nahi pahle rajistri haan egriment pahle hogi",
-   "translation": "Yes, just two people will stay and the computer will do our work. No checking or telling us what to do. Agreement first.",
+   "translation": "Two people will stay and the computer will work. No checking, just say yes and the agreement will happen first.",
    "source_text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस जैसा कहोग कर देंगे नहीं चेक कर देंगे जैसा कहोगे नहीं पहले रजिस्ट्री हाँ एग्रीमेंट पहले होगी",
    "changed": true,
    "uncertain": false,
@@ -202,7 +202,10 @@
  ],
  "uncertain_lines": [
   1,
+  2,
   3,
+  4,
+  5,
   6,
   7,
   8,
@@ -213,16 +216,16 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 45.3,
-  "prompt_tokens": 2160,
-  "completion_tokens": 985,
+  "llm_seconds": 191.937,
+  "prompt_tokens": 2205,
+  "completion_tokens": 1048,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 3,
-  "lines_reverted": 6,
+  "lines_changed": 2,
+  "lines_reverted": 7,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 9,
@@ -237,8 +240,10 @@
   "source_sha256": "9dd4b75c04eedd9713426c96c6a49300f64a6ef90a98ded3da80868c80cb20dd",
   "source_line_count": 13,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:23:27Z",
+  "generated_at_utc": "2026-11-11T07:13:02Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 83.94
+  "source_audio_duration_s": 83.94,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

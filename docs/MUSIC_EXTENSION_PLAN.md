@@ -14,7 +14,7 @@ Facts marked † come from the dataset's own pages and should be checked against
 > CC BY 3.0 via Freesound; Zenodo 7726167). It suits the mridangam better: same tradition, and strokes can be placed on
 > the singer's annotated beats. The Mridangam Stroke licence is **CC BY-NC 4.0** on Zenodo (not CC BY 3.0 as `mirdata`
 > says); our copy has all 7,162 strokes. Code: `src/whospoke/synth_music.py`, `scripts/build_music_dataset.py`,
-> `scripts/eval_music_diarization.py`, HPSS and Demucs in `src/whospoke/separation.py`. Results: DECISIONS.md D37
+> `scripts/eval_music_diarization.py`, HPSS and Demucs in `src/whospoke/separation.py`. Results: DECISIONS.md D42
 > and RESULTS.md. Experiment 1 (DEAM) has not been run.
 
 ## The choice in one table

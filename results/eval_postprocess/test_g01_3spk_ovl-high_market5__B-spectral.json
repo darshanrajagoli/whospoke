@@ -1,19 +1,21 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversations",
- "topic": "Restaurant and Marriage Proposal",
- "executive_summary": "Speaker A is talking about a restaurant and a marriage proposal.",
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Hindi and Hinglish Conversation",
+ "executive_summary": "This transcript is a summary of a conversation between two speakers in Hindi and Hinglish. The speakers discuss a restaurant and their specialty, as well as saving and cutting vegetables.",
  "key_points": [
-  "Speaker A is talking about a restaurant and a marriage proposal.",
-  "Speaker B and Speaker A discuss saving money.",
-  "Speaker A is talking about the shop.",
-  "Speaker A is talking about the veracity of the information."
+  "Hello, Namaste",
+  "Save and I will save",
+  "You will do me",
+  "Three hundred and three hundred",
+  "You come to the shop once"
  ],
  "keywords": [
-  "restaurant",
-  "save",
-  "cut",
-  "hair",
-  "three hundred and three hundred."
+  "Hello",
+  "Namaste",
+  "Save",
+  "Shop",
+  "Market",
+  "Most Popular"
  ],
  "action_items": [],
  "speakers": [
@@ -41,21 +43,21 @@
    "translation": "Hello, hello, I'm a restaurant and that's our specialty, sir.",
    "source_text": "हाँ जी नमस्ते हेलो नमस्कार मैं रेस्टोरेंट ऐसी बात कर रहा हूँ जी जी ये तो हमारी स्पेशलिटी है सर",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 2,
    "speaker": "Speaker_A",
    "start": 8.0,
    "end": 15.05,
-   "text": "हाँ आपको बता दे अगर आप शादी ले जाएँगे तो तीन सौ रुपए मिलेंगे आपको और अगर आप उसे त्राई करवा के या सब्जी बनवा के ले जाएँगे",
-   "hinglish": "haan aapko bata de agar aap shadi le jaenge to teen sau rupae milenge aapko aur agar aap use trai karva ke ya sabji banva ke le jaenge",
-   "translation": "If you marry, you'll get three hundred rupees and if you get him to try or make vegetables.",
+   "text": "हाँ आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले जाओगे",
+   "hinglish": "haan aapko bata de agar aap shadi le jaoge to teen sau rupae milegi aapko aur agar aap use trai karva ke ya sabji banva ke le jaoge",
+   "translation": "If you marry, you'll get three hundred rupees and if you get him to try vegetables or make vegetables.",
    "source_text": "हाँ आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले जाओगे",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
   },
   {
    "line_id": 3,
@@ -64,11 +66,11 @@
    "end": 17.95,
    "text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
    "hinglish": "to aapko sadhe chaar sau rupye ki pad jaegi",
-   "translation": "You'll get five hundred rupees.",
+   "translation": "So you'll get five hundred rupees.",
    "source_text": "तो आपको साढ़े चार सौ रुपये की पड़ जाएगी",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 4,
@@ -77,11 +79,11 @@
    "end": 26.35,
    "text": "तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है",
    "hinglish": "to haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheej ki jarurat matlab kisi alag tarike ki jarurat hai",
-   "translation": "The veracity is a heap of rubbish, you can see it.",
+   "translation": "So you'll see the variety and you'll understand that it's not just about the variety.",
    "source_text": "तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -90,7 +92,7 @@
    "end": 27.85,
    "text": "कुछ आके भी आगे",
    "hinglish": "kuch aake bhi aage",
-   "translation": "There's some more ahead.",
+   "translation": "Some more ake.",
    "source_text": "कुछ आके भी आगे",
    "changed": false,
    "uncertain": true,
@@ -132,8 +134,8 @@
    "translation": "Okay",
    "source_text": "ठीक है",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 10,
@@ -155,7 +157,7 @@
    "end": 47.2,
    "text": "पीस बता देती हूँ मेरी यू कटिंग के लिए जो आपको सामने मतलब के अकॉर्डिंग बतानी है या फिर सामने से ही घर पर बताना है",
    "hinglish": "piece bata deti hoon meri yu cutting ke liye jo aapko samne matlab ke according batani hai ya phir samne se hi ghar par batana hai",
-   "translation": "I will cut my hair for you, but I will not cut my hair in front of you or at home.",
+   "translation": "I will tell you my cutting for my you cutting which you will understand or else tell you at home",
    "source_text": "पीस बता देती हूँ मेरी यू कटिंग के लिए जो आपको सामने मतलब के अकॉर्डिंग बतानी है या फिर सामने से ही घर पर बताना है",
    "changed": false,
    "uncertain": true,
@@ -168,7 +170,7 @@
    "end": 48.35,
    "text": "की कर देंगे तू",
    "hinglish": "ki kar denge tu",
-   "translation": "Will do you.",
+   "translation": "Will do you",
    "source_text": "की कर देंगे तू",
    "changed": false,
    "uncertain": true,
@@ -181,7 +183,7 @@
    "end": 51.9,
    "text": "थ्री हंड्रेड तीन सौ समथिंग हाँ",
    "hinglish": "three hundred teen sau something haan",
-   "translation": "Three hundred and three hundred.",
+   "translation": "Three hundred and three hundred",
    "source_text": "थ्री हंड्रेड तीन सौ समथिंग हाँ",
    "changed": false,
    "uncertain": true,
@@ -205,11 +207,11 @@
    "speaker": "Speaker_A",
    "start": 55.2,
    "end": 56.15,
-   "text": "तुम उसे बता दे",
-   "hinglish": "tum use bata de",
-   "translation": "You tell him.",
+   "text": "तुम आपको बता दे",
+   "hinglish": "tum aapko bata de",
+   "translation": "You tell me.",
    "source_text": "तुम आपको बता दे",
-   "changed": true,
+   "changed": false,
    "uncertain": false,
    "note": ""
   },
@@ -246,7 +248,7 @@
    "end": 62.9,
    "text": "है ना मार्केट है आपकी वैसे तो हमारे यहाँ सबसे ज्यादा मतलब",
    "hinglish": "hai na market hai aapki vaise to hamare yahan sabse zyada matlab",
-   "translation": "Is it a market?",
+   "translation": "Is there a market where you mean the most?",
    "source_text": "हाँ मार्केट है आपकी वैसे तो हमारे यहाँ सबसे ज्यादा मतलब",
    "changed": true,
    "uncertain": true,
@@ -259,7 +261,7 @@
    "end": 65.75,
    "text": "हमारे शॉप का बोले तो सबसे पसंदीदा चीज",
    "hinglish": "hamare shop ka bole to sabse pasandida cheej",
-   "translation": "What is the most popular item in the shop?",
+   "translation": "What is the most popular thing in our shop?",
    "source_text": "हमारे शॉप का बोले तो सबसे पसंदीदा चीज",
    "changed": false,
    "uncertain": true,
@@ -267,13 +269,11 @@
   }
  ],
  "uncertain_lines": [
-  1,
   2,
-  3,
-  4,
   6,
   7,
   8,
+  9,
   10,
   11,
   12,
@@ -285,22 +285,22 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 371.865,
-  "prompt_tokens": 2531,
-  "completion_tokens": 1330,
+  "llm_seconds": 249.321,
+  "prompt_tokens": 2637,
+  "completion_tokens": 1453,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 4,
-  "lines_reverted": 1,
+  "lines_changed": 2,
+  "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 15,
+  "lines_flagged_by_llm": 12,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -309,8 +309,10 @@
   "source_sha256": "13eaec855523267576190c48e5f92c20d26a45236e5efec7383604b05af9afd6",
   "source_line_count": 19,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T04:24:35Z",
+  "generated_at_utc": "2026-11-10T22:21:09Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 66.14
+  "source_audio_duration_s": 66.14,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

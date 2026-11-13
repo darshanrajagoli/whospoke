@@ -1,10 +1,10 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation between two people in Hindi, with a focus on the topic of voting. The evidence includes summaries of the parts, lines translated into English, and candidate keywords and actions.",
+ "title": "Hindi and Hinglish Conversation",
+ "topic": "Voting",
+ "executive_summary": "Part 2 of the conversation discusses voting in the country.",
  "key_points": [
-  "Hindi and Hinglish Conversations",
-  "Voting"
+  "Voting is a process in which people express their opinions on a particular issue or candidate.",
+  "In Hindi and Hinglish, the word"
  ],
  "keywords": [
   "vote"
@@ -90,7 +90,7 @@
    "end": 33.63,
    "text": "हाँ देखते है की बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं ये गाँव पे तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
    "hinglish": "haan dekhte hai ki bahut achha se dekhte hai aur kitna achha banate hain ye gaanv pe to sabhi log dekhte hain bahut sundar banate hain",
-   "translation": "Look at how beautiful it is and how well-made the villages are",
+   "translation": "Look at how beautiful it is and how well we make it, the village is beautiful.",
    "source_text": "हाँ देखते है की बहुत अच्छा से देखते है और कितना अच्छा बनाते हैं ये गाँव पे तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
    "changed": false,
    "uncertain": true,
@@ -103,7 +103,7 @@
    "end": 52.9,
    "text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते है उपहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं बनाते हैं पूजा करते हैं",
    "hinglish": "chhath puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hai uphante hain usmen aur thakua banate hain kasar banate hain banate hain puja karte hain",
-   "translation": "In Chhath Puja, we bring new items for fasting, new clothes for wearing, and make offerings in the fire. We also make sculptures and perform puja.",
+   "translation": "In Chhath Puja, we bring new items for fasting, new clothes for the ritual, and make offerings in the fire. We also make incantations.",
    "source_text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते है उपहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं बनाते हैं पूजा करते हैं",
    "changed": false,
    "uncertain": true,
@@ -134,9 +134,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 37.453,
-  "prompt_tokens": 1594,
-  "completion_tokens": 813,
+  "llm_seconds": 141.078,
+  "prompt_tokens": 1589,
+  "completion_tokens": 814,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -158,8 +158,10 @@
   "source_sha256": "55072e7913a81d00164e128b09084e54ac33df741366a53b3aaeef30b2367250",
   "source_line_count": 8,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:53:30Z",
+  "generated_at_utc": "2026-11-11T02:01:14Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 67.0
+  "source_audio_duration_s": 67.0,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

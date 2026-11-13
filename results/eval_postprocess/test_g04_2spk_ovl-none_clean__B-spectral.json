@@ -1,19 +1,19 @@
 {
- "title": "Transcript of a Hindi and Hinglish conversation recorded in Jain Brother Stationery & Book",
- "topic": "Pen and boxes for school",
- "executive_summary": "Speaker A is talking at Jain Brother Stationery & Book Shop. Part 1: Speaker A is talking at Jain Brother Stationery & Book Shop. Part 2: The speaker is asking for a tape and a price for a box. Part 3: Speaker A asks the speaker to send his son to school twice. Part 4: Speaker A asks the speaker to tell him when he comes back. Part 5: Speaker A asks the speaker to send his son to school twice. Part 6: Speaker A asks the speaker to tell him when he comes back. Part 7: Speaker A asks the speaker to send his son to school twice. Part 8: Speaker A asks the speaker to tell him when he comes back. Part 9: Speaker A asks the speaker to send his son to school twice. Part 10: Speaker A asks the speaker to tell him when he comes back. Part 11: Speaker A asks the speaker to send his son to school two",
+ "title": "Jain Brother Stationery & Book Shop",
+ "topic": "Pen boxes and school",
+ "executive_summary": "Speaker A is talking at Jain Brother Stationery & Book Shop. Speaker A asks Speaker A to send his son to school. Speaker A needs pens and two boxes of his red, two boxes of blue, and two boxes of black. Speaker A asks Speaker A to send his son to school in the morning. Speaker A has a fever and his body temperature has increased. Speaker A asks Speaker A to tell him the price of a box. Speaker A asks Speaker A to take an item note and tell him its price. Speaker A asks Speaker A to send him to school twice and when he comes back, tell him when he comes back. Speaker A asks Speaker A to send his son to school in the morning. Speaker A asks Speaker A to tell him the price of a box. Speaker A asks Speaker A to take an item note and tell him its price. Speaker A asks Speaker A to send him to a",
  "key_points": [
-  "Pen and boxes for school"
+  "pen",
+  "boxes",
+  "blue",
+  "black",
+  "itemnote"
  ],
  "keywords": [
   "pen",
   "boxes",
   "blue",
-  "black",
-  "item",
-  "note",
-  "price",
-  "box"
+  "black"
  ],
  "action_items": [],
  "speakers": [
@@ -32,7 +32,7 @@
    "end": 11.05,
    "text": "हलो क्या मैं जैन ब्रदर स्टेशनरी एंड बुक शॉप में बात कर रही हूँ नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का हाँ और वो कक्षा दस में पढ़ता है",
    "hinglish": "hello kya main jain brother steshanri and book shop mein baat kar rahi hoon namaste aapke bacche ka naam vaibhav hai aapke ladke ka haan aur wo kaksha das mein padhta hai",
-   "translation": "I am speaking at Jain Brother Stationery & Book Shop.",
+   "translation": "I am talking at Jain Brother Stationery & Book Shop.",
    "source_text": "हलो क्या मैं जैन ब्रदर स्टेशनरी एंड बुक शॉप में बात कर रही हूँ नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का हाँ और वो कक्षा दस में पढ़ता है",
    "changed": false,
    "uncertain": true,
@@ -149,7 +149,7 @@
    "end": 53.2,
    "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी",
    "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega haan ji",
-   "translation": "Because of her, water shortages may have occurred, so she may have gotten sick, and I'm going to buy a box for six rupees, and I'll also get some special discounts.",
+   "translation": "Because of her, water shortages may have occurred, and she may have been sick, but I'll be able to get a box for two hundred rupees and some special discounts as well.",
    "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा हाँ जी",
    "changed": false,
    "uncertain": true,
@@ -162,7 +162,7 @@
    "end": 57.8,
    "text": "तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
    "hinglish": "to aap mera ek kaam karie item note kar lijie aur mujhe uske price batate jaie",
-   "translation": "So you do my work item note and tell me her price.",
+   "translation": "So you can take an item note and tell me its price.",
    "source_text": "तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसके प्राइस बताते जाइए",
    "changed": false,
    "uncertain": true,
@@ -175,7 +175,7 @@
    "end": 69.05,
    "text": "मेरे को टेप चाहिए है हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबेयता उसकी ठीक हो जाएगी तो फेका",
    "hinglish": "mere ko tape chahiye hai haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabeyta uski theek ho jaegi to pheka",
-   "translation": "I need a tape, but if you're willing to come over, then take your child home for a few days, and it will be okay for her.",
+   "translation": "I need a tape, but if you're willing to come over, I'll take care of your child for a few days, and it'll be okay for her.",
    "source_text": "मेरे को टेप चाहिए है हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फेका",
    "changed": true,
    "uncertain": true,
@@ -211,9 +211,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 63.043,
-  "prompt_tokens": 2454,
-  "completion_tokens": 1336,
+  "llm_seconds": 222.866,
+  "prompt_tokens": 2444,
+  "completion_tokens": 1303,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -226,7 +226,7 @@
   "lines_flagged_by_llm": 12,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 0,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -235,8 +235,10 @@
   "source_sha256": "8509bf677d84b75682cbd83ecb280b0028b37905d13480230f8e0c6e24ba8588",
   "source_line_count": 13,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:07:07Z",
+  "generated_at_utc": "2026-11-11T02:31:21Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 74.49
+  "source_audio_duration_s": 74.49,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -135,7 +135,7 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 28.643,
+  "llm_seconds": 115.288,
   "prompt_tokens": 1542,
   "completion_tokens": 608,
   "chunks": 2,
@@ -159,8 +159,10 @@
   "source_sha256": "8ca32f6023294ba9e70c2430f7184702cf420a27eb8465b3f23594b3d392aaf8",
   "source_line_count": 7,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:31:32Z",
+  "generated_at_utc": "2026-11-11T07:46:25Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 72.61
+  "source_audio_duration_s": 72.61,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

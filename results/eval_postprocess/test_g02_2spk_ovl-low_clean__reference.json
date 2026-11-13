@@ -1,16 +1,20 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a transcript of Hindi and Hinglish conversations recorded in noisy places. The transcript is the only source of truth. Never add facts, names, numbers, dates, places, events or actions that are not in it. Reply with JSON only.",
+ "title": "Lost ID Card and Photocopy of Base Card",
+ "topic": "Lost ID Card and Photocopy of Base Card",
+ "executive_summary": "A conversation between two people about a lost ID card and a photocopy of a base card.",
  "key_points": [
-  "Hello",
-  "Hello Sir",
-  "Yes Sir",
-  "My was a poket, my was a poket",
-  "The office will be open until 10:00 am."
+  "Lost ID Card",
+  "Photocopy of Base Card",
+  "Exam papers",
+  "ID card",
+  "Base card"
  ],
  "keywords": [
-  "नमस्ते"
+  "Lost ID Card",
+  "Photocopy of Base Card",
+  "Exam papers",
+  "ID card",
+  "Base card"
  ],
  "action_items": [],
  "speakers": [
@@ -51,8 +55,8 @@
    "translation": "Hello Sir",
    "source_text": "नमस्ते सर",
    "changed": false,
-   "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 3,
@@ -61,7 +65,7 @@
    "end": 11.56,
    "text": "बोल रहे थे के आप बाबू मान संकई इंटर कालेज के जो प्रधानाचार्य हैं",
    "hinglish": "bol rahe the ke aap babu maan sankai intar kalej ke jo pradhanachary hain",
-   "translation": "They were speaking about the principal of Babu Mann Sainy Inter College.",
+   "translation": "They were speaking about the principal of Babu Mann Sankey Inter College.",
    "source_text": "बोल रहे थे के आप आप बाबू मान संकई इंटर कालेज के जो प्रधानाचार्य हैं",
    "changed": true,
    "uncertain": false,
@@ -100,7 +104,7 @@
    "end": 31.303,
    "text": "कमरा नम्बर तीन में छूटा था",
    "hinglish": "kamra number teen mein chhuta tha",
-   "translation": "The room was discounted in the third number.",
+   "translation": "The room was discounted in the third floor.",
    "source_text": "कमरा नम्बर तीन में छूटा था",
    "changed": false,
    "uncertain": true,
@@ -178,7 +182,7 @@
    "end": 42.724,
    "text": "एक ख़ुद का फ़ोटो एक आधार कार्ड और",
    "hinglish": "ek khud ka photo ek aadhar card aur",
-   "translation": "A photocopy of myself and an exam paper.",
+   "translation": "A photocopy of myself and an exam card.",
    "source_text": "एक ख़ुद का फ़ोटो एक आधार कार्ड और",
    "changed": false,
    "uncertain": true,
@@ -189,11 +193,11 @@
    "speaker": "S1",
    "start": 40.996,
    "end": 41.906,
-   "text": "संगठना जी",
-   "hinglish": "sangathna ji",
+   "text": "संगीता जी",
+   "hinglish": "sangita ji",
    "translation": "",
    "source_text": "संगीता जी",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
    "note": "The model found this line hard to understand; the same English was returned for different lines."
   },
@@ -215,11 +219,11 @@
    "speaker": "S1",
    "start": 43.939,
    "end": 44.356,
-   "text": "हां",
+   "text": "हाँ",
    "hinglish": "haan",
    "translation": "Yes",
    "source_text": "हाँ",
-   "changed": true,
+   "changed": false,
    "uncertain": false,
    "note": ""
   },
@@ -243,7 +247,7 @@
    "end": 52.915,
    "text": "आई डी कार्ड के दो सामान लूँगा तो हमें सबसे पहले किसके पास जाना पड़ेगा यह कौन बनाएगा",
    "hinglish": "aai D card ke do saman lunga to hamen sabse pahle kiske paas jana padega yeh kaun banaega",
-   "translation": "I will get two items of ID card and who will be the first to get it?",
+   "translation": "I will get two ID cards and who will be the first to get them?",
    "source_text": "आई डी कार्ड के दो सामान लूँगा तो हमें सबसे पहले किसके पास जाना पड़ेगा यह कौन बनाएगा",
    "changed": false,
    "uncertain": true,
@@ -259,8 +263,8 @@
    "translation": "Good after that.",
    "source_text": "अच्छा उसके बाद",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 19,
@@ -272,8 +276,8 @@
    "translation": "Check your camera CCTV camera.",
    "source_text": "अपने कैमरे सी सी टी वी कैमरे से चेक करवा लीजिए",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 20,
@@ -285,8 +289,8 @@
    "translation": "Hmm.",
    "source_text": "हम्म",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 21,
@@ -321,15 +325,14 @@
    "end": 67.071,
    "text": "अच्छा और वह साब को दे दूँगा उसके बाद में अगर मान लो फिर आई डी कार्ड आने में कितना दिन लगेगा",
    "hinglish": "achha aur woh saab ko de dunga uske baad mein agar maan lo phir aai D card aane mein kitna din lagega",
-   "translation": "Good and I will give it to Saab after that, how long will it take for the ID card to come?",
+   "translation": "If you believe it, then how long will it take for the ID card to come?",
    "source_text": "अच्छा और वह साब को दे दूँगा उसके बाद में अगर मान लो फिर आई डी कार्ड आने में कितना दिन लगेगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
-  2,
   6,
   7,
   8,
@@ -339,31 +342,28 @@
   13,
   14,
   17,
-  18,
-  19,
-  20,
   21,
   22,
   23
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 73.173,
-  "prompt_tokens": 3112,
-  "completion_tokens": 1664,
+  "llm_seconds": 269.009,
+  "prompt_tokens": 3105,
+  "completion_tokens": 1594,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 8,
+  "lines_changed": 6,
   "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 15,
+  "lines_flagged_by_llm": 12,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -372,8 +372,10 @@
   "source_sha256": "c40141562dd1b55f4b3bd696b758bb1f336f9a15857a26bcfd67d84727bec4b7",
   "source_line_count": 23,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:07:22Z",
+  "generated_at_utc": "2026-11-10T23:06:17Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 67.53
+  "source_audio_duration_s": 67.53,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

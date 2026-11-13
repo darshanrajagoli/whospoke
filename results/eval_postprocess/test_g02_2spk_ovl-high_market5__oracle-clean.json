@@ -1,14 +1,17 @@
 {
- "title": "Lost ID Card and Request for Base Card",
- "topic": "Lost ID Card and Request for Base Card",
- "executive_summary": "Two people talk about the principal of the Babu Matanka Inter College and ask for a check from their karmi to pay for the BA paper, which was missing from their school. They mention that they lost their ID card from their hand and need an ID card from the base card and a photo of the person who is coming with the base card. They also mention that they need money and a document.",
+ "title": "Babu Matanka Inter College",
+ "topic": "Check for BA paper",
+ "executive_summary": "Two people discuss the principal of the Babu Matanka Inter College and the need for a check to pay for the BA paper.",
  "key_points": [
-  "Lost ID Card and Request for Base Card"
+  "The speaker said he had to go to the office and also get two items from the office.",
+  "The speaker said he had to check his camera and also the document.",
+  "The speaker said there was money and also a document."
  ],
  "keywords": [
   "principal",
-  "ID card",
-  "base card",
+  "BA paper",
+  "check",
+  "college",
   "office",
   "application"
  ],
@@ -74,11 +77,11 @@
    "end": 31.86,
    "text": "सर मेरे कोई गलती हो गई मेरे हाथ से वो मेरा आई डी कार्ड गुम हो गया है सर",
    "hinglish": "sir mere koi galti ho gayi mere haath se wo mera aai D card gum ho gaya hai sir",
-   "translation": "The speaker mentioned that they lost their ID card from their hand.",
+   "translation": "",
    "source_text": "सर मेरे कोई गलती हो गई मेरे हाथ से वो मेरा आई डी कार्ड गुम हो गया है सर",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 5,
@@ -87,11 +90,11 @@
    "end": 35.16,
    "text": "कमरा नंबर तीन में छूटा थी हाँ मेरा था वो पॉकेट मेरा था संगीता जी हाँ",
    "hinglish": "kamra number teen mein chhuta thi haan mera tha wo pocket mera tha sangita ji haan",
-   "translation": "The speaker mentioned that they lost their pocketbook in room number three.",
+   "translation": "",
    "source_text": "कमरा नंबर तीन में छूटा था हाँ मेरा था वो पॉकेट मेरा था संगीता जी हाँ",
    "changed": true,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 6,
@@ -100,11 +103,11 @@
    "end": 40.16,
    "text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक उसका फ़ोटो एक आधार कार्ड ही और",
    "hinglish": "haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir ek uska photo ek aadhar card hi aur",
-   "translation": "The speaker mentioned that they need an ID card from the base card and a photo of the person who is coming with the base card.",
+   "translation": "",
    "source_text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक उसका फ़ोटो एक आधार कार्ड ही और",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 7,
@@ -116,8 +119,8 @@
    "translation": "He said he had to check his camera, and also the document.",
    "source_text": "तो अपने कैमरे सी सी टी वी कैमरे चेक करवा लीजिए हाँ पैसा भी था डॉक्यूमेंट भी था उसमें",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 8,
@@ -139,7 +142,7 @@
    "end": 59.2,
    "text": "पैसा भी था डॉक्यूमेंट भी था",
    "hinglish": "paisa bhi tha dokyument bhi tha",
-   "translation": "He said there was money, and also the document.",
+   "translation": "He said there was money and also a document.",
    "source_text": "पैसा भी था डॉक्यूमेंट भी था",
    "changed": false,
    "uncertain": true,
@@ -152,7 +155,7 @@
    "end": 61.9,
    "text": "अच्छा उसके बाद एप्लीकेशन भी लिखनी पड़ेगी",
    "hinglish": "achha uske baad eplikeshan bhi likhni padegi",
-   "translation": "He said he would have to write an application.",
+   "translation": "He said there would be an application.",
    "source_text": "अच्छा उसके बाद एप्लीकेशन भी लिखनी पड़ेगी",
    "changed": false,
    "uncertain": true,
@@ -164,16 +167,15 @@
   4,
   5,
   6,
-  7,
   8,
   9,
   10
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 46.441,
-  "prompt_tokens": 1873,
-  "completion_tokens": 1022,
+  "llm_seconds": 179.304,
+  "prompt_tokens": 1903,
+  "completion_tokens": 1027,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -183,8 +185,8 @@
   "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 8,
-  "missing_translations": 0,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 3,
   "unknown_line_ids": 0,
   "keywords_dropped": 0,
   "actions_dropped": 0,
@@ -195,8 +197,10 @@
   "source_sha256": "3d53969d834514725db63907b319f1040a1969b8aeeb91a4ce8f4ffdc4e3c473",
   "source_line_count": 10,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:26:36Z",
+  "generated_at_utc": "2026-11-11T00:19:57Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 62.56
+  "source_audio_duration_s": 62.56,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

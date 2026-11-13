@@ -44,7 +44,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from make_report import boot_ci, paired_diff_ci  # noqa: E402
 from whospoke.hinglish import romanise  # noqa: E402
 from whospoke.llm_postprocess import (  # noqa: E402
-    DEFAULT_BASE_URL, DEFAULT_CONTEXT, DEFAULT_MODEL, OpenAICompatibleLLM, PostProcessor, _content_tokens, _fingerprint,
+    DEFAULT_BASE_URL, DEFAULT_CONTEXT, DEFAULT_MODEL, PROMPT_SCHEMA_REVISION, OpenAICompatibleLLM, PostProcessor,
+    _content_tokens, _fingerprint, cache_compatible,
 )
 from whospoke.metrics import cp_error  # noqa: E402
 
@@ -137,22 +138,32 @@ def main() -> None:
     cache.mkdir(parents=True, exist_ok=True)
     OpenAICompatibleLLM(args.llm_url, args.llm_model).ping()
     rss = RSSSampler(args.server_pid)
-    # Conversations of one speaker group share their speech across conditions, so some Stage-3 transcripts are
-    # identical (always for "reference"). Stage 4 is deterministic (temperature 0): reuse the report.
+    # Cache identity = transcript content AND every output-affecting setting the evaluator can vary (D36,
+    # D38): _fingerprint of the lines, prompt/schema/validator revision, MODEL identity, MODEL context, and
+    # the input system. Temperature (fixed 0 here) and workers/parallel affect speed, not one report's content.
     by_hash = {}
+    file_prov = {}                             # (cid, system) -> the cached report's provenance, for the reuse gate
     for f in cache.glob("*.json"):
         rep_ = json.loads(f.read_text(encoding="utf-8"))
-        by_hash.setdefault((rep_["provenance"]["source_sha256"], f.stem.split("__")[1]), rep_)
+        prov = rep_.get("provenance", {})
+        cid_s, sys_s = f.stem.split("__")[:2]
+        by_hash.setdefault((prov.get("source_sha256"), prov.get("prompt_schema_revision"), prov.get("llm_model"),
+                            prov.get("context_tokens"), sys_s), rep_)
+        file_prov[(cid_s, sys_s)] = prov
     t_start = time.perf_counter()
 
     convs = {cid: json.loads((RES / f"eval_test_{args.asr}" / f"{cid}.json").read_text(encoding="utf-8"))
              for cid in meta.index}
-    jobs = {}                                  # one Stage-4 run per distinct transcript that is not cached yet
+    jobs = {}                                  # one Stage-4 run per distinct transcript+config that is not cached
     for cid, m in meta.iterrows():
         for system in args.systems:
             src = stage3_transcript(convs[cid], system, m.duration_s)
-            key = (_fingerprint(src), system)
-            if args.force or (not (cache / f"{cid}__{system}.json").exists() and key not in by_hash):
+            sha = _fingerprint(src)
+            key = (sha, PROMPT_SCHEMA_REVISION, args.llm_model, args.llm_context, system)
+            f = cache / f"{cid}__{system}.json"
+            stale = f.exists() and not cache_compatible(file_prov.get((cid, system)), sha256=sha,
+                                                         model=args.llm_model, context=args.llm_context)
+            if args.force or (not f.exists() and key not in by_hash) or stale:
                 jobs.setdefault(key, (cid, system, src))
     local = threading.local()
 
@@ -179,10 +190,12 @@ def main() -> None:
         reports = {}
         for system in args.systems:
             f = cache / f"{cid}__{system}.json"
-            key = (_fingerprint(stage3_transcript(conv, system, m.duration_s)), system)
-            if f.exists() and not (args.force and key in jobs):
+            sha = _fingerprint(stage3_transcript(conv, system, m.duration_s))
+            key = (sha, PROMPT_SCHEMA_REVISION, args.llm_model, args.llm_context, system)
+            if f.exists() and key not in jobs and cache_compatible(file_prov.get((cid, system)), sha256=sha,
+                                                                  model=args.llm_model, context=args.llm_context):
                 reports[system] = json.loads(f.read_text(encoding="utf-8"))
-            else:                              # an identical transcript's report
+            else:                              # an identical transcript+config's report, or one (re)made this run
                 reports[system] = by_hash[key]
                 f.write_text(json.dumps(reports[system], ensure_ascii=False, indent=1), encoding="utf-8")
         ref_report = reports.get("reference")
@@ -227,7 +240,8 @@ def main() -> None:
     df = pd.DataFrame(rows)
     out = RES / "eval_postprocess.csv"
     df.to_csv(out, index=False)
-    summary = {"model": args.llm_model, "context_tokens": args.llm_context, "conversations": int(df.id.nunique()),
+    summary = {"model": args.llm_model, "prompt_schema_revision": PROMPT_SCHEMA_REVISION,
+               "context_tokens": args.llm_context, "conversations": int(df.id.nunique()),
                "server_peak_rss_mb": rss.stop() or None, "workers": args.workers,
                "wall_s_this_run": round(time.perf_counter() - t_start, 1)}
     # this run only (git-ignored, overwritten by the next run): to keep it, save it as

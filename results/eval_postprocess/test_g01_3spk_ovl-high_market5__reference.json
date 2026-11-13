@@ -1,16 +1,17 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes the evidence from a transcribed conversation in Hindi and Hinglish. The evidence includes summaries of its parts, lines translated into English, and candidate keywords and actions.",
+ "title": "Hindi and Hinglish Conversation",
+ "topic": "Haircutting and soap cost",
+ "executive_summary": "A conversation in Hindi and Hinglish about hair cutting and soap cost.",
  "key_points": [
-  "Hindi and Hinglish Conversations"
+  "Hello",
+  "Yes, I understand.",
+  "Yes, I speak.",
+  "Bill.",
+  "Going."
  ],
  "keywords": [
   "हैलो",
-  "Yes",
-  "haircut",
-  "price",
-  "Priyans"
+  "Yes, the queue is long, you can see it."
  ],
  "action_items": [],
  "speakers": [
@@ -182,13 +183,13 @@
    "speaker": "S2",
    "start": 9.148,
    "end": 20.154,
-   "text": "आपको बता दें अगर आप सादी ले जाएँगे तो तीन सौ रुपए मिलेंगे आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाएँगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
-   "hinglish": "aapko bata den agar aap sadi le jaenge to teen sau rupae milenge aapko aur agar aap use ye frai karva ke ya sabji banva ke le jaenge to aapko sadhe chaar sau rupae ki pad jaegi to",
-   "translation": "If you take a loan of Rs. 300 and repay it in 4 months, you will get Rs. 400.",
+   "text": "आपको बता दें अगर आप सादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
+   "hinglish": "aapko bata den agar aap sadi le jaoge to teen sau rupae milegi aapko aur agar aap use ye frai karva ke ya sabji banva ke le jaoge to aapko sadhe chaar sau rupae ki pad jaegi to",
+   "translation": "If you take a loan of three hundred rupees and if you get it made in vegetable oil or in a fragrant oil, then you will get four and a half hundred rupees.",
    "source_text": "आपको बता दें अगर आप सादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
-   "changed": true,
-   "uncertain": false,
-   "note": ""
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 13,
@@ -210,7 +211,7 @@
    "end": 28.533,
    "text": "हां वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheej ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain",
-   "translation": "Yes, the queue is long, you can see it. We can also get you one from outside.",
+   "translation": "Yes, the queue is long, you can see it. We can also get you one from the outside.",
    "source_text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": true,
    "uncertain": false,
@@ -301,7 +302,7 @@
    "end": 49.268,
    "text": "दो चार दिन लगेंगे",
    "hinglish": "do chaar din lagenge",
-   "translation": "Two days and four days",
+   "translation": "Two days and four days will be needed",
    "source_text": "दो चार दिन लगेंगे",
    "changed": false,
    "uncertain": true,
@@ -327,7 +328,7 @@
    "end": 58.29,
    "text": "तो आप सॉप पे एक बार आ जाऍं तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "hinglish": "to aap shop pe ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai",
-   "translation": "Then you come over and tell us what it feels like.",
+   "translation": "Then you come to me once and tell me what you need",
    "source_text": "तो आप सॉप पे एक बार आ जाऍं तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "changed": false,
    "uncertain": true,
@@ -368,6 +369,7 @@
   5,
   6,
   11,
+  12,
   13,
   16,
   17,
@@ -380,22 +382,22 @@
  ],
  "diagnostics": {
   "llm_calls": 6,
-  "llm_seconds": 670.952,
-  "prompt_tokens": 3493,
-  "completion_tokens": 1586,
+  "llm_seconds": 269.861,
+  "prompt_tokens": 3504,
+  "completion_tokens": 1597,
   "chunks": 5,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 5,
-  "lines_reverted": 9,
+  "lines_changed": 4,
+  "lines_reverted": 10,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 7,
+  "lines_flagged_by_llm": 8,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 6,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -404,8 +406,10 @@
   "source_sha256": "d64b0dd89f38293540aacfa37c112950ac2dae277170126d2bab8ddeb16e9ee0",
   "source_line_count": 25,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T04:18:23Z",
+  "generated_at_utc": "2026-11-10T22:11:59Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 66.14
+  "source_audio_duration_s": 66.14,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

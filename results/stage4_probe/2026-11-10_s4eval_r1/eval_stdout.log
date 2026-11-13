@@ -1,0 +1,322 @@
+252 reports to make, 1 at a time
+  [1/252] test_g00_2spk_ovl-none_clean reference: 246 s
+  [2/252] test_g00_2spk_ovl-none_clean oracle-clean: 175 s
+  [3/252] test_g00_2spk_ovl-none_clean oracle-mix: 168 s
+  [4/252] test_g00_2spk_ovl-none_clean B-spectral: 273 s
+  [5/252] test_g00_2spk_ovl-none_village10 reference: 206 s
+  [6/252] test_g00_2spk_ovl-none_village10 oracle-clean: 144 s
+  [7/252] test_g00_2spk_ovl-none_village10 oracle-mix: 168 s
+  [8/252] test_g00_2spk_ovl-none_village10 B-spectral: 242 s
+  [9/252] test_g00_2spk_ovl-none_market5 reference: 218 s
+  [10/252] test_g00_2spk_ovl-none_market5 oracle-clean: 113 s
+  [11/252] test_g00_2spk_ovl-none_market5 oracle-mix: 116 s
+  [12/252] test_g00_2spk_ovl-none_market5 B-spectral: 165 s
+  [13/252] test_g00_2spk_ovl-low_clean reference: 259 s
+  [14/252] test_g00_2spk_ovl-low_clean oracle-clean: 182 s
+  [15/252] test_g00_2spk_ovl-low_clean oracle-mix: 193 s
+  [16/252] test_g00_2spk_ovl-low_clean B-spectral: 306 s
+  [17/252] test_g00_2spk_ovl-low_village10 reference: 230 s
+  [18/252] test_g00_2spk_ovl-low_village10 oracle-clean: 129 s
+  [19/252] test_g00_2spk_ovl-low_village10 oracle-mix: 134 s
+  [20/252] test_g00_2spk_ovl-low_village10 B-spectral: 290 s
+  [21/252] test_g00_2spk_ovl-low_market5 reference: 198 s
+  [22/252] test_g00_2spk_ovl-low_market5 oracle-clean: 143 s
+  [23/252] test_g00_2spk_ovl-low_market5 oracle-mix: 158 s
+  [24/252] test_g00_2spk_ovl-low_market5 B-spectral: 108 s
+  [25/252] test_g00_2spk_ovl-high_clean reference: 210 s
+  [26/252] test_g00_2spk_ovl-high_clean oracle-clean: 83 s
+  [27/252] test_g00_2spk_ovl-high_clean oracle-mix: 149 s
+  [28/252] test_g00_2spk_ovl-high_clean B-spectral: 240 s
+  [29/252] test_g00_2spk_ovl-high_village10 reference: 244 s
+  [30/252] test_g00_2spk_ovl-high_village10 oracle-clean: 165 s
+  [31/252] test_g00_2spk_ovl-high_village10 oracle-mix: 141 s
+  [32/252] test_g00_2spk_ovl-high_village10 B-spectral: 139 s
+  [33/252] test_g00_2spk_ovl-high_market5 reference: 246 s
+  [34/252] test_g00_2spk_ovl-high_market5 oracle-clean: 229 s
+  [35/252] test_g00_2spk_ovl-high_market5 oracle-mix: 90 s
+  [36/252] test_g00_2spk_ovl-high_market5 B-spectral: 193 s
+  [37/252] test_g01_3spk_ovl-none_clean reference: 313 s
+  [38/252] test_g01_3spk_ovl-none_clean oracle-clean: 213 s
+  [39/252] test_g01_3spk_ovl-none_clean oracle-mix: 247 s
+  [40/252] test_g01_3spk_ovl-none_clean B-spectral: 362 s
+  [41/252] test_g01_3spk_ovl-none_village10 reference: 260 s
+  [42/252] test_g01_3spk_ovl-none_village10 oracle-clean: 195 s
+  [43/252] test_g01_3spk_ovl-none_village10 oracle-mix: 194 s
+  [44/252] test_g01_3spk_ovl-none_village10 B-spectral: 329 s
+  [45/252] test_g01_3spk_ovl-none_market5 reference: 290 s
+  [46/252] test_g01_3spk_ovl-none_market5 oracle-clean: 150 s
+  [47/252] test_g01_3spk_ovl-none_market5 oracle-mix: 134 s
+  [48/252] test_g01_3spk_ovl-none_market5 B-spectral: 361 s
+  [49/252] test_g01_3spk_ovl-low_clean reference: 281 s
+  [50/252] test_g01_3spk_ovl-low_clean oracle-clean: 200 s
+  [51/252] test_g01_3spk_ovl-low_clean oracle-mix: 182 s
+  [52/252] test_g01_3spk_ovl-low_clean B-spectral: 268 s
+  [53/252] test_g01_3spk_ovl-low_village10 reference: 227 s
+  [54/252] test_g01_3spk_ovl-low_village10 oracle-clean: 188 s
+  [55/252] test_g01_3spk_ovl-low_village10 oracle-mix: 163 s
+  [56/252] test_g01_3spk_ovl-low_village10 B-spectral: 237 s
+  [57/252] test_g01_3spk_ovl-low_market5 reference: 234 s
+  [58/252] test_g01_3spk_ovl-low_market5 oracle-clean: 205 s
+  [59/252] test_g01_3spk_ovl-low_market5 oracle-mix: 163 s
+  [60/252] test_g01_3spk_ovl-low_market5 B-spectral: 263 s
+  [61/252] test_g01_3spk_ovl-high_clean reference: 310 s
+  [62/252] test_g01_3spk_ovl-high_clean oracle-clean: 168 s
+  [63/252] test_g01_3spk_ovl-high_clean oracle-mix: 214 s
+  [64/252] test_g01_3spk_ovl-high_clean B-spectral: 322 s
+  [65/252] test_g01_3spk_ovl-high_village10 reference: 262 s
+  [66/252] test_g01_3spk_ovl-high_village10 oracle-clean: 171 s
+  [67/252] test_g01_3spk_ovl-high_village10 oracle-mix: 118 s
+  [68/252] test_g01_3spk_ovl-high_village10 B-spectral: 257 s
+  [69/252] test_g01_3spk_ovl-high_market5 reference: 270 s
+  [70/252] test_g01_3spk_ovl-high_market5 oracle-clean: 195 s
+  [71/252] test_g01_3spk_ovl-high_market5 oracle-mix: 106 s
+  [72/252] test_g01_3spk_ovl-high_market5 B-spectral: 249 s
+  [73/252] test_g02_2spk_ovl-none_clean reference: 224 s
+  [74/252] test_g02_2spk_ovl-none_clean oracle-clean: 160 s
+  [75/252] test_g02_2spk_ovl-none_clean oracle-mix: 160 s
+  [76/252] test_g02_2spk_ovl-none_clean B-spectral: 271 s
+  [77/252] test_g02_2spk_ovl-none_village10 reference: 232 s
+  [78/252] test_g02_2spk_ovl-none_village10 oracle-clean: 167 s
+  [79/252] test_g02_2spk_ovl-none_village10 oracle-mix: 171 s
+  [80/252] test_g02_2spk_ovl-none_village10 B-spectral: 249 s
+  [81/252] test_g02_2spk_ovl-none_market5 reference: 239 s
+  [82/252] test_g02_2spk_ovl-none_market5 oracle-clean: 172 s
+  [83/252] test_g02_2spk_ovl-none_market5 oracle-mix: 162 s
+  [84/252] test_g02_2spk_ovl-none_market5 B-spectral: 233 s
+  [85/252] test_g02_2spk_ovl-low_clean reference: 269 s
+  [86/252] test_g02_2spk_ovl-low_clean oracle-clean: 189 s
+  [87/252] test_g02_2spk_ovl-low_clean oracle-mix: 213 s
+  [88/252] test_g02_2spk_ovl-low_clean B-spectral: 269 s
+  [89/252] test_g02_2spk_ovl-low_village10 reference: 250 s
+  [90/252] test_g02_2spk_ovl-low_village10 oracle-clean: 183 s
+  [91/252] test_g02_2spk_ovl-low_village10 oracle-mix: 150 s
+  [92/252] test_g02_2spk_ovl-low_village10 B-spectral: 209 s
+  [93/252] test_g02_2spk_ovl-low_market5 reference: 249 s
+  [94/252] test_g02_2spk_ovl-low_market5 oracle-clean: 211 s
+  [95/252] test_g02_2spk_ovl-low_market5 oracle-mix: 164 s
+  [96/252] test_g02_2spk_ovl-low_market5 B-spectral: 173 s
+  [97/252] test_g02_2spk_ovl-high_clean reference: 270 s
+  [98/252] test_g02_2spk_ovl-high_clean oracle-clean: 173 s
+  [99/252] test_g02_2spk_ovl-high_clean oracle-mix: 165 s
+  [100/252] test_g02_2spk_ovl-high_clean B-spectral: 251 s
+  [101/252] test_g02_2spk_ovl-high_village10 reference: 289 s
+  [102/252] test_g02_2spk_ovl-high_village10 oracle-clean: 205 s
+  [103/252] test_g02_2spk_ovl-high_village10 oracle-mix: 157 s
+  [104/252] test_g02_2spk_ovl-high_village10 B-spectral: 201 s
+  [105/252] test_g02_2spk_ovl-high_market5 reference: 268 s
+  [106/252] test_g02_2spk_ovl-high_market5 oracle-clean: 179 s
+  [107/252] test_g02_2spk_ovl-high_market5 oracle-mix: 148 s
+  [108/252] test_g02_2spk_ovl-high_market5 B-spectral: 212 s
+  [109/252] test_g03_3spk_ovl-none_clean reference: 169 s
+  [110/252] test_g03_3spk_ovl-none_clean oracle-clean: 179 s
+  [111/252] test_g03_3spk_ovl-none_clean oracle-mix: 179 s
+  [112/252] test_g03_3spk_ovl-none_clean B-spectral: 302 s
+  [113/252] test_g03_3spk_ovl-none_village10 reference: 163 s
+  [114/252] test_g03_3spk_ovl-none_village10 oracle-clean: 124 s
+  [115/252] test_g03_3spk_ovl-none_village10 oracle-mix: 172 s
+  [116/252] test_g03_3spk_ovl-none_village10 B-spectral: 266 s
+  [117/252] test_g03_3spk_ovl-none_market5 reference: 201 s
+  [118/252] test_g03_3spk_ovl-none_market5 oracle-clean: 156 s
+  [119/252] test_g03_3spk_ovl-none_market5 oracle-mix: 136 s
+  [120/252] test_g03_3spk_ovl-none_market5 B-spectral: 250 s
+  [121/252] test_g03_3spk_ovl-low_clean reference: 201 s
+  [122/252] test_g03_3spk_ovl-low_clean oracle-clean: 148 s
+  [123/252] test_g03_3spk_ovl-low_clean oracle-mix: 164 s
+  [124/252] test_g03_3spk_ovl-low_clean B-spectral: 320 s
+  [125/252] test_g03_3spk_ovl-low_village10 reference: 208 s
+  [126/252] test_g03_3spk_ovl-low_village10 oracle-clean: 169 s
+  [127/252] test_g03_3spk_ovl-low_village10 oracle-mix: 159 s
+  [128/252] test_g03_3spk_ovl-low_village10 B-spectral: 203 s
+  [129/252] test_g03_3spk_ovl-low_market5 reference: 165 s
+  [130/252] test_g03_3spk_ovl-low_market5 oracle-clean: 111 s
+  [131/252] test_g03_3spk_ovl-low_market5 oracle-mix: 100 s
+  [132/252] test_g03_3spk_ovl-low_market5 B-spectral: 180 s
+  [133/252] test_g03_3spk_ovl-high_clean reference: 198 s
+  [134/252] test_g03_3spk_ovl-high_clean oracle-clean: 154 s
+  [135/252] test_g03_3spk_ovl-high_clean oracle-mix: 144 s
+  [136/252] test_g03_3spk_ovl-high_clean B-spectral: 320 s
+  [137/252] test_g03_3spk_ovl-high_village10 reference: 183 s
+  [138/252] test_g03_3spk_ovl-high_village10 oracle-clean: 152 s
+  [139/252] test_g03_3spk_ovl-high_village10 oracle-mix: 141 s
+  [140/252] test_g03_3spk_ovl-high_village10 B-spectral: 244 s
+  [141/252] test_g03_3spk_ovl-high_market5 reference: 186 s
+  [142/252] test_g03_3spk_ovl-high_market5 oracle-clean: 263 s
+  [143/252] test_g03_3spk_ovl-high_market5 oracle-mix: 134 s
+  [144/252] test_g03_3spk_ovl-high_market5 B-spectral: 222 s
+  [145/252] test_g04_2spk_ovl-none_clean reference: 229 s
+  [146/252] test_g04_2spk_ovl-none_clean oracle-clean: 153 s
+  [147/252] test_g04_2spk_ovl-none_clean oracle-mix: 153 s
+  [148/252] test_g04_2spk_ovl-none_clean B-spectral: 223 s
+  [149/252] test_g04_2spk_ovl-none_village10 reference: 250 s
+  [150/252] test_g04_2spk_ovl-none_village10 oracle-clean: 186 s
+  [151/252] test_g04_2spk_ovl-none_village10 oracle-mix: 168 s
+  [152/252] test_g04_2spk_ovl-none_village10 B-spectral: 159 s
+  [153/252] test_g04_2spk_ovl-none_market5 reference: 212 s
+  [154/252] test_g04_2spk_ovl-none_market5 oracle-clean: 157 s
+  [155/252] test_g04_2spk_ovl-none_market5 oracle-mix: 151 s
+  [156/252] test_g04_2spk_ovl-none_market5 B-spectral: 155 s
+  [157/252] test_g04_2spk_ovl-low_clean reference: 207 s
+  [158/252] test_g04_2spk_ovl-low_clean oracle-clean: 129 s
+  [159/252] test_g04_2spk_ovl-low_clean oracle-mix: 137 s
+  [160/252] test_g04_2spk_ovl-low_clean B-spectral: 178 s
+  [161/252] test_g04_2spk_ovl-low_village10 reference: 217 s
+  [162/252] test_g04_2spk_ovl-low_village10 oracle-clean: 159 s
+  [163/252] test_g04_2spk_ovl-low_village10 oracle-mix: 153 s
+  [164/252] test_g04_2spk_ovl-low_village10 B-spectral: 155 s
+  [165/252] test_g04_2spk_ovl-low_market5 reference: 276 s
+  [166/252] test_g04_2spk_ovl-low_market5 oracle-clean: 208 s
+  [167/252] test_g04_2spk_ovl-low_market5 oracle-mix: 175 s
+  [168/252] test_g04_2spk_ovl-low_market5 B-spectral: 199 s
+  [169/252] test_g04_2spk_ovl-high_clean reference: 208 s
+  [170/252] test_g04_2spk_ovl-high_clean oracle-clean: 151 s
+  [171/252] test_g04_2spk_ovl-high_clean oracle-mix: 178 s
+  [172/252] test_g04_2spk_ovl-high_clean B-spectral: 169 s
+  [173/252] test_g04_2spk_ovl-high_village10 reference: 236 s
+  [174/252] test_g04_2spk_ovl-high_village10 oracle-clean: 182 s
+  [175/252] test_g04_2spk_ovl-high_village10 oracle-mix: 159 s
+  [176/252] test_g04_2spk_ovl-high_village10 B-spectral: 99 s
+  [177/252] test_g04_2spk_ovl-high_market5 reference: 266 s
+  [178/252] test_g04_2spk_ovl-high_market5 oracle-clean: 144 s
+  [179/252] test_g04_2spk_ovl-high_market5 oracle-mix: 179 s
+  [180/252] test_g04_2spk_ovl-high_market5 B-spectral: 158 s
+  [181/252] test_g05_3spk_ovl-none_clean reference: 195 s
+  [182/252] test_g05_3spk_ovl-none_clean oracle-clean: 156 s
+  [183/252] test_g05_3spk_ovl-none_clean oracle-mix: 156 s
+  [184/252] test_g05_3spk_ovl-none_clean B-spectral: 318 s
+  [185/252] test_g05_3spk_ovl-none_village10 reference: 225 s
+  [186/252] test_g05_3spk_ovl-none_village10 oracle-clean: 156 s
+  [187/252] test_g05_3spk_ovl-none_village10 oracle-mix: 174 s
+  [188/252] test_g05_3spk_ovl-none_village10 B-spectral: 214 s
+  [189/252] test_g05_3spk_ovl-none_market5 reference: 235 s
+  [190/252] test_g05_3spk_ovl-none_market5 oracle-clean: 152 s
+  [191/252] test_g05_3spk_ovl-none_market5 oracle-mix: 147 s
+  [192/252] test_g05_3spk_ovl-none_market5 B-spectral: 213 s
+  [193/252] test_g05_3spk_ovl-low_clean reference: 241 s
+  [194/252] test_g05_3spk_ovl-low_clean oracle-clean: 156 s
+  [195/252] test_g05_3spk_ovl-low_clean oracle-mix: 158 s
+  [196/252] test_g05_3spk_ovl-low_clean B-spectral: 337 s
+  [197/252] test_g05_3spk_ovl-low_village10 reference: 275 s
+  [198/252] test_g05_3spk_ovl-low_village10 oracle-clean: 159 s
+  [199/252] test_g05_3spk_ovl-low_village10 oracle-mix: 182 s
+  [200/252] test_g05_3spk_ovl-low_village10 B-spectral: 194 s
+  [201/252] test_g05_3spk_ovl-low_market5 reference: 236 s
+  [202/252] test_g05_3spk_ovl-low_market5 oracle-clean: 161 s
+  [203/252] test_g05_3spk_ovl-low_market5 oracle-mix: 153 s
+  [204/252] test_g05_3spk_ovl-low_market5 B-spectral: 216 s
+  [205/252] test_g05_3spk_ovl-high_clean reference: 289 s
+  [206/252] test_g05_3spk_ovl-high_clean oracle-clean: 228 s
+  [207/252] test_g05_3spk_ovl-high_clean oracle-mix: 148 s
+  [208/252] test_g05_3spk_ovl-high_clean B-spectral: 249 s
+  [209/252] test_g05_3spk_ovl-high_village10 reference: 292 s
+  [210/252] test_g05_3spk_ovl-high_village10 oracle-clean: 243 s
+  [211/252] test_g05_3spk_ovl-high_village10 oracle-mix: 217 s
+  [212/252] test_g05_3spk_ovl-high_village10 B-spectral: 186 s
+  [213/252] test_g05_3spk_ovl-high_market5 reference: 294 s
+  [214/252] test_g05_3spk_ovl-high_market5 oracle-clean: 229 s
+  [215/252] test_g05_3spk_ovl-high_market5 oracle-mix: 131 s
+  [216/252] test_g05_3spk_ovl-high_market5 B-spectral: 208 s
+  [217/252] test_g06_2spk_ovl-none_clean reference: 237 s
+  [218/252] test_g06_2spk_ovl-none_clean oracle-clean: 152 s
+  [219/252] test_g06_2spk_ovl-none_clean oracle-mix: 152 s
+  [220/252] test_g06_2spk_ovl-none_clean B-spectral: 285 s
+  [221/252] test_g06_2spk_ovl-none_village10 reference: 230 s
+  [222/252] test_g06_2spk_ovl-none_village10 oracle-clean: 155 s
+  [223/252] test_g06_2spk_ovl-none_village10 oracle-mix: 138 s
+  [224/252] test_g06_2spk_ovl-none_village10 B-spectral: 219 s
+  [225/252] test_g06_2spk_ovl-none_market5 reference: 300 s
+  [226/252] test_g06_2spk_ovl-none_market5 oracle-clean: 160 s
+  [227/252] test_g06_2spk_ovl-none_market5 oracle-mix: 139 s
+  [228/252] test_g06_2spk_ovl-none_market5 B-spectral: 243 s
+  [229/252] test_g06_2spk_ovl-low_clean reference: 200 s
+  [230/252] test_g06_2spk_ovl-low_clean oracle-clean: 150 s
+  [231/252] test_g06_2spk_ovl-low_clean oracle-mix: 137 s
+  [232/252] test_g06_2spk_ovl-low_clean B-spectral: 273 s
+  [233/252] test_g06_2spk_ovl-low_village10 reference: 255 s
+  [234/252] test_g06_2spk_ovl-low_village10 oracle-clean: 192 s
+  [235/252] test_g06_2spk_ovl-low_village10 oracle-mix: 148 s
+  [236/252] test_g06_2spk_ovl-low_village10 B-spectral: 367 s
+  [237/252] test_g06_2spk_ovl-low_market5 reference: 301 s
+  [238/252] test_g06_2spk_ovl-low_market5 oracle-clean: 196 s
+  [239/252] test_g06_2spk_ovl-low_market5 oracle-mix: 136 s
+  [240/252] test_g06_2spk_ovl-low_market5 B-spectral: 332 s
+  [241/252] test_g06_2spk_ovl-high_clean reference: 240 s
+  [242/252] test_g06_2spk_ovl-high_clean oracle-clean: 168 s
+  [243/252] test_g06_2spk_ovl-high_clean oracle-mix: 115 s
+  [244/252] test_g06_2spk_ovl-high_clean B-spectral: 243 s
+  [245/252] test_g06_2spk_ovl-high_village10 reference: 462 s
+  [246/252] test_g06_2spk_ovl-high_village10 oracle-clean: 276 s
+  [247/252] test_g06_2spk_ovl-high_village10 oracle-mix: 186 s
+  [248/252] test_g06_2spk_ovl-high_village10 B-spectral: 401 s
+  [249/252] test_g06_2spk_ovl-high_market5 reference: 479 s
+  [250/252] test_g06_2spk_ovl-high_market5 oracle-clean: 324 s
+  [251/252] test_g06_2spk_ovl-high_market5 oracle-mix: 234 s
+  [252/252] test_g06_2spk_ovl-high_market5 B-spectral: 319 s
+test_g00_2spk_ovl-none_clean: reference:0.00->0.05  oracle-clean:0.11->0.12  oracle-mix:0.11->0.12  B-spectral:0.24->0.25
+test_g00_2spk_ovl-none_village10: reference:0.00->0.00  oracle-clean:0.12->0.13  oracle-mix:0.28->0.30  B-spectral:0.15->0.15
+test_g00_2spk_ovl-none_market5: reference:0.00->0.02  oracle-clean:0.12->0.12  oracle-mix:0.46->0.47  B-spectral:0.49->0.51
+test_g00_2spk_ovl-low_clean: reference:0.00->0.02  oracle-clean:0.11->0.13  oracle-mix:0.15->0.16  B-spectral:0.29->0.31
+test_g00_2spk_ovl-low_village10: reference:0.00->0.03  oracle-clean:0.10->0.11  oracle-mix:0.18->0.18  B-spectral:0.27->0.27
+test_g00_2spk_ovl-low_market5: reference:0.00->0.01  oracle-clean:0.11->0.12  oracle-mix:0.31->0.31  B-spectral:0.46->0.47
+test_g00_2spk_ovl-high_clean: reference:0.00->0.00  oracle-clean:0.11->0.11  oracle-mix:0.18->0.20  B-spectral:0.27->0.27
+test_g00_2spk_ovl-high_village10: reference:0.00->0.03  oracle-clean:0.12->0.13  oracle-mix:0.24->0.26  B-spectral:0.38->0.38
+test_g00_2spk_ovl-high_market5: reference:0.00->0.02  oracle-clean:0.12->0.12  oracle-mix:0.25->0.25  B-spectral:0.22->0.24
+test_g01_3spk_ovl-none_clean: reference:0.00->0.01  oracle-clean:0.19->0.20  oracle-mix:0.19->0.20  B-spectral:0.41->0.42
+test_g01_3spk_ovl-none_village10: reference:0.00->0.01  oracle-clean:0.17->0.18  oracle-mix:0.20->0.20  B-spectral:0.32->0.34
+test_g01_3spk_ovl-none_market5: reference:0.00->0.04  oracle-clean:0.18->0.18  oracle-mix:0.19->0.19  B-spectral:0.43->0.43
+test_g01_3spk_ovl-low_clean: reference:0.00->0.02  oracle-clean:0.22->0.22  oracle-mix:0.23->0.23  B-spectral:0.36->0.37
+test_g01_3spk_ovl-low_village10: reference:0.00->0.00  oracle-clean:0.19->0.20  oracle-mix:0.27->0.29  B-spectral:0.39->0.39
+test_g01_3spk_ovl-low_market5: reference:0.00->0.01  oracle-clean:0.22->0.23  oracle-mix:0.29->0.29  B-spectral:0.41->0.42
+test_g01_3spk_ovl-high_clean: reference:0.00->0.02  oracle-clean:0.20->0.21  oracle-mix:0.27->0.27  B-spectral:0.37->0.39
+test_g01_3spk_ovl-high_village10: reference:0.00->0.01  oracle-clean:0.19->0.20  oracle-mix:0.27->0.27  B-spectral:0.37->0.39
+test_g01_3spk_ovl-high_market5: reference:0.00->0.02  oracle-clean:0.21->0.21  oracle-mix:0.39->0.39  B-spectral:0.43->0.43
+test_g02_2spk_ovl-none_clean: reference:0.00->0.03  oracle-clean:0.23->0.25  oracle-mix:0.23->0.25  B-spectral:0.33->0.35
+test_g02_2spk_ovl-none_village10: reference:0.00->0.03  oracle-clean:0.21->0.23  oracle-mix:0.29->0.30  B-spectral:0.34->0.35
+test_g02_2spk_ovl-none_market5: reference:0.00->0.03  oracle-clean:0.19->0.23  oracle-mix:0.45->0.45  B-spectral:0.44->0.44
+test_g02_2spk_ovl-low_clean: reference:0.00->0.03  oracle-clean:0.22->0.23  oracle-mix:0.23->0.25  B-spectral:0.31->0.32
+test_g02_2spk_ovl-low_village10: reference:0.00->0.03  oracle-clean:0.22->0.25  oracle-mix:0.49->0.49  B-spectral:0.40->0.41
+test_g02_2spk_ovl-low_market5: reference:0.00->0.02  oracle-clean:0.21->0.23  oracle-mix:0.53->0.54  B-spectral:0.54->0.56
+test_g02_2spk_ovl-high_clean: reference:0.00->0.03  oracle-clean:0.20->0.22  oracle-mix:0.29->0.30  B-spectral:0.34->0.35
+test_g02_2spk_ovl-high_village10: reference:0.00->0.03  oracle-clean:0.22->0.23  oracle-mix:0.54->0.54  B-spectral:0.50->0.50
+test_g02_2spk_ovl-high_market5: reference:0.00->0.01  oracle-clean:0.20->0.23  oracle-mix:0.47->0.48  B-spectral:0.49->0.49
+test_g03_3spk_ovl-none_clean: reference:0.00->0.00  oracle-clean:0.23->0.23  oracle-mix:0.23->0.23  B-spectral:0.51->0.53
+test_g03_3spk_ovl-none_village10: reference:0.00->0.02  oracle-clean:0.22->0.22  oracle-mix:0.30->0.31  B-spectral:0.40->0.41
+test_g03_3spk_ovl-none_market5: reference:0.00->0.01  oracle-clean:0.18->0.18  oracle-mix:0.29->0.29  B-spectral:0.42->0.42
+test_g03_3spk_ovl-low_clean: reference:0.00->0.02  oracle-clean:0.23->0.24  oracle-mix:0.23->0.24  B-spectral:0.40->0.41
+test_g03_3spk_ovl-low_village10: reference:0.00->0.04  oracle-clean:0.25->0.29  oracle-mix:0.35->0.38  B-spectral:0.48->0.48
+test_g03_3spk_ovl-low_market5: reference:0.00->0.01  oracle-clean:0.28->0.28  oracle-mix:0.45->0.45  B-spectral:0.62->0.64
+test_g03_3spk_ovl-high_clean: reference:0.00->0.01  oracle-clean:0.22->0.22  oracle-mix:0.26->0.26  B-spectral:0.34->0.35
+test_g03_3spk_ovl-high_village10: reference:0.00->0.03  oracle-clean:0.26->0.26  oracle-mix:0.50->0.53  B-spectral:0.53->0.55
+test_g03_3spk_ovl-high_market5: reference:0.00->0.03  oracle-clean:0.32->0.32  oracle-mix:0.46->0.46  B-spectral:0.59->0.59
+test_g04_2spk_ovl-none_clean: reference:0.00->0.00  oracle-clean:0.06->0.06  oracle-mix:0.06->0.06  B-spectral:0.86->0.86
+test_g04_2spk_ovl-none_village10: reference:0.00->0.01  oracle-clean:0.06->0.07  oracle-mix:0.08->0.09  B-spectral:0.96->0.96
+test_g04_2spk_ovl-none_market5: reference:0.00->0.02  oracle-clean:0.06->0.06  oracle-mix:0.08->0.10  B-spectral:0.75->0.75
+test_g04_2spk_ovl-low_clean: reference:0.00->0.01  oracle-clean:0.06->0.07  oracle-mix:0.12->0.13  B-spectral:0.69->0.70
+test_g04_2spk_ovl-low_village10: reference:0.00->0.00  oracle-clean:0.05->0.06  oracle-mix:0.16->0.16  B-spectral:0.85->0.85
+test_g04_2spk_ovl-low_market5: reference:0.00->0.02  oracle-clean:0.07->0.10  oracle-mix:0.24->0.24  B-spectral:0.99->1.00
+test_g04_2spk_ovl-high_clean: reference:0.00->0.05  oracle-clean:0.07->0.07  oracle-mix:0.14->0.14  B-spectral:0.73->0.73
+test_g04_2spk_ovl-high_village10: reference:0.00->0.00  oracle-clean:0.06->0.07  oracle-mix:0.30->0.31  B-spectral:0.79->0.79
+test_g04_2spk_ovl-high_market5: reference:0.00->0.01  oracle-clean:0.06->0.07  oracle-mix:0.29->0.29  B-spectral:0.77->0.78
+test_g05_3spk_ovl-none_clean: reference:0.00->0.02  oracle-clean:0.14->0.15  oracle-mix:0.14->0.15  B-spectral:0.32->0.34
+test_g05_3spk_ovl-none_village10: reference:0.00->0.01  oracle-clean:0.20->0.23  oracle-mix:0.23->0.24  B-spectral:0.51->0.53
+test_g05_3spk_ovl-none_market5: reference:0.00->0.02  oracle-clean:0.18->0.18  oracle-mix:0.28->0.28  B-spectral:0.62->0.63
+test_g05_3spk_ovl-low_clean: reference:0.00->0.01  oracle-clean:0.17->0.17  oracle-mix:0.26->0.27  B-spectral:0.47->0.49
+test_g05_3spk_ovl-low_village10: reference:0.00->0.02  oracle-clean:0.17->0.17  oracle-mix:0.23->0.24  B-spectral:0.50->0.51
+test_g05_3spk_ovl-low_market5: reference:0.00->0.02  oracle-clean:0.15->0.16  oracle-mix:0.21->0.21  B-spectral:0.32->0.34
+test_g05_3spk_ovl-high_clean: reference:0.00->0.02  oracle-clean:0.14->0.16  oracle-mix:0.36->0.38  B-spectral:0.80->0.80
+test_g05_3spk_ovl-high_village10: reference:0.00->0.01  oracle-clean:0.16->0.17  oracle-mix:0.38->0.38  B-spectral:1.03->1.03
+test_g05_3spk_ovl-high_market5: reference:0.00->0.01  oracle-clean:0.16->0.18  oracle-mix:0.46->0.46  B-spectral:0.51->0.52
+test_g06_2spk_ovl-none_clean: reference:0.00->0.03  oracle-clean:0.44->0.45  oracle-mix:0.44->0.45  B-spectral:0.55->0.57
+test_g06_2spk_ovl-none_village10: reference:0.00->0.02  oracle-clean:0.30->0.32  oracle-mix:0.44->0.46  B-spectral:0.59->0.60
+test_g06_2spk_ovl-none_market5: reference:0.00->0.04  oracle-clean:0.28->0.30  oracle-mix:0.52->0.54  B-spectral:0.79->0.80
+test_g06_2spk_ovl-low_clean: reference:0.00->0.02  oracle-clean:0.49->0.51  oracle-mix:0.51->0.52  B-spectral:0.58->0.59
+test_g06_2spk_ovl-low_village10: reference:0.00->0.02  oracle-clean:0.29->0.31  oracle-mix:0.66->0.67  B-spectral:0.62->0.62
+test_g06_2spk_ovl-low_market5: reference:0.00->0.02  oracle-clean:0.36->0.36  oracle-mix:0.60->0.60  B-spectral:0.61->0.62
+test_g06_2spk_ovl-high_clean: reference:0.00->0.02  oracle-clean:0.30->0.30  oracle-mix:0.40->0.40  B-spectral:0.64->0.64
+test_g06_2spk_ovl-high_village10: reference:0.00->0.03  oracle-clean:0.36->0.37  oracle-mix:0.62->0.64  B-spectral:0.75->0.76
+test_g06_2spk_ovl-high_market5: reference:0.00->0.01  oracle-clean:0.27->0.28  oracle-mix:0.74->0.75  B-spectral:0.82->0.83
+
+63 conversations  (/home/shrivathssp/Desktop/whospoke/results/eval_postprocess.csv)
+reference     cpWER   0.0% ->   1.9%  (Δ +1.9 pts [+1.6, +2.2])  keywords really said 99% [98%, 100%]  summary words really said 56%  keyword F1 1.00  summary F1 1.00  RTF 3.60
+oracle-clean  cpWER  18.0% ->  19.0%  (Δ +1.0 pts [+0.8, +1.3])  keywords really said 67% [60%, 74%]  summary words really said 44%  keyword F1 0.12  summary F1 0.21  RTF 2.54
+oracle-mix    cpWER  30.6% ->  31.3%  (Δ +0.8 pts [+0.6, +1.0])  keywords really said 64% [56%, 72%]  summary words really said 41%  keyword F1 0.12  summary F1 0.17  RTF 2.31
+B-spectral    cpWER  51.8% ->  52.7%  (Δ +0.9 pts [+0.7, +1.1])  keywords really said 64% [56%, 71%]  summary words really said 37%  keyword F1 0.11  summary F1 0.17  RTF 3.51

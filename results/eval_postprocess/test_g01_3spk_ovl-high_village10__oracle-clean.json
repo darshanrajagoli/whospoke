@@ -1,16 +1,18 @@
 {
  "title": "Hindi and Hinglish Conversations",
  "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes the evidence from a transcribed conversation between two speakers.",
+ "executive_summary": "This report summarizes a conversation between two people in Hindi about hair cuts and the market.",
  "key_points": [
   "Hindi and Hinglish Conversations"
  ],
  "keywords": [
-  "restaurant",
-  "vegetables",
-  "fruit",
-  "Market",
-  "Shop"
+  "नमस्ते",
+  "बोलो",
+  "शादी",
+  "market",
+  "cut",
+  "shop",
+  "best"
  ],
  "action_items": [],
  "speakers": [
@@ -80,7 +82,7 @@
    "end": 28.35,
    "text": "आप बता दें अगर आप शादी ले जाएँगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे त्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "hinglish": "aap bata den agar aap shadi le jaenge to teen sau rupye milenge aapko aur agar aap use trai karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain",
-   "translation": "You can get three hundred rupees if you marry and if you get him to do a vegetable and a fruit, then you will get four hundred rupees. Then, the vegetable is a pile of vegetables and you can see it. You can get a vegetable if you want to get a vegetable. You can get a fruit if you want to get a fruit. You can get a fruit if you want to get a fruit. You can get a fruit if you want to get a fruit. You can get a fruit if you want to get a fruit. You can get a fruit if you want to get a fruit. You can get a fruit if you want to get a fruit. You can get a fruit if you want to get a fruit. You can get a fruit if you want to get a fruit. You.",
+   "translation": "You can get three hundred rupees if you marry and if you get him to do a vegetable and a fruit, then you will get four hundred rupees. Then, you can get a lot of money if you want to get married and if you get him to do a vegetable and a fruit.",
    "source_text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेगी आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": true,
    "uncertain": true,
@@ -93,11 +95,11 @@
    "end": 28.59,
    "text": "हाँ",
    "hinglish": "haan",
-   "translation": "",
+   "translation": "Hello",
    "source_text": "हाँ",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 6,
@@ -106,11 +108,11 @@
    "end": 38.55,
    "text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है",
    "hinglish": "haan ji bolie mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V V seb hai aur yu seb bhi hai aapko kaun si karani hai",
-   "translation": "",
+   "translation": "Hello",
    "source_text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेब है और यू सेब भी है आपको कौन सी करानी है",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 7,
@@ -119,7 +121,7 @@
    "end": 39.88,
    "text": "हाँ जना हलो राम सगर चौरा",
    "hinglish": "haan jana hello raam sagar chaura",
-   "translation": "Yes, sir, Ram is a good man.",
+   "translation": "Yes, sir, Ram Chowar is the best place.",
    "source_text": "हाँ जना हलो राम सगर चौरा",
    "changed": false,
    "uncertain": false,
@@ -132,7 +134,7 @@
    "end": 44.99,
    "text": "तो आप सॉफ्ट पे एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है ना",
    "hinglish": "to aap soft pe ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai na",
-   "translation": "Then you come over and tell us what you think.",
+   "translation": "Then you come to us and tell us what you want.",
    "source_text": "तो आप सॉफ्ट पे एक बार आ जाएँ तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है ना",
    "changed": false,
    "uncertain": true,
@@ -145,7 +147,7 @@
    "end": 54.86,
    "text": "ओके ठीक है उसकी फ़ीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है",
    "hinglish": "okay theek hai uski fees bata deti hoon meri meri yu cutting ke liye jo aapko saam matlab face uske according katani hai ya phir samne se bhi hair kat katana hai",
-   "translation": "Okay, let's talk about my hair cut.",
+   "translation": "Okay, let's talk about my hair cut, which is the face cut and also the hair cut from the front.",
    "source_text": "ओके ठीक है उसकी फ़ीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है",
    "changed": false,
    "uncertain": true,
@@ -158,7 +160,7 @@
    "end": 61.68,
    "text": "हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज़्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज़",
    "hinglish": "haan ab market hai aapke yahan vaise to hamare yahan sabse zyada matlab hamare shop ka bole to sabse pasandida cheez",
-   "translation": "Yes, sir, the market is great here.",
+   "translation": "Yes, sir, the market is the best place.",
    "source_text": "हाँ अब मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज़्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज़",
    "changed": false,
    "uncertain": true,
@@ -178,9 +180,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 461.976,
-  "prompt_tokens": 1997,
-  "completion_tokens": 1080,
+  "llm_seconds": 171.059,
+  "prompt_tokens": 1864,
+  "completion_tokens": 980,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -190,10 +192,10 @@
   "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 6,
-  "missing_translations": 2,
+  "lines_flagged_by_llm": 4,
+  "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 4,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -202,8 +204,10 @@
   "source_sha256": "38cc7da88aabf4271d8a0bd70f91704cfb5700e4763dcb267f89a91e81f00e10",
   "source_line_count": 10,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T04:07:12Z",
+  "generated_at_utc": "2026-11-10T22:01:13Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 62.43
+  "source_audio_duration_s": 62.43,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,15 +1,18 @@
 {
  "title": "Hindi and Hinglish Conversation",
- "topic": "Government and Votes",
- "executive_summary": "The speaker is talking about the government and the actions they have taken.",
+ "topic": "Government, Voters, and Future",
+ "executive_summary": "A conversation in Hindi and Hinglish about government, voters, and the future.",
  "key_points": [
-  "Votes are to be cast, not on the printouts only."
+  "Votes are to be cast, not on the printouts, and it is now cast.",
+  "Chhat Puja and Diwali are celebrated in our country.",
+  "The government is finished, but what will come next?"
  ],
  "keywords": [
-  "vote",
-  "government",
-  "new items",
-  "gaps"
+  "हैलो",
+  "वोट",
+  "छत्त पूजा",
+  "दीपावली",
+  "सरकार"
  ],
  "action_items": [],
  "speakers": [
@@ -69,8 +72,8 @@
    "translation": "We are speaking from Bihar",
    "source_text": "हम बिहार से बोल रहे हैं",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 4,
@@ -82,8 +85,8 @@
    "translation": "In our country, we celebrate Chhat Puja and Diwali, and we say",
    "source_text": "हमारे देश में छत्त पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 5,
@@ -105,7 +108,7 @@
    "end": 25.781,
    "text": "वोट इस बार तो देना है न कोई छाप पर भी देना है अब तो वोट अथि हो गया तो",
    "hinglish": "vote is baar to dena hai na koi chhaap par bhi dena hai ab to vote athi ho gaya to",
-   "translation": "Votes are to be cast, not on the printouts only.",
+   "translation": "Votes are to be cast, not on the printouts, and it is now cast.",
    "source_text": "वोट इस बार तो देना है न कोई छाप पर भी देना है अब तो वोट अथि हो गया तो",
    "changed": false,
    "uncertain": true,
@@ -118,11 +121,11 @@
    "end": 26.904,
    "text": "छत्त पू",
    "hinglish": "chhatt pu",
-   "translation": "Who is the government?",
+   "translation": "",
    "source_text": "छत्त पू",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 8,
@@ -135,7 +138,7 @@
    "source_text": "यही बार तो सरकार कौन",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 9,
@@ -144,20 +147,20 @@
    "end": 37.189,
    "text": "वोट देना है भोट देना है अब देना है देखिए न वो ही छाप को छाप पर देना है वोट",
    "hinglish": "vote dena hai bhot dena hai ab dena hai dekhie na wo hi chhaap ko chhaap par dena hai vote",
-   "translation": "",
+   "translation": "Vote, please. Don't just look at the printout, vote.",
    "source_text": "वोट देना है भोट देना है अब देना है देखिए न वो ही छाप को छाप पर देना है वोट",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 10,
    "speaker": "S3",
    "start": 37.432,
    "end": 56.522,
-   "text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ नहीं दिया सरकार के खिलाफ नहीं दिया तो अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास करेगा हम लोग का इन्द्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारे हो उसी का व्होट दिया जाएगा",
-   "hinglish": "ab to vote khatm ho gaya ab vote aaega nahi to kuch nahi diya sarkar ke khilaph nahi diya to ab kiska dena hai jo usi ka vote dena hai je aage mein badhaega vikas karega hum log ka indravas ho bathroom ho sahara ho mane ye bhi cheej ke sahare ho usi ka vote diya jaega",
-   "translation": "The government has finished and will not bring in more, but will give to those who voted, and will increase the economy and make us more prosperous.",
+   "text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ नहीं दिया सरकार के खिलाफ नहीं दिया तो अब अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास करेगा हम लोग का इन्द्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारे हो उसी का व्होट दिया जाएगा",
+   "hinglish": "ab to vote khatm ho gaya ab vote aaega nahi to kuch nahi diya sarkar ke khilaph nahi diya to ab ab kiska dena hai jo usi ka vote dena hai je aage mein badhaega vikas karega hum log ka indravas ho bathroom ho sahara ho mane ye bhi cheej ke sahare ho usi ka vote diya jaega",
+   "translation": "Now, the government is finished, but what will come next? Who will give the vote?",
    "source_text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ न दिया सरकार के खिलाफ नहीं दिया तो अब अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इन्द्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारा हो उसी का व्होट दिया जाएगा",
    "changed": true,
    "uncertain": true,
@@ -170,7 +173,7 @@
    "end": 75.326,
    "text": "छत पूजन छत्त पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नए वस्त्र ख़रीद के लाते हैं वह पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं यह सब बनाते हैं पूजा करने के लिए",
    "hinglish": "chhat pujan chhatt puja mein hum log naya sab saman late hain jo vrat karte hain uske liye nae wastr kharid ke late hain woh pahante hain usmen aur thakua banate hain kasar banate hain yeh sab banate hain puja karne ke liye",
-   "translation": "In the temple of worship, we bring new items for those who fast, and we wear them, and make up for the gaps.",
+   "translation": "In the temple of worship, we bring new items for those who fast, such as new clothes and utensils.",
    "source_text": "छत्त पूजन छत्त पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नए वस्त्र ख़रीद के लाते हैं वह पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं यह सब बनाते हैं पूजा करने के लिए",
    "changed": true,
    "uncertain": true,
@@ -179,6 +182,8 @@
  ],
  "uncertain_lines": [
   1,
+  3,
+  4,
   6,
   7,
   8,
@@ -188,19 +193,19 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 40.79,
-  "prompt_tokens": 1813,
-  "completion_tokens": 915,
+  "llm_seconds": 162.978,
+  "prompt_tokens": 1773,
+  "completion_tokens": 944,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 2,
-  "lines_reverted": 4,
+  "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 6,
+  "lines_flagged_by_llm": 8,
   "missing_translations": 2,
   "unknown_line_ids": 0,
   "keywords_dropped": 2,
@@ -212,8 +217,10 @@
   "source_sha256": "e34771319e639049fe48dcf1bd41df2173a6ea3048bc11c472230ccd0bd89951",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:32:15Z",
+  "generated_at_utc": "2026-11-11T00:42:30Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 76.06
+  "source_audio_duration_s": 76.06,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

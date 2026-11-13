@@ -1,7 +1,7 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversation",
- "topic": "Lost ID Card",
- "executive_summary": "Two people will stay and work computers.",
+ "title": "Lost ID Card",
+ "topic": "Getting a saree",
+ "executive_summary": "Two people talk about getting a saree and staying and working computers.",
  "key_points": [
   "Didi",
   "saree",
@@ -88,11 +88,11 @@
    "speaker": "S2",
    "start": 24.75,
    "end": 32.62,
-   "text": "अरे हमको मतलब की लेंगे रोड पे शहर में होना चाहिए हमको शहर में हाँ ऑनलाइन चल जाएगा",
-   "hinglish": "are hamko matlab ki lenge road pe shahar mein hona chahiye hamko shahar mein haan online chal jaega",
-   "translation": "Hey, we're not going to understand if we go to the city, we'll go to the city and we'll go online",
+   "text": "अरे हमको मतलब की लेंगे रोड पे शहर में चाहिए हमको शहर में हाँ ऑनलाइन चल जाएगा",
+   "hinglish": "are hamko matlab ki lenge road pe shahar mein chahiye hamko shahar mein haan online chal jaega",
+   "translation": "Hey, we're not going to understand if we go to the city, we'll go to the city online",
    "source_text": "अरे हमको मतलब की लेंगे रोड पे शहर में चाहिए हमको शहर में हाँ ऑनलाइन चल जाएगा",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -188,15 +188,15 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 37.02,
-  "prompt_tokens": 1664,
+  "llm_seconds": 137.555,
+  "prompt_tokens": 1665,
   "completion_tokens": 793,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 4,
+  "lines_changed": 3,
   "lines_reverted": 1,
   "lines_restored": 0,
   "translations_too_long": 0,
@@ -212,8 +212,10 @@
   "source_sha256": "7a5a5efb6907affec053a1ee322c320c844905fe78663981a78cd9aec2b9cdf0",
   "source_line_count": 12,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:13:43Z",
+  "generated_at_utc": "2026-11-11T06:35:16Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 76.07
+  "source_audio_duration_s": 76.07,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

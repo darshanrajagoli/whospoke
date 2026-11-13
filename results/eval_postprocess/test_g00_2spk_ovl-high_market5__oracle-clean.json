@@ -1,20 +1,20 @@
 {
- "title": "Lost ID Card",
- "topic": "Furniture",
- "executive_summary": "The speaker is looking for a place to buy wood and saagwan wood.",
+ "title": "Furniture and Wood Search",
+ "topic": "Furniture and Wood Search",
+ "executive_summary": "A conversation between two people about finding a good quality bed and furniture. The speaker is looking for wood and saagwan wood at Mam's shop and will buy wood at a shop in Gasypur. They will also send their location to the speaker and will pay online for the furniture.",
  "key_points": [
-  "Furniture",
-  "Dining table",
-  "Mattress",
-  "Bed",
-  "Wood"
+  "Furniture and wood search",
+  "Mam's shop",
+  "Gasypur",
+  "Pay online",
+  "Send location"
  ],
  "keywords": [
   "Furniture",
-  "Dining table",
-  "Mattress",
-  "Bed",
-  "Wood"
+  "Wood",
+  "Mam's shop",
+  "Pay online",
+  "Send location"
  ],
  "action_items": [],
  "speakers": [
@@ -65,7 +65,7 @@
    "end": 21.38,
    "text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "hinglish": "haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka ma'am aapko kya kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
-   "translation": "Hello, sir, hello ma'am",
+   "translation": "Hello, sir, hello, sir",
    "source_text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "changed": false,
    "uncertain": true,
@@ -78,7 +78,7 @@
    "end": 27.14,
    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे अच्छा बंद हो गई है ना तो आपने उसका इंजन देखा",
    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise achha band ho gayi hai na to aapne uska engine dekha",
-   "translation": "Your car has a problem, is it fixed?",
+   "translation": "Your car has been in trouble, sir, like the engine is not working",
    "source_text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे अच्छा बंद हो गई है ना तो आपने उसका इंजन देखा",
    "changed": false,
    "uncertain": true,
@@ -91,7 +91,7 @@
    "end": 44.28,
    "text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगी आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस शाम की लकड़ी का मैम",
    "hinglish": "ma'am aapko achha hi saman milega aapko milega divan bed milega ek sofa milega daining table milegi aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us shaam ki lakdi ka ma'am",
-   "translation": "Madam will get you good furniture, a dining table, and maybe a mattress and bed, and then you will get wood for the furniture drying room.",
+   "translation": "Madam will provide you with good quality furniture, including a dining table and a mattress, and also a sofa",
    "source_text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस शाम की लकड़ी का मैम",
    "changed": true,
    "uncertain": true,
@@ -104,11 +104,11 @@
    "end": 53.73,
    "text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेसन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या अच्छा",
    "hinglish": "achha achha achha to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waik theek ho jaegi aap kisi yatra par ja rahe ho kya achha",
-   "translation": "You are going on a trip, is that good?",
+   "translation": "You can send your location to me, sir, and I will come there immediately",
    "source_text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेसन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या अच्छा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 7,
@@ -135,9 +135,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 567.161,
-  "prompt_tokens": 1794,
-  "completion_tokens": 1333,
+  "llm_seconds": 229.437,
+  "prompt_tokens": 1807,
+  "completion_tokens": 1428,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -150,7 +150,7 @@
   "lines_flagged_by_llm": 5,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 0,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -159,8 +159,10 @@
   "source_sha256": "e9a1fef85fe94b80cbb4168d8373d8c0444a827b312f982f802070c9a7939331",
   "source_line_count": 7,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T02:32:36Z",
+  "generated_at_utc": "2026-11-10T19:58:05Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 78.17
+  "source_audio_duration_s": 78.17,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,13 +1,13 @@
 {
  "title": "Hindi and Hinglish Conversation Report",
- "topic": "Planning a trip to the city on Leng Road",
- "executive_summary": "Speakers discuss plans to go to the city on Leng Road, with one speaker mentioning a saree and another mentioning computer work. They also mention a bus schedule and online availability.",
+ "topic": "Planning a house",
+ "executive_summary": "Speakers discuss plans to have two rooms, with Speaker_B wanting a saree and Speaker_C wanting a computer work-like work. They also mention bus schedules and the computer's work.",
  "key_points": [
-  "Planning a trip to the city on Leng Road"
+  "Planning a house"
  ],
  "keywords": [
   "प्लान",
-  "कंप्यूटर",
+  "अरे हमको मतलब कि लेंग रोड पर शहर में",
   "शहर में",
   "ऑनलाइन भी चल जाएगा"
  ],
@@ -79,7 +79,7 @@
    "end": 12.65,
    "text": "दो रूम चाहिए क्या चाहिएगा",
    "hinglish": "do room chahiye kya chahiega",
-   "translation": "Two rooms please, what do you want?",
+   "translation": "Two rooms please",
    "source_text": "दो रूम चाहिए क्या चाहिएगा",
    "changed": false,
    "uncertain": true,
@@ -170,7 +170,7 @@
    "end": 30.35,
    "text": "साड़ी लेना है",
    "hinglish": "sadi lena hai",
-   "translation": "Need to buy a saree.",
+   "translation": "Sarees are needed.",
    "source_text": "साड़ी लेना है",
    "changed": false,
    "uncertain": true,
@@ -235,7 +235,7 @@
    "end": 45.9,
    "text": "हाँ दो लोग रहेंगे और उसमें कंप्यूटर काम जैसा काम चल जाएंगे",
    "hinglish": "haan do log rahenge aur usmen computer kaam jaisa kaam chal jaenge",
-   "translation": "Yes, there will be two people and they will do computer work-like work.",
+   "translation": "Yes, two people will stay and do computer work-like work.",
    "source_text": "हाँ दो लोग रहेंगे और उसमें कंप्यूटर काम जैसा काम चल करेंगे",
    "changed": true,
    "uncertain": false,
@@ -313,7 +313,7 @@
    "end": 64.1,
    "text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस",
    "hinglish": "haan bas do log do log rahenge aur computer hamara kaam kaam hai bas",
-   "translation": "Two people will stay and the computer is our job only",
+   "translation": "Two people will stay and the computer is our job.",
    "source_text": "हाँ बस दो लोग दो लोग रहेंगे और कंप्यूटर हमारा काम काम है बस",
    "changed": false,
    "uncertain": true,
@@ -364,9 +364,9 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 71.272,
-  "prompt_tokens": 3044,
-  "completion_tokens": 1552,
+  "llm_seconds": 272.554,
+  "prompt_tokens": 3028,
+  "completion_tokens": 1493,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -388,8 +388,10 @@
   "source_sha256": "bd8d7ec0c96483b311698aa4a6e088bbb100505e765268dc0530483e2a046b16",
   "source_line_count": 25,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:21:34Z",
+  "generated_at_utc": "2026-11-11T07:05:35Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 69.21
+  "source_audio_duration_s": 69.21,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

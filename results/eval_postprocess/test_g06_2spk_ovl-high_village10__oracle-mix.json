@@ -1,20 +1,16 @@
 {
  "title": "Hindi and Hinglish Conversation",
- "topic": "Rooms, Saris, and Money",
- "executive_summary": "A conversation about rooms, saris, and money.",
+ "topic": "Rooms, System, and Saree",
+ "executive_summary": "A conversation about rooms, the system, and the saree.",
  "key_points": [
   "Rooms",
-  "Saris",
-  "Money",
-  "Yes",
-  "Two people will stay and what is"
+  "System",
+  "Saree"
  ],
  "keywords": [
   "Rooms",
-  "Money",
-  "Yes",
-  "Two people",
-  "Stay"
+  "System",
+  "Saree"
  ],
  "action_items": [],
  "speakers": [
@@ -39,11 +35,11 @@
    "end": 15.55,
    "text": "मैं दो रूम चाहिए था टेम्प्यूटर का हमारा दीदी और",
    "hinglish": "main do room chahiye tha tempyutar ka hamara didi aur",
-   "translation": "I wanted two rooms, Tempuator's didi and all, and said 'Ok, tell me the name of the sari',",
+   "translation": "I wanted two rooms, Tempuator's didi and everything else is fine.",
    "source_text": "मैं दो रूम चाहिए था टेम्प्यूटर का हमारा दीदी और",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
   },
   {
    "line_id": 2,
@@ -52,11 +48,11 @@
    "end": 21.84,
    "text": "प्रणाली दीदी और सब तो ठीक है अपना बताइए आप कहिएगा साड़ी के नाम है हाँ साड़ी पूनम",
    "hinglish": "pranali didi aur sab to theek hai apna bataie aap kahiega sadi ke naam hai haan sadi punam",
-   "translation": "The system said 'Ok, tell me the name of the sari',",
+   "translation": "The system didi and everything else is fine, say you, name the saree yes saree",
    "source_text": "प्रणाम दीदी और सब तो ठीक है अपना बताइए आप कहिएगा साड़ी के नाम है हाँ साड़ी पूनम",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 3,
@@ -65,11 +61,11 @@
    "end": 18.68,
    "text": "सारी जना है",
    "hinglish": "sari jana hai",
-   "translation": "There is a lot of money,",
+   "translation": "Everyone is here",
    "source_text": "सारी जना है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 5,
@@ -78,11 +74,11 @@
    "end": 26.71,
    "text": "हाँ",
    "hinglish": "haan",
-   "translation": "Yes,",
+   "translation": "Yes",
    "source_text": "हाँ हाँ",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -91,11 +87,11 @@
    "end": 28.91,
    "text": "हाँ ऑन निकल देगा",
    "hinglish": "haan on nikal dega",
-   "translation": "Yes, on the nail it will go,",
+   "translation": "Yes, on the nail it will go",
    "source_text": "हाँ ऑन निकल देगा",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 7,
@@ -104,11 +100,11 @@
    "end": 33.55,
    "text": "अच्छा हाँ अरे नया फैशन में तो निकला है",
    "hinglish": "achha haan are naya fashion mein to nikla hai",
-   "translation": "Yes,",
+   "translation": "Yes",
    "source_text": "अच्छा हाँ अरे नया फैशन में तो निकला है",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 9,
@@ -133,8 +129,8 @@
    "translation": "Yes, two people will stay and what is",
    "source_text": "हाँ दो लोग रहेंगे हम लोग हाँ दो लोग रहेंगे और जो है",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 11,
@@ -152,18 +148,15 @@
  ],
  "uncertain_lines": [
   1,
-  2,
-  3,
-  5,
-  6,
   7,
+  10,
   11
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 31.649,
-  "prompt_tokens": 1565,
-  "completion_tokens": 677,
+  "llm_seconds": 185.895,
+  "prompt_tokens": 1555,
+  "completion_tokens": 647,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -173,10 +166,10 @@
   "lines_reverted": 3,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 7,
+  "lines_flagged_by_llm": 2,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 3,
   "schema_enforced": true
@@ -185,8 +178,10 @@
   "source_sha256": "2d4389e61ee116cbeb00c2081c64b10f46c9eea9969cb6526f1db861b92a7871",
   "source_line_count": 12,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:35:05Z",
+  "generated_at_utc": "2026-11-11T08:05:52Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 73.04
+  "source_audio_duration_s": 73.04,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

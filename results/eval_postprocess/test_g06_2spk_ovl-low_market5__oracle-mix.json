@@ -1,17 +1,21 @@
 {
  "title": "Lost ID Card",
  "topic": "Lost ID Card",
- "executive_summary": "Two people discuss the topic of lost ID cards and the need to find them.",
+ "executive_summary": "Ram and S1 discuss the need to buy a saree and paint the red color in red.",
  "key_points": [
-  "The speaker mentions that they have lost their ID card and need to find it."
+  "All is fine",
+  "Tell me where you want to go",
+  "Buy a saree",
+  "No, no, I will not consider it",
+  "Yes, yes, good"
  ],
  "keywords": [
   "all",
   "everything",
+  "fine",
+  "tell",
   "red",
-  "paint",
-  "color",
-  "red color"
+  "painted"
  ],
  "action_items": [],
  "speakers": [
@@ -36,11 +40,11 @@
    "end": 11.38,
    "text": "राम सभी और सब तो ठीक है अपना बताइए कहाँ चाहिएगा",
    "hinglish": "raam sabhi aur sab to theek hai apna bataie kahan chahiega",
-   "translation": "Ram all and everything is fine, tell me where you will go",
+   "translation": "Ram says all and everything is fine, tell me where you want to go",
    "source_text": "राम सभी और सब तो ठीक है अपना बताइए कहाँ चाहिएगा",
    "changed": false,
-   "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 3,
@@ -49,11 +53,11 @@
    "end": 26.24,
    "text": "अरे हमको मतलब सारे चाहिए हमको",
    "hinglish": "are hamko matlab sare chahiye hamko",
-   "translation": "Hey, don't mean all and everything, we won't",
+   "translation": "Are you saying we should do everything?",
    "source_text": "अरे हमको मतलब सारे चाहिए हमको",
    "changed": false,
-   "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 4,
@@ -62,11 +66,11 @@
    "end": 31.1,
    "text": "साड़ी लेना है हाँ साड़ी चाहिएगा पूनम साड़ी",
    "hinglish": "sadi lena hai haan sadi chahiega punam sadi",
-   "translation": "Sari is to be taken, yes sari is to be taken, Punam sari",
+   "translation": "Buy a saree, yes, no, I will not consider it",
    "source_text": "साड़ी लेना है हाँ साड़ी चाहिएगा पूनम साड़ी",
    "changed": false,
-   "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 5,
@@ -75,11 +79,11 @@
    "end": 32.95,
    "text": "हाँ ना विचार देगा",
    "hinglish": "haan na vichar dega",
-   "translation": "Yes no, I won't think about it",
+   "translation": "Yes, no, I will not consider it",
    "source_text": "हाँ ना विचार देगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 6,
@@ -88,11 +92,11 @@
    "end": 35.77,
    "text": "और हाँ हाँ अच्छा",
    "hinglish": "aur haan haan achha",
-   "translation": "And yes yes, good",
+   "translation": "And yes, yes, good",
    "source_text": "और हाँ हाँ अच्छा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 7,
@@ -101,11 +105,11 @@
    "end": 43.99,
    "text": "मेल उड़ते हम्म हम्म हम",
    "hinglish": "mail udte hamm hamm hum",
-   "translation": "Mel fly away, we will fly away, we will",
+   "translation": "Flying mail, we will",
    "source_text": "मेल उड़ते हम्म हम्म हम",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 8,
@@ -127,11 +131,11 @@
    "end": 54.45,
    "text": "हाँ दो लोग रहेंगे और रेड कलर को",
    "hinglish": "haan do log rahenge aur red colour ko",
-   "translation": "Two people will stay and paint the red color in red.",
+   "translation": "Two people will stay and the red color should be painted in red.",
    "source_text": "हाँ दो लोग रहेंगे और रेड कलर को",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 10,
@@ -140,17 +144,14 @@
    "end": 59.48,
    "text": "रेड कलर को रेड कलर का चाहिएगा हाँ हाँ शादी है ननद का",
    "hinglish": "red colour ko red colour ka chahiega haan haan shadi hai nanad ka",
-   "translation": "The red color should be painted in red.",
+   "translation": "The red color should be red.",
    "source_text": "रेड कलर को रेड कलर का चाहिएगा हाँ हाँ शादी है ननद का",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
-  2,
-  3,
-  4,
   5,
   6,
   7,
@@ -159,22 +160,22 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 37.033,
-  "prompt_tokens": 1600,
-  "completion_tokens": 804,
+  "llm_seconds": 135.898,
+  "prompt_tokens": 1596,
+  "completion_tokens": 753,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 0,
-  "lines_reverted": 8,
+  "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 5,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 7,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 2,
   "schema_enforced": true
@@ -183,8 +184,10 @@
   "source_sha256": "14a32f35eaef6f8f4c4df2f9cae8392f90d84df1b83e7900135146d52a48b21f",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:28:10Z",
+  "generated_at_utc": "2026-11-11T07:32:10Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 80.6
+  "source_audio_duration_s": 80.6,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

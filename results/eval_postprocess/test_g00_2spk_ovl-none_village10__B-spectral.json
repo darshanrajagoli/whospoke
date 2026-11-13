@@ -1,21 +1,18 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversation",
+ "title": "Hindi and Hinglish Conversation Transcript",
  "topic": "Car Engine Availability",
  "executive_summary": "Speaker A and Speaker B discuss the availability of a car engine.",
  "key_points": [
-  "Car engine availability",
-  "Location of wife",
-  "Furniture",
-  "Mattress",
-  "Dining table"
+  "Car engine availability"
  ],
  "keywords": [
-  "Hello",
-  "Namaste ma'am",
-  "Good good kaha pay",
-  "Your car has a problem like",
-  "The engine is gone",
-  "Someone is going on a trip, what is the"
+  "यार बोलिए",
+  "आपकी कार में क्या खराबी हो गई है जैसे",
+  "हाँ मैम",
+  "car",
+  "engine",
+  "location",
+  "wife"
  ],
  "action_items": [],
  "speakers": [
@@ -144,7 +141,7 @@
    "end": 28.85,
    "text": "मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएंगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "hinglish": "mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka ma'am aapko kya kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
-   "translation": "Will get you what you want, ma'am, in what price? Tell us what price you want, ma'am?",
+   "translation": "Will get you what you want, ma'am, in what price? Tell us what price you want, ma'am. We will get you that price.",
    "source_text": "मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएंगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "changed": false,
    "uncertain": true,
@@ -157,7 +154,7 @@
    "end": 32.8,
    "text": "बंद हो गई है ना तो आपने उसका इंजन देखा",
    "hinglish": "band ho gayi hai na to aapne uska engine dekha",
-   "translation": "The engine is gone, ma'am?",
+   "translation": "The engine is gone, ma'am.",
    "source_text": "बंद हो गई है ना तो आपने उसका इंजन देखा",
    "changed": false,
    "uncertain": true,
@@ -183,7 +180,7 @@
    "end": 35.7,
    "text": "तो आप ऐसा करिए",
    "hinglish": "to aap aisa karie",
-   "translation": "So you do it",
+   "translation": "So you do it.",
    "source_text": "तो आप ऐसा करिए",
    "changed": false,
    "uncertain": true,
@@ -209,7 +206,7 @@
    "end": 42.6,
    "text": "किसी यात्रा पे जा रहे हो क्या",
    "hinglish": "kisi yatra pe ja rahe ho kya",
-   "translation": "Someone is going on a trip, what is the purpose of it?",
+   "translation": "Someone is going on a trip.",
    "source_text": "किसी यात्रा पे जा रहे हो क्या",
    "changed": false,
    "uncertain": true,
@@ -222,7 +219,7 @@
    "end": 45.15,
    "text": "मैम आपको अच्छा ही सामान मिलेगा",
    "hinglish": "ma'am aapko achha hi saman milega",
-   "translation": "Mama will get you good stuff.",
+   "translation": "Mam will get you good stuff.",
    "source_text": "मैम आपको अच्छा ही सामान मिलेगा",
    "changed": false,
    "uncertain": true,
@@ -252,7 +249,7 @@
    "source_text": "सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो आम की लकड़ी का मैम मैम यहाँ पे हर एक चीज अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज अच्छा मिलता है हम लोग के यहाँ पे वर्कर है अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज अवेलेबल मिल जाएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
   }
  ],
  "uncertain_lines": [
@@ -271,9 +268,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 605.144,
-  "prompt_tokens": 2674,
-  "completion_tokens": 1438,
+  "llm_seconds": 242.114,
+  "prompt_tokens": 2696,
+  "completion_tokens": 1386,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -286,7 +283,7 @@
   "lines_flagged_by_llm": 7,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 10,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -295,8 +292,10 @@
   "source_sha256": "962048a21e9ab7e2a6b4ec13f2e4f3670014978e11b9514256169ae2ebf7fef1",
   "source_line_count": 17,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:29:25Z",
+  "generated_at_utc": "2026-11-10T18:38:16Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 78.51
+  "source_audio_duration_s": 78.51,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

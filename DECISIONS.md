@@ -416,7 +416,98 @@ saved as safetensors under the data folder. Community safetensors uploads are no
 off the GPU and off the pipeline's critical path costs the live passes about half a second. In a rehearsal take,
 9 of 15 lines had English before Stop and all 16 by the end of the final pass.
 
-## D36 · The interrupter's separated voice (the second output) is not used: it lost on dev
+## D36 · Stage-4 reports are cached by transcript and prompt revision
+**Decided:** 2026-11-10
+**Context:** `scripts/eval_postprocess.py` reuses the report of an identical transcript (Stage 4 is deterministic at
+temperature 0). The cache was keyed on the transcript alone, so after an edit to a prompt or a schema the old
+reports would still have been reused and scored as if they came from the new prompts.
+**Choice:** `llm_postprocess.prompt_schema_revision()` hashes everything in the module that changes the model's output
+without changing the transcript: the four prompts, every JSON schema, `MAX_LINES_PER_CHUNK`, `MAX_EDIT_RATIO`,
+`UNSPECIFIED` and `VALIDATOR_RULES_VERSION` (D38). The 12-character id (`PROMPT_SCHEMA_REVISION`) is written into
+every report's provenance and its Markdown, and into the run summary. The evaluator keys its cache on it, so an edit
+to a prompt or schema makes the cached reports stale and they are made again. A report written before the id existed
+is accepted as it is, so this change alone does not regenerate anything.
+**Why:** an evaluation must score reports made by the code it describes. Tests:
+`test_prompt_schema_revision_is_stable_and_recorded`, `test_revision_changes_when_output_affecting_config_changes`,
+`test_revision_matches_gates_cache_reuse`.
+
+## D37 · Action items: checked on group 7, prompts left as they are
+**Decided:** 2026-11-10
+**Context:** no action item survives in any of the 252 evaluation reports (audit finding F2). Either the model proposes
+none, or the checks drop them. This was tested with the real Airavata server on three group-7 conversations only
+(D32), recording what the model proposes before the checks.
+**Finding:** with the current prompts the model proposes no action items on any of the three, so the checks drop
+nothing: they are not the cause. With stronger wording the model does propose items, but bad ones: an owner that is not
+a speaker (`"Madam"`) and a question that the word-overlap check accepts (`"Motorcade is moving, what is it?"`).
+**Choice:** no prompt change. A test now pins the prompts to "explicit requests, instructions or promises only", so a
+later edit cannot quietly widen what counts as an action.
+**Why:** an empty action list is honest; a full one made of questions and suggestions is not. The limit is the 7B
+model's precision, not the prompt or the checks. Evidence: `results/stage4_probe/actions_g07/` (`findings.json`, the
+two probe scripts and their logs).
+
+## D38 · The cache also checks model and context; questions and suggestions are not action items
+**Decided:** 2026-11-10
+**Context:** D36 covers the prompts, but the model and its context length also change a report. The group-7 probe
+(D37) also showed the action check accepting a question.
+**Choice:**
+- *Cache.* The evaluator's key is (transcript, `PROMPT_SCHEMA_REVISION`, model, context, input), and
+  `cache_compatible()` gates every reuse. Each report records `context_tokens`. A report from before these fields
+  existed is reused only for the default model and the default context (4,096), the only setting it can have been
+  made with. The model is identified by its name (`--llm-model`); the server does not expose the file's hash, so a
+  different file under the same name needs `--force`.
+- *Action items.* `_actions` now also drops information questions ("…, what is it?"), suggestions and hypotheticals
+  ("Maybe…", "We should…") and first-person wishes ("I want…"). It keeps instructions ("Bring…"), promises
+  ("… will …"), items with an unspecified owner, and polite requests ("Will you…?"). This raised
+  `VALIDATOR_RULES_VERSION` to 2; the current revision is `b03fa93a833a`. Known gap: a request phrased as a need
+  ("I need you to bring the file") is dropped too. Fixing it would change the revision and remake all 252 reports,
+  and the model proposes almost no action items anyway (D37), so it is left as it is.
+**Why:** cached reports are reused only when nothing that changes their content has changed. An action list should
+hold only things someone was asked or promised to do. Tests: `test_cache_compatible_*`,
+`test_actions_reject_information_questions_suggestions_and_wishes`,
+`test_actions_keep_explicit_requests_commitments_and_polite_questions`.
+
+## D39 · All 252 Stage-4 reports made again, on one machine, with the current code
+**Decided:** 2026-11-11
+**Context:** the scored reports were made in October, before D36–D38, and on two machines (groups 0–1 on a cloud CPU,
+groups 2–6 on the laptop GPU; D33).
+**What ran:** `python scripts/eval_postprocess.py --force` (run `2026-11-10_s4eval_r1`): 63 conversations × 4 inputs =
+252 reports, groups 0–6 (group 7 excluded, D32), revision `b03fa93a833a`. The model was Airavata Q4_K_M on llama.cpp,
+on a Linux PC, CPU only (`--gpu-layers 0 --ctx 4096 --threads 8 --parallel 1`), at temperature 0, one report at a
+time. It took 14.4 hours (51,837 s), and the server's peak memory was 5.0 GB. The run started on 10 November and ended on
+11 November, so the reports carry both dates. All 252 record the revision and context. Re-scoring them with the code in
+this repository reproduces `results/eval_postprocess.csv` exactly, and a new evaluation run would remake none of them. The
+earlier reports, their CSV and their three run summaries are in git at commit `df497d8`.
+**Result:** the conclusions are unchanged. cpWER after the repair moved by at most 0.1 points; the report measures
+moved by a few points (keywords really said, full pipeline: 60 → 64 %; summary words really said, true transcript:
+50 → 56 %).
+- cpWER after the repair: true transcript 0.0 → 1.9 %, clean voices 18.0 → 19.0 %, noisy mixture 30.6 → 31.3 %,
+  full pipeline 51.8 → 52.7 %. The repair still adds errors on every input.
+- Still no action items. The model proposed 4, all on the full pipeline, and all were dropped.
+- The run's timing summary is `results/eval_postprocess_summary_g00_…_g06_linux-cpu.json`, and the run's command,
+  configuration and log are in `results/stage4_probe/2026-11-10_s4eval_r1/`.
+**Why:** all scored reports now come from one machine, one build and the code in the repository. So the CPU-vs-GPU
+caveat of D33 (and `results/crosscheck_g00_gpu/`, which compares the October reports) no longer applies to them.
+
+## D40 · Other Indian languages run, but only Hindi is evaluated
+**Decided:** 2026-11-12
+**Context:** D4 keeps the project to Hindi and English. IndicConformer and IndicVoices cover 22 Indian languages, and
+the live demo is also run in Kannada.
+**Choice:** `src/whospoke/languages.py` lists the 22 languages: each one's IndicConformer code, IndicVoices folder,
+script and Latin name, and its IndicWav2Vec model where AI4Bharat publishes one (Hindi, Bengali, Gujarati, Odia).
+`--language` (the CLI, `Pipeline`, `make_asr`, `PostProcessor`, `scripts/eval_asr.py`, `scripts/build_dataset.py`)
+picks one; Hindi stays the default. `romanise` detects the script and writes any Indic script in Latin letters
+(Kannada `ನಾಳೆ ಮೀಟಿಂಗ್ ಇದೆ` → `naale meeting ide`); the lexicon of English words exists for Hindi only. For Hindi
+nothing changes: the romanised test transcripts, the Stage-4 prompts and their revision (`b03fa93a833a`) are
+identical, re-scoring the 252 Stage-4 reports gives the same CSV, and `eval_asr.py` runs for Hindi as before (the
+romaniser's English-spelling accuracy is still 82.0 %).
+**Not evaluated:** D4 stands. There is no WER, DER or report score for any other language, and Stage 4 uses
+Airavata, a Hindi model: it runs on another language but nobody has checked the result, and the CLI warns. The
+IndicWav2Vec models for Bengali, Gujarati and Odia are gated on Hugging Face (accept their terms first); Tamil and
+Telugu have none, so `--asr indicwav2vec` refuses them.
+**Why:** it changes nothing for Hindi and lets Stages 1–3 (and the demo's Kannada lines) work on other languages.
+Saying more than "it runs" would need test sets in those languages.
+
+## D41 · The interrupter's separated voice (the second output) is not used: it lost on dev
 **Decided:** 2026-11-12
 **Evidence that motivated it:** with the true timeline, splicing separated overlaps lowers dev cpWER by 3.5 points
 (35.0 → 31.4 %); with our Order-B diarization by nothing (46.4 → 46.4 %). The tuned Order-B diarizer has
@@ -467,7 +558,7 @@ when there is one, so the ASR hears whole words; and a better overlap detector, 
 of candidates are false detections. The bigger lever remains the diarization itself (RESULTS.md, "What limits the system", item 1:
 the speaker count).
 
-## D37 · Extension to music: a voice + mridangam duo, where separating first wins
+## D42 · Extension to music: a voice + mridangam duo, where separating first wins
 **Decided:** 2026-11-13
 **Why:** the professor asked for the pipeline to be extended to music datasets. As for speech, only material that lets
 us build mixtures with an exact answer key can be scored, so the extension uses two *solo* datasets from our music list

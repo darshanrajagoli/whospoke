@@ -1,17 +1,15 @@
 {
- "title": "Car Deal Negotiations",
- "topic": "Car deal negotiations",
- "executive_summary": "A conversation between two people about a car. The person is looking for a good deal on furniture.",
+ "title": "Lost ID Card",
+ "topic": "Lost ID Card",
+ "executive_summary": "The speaker is offering to provide furniture to the listener.",
  "key_points": [
-  "Car deal negotiations"
+  "The speaker is offering to provide furniture to the listener.",
+  "The speaker is asking the listener to send their location to them."
  ],
  "keywords": [
-  "car",
-  "budget",
-  "Yash Yash",
-  "good deal",
   "furniture",
-  "deal"
+  "listener",
+  "provide"
  ],
  "action_items": [],
  "speakers": [
@@ -101,7 +99,7 @@
    "end": 28.73,
    "text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "hinglish": "haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka ma'am aapko kya kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
-   "translation": "What is your budget like",
+   "translation": "What budget do you need for you? What price do you want?",
    "source_text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "changed": false,
    "uncertain": true,
@@ -114,11 +112,11 @@
    "end": 42.63,
    "text": "बंद हो गई है ना तो आपने उसका इंजन देखा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेसन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या",
    "hinglish": "band ho gayi hai na to aapne uska engine dekha achha achha to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waik theek ho jaegi aap kisi yatra par ja rahe ho kya",
-   "translation": "The person is not able to hear the speaker because the speaker is not speaking clearly.",
+   "translation": "The speaker is asking the listener to send their location to them.",
    "source_text": "बंद हो गई है ना तो आपने उसका इंजन देखा अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेसन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 8,
@@ -127,11 +125,11 @@
    "end": 77.75,
    "text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
    "hinglish": "ma'am aapko achha hi saman milega aapko milega divan bed milega ek sofa milega daining table milega aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
-   "translation": "The person is looking for a good deal on furniture.",
+   "translation": "The speaker is offering to provide furniture to the listener.",
    "source_text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
   }
  ],
  "uncertain_lines": [
@@ -139,14 +137,13 @@
   2,
   3,
   6,
-  7,
   8
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 341.563,
-  "prompt_tokens": 1701,
-  "completion_tokens": 788,
+  "llm_seconds": 143.96,
+  "prompt_tokens": 1704,
+  "completion_tokens": 820,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -156,10 +153,10 @@
   "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 4,
+  "lines_flagged_by_llm": 2,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -168,8 +165,10 @@
   "source_sha256": "9f8f41ddfb2fc98b3c80c63fb837034d65dbb2467eb843c86e71e408aa069cc3",
   "source_line_count": 8,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:18:35Z",
+  "generated_at_utc": "2026-11-10T18:31:26Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 78.51
+  "source_audio_duration_s": 78.51,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

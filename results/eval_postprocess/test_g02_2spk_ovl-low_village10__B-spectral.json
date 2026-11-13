@@ -1,19 +1,17 @@
 {
- "title": "Hindi-Hinglish Conversation Report",
- "topic": "Hissab deal, Examination Board, photocopying, errors, copy, Lani, camera, CC TV,",
- "executive_summary": "Speaker A introduces himself and his paper, Speaker B says where Lani should be, Speaker A says yes, Speaker B says the office is open until what time, Speaker A says money and documents were also involved, Speaker B says good after the previous line.",
+ "title": "Hindi and Hinglish Conversation Report",
+ "topic": "Hissab deal and office hours in a school",
+ "executive_summary": "Speaker A introduces himself and his paper, and Speaker B discusses office hours, camera check, and document. No explicit requests or promises were made.",
  "key_points": [
   "Hissab deal",
-  "Examination Board",
-  "photocopying",
-  "errors",
-  "copy"
+  "office hours",
+  "camera check",
+  "document"
  ],
  "keywords": [
   "Hissab deal",
-  "Examination Board",
-  "photocopying",
-  "errors"
+  "camera check",
+  "document"
  ],
  "action_items": [],
  "speakers": [
@@ -132,8 +130,8 @@
    "translation": "They want an ID card from the Examination Board.",
    "source_text": "वो मेरा आई डी कार्ड घुम हो गया है सर पाँच सर वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 9,
@@ -145,8 +143,8 @@
    "translation": "They want to know about the photocopying of the base card.",
    "source_text": "आधार कार्ड की फोटोकॉपी और कैसे लगा",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 10,
@@ -185,7 +183,7 @@
    "source_text": "हाँ मेरा था उपिट मेरा थाता जी",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 13,
@@ -194,7 +192,7 @@
    "end": 43.9,
    "text": "ठीक है कहाँ लानी पड़ेगी",
    "hinglish": "theek hai kahan lani padegi",
-   "translation": "Speaker_B says where Lani should be.",
+   "translation": "It's okay, where should we go?",
    "source_text": "ठीक है कहाँ लानी पड़ेगी",
    "changed": false,
    "uncertain": false,
@@ -207,7 +205,7 @@
    "end": 44.75,
    "text": "हाँ",
    "hinglish": "haan",
-   "translation": "Speaker_A says yes.",
+   "translation": "Yes",
    "source_text": "हाँ",
    "changed": false,
    "uncertain": false,
@@ -220,7 +218,7 @@
    "end": 48.5,
    "text": "अपने कैमरे सीसी टीवी कैमरे चेक करवा लीजिए",
    "hinglish": "apne camera sisi tivi camera check karva lijie",
-   "translation": "Speaker_A says to get a camera check from their cameras.",
+   "translation": "Get your camera checked for CC TV camera",
    "source_text": "अपने कैमरे सीसी टीवी कैमरे चेक करवा लीजिए",
    "changed": false,
    "uncertain": false,
@@ -233,7 +231,7 @@
    "end": 57.6,
    "text": "ऑफिस तो ऑफिस अब कब तक कितने बजे तक ऑफिस खुला है सर अपना आईटी का दो सामान लोगा तो हमें सबसे पहले किसके पास जाना पड़ेगा कौन बनाएगा",
    "hinglish": "office to office ab kab tak kitne baje tak office khula hai sir apna aaiti ka do saman loga to hamen sabse pahle kiske paas jana padega kaun banaega",
-   "translation": "Speaker_B says the office is open until what time, and who will be the first to get the IT equipment.",
+   "translation": "Office is open until what time? Who will we have to go to first?",
    "source_text": "ऑफिस तो ऑफिस अब कब तक कितने बजे तक ऑफिस खुला है सर अपना आईटी का दो सामान लोगा तो हमें सबसे पहले किसके पास जाना पड़ेगा कौन बनाएगा",
    "changed": false,
    "uncertain": true,
@@ -246,11 +244,11 @@
    "end": 58.7,
    "text": "अच्छा उसके बाद",
    "hinglish": "achha uske baad",
-   "translation": "Speaker_B says good after the previous line.",
+   "translation": "Good after that",
    "source_text": "अच्छा उसके बाद",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 18,
@@ -259,7 +257,7 @@
    "end": 62.35,
    "text": "हाँ पैसा भी था डकुमेंट भी था",
    "hinglish": "haan paisa bhi tha dakument bhi tha",
-   "translation": "Speaker_A says money and documents were also involved.",
+   "translation": "There was money and also a document",
    "source_text": "हाँ पैसा भी था डकुमेंट भी था",
    "changed": false,
    "uncertain": true,
@@ -268,19 +266,18 @@
  ],
  "uncertain_lines": [
   6,
-  8,
-  9,
   10,
   11,
   12,
   16,
+  17,
   18
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 57.783,
-  "prompt_tokens": 2524,
-  "completion_tokens": 1308,
+  "llm_seconds": 209.019,
+  "prompt_tokens": 2476,
+  "completion_tokens": 1213,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -290,7 +287,7 @@
   "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 8,
+  "lines_flagged_by_llm": 7,
   "missing_translations": 2,
   "unknown_line_ids": 0,
   "keywords_dropped": 1,
@@ -302,8 +299,10 @@
   "source_sha256": "dff414dc8e0f1b0be49983d5afd8edda56908cf85fecd181293d3d13c4b0d1e2",
   "source_line_count": 18,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:13:45Z",
+  "generated_at_utc": "2026-11-10T23:30:39Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 62.94
+  "source_audio_duration_s": 62.94,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

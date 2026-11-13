@@ -9,8 +9,6 @@
   "हैलो",
   "बोलो",
   "Yes",
-  "जी बोलिए",
-  "इस्टेप ऑफ होती हैं और फैज़ल होती है वी व",
   "Two days will be enough"
  ],
  "action_items": [],
@@ -146,7 +144,7 @@
    "end": 13.023,
    "text": "हाँ आ जाना",
    "hinglish": "haan aa jana",
-   "translation": "Yes, please.",
+   "translation": "Yes, go ahead.",
    "source_text": "हाँ आ जाना",
    "changed": false,
    "uncertain": false,
@@ -211,7 +209,7 @@
    "end": 35.796,
    "text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है",
    "hinglish": "mere parlour mein mein three istep hote hain four istep off hoti hain aur phaizal hoti hai V V shebh hai aur yu shape bhi hai",
-   "translation": "There are three steps in my parlor and there is a shovel and a spoon.",
+   "translation": "There are three steps in my parlor and there is a shovel and a spoon and you also have a shovel.",
    "source_text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है",
    "changed": false,
    "uncertain": true,
@@ -237,7 +235,7 @@
    "end": 39.479,
    "text": "हाँ दिखा देंगे",
    "hinglish": "haan dikha denge",
-   "translation": "Yes, I will show.",
+   "translation": "Yes, I will show you.",
    "source_text": "हाँ दिखा देंगे",
    "changed": false,
    "uncertain": true,
@@ -250,11 +248,11 @@
    "end": 48.197,
    "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheej ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain",
-   "translation": "Yes, the right thing is a heap of things and we can also tell you about it.",
+   "translation": "Then you come over and we tell you what you need.",
    "source_text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 18,
@@ -263,11 +261,11 @@
    "end": 53.983,
    "text": "तो आप सॉप पे एक बार आ जाऍं तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "hinglish": "to aap shop pe ek baar aa jaen to hum aapko bata den ki kya chahiye kaisa lag raha hai",
-   "translation": "So you come once and we will tell you what you want.",
+   "translation": "Go to the soap.",
    "source_text": "तो आप सॉप पे एक बार आ जाऍं तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 19,
@@ -355,22 +353,22 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 633.417,
-  "prompt_tokens": 3036,
-  "completion_tokens": 1551,
+  "llm_seconds": 259.756,
+  "prompt_tokens": 3003,
+  "completion_tokens": 1458,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 1,
-  "lines_reverted": 8,
+  "lines_reverted": 10,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 10,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 6,
+  "keywords_dropped": 5,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -379,8 +377,10 @@
   "source_sha256": "abe372788e98d87a90af41bbf6a28d77cff60e93b0bd9154e61794f499e4f9b4",
   "source_line_count": 23,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T02:52:05Z",
+  "generated_at_utc": "2026-11-10T20:26:03Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 65.68
+  "source_audio_duration_s": 65.68,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

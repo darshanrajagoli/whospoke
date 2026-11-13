@@ -1,15 +1,19 @@
 {
- "title": "Voting, Chhath Puja, Deepavali, and Emancipation",
- "topic": "Voting, Chhath Puja, Deepavali, and Emancipation",
- "executive_summary": "A conversation in Hindi and Hinglish about voting, Chhath Puja, Deepavali, and Emancipation.",
+ "title": "Chhath Puja and Voting in Bihar",
+ "topic": "Chhath Puja and Voting in Bihar",
+ "executive_summary": "Speaker talks about Chhath Puja and the importance of voting in Bihar.",
  "key_points": [
-  "Voting is to be done, not to give any impression."
+  "Chhath Puja is a festival celebrated in Bihar",
+  "Voting is important for the betterment of the country",
+  "The government should give benefits to the people",
+  "The people need to vote for the betterment of the country"
  ],
  "keywords": [
-  "vote",
-  "deepavali",
-  "government",
-  "benefits"
+  "Chhath Puja",
+  "Bihar",
+  "Government",
+  "People",
+  "Vote"
  ],
  "action_items": [],
  "speakers": [
@@ -40,7 +44,7 @@
    "end": 12.45,
    "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
    "hinglish": "hello haan hello sir namas theek hai haan ji ji dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
-   "translation": "Hello sir, how are you doing? I see you are looking at the good and how good you make.",
+   "translation": "Hello sir, how are you doing? I'm doing well and how are you?",
    "source_text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
    "changed": false,
    "uncertain": true,
@@ -53,7 +57,7 @@
    "end": 25.34,
    "text": "हेलो हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
    "hinglish": "hello hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie",
-   "translation": "Hello, we are speaking from Bihar. In our country, Chhath Puja is celebrated and Deepavali is also celebrated and we speak.",
+   "translation": "Hello, we are from Bihar and celebrate Chhath Puja in our country and also celebrate Diwali.",
    "source_text": "हेलो हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
    "changed": false,
    "uncertain": true,
@@ -66,7 +70,7 @@
    "end": 15.76,
    "text": "हाँ",
    "hinglish": "haan",
-   "translation": "Yes.",
+   "translation": "Yes",
    "source_text": "हाँ",
    "changed": false,
    "uncertain": false,
@@ -79,11 +83,11 @@
    "end": 40.67,
    "text": "वोट देना है ना कोई छापल भी देना है अब तो वोट अभी हो गया तो सरकार को भोट देना है वोट देना है अब देना है कोई छाप छापल देना है",
    "hinglish": "vote dena hai na koi chhapal bhi dena hai ab to vote abhi ho gaya to sarkar ko bhot dena hai vote dena hai ab dena hai koi chhaap chhapal dena hai",
-   "translation": "Voting is to be done, not to give any impression. Voting is to be done, not to give any impression.",
+   "translation": "Voting is important, not just for the government, but also for the people. We need to vote for the betterment of our country.",
    "source_text": "वोट देना है ना कोई छापल भी देना है अब तो वोट अभी हो गया तो सरकार को भोट देना है वोट देना है अब देना है कोई छाप छापल देना है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 5,
@@ -92,11 +96,11 @@
    "end": 56.44,
    "text": "छछ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते है उपहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
    "hinglish": "chhachh puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hai uphante hain usmen aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye",
-   "translation": "In Chhath Puja, we bring new materials for fasting, such as new clothes, and make offerings to the gods. We also make offerings to the gods.",
+   "translation": "In Chhath Puja, we bring new materials for worship, such as new clothes, and make offerings to the gods.",
    "source_text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते है उपहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -105,7 +109,7 @@
    "end": 81.33,
    "text": "अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो आप किसका देना है जे उसकी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जे भी ठीक से सहारा हो उसी का वोट दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी वोट देना है वोट नहीं देना है वोट देना है",
    "hinglish": "ab to vote khatm ho gaya ab vote aaega to kuch na diya sarkar kuch laabh nahi diya to aap kiska dena hai je uski ka vote dena hai je aage mein badhaega vikas karaega hum log ka indirabad ho bathroom ho sahara ho mana je bhi theek se sahara ho usi ka vote diya jaega phir bhi dena hai nahi diya gaya hai lekin phir bhi vote dena hai vote nahi dena hai vote dena hai",
-   "translation": "Now, the vote is over, and no one has been given any benefits. The government did not give any benefits, but still gave votes. We will give votes to the government.",
+   "translation": "Now, the voting is over, and no one has been given any benefits. The government should give benefits to the people, but it has not done so. We need to vote for the betterment of our country.",
    "source_text": "अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो आप किसका देना है जे उसकी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिराबाद हो बाथरूम हो सहारा हो माना जे भी ठीक से सहारा हो उसी का वोट दिया जाएगा फिर भी देना है नहीं दिया गया है लेकिन फिर भी वोट देना है वोट नहीं देना है वोट देना है",
    "changed": false,
    "uncertain": true,
@@ -115,15 +119,13 @@
  "uncertain_lines": [
   1,
   2,
-  4,
-  5,
   6
  ],
  "diagnostics": {
   "llm_calls": 2,
-  "llm_seconds": 40.517,
-  "prompt_tokens": 1311,
-  "completion_tokens": 865,
+  "llm_seconds": 143.973,
+  "prompt_tokens": 1295,
+  "completion_tokens": 802,
   "chunks": 1,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -133,10 +135,10 @@
   "lines_reverted": 3,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 3,
+  "lines_flagged_by_llm": 1,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -145,8 +147,10 @@
   "source_sha256": "c06457d2b07db9d4b90fa161d6f3972e5469b35740ed8e7483abfdd5273c6969",
   "source_line_count": 6,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:50:03Z",
+  "generated_at_utc": "2026-11-11T01:47:59Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 81.86
+  "source_audio_duration_s": 81.86,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

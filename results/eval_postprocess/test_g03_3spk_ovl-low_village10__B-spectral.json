@@ -1,19 +1,18 @@
 {
  "title": "Hindi and Hinglish Conversations",
  "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes the evidence from a transcribed conversation between two speakers in Hindi and Hinglish. The evidence includes summaries of its parts, lines translated into English, and candidate keywords and actions.",
+ "executive_summary": "This report summarizes the evidence from a transcribed conversation, including summaries of its parts, lines translated into English, and candidate keywords and actions.",
  "key_points": [
-  "Hindi and Hinglish Conversations"
- ],
- "keywords": [
-  "ठीक है",
+  "Bihar",
+  "rose",
   "vote",
   "government",
-  "imprints",
-  "printing",
-  "chhath",
-  "deepavali",
-  "indirabad"
+  "unanswerable"
+ ],
+ "keywords": [
+  "Bihar",
+  "vote",
+  "government"
  ],
  "action_items": [],
  "speakers": [
@@ -76,7 +75,7 @@
    "end": 7.25,
    "text": "ठीक है हाँ",
    "hinglish": "theek hai haan",
-   "translation": "Okay yes",
+   "translation": "Okay yeah",
    "source_text": "ठीक है हाँ",
    "changed": false,
    "uncertain": false,
@@ -89,7 +88,7 @@
    "end": 12.25,
    "text": "इस बार तो देना है ना कोई छापड़ भी देना है आप तो बहुत अच्छी हो गया",
    "hinglish": "is baar to dena hai na koi chhapad bhi dena hai aap to bahut achhi ho gaya",
-   "translation": "This time, give me a hand, not just a hand, but a hand and a hand and a hand",
+   "translation": "This time, give me a hand, not just a handful of mud",
    "source_text": "इस बार तो देना है ना कोई छापड़ भी देना है आप तो बहुत अच्छी हो गया",
    "changed": false,
    "uncertain": true,
@@ -115,7 +114,7 @@
    "end": 21.35,
    "text": "हम बिहार से बोलते हैं देखते हैं की बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
    "hinglish": "hum bihar se bolte hain dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
-   "translation": "We speak from Bihar and see how good we are and how good we make it",
+   "translation": "We speak from Bihar and see how good we are and how good we make it.",
    "source_text": "हम बिहार से बोलते हैं देखते हैं की बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
    "changed": false,
    "uncertain": true,
@@ -131,8 +130,8 @@
    "translation": "Hmm",
    "source_text": "हम्म",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 8,
@@ -141,11 +140,11 @@
    "end": 23.4,
    "text": "ये",
    "hinglish": "ye",
-   "translation": "Yeh",
+   "translation": "Ye",
    "source_text": "ये",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 9,
@@ -157,8 +156,8 @@
    "translation": "Very large",
    "source_text": "बहुत बड़ी",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 10,
@@ -170,8 +169,8 @@
    "translation": "Ten, then vote for the government",
    "source_text": "तेरह तो सरकार को वोट देना",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 11,
@@ -180,7 +179,7 @@
    "end": 38.05,
    "text": "वो वोट देना है अब देना है देखिए ना कोई छाप कोई छप्पर देना है अब तो वोट खत्म हो गया अब वोट आएगा",
    "hinglish": "wo vote dena hai ab dena hai dekhie na koi chhaap koi chhappar dena hai ab to vote khatm ho gaya ab vote aaega",
-   "translation": "Vote is over, no imprints, no printing",
+   "translation": "Vote is done, no imprints, no printing, now the vote is over",
    "source_text": "वो वोट देना है अब देना है देखिए ना कोई छाप कोई छप्पर देना है अब तो वोट खत्म हो गया अब वोट आएगा",
    "changed": false,
    "uncertain": true,
@@ -282,19 +281,15 @@
   1,
   4,
   6,
-  7,
-  8,
-  9,
-  10,
   11,
   12,
   18
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 56.205,
-  "prompt_tokens": 2399,
-  "completion_tokens": 1253,
+  "llm_seconds": 202.542,
+  "prompt_tokens": 2391,
+  "completion_tokens": 1186,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -304,10 +299,10 @@
   "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 8,
+  "lines_flagged_by_llm": 4,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -316,8 +311,10 @@
   "source_sha256": "07e475c3d61c5f63a6fac3b82e5ed75a05b0a8c4c8cd4d2f4b15d809670582c1",
   "source_line_count": 18,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:45:08Z",
+  "generated_at_utc": "2026-11-11T01:30:26Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 65.41
+  "source_audio_duration_s": 65.41,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

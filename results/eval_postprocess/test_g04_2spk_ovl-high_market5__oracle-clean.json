@@ -1,16 +1,20 @@
 {
  "title": "Lost ID Card",
  "topic": "Lost ID Card",
- "executive_summary": "The speaker is asking for a color birange and cassers for his child.",
+ "executive_summary": "The speaker is asking for color birange and cassero, and is willing to welcome the visitor.",
  "key_points": [
   "Lost ID Card",
-  "color birange",
-  "cassers",
-  "unspecified"
+  "Part 1: A conversation about school, tapes, and prices.",
+  "Part 2: The speaker is asking for color birange and cassero, and is willing to welcome the visitor.",
+  "Part 3: The speaker is asking for color birange and cassero, and is willing to welcome the visitor.",
+  "Part 4: The speaker is asking for color birange and cassero, and is willing to welcome the visitor."
  ],
  "keywords": [
+  "school",
+  "price",
   "color birange",
-  "cassers"
+  "cassero",
+  "welcome"
  ],
  "action_items": [],
  "speakers": [
@@ -113,11 +117,11 @@
    "end": 50.37,
    "text": "मैं अब जो भी हो वहाँ आने के बाद हो सकता हूँ कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
    "hinglish": "main ab jo bhi ho wahan aane ke baad ho sakta hoon ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
-   "translation": "I can come to pick up my child whenever he is ready, but if you are, come and pick him up. Then we will send him to school and he will be fine.",
+   "translation": "I can come to the place where the heat is so bad that water shortages must have been caused by him getting sick.",
    "source_text": "हूँ अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 8,
@@ -126,24 +130,24 @@
    "end": 55.81,
    "text": "मुझे रंग बिरंगे वाले चाहिए हैं आठ आठ सेट और सीजर्स चाहिए हैं बारह पीस",
    "hinglish": "mujhe rang birange wale chahiye hain aath aath set aur sijars chahiye hain barah piece",
-   "translation": "I want eight sets of color birange and six sets of cassers.",
+   "translation": "I want eight sets of color birange and twelve pieces of cassero",
    "source_text": "मुझे रंग बिरंगे वाले चाहिए हैं आठ आठ सेट और सीजर्स चाहिए हैं बारह पीस",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 9,
    "speaker": "S1",
    "start": 52.75,
    "end": 67.05,
-   "text": "हां तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबेयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
+   "text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबेयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
    "hinglish": "haan to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabeyat uski theek ho jaegi to phir aap dobara se usko school bhejiega achha to kab tak aaenge",
-   "translation": "Yes, we will give our child a ride to school, but if you are, come and pick him up.",
+   "translation": "Yes, we will give him a hearty welcome, but if you are coming, come and take your child home for a while. Then we will send him to school.",
    "source_text": "हाँ तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -153,26 +157,28 @@
   4,
   5,
   6,
-  8
+  7,
+  8,
+  9
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 33.546,
-  "prompt_tokens": 1785,
-  "completion_tokens": 708,
+  "llm_seconds": 143.605,
+  "prompt_tokens": 1790,
+  "completion_tokens": 807,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 2,
-  "lines_reverted": 7,
+  "lines_reverted": 6,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 0,
+  "lines_flagged_by_llm": 3,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -181,8 +187,10 @@
   "source_sha256": "126e129d9a6b6dd28865d1991ad434702647389c712fd5a436ba050bae812f1e",
   "source_line_count": 9,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:32:08Z",
+  "generated_at_utc": "2026-11-11T04:01:46Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 67.49
+  "source_audio_duration_s": 67.49,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

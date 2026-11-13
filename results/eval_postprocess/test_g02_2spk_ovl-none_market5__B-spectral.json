@@ -1,17 +1,15 @@
 {
- "title": "Hindi and Hinglish Conversation",
- "topic": "ID Card and Photo",
- "executive_summary": "Speaker A and B discuss the need to get IDs and an application.",
+ "title": "Hindi-English Conversation Transcript",
+ "topic": "ID Card Application Process",
+ "executive_summary": "Speaker_A and Speaker_B discuss the need for an ID card and the process for obtaining one. Speaker_A agrees to help Speaker_B with his application.",
  "key_points": [
-  "Speaker A says his shirt and profits",
-  "Speaker B says he needs an ID card to pass the exam",
-  "Speaker A agrees",
-  "Speaker B says he needs an ID card to take a photo of the base card",
-  "Speaker A says Gita ji"
+  "Speaker_A says his shirt",
+  "Speaker_B says he has a photo of the base card and needs to say something",
+  "Speaker_B says he is going to the exam and needs his ID card",
+  "Speaker_A agrees to help Speaker_B with his application"
  ],
  "keywords": [
   "बोल रहे थे",
-  "आईडी कार्ड",
   "फोटो",
   "आईडी"
  ],
@@ -77,7 +75,7 @@
    "end": 26.35,
    "text": "तो तो मुझे चाहिए था कैसे मिल सकता है अब अपने कर्मचारी चेक करवा सकेंगे",
    "hinglish": "to to mujhe chahiye tha kaise mil sakta hai ab apne karmachari check karva sakenge",
-   "translation": "Speaker_A asked if he could get his Karma Chariya check done.",
+   "translation": "Speaker_A asked how he could get his Karma Chariya check done.",
    "source_text": "तो तो मुझे चाहिए था कैसे मिल सकता है अब अपने कर्मचारी चेक करवा सकेंगे",
    "changed": false,
    "uncertain": true,
@@ -116,7 +114,7 @@
    "end": 35.8,
    "text": "सर मेरे कोई गलती हुई मेरे हाथ से और मेरा आई डी कार्ड गुम हो गया सर",
    "hinglish": "sir mere koi galti hui mere haath se aur mera aai D card gum ho gaya sir",
-   "translation": "Speaker_B says his ID card is missing and wants it",
+   "translation": "Speaker_B says his ID card is missing and asks Speaker_A for help.",
    "source_text": "सर मेरे कोई गलती हुई मेरे हाथ से और मेरा आई डी कार्ड गुम हो गया सर",
    "changed": false,
    "uncertain": true,
@@ -129,7 +127,7 @@
    "end": 38.6,
    "text": "पाँच सौ वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए",
    "hinglish": "paanch sau wo exam paas aa rahe hain to aai D card chahiye",
-   "translation": "Speaker_B says he needs an ID card to pass the exam",
+   "translation": "Speaker_B says he is going to the exam and needs his ID card.",
    "source_text": "पाँच सौ वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए",
    "changed": false,
    "uncertain": true,
@@ -142,7 +140,7 @@
    "end": 39.35,
    "text": "हाँ",
    "hinglish": "haan",
-   "translation": "Speaker_A agrees",
+   "translation": "Speaker_A agrees.",
    "source_text": "हाँ",
    "changed": false,
    "uncertain": true,
@@ -155,7 +153,7 @@
    "end": 40.7,
    "text": "मेरा खाल",
    "hinglish": "mera khaal",
-   "translation": "Speaker_A says his shirt",
+   "translation": "Speaker_A says his shirt.",
    "source_text": "मेरा खाल",
    "changed": false,
    "uncertain": true,
@@ -168,7 +166,7 @@
    "end": 42.0,
    "text": "और प्रॉफिट मेरा",
    "hinglish": "aur prophit mera",
-   "translation": "Speaker_A says his shirt and profits",
+   "translation": "Speaker_A says his shirt and asks Speaker_B to say",
    "source_text": "और प्रॉफिट मेरा",
    "changed": false,
    "uncertain": true,
@@ -181,7 +179,7 @@
    "end": 45.05,
    "text": "आधार कार्ड की फ़ोटो कापी और क्या कहना है सर",
    "hinglish": "aadhar card ki photo kapi aur kya kahna hai sir",
-   "translation": "Speaker_B says he needs an ID card to take a photo of the base card",
+   "translation": "Speaker_B says he has a photo of the base card and needs to say something.",
    "source_text": "आधार कार्ड की फ़ोटो कापी और क्या कहना है सर",
    "changed": false,
    "uncertain": true,
@@ -246,7 +244,7 @@
    "end": 63.45,
    "text": "आईडी का जो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा",
    "hinglish": "aaidi ka jo saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega",
-   "translation": "What will be needed to get the ID, who will be the first to get it.",
+   "translation": "What will be needed to get the ID, who will make it.",
    "source_text": "आईडी का जो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा",
    "changed": false,
    "uncertain": true,
@@ -259,11 +257,11 @@
    "end": 66.05,
    "text": "अच्छा उसके बाद एप्लीकेशन भी लिखनी पड़ेंगी",
    "hinglish": "achha uske baad eplikeshan bhi likhni padengi",
-   "translation": "After this, it will be necessary to write an application.",
+   "translation": "After this, an application will have to be written.",
    "source_text": "अच्छा उसके बाद एप्लीकेशन भी लिखनी पड़ेंगी",
    "changed": false,
    "uncertain": true,
-   "note": "The model added words that the ASR line does not contain; ASR wording kept; the model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -284,9 +282,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 58.405,
-  "prompt_tokens": 2506,
-  "completion_tokens": 1323,
+  "llm_seconds": 232.546,
+  "prompt_tokens": 2519,
+  "completion_tokens": 1365,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -299,7 +297,7 @@
   "lines_flagged_by_llm": 12,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -308,8 +306,10 @@
   "source_sha256": "9c330f0a1f26b8ef03c4d8034407de1f7dfe3e0d5c853c77e6f079053457b9fd",
   "source_line_count": 18,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:06:09Z",
+  "generated_at_utc": "2026-11-10T23:01:47Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 66.49
+  "source_audio_duration_s": 66.49,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

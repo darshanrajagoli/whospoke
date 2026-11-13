@@ -1,19 +1,19 @@
 {
  "title": "Transcribed Conversation from Babu Maashankar Inter College",
- "topic": "Paper for Babu Maashankar Inter College",
- "executive_summary": "Speaker A and Speaker B are talking about the paper for Babu Maashankar Inter College.",
+ "topic": "Paper and Office Hours at Babu Maashankar Inter College",
+ "executive_summary": "Speaker A and Speaker B discuss various topics, including money, e-passes, and camera checks. Speaker A asks about the office hours and the IT items needed. Speaker B suggests getting an e-pass and a photo of the base card, as well as checking the CCTV cameras for a camera check. Speaker A mentions that they need to go home and the office is open until what time. Speaker B asks for more details and suggests writing an application.",
  "key_points": [
-  "Speaker_A: Mashti Sir",
-  "Speaker_B: bol rahe the ki aap",
-  "Speaker_B: achcha",
-  "Speaker_B: Babu Maashankar Inter College is ready to give you the BA paper",
-  "Speaker_B: So, your paper is ready to be submitted to Babu Maashankar Inter College."
+  "Mashti Sir",
+  "Listening to the rest of the conversation",
+  "Getting an e-pass and a photo of the base card",
+  "Getting your camera checked at CCTV cameras",
+  "A little money too"
  ],
  "keywords": [
-  "Mashti Sir",
-  "bol rahe the ki aap",
   "Babu Maashankar Inter College",
-  "BA paper"
+  "BA paper",
+  "E-pass",
+  "IT items"
  ],
  "action_items": [],
  "speakers": [
@@ -41,8 +41,8 @@
    "translation": "Mashti Sir",
    "source_text": "मस्ती सर",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 2,
@@ -55,7 +55,7 @@
    "source_text": "बोल रहे थे कि आप आप",
    "changed": true,
    "uncertain": true,
-   "note": "The model found this line hard to understand; the same English was returned for different lines."
+   "note": "The same English was returned for different lines."
   },
   {
    "line_id": 3,
@@ -68,7 +68,7 @@
    "source_text": "अच्छा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
   },
   {
    "line_id": 4,
@@ -80,8 +80,8 @@
    "translation": "Babu Maashankar Inter College is ready to give you the BA paper",
    "source_text": "बाबू माशंकर इंटर कॉलेज के तो बी ए का पेपर देने के लिए तैयार है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 5,
@@ -93,8 +93,8 @@
    "translation": "So, your",
    "source_text": "तो अपने",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -241,11 +241,8 @@
   }
  ],
  "uncertain_lines": [
-  1,
   2,
   3,
-  4,
-  5,
   6,
   11,
   12,
@@ -256,9 +253,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 56.407,
-  "prompt_tokens": 2370,
-  "completion_tokens": 1249,
+  "llm_seconds": 212.317,
+  "prompt_tokens": 2377,
+  "completion_tokens": 1254,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -268,7 +265,7 @@
   "lines_reverted": 3,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 12,
+  "lines_flagged_by_llm": 7,
   "missing_translations": 2,
   "unknown_line_ids": 0,
   "keywords_dropped": 3,
@@ -280,8 +277,10 @@
   "source_sha256": "147242bed7420ed97c1c55497911d4a21f9873276770d3307c2a087e30b7d31d",
   "source_line_count": 16,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:28:07Z",
+  "generated_at_utc": "2026-11-11T00:25:57Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 62.56
+  "source_audio_duration_s": 62.56,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

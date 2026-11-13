@@ -1,20 +1,20 @@
 {
- "title": "Lost ID Card",
- "topic": "Lost ID Card",
- "executive_summary": "A conversation between two people about a missing purse.",
+ "title": "Lost ID Card and Exam Papers",
+ "topic": "Lost ID Card and Exam Papers",
+ "executive_summary": "A conversation about a missing purse and an ID card.",
  "key_points": [
-  "Part 1: A conversation between two people about a missing purse.",
+  "Part 1: The speaker is talking about a missing purse.",
   "Part 2: A conversation about an exam and an ID card.",
   "Part 3: The speaker is asking for an ID card and an application.",
-  "Part 4: A photo of myself on a base card and a photo of my purse.",
-  "Part 5: The office will be open until 10:00 am, sir."
+  "Part 4: The speaker is asking for an ID card and an application.",
+  "Part 5: The speaker is asking for an ID card and an application."
  ],
  "keywords": [
-  "school",
+  "principal",
+  "inter college",
   "exam",
   "ID card",
-  "card",
-  "application"
+  "card"
  ],
  "action_items": [],
  "speakers": [
@@ -287,7 +287,7 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 60.057,
+  "llm_seconds": 224.037,
   "prompt_tokens": 2501,
   "completion_tokens": 1309,
   "chunks": 3,
@@ -311,8 +311,10 @@
   "source_sha256": "ca0b362f1108402ddce6756c997932d2bf9f7b66e9f9b3d656d4e7936d75f17a",
   "source_line_count": 18,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T11:56:25Z",
+  "generated_at_utc": "2026-11-10T22:24:54Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 60.67
+  "source_audio_duration_s": 60.67,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

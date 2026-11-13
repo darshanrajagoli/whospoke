@@ -1,20 +1,22 @@
 {
- "title": "Searching for Furniture in Noisy Places",
+ "title": "Searching for Furniture in Sagwan, Seon, and Seon Forest",
  "topic": "Furniture",
- "executive_summary": "Speaker A is looking for a sofa, mattress bed, and furniture drying room in a noisy place.",
+ "executive_summary": "Speaker A is looking for a sofa, mattress bed, and furniture drying room.",
  "key_points": [
-  "Speaker A is looking for a sofa, mattress bed, and furniture drying room in a noisy place.",
-  "Speaker A is talking about common trees and their use in various products.",
-  "Speaker A is asking for a price for the furniture drying room.",
-  "Speaker A is asking for a price for the sofa dining table and mattress bed.",
-  "Speaker A is asking for a price for the common tree wood."
+  "What budget do you want?",
+  "What price do you want?",
+  "You will get a lot of prices, what price do you want?",
+  "The wood of the common tree is good for everything.",
+  "We have workers here who work well."
  ],
  "keywords": [
   "sofa",
   "mattress bed",
   "furniture drying room",
   "common tree",
-  "good"
+  "forest",
+  "Seon",
+  "Seon forest"
  ],
  "action_items": [],
  "speakers": [
@@ -85,7 +87,7 @@
    "end": 30.4,
    "text": "मैम आपको बहुत सारे प्राइस मिल जाएंगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको और",
    "hinglish": "ma'am aapko bahut sare price mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge ma'am aapko achha hi saman milega aapko milega divan bed milega ek sofa milega daining table milega aapko aur",
-   "translation": "You will get a lot of prices, what price would you like?",
+   "translation": "You will get a lot of prices, what price do you want?",
    "source_text": "मैम आपको बहुत सारे प्राइस मिल जाएंगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको और",
    "changed": false,
    "uncertain": true,
@@ -127,9 +129,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 342.673,
-  "prompt_tokens": 1718,
-  "completion_tokens": 847,
+  "llm_seconds": 139.345,
+  "prompt_tokens": 1728,
+  "completion_tokens": 814,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -151,8 +153,10 @@
   "source_sha256": "c94922c6058d22431f579329c91316c9117beb7cf2e70b912ad94b2f349ee585",
   "source_line_count": 7,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T02:24:07Z",
+  "generated_at_utc": "2026-11-10T19:50:10Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 61.99
+  "source_audio_duration_s": 61.99,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

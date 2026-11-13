@@ -103,7 +103,7 @@
    "end": 75.33,
    "text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो वर्त करते हैं उसके लिए नया व्रत खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
    "hinglish": "chhath puja chhath puja mein hum log naya sab saman late hain jo wart karte hain uske liye naya vrat kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain sab banate hain puja karne ke liye",
-   "translation": "In Chhutti Puja, we bring new things that we make. We make new offerings. We wear new clothes. We make new ornaments. We make new jewelry. We make new food. We make new drinks. We make new music. We make new dances. We make new songs. We make new music. We make new songs. We make new music. We make new music. We make new music. We make new music. We make new music. We make new music.",
+   "translation": "In Chhutti Puja, we bring new things that we make. We make new offerings. We wear new clothes. We make new ornaments. We make new jewelry. We make new food. We make new drinks. We make new music. We make new dances. We make new songs. We make new music. We make new songs. We make new music. We make new songs. We make new music. We make new music. We make new music. We make new music.",
    "source_text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो वर्त करते हैं उसके लिए नया व्रत खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं सब बनाते हैं पूजा करने के लिए",
    "changed": false,
    "uncertain": true,
@@ -119,7 +119,7 @@
  ],
  "diagnostics": {
   "llm_calls": 2,
-  "llm_seconds": 44.525,
+  "llm_seconds": 172.213,
   "prompt_tokens": 1486,
   "completion_tokens": 948,
   "chunks": 1,
@@ -143,8 +143,10 @@
   "source_sha256": "0810d0dd9f3a3f0f3f86eae1be057ecf6e0e80544f94d09b6c077d7324c38470",
   "source_line_count": 6,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:33:31Z",
+  "generated_at_utc": "2026-11-11T00:47:26Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 76.06
+  "source_audio_duration_s": 76.06,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

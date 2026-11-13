@@ -78,7 +78,7 @@ with the true timeline:
 
 Per conversation, splicing removes on average 3.0 points of error (paired CI +1.8 to +4.3).
 
-**Tried and rejected on dev: using the second separated voice (D36).** With our diarization an overlap usually lies
+**Tried and rejected on dev: using the second separated voice (D41).** With our diarization an overlap usually lies
 inside one turn, so only that speaker gets a separated voice and the interrupter's output is discarded. Giving that
 output to the speaker it sounds like, as an extra turn, did **not** help on dev (cpWER with our diarization: 46.42 %
 for splice-0.5, 46.46–46.98 % with the second voice, depending on the score threshold). The extra turns are fragments
@@ -196,47 +196,48 @@ the report:
 
 | Stage-4 input | cpWER before → after repair | Δ per conversation (95 % CI) | helped / hurt | keywords really said | summary overlap with the truth report |
 |---|---|---|---|---|---|
-| true transcript | 0.0 % → 1.9 % | +2.0 points (+1.7 to +2.2) | 0 / 58 | 99 % | (itself) |
-| ASR on each clean voice | 18.0 % → 19.1 % | +1.2 (+0.9 to +1.4) | 0 / 49 | 64 % | 0.18 |
-| ASR on the noisy mixture | 30.6 % → 31.4 % | +0.9 (+0.7 to +1.1) | 0 / 42 | 63 % | 0.14 |
-| **full pipeline (Order B)** | **51.8 % → 52.8 %** | **+0.9 (+0.8 to +1.1)** | 1 / 50 | 60 % | 0.16 |
+| true transcript | 0.0 % → 1.9 % | +1.9 points (+1.6 to +2.2) | 0 / 58 | 99 % | (itself) |
+| ASR on each clean voice | 18.0 % → 19.0 % | +1.0 (+0.8 to +1.3) | 0 / 48 | 67 % | 0.21 |
+| ASR on the noisy mixture | 30.6 % → 31.3 % | +0.8 (+0.6 to +1.0) | 1 / 39 | 64 % | 0.17 |
+| **full pipeline (Order B)** | **51.8 % → 52.7 %** | **+0.9 (+0.7 to +1.1)** | 1 / 48 | 64 % | 0.17 |
 
 (The full-pipeline cpWER here, 51.8 %, differs from the 49.5 % above only because group 7 is left out: its cpWER is
-35.6 %, lower than most. The comparison before vs after is paired on the same conversations. The reports of groups
-0–1 were made on a CPU, the rest on the GPU. A CPU and a GPU build give slightly different reports for the same
-transcript, so group 0 was also made on the GPU: 94 % of the repaired lines were identical, the repair hurt by about
-the same amount, and no conclusion changed ([results/crosscheck_g00_gpu](../results/crosscheck_g00_gpu/README.md), D33).)
+35.6 %, lower than most. The comparison before vs after is paired on the same conversations. All 252 reports were
+made in one run, on one machine (a Linux PC, CPU only), with the code in this repository (D39). The earlier reports,
+made on two machines, reached the same conclusions; their cpWER after the repair differs from these by at most 0.1
+points.)
 
-**Does the LLM repair the transcript?** No. Across 63 conversations and four inputs, the repair lowered cpWER once (one
-full-pipeline conversation) and raised it in 42 to 58 of the 63 per input: by about one point on ASR transcripts and by
-two points on the true transcript. The model's edits are mostly not repairs: it adds a word (`अच्छा` → `अच्छा है`),
+**Does the LLM repair the transcript?** No. Across 63 conversations and four inputs, the repair lowered cpWER twice (one
+noisy-mixture and one full-pipeline conversation) and raised it in 39 to 58 of the 63 per input: by about one point on
+ASR transcripts and by two points on the true transcript. The model's edits are mostly not repairs: it adds a word (`अच्छा` → `अच्छा है`),
 turns an English word into Hindi (`यस` → `हां`), swaps a word for a near-synonym (`कारण` → `क्योंकि`) or changes a
 gender ending (`मिलेगा` → `मिलेगी`), while IndicConformer's words are usually already right (many other edits only add
 a full stop, which cpWER ignores). The proposal's "fix syntactic errors caused by background noise drops" is therefore
 **not achieved** by this 7B model; the guardrails only keep the damage small. For reading, the report's Devanagari
 column is close to the Stage-3 transcript, and the Stage-3 transcript itself is the more accurate record.
 
-**How upstream errors reach the report.** Keywords that were really said fall from 99 % (true transcript) to 64 % as soon
-as recognition errors are present, and to 63 % and 60 % as noise and overlap, and then diarization errors are added.
-The report made from a noisy transcript has little in common with the report made from the true one: word overlap
-(F1) 0.14–0.18 for the summary and 0.10–0.17 for the keywords. Part of that is a 7B model paraphrasing freely, but it
+**How upstream errors reach the report.** Keywords that were really said fall from 99 % (true transcript) to 67 % as soon
+as recognition errors are present, and to 64 % once noise and overlap are added; diarization errors on top of that
+lower it no further. The report made from a noisy transcript has little in common with the report made from the true
+one: word overlap (F1) 0.17–0.21 for the summary and 0.11–0.12 for the keywords. Part of that is a 7B model paraphrasing freely, but it
 means the report is not a stable summary of the conversation: it follows whatever the ASR heard, mistranslations
 included (the demo's "e-pass", [results/demo/README.md](../results/demo/README.md)). The "summary words really said"
-measure (37–50 %, in [RESULTS_TABLES.md](RESULTS_TABLES.md)) is only 50 % even for the true transcript, so it mostly
+measure (37–56 %, in [RESULTS_TABLES.md](RESULTS_TABLES.md)) is only 56 % even for the true transcript, so it mostly
 measures paraphrase, not invention, and is not used for conclusions.
 
 **Action items: none.** The proposal asks Stage 4 to "extract actionable information", and the report has an
 action-items section, but in all 252 evaluation reports (and the demo) it is empty. The model proposed 4 action items
-in total, all on the full-pipeline input, and all were dropped because they did not match their lines. It returns an
-empty list even for lines that are plain requests ("मैम ... इन को ज़्यादा मीठा खिलाना बंद कर दीजिए", "stop giving him so
-much sugar", checked on group 7 only). This is a limit of the model with these prompts; the prompts are frozen (D32),
-so it is reported, not tuned away. The requests are still in the dialogue and its English column.
+in total, all on the full-pipeline input, and the checks dropped all of them. It returns an empty list even for lines
+that are plain requests ("मैम ... इन को ज़्यादा मीठा खिलाना बंद कर दीजिए", "stop giving him so much sugar", checked on
+group 7 only). Stronger wording in the prompt makes it propose items, but they are questions or have an owner who is
+not a speaker (D37). This is a limit of the model with these prompts; the prompts are frozen (D32), so it is
+reported, not tuned away. The requests are still in the dialogue and its English column.
 
 **The guardrails at work.** Every reply followed the JSON schema (the server enforced it) and no line was lost or
-moved: speakers and times are exactly Stage 3's. The model tried to change 40–58 % of the lines; 25–39 % of all
-lines were reverted because the "repair" rewrote, shortened or Hindi-ised them, and 14–21 % were changed and kept.
-5–8 % of lines have no English (an empty reply, or the same sentence given for several lines). 136–210 keywords per
-input were dropped for not having been said. The model flags 55–63 % of all lines as hard to understand, so the flag
+moved: speakers and times are exactly Stage 3's. The model tried to change 39–56 % of the lines; 25–37 % of all
+lines were reverted because the "repair" rewrote, shortened or Hindi-ised them, and 14–20 % were changed and kept.
+4–8 % of lines have no English (an empty reply, or the same sentence given for several lines). 134–196 keywords per
+input were dropped for not having been said. The model flags 50–60 % of all lines as hard to understand, so the flag
 carries little information.
 
 ![Stage 4](../results/figures/stage4_cascade.png)
@@ -262,13 +263,15 @@ time, the demo conversation (63 s, 16 lines) took **58 s** of LLM time (4 calls)
 22 tokens/s, and the server holds about 1 GB of RAM. It cannot run on the GPU at the same time as Stages 1–3
 (4.5 GB), so on this laptop it is a separate step after Stage 3 (D33). A second parallel request gave no extra
 throughput on this card.
-On the 4-core cloud CPU used for the evaluation (no GPU), one request at a time, the demo conversation (63 s, 16
+On a 4-core cloud CPU (no GPU), one request at a time, the demo conversation (63 s, 16
 lines) took 281 s of LLM time (4 calls), about 4.5× the audio length; the whole four-stage run on the same machine
 took 323 s, of which Stages 1–3 took 17 s. Generation runs at about 4.8 tokens/s there. The server needs about 6 GB
-of its own memory (plus the 4 GB model file, memory-mapped). Per-run times of the evaluation are in
+of its own memory (plus the 4 GB model file, memory-mapped). The scored evaluation (D39) ran on a Linux PC's CPU
+(8 threads), one report at a time: 2.3–3.6× the audio length per report, about 5.6 tokens/s, 14.4 hours for all 252
+reports. Per-run times of the evaluation are in
 [RESULTS_TABLES.md](RESULTS_TABLES.md), by machine.
 
-## Extension: music (voice + mridangam, D37)
+## Extension: music (voice + mridangam, D42)
 
 The pipeline's Stages 1–2 were run on music built like the speech set: real solo Carnatic singing (Carnatic Varnam) with
 real mridangam strokes (Mridangam Stroke) placed on the singer's annotated beats, in 3 overlap levels × 3 noise

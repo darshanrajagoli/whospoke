@@ -1,19 +1,19 @@
 {
- "title": "Wedding and Medical Services",
- "topic": "Wedding and Medical Services",
- "executive_summary": "A conversation about a wedding and medical services.",
+ "title": "Hindi and Hinglish Conversations",
+ "topic": "Medical Services and Wedding Planning",
+ "executive_summary": "Two people talk about medical services and a wedding. The speaker mentions a photographer and asks about the availability of roses and berries.",
  "key_points": [
   "wedding",
+  "pre wedding",
   "photographer",
-  "pre-wedding",
-  "photography shoot",
-  "medical services"
+  "roses and berries",
+  "availability"
  ],
  "keywords": [
   "wedding",
+  "pre wedding",
   "photographer",
-  "pre-wedding",
-  "photography shoot"
+  "roses and berries"
  ],
  "action_items": [],
  "speakers": [
@@ -96,7 +96,7 @@
    "end": 27.31,
    "text": "जी मेरी गिरफ़्स बात फ़ोटोग्राफर से हो रही है जी सारी है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
    "hinglish": "ji meri girafs baat fotographar se ho rahi hai ji sari hai mere yahan das joon ki shadi hai to mere ko pri wedding fotoshut karana tha",
-   "translation": "Gee my gear is talking to the photographer and it's all about my upcoming wedding, so I was supposed to have a pre-wedding photography shoot.",
+   "translation": "Gee my girfs is talking to a photographer and she says she has ten June weddings and I had to shoot pre wedding photos",
    "source_text": "जी मेरी गिरफ़्स बात फ़ोटोग्राफर से हो रही है जी सारी है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
    "changed": false,
    "uncertain": true,
@@ -109,7 +109,7 @@
    "end": 30.38,
    "text": "पाँच लोगों के लिए चाहिए था सर्व हो पाएगा",
    "hinglish": "paanch logon ke liye chahiye tha sarv ho paega",
-   "translation": "Five people will be available.",
+   "translation": "Five people will be available",
    "source_text": "पाँच लोगों के लिए चाहिए था सर्व हो पाएगा",
    "changed": false,
    "uncertain": true,
@@ -125,8 +125,8 @@
    "translation": "Sir, how is he doing?",
    "source_text": "तो सर उसका कैसा क्या रहता है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 8,
@@ -138,8 +138,8 @@
    "translation": "Our clinic is in Lucknow.",
    "source_text": "हमारी डाक्टरी लखनऊ में है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 9,
@@ -148,11 +148,11 @@
    "end": 39.94,
    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा उमोसा ये सब",
    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa umosa ye sab",
-   "translation": "Yes, and also wanted something sweet like rose berries, snowy cake, and yogurt.",
+   "translation": "Yes, and also wanted something sweet like roses and berries and a scoop of ice cream.",
    "source_text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा उमोसा ये सब",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 10,
@@ -164,8 +164,8 @@
    "translation": "Yes.",
    "source_text": "हाँ",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 11,
@@ -174,7 +174,7 @@
    "end": 61.02,
    "text": "तो सर वो कह रहे वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा साठ रुपये पीस है तो अगर मतलब तो पूछ रहे थे कि अगर सर ये कुछ डिस्काउंट उस्काउंट हो सक्ता है",
    "hinglish": "to sir wo kah rahe wo wo sir ye poochh rahe the ki jo ye hai gulab jamun ek kitne rupye piece milega saath rupye piece hai to agar matlab to poochh rahe the ki agar sir ye kuch discount uskaunt ho sakta hai",
-   "translation": "So, Sir, he was asking about the price of rose berries, which he said was 60 rupees per piece, but if he meant to ask about discounts, then he was asking about the price of 60 rupees per piece.",
+   "translation": "So, Sir, he was asking about the price of roses and berries, and if he wanted to know how much it would cost, he was asking if he could get a discount on that price.",
    "source_text": "तो सर वो कह रहे वो वो सर ये पूछ रहे थे कि जो ये है गुलाब जामुन एक कितने रुपये पीस मिलेगा साठ रुपये पीस है तो अगर मतलब तो पूछ रहे थे कि अगर सर ये कुछ डिस्काउंट उस्काउंट हो सकता है",
    "changed": true,
    "uncertain": true,
@@ -188,17 +188,13 @@
   4,
   5,
   6,
-  7,
-  8,
-  9,
-  10,
   11
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 42.208,
-  "prompt_tokens": 1899,
-  "completion_tokens": 891,
+  "llm_seconds": 161.26,
+  "prompt_tokens": 1874,
+  "completion_tokens": 913,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -208,7 +204,7 @@
   "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 7,
+  "lines_flagged_by_llm": 3,
   "missing_translations": 4,
   "unknown_line_ids": 0,
   "keywords_dropped": 1,
@@ -220,8 +216,10 @@
   "source_sha256": "3fe950100b99ebad6bf4b8e47ff5275f8d445ecc604f90f0e85466755c3e454c",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:53:49Z",
+  "generated_at_utc": "2026-11-11T05:21:24Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 61.57
+  "source_audio_duration_s": 61.57,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

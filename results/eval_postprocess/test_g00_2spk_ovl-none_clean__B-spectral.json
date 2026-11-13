@@ -1,16 +1,17 @@
 {
  "title": "Hindi and Hinglish Conversation Transcript",
- "topic": "Budget and Pay Request",
- "executive_summary": "Speaker A asks Speaker B about budget and Speaker B asks Speaker A about pay. Speaker C says it's good. Speaker A is going to visit the speaker's wife and asks the speaker to send their location. Speaker A asks Speaker B to pay for the bus and the mattress. Speaker B promises to pay for the bus and the mattress. Speaker C says it's good. Speaker A asks Speaker B to pay for the bus and the mattress. Speaker B promises to pay for the bus and the mattress. Speaker A asks Speaker B to pay for the bus and the mattress. Speaker B promises to pay for the bus and the mattress. Speaker A asks Speaker B to pay for the bus and the mattress. Speaker B promises to pay for the bus and the mattress. Speaker A asks Speaker B to pay for the bus and the mattress. Speaker B promises to pay for the bus and...",
+ "topic": "Budget and Payment",
+ "executive_summary": "Speaker A asks Speaker B about budget and payment. Speaker B discusses car prices and maintenance. Speaker C asks for a mattress and sofa. Speaker A sends his location to Speaker B. Speaker B is going on a trip and asks Speaker A to send his wife. Speaker A asks Speaker B to pay for the mattress and sofa. Speaker B promises to do so. Speaker A promises to send his location to Speaker B. Speaker B asks Speaker A to send his wife. Speaker A agrees to do so. Speaker B promises to pay for the mattress and sofa. Speaker A promises to send his location to Speaker B. Speaker B promises to pay for the mattress and sofa. Speaker A promises to send his wife. Speaker B promises to pay for the mattress and sofa. Speaker A promises to send his location to Speaker B. Speaker B promises to pay for themat",
  "key_points": [
-  "request"
+  "pay",
+  "budget",
+  "request",
+  "instruction",
+  "promise"
  ],
  "keywords": [
   "pay",
-  "budget",
-  "car",
-  "engine",
-  "price"
+  "budget"
  ],
  "action_items": [],
  "speakers": [
@@ -54,7 +55,7 @@
    "end": 5.2,
    "text": "नमस्ते मैम हाँ मैम",
    "hinglish": "namaste ma'am haan ma'am",
-   "translation": "Hello Maam Yes Maam",
+   "translation": "Hello Ma'am Yes Ma'am",
    "source_text": "नमस्ते मैम हाँ मैम",
    "changed": false,
    "uncertain": false,
@@ -67,7 +68,7 @@
    "end": 6.2,
    "text": "हाँ मैम",
    "hinglish": "haan ma'am",
-   "translation": "Yes Maam",
+   "translation": "Yes Ma'am",
    "source_text": "हाँ मैम",
    "changed": false,
    "uncertain": false,
@@ -80,7 +81,7 @@
    "end": 7.15,
    "text": "मिल जाएगा",
    "hinglish": "mil jaega",
-   "translation": "Will be",
+   "translation": "Will be done",
    "source_text": "मिल जाएगा",
    "changed": false,
    "uncertain": false,
@@ -93,7 +94,7 @@
    "end": 10.3,
    "text": "मैम आपको किस बजट में चाहिए कितना बजट है आपका",
    "hinglish": "ma'am aapko kis budget mein chahiye kitna budget hai aapka",
-   "translation": "What budget for you?",
+   "translation": "What is your budget?",
    "source_text": "मैम आपको किस बजट में चाहिए कितना बजट है आपका",
    "changed": false,
    "uncertain": true,
@@ -106,7 +107,7 @@
    "end": 12.15,
    "text": "अच्छा अच्छा कहाँ पे",
    "hinglish": "achha achha kahan pe",
-   "translation": "Where pay?",
+   "translation": "Pay",
    "source_text": "अच्छा अच्छा कहाँ पे",
    "changed": false,
    "uncertain": true,
@@ -119,7 +120,7 @@
    "end": 15.5,
    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise",
-   "translation": "What's wrong with your car like",
+   "translation": "What is wrong with your car like",
    "source_text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
    "changed": false,
    "uncertain": true,
@@ -158,7 +159,7 @@
    "end": 22.85,
    "text": "बंद हो गई है ना तो आपने उसका इंजन देखा",
    "hinglish": "band ho gayi hai na to aapne uska engine dekha",
-   "translation": "The engine is out of order",
+   "translation": "The engine is not running, did you see it?",
    "source_text": "बंद हो गई है ना तो आपने उसका इंजन देखा",
    "changed": false,
    "uncertain": true,
@@ -171,11 +172,11 @@
    "end": 26.9,
    "text": "मैम आपको बहुत सारे प्राइस में मिल जाएंगे आपको किस",
    "hinglish": "ma'am aapko bahut sare price mein mil jaenge aapko kis",
-   "translation": "You will get a lot of prices, which one do you want?",
+   "translation": "Mam, you will get a lot of prices, which ones?",
    "source_text": "मैम आपको बहुत सारे प्राइस में मिल जाएंगे आपको किस",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 12,
@@ -184,7 +185,7 @@
    "end": 32.2,
    "text": "प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "hinglish": "price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
-   "translation": "What kind of price do you have?",
+   "translation": "What price do you have?",
    "source_text": "प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "changed": false,
    "uncertain": true,
@@ -262,7 +263,7 @@
    "end": 53.35,
    "text": "सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो",
    "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo",
-   "translation": "The sofa and mattress will get the dining table and then the furniture drenching room will get what",
+   "translation": "The sofa and mattress will get and then you will get the furniture drenching room",
    "source_text": "सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो",
    "changed": false,
    "uncertain": true,
@@ -278,8 +279,8 @@
    "translation": "BUS",
    "source_text": "बुस्",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 20,
@@ -291,8 +292,8 @@
    "translation": "Send me your location, I'll be there right away. Your wife will be fine.",
    "source_text": "अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइफ ठीक हो जाएगी आप",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 21,
@@ -304,8 +305,8 @@
    "translation": "Going on a trip, how's that?",
    "source_text": "किसी यात्रा पर जा रहे हो क्या अच्छा",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   }
  ],
  "uncertain_lines": [
@@ -321,26 +322,23 @@
   13,
   15,
   16,
-  18,
-  19,
-  20,
-  21
+  18
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 677.697,
-  "prompt_tokens": 2996,
-  "completion_tokens": 1572,
+  "llm_seconds": 273.294,
+  "prompt_tokens": 2952,
+  "completion_tokens": 1495,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 2,
-  "lines_reverted": 9,
+  "lines_reverted": 8,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 13,
+  "lines_flagged_by_llm": 10,
   "missing_translations": 0,
   "unknown_line_ids": 0,
   "keywords_dropped": 3,
@@ -352,8 +350,10 @@
   "source_sha256": "5deda98b04b8c641c0ca642b330defd292e4d84280439c99c924ec2355e21420",
   "source_line_count": 21,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:21:45Z",
+  "generated_at_utc": "2026-11-10T18:25:36Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 62.07
+  "source_audio_duration_s": 62.07,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

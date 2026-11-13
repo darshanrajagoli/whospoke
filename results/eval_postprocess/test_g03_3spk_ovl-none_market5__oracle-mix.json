@@ -1,13 +1,11 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversation",
+ "title": "Hindi and Hinglish Conversation",
  "topic": "New Items Brought for the Year",
- "executive_summary": "A conversation in Hindi and Hinglish. Speakers mention new items brought for the year, including new vows, new clothes, and new foods. They also mention new prayers and rituals.",
+ "executive_summary": "Speaker mentions new items brought for the year, including new vows, new clothes, and new foods. They also mention new things they have seen and how they look.",
  "key_points": [
-  "New items brought for the year",
   "New vows",
   "New clothes",
-  "New foods",
-  "New prayers and rituals"
+  "New foods"
  ],
  "keywords": [],
  "action_items": [],
@@ -39,7 +37,7 @@
    "end": 6.61,
    "text": "हेलो हाँ हेलो सर नमस्ते ठीक है हाँ जी",
    "hinglish": "hello haan hello sir namaste theek hai haan ji",
-   "translation": "Hello yes yes sir hello sir hello hello how are you okay okay",
+   "translation": "Hello yes yes sir hello sir hello hello yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes",
    "source_text": "हेलो हाँ हेलो सर नमस्ते ठीक है हाँ जी",
    "changed": false,
    "uncertain": true,
@@ -52,7 +50,7 @@
    "end": 14.66,
    "text": "हाँ वो बात देना है ना कोई छाप पर भी देना है आपको बहुत अभी हो गया",
    "hinglish": "haan wo baat dena hai na koi chhaap par bhi dena hai aapko bahut abhi ho gaya",
-   "translation": "Yes, he says something on the printout. He says that he has to give it to you. He says that he has to give it to you. He says that he has to give it to you.",
+   "translation": "Yes, he says something on the printout. He says that he has to give it to you very soon.",
    "source_text": "हाँ वो बात देना है ना कोई छाप पर भी देना है आपको बहुत अभी हो गया",
    "changed": false,
    "uncertain": false,
@@ -91,11 +89,11 @@
    "end": 30.13,
    "text": "बाहर से खुशहूल लोग देखते हैं बहुत सुंदर बताते हैं",
    "hinglish": "bahar se khushhul log dekhte hain bahut sundar batate hain",
-   "translation": "Outside, people are watching very beautiful.",
+   "translation": "Outside, people see very beautiful.",
    "source_text": "बाहर से खुशहूल लोग देखते हैं बहुत सुंदर बताते हैं",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -104,7 +102,7 @@
    "end": 42.52,
    "text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
    "hinglish": "hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie chhath",
-   "translation": "We are speaking from Bihar. In our country, Chhath Puja is celebrated and Diwali is also celebrated and we say Chhath.",
+   "translation": "We are speaking from Bihar and celebrate Chhath Puja in our country and also celebrate Deepavali.",
    "source_text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
    "changed": false,
    "uncertain": true,
@@ -153,7 +151,6 @@
  "uncertain_lines": [
   1,
   4,
-  5,
   6,
   7,
   8,
@@ -161,9 +158,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 36.786,
-  "prompt_tokens": 1696,
-  "completion_tokens": 798,
+  "llm_seconds": 135.788,
+  "prompt_tokens": 1681,
+  "completion_tokens": 773,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -173,7 +170,7 @@
   "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 2,
+  "lines_flagged_by_llm": 1,
   "missing_translations": 0,
   "unknown_line_ids": 0,
   "keywords_dropped": 14,
@@ -185,8 +182,10 @@
   "source_sha256": "43173660d4c8f416b2de2211941f63141830174d7c8395cd77a842ddd46c86a9",
   "source_line_count": 9,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:37:10Z",
+  "generated_at_utc": "2026-11-11T01:00:05Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 76.67
+  "source_audio_duration_s": 76.67,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

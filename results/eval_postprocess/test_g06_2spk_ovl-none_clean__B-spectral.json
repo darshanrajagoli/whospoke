@@ -1,22 +1,18 @@
 {
  "title": "Hindi and Hinglish Conversations",
  "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation between two speakers in Hindi and Hinglish, with a focus on renting two rooms and getting a saree.",
+ "executive_summary": "This report summarizes a transcribed conversation between two speakers in Hindi and Hinglish. The conversation includes topics such as renting a computer, fashion, and computers. The speakers also discuss the Banarasi saree and the need for two people to stay.",
  "key_points": [
-  "Renting two rooms",
-  "Getting a saree",
-  "Computers can do work",
-  "Humans can do work",
-  "Humans can do work with computers"
+  "Hindi and Hinglish Conversations",
+  "Renting a Computer",
+  "Fashion",
+  "Computers",
+  "Banarasi Saree"
  ],
  "keywords": [
-  "room",
-  "computer",
-  "our",
-  "Shen",
-  "sari",
-  "two people",
-  "two people will come and the computer is"
+  "Fashion",
+  "Computers",
+  "Banarasi Saree"
  ],
  "action_items": [],
  "speakers": [
@@ -71,13 +67,13 @@
    "speaker": "Speaker_B",
    "start": 9.0,
    "end": 9.95,
-   "text": "प्रणाम दीदी",
-   "hinglish": "pranam didi",
-   "translation": "The system is ours",
+   "text": "प्रणाली दीदी",
+   "hinglish": "pranali didi",
+   "translation": "System is down",
    "source_text": "प्रणाम दीदी",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 4,
@@ -86,11 +82,11 @@
    "end": 15.25,
    "text": "टस्ट टू कंप्यूटर का है हमारा",
    "hinglish": "tast two computer ka hai hamara",
-   "translation": "Hello Didi",
+   "translation": "The computer is ours",
    "source_text": "टस्ट टू कंप्यूटर का है हमारा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 7,
@@ -99,7 +95,7 @@
    "end": 23.35,
    "text": "अरे हमको मतलब कि लेंगलोर पर शहर में चाहिए हमको",
    "hinglish": "are hamko matlab ki lenglor par shahar mein chahiye hamko",
-   "translation": "We don't want to go to Langelor, we want to go to the city",
+   "translation": "We don't want to go to the city on Langelor",
    "source_text": "अरे हमको मतलब कि लेंगलोर पर शहर में चाहिए हमको",
    "changed": false,
    "uncertain": true,
@@ -128,8 +124,8 @@
    "translation": "And everything is fine, tell me what you want",
    "source_text": "और सब तो ठीक है अपना बताइए क्या चाहिएगा",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 10,
@@ -154,8 +150,8 @@
    "translation": "Yes, I will go too",
    "source_text": "हाँ ओन भी चल जाएगा",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 12,
@@ -180,8 +176,8 @@
    "translation": "Full",
    "source_text": "पूर्ण",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 14,
@@ -216,7 +212,7 @@
    "end": 41.7,
    "text": "हम्म हम्म हाँ",
    "hinglish": "hamm hamm haan",
-   "translation": "Hmm hmm yeah",
+   "translation": "Hmm yeah",
    "source_text": "हम्म हम्म हाँ",
    "changed": false,
    "uncertain": true,
@@ -307,7 +303,7 @@
    "end": 56.6,
    "text": "अरे नया फैशन में तो निकला है बनारसी साड़ी",
    "hinglish": "are naya fashion mein to nikla hai banarsi sadi",
-   "translation": "Are new fashion in the fashion, a Banarasi sari.",
+   "translation": "Are new fashion in the fashion, the Banarasi sari.",
    "source_text": "अरे नया फैशन में तो निकला है बनारसी साड़ी",
    "changed": false,
    "uncertain": true,
@@ -333,11 +329,11 @@
    "end": 59.7,
    "text": "हाँ हाँ",
    "hinglish": "haan haan",
-   "translation": "No, I just gave it away nearby.",
+   "translation": "",
    "source_text": "हाँ हाँ",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 26,
@@ -346,11 +342,11 @@
    "end": 65.4,
    "text": "नहीं, यही पास में बस मैंने दिला दी अगर हो तो बताओ फिर",
    "hinglish": "nahi, yahi paas mein bas mainne dila di agar ho to batao phir",
-   "translation": "No, I just gave it away nearby, if you want, tell me.",
+   "translation": "",
    "source_text": "नहीं नहीं यही पास में बस मैंने दिला दी अगर हो तो बताओ फिर",
    "changed": true,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 27,
@@ -359,11 +355,11 @@
    "end": 67.1,
    "text": "हम्म",
    "hinglish": "hamm",
-   "translation": "Hmm",
+   "translation": "",
    "source_text": "हम्म",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
   },
   {
    "line_id": 28,
@@ -385,11 +381,11 @@
    "end": 73.1,
    "text": "हाँ बस दो लोग दो लोग आएंगे और कंप्यूटर हमारा काम है बस",
    "hinglish": "haan bas do log do log aaenge aur computer hamara kaam hai bas",
-   "translation": "Yes, just two people, two people will come and the computer is our work just",
+   "translation": "",
    "source_text": "हाँ बस दो लोग दो लोग आएंगे और कंप्यूटर हमारा काम काम है बस",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
   },
   {
    "line_id": 30,
@@ -412,11 +408,8 @@
   4,
   7,
   8,
-  9,
   10,
-  11,
   12,
-  13,
   14,
   15,
   16,
@@ -426,26 +419,28 @@
   20,
   23,
   25,
-  26
+  26,
+  27,
+  29
  ],
  "diagnostics": {
   "llm_calls": 6,
-  "llm_seconds": 78.368,
-  "prompt_tokens": 3558,
-  "completion_tokens": 1705,
+  "llm_seconds": 284.86,
+  "prompt_tokens": 3580,
+  "completion_tokens": 1699,
   "chunks": 5,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 4,
-  "lines_reverted": 5,
+  "lines_changed": 5,
+  "lines_reverted": 3,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 21,
-  "missing_translations": 0,
+  "lines_flagged_by_llm": 18,
+  "missing_translations": 4,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 3,
   "schema_enforced": true
@@ -454,8 +449,10 @@
   "source_sha256": "6097d83c07ece5dac3c3d14deb7ac90d906a680a7ef507d8098465893377e1bf",
   "source_line_count": 31,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:11:23Z",
+  "generated_at_utc": "2026-11-11T06:26:33Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 77.85
+  "source_audio_duration_s": 77.85,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

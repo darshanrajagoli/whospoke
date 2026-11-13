@@ -1,5 +1,9 @@
 # Cross-check: test group 0 on the GPU instead of the CPU
 
+*Since 11 November (D39) the scored reports in `results/` come from a single CPU run, so this cross-check describes
+the October reports. Both sides are kept here: the October CPU reports of group 0 in `cpu_reports/` and their
+scores in `eval_postprocess_cpu.csv`.*
+
 Groups 0–1 were scored with reports made on a 4-core cloud CPU, and groups 2–6 with reports made on the laptop GPU
 (D33). Temperature is 0, so on one machine the same transcript always gives the same report. But a CPU and a GPU
 build of llama.cpp add up the numbers in a different order, so they can differ in the last bits. Greedy decoding then
@@ -8,7 +12,7 @@ choice of machine changes any conclusion, the 36 group-0 reports (9 conversation
 laptop GPU (same model file, same frozen prompts, `--gpu-layers 99 --parallel 1`) in a separate copy of the repository,
 so the scored results were not touched.
 
-Files: `eval_postprocess.csv` (the same columns as `results/eval_postprocess.csv`), `reports/` (the 36 reports),
+Files: `eval_postprocess.csv` (the same columns as `results/eval_postprocess.csv`), `reports/` (the 36 GPU reports),
 `eval_postprocess_summary.json` (this run: 1,867 s), and `compare.py`, which prints the comparison below
 (`python results/crosscheck_g00_gpu/compare.py`).
 

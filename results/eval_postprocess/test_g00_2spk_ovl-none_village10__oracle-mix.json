@@ -1,13 +1,13 @@
 {
- "title": "Lost ID Card",
- "topic": "Lost ID Card",
- "executive_summary": "Two people discuss the availability of different types of wood and mention that they have workers who work well.",
+ "title": "Transcript of Hindi and Hinglish Conversation",
+ "topic": "Finding Common, Sagaun, and Shisham Wood at a Location",
+ "executive_summary": "A conversation between two people about finding common, sagaun, and shisham wood at a location. The speaker mentions that they are able to find everything they need at the location, including wood for common, sagaun, and shisham. They also mention that the workers at the location are skilled and can provide high-quality work. The speaker mentions that they are going on a trip and asks the listener to send their location to them. The speaker mentions that they are able to find everything they need at the location, including wood for common, sagaun, and shisham. The speaker mentions that they are going on a trip and asks the listener to send their location to them. The speaker mentions that they are able to find everything they need at the location, including wood for common, sagaun, and shi",
  "key_points": [
   "What's wrong with your car?"
  ],
  "keywords": [
-  "यात्रा",
-  "लकड़ी"
+  "Hello",
+  "Namaste"
  ],
  "action_items": [],
  "speakers": [
@@ -108,9 +108,9 @@
    "speaker": "S2",
    "start": 29.37,
    "end": 42.63,
-   "text": "बंद हो गई है ना तो आपने उसका इंजन देखा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या",
-   "hinglish": "band ho gayi hai na to aapne uska engine dekha achha achha to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waik theek ho jaegi aap kisi yatra par ja rahe ho kya",
-   "translation": "The speaker mentions visiting a place and says that they will send the location to the speaker. They also mention that they will visit a place and that the speaker will be able to find the location.",
+   "text": "बंद हो गया है ना तो आपने उसका इंजन देखा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या",
+   "hinglish": "band ho gaya hai na to aapne uska engine dekha achha achha to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waik theek ho jaegi aap kisi yatra par ja rahe ho kya",
+   "translation": "The speaker mentions that they are going on a trip and asks the listener to send their location to them. They also mention that they will be able to find everything they need at the location.",
    "source_text": "बंद हो गई है ना तो आपने उसका इंजन देखा अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या",
    "changed": true,
    "uncertain": false,
@@ -123,7 +123,7 @@
    "end": 77.75,
    "text": "आम की लकड़ी का मैम मैम यहाँ पे हर एक चीज अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज अच्छा मिलता है हम लोग के यहाँ पे वर्कर है अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज अवेलेबल मिल जाएगी",
    "hinglish": "aam ki lakdi ka ma'am ma'am yahan pe har ek cheej achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheej achha milta hai hum log ke yahan pe worker hai achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheej available mil jaegi",
-   "translation": "The speaker mentions the availability of different types of wood, including common, saagwan, and shisham, and mentions that they have workers who work well and provide good quality wood.",
+   "translation": "The speaker mentions that they are able to find everything they need at the location, including wood for common, sagaun, and shisham. They also mention that the workers at the location are skilled and can provide high-quality work.",
    "source_text": "आम की लकड़ी का मैम मैम यहाँ पे हर एक चीज अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज अच्छा मिलता है हम लोग के यहाँ पे वर्कर है अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज अवेलेबल मिल जाएगा",
    "changed": true,
    "uncertain": false,
@@ -137,9 +137,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 330.384,
-  "prompt_tokens": 1718,
-  "completion_tokens": 802,
+  "llm_seconds": 168.032,
+  "prompt_tokens": 1740,
+  "completion_tokens": 984,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -152,7 +152,7 @@
   "lines_flagged_by_llm": 2,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 5,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -161,8 +161,10 @@
   "source_sha256": "0bdf6e50616013ed06c655142fd3eed95ee24b2dd16bbe2f76abf3737317ab12",
   "source_line_count": 8,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:24:05Z",
+  "generated_at_utc": "2026-11-10T18:34:14Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 78.51
+  "source_audio_duration_s": 78.51,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

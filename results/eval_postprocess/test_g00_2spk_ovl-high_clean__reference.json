@@ -1,7 +1,7 @@
 {
  "title": "Hindi and Hinglish Conversations",
  "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes the evidence from a transcribed conversation between two people, with a focus on the main topic of car problems and the topics of furniture, work, and bikes.",
+ "executive_summary": "This report summarizes the evidence from a transcribed conversation, including summaries of its parts, lines translated into English, and candidate keywords and actions.",
  "key_points": [
   "Hindi and Hinglish Conversations"
  ],
@@ -13,7 +13,7 @@
   "हाँ मैम मिल जाएगा मैम आपको किस बजट में",
   "आपका",
   "car",
-  "furniture"
+  "engine"
  ],
  "action_items": [],
  "speakers": [
@@ -103,7 +103,7 @@
    "end": 9.471,
    "text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
    "hinglish": "haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
-   "translation": "Yes Ma'am will get Ma'am in what budget you want how much budget you want",
+   "translation": "Yes Ma'am will get Ma'am how much budget you want how much budget you want",
    "source_text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
    "changed": false,
    "uncertain": true,
@@ -116,7 +116,7 @@
    "end": 13.412,
    "text": "अच्छा अच्छा आपकी कार में क्या खराबी हो गई है जैसे",
    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise",
-   "translation": "Your car has a problem like good good",
+   "translation": "Your car has a problem like good good your car has a problem",
    "source_text": "अच्छा अच्छा आपकी कार में क्या खराबी हो गई है जैसे",
    "changed": false,
    "uncertain": true,
@@ -155,7 +155,7 @@
    "end": 18.044,
    "text": "मैम आपको क्या चाहिए ये बताइए",
    "hinglish": "ma'am aapko kya chahiye ye bataie",
-   "translation": "Mam, tell me what you want.",
+   "translation": "What do you want, sir?",
    "source_text": "मैम आपको क्या क्या चाहिए ये बताइए",
    "changed": true,
    "uncertain": true,
@@ -168,7 +168,7 @@
    "end": 26.716,
    "text": "मैम आपको बहुत सारे प्राइज़ में मिल जाएंगे आपको किस प्राइज़ में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइज़ में अवेबल करवा देंगे",
    "hinglish": "ma'am aapko bahut sare prize mein mil jaenge aapko kis prize mein aapko chahiye kis tarike ka to aap bataie hum aapko us prize mein avebal karva denge",
-   "translation": "Mam, you will get a lot of prizes in different categories, which you can choose.",
+   "translation": "We will provide you with the desired price for the desired product.",
    "source_text": "मैम आपको बहुत सारे प्राइज़ में मिल जाएंगे आपको किस प्राइज़ में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइज़ में अवेबल करवा देंगे",
    "changed": false,
    "uncertain": true,
@@ -269,9 +269,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 512.069,
-  "prompt_tokens": 2413,
-  "completion_tokens": 1210,
+  "llm_seconds": 210.366,
+  "prompt_tokens": 2419,
+  "completion_tokens": 1220,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -284,7 +284,7 @@
   "lines_flagged_by_llm": 7,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 6,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -293,8 +293,10 @@
   "source_sha256": "1b8f231d81434ec06297de79626008297ef4ecae3cf2c810969033c2cefc3da6",
   "source_line_count": 17,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T02:09:56Z",
+  "generated_at_utc": "2026-11-10T19:30:48Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 70.59
+  "source_audio_duration_s": 70.59,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,19 +1,18 @@
 {
- "title": "Lost ID Card",
- "topic": "Furniture",
- "executive_summary": "A conversation between two people about finding furniture and traveling to meet the location.",
+ "title": "Hindi and Hinglish Conversation Transcript",
+ "topic": "Wood Purchase",
+ "executive_summary": "A conversation between two people about finding a location to buy wood.",
  "key_points": [
-  "Yes, I will get it done.",
-  "What budget do you need? What price do you want?",
-  "What type of furniture do you want?",
-  "The rose is closed.",
-  "Did you see her engine? Good wood for furniture, available at S1."
+  "Yes, I will find you a budget. What budget do you want? What price do you want?",
+  "What do you want? What price do you want? What type of furniture do you want?",
+  "The rose is closed. Did you see her engine?",
+  "aam ki lakdi ka ma'am",
+  "Good good, so you can do it, send me your location, I will come there your w"
  ],
  "keywords": [
-  "hello",
   "yash",
-  "wood",
-  "furniture"
+  "lakdi",
+  "location"
  ],
  "action_items": [],
  "speakers": [
@@ -64,7 +63,7 @@
    "end": 8.57,
    "text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
    "hinglish": "haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
-   "translation": "Yes, I will get it done. What budget do you need? What price do you want?",
+   "translation": "Yes, I will find you a budget. What budget do you want? What price do you want?",
    "source_text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
    "changed": false,
    "uncertain": true,
@@ -77,7 +76,7 @@
    "end": 15.08,
    "text": "यश यश बोलिए अच्छा अच्छा कहाँ पे अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
    "hinglish": "yash yash bolie achha achha kahan pe achha achha aapki car mein kya kharabi ho gayi hai jaise",
-   "translation": "Yay, say something nice. Where is the problem in your car?",
+   "translation": "Yash, speak well, where is the trouble in your car?",
    "source_text": "यश यश बोलिए अच्छा अच्छा कहाँ पे अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
    "changed": false,
    "uncertain": true,
@@ -116,37 +115,37 @@
    "end": 47.74,
    "text": "आम की लकड़ी का मैम",
    "hinglish": "aam ki lakdi ka ma'am",
-   "translation": "Good wood for furniture, available at S1",
+   "translation": "",
    "source_text": "आम की लकड़ी का मैम",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the same English was returned for different lines."
   },
   {
    "line_id": 8,
    "speaker": "S2",
    "start": 47.2,
    "end": 58.04,
-   "text": "अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या अच्छा",
-   "hinglish": "achha achha to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waik theek ho jaegi aap kisi yatra par ja rahe ho kya achha",
-   "translation": "Good, you can send me your location and I'll come over there. Your work will be fine and you'll get everything you need.",
+   "text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या अच्छा",
+   "hinglish": "achha achha achha to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waik theek ho jaegi aap kisi yatra par ja rahe ho kya achha",
+   "translation": "Good good, so you can do it, send me your location, I will come there your w",
    "source_text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या अच्छा",
-   "changed": true,
-   "uncertain": false,
-   "note": ""
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 9,
    "speaker": "S1",
    "start": 58.31,
    "end": 73.69,
-   "text": "मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगी",
-   "hinglish": "ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaegi",
-   "translation": "Good, you can find everything you need here. We have workers who work well and their handiwork is also very good. You'll get everything you need.",
+   "text": "मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+   "hinglish": "ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
+   "translation": "",
    "source_text": "मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the same English was returned for different lines."
   }
  ],
  "uncertain_lines": [
@@ -156,26 +155,28 @@
   4,
   5,
   6,
+  7,
+  8,
   9
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 404.626,
-  "prompt_tokens": 1814,
-  "completion_tokens": 986,
+  "llm_seconds": 182.164,
+  "prompt_tokens": 1853,
+  "completion_tokens": 970,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 4,
-  "lines_reverted": 2,
+  "lines_changed": 2,
+  "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 5,
-  "missing_translations": 0,
+  "lines_flagged_by_llm": 4,
+  "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 5,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -184,8 +185,10 @@
   "source_sha256": "c121dd79fb31ed81f154ef976bd1107bf334a9149daf161ca9e5326672e32e1a",
   "source_line_count": 9,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:39:28Z",
+  "generated_at_utc": "2026-11-10T18:55:49Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 74.06
+  "source_audio_duration_s": 74.06,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

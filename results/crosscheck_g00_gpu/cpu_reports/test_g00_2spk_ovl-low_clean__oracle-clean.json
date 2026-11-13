@@ -1,0 +1,191 @@
+{
+ "title": "Lost ID Card",
+ "topic": "Furniture",
+ "executive_summary": "A conversation between two people about finding furniture and traveling to meet the location.",
+ "key_points": [
+  "Yes, I will get it done.",
+  "What budget do you need? What price do you want?",
+  "What type of furniture do you want?",
+  "The rose is closed.",
+  "Did you see her engine? Good wood for furniture, available at S1."
+ ],
+ "keywords": [
+  "hello",
+  "yash",
+  "wood",
+  "furniture"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "S1",
+   "talk_time_s": 51.49,
+   "turns": 5,
+   "share": 0.689
+  },
+  {
+   "speaker": "S2",
+   "talk_time_s": 23.29,
+   "turns": 4,
+   "share": 0.311
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "S1",
+   "start": 0.76,
+   "end": 2.19,
+   "text": "नमस्ते मैम हाँ मैम",
+   "hinglish": "namaste ma'am haan ma'am",
+   "translation": "Hello",
+   "source_text": "नमस्ते मैम हाँ मैम",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "S2",
+   "start": 2.44,
+   "end": 3.27,
+   "text": "हलो",
+   "hinglish": "hello",
+   "translation": "Hello",
+   "source_text": "हलो",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
+  },
+  {
+   "line_id": 3,
+   "speaker": "S1",
+   "start": 3.82,
+   "end": 8.57,
+   "text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+   "hinglish": "haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+   "translation": "Yes, I will get it done. What budget do you need? What price do you want?",
+   "source_text": "हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "S2",
+   "start": 7.95,
+   "end": 15.08,
+   "text": "यश यश बोलिए अच्छा अच्छा कहाँ पे अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
+   "hinglish": "yash yash bolie achha achha kahan pe achha achha aapki car mein kya kharabi ho gayi hai jaise",
+   "translation": "Yay, say something nice. Where is the problem in your car?",
+   "source_text": "यश यश बोलिए अच्छा अच्छा कहाँ पे अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 5,
+   "speaker": "S1",
+   "start": 14.37,
+   "end": 43.21,
+   "text": "मैम आपको क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगी आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस",
+   "hinglish": "ma'am aapko kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge ma'am aapko achha hi saman milega aapko milega divan bed milega ek sofa milega daining table milegi aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us",
+   "translation": "What do you want? What price do you want? What type of furniture do you want?",
+   "source_text": "मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "S2",
+   "start": 41.41,
+   "end": 45.9,
+   "text": "गुलाब बंद हो गया है ना तो आपने उसका इंजन देखा",
+   "hinglish": "gulab band ho gaya hai na to aapne uska engine dekha",
+   "translation": "The rose is closed. Did you see her engine?",
+   "source_text": "अच्छा बंद हो गई है ना तो आपने उसका इंजन देखा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "S1",
+   "start": 46.65,
+   "end": 47.74,
+   "text": "आम की लकड़ी का मैम",
+   "hinglish": "aam ki lakdi ka ma'am",
+   "translation": "Good wood for furniture, available at S1",
+   "source_text": "आम की लकड़ी का मैम",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 8,
+   "speaker": "S2",
+   "start": 47.2,
+   "end": 58.04,
+   "text": "अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या अच्छा",
+   "hinglish": "achha achha to aap aisa karie apni location mere ko bhej dijie main udhar hi aa jaunga aapki waik theek ho jaegi aap kisi yatra par ja rahe ho kya achha",
+   "translation": "Good, you can send me your location and I'll come over there. Your work will be fine and you'll get everything you need.",
+   "source_text": "अच्छा अच्छा अच्छा तो आप ऐसा करिए अपनी लोकेशन मेरे को भेज दीजिए मैं उधर ही आ जाऊँगा आपकी वाइक ठीक हो जाएगी आप किसी यात्रा पर जा रहे हो क्या अच्छा",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 9,
+   "speaker": "S1",
+   "start": 58.31,
+   "end": 73.69,
+   "text": "मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगी",
+   "hinglish": "ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaegi",
+   "translation": "Good, you can find everything you need here. We have workers who work well and their handiwork is also very good. You'll get everything you need.",
+   "source_text": "मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  9
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 404.626,
+  "prompt_tokens": 1814,
+  "completion_tokens": 986,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 4,
+  "lines_reverted": 2,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 5,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 4,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "c121dd79fb31ed81f154ef976bd1107bf334a9149daf161ca9e5326672e32e1a",
+  "source_line_count": 9,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-02T01:39:28Z",
+  "pipeline_order": "oracle",
+  "source_audio_duration_s": 74.06
+ }
+}

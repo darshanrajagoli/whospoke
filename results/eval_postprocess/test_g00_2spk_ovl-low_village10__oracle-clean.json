@@ -3,14 +3,15 @@
  "topic": "Wood and Work",
  "executive_summary": "Two people are talking about wood and their work.",
  "key_points": [
-  "What's wrong with your car?",
-  "You'll get good stuff.",
-  "Achha achha achha to aap aisa karie.",
-  "Aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte ha"
+  "Two people are talking about wood and their work.",
+  "The speaker asks the listener for their budget.",
+  "The speaker mentions that the worker's hand is very good."
  ],
  "keywords": [
-  "क्या बजट है",
-  "आपको अच्छा सामान मिलेगा",
+  "मैम",
+  "बोलिए",
+  "आपका क्या बजट है",
+  "आपका क्या बजट है?",
   "लकड़ी"
  ],
  "action_items": [],
@@ -36,7 +37,7 @@
    "end": 3.35,
    "text": "हलो यश यश बोलिए",
    "hinglish": "hello yash yash bolie",
-   "translation": "Hello",
+   "translation": "Hello Madam",
    "source_text": "हलो यश यश बोलिए",
    "changed": false,
    "uncertain": true,
@@ -49,7 +50,7 @@
    "end": 10.39,
    "text": "नमस्ते मैम हाँ मैम हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
    "hinglish": "namaste ma'am haan ma'am haan ma'am mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
-   "translation": "Hello",
+   "translation": "Hello Yash Yash",
    "source_text": "नमस्ते मैम हाँ मैम हाँ मैम मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
    "changed": false,
    "uncertain": true,
@@ -88,7 +89,7 @@
    "end": 32.43,
    "text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे अच्छा बंद हो गई है ना तो आपने उसका इंजन देखा",
    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise achha band ho gayi hai na to aapne uska engine dekha",
-   "translation": "What's wrong with your car?",
+   "translation": "What is the problem with your car?",
    "source_text": "अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे अच्छा बंद हो गई है ना तो आपने उसका इंजन देखा",
    "changed": false,
    "uncertain": true,
@@ -101,7 +102,7 @@
    "end": 50.48,
    "text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस",
    "hinglish": "ma'am aapko achha hi saman milega aapko milega divan bed milega ek sofa milega daining table milega aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us",
-   "translation": "You'll get good stuff",
+   "translation": "Madam will get you good stuff",
    "source_text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस",
    "changed": false,
    "uncertain": true,
@@ -146,9 +147,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 307.668,
-  "prompt_tokens": 1815,
-  "completion_tokens": 752,
+  "llm_seconds": 129.139,
+  "prompt_tokens": 1827,
+  "completion_tokens": 693,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -161,7 +162,7 @@
   "lines_flagged_by_llm": 4,
   "missing_translations": 4,
   "unknown_line_ids": 0,
-  "keywords_dropped": 5,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -170,8 +171,10 @@
   "source_sha256": "f2d686b4c0f43b169738fbfe327ae9867e085a80f26420cc8b9c9f497e297437",
   "source_line_count": 8,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:48:37Z",
+  "generated_at_utc": "2026-11-10T19:10:08Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 71.14
+  "source_audio_duration_s": 71.14,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

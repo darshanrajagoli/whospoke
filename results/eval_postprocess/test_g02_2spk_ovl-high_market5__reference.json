@@ -1,15 +1,20 @@
 {
  "title": "Lost ID Card",
  "topic": "Lost ID Card",
- "executive_summary": "A conversation between two people about a lost ID card.",
+ "executive_summary": "Two people are talking about a lost ID card.",
  "key_points": [
   "The speaker is asking for a check from their Karma Chari to pay for the paper.",
-  "The speaker lost his ID card.",
-  "The speaker asks for a check from his Karma Chari to pay for the paper."
+  "The speaker mentions that they lost their ID card.",
+  "The speaker mentions that they had a mistake with their hand."
  ],
  "keywords": [
   "Hello",
-  "Hello Sir"
+  "Hello Sir",
+  "Was a poket",
+  "Check the camera with your CCTV camera",
+  "Hmm",
+  "Yes",
+  "There was money and a document in it"
  ],
  "action_items": [],
  "speakers": [
@@ -190,7 +195,7 @@
    "end": 38.236,
    "text": "आधार कार्ड की फोटोकॉपी और क्या लाना है सर",
    "hinglish": "aadhar card ki photokopi aur kya lana hai sir",
-   "translation": "What to do with a base card and a camera.",
+   "translation": "What to do with the base card and what to bring",
    "source_text": "आधार कार्ड की फोटोकॉपी और क्या क्या लाना है सर",
    "changed": true,
    "uncertain": true,
@@ -203,11 +208,11 @@
    "end": 40.157,
    "text": "एक ख़ुद का फ़ोटो एक आधार कार्ड और",
    "hinglish": "ek khud ka photo ek aadhar card aur",
-   "translation": "A photo of myself on a base card.",
+   "translation": "A photo of myself on a base card and",
    "source_text": "एक ख़ुद का फ़ोटो एक आधार कार्ड और",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 15,
@@ -216,7 +221,7 @@
    "end": 44.274,
    "text": "अपने कैमरे सी सी टी वी कैमरे से चेक करवा लीजिए",
    "hinglish": "apne camera si si ti V camera se check karva lijie",
-   "translation": "Check the camera with your CCTV camera.",
+   "translation": "Check the camera with your CCTV camera",
    "source_text": "अपने कैमरे सी सी टी वी कैमरे से चेक करवा लीजिए",
    "changed": false,
    "uncertain": true,
@@ -229,7 +234,7 @@
    "end": 44.725,
    "text": "हम्म",
    "hinglish": "hamm",
-   "translation": "Hmm.",
+   "translation": "Hmm",
    "source_text": "हम्म",
    "changed": false,
    "uncertain": true,
@@ -242,7 +247,7 @@
    "end": 47.83,
    "text": "हाँ पैसा भी था डॉकोमेंट भी था उसमें",
    "hinglish": "haan paisa bhi tha dokoment bhi tha usmen",
-   "translation": "Yes, there was money and a document in it.",
+   "translation": "Yes, there was money and a document in it",
    "source_text": "हाँ पैसा भी था डॉकोमेंट भी था उसमें",
    "changed": false,
    "uncertain": true,
@@ -255,7 +260,7 @@
    "end": 49.654,
    "text": "ठीक है यह कहाँ आनी पड़ेगी",
    "hinglish": "theek hai yeh kahan aani padegi",
-   "translation": "Where will it come from.",
+   "translation": "Where will it come from",
    "source_text": "ठीक है यह कहाँ आनी पड़ेगी",
    "changed": false,
    "uncertain": true,
@@ -294,7 +299,7 @@
    "end": 59.205,
    "text": "पैसा भी डॉकोमेंट भी था",
    "hinglish": "paisa bhi dokoment bhi tha",
-   "translation": "There was also money and a document.",
+   "translation": "There was also a document about money.",
    "source_text": "पैसा भी डॉकोमेंट भी था",
    "changed": false,
    "uncertain": true,
@@ -346,22 +351,22 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 70.528,
-  "prompt_tokens": 3048,
-  "completion_tokens": 1559,
+  "llm_seconds": 268.193,
+  "prompt_tokens": 3066,
+  "completion_tokens": 1595,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 3,
-  "lines_reverted": 0,
+  "lines_reverted": 1,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 15,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 6,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -370,8 +375,10 @@
   "source_sha256": "1c0912f874ad07970557abd3c4d2da676d2e5ea7c780328934c2bef0dcf4e6ff",
   "source_line_count": 23,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:25:49Z",
+  "generated_at_utc": "2026-11-11T00:16:58Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 62.56
+  "source_audio_duration_s": 62.56,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

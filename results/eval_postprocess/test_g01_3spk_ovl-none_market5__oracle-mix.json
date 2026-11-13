@@ -1,17 +1,15 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversation",
- "topic": "Marriage, Vegetables, and a Pile of Things",
- "executive_summary": "A conversation in Hindi and Hinglish about marriage, vegetables, and a pile of things.",
+ "title": "Marriage, Vegetables, and the Cost of the Shop",
+ "topic": "Marriage, Vegetables, and the Cost of the Shop",
+ "executive_summary": "The conversation is about marriage, vegetables, and the cost of the shop.",
  "key_points": [
-  "Hello",
-  "Hello, I'm speaking from Sir's restaurant. Our specialty is Sir's and you save and you save too."
+  "Marriage",
+  "Vegetables",
+  "Cost of the Shop"
  ],
  "keywords": [
-  "नमस्ते",
-  "बोलो",
-  "रेस्टोरेंट",
-  "vegetables",
-  "pile of things"
+  "Hello",
+  "Vegetables"
  ],
  "action_items": [],
  "speakers": [
@@ -81,11 +79,11 @@
    "end": 16.73,
    "text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप होती है और लेजर होती है वी वी सेव है और यू सेव भी है",
    "hinglish": "haan ji bolie mere parlour mein three step hote hain four step hoti hai aur lejar hoti hai V V sev hai aur yu sev bhi hai",
-   "translation": "Hello, I'm speaking from Sir's restaurant. Our specialty is Sir's and you save and you save too.",
+   "translation": "Hello",
    "source_text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप होती है और लेजर होती है वी वी सेव है और यू सेव भी है",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 5,
@@ -94,11 +92,11 @@
    "end": 22.42,
    "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
    "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
-   "translation": "Hello, I'm speaking from Sir's restaurant. Our specialty is Sir's.",
+   "translation": "Hello",
    "source_text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 6,
@@ -107,11 +105,11 @@
    "end": 25.67,
    "text": "रामसगर चौरे हाँ ठीक है",
    "hinglish": "ramasgar chaure haan theek hai",
-   "translation": "Ramasgar Chowar is fine.",
+   "translation": "Hello",
    "source_text": "रामसगर चौरे हाँ ठीक है",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 7,
@@ -120,7 +118,7 @@
    "end": 37.76,
    "text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रूपये मिलेंगे आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो",
    "hinglish": "aapko bata de agar aap shadi le jaoge to teen sau rupye milenge aapko aur agar aap use trai karva ke ya sabji banva ke le jaoge to aapko sadhe chaar sau rupye ki pad jaegi to",
-   "translation": "You tell if you marry, you will get three hundred rupees. If you try to make or cook vegetables, you will get five hundred rupees.",
+   "translation": "You tell if you marry, you will get three hundred rupees. If you try to make or cook vegetables, you will get four hundred rupees.",
    "source_text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रूपये मिलेंगे आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो",
    "changed": false,
    "uncertain": true,
@@ -146,7 +144,7 @@
    "end": 48.69,
    "text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "hinglish": "haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain",
-   "translation": "It is a pile of things you can see. You can see it.",
+   "translation": "It is very expensive.",
    "source_text": "हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": false,
    "uncertain": true,
@@ -159,11 +157,11 @@
    "end": 50.97,
    "text": "हाँ हाँ पूछो",
    "hinglish": "haan haan puchho",
-   "translation": "",
+   "translation": "Please ask.",
    "source_text": "हाँ हाँ पूछो",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 11,
@@ -172,11 +170,11 @@
    "end": 64.08,
    "text": "तो आप शॉप पे एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है न मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज",
    "hinglish": "to aap shop pe ek baar aa jae to hum aapko bata den ki kya chahiye kaisa lag raha hai na market hai aapke yahan vaise to hamare yahan sabse zyada matlab hamare shop ka bole to sabse pasandida cheej",
-   "translation": "",
+   "translation": "The shop is the most popular.",
    "source_text": "तो आप शॉप पे एक बार आ जाए तो हम आपको बता दें कि क्या चाहिए कैसा लग रहा है न मार्केट है आपके यहाँ वैसे तो हमारे यहाँ सबसे ज्यादा मतलब हमारे शॉप का बोले तो सबसे पसंदीदा चीज",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -194,22 +192,22 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 385.376,
-  "prompt_tokens": 1914,
-  "completion_tokens": 931,
+  "llm_seconds": 133.75,
+  "prompt_tokens": 1758,
+  "completion_tokens": 707,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 0,
-  "lines_reverted": 9,
+  "lines_reverted": 11,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 8,
-  "missing_translations": 2,
+  "lines_flagged_by_llm": 5,
+  "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 5,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -218,8 +216,10 @@
   "source_sha256": "29ba6c074fd11ae88d871b4cf31719850d267c2454a251cbe94b60ee61845757",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:10:09Z",
+  "generated_at_utc": "2026-11-10T20:47:34Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 64.75
+  "source_audio_duration_s": 64.75,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

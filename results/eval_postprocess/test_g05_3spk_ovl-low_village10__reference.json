@@ -1,17 +1,19 @@
 {
- "title": "Hindi and Hinglish Conversation Report",
- "topic": "Wedding Shoes and Lakhnavi-style Biryanis",
- "executive_summary": "A conversation between two people about wedding shoes and Lakhnavi-style biryanis.",
+ "title": "Hindi and Hinglish Conversations",
+ "topic": "Hindi and Hinglish Conversations",
+ "executive_summary": "This report summarizes a conversation between two people, a conversation about a wedding and diabetes, and a conversation about wedding shoes and Lakhnavi style biryanis. The conversation also mentions a cough. The evidence is a transcript of the conversation.",
  "key_points": [
-  "madam",
-  "hairij chaurasiya",
-  "lucknow",
-  "doctori",
-  "wedding"
+  "Hindi and Hinglish Conversations"
  ],
  "keywords": [
-  "lucknow",
-  "wedding"
+  "hello",
+  "photographer",
+  "pre-wedding photos",
+  "wedding",
+  "diabetes",
+  "wedding shoes",
+  "Lakhnavi style biryanis",
+  "cough"
  ],
  "action_items": [],
  "speakers": [
@@ -68,7 +70,7 @@
    "end": 8.396,
    "text": "हलो",
    "hinglish": "hello",
-   "translation": "Hello, sir, I was speaking to Harish",
+   "translation": "Hello, sir, I was speaking with Hari",
    "source_text": "हलो",
    "changed": false,
    "uncertain": true,
@@ -120,11 +122,11 @@
    "end": 16.957,
    "text": "जी मेरी क्या आप की बात फोटोग्राफर से हो रही है",
    "hinglish": "ji meri kya aap ki baat photographer se ho rahi hai",
-   "translation": "My friend is taking photos of me.",
+   "translation": "",
    "source_text": "जी मेरी क्या आप की बात फोटोग्राफर से हो रही है",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
   },
   {
    "line_id": 8,
@@ -172,11 +174,11 @@
    "end": 26.516,
    "text": "सबका इलाज है मैम आप कब से हो रहा है आपको यह सब",
    "hinglish": "sabka ilaj hai ma'am aap kab se ho raha hai aapko yeh sab",
-   "translation": "My friend is a doctor and is treating everyone.",
+   "translation": "",
    "source_text": "सबका इलाज है मैम आप कब से हो रहा है आपको यह सब",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The same English was returned for different lines."
   },
   {
    "line_id": 12,
@@ -185,7 +187,7 @@
    "end": 27.686,
    "text": "तो सर उसका कैसा क्या रहता है",
    "hinglish": "to sir uska kaisa kya rahta hai",
-   "translation": "My friend is doing well.",
+   "translation": "My friend is fine.",
    "source_text": "तो सर उसका कैसा क्या रहता है",
    "changed": false,
    "uncertain": false,
@@ -198,11 +200,11 @@
    "end": 32.442,
    "text": "दस जून को मतलब मेरे जो है प्री वेडिंग फोटोशूट उससे पहले होगा आपको",
    "hinglish": "das joon ko matlab mere jo hai pri wedding photoshoot usse pahle hoga aapko",
-   "translation": "It means my wedding will be shot before you.",
+   "translation": "June 10th, I will take photos of you before the wedding.",
    "source_text": "दस जून को मतलब मेरे जो है प्री वेडिंग फोटोशूट उससे पहले होगा आपको",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 14,
@@ -211,11 +213,11 @@
    "end": 36.794,
    "text": "तो कब टाइम है मतलब फोटोशूट करने के लिए आप वही दूसरी डेट में आप",
    "hinglish": "to kab time hai matlab photoshoot karne ke liye aap wahi dusri date mein aap",
-   "translation": "When is the time to shoot the photo shoot?",
+   "translation": "When is the time for you to take photos.",
    "source_text": "तो कब टाइम है मतलब फोटोशूट करने के लिए आप वही दूसरी डेट में आप",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 15,
@@ -224,11 +226,11 @@
    "end": 38.086,
    "text": "जब से आपको दिक्कत आ रहा है पैर का",
    "hinglish": "jab se aapko dikkat aa raha hai pair ka",
-   "translation": "When you have diabetes, your feet.",
+   "translation": "Since you have diabetes, your feet.",
    "source_text": "कब से आपको दिक्कत आ रहा है पैर का",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 16,
@@ -250,7 +252,7 @@
    "end": 43.185,
    "text": "आपको खाँसी भी आ रही हे",
    "hinglish": "aapko khansi bhi aa rahi he",
-   "translation": "You're coughing.",
+   "translation": "You are coughing.",
    "source_text": "आपको खाँसी भी आ रही हे",
    "changed": false,
    "uncertain": true,
@@ -266,8 +268,8 @@
    "translation": "Hello sir.",
    "source_text": "नमस्कार सर",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 19,
@@ -276,7 +278,7 @@
    "end": 51.425,
    "text": "तो प्री वेडिंग शूट देखो तो शूट कम से कम अच्छी लोकेशन पर चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएँगे आपको",
    "hinglish": "to pri wedding shoot dekho to shoot kam se kam achhi location par chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko",
-   "translation": "So look at the wedding shoes, they should be at least two to three days before the wedding, you will get them.",
+   "translation": "So look at the wedding shoes, they should be at least good location and at least two to three days before the wedding.",
    "source_text": "तो प्री वेडिंग शूट देखो तो शूट कम से कम अच्छी लोकेशन पर चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएँगे आपको",
    "changed": false,
    "uncertain": true,
@@ -289,7 +291,7 @@
    "end": 57.224,
    "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "hinglish": "sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
-   "translation": "We were talking about Lakhnavi-style biryanis, which we wanted.",
+   "translation": "We were talking about Lakhnavi style biryanis.",
    "source_text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "changed": false,
    "uncertain": true,
@@ -329,13 +331,11 @@
   4,
   5,
   6,
+  7,
   8,
-  13,
-  14,
-  15,
+  11,
   16,
   17,
-  18,
   19,
   20,
   21,
@@ -343,9 +343,9 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 72.898,
-  "prompt_tokens": 3065,
-  "completion_tokens": 1576,
+  "llm_seconds": 275.011,
+  "prompt_tokens": 3078,
+  "completion_tokens": 1640,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -355,10 +355,10 @@
   "lines_reverted": 7,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 11,
-  "missing_translations": 4,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 6,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 6,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -367,8 +367,10 @@
   "source_sha256": "5a98b727e22704e44f585dda76145a9edf76fd5d66b8a3524ff1efec7afe9625",
   "source_line_count": 22,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:49:36Z",
+  "generated_at_utc": "2026-11-11T05:05:52Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 61.66
+  "source_audio_duration_s": 61.66,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

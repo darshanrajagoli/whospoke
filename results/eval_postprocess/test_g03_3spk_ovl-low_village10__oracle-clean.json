@@ -1,17 +1,13 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Voting and Government",
- "executive_summary": "A conversation between two people in Hindi about voting and the government.",
+ "title": "Hindi and Hinglish Conversation",
+ "topic": "Hindi and Hinglish Conversation",
+ "executive_summary": "This report summarizes a conversation between two people in Hindi and Hinglish, with a focus on the topic of Chhath Puja and Diwali in India.",
  "key_points": [
-  "Voting is a right and a responsibility of the people.",
-  "The government should give a vote to the people."
+  "Hindi and Hinglish Conversation",
+  "Chhath Puja and Diwali in India"
  ],
  "keywords": [
-  "vote",
-  "government",
-  "people",
-  "india",
-  "diwali"
+  "Chhath Puja and Diwali in India"
  ],
  "action_items": [],
  "speakers": [
@@ -105,8 +101,8 @@
    "speaker": "S3",
    "start": 25.42,
    "end": 54.46,
-   "text": "एक बार तो सरकार को भोट देना है वोट देना है अब देना है देखें ना इच्छा पर देना है वोट अब तो वोट खत्म हो गया है अब वोट आएगा तो कुछ नहीं दिया सरकार कुछ लाभ नहीं दिया तो आप किसका देना है जी उसी का वोट देना है जी आगे में बढ़ाएगा विकास करेगा हम लोग का इंदिरा आबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो उसी का भोट दिया जाएगा",
-   "hinglish": "ek baar to sarkar ko bhot dena hai vote dena hai ab dena hai dekhen na ichha par dena hai vote ab to vote khatm ho gaya hai ab vote aaega to kuch nahi diya sarkar kuch laabh nahi diya to aap kiska dena hai ji usi ka vote dena hai ji aage mein badhaega vikas karega hum log ka indira aabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho usi ka bhot diya jaega",
+   "text": "एक बार तो सरकार को भोट देना है वोट देना है अब देना है देखें ना इच्छा पर देना है वोट अब तो वोट खत्म हो गया है अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो आप किसका देना है जी उसी का वोट देना है जी आगे में बढ़ाएगा विकास करेगा हम लोग का इंदिरा आबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो उसी का भोट दिया जाएगा",
+   "hinglish": "ek baar to sarkar ko bhot dena hai vote dena hai ab dena hai dekhen na ichha par dena hai vote ab to vote khatm ho gaya hai ab vote aaega to kuch na diya sarkar kuch laabh nahi diya to aap kiska dena hai ji usi ka vote dena hai ji aage mein badhaega vikas karega hum log ka indira aabad ho bathroom ho sahara ho mana jo bhi cheez ke sahara ho usi ka bhot diya jaega",
    "translation": "Once the government should give a vote to the people, it should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the people. It should give a vote to the",
    "source_text": "एक बार तो सरकार को भोट देना है वोट देना है अब देना है देखिए ना इच्छा पर देना है वोट अब तो वोट खत्म हो गया अब वोट आएगा तो कुछ न दिया सरकार कुछ लाभ नहीं दिया तो आप किसका देना है जी उसी का वोट देना है जी आगे में बढ़ाएगा विकास कराएगा हम लोग का इंदिरा आबाद हो बाथरूम हो सहारा हो माना जो भी चीज़ के सहारा हो उसी का भोट दिया जाएगा",
    "changed": true,
@@ -120,7 +116,7 @@
    "end": 64.69,
    "text": "हमारे देश में छठ पूजा मनाई जाती है और हमारे देश में दीपावली भी मनाई जाती है और हाँ बोलिए छठ",
    "hinglish": "hamare desh mein chhath puja manai jati hai aur hamare desh mein dipavli bhi manai jati hai aur haan bolie chhath",
-   "translation": "In India, Chhath Puja is celebrated and also Diwali is celebrated and yes, we say Chhath",
+   "translation": "In India, we celebrate Chhath Puja and Diwali, and we say 'Chhath'",
    "source_text": "हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
    "changed": true,
    "uncertain": false,
@@ -134,9 +130,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 46.154,
-  "prompt_tokens": 1830,
-  "completion_tokens": 1015,
+  "llm_seconds": 168.558,
+  "prompt_tokens": 1777,
+  "completion_tokens": 965,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -149,7 +145,7 @@
   "lines_flagged_by_llm": 0,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -158,8 +154,10 @@
   "source_sha256": "3abf180186b2a88c9a07eb6af91467b211b1c0f989e4d4149f51878774ab3c4f",
   "source_line_count": 7,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:43:31Z",
+  "generated_at_utc": "2026-11-11T01:24:24Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 65.41
+  "source_audio_duration_s": 65.41,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

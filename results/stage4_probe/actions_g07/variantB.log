@@ -1,0 +1,5 @@
+VARIANT_B_START same_rev=41b0cd20c01d
+SERVER_OK
+{"cid": "test_g07_3spk_ovl-high_clean", "variant": "B", "calls": 5, "model_proposed": 1, "dropped": 1, "kept": 0, "kept_items": [], "proposed_detail": [{"owner": "Madam", "action": "selling", "lines": [13, 14, 15, 16, 17, 18], "reject_if": "owner"}]}
+{"cid": "test_g07_3spk_ovl-high_market5", "variant": "B", "calls": 5, "model_proposed": 4, "dropped": 2, "kept": 2, "kept_items": [{"owner": "S1", "action": "Motorcade is moving, what is it?", "lines": [14, 15, 16, 17, 18]}, {"owner": "S2", "action": "I want a seven-seater car for Sir Oankarewshar.", "lines": [17]}], "proposed_detail": [{"owner": "S1", "action": "unspecified", "lines": [1, 2, 3, 4, 5, 6], "reject_if": ""}, {"owner": "unspecified", "action": "Show me an iris test and tell me what is the iris doing.", "lines": [10, 11], "reject_if": ""}, {"owner": "S1", "action": "Motorcade is moving, what is it?", "lines": [14, 15, 16, 17, 18], "reject_if": ""}, {"owner": "S2", "action": "I want a seven-seater car for Sir Oankarewshar.", "lines": [17], "reject_if": ""}]}
+DONE

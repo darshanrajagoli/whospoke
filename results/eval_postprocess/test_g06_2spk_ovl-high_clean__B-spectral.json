@@ -1,22 +1,19 @@
 {
- "title": "Hindi and Hinglish Conversation Transcript",
- "topic": "Hindi and Hinglish Conversation",
- "executive_summary": "This report summarizes a conversation between two speakers in Hindi and Hinglish, with a focus on finding two rooms and the computer's role in the process.",
+ "title": "Hindi and Hinglish Conversations",
+ "topic": "Hindi and Hinglish Conversations",
+ "executive_summary": "This report summarizes a conversation between two speakers about finding two rooms. The speakers discuss the future of the city and the prayer of a trust computer. The speaker requests to check the register and agrees to do so before the agreement. The speaker also mentions a plan to work on a computer mallet with two people.",
  "key_points": [
-  "Part 1: Speaker A and B discuss finding two rooms",
-  "Part 2: Two people will stay and what is the computer do",
-  "Part 3: Speaker A and B are talking about computers and mallets",
-  "Part 4: Speaker_A asked how to check the register and said he would not do so",
-  "Part 5: Speaker_B asked how to check the register and said he would not do so"
+  "room",
+  "request",
+  "prayer",
+  "trust",
+  "computer"
  ],
  "keywords": [
   "room",
-  "lane",
-  "city",
-  "yes",
-  "two people will stay",
-  "computer",
-  "mallet"
+  "prayer",
+  "trust",
+  "computer"
  ],
  "action_items": [],
  "speakers": [
@@ -67,11 +64,11 @@
    "end": 13.9,
    "text": "प्रणाम दीदी ट्रस्ट कंप्यूटर का है मारा",
    "hinglish": "pranam didi trast computer ka hai mara",
-   "translation": "The system is owned by me, the computer",
+   "translation": "The prayer is from the trust computer, it is the trust computer's prayer",
    "source_text": "प्रणाम दीदी ट्रस्ट कंप्यूटर का है मारा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 5,
@@ -80,7 +77,7 @@
    "end": 18.15,
    "text": "और सब तो ठीक है अपना बताइए",
    "hinglish": "aur sab to theek hai apna bataie",
-   "translation": "And everything is fine, tell me",
+   "translation": "And everything is fine, tell me your name",
    "source_text": "और सब तो ठीक है अपना बताइए",
    "changed": false,
    "uncertain": true,
@@ -106,7 +103,7 @@
    "end": 21.15,
    "text": "तो मतलब कि लिंग रोड शहर में सही है",
    "hinglish": "to matlab ki ling road shahar mein sahi hai",
-   "translation": "So don't think that the lane is right in the city",
+   "translation": "So don't think that the road to the city is right",
    "source_text": "तो मतलब कि लिंग रोड शहर में सही है",
    "changed": false,
    "uncertain": true,
@@ -119,7 +116,7 @@
    "end": 23.35,
    "text": "शहर में",
    "hinglish": "shahar mein",
-   "translation": "We are in the city.",
+   "translation": "We are in the city",
    "source_text": "शहर में",
    "changed": false,
    "uncertain": true,
@@ -132,7 +129,7 @@
    "end": 25.65,
    "text": "हाँ",
    "hinglish": "haan",
-   "translation": "Yes.",
+   "translation": "Yes",
    "source_text": "हाँ",
    "changed": false,
    "uncertain": true,
@@ -145,7 +142,7 @@
    "end": 30.4,
    "text": "हम्म",
    "hinglish": "hamm",
-   "translation": "Hmm.",
+   "translation": "Hmm",
    "source_text": "हम्म",
    "changed": false,
    "uncertain": true,
@@ -171,7 +168,7 @@
    "end": 40.0,
    "text": "हाँ दो लोग रहेंगे और जो है कंप्यूटर काम से काम करेंगे और",
    "hinglish": "haan do log rahenge aur jo hai computer kaam se kaam karenge aur",
-   "translation": "Yes, yes.",
+   "translation": "Yes Yes",
    "source_text": "हाँ दो लोग रहेंगे और जो है कंप्यूटर काम से काम करेंगे और",
    "changed": false,
    "uncertain": true,
@@ -184,7 +181,7 @@
    "end": 41.4,
    "text": "हाँ",
    "hinglish": "haan",
-   "translation": "Yes.",
+   "translation": "Yes",
    "source_text": "हाँ हाँ",
    "changed": true,
    "uncertain": true,
@@ -279,7 +276,7 @@
    "source_text": "बेशा आप कैसे कर देंगे नहीं चेक कर देंगे बेशा कहोगे",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand; the same English was returned for different lines."
+   "note": "The same English was returned for different lines."
   },
   {
    "line_id": 24,
@@ -292,7 +289,7 @@
    "source_text": "नहीं पहले रजिस्ट्री हाँ एग्रीमेंट पहले होना चाहिए",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand; the same English was returned for different lines."
+   "note": "The same English was returned for different lines."
   }
  ],
  "uncertain_lines": [
@@ -318,9 +315,9 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 64.291,
+  "llm_seconds": 243.094,
   "prompt_tokens": 2890,
-  "completion_tokens": 1387,
+  "completion_tokens": 1330,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -330,10 +327,10 @@
   "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 19,
+  "lines_flagged_by_llm": 17,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 0,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 4,
   "schema_enforced": true
@@ -342,8 +339,10 @@
   "source_sha256": "6033fcaf2a7a36616482ed5b52bf7759fd96f75bee164a86a16e1e5139d8b5ff",
   "source_line_count": 24,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:32:36Z",
+  "generated_at_utc": "2026-11-11T07:50:28Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 72.61
+  "source_audio_duration_s": 72.61,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

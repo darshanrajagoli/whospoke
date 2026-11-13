@@ -1,20 +1,21 @@
 {
- "title": "Lucknowi Style Biryanis",
- "topic": "Lucknowi style biryanis",
- "executive_summary": "Speaker A talks about a Lucknowi style biryanis that they wanted for five people, asking for discounts and asking about a roseberry.",
+ "title": "Lucknowi Style Biryanis and Rose Jam and Ice Cream",
+ "topic": "Food",
+ "executive_summary": "Speaker A and Speaker B are talking about food, specifically Lucknowi style biryanis and rose jam and ice cream. They also mention a samosa and say it's all for sir. Speaker A is asking about a roseberry and says it's a roseberry. Speaker A is asking about discounts and says there are some.",
  "key_points": [
   "Lucknowi style biryanis",
-  "biryanis",
-  "five people",
-  "Samosa",
-  "other things"
+  "rose jam and ice cream",
+  "samosa",
+  "roseberry",
+  "discounts"
  ],
  "keywords": [
-  "Lucknowi style biryanis",
   "biryanis",
-  "five people",
-  "Samosa",
-  "other things"
+  "Lucknowi style",
+  "samosa",
+  "rose jam and ice cream",
+  "roseberry",
+  "discounts"
  ],
  "action_items": [],
  "speakers": [
@@ -59,7 +60,7 @@
    "end": 15.35,
    "text": "बोल रहे हैं तो की लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर हो पाएगा बताइए क्या दिक्कत है आप हमारी बोल रहे थोड़ा बताइए क्या दिक्कत है आपको",
    "hinglish": "bol rahe hain to ki lakhanvi style biryani jo thi hamen chahiye thi paanch logon ke liye chahiye tha sir ho paega bataie kya dikkat hai aap hamari bol rahe thoda bataie kya dikkat hai aapko",
-   "translation": "They were talking about a Lucknowi style biryanis that we wanted for five people, tell me what the diktat is.",
+   "translation": "They were talking about a Lucknowi style biryanis that we wanted for five people, and you said you could get it.",
    "source_text": "बोल रहे हैं तो की लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर हो पाएगा बताइए क्या दिक्कत है आप हमारी बोल रहे थोड़ा बताइए क्या दिक्कत है आपको",
    "changed": false,
    "uncertain": true,
@@ -72,7 +73,7 @@
    "end": 20.05,
    "text": "कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी",
    "hinglish": "kuch mitha mein bhi chahiye tha jaise gulab jamun barphi",
-   "translation": "They also wanted something sweet like rose berries and ice cream.",
+   "translation": "They also wanted something sweet, like rose jam and ice cream.",
    "source_text": "कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी",
    "changed": false,
    "uncertain": true,
@@ -85,7 +86,7 @@
    "end": 24.05,
    "text": "खेना वना समोसा ये सब तो सर वो करें",
    "hinglish": "khena wana samosa ye sab to sir wo karen",
-   "translation": "They wanted to buy a van for Samosa and other things.",
+   "translation": "They wanted to buy a samosa and said it was all for sir.",
    "source_text": "खेना वना समोसा ये सब तो सर वो करें",
    "changed": false,
    "uncertain": true,
@@ -98,7 +99,7 @@
    "end": 25.5,
    "text": "तो वो",
    "hinglish": "to wo",
-   "translation": "So that.",
+   "translation": "So, that's it.",
    "source_text": "तो वो",
    "changed": false,
    "uncertain": true,
@@ -150,11 +151,11 @@
    "end": 46.4,
    "text": "आप कब तक जी सी है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फोटोग्राफ कराना तो सर उसका कैसा क्या रहता है पैर में सूजन है",
    "hinglish": "aap kab tak ji si hai mere yahan das joon ki shadi hai to mere ko pri wedding photograph karana to sir uska kaisa kya rahta hai pair mein sujan hai",
-   "translation": "The speaker is asking when the wedding will take place and if they will take photos of the wedding ceremony.",
+   "translation": "The speaker is asking when the wedding will take place and if they will take photos of the wedding.",
    "source_text": "आप कब तक जी सी है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फोटोग्राफ कराना तो सर उसका कैसा क्या रहता है पैर में सूजन है",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 11,
@@ -163,7 +164,7 @@
    "end": 48.25,
    "text": "क्या दिक्कत है पैर में",
    "hinglish": "kya dikkat hai pair mein",
-   "translation": "The speaker is asking if there is a problem with their leg.",
+   "translation": "The speaker is asking if there is a problem with the foot.",
    "source_text": "क्या क्या दिक्कत है पैर में",
    "changed": true,
    "uncertain": true,
@@ -202,7 +203,7 @@
    "end": 58.8,
    "text": "कुछ डिस्काउंट उस्काउंट हो सक सकता है भैया",
    "hinglish": "kuch discount uskaunt ho sak sakta hai bhaiya",
-   "translation": "Some discounts can be found in the count",
+   "translation": "Some discounts can be found",
    "source_text": "कुछ डिस्काउंट उस्काउंट हो सक सकता है भैया",
    "changed": false,
    "uncertain": true,
@@ -215,11 +216,11 @@
    "end": 61.2,
    "text": "नहीं तो सर मतलब",
    "hinglish": "nahi to sir matlab",
-   "translation": "No sir",
+   "translation": "No sir, what do you mean?",
    "source_text": "नहीं तो सर मतलब",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 16,
@@ -228,11 +229,11 @@
    "end": 70.85,
    "text": "हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर",
    "hinglish": "hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar",
-   "translation": "We are tourists and came here",
+   "translation": "We are tourists and came here.",
    "source_text": "हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 17,
@@ -241,11 +242,11 @@
    "end": 71.45,
    "text": "मैं",
    "hinglish": "main",
-   "translation": "I",
+   "translation": "I.",
    "source_text": "मैं",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 18,
@@ -254,11 +255,11 @@
    "end": 73.5,
    "text": "उचित रेट में मिल जाता तो",
    "hinglish": "uchit rate mein mil jata to",
-   "translation": "Get a reasonable price",
+   "translation": "Get a good deal.",
    "source_text": "उचित रेट में मिल जाता तो",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 19,
@@ -270,8 +271,8 @@
    "translation": "People go to other restaurants because of the noise.",
    "source_text": "फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं लोग",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   }
  ],
  "uncertain_lines": [
@@ -281,28 +282,30 @@
   6,
   7,
   8,
+  10,
   11,
   12,
   14,
   15,
   16,
-  19
+  17,
+  18
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 64.85,
-  "prompt_tokens": 2997,
-  "completion_tokens": 1397,
+  "llm_seconds": 248.561,
+  "prompt_tokens": 3026,
+  "completion_tokens": 1461,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 2,
-  "lines_reverted": 6,
+  "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 7,
+  "lines_flagged_by_llm": 11,
   "missing_translations": 0,
   "unknown_line_ids": 0,
   "keywords_dropped": 0,
@@ -314,8 +317,10 @@
   "source_sha256": "2babfed3a01c4e7d5437d676ba8150e9a08a7117bf206c5cc245e9f71f227cdc",
   "source_line_count": 19,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:59:39Z",
+  "generated_at_utc": "2026-11-11T05:42:46Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 77.24
+  "source_audio_duration_s": 77.24,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

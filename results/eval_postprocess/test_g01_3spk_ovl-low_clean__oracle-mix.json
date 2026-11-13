@@ -1,13 +1,14 @@
 {
  "title": "Hindi and Hinglish Conversation",
- "topic": "Haircutting and Marriage",
- "executive_summary": "A conversation in Hindi and Hinglish about hair cutting and marriage.",
+ "topic": "Getting a Haircut or a Vegetable Cut",
+ "executive_summary": "A conversation in Hindi and Hinglish about getting a haircut or a vegetable cut for someone else.",
  "key_points": [
-  "Haircutting and Marriage"
+  "Getting a haircut or a vegetable cut for someone else.",
+  "G G is our specialty, Ram will do kachore, Ram will do kachore.",
+  "Tell me if you marry, you will get three hundred rupees, and if you get him a haircut or a vegetable cut, you will get four hundred rupees."
  ],
  "keywords": [
-  "जी जी ये तो हमारी स्पेशलिटी है सर",
-  "राम से कचोरे हाँ कर देंगे"
+  "राम से कचोरे"
  ],
  "action_items": [],
  "speakers": [
@@ -90,11 +91,11 @@
    "end": 9.92,
    "text": "जी जी ये तो हमारी स्पेशलिटी है सर",
    "hinglish": "ji ji ye to hamari speshliti hai sir",
-   "translation": "G G ye to our specialty is Sir",
+   "translation": "G G is our specialty, sir",
    "source_text": "जी जी ये तो हमारी स्पेशलिटी है सर",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 6,
@@ -103,7 +104,7 @@
    "end": 13.49,
    "text": "राम से कचोरे हाँ कर देंगे",
    "hinglish": "raam se kachore haan kar denge",
-   "translation": "Ram will do kachoree for you",
+   "translation": "Ram will do kachore, sir",
    "source_text": "राम से कचोरे हाँ कर देंगे",
    "changed": false,
    "uncertain": true,
@@ -142,7 +143,7 @@
    "end": 26.18,
    "text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेव है और यू सेव भी है आपको बता देगा",
    "hinglish": "haan ji bolie mere parlour mein three step hote hain four step off hoti hai aur phejal hoti hai V V sev hai aur yu sev bhi hai aapko bata dega",
-   "translation": "Yes, say in my parlour three steps are taken and a step is taken and a step is taken and a step is taken and a step is taken and a step is taken and a step is taken and a step is taken and a step is taken and a step is taken and a step is taken and a step is taken and a step is taken",
+   "translation": "Yes, say in my parlour there are three steps and a staircase going up and down, and you save and you save too.",
    "source_text": "हाँ जी बोलिए मेरे पार्लर में थ्री स्टेप होते हैं फोर स्टेप ऑफ होती है और फेजल होती है वी वी सेव है और यू सेव भी है आपको बता देगा",
    "changed": false,
    "uncertain": true,
@@ -155,7 +156,7 @@
    "end": 44.6,
    "text": "आपको बता दें अगर आप शादी ले जाएँगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे त्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "hinglish": "aapko bata den agar aap shadi le jaenge to teen sau rupye milenge aapko aur agar aap use trai karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai hum use bahar se bulva ke bhi aapko de sakte hain",
-   "translation": "Tell me if you marry, three hundred rupees will be given to you and if you get him to have a haircut or to make vegetables, it will cost four hundred rupees. Yes, that's the price.",
+   "translation": "Tell me if you marry, you will get three hundred rupees, and if you get him a haircut or a vegetable cut, you will get four hundred rupees.",
    "source_text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": true,
    "uncertain": true,
@@ -168,7 +169,7 @@
    "end": 60.27,
    "text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग",
    "hinglish": "okay theek hai uski phees bata deti hoon meri meri yu cutting ke liye jo aapko saam matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay haan to uske three hundred teen sau something",
-   "translation": "Okay, tell me his fee for my hair cutting, which is the face of his cutting or the hair cutting from the front. Yes, three hundred.",
+   "translation": "Okay, tell me his fees for my hair cut, which is the same as the face, or a hair cut from the front.",
    "source_text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग",
    "changed": false,
    "uncertain": true,
@@ -180,6 +181,7 @@
   2,
   3,
   4,
+  5,
   6,
   8,
   9,
@@ -188,9 +190,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 415.947,
-  "prompt_tokens": 1893,
-  "completion_tokens": 1012,
+  "llm_seconds": 181.679,
+  "prompt_tokens": 1847,
+  "completion_tokens": 1054,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -200,10 +202,10 @@
   "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 5,
+  "lines_flagged_by_llm": 6,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 7,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -212,8 +214,10 @@
   "source_sha256": "624072281f4d664c69d1ae5642663c96c9d1fd17ed5cc40ee87c04bca9c988b4",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:24:29Z",
+  "generated_at_utc": "2026-11-10T21:04:37Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 60.58
+  "source_audio_duration_s": 60.58,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

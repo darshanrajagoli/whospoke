@@ -1,0 +1,132 @@
+{
+  "investigation": "Stage-4 F2 action-item extraction, GROUP-7 DEV ONLY (D32)",
+  "prompt_schema_revision": "41b0cd20c01d",
+  "prompt_changed": false,
+  "baseline": [
+    {
+      "cid": "test_g07_3spk_ovl-high_clean",
+      "variant": "baseline",
+      "proposed": 0,
+      "dropped": 0,
+      "kept": 0,
+      "kept_items": [],
+      "detail": []
+    },
+    {
+      "cid": "test_g07_3spk_ovl-high_market5",
+      "variant": "baseline",
+      "proposed": 0,
+      "dropped": 0,
+      "kept": 0,
+      "kept_items": [],
+      "detail": []
+    },
+    {
+      "cid": "test_g07_3spk_ovl-high_village10",
+      "variant": "baseline",
+      "proposed": 0,
+      "dropped": 0,
+      "kept": 0,
+      "kept_items": [],
+      "detail": []
+    }
+  ],
+  "variantB_explicit_action_wording": [
+    {
+      "cid": "test_g07_3spk_ovl-high_clean",
+      "variant": "B",
+      "proposed": 1,
+      "dropped": 1,
+      "kept": 0,
+      "kept_items": [],
+      "detail": [
+        {
+          "owner": "Madam",
+          "action": "selling",
+          "lines": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "reject_if": "owner"
+        }
+      ]
+    },
+    {
+      "cid": "test_g07_3spk_ovl-high_market5",
+      "variant": "B",
+      "proposed": 4,
+      "dropped": 2,
+      "kept": 2,
+      "kept_items": [
+        {
+          "owner": "S1",
+          "action": "Motorcade is moving, what is it?",
+          "lines": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "owner": "S2",
+          "action": "I want a seven-seater car for Sir Oankarewshar.",
+          "lines": [
+            17
+          ]
+        }
+      ],
+      "detail": [
+        {
+          "owner": "S1",
+          "action": "unspecified",
+          "lines": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "reject_if": ""
+        },
+        {
+          "owner": "unspecified",
+          "action": "Show me an iris test and tell me what is the iris doing.",
+          "lines": [
+            10,
+            11
+          ],
+          "reject_if": ""
+        },
+        {
+          "owner": "S1",
+          "action": "Motorcade is moving, what is it?",
+          "lines": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "reject_if": ""
+        },
+        {
+          "owner": "S2",
+          "action": "I want a seven-seater car for Sir Oankarewshar.",
+          "lines": [
+            17
+          ],
+          "reject_if": ""
+        }
+      ]
+    }
+  ],
+  "conclusion": "Baseline prompt -> model proposes 0 actions on group-7 references; Python gate drops 0 (NOT the cause). Forcing/loosening the action wording (variant B) makes the model over-produce, including a question-shaped action and mis-labelled owners that the weak token-overlap gate accepts (\"Motorcade is moving, what is it?\"). No prompt change justified; loosening would accept suggestions/questions (forbidden). Zero supported actions is the correct safe outcome for Airavata.",
+  "remaining_limitation": "token-overlap grounding admits question-shaped actions if the model emits them; model precision, not the prompt/gate, limits action extraction."
+}

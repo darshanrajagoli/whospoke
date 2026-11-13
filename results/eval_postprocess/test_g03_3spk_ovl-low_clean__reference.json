@@ -1,19 +1,21 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation in Hindi and Hinglish, with a focus on the main topic of the conversation and the key points and keywords discussed.",
+ "title": "Transcript of Hindi and Hinglish Conversations",
+ "topic": "Government, Voting, and New Materials for Worship",
+ "executive_summary": "A conversation in Hindi about the government, voting, and new materials for worship.",
  "key_points": [
-  "Hindi and Hinglish Conversations"
+  "The speaker is asking the government to do something for the people, but they have not done anything in the past.",
+  "The speaker mentions Chautha and Deepavali as holidays in their country.",
+  "The speaker mentions new materials for those who fast and make new clothes.",
+  "The speaker mentions new altars and everything for worship."
  ],
  "keywords": [
-  "हैलो",
-  "वोट",
-  "दीपावली",
-  "बिहार",
+  "Chautha",
+  "Deepavali",
+  "Bihar",
+  "Chautha worship",
+  "Deepavali worship",
   "government",
-  "new materials",
-  "worship",
-  "people"
+  "new materials for worship"
  ],
  "action_items": [],
  "speakers": [
@@ -107,9 +109,9 @@
    "speaker": "S2",
    "start": 19.944,
    "end": 20.464,
-   "text": "चहत्त पू",
-   "hinglish": "chahatt pu",
-   "translation": "Chautha Pu.",
+   "text": "छत पू",
+   "hinglish": "chhat pu",
+   "translation": "Chautha",
    "source_text": "छत्त पू",
    "changed": true,
    "uncertain": true,
@@ -135,7 +137,7 @@
    "end": 30.648,
    "text": "वो वोट देना है भोट देना है अब देना है देखिए न वो ही छाप को छाप पर देना है वोट",
    "hinglish": "wo vote dena hai bhot dena hai ab dena hai dekhie na wo hi chhaap ko chhaap par dena hai vote",
-   "translation": "Who is willing to vote and not just on the printout?",
+   "translation": "Who is willing to vote and not just write on the paper?",
    "source_text": "वोट देना है भोट देना है अब देना है देखिए न वो ही छाप को छाप पर देना है वोट",
    "changed": true,
    "uncertain": true,
@@ -198,13 +200,13 @@
    "speaker": "S3",
    "start": 60.303,
    "end": 79.393,
-   "text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ न दिया सरकार के खिलाफ नहीं दिया तो अब अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इन्द्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारे हो उसी का व्होट दिया जाएगा",
+   "text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ न दिया सरकार के खिलाफ नहीं दिया तो अब अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इंद्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारे हो उसी का व्होट दिया जाएगा",
    "hinglish": "ab to vote khatm ho gaya ab vote aaega nahi to kuch na diya sarkar ke khilaph nahi diya to ab ab kiska dena hai jo usi ka vote dena hai je aage mein badhaega vikas karaega hum log ka indravas ho bathroom ho sahara ho mane ye bhi cheej ke sahare ho usi ka vote diya jaega",
-   "translation": "The government has not done anything for the people, and they will not do anything in the future. We should vote for the same person who will increase the economy and make us more comfortable.",
+   "translation": "The government has not done anything for the people, and now they want to give a vote to the same people. We will increase the vote for the same people in the future.",
    "source_text": "अब तो व्होट खत्म हो गया अब व्होट आएगा नहीं तो कुछ न दिया सरकार के खिलाफ नहीं दिया तो अब अब किसका देना है जो उसी का वोट देना है जे आगे में बढ़ाएगा विकास कराएगा हम लोग का इन्द्रावास हो बाथरूम हो सहारा हो माने ये भी चीज के सहारा हो उसी का व्होट दिया जाएगा",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   }
  ],
  "uncertain_lines": [
@@ -217,14 +219,13 @@
   9,
   10,
   11,
-  12,
-  13
+  12
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 53.394,
-  "prompt_tokens": 2299,
-  "completion_tokens": 1187,
+  "llm_seconds": 200.865,
+  "prompt_tokens": 2291,
+  "completion_tokens": 1192,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -234,10 +235,10 @@
   "lines_reverted": 1,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 11,
+  "lines_flagged_by_llm": 10,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -246,8 +247,10 @@
   "source_sha256": "552a4061b060469f005ab1454e44d66af3f6769d6e82d2ef3965b1f728f61d1d",
   "source_line_count": 13,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:39:15Z",
+  "generated_at_utc": "2026-11-11T01:07:36Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 79.8
+  "source_audio_duration_s": 79.8,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

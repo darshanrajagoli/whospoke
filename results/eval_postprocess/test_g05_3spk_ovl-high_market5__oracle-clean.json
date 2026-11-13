@@ -1,17 +1,19 @@
 {
  "title": "Hindi and Hinglish Conversations",
- "topic": "Medical Issues and Wedding",
- "executive_summary": "A conversation between two people, one of whom is asking for help with a medical issue. Part 1: A conversation between two people, one of whom is asking for help with a medical issue. Part 2: A conversation about a wedding, with questions about the service and the dike. Part 3: Sir wants to take a photo of the wedding suit in a good location and wants to be in the wedding at least two to three days. Part 4: Sir wants to take a photo of the wedding suit in a good location and wants to be in the wedding at least two to three days. Part 5: Sir wants to take a photo of the wedding suit in a good location and wants to be in the wedding at least two to three days. Part 6: Sir wants to take a photo of the wedding suit in a good location and wants to be in the wedding at least two to three days. }",
+ "topic": "Hindi and Hinglish Conversations",
+ "executive_summary": "This report summarizes the evidence from a transcribed conversation between two people in Hindi. The conversation includes topics such as a friend's wedding, a dike in the foot, and a request for pre-wedding photos. The evidence supports the fact that the speaker wants to take photos of the wedding suit at least two to three days before the wedding, and wants to do it at a good location. There are no explicit requests, instructions, or promises in the evidence.",
  "key_points": [
-  "medical",
-  "help",
-  "issue",
-  "wedding",
-  "service"
+  "Hindi and Hinglish Conversations"
  ],
  "keywords": [
+  "दिक्कत",
+  "मैम",
+  "मैं",
   "wedding",
-  "service"
+  "dike",
+  "foot",
+  "wedding suit",
+  "photos"
  ],
  "action_items": [],
  "speakers": [
@@ -55,7 +57,7 @@
    "end": 10.81,
    "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
    "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
-   "translation": "Hello madam, tell me what is the problem?",
+   "translation": "Hello madam, tell me what is the dijkat?",
    "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
    "changed": false,
    "uncertain": true,
@@ -68,7 +70,7 @@
    "end": 16.49,
    "text": "हेलो हलो सर नमस्कार मैं अजीत ही बोल रहा था जी मेरे ग्राफ़ बात फोटोग्राफर से हो रही है",
    "hinglish": "hello hello sir namaskar main ajit hi bol raha tha ji mere graaf baat photographer se ho rahi hai",
-   "translation": "Hello sir, hello photographer, I was just saying hello to him",
+   "translation": "Hello sir, hello sir, I was just talking to the photographer, my graph is with the photographer",
    "source_text": "हेलो हलो सर नमस्कार मैं अजीत ही बोल रहा था जी मेरे ग्राफ़ बात फोटोग्राफर से हो रही है",
    "changed": false,
    "uncertain": true,
@@ -94,7 +96,7 @@
    "end": 22.98,
    "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "hinglish": "sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
-   "translation": "We were saying that the Lucknowi style biryanis were not good",
+   "translation": "We were talking about the Lucknowi style biryanis",
    "source_text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "changed": false,
    "uncertain": true,
@@ -107,7 +109,7 @@
    "end": 25.56,
    "text": "जी सर यह मेरे यहाँ दस जून की शादी है",
    "hinglish": "ji sir yeh mere yahan das joon ki shadi hai",
-   "translation": "Sir, it's my wedding here on the 10th of June",
+   "translation": "G sir, it's my wedding here on the 10th of June",
    "source_text": "जी सर यह मेरे यहाँ दस जून की शादी है",
    "changed": false,
    "uncertain": true,
@@ -146,7 +148,7 @@
    "end": 41.86,
    "text": "तो मेरे को प्री वेडिंग फ़ोटोशूट कराना तो सर उसका कैसा क्या रहता है दस चून को मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगी आप तो कब टाइम है मतलब फ़ोटोशूट करने के लिए आप दूसरी डेटें आप",
    "hinglish": "to mere ko pri wedding fotoshut karana to sir uska kaisa kya rahta hai das choon ko matlab meri jo pri wedding fotoshut usse pahle hogi aap to kab time hai matlab fotoshut karne ke liye aap dusri deten aap",
-   "translation": "So my question is, when will you be able to take photos of the wedding?",
+   "translation": "You asked me to take pre-wedding photos of my friend, who wanted to get married, and when I asked her when the photos would be taken, she said she wanted to get married soon.",
    "source_text": "तो मेरे को प्री वेडिंग फ़ोटोशूट कराना तो सर उसका कैसा क्या रहता है दस चून को मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगा आप तो कब टाइम है मतलब फ़ोटोशूट करने के लिए आप दूसरी डेटें आप",
    "changed": true,
    "uncertain": true,
@@ -159,7 +161,7 @@
    "end": 34.55,
    "text": "सब का इलाज है मैम आप कब से हो रहा है आपको यह सब",
    "hinglish": "sab ka ilaj hai ma'am aap kab se ho raha hai aapko yeh sab",
-   "translation": "The treatment is complete, sir. When did you start?",
+   "translation": "The doctor said that all of my treatment is complete.",
    "source_text": "सब का इलाज है मैम आप कब से हो रहा है आपको यह सब",
    "changed": false,
    "uncertain": true,
@@ -172,7 +174,7 @@
    "end": 49.52,
    "text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा वमोसा ये सब",
    "hinglish": "haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana samosa wamosa ye sab",
-   "translation": "Yes, and also wanted something sweet like roses, berries, and snowballs.",
+   "translation": "Yes, there were also sweets like roses, berries, and snowballs, and a samosa and a wamosa.",
    "source_text": "हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वाना समोसा वमोसा ये सब",
    "changed": false,
    "uncertain": true,
@@ -185,7 +187,7 @@
    "end": 57.6,
    "text": "कब से आपको दिक्कत आ रहा है पैर आपके पैर में सूजन है क्या दिक्कत है पैर में आपको खाँसी भी आ रहा है",
    "hinglish": "kab se aapko dikkat aa raha hai pair aapke pair mein sujan hai kya dikkat hai pair mein aapko khansi bhi aa raha hai",
-   "translation": "When did the dike come in your foot? Is there a dike in your foot?",
+   "translation": "When did the dike come in your foot? Did the dike cause you to cough?",
    "source_text": "कब से आपको दिक्कत आ रहा है पैर आपके पैर में सूजन है क्या क्या दिक्कत है पैर में आपको खाँसी भी आ रहा है",
    "changed": true,
    "uncertain": true,
@@ -198,11 +200,11 @@
    "end": 65.03,
    "text": "सर प्री वेडिंग सूट फोटोशूट कम से कम अच्छी लोकेशन पर चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको हाँ जी",
    "hinglish": "sir pri wedding suit photoshoot kam se kam achhi location par chahiye to kam se kam do se teen din to pri wedding mein lag jaenge aapko haan ji",
-   "translation": "Sir wants to take a photo of the wedding suit in a good location and wants to be in the wedding at least two to three days.",
+   "translation": "Sir wants to take photos of the wedding suit at least two to three days before the wedding, and wants to do it at a good location.",
    "source_text": "सर प्री वेडिंग सूट फोटोशूट कम से कम अच्छी लोकेशन पर चाहिए तो कम से कम दो से तीन दिन तो प्री वेडिंग में लग जाएंगे आपको हाँ जी",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   }
  ],
  "uncertain_lines": [
@@ -215,14 +217,13 @@
   9,
   10,
   11,
-  12,
-  13
+  12
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 61.248,
-  "prompt_tokens": 2395,
-  "completion_tokens": 1325,
+  "llm_seconds": 229.373,
+  "prompt_tokens": 2446,
+  "completion_tokens": 1352,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -232,10 +233,10 @@
   "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 11,
+  "lines_flagged_by_llm": 10,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 4,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -244,8 +245,10 @@
   "source_sha256": "bc14e49ec3e5259e210be7e362293131330241cee612c80b4acd1e46e249c2b4",
   "source_line_count": 13,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:06:09Z",
+  "generated_at_utc": "2026-11-11T06:07:07Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 65.67
+  "source_audio_duration_s": 65.67,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

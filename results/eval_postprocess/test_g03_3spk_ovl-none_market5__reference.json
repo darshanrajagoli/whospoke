@@ -1,17 +1,18 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation in Hindi and Hinglish, with a focus on the main topic of the conversation and the key points discussed.",
+ "title": "Hindi and Hinglish Conversation",
+ "topic": "Family and Government",
+ "executive_summary": "A conversation in Hindi and Hinglish about family and government.",
  "key_points": [
-  "Hindi and Hinglish Conversations"
+  "Family",
+  "Government",
+  "Hindi and Hinglish",
+  "Conversation",
+  "Family and Government"
  ],
  "keywords": [
   "हैलो",
-  "रात को तो सभी लोग देखते हैं बहुत सुंदर",
-  "हम बिहार से बोल रहे हैं",
-  "हाँ बोलिए",
-  "सरकार कौन है",
-  "बहुत अच्छा"
+  "दीपावली",
+  "सरकार"
  ],
  "action_items": [],
  "speakers": [
@@ -133,7 +134,7 @@
    "end": 30.133,
    "text": "रात को तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
    "hinglish": "raat ko to sabhi log dekhte hain bahut sundar banate hain",
-   "translation": "At night, everyone looks at the sky and makes beautiful things",
+   "translation": "At night, everyone looks at the sky and make beautiful",
    "source_text": "रात को तो सभी लोग देखते हैं बहुत सुंदर बनाते हैं",
    "changed": false,
    "uncertain": false,
@@ -146,7 +147,7 @@
    "end": 32.671,
    "text": "हम बिहार से बोल रहे हैं",
    "hinglish": "hum bihar se bol rahe hain",
-   "translation": "We are from Bihar",
+   "translation": "We are speaking from Bihar",
    "source_text": "हम बिहार से बोल रहे हैं",
    "changed": false,
    "uncertain": false,
@@ -159,7 +160,7 @@
    "end": 41.892,
    "text": "हमारे देश में छत्त पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
    "hinglish": "hamare desh mein chhatt puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie",
-   "translation": "In our country, Chautha is celebrated and Diwali is also celebrated and yes, we speak",
+   "translation": "In our country, Chautha is celebrated and Deepavali is also celebrated and yes",
    "source_text": "हमारे देश में छत्त पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए",
    "changed": false,
    "uncertain": false,
@@ -172,11 +173,11 @@
    "end": 42.521,
    "text": "छत्त पू",
    "hinglish": "chhatt pu",
-   "translation": "Who is the government?",
+   "translation": "Who is the government",
    "source_text": "छत्त पू",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 12,
@@ -185,11 +186,11 @@
    "end": 44.127,
    "text": "यही बार तो सरकार कौन",
    "hinglish": "yahi baar to sarkar kaun",
-   "translation": "Yes, speak",
+   "translation": "Hello",
    "source_text": "यही बार तो सरकार कौन",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 13,
@@ -211,11 +212,11 @@
    "end": 57.857,
    "text": "बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से हम देखने में भी ख़ूब अच्छा लगता है हम लोग तो दूसरो को भी बुला बुला के ले जाते हैं",
    "hinglish": "bahut achha bahut achha dekhte hain bahut achha se hum dekhne mein bhi khoob achha lagta hai hum log to dusro ko bhi bula bula ke le jate hain",
-   "translation": "Very good very good look at it very good we also take others to look at it we take others to look at it",
+   "translation": "Very good very good look at it very good we people also call others to look at it we people also take new things to look at",
    "source_text": "बहुत अच्छा बहुत अच्छा देखते हैं बहुत अच्छा से हम देखने में भी ख़ूब अच्छा लगता है हम लोग तो दूसरो को भी बुला बुला के ले जाते हैं",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
   },
   {
    "line_id": 15,
@@ -224,7 +225,7 @@
    "end": 76.318,
    "text": "छत पूजन छत्त पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नए वस्त्र ख़रीद के लाते हैं वह पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं यह सब बनाते हैं पूजा करने के लिए",
    "hinglish": "chhat pujan chhatt puja mein hum log naya sab saman late hain jo vrat karte hain uske liye nae wastr kharid ke late hain woh pahante hain usmen aur thakua banate hain kasar banate hain yeh sab banate hain puja karne ke liye",
-   "translation": "Chhat Puja in Chhat Puja we bring new stuff for fasting for fasting we bring new clothes for fasting we wear them in them and make cakes for fasting we make cakes for fasting",
+   "translation": "Chhat Puja in Chhat Puja we people bring new things for fasting for that we bring new clothes and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cushions and make cus",
    "source_text": "छत्त पूजन छत्त पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नए वस्त्र ख़रीद के लाते हैं वह पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं यह सब बनाते हैं पूजा करने के लिए",
    "changed": true,
    "uncertain": true,
@@ -237,26 +238,27 @@
   6,
   11,
   12,
+  14,
   15
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 59.493,
-  "prompt_tokens": 2390,
-  "completion_tokens": 1317,
+  "llm_seconds": 200.701,
+  "prompt_tokens": 2351,
+  "completion_tokens": 1181,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 1,
-  "lines_reverted": 2,
+  "lines_reverted": 3,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 6,
+  "lines_flagged_by_llm": 4,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 7,
+  "keywords_dropped": 5,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -265,8 +267,10 @@
   "source_sha256": "09f2d694fff46c4fb05d1683f1d83917607ef36faaf943cbdd2b6a264c20701e",
   "source_line_count": 15,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:35:53Z",
+  "generated_at_utc": "2026-11-11T00:55:13Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 76.67
+  "source_audio_duration_s": 76.67,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

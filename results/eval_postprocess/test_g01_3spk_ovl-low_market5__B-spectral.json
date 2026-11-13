@@ -1,23 +1,18 @@
 {
- "title": "Hindi and Hinglish Conversation Transcript",
- "topic": "Hindi and Hinglish Conversation",
- "executive_summary": "This report summarizes a conversation between two speakers in Hindi and Hinglish, with a focus on the main topic of the conversation and the key points discussed.",
+ "title": "Hindi and Hinglish Conversations",
+ "topic": "Hindi and Hinglish Conversations",
+ "executive_summary": "This report summarizes a conversation in Hindi and Hinglish between several speakers.",
  "key_points": [
-  "Speaker A and Speaker B are talking.",
-  "Speaker A says yes, Speaker B says he will do it in two and four days, Speaker C says he will do it in two and four days, and Speaker C says he will do it in two and four days.",
+  "Speaker_A greets Speaker_B and Speaker_C.",
+  "Speaker A and Speaker B talk about marriage and vegetables.",
   "Speaker D talks about fish, savings, and hair cutting.",
   "Speaker A asks Speaker B to build a structure.",
-  "Speaker A says yes, Speaker B says he will do it in two and four days."
+  "Speaker_B agrees to do so."
  ],
  "keywords": [
-  "रेस्टोरेंट",
-  "fish",
-  "savings",
-  "hair cutting",
-  "heap",
-  "need",
-  "things",
-  "outside"
+  "नमस्ते",
+  "बोलो",
+  "शादी"
  ],
  "action_items": [],
  "speakers": [
@@ -80,7 +75,7 @@
    "end": 8.95,
    "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
    "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
-   "translation": "Hello, I'm talking to Sir's restaurant, you're the one who's in charge of it.",
+   "translation": "Hello, I'm talking to Sir's restaurant and our specialty is Sir.",
    "source_text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
    "changed": false,
    "uncertain": true,
@@ -145,7 +140,7 @@
    "end": 16.7,
    "text": "ठीक कर देंगे दो चार दिन लगेंगे",
    "hinglish": "theek kar denge do chaar din lagenge",
-   "translation": "Will do in two and four days",
+   "translation": "Will do two days and four days",
    "source_text": "ठीक कर देंगे दो चार दिन लगेंगे",
    "changed": false,
    "uncertain": false,
@@ -171,7 +166,7 @@
    "end": 18.25,
    "text": "हाँ जी बोलिए",
    "hinglish": "haan ji bolie",
-   "translation": "Yes, say it",
+   "translation": "Yes, say g.",
    "source_text": "हाँ जी बोलिए",
    "changed": false,
    "uncertain": false,
@@ -184,7 +179,7 @@
    "end": 24.4,
    "text": "आपको बता दें अगर आप शादी ले जाएँगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसकी त्राई करवा के या सब्जी बना के ले आओगे",
    "hinglish": "aapko bata den agar aap shadi le jaenge to teen sau rupye milenge aapko aur agar aap uski trai karva ke ya sabji bana ke le aaoge",
-   "translation": "Tell me if you will marry and get three hundred rupees for it and if you will make vegetable soup or something like that",
+   "translation": "If you marry, you will get three hundred rupees and if you get his try and make vegetables.",
    "source_text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसकी ट्राई करवा के या सब्जी बना के ले आओगे",
    "changed": true,
    "uncertain": true,
@@ -197,7 +192,7 @@
    "end": 27.2,
    "text": "तो आपको साढ़े चार सौ रुपये की पड़ेगी",
    "hinglish": "to aapko sadhe chaar sau rupye ki padegi",
-   "translation": "So you will have to pay five hundred and four hundred",
+   "translation": "So you will have to pay four hundred and forty rupees.",
    "source_text": "तो आपको साढ़े चार सौ रुपये की पड़ेगी",
    "changed": false,
    "uncertain": true,
@@ -364,9 +359,9 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 659.221,
-  "prompt_tokens": 3128,
-  "completion_tokens": 1658,
+  "llm_seconds": 263.06,
+  "prompt_tokens": 3083,
+  "completion_tokens": 1551,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -379,7 +374,7 @@
   "lines_flagged_by_llm": 8,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 14,
+  "keywords_dropped": 5,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -388,8 +383,10 @@
   "source_sha256": "ff56d3b301e03dd2d5169f3be66789c7d45c7b5454e6e037f10b3aca17692f70",
   "source_line_count": 24,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:52:37Z",
+  "generated_at_utc": "2026-11-10T21:37:06Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 63.31
+  "source_audio_duration_s": 63.31,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

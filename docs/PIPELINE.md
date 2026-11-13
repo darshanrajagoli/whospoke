@@ -105,7 +105,7 @@ training (IndicConformer was trained on IndicVoices, which our simulated data is
   turn without overlap, is transcribed straight from the mixture. Replacing the whole turn instead was worse on dev,
   because separator artefacts spread over speech that was never overlapped (D26). The region's other separated
   output is not used: turning it into an extra turn for the interrupting speaker (`Pipeline(second_voice=...)`, off
-  by default) was worse on dev (D36).
+  by default) was worse on dev (D41).
 - Order A: every turn is transcribed from the separated track it was found on.
 Turns longer than 25 s are split at the quietest 50 ms near the cut.
 

@@ -1,18 +1,15 @@
 {
- "title": "Lost ID Card and Application",
- "topic": "Lost ID Card and Application",
- "executive_summary": "Speaker is asking about the location of the office and the hours it will be open. They also mention that they will need to go to a school to deliver the BS paper and the base card. The speaker mentions that they lost their ID card in the school and asks the principal to check the room number three. The speaker also mentions that they will need to make an application for a new ID card and application for a new base card. The speaker mentions that they will need to make an application for a new ID card and application for a new base card.",
+ "title": "Location and Hours of Babu Manshankar Inter College",
+ "topic": "Location and Hours of Babu Manshankar Inter College",
+ "executive_summary": "Speaker is asking about the location and hours of Babu Manshankar Inter College.",
  "key_points": [
-  "location",
-  "hours",
-  "ID card",
-  "application",
-  "make"
+  "Location of Babu Manshankar Inter College",
+  "Hours of Babu Manshankar Inter College"
  ],
  "keywords": [
   "office",
   "hours",
-  "ID card"
+  "संगीता"
  ],
  "action_items": [],
  "speakers": [
@@ -50,7 +47,7 @@
    "end": 16.3,
    "text": "नमस्ते सर सर मेरे कोई गलती हुई मेरे हाथ से और मेरा आई डी कार्ड गुम हो गया है सर",
    "hinglish": "namaste sir sir mere koi galti hui mere haath se aur mera aai D card gum ho gaya hai sir",
-   "translation": "Hello, sir, my hand was broken and my ID card was lost.",
+   "translation": "Hello, sir, I lost my hand and my ID card.",
    "source_text": "नमस्ते सर सर मेरे कोई गलती हुई मेरे हाथ से और मेरा आई डी कार्ड गुम हो गया है सर",
    "changed": false,
    "uncertain": true,
@@ -63,7 +60,7 @@
    "end": 34.85,
    "text": "तो हम बी एस का पेपर देने गए थे आपके स्कूल में मेरा फ़र्स वहीं छूट गया था उसमें कुछ छूटे सामान है ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था",
    "hinglish": "to hum B S ka paper dene gaye the aapke school mein mera fars wahin chhoot gaya tha usmen kuch chhute saman hai zarurat ki to wo mujhe chahiye tha kaise mil sakta hai aap apne karmachari se check karva ke puchhie kamra number teen mein chhuta tha",
-   "translation": "So, they went to deliver the BS paper and lost the paper in your school. They asked your Karma Chari to check the room number three.",
+   "translation": "So, they went to deliver the BS paper to your school, but they missed the discount in the BS paper there. They asked my Karma Chari to check the room number three.",
    "source_text": "तो हम बी एस का पेपर देने गए थे आपके स्कूल में मेरा फर्स वहीं छूट गया था उसमें कुछ छूटे सामान है ज़रूरत की तो वो मुझे चाहिए था कैसे मिल सकता है आप अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था",
    "changed": true,
    "uncertain": true,
@@ -76,7 +73,7 @@
    "end": 42.73,
    "text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड ये और",
    "hinglish": "haan sir wo egzam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kapi aur kya kya lana hai sir ek khud ka photo ek aadhar card ye aur",
-   "translation": "Yes, sir, they are coming with the Exam Pass and a photo of the base card.",
+   "translation": "Yes, sir, they are coming with the Agzam pass, but they want an ID card and a base card photo.",
    "source_text": "हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फ़ोटो कापी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड ये और",
    "changed": false,
    "uncertain": true,
@@ -115,11 +112,11 @@
    "end": 52.81,
    "text": "संगीता जी",
    "hinglish": "sangita ji",
-   "translation": "",
+   "translation": "We will need to go to the sanghagarita first to",
    "source_text": "संगीता जी",
    "changed": false,
-   "uncertain": true,
-   "note": "The same English was returned for different lines."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 8,
@@ -128,11 +125,11 @@
    "end": 60.28,
    "text": "आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद अच्छा एप्लीकेशन भी लिखनी पड़ेगी",
    "hinglish": "aai D card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega achha uske baad achha eplikeshan bhi likhni padegi",
-   "translation": "",
+   "translation": "We will need to go to the sanghagarita first to get two items of ID card, then we will need to go to the sanghagarita to get the application.",
    "source_text": "आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद अच्छा एप्लीकेशन भी लिखनी पड़ेगी",
    "changed": false,
    "uncertain": true,
-   "note": "The same English was returned for different lines."
+   "note": "The model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -142,14 +139,13 @@
   4,
   5,
   6,
-  7,
   8
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 41.524,
-  "prompt_tokens": 1751,
-  "completion_tokens": 903,
+  "llm_seconds": 159.561,
+  "prompt_tokens": 1782,
+  "completion_tokens": 908,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -159,10 +155,10 @@
   "lines_reverted": 0,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 6,
-  "missing_translations": 2,
+  "lines_flagged_by_llm": 7,
+  "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 5,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -171,8 +167,10 @@
   "source_sha256": "e4e65dccae02f3155a78c6bdfd13c4baac5619ac1e7eee7792d69bb112a8b548",
   "source_line_count": 8,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T11:57:07Z",
+  "generated_at_utc": "2026-11-10T22:27:33Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 60.67
+  "source_audio_duration_s": 60.67,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

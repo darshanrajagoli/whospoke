@@ -1,19 +1,18 @@
 {
- "title": "Pre-wedding Photoshoot",
- "topic": "Wedding",
- "executive_summary": "A conversation about a pre-wedding photoshoot.",
+ "title": "Pre-wedding Photoshoot Plan",
+ "topic": "Pre-wedding Photoshoot Plan",
+ "executive_summary": "A conversation between two people about planning a pre-wedding photoshoot.",
  "key_points": [
-  "What is the speaker asking the photographer about?",
-  "What is the speaker's wedding date?",
-  "Who is the photographer?",
-  "What type of food is the photographer looking for?",
-  "What type of location is the photographer looking for?"
+  "The speaker is looking for a pre-wedding shoot location.",
+  "The speaker wants to know when the right time is to take photoshoot.",
+  "The speaker wants to make sure the pre-wedding shoot is in a good location and lasts for at least two to three days."
  ],
  "keywords": [
-  "namaste",
-  "wedding",
-  "photographer",
-  "lucknavi style biryanis"
+  "photoshoot",
+  "pre-wedding",
+  "time",
+  "pre-wedding shoot",
+  "location"
  ],
  "action_items": [],
  "speakers": [
@@ -122,11 +121,11 @@
    "end": 16.489,
    "text": "जी मेरी क्या आप की बात फोटोग्राफर से हो रही है",
    "hinglish": "ji meri kya aap ki baat photographer se ho rahi hai",
-   "translation": "I'm asking the photographer about my wedding date.",
+   "translation": "G, my friend, you are talking to a photographer.",
    "source_text": "जी मेरी क्या आप की बात फोटोग्राफर से हो रही है",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 8,
@@ -138,8 +137,8 @@
    "translation": "Our clinic is in Lucknow.",
    "source_text": "हमारी डाक्टरी लखनऊ में है",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 9,
@@ -148,11 +147,11 @@
    "end": 22.982,
    "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "hinglish": "sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
-   "translation": "We were saying that we wanted a Lucknavi style biryanis.",
+   "translation": "We were talking about Lucknavi style biryanis.",
    "source_text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 10,
@@ -161,11 +160,11 @@
    "end": 25.558,
    "text": "जी सर यह मेरे यहाँ दस जून की शादी है",
    "hinglish": "ji sir yeh mere yahan das joon ki shadi hai",
-   "translation": "Yes, it's my wedding in June.",
+   "translation": "G, my friend, it's a ten June wedding.",
    "source_text": "जी सर यह मेरे यहाँ दस जून की शादी है",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 11,
@@ -177,8 +176,8 @@
    "translation": "Yes.",
    "source_text": "हाँ",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 12,
@@ -187,11 +186,11 @@
    "end": 28.857,
    "text": "पाँच लोगों के लिए चाहिए था सर्व हो पाएगा",
    "hinglish": "paanch logon ke liye chahiye tha sarv ho paega",
-   "translation": "Five people were needed.",
+   "translation": "Five people will be available.",
    "source_text": "पाँच लोगों के लिए चाहिए था सर्व हो पाएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 13,
@@ -239,7 +238,7 @@
    "end": 37.44,
    "text": "तो जून में मतलब मेरे जो है प्री वेडिंग फोटोशूट उससे पहले होगा आपको",
    "hinglish": "to joon mein matlab mere jo hai pri wedding photoshoot usse pahle hoga aapko",
-   "translation": "So, June is when I'll have to take pre-wedding photoshoot.",
+   "translation": "So, June is when I'll take pre-wedding photoshoot, and you'll be there.",
    "source_text": "दस जून को मतलब मेरे जो है प्री वेडिंग फोटोशूट उससे पहले होगा आपको",
    "changed": true,
    "uncertain": true,
@@ -252,7 +251,7 @@
    "end": 41.861,
    "text": "तो कब टाइम है मतलब फोटोशूट करने के लिए आप वही दूसरी डेट में आप",
    "hinglish": "to kab time hai matlab photoshoot karne ke liye aap wahi dusri date mein aap",
-   "translation": "So, when is the right time to take photoshoot.",
+   "translation": "So, when is the right time to take photoshoot, and you'll be there.",
    "source_text": "तो कब टाइम है मतलब फोटोशूट करने के लिए आप वही दूसरी डेट में आप",
    "changed": false,
    "uncertain": true,
@@ -342,6 +341,11 @@
   3,
   4,
   6,
+  7,
+  8,
+  9,
+  10,
+  11,
   12,
   15,
   16,
@@ -355,22 +359,22 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 77.348,
-  "prompt_tokens": 3141,
-  "completion_tokens": 1673,
+  "llm_seconds": 294.175,
+  "prompt_tokens": 3156,
+  "completion_tokens": 1753,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 2,
-  "lines_reverted": 1,
+  "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 14,
+  "lines_flagged_by_llm": 19,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -379,8 +383,10 @@
   "source_sha256": "a90f61ce8fcb17974d91d8b6c676d8a16de32c9a0d14dc8b42da4477e0c2c42a",
   "source_line_count": 23,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:05:07Z",
+  "generated_at_utc": "2026-11-11T06:03:18Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 65.67
+  "source_audio_duration_s": 65.67,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

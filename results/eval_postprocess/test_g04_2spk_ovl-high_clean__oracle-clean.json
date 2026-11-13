@@ -1,20 +1,20 @@
 {
- "title": "Transcript of a conversation about Vaibhav and his studies in Class 10",
- "topic": "Vaibhav's studies in Class 10",
- "executive_summary": "The speaker is interested in buying a box of two hundred rupees for Vaibhav's studies.",
+ "title": "Transcript of a conversation about Vaibhav, Class 10, Sickness, box, red, blue, black, and",
+ "topic": "boxes of red, blue, and black",
+ "executive_summary": "A conversation about Vaibhav, Class 10, Sickness, box, red, blue, black, price, boxes",
  "key_points": [
-  "Vaibhav studies in Class 10",
-  "The speaker wants to buy a box of two hundred rupees for Vaibhav's studies.",
-  "The speaker asks when the box will be delivered.",
-  "The speaker mentions a special discount for the box."
+  "boxes of red, blue, and black",
+  "price",
+  "boxes"
  ],
  "keywords": [
   "Vaibhav",
   "Class 10",
-  "School",
   "box",
-  "price",
-  "mam"
+  "red",
+  "blue",
+  "black",
+  "price"
  ],
  "action_items": [],
  "speakers": [
@@ -56,7 +56,7 @@
    "source_text": "नमस्ते आपके बच्चे का नाम वैभव है आपके लड़के का",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 3,
@@ -78,7 +78,7 @@
    "end": 26.86,
    "text": "हाँ और वो कक्षा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
    "hinglish": "haan aur wo kaksha das mein padhta hai wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
-   "translation": "Yes and he studies in Class 10",
+   "translation": "Yes and he is in Class 10",
    "source_text": "हाँ और वो कक्षा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
    "changed": false,
    "uncertain": true,
@@ -104,7 +104,7 @@
    "end": 50.97,
    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाँ तो हम दिला देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai haan to hum dila denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega",
-   "translation": "Now, everyone who comes here after 9am, it must be because of the heat. It must be because of the lack of water. He got sick because of that.",
+   "translation": "Now, everyone who comes here can get water, but it may have been because of the heat, which may have made him sick.",
    "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हाँ तो हम दिला देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
    "changed": false,
    "uncertain": true,
@@ -163,9 +163,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 41.515,
-  "prompt_tokens": 1782,
-  "completion_tokens": 883,
+  "llm_seconds": 151.062,
+  "prompt_tokens": 1801,
+  "completion_tokens": 856,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -175,10 +175,10 @@
   "lines_reverted": 6,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 8,
+  "lines_flagged_by_llm": 7,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -187,8 +187,10 @@
   "source_sha256": "efc9baaa50a6fd5ac398821ec44a8300e00be0156869e7ed1af3b96413572a76",
   "source_line_count": 9,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:25:41Z",
+  "generated_at_utc": "2026-11-11T03:37:53Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 62.59
+  "source_audio_duration_s": 62.59,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

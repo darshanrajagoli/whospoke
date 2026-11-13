@@ -1,17 +1,17 @@
 {
  "title": "Hindi and Hinglish Conversation Report",
- "topic": "Village Development",
- "executive_summary": "Speaker A says he will give a hand and vote for the village's development, but is unsure about the future. He says he can't see anything, will get money from the poor people, and will learn how to grow better. He says he has given it, but still wants to give it. He doesn't want to vote, but he wants to eat. He says he can't see anything, but he wants to give it. He says he has given it, but still wants to give it. He says he has given it, but still wants to give it. He says he has given it, but still wants to give it. He says he has given it, but still wants to give it. He says he has given it, but still wants to give it. He says he has given it, but still wants to give it. He says he has given it, but still wants to give it. He says he has given it, but still wants to give it. He says he…",
+ "topic": "Development of Village",
+ "executive_summary": "Speaker A says he will give a handshake and vote for the village's development, but is unsure about the future. He says he can't see anything, will get money and give it generously, will read and learn, but the ground is quick.",
  "key_points": [
   "vote",
-  "hand",
+  "handshake",
   "give",
   "society",
   "development"
  ],
  "keywords": [
   "vote",
-  "hand",
+  "handshake",
   "give",
   "society"
  ],
@@ -58,7 +58,7 @@
    "end": 20.35,
    "text": "ठीक है हाँ जी जी देखते है की बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
    "hinglish": "theek hai haan ji ji dekhte hai ki bahut achha se dekhte hain aur kitna achha banate hain",
-   "translation": "Okay, I see, he looks good and makes a lot of good.",
+   "translation": "Okay, I see, he looks good and makes a lot of money.",
    "source_text": "ठीक है हाँ जी जी देखते है की बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
    "changed": false,
    "uncertain": false,
@@ -71,11 +71,11 @@
    "end": 21.75,
    "text": "ओट देना है",
    "hinglish": "ot dena hai",
-   "translation": "Give me a hand.",
+   "translation": "Give me a handshake.",
    "source_text": "ओट देना",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 7,
@@ -84,11 +84,11 @@
    "end": 25.0,
    "text": "वोट देना है",
    "hinglish": "vote dena hai",
-   "translation": "Vote.",
+   "translation": "",
    "source_text": "वोट देना है",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 8,
@@ -97,11 +97,11 @@
    "end": 36.4,
    "text": "खत्म हो गया अब वो आएगा उसने तो सूचना दिया सरकार के खिलाफ नहीं दिया",
    "hinglish": "khatm ho gaya ab wo aaega usne to suchna diya sarkar ke khilaph nahi diya",
-   "translation": "Vote.",
+   "translation": "",
    "source_text": "खत्म हो गया अब वो आएगा उसने तो सूचना दिया सरकार के खिलाफ नहीं दिया",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 9,
@@ -123,7 +123,7 @@
    "end": 52.95,
    "text": "फिर भी देना है भी दिया गया है लेकिन फिर भी देना है",
    "hinglish": "phir bhi dena hai bhi diya gaya hai lekin phir bhi dena hai",
-   "translation": "He has given it, but he still wants to give it.",
+   "translation": "He has given it already, but still wants to give it.",
    "source_text": "फिर भी देना है भी दिया गया है लेकिन फिर भी देना",
    "changed": true,
    "uncertain": false,
@@ -136,7 +136,7 @@
    "end": 55.55,
    "text": "वोट नहीं देना है कि मतलब फूट देना है",
    "hinglish": "vote nahi dena hai ki matlab foot dena hai",
-   "translation": "He doesn't want to vote, but he wants to eat.",
+   "translation": "He doesn't want to vote, but wants to eat.",
    "source_text": "वोट नहीं देना है कि मतलब फूट देना है",
    "changed": false,
    "uncertain": true,
@@ -152,8 +152,8 @@
    "translation": "Yes, yes.",
    "source_text": "हाँ हाँ",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 13,
@@ -214,7 +214,7 @@
    "end": 78.2,
    "text": "धीरे-धीरे धीरे-धीरे दीजिए फोस देना ही होगा मोटे पैसे दीजिएगा फोस देना ही होगा",
    "hinglish": "dhire-dhire dhire-dhire dijie phos dena hi hoga mote paise dijiega phos dena hi hoga",
-   "translation": "Will slowly slowly give money to the poor people",
+   "translation": "Will give money slowly and slowly, will give money generously",
    "source_text": "धीरे धीरे दीजिए फोस देना ही होगा मोटे पैसे दीजिएगा फोस देना ही होगा",
    "changed": true,
    "uncertain": true,
@@ -227,7 +227,7 @@
    "end": 84.5,
    "text": "आगे बढ़िए पढ़िए पढ़ाइए दिखिए जीतेगा जिसका विकास अच्छा होगा",
    "hinglish": "aage badhie padhie padhaie dikhie jitega jiska vikas achha hoga",
-   "translation": "Read and learn how to grow better",
+   "translation": "Read and learn, will make it grow better",
    "source_text": "आगे बढ़िए पढ़िए पढ़ाइए दिखिए जीतेगा जिसका विकास अच्छा होगा",
    "changed": false,
    "uncertain": true,
@@ -249,11 +249,9 @@
  ],
  "uncertain_lines": [
   1,
-  5,
   7,
   8,
   11,
-  12,
   13,
   14,
   15,
@@ -264,9 +262,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 64.071,
-  "prompt_tokens": 2485,
-  "completion_tokens": 1408,
+  "llm_seconds": 221.747,
+  "prompt_tokens": 2529,
+  "completion_tokens": 1287,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -276,8 +274,8 @@
   "lines_reverted": 1,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 13,
-  "missing_translations": 0,
+  "lines_flagged_by_llm": 11,
+  "missing_translations": 2,
   "unknown_line_ids": 0,
   "keywords_dropped": 1,
   "actions_dropped": 0,
@@ -288,8 +286,10 @@
   "source_sha256": "d46a2335be6f6178482c20e17e25fe42dfde0c9ee5b36c1296aa850bec3bbccc",
   "source_line_count": 19,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:57:56Z",
+  "generated_at_utc": "2026-11-11T02:18:43Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 89.36
+  "source_audio_duration_s": 89.36,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

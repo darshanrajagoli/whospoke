@@ -1,4 +1,6 @@
-"""Compare the GPU re-run of test group 0 (this folder) with the CPU reports scored in results/.
+"""Compare the GPU re-run of test group 0 (reports/) with the CPU reports that were scored in October (cpu_reports/).
+
+Both sides are kept in this folder: since D39 the scored reports in results/ come from a later CPU run.
 
 Run from the repository root: python results/crosscheck_g00_gpu/compare.py
 """
@@ -8,9 +10,8 @@ import pathlib
 import pandas as pd
 
 HERE = pathlib.Path(__file__).resolve().parent
-ROOT = HERE.parents[1]
 
-cpu = pd.read_csv(ROOT / "results/eval_postprocess.csv")
+cpu = pd.read_csv(HERE / "eval_postprocess_cpu.csv")
 gpu = pd.read_csv(HERE / "eval_postprocess.csv")
 cpu = cpu[cpu.group == 0]
 gpu = gpu[gpu.group == 0]
@@ -18,7 +19,7 @@ m = cpu.merge(gpu, on=["id", "system"], suffixes=("_cpu", "_gpu"))
 print("pairs", len(m))
 
 # identical reports? (provenance and diagnostics hold times and timestamps, so they are left out)
-cdir = ROOT / "results/eval_postprocess"
+cdir = HERE / "cpu_reports"
 gdir = HERE / "reports"
 same_text = same_report = same_sum = same_lines = n_lines = 0
 for _, r in m.iterrows():

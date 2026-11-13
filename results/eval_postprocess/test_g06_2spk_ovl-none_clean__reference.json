@@ -5,19 +5,16 @@
  "key_points": [
   "ring road",
   "city",
+  "matlab",
   "understand",
-  "saree",
-  "main road, Yes, No, main, road, stay, at, computer, work, people"
+  "saree, main road, Yes, yes, the main road will go, main, road, stay, at, computer, work"
  ],
  "keywords": [
   "ring road",
   "city",
+  "matlab",
   "understand",
-  "saree",
-  "main road, Yes, No, main, road, stay, at",
-  "computer",
-  "work",
-  "people"
+  "saree, main road, Yes, yes, the main ..."
  ],
  "action_items": [],
  "speakers": [
@@ -66,13 +63,13 @@
    "speaker": "S1",
    "start": 9.041,
    "end": 10.02,
-   "text": "प्रदना दीदी",
-   "hinglish": "pradna didi",
-   "translation": "Praying, sir.",
+   "text": "प्रणाम दीदी",
+   "hinglish": "pranam didi",
+   "translation": "Dadi.",
    "source_text": "प्रणाम दीदी",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 4,
@@ -105,11 +102,11 @@
    "speaker": "S2",
    "start": 20.12,
    "end": 26.26,
-   "text": "अरे हमको मतलब कि रिंग रोड पर शहर में चाहिए हमको शहर में",
-   "hinglish": "are hamko matlab ki ring road par shahar mein chahiye hamko shahar mein",
-   "translation": "We don't understand if we should go to the city on the ring road.",
+   "text": "अरे हमको मतलब कि रिंग रोड पर शहर में होना चाहिए हमको शहर में",
+   "hinglish": "are hamko matlab ki ring road par shahar mein hona chahiye hamko shahar mein",
+   "translation": "We don't understand if we should be in the city on Ring Road.",
    "source_text": "अरे हमको मतलब कि रिंग रोड पर शहर में चाहिए हमको शहर में",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -159,7 +156,7 @@
    "end": 32.694,
    "text": "हाँ हाँ मेन रोड चल जाएगा",
    "hinglish": "haan haan men road chal jaega",
-   "translation": "Yes yes, the main road will go",
+   "translation": "Yes, yes, the main road will go",
    "source_text": "हाँ हाँ मेन रोड चल जाएगा",
    "changed": false,
    "uncertain": true,
@@ -172,7 +169,7 @@
    "end": 34.733,
    "text": "हाँ साड़ी चाहिएगा",
    "hinglish": "haan sadi chahiega",
-   "translation": "Yes, the saree will be needed",
+   "translation": "Yes, yes, the saree will be needed",
    "source_text": "हाँ साड़ी चाहिएगा",
    "changed": false,
    "uncertain": true,
@@ -276,7 +273,7 @@
    "end": 56.596,
    "text": "हाँ अरे नया फैसन में तो निकला है बनारसी साड़ी",
    "hinglish": "haan are naya phaisan mein to nikla hai banarsi sadi",
-   "translation": "Yes, new fashion is out in Banarasi sari.",
+   "translation": "Yes, it's new fashion in Banarasi sari.",
    "source_text": "हाँ अरे नया फैसन में तो निकला है बनारसी साड़ी",
    "changed": false,
    "uncertain": false,
@@ -302,7 +299,7 @@
    "end": 64.817,
    "text": "नहीं, यह पास में बस नैनी में दिला दीजिए अगर हो तो बताओ फिर",
    "hinglish": "nahi, yeh paas mein bas naini mein dila dijie agar ho to batao phir",
-   "translation": "No, it's not here in Nainni, tell me if you can.",
+   "translation": "No, it's not here in Naini, tell me if you can.",
    "source_text": "नहीं नहीं यही पास में बस नैनी में दिला दीजिए अगर हो तो बताओ फिर",
    "changed": true,
    "uncertain": true,
@@ -346,16 +343,16 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 64.315,
-  "prompt_tokens": 2849,
-  "completion_tokens": 1407,
+  "llm_seconds": 237.454,
+  "prompt_tokens": 2856,
+  "completion_tokens": 1422,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 3,
-  "lines_reverted": 2,
+  "lines_reverted": 3,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 20,
@@ -370,8 +367,10 @@
   "source_sha256": "b3afc6aca8437cb95e8f6d3de8721b8bd4be923643ae9c0a3fb08712f7325c22",
   "source_line_count": 22,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:08:44Z",
+  "generated_at_utc": "2026-11-11T06:16:44Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 77.85
+  "source_audio_duration_s": 77.85,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

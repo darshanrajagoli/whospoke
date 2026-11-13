@@ -1,22 +1,18 @@
 {
  "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes the evidence from a transcribed conversation that includes summaries of its parts, lines translated into English, and candidate keywords and actions.",
+ "topic": "Indian Language and Culture",
+ "executive_summary": "This report summarizes a conversation between two individuals in Hindi and Hinglish, discussing topics such as rooms, saris, yes, nation, government, political situation, and cutta malla work. The conversation also mentions the Two people will stay and people are few, Are Are, Red color is required yes yes, Marriage is, and cutta malla work. The report includes summaries of the parts, translated lines, and candidate keywords and actions.",
  "key_points": [
   "room",
   "sari",
   "yes",
   "nation",
-  "we people, Two people will stay and people are few, Red color is required yes yes, Marriage is, cute, little, thing, worked"
+  "government"
  ],
  "keywords": [
   "room",
   "sari",
-  "yes",
-  "nation",
-  "we people, Two people will stay and ...",
-  "Red color is required yes yes, Marriage",
-  "cute, little, thing, worked"
+  "yes"
  ],
  "action_items": [],
  "speakers": [
@@ -138,11 +134,11 @@
    "end": 33.7,
    "text": "अरे, राष्ट्र में तो निकला है",
    "hinglish": "are, raashtr mein to nikla hai",
-   "translation": "Hello, the nation has come to me",
+   "translation": "Hello",
    "source_text": "अरे नैशन में तो निकला है",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 12,
@@ -151,11 +147,11 @@
    "end": 36.0,
    "text": "आप हाँ",
    "hinglish": "aap haan",
-   "translation": "You yes",
+   "translation": "Yes",
    "source_text": "आप हाँ",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 13,
@@ -167,8 +163,8 @@
    "translation": "Hmm",
    "source_text": "हम्म",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 14,
@@ -177,11 +173,11 @@
    "end": 38.1,
    "text": "हाँ हाँ",
    "hinglish": "haan haan",
-   "translation": "Yes yes",
+   "translation": "Yes Yes",
    "source_text": "हाँ हाँ",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 15,
@@ -190,7 +186,7 @@
    "end": 40.35,
    "text": "हाँ दोनों रहेंगे हम लोग",
    "hinglish": "haan donon rahenge hum log",
-   "translation": "We will both remain",
+   "translation": "We will both stay",
    "source_text": "हाँ दोनों रहेंगे हम लोग",
    "changed": false,
    "uncertain": true,
@@ -229,7 +225,7 @@
    "end": 46.65,
    "text": "अरे",
    "hinglish": "are",
-   "translation": "Hey",
+   "translation": "Are",
    "source_text": "अरे",
    "changed": false,
    "uncertain": false,
@@ -297,8 +293,8 @@
    "translation": "No, it's bad nearby",
    "source_text": "नहीं यही पास में बद",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 24,
@@ -310,8 +306,8 @@
    "translation": "No, I'll also hear if you listen",
    "source_text": "नहीं नहीं मुझे दिला भी अगर हो सुनताओ तो",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 25,
@@ -323,21 +319,21 @@
    "translation": "And",
    "source_text": "और",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 26,
    "speaker": "Speaker_A",
    "start": 64.4,
    "end": 68.4,
-   "text": "हाँ बस दूर ले क्यूटा माला काम काम",
-   "hinglish": "haan bas door le kyuta mala kaam kaam",
-   "translation": "Yes, just take it away, the cute little thing worked",
+   "text": "हाँ बस दूर ले क्यूटा माला काम",
+   "hinglish": "haan bas door le kyuta mala kaam",
+   "translation": "Yes, just take it away, the cutta malla work",
    "source_text": "हाँ बस दूर ले क्यूटा माला काम काम",
-   "changed": false,
-   "uncertain": false,
-   "note": ""
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -348,31 +344,31 @@
   8,
   9,
   10,
-  11,
-  12,
-  13,
-  14,
   15,
-  21
+  21,
+  23,
+  24,
+  25,
+  26
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 64.113,
-  "prompt_tokens": 2929,
-  "completion_tokens": 1389,
+  "llm_seconds": 401.394,
+  "prompt_tokens": 2939,
+  "completion_tokens": 1396,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 3,
+  "lines_changed": 4,
   "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 12,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 0,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 3,
   "schema_enforced": true
@@ -381,8 +377,10 @@
   "source_sha256": "fc3474b43508429bfafec3279511c6cfdbc88a05ba90f05e6d34d914d669a233",
   "source_line_count": 26,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:36:10Z",
+  "generated_at_utc": "2026-11-11T08:12:34Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 73.04
+  "source_audio_duration_s": 73.04,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,18 +1,14 @@
 {
- "title": "Hindi and Hinglish Conversation Transcript",
- "topic": "Hindi and Hinglish Conversation",
- "executive_summary": "This report summarizes a conversation between two people in Hindi and Hinglish, with a focus on haircut and fees.",
+ "title": "Hindi and Hinglish Conversation about Hair Cutting and Vegetables",
+ "topic": "Hair cutting and vegetables",
+ "executive_summary": "A conversation between two people in Hindi and Hinglish about hair cutting and vegetables.",
  "key_points": [
-  "Hello",
-  "G G ye to our specialty is Sir",
-  "Ram to cachorre will do fine",
-  "Yes, speak",
-  "Two days will be needed"
+  "Hair cutting and vegetables are the main topics of the conversation.",
+  "The speaker mentions that Ram will fix the hair immediately.",
+  "The speaker mentions that the price for hair cutting is high, but it is worth it because it is the best."
  ],
  "keywords": [
-  "जी जी ये तो हमारी स्पेशलिटी है सर",
-  "राम से कचोरे हाँ ठीक कर देंगे",
-  "दो दिन लगेंगे"
+  "कटाना"
  ],
  "action_items": [],
  "speakers": [
@@ -95,11 +91,11 @@
    "end": 9.92,
    "text": "जी जी ये तो हमारी स्पेशलिटी है सर",
    "hinglish": "ji ji ye to hamari speshliti hai sir",
-   "translation": "G G ye to our specialty is Sir",
+   "translation": "Our specialty is this, sir.",
    "source_text": "जी जी ये तो हमारी स्पेशलिटी है सर",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -108,11 +104,11 @@
    "end": 13.49,
    "text": "राम से कचोरे हाँ ठीक कर देंगे",
    "hinglish": "raam se kachore haan theek kar denge",
-   "translation": "Ram to cachorre will do fine",
+   "translation": "Ram will fix it right away.",
    "source_text": "राम से कचोरे हाँ ठीक कर देंगे",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 7,
@@ -160,7 +156,7 @@
    "end": 44.6,
    "text": "आपको बता दें अगर आप शादी ले जाएँगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे त्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "hinglish": "aapko bata den agar aap shadi le jaenge to teen sau rupye milenge aapko aur agar aap use trai karva ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye ki pad jaegi to haan verayti to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki zarurat hai hum use bahar se bulva ke bhi aapko de sakte hain",
-   "translation": "You tell me if you marry, you will get three hundred rupees, and if you get him a haircut or a vegetable, you will get four hundred rupees, and yes, the price is high, but it's worth it because it's the best",
+   "translation": "You tell me if you marry, you will get three hundred rupees, and if you get him to trim his hair or to make vegetables, you will get four hundred rupees, and yes, the price is high, but it is worth it because it is the best.",
    "source_text": "आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये की पड़ जाएगी तो हाँ वेरायटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की ज़रूरत है हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": true,
    "uncertain": true,
@@ -173,7 +169,7 @@
    "end": 60.27,
    "text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग",
    "hinglish": "okay theek hai uski phees bata deti hoon meri meri yu cutting ke liye jo aapko saam matlab face uske according katani hai ya phir samne se bhi hair kat katana hai okay haan to uske three hundred teen sau something",
-   "translation": "Okay, let's talk about her fees, my dear, for her haircut, which is the face, or for her haircut, which is the front, and for her haircut, which is the back, and for her haircut, which is the side, and for her haircut, which is the back, and for her haircut, which is the side, and for her haircut, which is the back, and for her haircut, which is the side, and for her haircut, which is the",
+   "translation": "Okay, let me tell you the price for my hair cutting, which is three hundred rupees, and if you get him to trim his hair or make vegetables, it will be four hundred rupees, and yes, the price is high, but it is worth it because it is the best.",
    "source_text": "ओके ठीक है उसकी फीस बता देती हूँ मेरी मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उसके अकॉर्डिंग कटानी है या फिर सामने से भी हेयर कट कटाना है ओके हाँ तो उसके थ्री हंड्रेड तीन सौ समथिंग",
    "changed": false,
    "uncertain": true,
@@ -185,8 +181,6 @@
   2,
   3,
   4,
-  5,
-  6,
   8,
   9,
   10,
@@ -194,9 +188,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 517.786,
-  "prompt_tokens": 2033,
-  "completion_tokens": 1199,
+  "llm_seconds": 199.745,
+  "prompt_tokens": 1953,
+  "completion_tokens": 1128,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -206,10 +200,10 @@
   "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 6,
+  "lines_flagged_by_llm": 4,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 7,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -218,8 +212,10 @@
   "source_sha256": "9e730841c71b6351fb02b966c4809e8bb16682c115dd15171e2ca10cba92d60e",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:18:46Z",
+  "generated_at_utc": "2026-11-10T21:01:36Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 60.58
+  "source_audio_duration_s": 60.58,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

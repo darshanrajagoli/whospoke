@@ -1,13 +1,17 @@
 {
- "title": "Marriage License Request",
- "topic": "Marriage License Request",
- "executive_summary": "Two people are talking about getting a marriage license.",
+ "title": "Lost ID Card",
+ "topic": "Lost ID Card",
+ "executive_summary": "Two people are talking about a lost ID card.",
  "key_points": [
-  "help",
-  "marriage",
-  "license"
+  "The speaker is asking for help with a bill.",
+  "The speaker mentions a restaurant called Sir's.",
+  "The speaker mentions a variety of foods and services available at the restaurant.",
+  "The speaker mentions a different kind of food available at the restaurant."
  ],
- "keywords": [],
+ "keywords": [
+  "Hello",
+  "Namaste"
+ ],
  "action_items": [],
  "speakers": [
   {
@@ -63,7 +67,7 @@
    "end": 8.82,
    "text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
    "hinglish": "hello namaskar main sir restaurant se baat kar raha hoon aap ji ji ye to hamari speshliti hai sir",
-   "translation": "Hello, hello, I'm talking to Sir Restorant, you know, our specialty is Sir.",
+   "translation": "Hello, hello, I'm talking to the Sir's restaurant. Our specialty is Sir's.",
    "source_text": "हेलो नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप जी जी ये तो हमारी स्पेशलिटी है सर",
    "changed": false,
    "uncertain": true,
@@ -115,7 +119,7 @@
    "end": 17.2,
    "text": "हाँ ठीक कर देंगे दो चार दिन लगेंगे हाँ",
    "hinglish": "haan theek kar denge do chaar din lagenge haan",
-   "translation": "I will give you two four days",
+   "translation": "I will do it in two days",
    "source_text": "हाँ ठीक कर देंगे दो चार दिन लगेंगे हाँ",
    "changed": false,
    "uncertain": true,
@@ -141,7 +145,7 @@
    "end": 29.44,
    "text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसके फ्राई करा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये भी पड़ेगी तो",
    "hinglish": "aapko bata de agar aap shadi le jaoge to teen sau rupye milenge aapko aur agar aap uske fry kara ke ya sabji banva ke le aaoge to aapko sadhe chaar sau rupye bhi padegi to",
-   "translation": "Tell me if you marry, I will give you three hundred rupees",
+   "translation": "If you marry, you will get three hundred rupees",
    "source_text": "आपको बता दे अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसके फ्राई करा के या सब्जी बनवा के ले आओगे तो आपको साढ़े चार सौ रुपये भी पड़ेगी तो",
    "changed": false,
    "uncertain": true,
@@ -154,7 +158,7 @@
    "end": 51.08,
    "text": "मेरे पार्लर में मछली सेब होते हैं फॉर स्टेस होती है और हेल्पल होती है और यू सेब भी है आपको कौन सी करानी है और उसकी ठीक है उसकी फीस बता देती हूँ मेरे मेरी यू कटिंग के लिए तो आपको सामने मतलब फेस के अकॉर्डिंगली कटानी है या फिर सामने से भी हेरप कटाना है",
    "hinglish": "mere parlour mein machhli seb hote hain phor stes hoti hai aur helpal hoti hai aur yu seb bhi hai aapko kaun si karani hai aur uski theek hai uski phees bata deti hoon mere meri yu cutting ke liye to aapko samne matlab face ke akordingli katani hai ya phir samne se bhi herap katana hai",
-   "translation": "My parlour has fish, vegetables, and helpal, and also ube",
+   "translation": "My parlour has fish, apples, and helpal, and also you can get seaber",
    "source_text": "मेरे पार्लर में मछली सेब होते हैं फॉर स्टेस होती है और हेल्पल होती है और यू सेब भी है आपको कौन सी करानी है और उसकी ठीक है उसकी फीस बता देती हूँ मेरे मेरी यू कटिंग के लिए तो आपको सामने मतलब फेस के अकॉर्डिंगली कटानी है या फिर सामने से भी हेरप कटाना है",
    "changed": false,
    "uncertain": true,
@@ -167,7 +171,7 @@
    "end": 59.42,
    "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलबा के भी आपको दे सकते हैं",
    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheez ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulba ke bhi aapko de sakte hain",
-   "translation": "The variety is a heap, you can see it as you want, like you want a different way of getting it",
+   "translation": "The variety is a heap, you can see it, like you need a different kind of thing, we can also give it to you from outside.",
    "source_text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज़ की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलबा के भी आपको दे सकते हैं",
    "changed": false,
    "uncertain": true,
@@ -200,9 +204,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 354.639,
-  "prompt_tokens": 1820,
-  "completion_tokens": 848,
+  "llm_seconds": 162.696,
+  "prompt_tokens": 1841,
+  "completion_tokens": 925,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -215,7 +219,7 @@
   "lines_flagged_by_llm": 4,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 7,
+  "keywords_dropped": 6,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -224,8 +228,10 @@
   "source_sha256": "150265e8a600021aed80b191bf19f1cf0c1c1715c7a0a679c55eb9f857580b65",
   "source_line_count": 13,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:46:05Z",
+  "generated_at_utc": "2026-11-10T21:32:43Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 63.31
+  "source_audio_duration_s": 63.31,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

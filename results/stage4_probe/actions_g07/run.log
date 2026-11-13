@@ -1,0 +1,5 @@
+PROBE_START rev=41b0cd20c01d
+SERVER_OK
+{"cid": "test_g07_3spk_ovl-high_clean", "lines": 22, "llm_calls": 5, "model_proposed": 0, "dropped": 0, "kept": 0, "kept_items": [], "proposed_detail": []}
+{"cid": "test_g07_3spk_ovl-high_market5", "lines": 21, "llm_calls": 5, "model_proposed": 0, "dropped": 0, "kept": 0, "kept_items": [], "proposed_detail": []}
+{"cid": "test_g07_3spk_ovl-high_village10", "lines": 21, "llm_calls": 5, "model_proposed": 0, "dropped": 0, "kept": 0, "kept_items": [], "proposed_detail": []}

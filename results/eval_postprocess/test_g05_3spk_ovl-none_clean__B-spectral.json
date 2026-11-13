@@ -1,12 +1,13 @@
 {
- "title": "Lakhnavi Style Biryanis and Wedding Requests in a Hindi-English Conversation",
- "topic": "Lakhnavi style biryanis and wedding requests in a Hindi-English conversation",
- "executive_summary": "This transcript is a conversation between two speakers, Speaker A and Speaker B, who are discussing Lakhnavi style biryanis and wedding requests in Hindi-English. The speakers mention a restaurant and ask for a reasonable rate. They also mention a rose and berries dish and a possible stay at the restaurant.",
+ "title": "Lakhnavi-style biryanis and other topics in a Hindi-Hinglish conversation",
+ "topic": "Lakhnavi-style biryanis and other topics in a Hindi-Hinglish conversation",
+ "executive_summary": "This report summarizes a conversation between two speakers in which they discuss Lakhnavi-style biryanis, a type of Indian dish, and other topics.",
  "key_points": [
-  "Speaker A and Speaker B are talking about Lakhnavi style biryanis",
-  "Speaker B is asking about the cost of a wedding",
-  "Speaker A mentions a restaurant and asks for a reasonable rate",
-  "Speaker B mentions a rose and berries dish and a possible stay at the restaurant"
+  "Part 1: Speaker A and Speaker B are talking about Lakhnavi-style biryanis.",
+  "Part 2: A conversation between two speakers.",
+  "Part 3: Speaker_B is asking about what.",
+  "Part 4: Speaker B is asking about the discount on the wedding.",
+  "Part 5: Speakers discuss getting a room and staying at a hotel."
  ],
  "keywords": [
   "biryanis",
@@ -73,11 +74,11 @@
    "end": 3.45,
    "text": "सर हम",
    "hinglish": "sir hum",
-   "translation": "Sir we",
+   "translation": "Sir",
    "source_text": "सर हम",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
   },
   {
    "line_id": 4,
@@ -86,7 +87,7 @@
    "end": 8.3,
    "text": "बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "hinglish": "bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
-   "translation": "They were talking about Lakhnavi style biryanis",
+   "translation": "They were talking about Lakhnavi-style biryanis",
    "source_text": "बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "changed": false,
    "uncertain": true,
@@ -294,7 +295,7 @@
    "end": 44.6,
    "text": "जी सर यह मेरे यहाँ दस जून की शादी है",
    "hinglish": "ji sir yeh mere yahan das joon ki shadi hai",
-   "translation": "G sir, this is a marriage of ten June.",
+   "translation": "G sir, it's a wedding in June.",
    "source_text": "जी सर यह मेरे यहाँ दस जून की शादी है",
    "changed": false,
    "uncertain": true,
@@ -307,7 +308,7 @@
    "end": 46.5,
    "text": "सत रुपये पीस है",
    "hinglish": "sat rupye piece hai",
-   "translation": "There is a sum of 60 rupees.",
+   "translation": "There is a discount of 60 rupees.",
    "source_text": "साठ रुपये पीस है",
    "changed": true,
    "uncertain": true,
@@ -333,7 +334,7 @@
    "end": 53.55,
    "text": "कुछ डिस्काउंट उस्काउंट हो सकता है",
    "hinglish": "kuch discount uskaunt ho sakta hai",
-   "translation": "Some discount is available.",
+   "translation": "Some discounts are available.",
    "source_text": "कुछ डिस्काउंट उस्काउंट हो सकता है",
    "changed": false,
    "uncertain": true,
@@ -359,7 +360,7 @@
    "end": 57.3,
    "text": "नहीं तो सर मतलब",
    "hinglish": "nahi to sir matlab",
-   "translation": "If we find it, we'll stay here for a few days.",
+   "translation": "If we get a room, we'll stay here for a few days.",
    "source_text": "नहीं तो सर मतलब",
    "changed": false,
    "uncertain": true,
@@ -372,11 +373,11 @@
    "end": 66.95,
    "text": "हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर",
    "hinglish": "hum log tourist hain to aae the yahin par matlab rahne ke liye to agar mil jata to kuch din rahte hain yahan par to phir matlab jo hota hai agar",
-   "translation": "We are tourists and if we find it, we'll stay here for a few days.",
+   "translation": "We're tourists, and if we get a room, we'll stay here for a few days.",
    "source_text": "हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर मिल जाता तो कुछ दिन रहते हैं यहाँ पर तो फिर मतलब जो होता है अगर",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
   },
   {
    "line_id": 27,
@@ -411,7 +412,7 @@
    "end": 72.15,
    "text": "फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं हम लोग",
    "hinglish": "phir dusre restaurant par kyon jate hain hum log",
-   "translation": "Why do we go to other restaurants?",
+   "translation": "Then go to other restaurants.",
    "source_text": "फिर दूसरे रेस्टोरेंट पर क्यों जाते हैं हम लोग",
    "changed": false,
    "uncertain": true,
@@ -421,6 +422,7 @@
  "uncertain_lines": [
   1,
   2,
+  3,
   4,
   5,
   6,
@@ -443,21 +445,22 @@
   23,
   24,
   25,
+  26,
   27,
   29
  ],
  "diagnostics": {
   "llm_calls": 6,
-  "llm_seconds": 86.373,
-  "prompt_tokens": 3691,
-  "completion_tokens": 1878,
+  "llm_seconds": 317.516,
+  "prompt_tokens": 3708,
+  "completion_tokens": 1893,
   "chunks": 5,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 3,
-  "lines_reverted": 7,
+  "lines_reverted": 9,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 21,
@@ -472,8 +475,10 @@
   "source_sha256": "ca1afbae0b487181fbbf99c7220d98d89bd073c14f8787bb714d46c649722d9b",
   "source_line_count": 29,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:37:17Z",
+  "generated_at_utc": "2026-11-11T04:21:08Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 73.46
+  "source_audio_duration_s": 73.46,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

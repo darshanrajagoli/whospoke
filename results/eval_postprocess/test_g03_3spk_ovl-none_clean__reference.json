@@ -1,19 +1,20 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation in Hindi and Hinglish, with a focus on the main topic of the conversation and the key points discussed.",
+ "title": "Hindi and Hinglish Conversations",
+ "topic": "Elections",
+ "executive_summary": "A conversation in Hindi and Hinglish about elections.",
  "key_points": [
-  "Hindi and Hinglish Conversations"
+  "Hindi and Hinglish conversations about elections",
+  "Voting in Bihar",
+  "Chattt pu and Diwali",
+  "Government and elections",
+  "Yes, yes, and yes"
  ],
  "keywords": [
   "हैलो",
   "बिहार",
-  "छत्त पूजा",
   "दीपावली",
   "वोट",
-  "सरकार",
-  "look at",
-  "good"
+  "सरकार"
  ],
  "action_items": [],
  "speakers": [
@@ -161,11 +162,11 @@
    "end": 47.472,
    "text": "हाँ हलो सर नमस ठीक है हाँ",
    "hinglish": "haan hello sir namas theek hai haan",
-   "translation": "Yes",
+   "translation": "Yes, sir. Well, hello.",
    "source_text": "हाँ हलो सर नमस ठीक है हाँ",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
   },
   {
    "line_id": 11,
@@ -226,7 +227,7 @@
    "end": 64.463,
    "text": "जी देखते हैं कि बहुत अच्छे से देखते हैं और कितना अच्छा बनाते हैं",
    "hinglish": "ji dekhte hain ki bahut achhe se dekhte hain aur kitna achha banate hain",
-   "translation": "Look at how good we are and how good we make it",
+   "translation": "Give a look at how good we are and how good we make it",
    "source_text": "जी देखते हैं कि बहुत अच्छे से देखते हैं और कितना अच्छा बनाते हैं",
    "changed": false,
    "uncertain": true,
@@ -247,9 +248,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 45.56,
-  "prompt_tokens": 2202,
-  "completion_tokens": 1015,
+  "llm_seconds": 169.186,
+  "prompt_tokens": 2199,
+  "completion_tokens": 991,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -271,8 +272,10 @@
   "source_sha256": "96b7eb1ab680bf6accf8d9bfecf7fc5935daf1e62c08a54c38aaa37b724415f3",
   "source_line_count": 15,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:28:53Z",
+  "generated_at_utc": "2026-11-11T00:28:46Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 65.05
+  "source_audio_duration_s": 65.05,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

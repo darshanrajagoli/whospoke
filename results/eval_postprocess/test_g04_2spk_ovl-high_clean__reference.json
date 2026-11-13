@@ -1,5 +1,5 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversation",
+ "title": "Hindi and Hinglish Conversation",
  "topic": "Child's Sickness and Price of Boxes",
  "executive_summary": "A conversation about a child who is sick and has a fever. The speaker wants to buy two boxes, one red and one blue, and also two black ones. They want to know the price of a box and when they will be able to get one. They also mention a special discount.",
  "key_points": [
@@ -10,8 +10,8 @@
   "आपके बच्चे का नाम वैभव है आपके लड़के का",
   "हाँ और वो कक्षा दस में पढ़ता है",
   "fever",
-  "medicine",
   "school",
+  "home",
   "box",
   "price"
  ],
@@ -166,13 +166,13 @@
    "speaker": "S1",
    "start": 33.544,
    "end": 38.874,
-   "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
-   "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
-   "translation": "Water shortage may have been caused by him.",
+   "text": "वागैरह हो सकता है कि पानी की कमी हो रही है, लेकिन उसकी वजह से वह बीमार हो गया है।",
+   "hinglish": "wagairah ho sakta hai ki pani ki kami ho rahi hai, lekin uski wajah se woh bimar ho gaya hai.",
+   "translation": "It may be that water shortage is causing him to be sick.",
    "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 12,
@@ -181,7 +181,7 @@
    "end": 50.967,
    "text": "हाँ दवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
    "hinglish": "haan dava to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega",
-   "translation": "We will give medicine, but if you are, come.",
+   "translation": "We will give medicine, but if you are there, come and take your child home.",
    "source_text": "हाँ दवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
    "changed": false,
    "uncertain": true,
@@ -257,22 +257,22 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 55.484,
-  "prompt_tokens": 2401,
-  "completion_tokens": 1209,
+  "llm_seconds": 208.254,
+  "prompt_tokens": 2409,
+  "completion_tokens": 1221,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 2,
-  "lines_reverted": 11,
+  "lines_changed": 3,
+  "lines_reverted": 10,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 8,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 6,
+  "keywords_dropped": 5,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -281,8 +281,10 @@
   "source_sha256": "164eadb5063162c6c003d7c8c04e72f0ca5c8a74454285ef34b89f89e24a56f9",
   "source_line_count": 16,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:24:59Z",
+  "generated_at_utc": "2026-11-11T03:35:22Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 62.59
+  "source_audio_duration_s": 62.59,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

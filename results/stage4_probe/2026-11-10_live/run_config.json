@@ -1,0 +1,45 @@
+{
+  "run_id": "2026-11-10_live",
+  "used_real_server": true,
+  "created_utc": "2026-11-10 (host local time; provenance UTC=2026-11-10T12:01:05Z)",
+  "postprocess_command": "PYTHONPATH=src venv/bin/python -u -m whospoke postprocess results/demo/transcript.json --out results/stage4_probe/2026-11-10_live",
+  "llama_server_command": "/home/shrivathssp/Desktop/whospoke/models/llama.cpp/build/bin/llama-server -m /home/shrivathssp/Desktop/whospoke/models/airavata-q4_k_m.gguf --host 127.0.0.1 --port 8080 -np 1 -c 4096 -ngl 0 --jinja --chat-template-file /home/shrivathssp/Desktop/whospoke/src/whospoke/resources/airavata_chat_template.jinja --alias ai4bharat/Airavata --cache-ram 0 -t 8",
+  "model_file": {
+    "path": "models/airavata-q4_k_m.gguf",
+    "size_bytes": 4172544832,
+    "mtime": "1794303890.4487453"
+  },
+  "client_env": {
+    "python": "3.14.9",
+    "platform": "Linux-7.2.14-arch1-1-x86_64-with-glibc2.44",
+    "whospoke_import": "src/whospoke (PYTHONPATH=src)",
+    "versions": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "soundfile": "0.14.0"
+    }
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 3050 (Mobile)",
+    "total_vram_mib": 4096,
+    "note": "physical VRAM 4096 MiB; run was CPU-only (-ngl 0)"
+  },
+  "source_transcript": {
+    "path": "results/demo/transcript.json",
+    "sha256": "34bb8960c4db1714cb9125414213143b43b54e58a5425c5dbd0d72496fcba4a4",
+    "line_count": 16,
+    "duration_s": 62.563
+  },
+  "result": {
+    "report_json": "results/stage4_probe/2026-11-10_live/report.json",
+    "report_md": "results/stage4_probe/2026-11-10_live/report.md",
+    "llm_model": "ai4bharat/Airavata",
+    "llm_calls": 4,
+    "llm_seconds": 318.0,
+    "lines_changed": 1,
+    "lines_reverted": 3,
+    "uncertain_lines": 9,
+    "action_items": 0,
+    "keywords": 6
+  }
+}

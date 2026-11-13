@@ -1,18 +1,16 @@
 {
- "title": "Transcript of a conversation about buying boxes",
- "topic": "boxes",
- "executive_summary": "A conversation about buying boxes.",
+ "title": "Jain Brothers' boxes",
+ "topic": "buying boxes of Jain Brothers' boxes",
+ "executive_summary": "A conversation about buying boxes of Jain Brothers' boxes.",
  "key_points": [
-  "Jain Brothers' boxes",
-  "price",
-  "sick",
-  "help",
-  "health"
+  "Jain Brothers' boxes are available for purchase.",
+  "The speaker is willing to help someone who is sick."
  ],
  "keywords": [
   "boxes",
   "Jain Brothers",
-  "price",
+  "boxes of Jain Brothers",
+  "Jain Brothers' boxes",
   "sick"
  ],
  "action_items": [],
@@ -90,7 +88,7 @@
    "end": 33.62,
    "text": "वो साथ में उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है",
    "hinglish": "wo saath mein usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka saath badh gaya hai",
-   "translation": "He was sent to school with her in the morning and she got sick and her body temperature rose, and her body became swollen.",
+   "translation": "He was sent to school in the morning and he got sick and his body temperature rose, and his body became swollen.",
    "source_text": "वो साथ में उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का साथ बढ़ गया है",
    "changed": false,
    "uncertain": true,
@@ -103,7 +101,7 @@
    "end": 40.71,
    "text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसकी प्राइस बता दीजिए तो अभी जो भी हो",
    "hinglish": "haan ji to aap mera ek kaam karie item note kar lijie aur mujhe uski price bata dijie to abhi jo bhi ho",
-   "translation": "Yes, do an item note and tell me the price of the item.",
+   "translation": "Yes, do an item note and tell me the price.",
    "source_text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे उसकी प्राइस बता दीजिए तो अभी जो भी हो",
    "changed": false,
    "uncertain": true,
@@ -142,7 +140,7 @@
    "end": 67.05,
    "text": "हाँ सवा तो हम लगवा देंगे लेकिन आप तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
    "hinglish": "haan sava to hum lagva denge lekin aap to agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar dega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega achha to kab tak aaenge",
-   "translation": "Yes, we will get him a ride, but if you are, come and get your child home for a few days, then you will send him to school as soon as possible.",
+   "translation": "Yes, we will get him a ride, but if you are going, come and get your child home for a few days, then you will send him to school when he is well.",
    "source_text": "हाँ सवा तो हम लगवा देंगे लेकिन आप तो अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर देगा तबीयत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा अच्छा तो कब तक आएँगे",
    "changed": false,
    "uncertain": true,
@@ -162,9 +160,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 43.416,
-  "prompt_tokens": 1826,
-  "completion_tokens": 922,
+  "llm_seconds": 179.243,
+  "prompt_tokens": 1840,
+  "completion_tokens": 1038,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -186,8 +184,10 @@
   "source_sha256": "3a04f5432fa3bc1f56b5c8a33b965d3c298494fa0e7f02872a9a2318b84cab48",
   "source_line_count": 9,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:32:51Z",
+  "generated_at_utc": "2026-11-11T04:04:46Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 67.49
+  "source_audio_duration_s": 67.49,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

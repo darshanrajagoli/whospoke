@@ -1,13 +1,13 @@
 {
  "title": "Lost ID Card and Request for Help",
  "topic": "Lost ID Card and Request for Help",
- "executive_summary": "A conversation about making money and getting a check made.",
+ "executive_summary": "A conversation about making money and getting a check.",
  "key_points": [
-  "Part 1: A conversation about making money and getting a check made.",
+  "Part 1: A conversation about making money and getting a check.",
   "Part 2: The speaker is asking for help to get a phone.",
-  "Part 3: The speaker is looking for a way to make money and I wanted to get a check made.",
+  "Part 3: The speaker is looking for a way to make money and I wanted to get a check.",
   "Part 4: The speaker is asking for help to get a phone.",
-  "Part 5: The speaker is looking for a way to make money and I wanted to get a check made."
+  "Part 5: The speaker is looking for a way to make money and I wanted to get a check."
  ],
  "keywords": [
   "money",
@@ -38,7 +38,7 @@
    "end": 26.22,
    "text": "बाबू मॉलेज के बनाना चाह रहे हैं तो और मुझे चाहिए था पैसा मिल सकता है अब हमने कह सारी चेक करवा सक्ती है",
    "hinglish": "babu molej ke banana chaah rahe hain to aur mujhe chahiye tha paisa mil sakta hai ab hamne kah sari check karva sakti hai",
-   "translation": "Babu Mallage is looking for a way to make money and I wanted to get a check made. Now we have got all the cheques made.",
+   "translation": "Babu Mallage is looking for a way to make money and I wanted to get a check. Now we have got all the cheques done.",
    "source_text": "बाबू मॉलेज के बनाना चाह रहे हैं तो और मुझे चाहिए था पैसा मिल सकता है अब हमने कह सारी चेक करवा सकती है",
    "changed": true,
    "uncertain": false,
@@ -77,7 +77,7 @@
    "end": 38.73,
    "text": "सर मेरे कोई गलती हो गई है मेरे हाथ से वो मेरा आई डी कार्ड घूम हो गया है सर हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
    "hinglish": "sir mere koi galti ho gayi hai mere haath se wo mera aai D card ghoom ho gaya hai sir haan sir wo egzam paas aa rahe hain to aai D card chahiye sir",
-   "translation": "My hand slipped and my ID card fell off my hand. I want an ID card, sir.",
+   "translation": "My hand slipped and my ID card fell off my hand. Yes, I want an ID card.",
    "source_text": "सर मेरे कोई गलती हो गई है मेरे हाथ से वो मेरा आई डी कार्ड घूम हो गया है सर हाँ सर वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
    "changed": false,
    "uncertain": true,
@@ -90,11 +90,11 @@
    "end": 42.14,
    "text": "हाँ मेरा था वो प्रोफिट मेरा था",
    "hinglish": "haan mera tha wo prophit mera tha",
-   "translation": "Yes, my profit was mine.",
+   "translation": "Yes, I made a profit.",
    "source_text": "हाँ मेरा था वो प्रॉफिट मेरा था",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 6,
@@ -164,6 +164,7 @@
  ],
  "uncertain_lines": [
   4,
+  5,
   6,
   7,
   8,
@@ -171,9 +172,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 41.747,
-  "prompt_tokens": 1745,
-  "completion_tokens": 948,
+  "llm_seconds": 161.615,
+  "prompt_tokens": 1743,
+  "completion_tokens": 942,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -183,7 +184,7 @@
   "lines_reverted": 1,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 3,
+  "lines_flagged_by_llm": 4,
   "missing_translations": 2,
   "unknown_line_ids": 0,
   "keywords_dropped": 4,
@@ -195,8 +196,10 @@
   "source_sha256": "1f401165c45508ab35858cc178f281364f9bfdfc058e60697ba2a04d2d13cef3",
   "source_line_count": 10,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:05:10Z",
+  "generated_at_utc": "2026-11-10T22:57:55Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 66.49
+  "source_audio_duration_s": 66.49,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,20 +1,14 @@
 {
- "title": "Hindi and Hinglish Conversation Report",
- "topic": "Hindi and Hinglish Conversation",
- "executive_summary": "This report summarizes a conversation between two speakers in Hindi and Hinglish, with a focus on the topics discussed and the key points made.",
+ "title": "Lost ID Card",
+ "topic": "Lost ID Card",
+ "executive_summary": "Speaker A greets Speaker B and Speaker C. Speaker A says 'Be Seam' and 'You Seam' also. Speaker B says 'Yes' and 'Yes'. Speaker C says 'Hello' and 'I am speaking from Sir Restorant'. Speaker C says 'Give You Three Hundred Rupees if You Marry' and 'If You Go to Try or Make Vegetable'. Speaker C says 'It will take two days'. Speaker C says 'koi cheez ki jarurat matlab kisi alag tarike ki jarurat hai'. Speaker C says 'We can also call him out of the shop and deliver it to you'. Speaker B says 'Yes'. Speaker C says 'Yes'. Speaker B says 'Yes'. Speaker C says 'Yes'. Speaker C says 'Yes'. Speaker C says 'Yes'. Speaker C says 'Yes'. Speaker C says 'Yes'. Speaker C says 'Yes'. Speaker C says 'Yes'. Speaker C says 'Yes'. Speaker C says 'Yes'. Speaker C says 'Yes'. Speaker C says 'Yes'. Speaker C.",
  "key_points": [
-  "Speaker A greets Speaker B.",
-  "Speaker A says 'Be Seam' and 'You Seam' also.",
-  "Speaker C says he will get you five hundred and forty rupees, but Speaker A and Speaker B disagree.",
-  "Speaker C asks Speaker B to call someone out of the shop.",
-  "Speaker A says 'Ramchar Chor'."
+  "Lost ID Card",
+  "Speaker A greets Speaker B and Speaker C",
+  "Speaker B says 'Yes' and 'Yes',"
  ],
  "keywords": [
-  "बोलिए",
-  "Be Seam",
-  "You Seam",
-  "call",
-  "shop"
+  "Speaker B says 'Yes' and 'Yes',"
  ],
  "action_items": [],
  "speakers": [
@@ -149,7 +143,7 @@
    "end": 22.5,
    "text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ जी जी ये तो हमारी स्पेशलिटी है सर",
    "hinglish": "namaskar main sir restaurant se baat kar raha hoon ji ji ye to hamari speshliti hai sir",
-   "translation": "Speaker_C says 'Namaskar' and 'I am talking to Sir Restorant G G ye to hama speshility hai Sir'.",
+   "translation": "Speaker_C says 'Hello' and 'I am speaking from Sir Restorant'.",
    "source_text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ जी जी ये तो हमारी स्पेशलिटी है सर",
    "changed": false,
    "uncertain": true,
@@ -175,7 +169,7 @@
    "end": 25.7,
    "text": "कि कर देंगे",
    "hinglish": "ki kar denge",
-   "translation": "Speaker_B says 'Kare'.",
+   "translation": "Speaker_B says 'Will Do'.",
    "source_text": "कि कर देंगे",
    "changed": false,
    "uncertain": true,
@@ -188,11 +182,11 @@
    "end": 32.65,
    "text": "जी आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के लिए आओगे",
    "hinglish": "ji aapko bata den agar aap shadi le jaoge to teen sau rupye milenge aapko aur agar aap use trai karva ke ya sabji banva ke liye aaoge",
-   "translation": "Speaker_C says 'G' you tell me if you marry then three hundred rupees will get you and if you go to try or vegetable make or vegetable make or vegetable make or vegetable make or vegetable make or vegetable make or vegetable make or vegetable make or vegetable make or",
+   "translation": "Speaker_C says 'Give You Three Hundred Rupees if You Marry' and 'If You Go to Try or Make Vegetable'.",
    "source_text": "जी आपको बता दें अगर आप शादी ले जाओगे तो तीन सौ रुपये मिलेंगे आपको और अगर आप उसे ट्राई करवा के या सब्जी बनवा के लिए आओगे",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 13,
@@ -279,11 +273,11 @@
    "end": 48.65,
    "text": "हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "hinglish": "hum use bahar se bulva ke bhi aapko de sakte hain",
-   "translation": "We can also call him out of the shop.",
+   "translation": "We can also call him out of the shop and deliver it to you.",
    "source_text": "हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 20,
@@ -403,7 +397,6 @@
   16,
   17,
   18,
-  19,
   21,
   22,
   23,
@@ -414,9 +407,9 @@
  ],
  "diagnostics": {
   "llm_calls": 6,
-  "llm_seconds": 828.556,
-  "prompt_tokens": 3765,
-  "completion_tokens": 1968,
+  "llm_seconds": 360.766,
+  "prompt_tokens": 3728,
+  "completion_tokens": 2016,
   "chunks": 5,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -426,10 +419,10 @@
   "lines_reverted": 10,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 13,
+  "lines_flagged_by_llm": 11,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -438,8 +431,10 @@
   "source_sha256": "ba3aed30be43f0edf4ace2cb7d3d0a2ed7dbf7828db950739ab7d9ac82ffadf9",
   "source_line_count": 27,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:18:34Z",
+  "generated_at_utc": "2026-11-10T20:53:34Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 64.75
+  "source_audio_duration_s": 64.75,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,15 +1,20 @@
 {
  "title": "Lost ID Card and Needing Money to Get It",
  "topic": "Lost ID Card and Needing Money to Get It",
- "executive_summary": "Speakers talk about losing something from their hands and needing money to get it.",
+ "executive_summary": "Speakers talk about losing something from their hands and needing money to get an ID card.",
  "key_points": [
-  "Speakers lost something from their hands and need money to get it.",
-  "Speakers talk about Babu Matkher Inter College.",
-  "Speakers talk about the principal of Babu Matkher Inter College.",
-  "Speakers talk about losing something from their hands and needing money to get it."
+  "Speakers lost something from their hands and need money to get an ID card.",
+  "Speakers talk about losing something from their hands and needing money to get an ID card.",
+  "Speakers talk about losing something from their hands and need money to get an ID card."
  ],
  "keywords": [
-  "Principal of Babu Matkher Inter College."
+  "Lost ID Card",
+  "Need Money to Get ID Card",
+  "Principal",
+  "ID Card",
+  "Photocopy",
+  "Base Card",
+  "Appointment"
  ],
  "action_items": [],
  "speakers": [
@@ -32,9 +37,9 @@
    "speaker": "S1",
    "start": 0.73,
    "end": 10.38,
-   "text": "नमस्ते बोल रहे थे कि आप बाबू मतंकर इंटर कॉलेज के प्रधानाचार्य हैं",
+   "text": "नमस्ते बोल रहे थे कि आप बाबू मटंकर इंटर कॉलेज के प्रधानाचार्य हैं",
    "hinglish": "namaste bol rahe the ki aap babu matankar intar college ke pradhanachary hain",
-   "translation": "Hello, they were speaking about the principal of Babu Matkher Inter College.",
+   "translation": "Hello, they were speaking about the principal of Babu Mantakar Inter College.",
    "source_text": "नमस्ते बोल रहे थे कि आप आप बाबू मतंकर इंटर कॉलेज के प्रधानाचार्य हैं",
    "changed": true,
    "uncertain": false,
@@ -73,7 +78,7 @@
    "end": 32.36,
    "text": "हाँ सर वो वो वो वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
    "hinglish": "haan sir wo wo wo wo egzam paas aa rahe hain to aai D card chahiye sir",
-   "translation": "Yes, they said that they need an ID card.",
+   "translation": "Yes, they said that they need an ID card to get the exam.",
    "source_text": "हाँ सर वो वो वो वो वो एग्ज़ाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर",
    "changed": true,
    "uncertain": true,
@@ -99,7 +104,7 @@
    "end": 37.08,
    "text": "बेस कार्ड की फ़ोटोकॉपी और क्या लाना है सर",
    "hinglish": "base card ki fotokopi aur kya lana hai sir",
-   "translation": "They said that they need a photocopy of the base card.",
+   "translation": "They said that they need a photocopy of the base card and what to do.",
    "source_text": "आधार कार्ड की फ़ोटोकॉपी और क्या क्या लाना है सर",
    "changed": true,
    "uncertain": true,
@@ -151,7 +156,7 @@
    "end": 48.89,
    "text": "तो ऑफिस का तो फिर आप कब तक केतने बजे तक ऑफिस खुला है सर अपना",
    "hinglish": "to office ka to phir aap kab tak ketne baje tak office khula hai sir apna",
-   "translation": "So when is the office open until what time?",
+   "translation": "So, when is the office open until the next time you're there, sir.",
    "source_text": "तो ऑफिस का तो फिर आप कब तक कितने बजे तक ऑफिस खुला है सर अपना",
    "changed": true,
    "uncertain": true,
@@ -177,7 +182,7 @@
    "end": 57.92,
    "text": "आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद अच्छा अप्लीकेशन भी लिखनी पड़ेगी",
    "hinglish": "aai D card ke do saman lenge to hamen sabse pahle kiske paas jana padega ye kaun banaega achha uske baad achha aplikeshan bhi likhni padegi",
-   "translation": "I will get two items from the ID card, who will get it first?",
+   "translation": "I'll get two items from the ID card, who will get them first? Who will make the appointment afterwards?",
    "source_text": "आई डी कार्ड के दो सामान लेंगे तो हमें सबसे पहले किसके पास जाना पड़ेगा ये कौन बनाएगा अच्छा उसके बाद अच्छा अप्लीकेशन भी लिखनी पड़ेगी",
    "changed": false,
    "uncertain": true,
@@ -210,9 +215,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 52.999,
-  "prompt_tokens": 2323,
-  "completion_tokens": 1197,
+  "llm_seconds": 211.28,
+  "prompt_tokens": 2350,
+  "completion_tokens": 1238,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -225,7 +230,7 @@
   "lines_flagged_by_llm": 9,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -234,8 +239,10 @@
   "source_sha256": "a776b131fe7e54291c1cfce6c1a098d2445cfde9caca464e81703b86ab7cf5cf",
   "source_line_count": 13,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:15:42Z",
+  "generated_at_utc": "2026-11-10T23:38:20Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 61.28
+  "source_audio_duration_s": 61.28,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

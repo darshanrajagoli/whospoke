@@ -1,17 +1,18 @@
 {
- "title": "Lost ID Card and Base Card in Babu Maansingar Inter College",
- "topic": "Lost ID Card and Base Card in Babu Maansingar Inter College",
- "executive_summary": "A conversation between two people, one of whom is the principal of Babu Maansingar Inter College, about the I.D. card and the base card.",
+ "title": "Lost ID Card and Request for Base Card",
+ "topic": "Lost ID Card and Request for Base Card",
+ "executive_summary": "The conversation is about a person who lost his ID card and wanted to buy a base card.",
  "key_points": [
-  "Lost I.D. card and base card in Babu Maansingar Inter College"
+  "Lost ID Card",
+  "Request for Base Card",
+  "Photograph",
+  "Discount",
+  "Sir, where will you go and how long will the office be open? (unspecified)"
  ],
  "keywords": [
-  "I.D. card",
+  "ID card",
   "base card",
-  "where",
-  "office",
-  "open",
-  "how long"
+  "Sir, where will you go and how long will"
  ],
  "action_items": [],
  "speakers": [
@@ -47,13 +48,13 @@
    "speaker": "S1",
    "start": 1.77,
    "end": 11.31,
-   "text": "मैं बोल रहा था आप बाबू माशंकर इंटर कॉलेज के प्रधानाचार्य है",
-   "hinglish": "main bol raha tha aap babu mashankar intar college ke pradhanachary hai",
-   "translation": "I was speaking to you, you are the principal of Babu Maansingar Inter College.",
+   "text": "नमस्ते बोल रहे थे आप आप बाबू माशंकर इंटर कॉलेज के प्रधानाचार्य है",
+   "hinglish": "namaste bol rahe the aap aap babu mashankar intar college ke pradhanachary hai",
+   "translation": "They were speaking to you, the principal of the Inter College, Mr. Sir.",
    "source_text": "नमस्ते बोल रहे थे आप आप बाबू माशंकर इंटर कॉलेज के प्रधानाचार्य है",
-   "changed": true,
-   "uncertain": false,
-   "note": ""
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept."
   },
   {
    "line_id": 3,
@@ -62,7 +63,7 @@
    "end": 16.37,
    "text": "सर तो गलती हुई मेरे हाथ से तो मेरा आई डी कार्ड गुम हो गया है सर",
    "hinglish": "sir to galti hui mere haath se to mera aai D card gum ho gaya hai sir",
-   "translation": "Mr. Sir, my hand slipped and my I.D. card went missing.",
+   "translation": "The person said that he lost his ID card, which was from his hand, and he wanted to know if he could get money to buy a base card.",
    "source_text": "सर तो गलती हुई मेरे हाथ से तो मेरा आई डी कार्ड गुम हो गया है सर",
    "changed": false,
    "uncertain": true,
@@ -75,7 +76,7 @@
    "end": 35.19,
    "text": "तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा पेड़ वही छूट गया था उसमें कुछ ऐसे सामान है जरूरत की तो वो मुझे चाहिए था पैसे मिल सकता है अब अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था हाँ",
    "hinglish": "to hum B e ka paper dene gaye the aapke school mein mera ped wahi chhoot gaya tha usmen kuch aise saman hai jarurat ki to wo mujhe chahiye tha paise mil sakta hai ab apne karmachari se check karva ke puchhie kamra number teen mein chhuta tha haan",
-   "translation": "They went to give the BA paper and I asked my Karma Chari to check the room number three, it was discounted.",
+   "translation": "They went to the school to give a paper to the BA, but they found out that the tree in his school was already discounted, and they wanted to know if they could get money to buy a base card.",
    "source_text": "तो हम बी ए का पेपर देने गए थे आपके स्कूल में मेरा पेड़ वही छूट गया था उसमें कुछ ऐसे सामान है जरूरत की तो वो मुझे चाहिए था पैसे मिल सकता है अब अपने कर्मचारी से चेक करवा के पूछिए कमरा नंबर तीन में छूटा था हाँ",
    "changed": false,
    "uncertain": true,
@@ -88,7 +89,7 @@
    "end": 43.12,
    "text": "हाँ सर वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फोटो काफी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड और",
    "hinglish": "haan sir wo exam paas aa rahe hain to aai D card chahiye sir aadhar card ki photo kaphi aur kya kya lana hai sir ek khud ka photo ek aadhar card aur",
-   "translation": "Yes, they are coming with the exam papers, but I need a photo of myself and a base card.",
+   "translation": "They said that they would need a photo of themselves and a base card.",
    "source_text": "हाँ सर वो एग्जाम पास आ रहे हैं तो आई डी कार्ड चाहिए सर आधार कार्ड की फोटो काफी और क्या क्या लाना है सर एक खुद का फोटो एक आधार कार्ड और",
    "changed": false,
    "uncertain": true,
@@ -101,7 +102,7 @@
    "end": 46.26,
    "text": "मेरा था वो पॉकिट मेरा था",
    "hinglish": "mera tha wo pokit mera tha",
-   "translation": "My was a poket, my was my.",
+   "translation": "The person said that he had a poket with him.",
    "source_text": "मेरा था वो पॉकिट मेरा था",
    "changed": false,
    "uncertain": true,
@@ -161,6 +162,7 @@
   }
  ],
  "uncertain_lines": [
+  2,
   3,
   4,
   5,
@@ -172,22 +174,22 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 50.21,
-  "prompt_tokens": 1820,
-  "completion_tokens": 1137,
+  "llm_seconds": 171.43,
+  "prompt_tokens": 1817,
+  "completion_tokens": 987,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 2,
-  "lines_reverted": 1,
+  "lines_changed": 1,
+  "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 8,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 7,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -196,8 +198,10 @@
   "source_sha256": "ffba59ba5e30abb5e32519d8756ca9be13489a3ede2c05047321383d6dc5fab6",
   "source_line_count": 10,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:01:38Z",
+  "generated_at_utc": "2026-11-10T22:44:14Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 63.35
+  "source_audio_duration_s": 63.35,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

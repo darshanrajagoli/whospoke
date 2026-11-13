@@ -1,17 +1,18 @@
 {
  "title": "Hindi and Hinglish Conversation Report",
- "topic": "Budget and Work Requests in Hindi and Hinglish",
- "executive_summary": "This report summarizes a conversation between two speakers in Hindi and Hinglish, where one speaker welcomes the other and asks for a budget. The other speaker agrees and says they will send their location. The speaker also mentions workers who do good work and offers to send their location. The speaker also mentions a divan bed, a sofa, a dining table, and furniture drenching room. The speaker's wife is also mentioned. The speaker also mentions travel and a trip. The speaker's wife is also mentioned. The speaker's wife is also mentioned. The speaker's wife is also mentioned. The speaker's wife is also mentioned. The speaker's wife is also mentioned. The speaker's wife is also mentioned. The speaker's wife is also mentioned. The speaker's wife is also mentioned. The speaker's wife is also.",
+ "topic": "Hindi and Hinglish Conversation",
+ "executive_summary": "This report summarizes a conversation between two speakers, Speaker A and Speaker B, in Hindi and Hinglish. The conversation includes topics such as budget, Ma'am, Welcome, Yes, Good, What do you want, bed, sofa, dining table, furniture draining room, location, travel, wife, unspecified, availability. No actions were taken in the conversation.",
  "key_points": [
-  "Budget",
+  "budget",
   "Ma'am",
   "Welcome",
   "Yes",
-  "00:08-00:09"
+  "Good"
  ],
  "keywords": [
   "budget",
-  "Yes"
+  "Yes",
+  "Good"
  ],
  "action_items": [],
  "speakers": [
@@ -72,7 +73,7 @@
    "source_text": "हलो",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 4,
@@ -107,7 +108,7 @@
    "end": 8.35,
    "text": "मैम आपको किस बजट में चाहिए कितना बजट में आप",
    "hinglish": "ma'am aapko kis budget mein chahiye kitna budget mein aap",
-   "translation": "Ma'am, how much budget do you want in what budget?",
+   "translation": "Ma'am, how much budget do you need in what budget you want",
    "source_text": "मैम आपको किस बजट में चाहिए कितना बजट में आप",
    "changed": false,
    "uncertain": true,
@@ -196,13 +197,13 @@
    "speaker": "Speaker_B",
    "start": 27.6,
    "end": 33.8,
-   "text": "हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगी आपको",
-   "hinglish": "haan aapko milega divan bed milega ek sofa milega daining table milegi aapko",
-   "translation": "Yes, you will find a divan bed and a sofa and you will get a dining table.",
+   "text": "हाँ आपको मिलेगी दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगी आपको",
+   "hinglish": "haan aapko milegi divan bed milega ek sofa milega daining table milegi aapko",
+   "translation": "Yes, you will find a bed in the dining table and a sofa will be found and then you will find furniture draining room",
    "source_text": "हाँ आपको मिलेगा दीवान बेड मिलेगा एक सोफ़ा मिलेगा डाइनिंग टेबल मिलेगा आपको",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 14,
@@ -211,11 +212,11 @@
    "end": 34.85,
    "text": "और",
    "hinglish": "aur",
-   "translation": "And.",
+   "translation": "and",
    "source_text": "और",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 15,
@@ -224,7 +225,7 @@
    "end": 43.2,
    "text": "सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो",
    "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo",
-   "translation": "The sofa dining table and the bed will come and then you will get the furniture drenching room.",
+   "translation": "Soft bed and dining table will be found and then you will find furniture draining room",
    "source_text": "सोफ़ा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो",
    "changed": false,
    "uncertain": true,
@@ -250,11 +251,11 @@
    "end": 48.4,
    "text": "आम की लकड़ी अच्छा अच्छा अच्छा",
    "hinglish": "aam ki lakdi achha achha achha",
-   "translation": "Good, good, good, good, good, good, good, good, good, good, good, good, good, good, good",
+   "translation": "Common wood is good good good",
    "source_text": "आम की लकड़ी अच्छा अच्छा अच्छा",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 18,
@@ -315,11 +316,11 @@
    "end": 73.75,
    "text": "मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की इन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
    "hinglish": "ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki in finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
-   "translation": "We have workers here who do good work. Their handiwork is also very good and you will get every single thing you want.",
+   "translation": "We have workers here who work well. Their handiwork is also very good and you will get everything you want.",
    "source_text": "मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की इन फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -331,29 +332,32 @@
   10,
   11,
   12,
+  13,
+  14,
   15,
   16,
+  17,
   18,
   22
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 833.239,
-  "prompt_tokens": 3271,
-  "completion_tokens": 1927,
+  "llm_seconds": 305.812,
+  "prompt_tokens": 3333,
+  "completion_tokens": 1854,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 2,
-  "lines_reverted": 10,
+  "lines_reverted": 9,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 5,
+  "lines_flagged_by_llm": 8,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -362,8 +366,10 @@
   "source_sha256": "15ebc20200698658be8b872b031ff3685f70363ae38cb600f72c2c519f585fd3",
   "source_line_count": 22,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:53:21Z",
+  "generated_at_utc": "2026-11-10T19:04:08Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 74.06
+  "source_audio_duration_s": 74.06,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

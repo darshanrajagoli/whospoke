@@ -1,19 +1,19 @@
 {
  "title": "Hindi and Hinglish Conversation in Noisy Places",
- "topic": "Discounts and Wedding Arrangements",
- "executive_summary": "A conversation in Hindi and Hinglish between Harish Chaurasia and Sir, with topics such as discounts, wedding arrangements, and tourism.",
+ "topic": "Discount Count and Wedding Price",
+ "executive_summary": "A conversation in Hindi and Hinglish about a ten June wedding and the price of rose berries and snowy chenna.",
  "key_points": [
-  "Discounts will be available.",
-  "The price for rose berries is seven rupees.",
-  "The discount count is available."
+  "Discount Count and Wedding Price",
+  "What do you want to talk about, photographer?"
  ],
  "keywords": [
   "सर्व हो पाएगा",
   "rose",
   "berries",
   "snowy",
-  "photographer",
+  "chenna",
   "wedding",
+  "price",
   "discount"
  ],
  "action_items": [],
@@ -71,7 +71,7 @@
    "end": 8.231,
    "text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "hinglish": "sir hum bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi",
-   "translation": "We were talking about Lakhnavi style biryanis which we wanted",
+   "translation": "We were talking about Lakhnavi style biryanis that we wanted",
    "source_text": "सर हम बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी",
    "changed": false,
    "uncertain": false,
@@ -162,7 +162,7 @@
    "end": 41.773,
    "text": "तो सर वह कह रहे थे वह वह सभी पूछ रहे थे कि वह जो यह है गुलाब जामुन यह कितने रुपये पीस मिलेगा",
    "hinglish": "to sir woh kah rahe the woh woh sabhi poochh rahe the ki woh jo yeh hai gulab jamun yeh kitne rupye piece milega",
-   "translation": "So Sir, he was asking about the rose berries and how much money it would cost.",
+   "translation": "So Sir, he was asking about the price of rose berries and how much money he would get.",
    "source_text": "तो सर वह कह रहे थे वह वह सभी पूछ रहे थे कि वह जो यह है गुलाब जामुन यह कितने रुपये पीस मिलेगा",
    "changed": false,
    "uncertain": true,
@@ -175,7 +175,7 @@
    "end": 44.578,
    "text": "जी सर यह मेरे यहाँ दस जून की शादी है",
    "hinglish": "ji sir yeh mere yahan das joon ki shadi hai",
-   "translation": "G Sir, it's a ten June wedding.",
+   "translation": "Sir, it's a ten June wedding.",
    "source_text": "जी सर यह मेरे यहाँ दस जून की शादी है",
    "changed": false,
    "uncertain": true,
@@ -199,11 +199,11 @@
    "speaker": "S2",
    "start": 49.016,
    "end": 53.52,
-   "text": "तो पूछ रहे थे कि अगर सर यह कुछ डिस्काउंट उस्काउंट हो सक्ता है",
+   "text": "तो पूछ रहे थे कि अगर सर यह कुछ डिस्काउंट उस्काउंट हो सकता है",
    "hinglish": "to poochh rahe the ki agar sir yeh kuch discount uskaunt ho sakta hai",
-   "translation": "He was asking if the discount count was available.",
+   "translation": "He was asking if the discount count can be used.",
    "source_text": "तो पूछ रहे थे कि अगर सर यह कुछ डिस्काउंट उस्काउंट हो सकता है",
-   "changed": true,
+   "changed": false,
    "uncertain": false,
    "note": ""
   },
@@ -217,8 +217,8 @@
    "translation": "He said we were tourists and we came here to stay, but then what happens if we get a room at a reasonable rate.",
    "source_text": "नहीं तो सर मतलब हम लोग टूरिस्ट हैं तो आए थे यहीं पर मतलब रहने के लिए तो अगर वह मिल जाता तो कुछ दिन रहते हैं पर तो फिर मतलब जो होता है अगर रूम उचित रेट में मिल जाता तो फिर दूसरे रेस्टोरेंट पर क्यों जाते हम लोग",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -230,26 +230,27 @@
   9,
   10,
   11,
-  12
+  12,
+  14
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 54.018,
-  "prompt_tokens": 2336,
-  "completion_tokens": 1160,
+  "llm_seconds": 195.307,
+  "prompt_tokens": 2341,
+  "completion_tokens": 1144,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 4,
+  "lines_changed": 3,
   "lines_reverted": 3,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 6,
+  "lines_flagged_by_llm": 7,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -258,8 +259,10 @@
   "source_sha256": "71ad6314dc8a1ccc706fa630f3a37bd81e6231b74241941f7882b533a2c72337",
   "source_line_count": 14,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:34:29Z",
+  "generated_at_utc": "2026-11-11T04:10:39Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 73.46
+  "source_audio_duration_s": 73.46,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

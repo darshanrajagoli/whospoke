@@ -1,19 +1,20 @@
 {
  "title": "Hindi and Hinglish Conversations",
  "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes the evidence from a transcribed conversation between two people, with a focus on the main topic of saris and their prices. The report includes summaries of the parts, lines translated into English, and candidate keywords and actions.",
+ "executive_summary": "This report summarizes the evidence from a transcribed conversation between two people, with a focus on the main topic of saris and their prices. The evidence includes summaries of the parts, lines translated into English, and candidate keywords and actions.",
  "key_points": [
-  "Hindi and Hinglish Conversations"
+  "Speak",
+  "Hello",
+  "I am speaking to Sir's restaurant you",
+  "Our establishment is Sir's",
+  "Yes, go ahead"
  ],
  "keywords": [
   "हैलो",
-  "जी नमस्ते",
+  "नमस्ते",
   "बोलो",
-  "जी जी ये तो हमारी इस्पेशिलिटी है सर",
-  "हाँ आ जाना",
-  "बोलिए",
-  "प्रियंस",
-  "बिल"
+  "सर रेस्टोरेंट",
+  "हाँ आ जाना"
  ],
  "action_items": [],
  "speakers": [
@@ -109,11 +110,11 @@
    "end": 8.818,
    "text": "जी जी ये तो हमारी इस्पेशिलिटी है सर",
    "hinglish": "ji ji ye to hamari ispeshiliti hai sir",
-   "translation": "Our isliety is Sir's",
+   "translation": "Our establishment is Sir's",
    "source_text": "जी जी ये तो हमारी इस्पेशिलिटी है सर",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 7,
@@ -291,7 +292,7 @@
    "end": 51.076,
    "text": "ओके ठीक है उसकी फीस बता देती हूँ मैं यह मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उस एकॉर्डिंग ही कटानी है या फिर सामने से ही हेयरकट कटाना है",
    "hinglish": "okay theek hai uski phees bata deti hoon main yeh meri yu cutting ke liye jo aapko saam matlab face us ekording hi katani hai ya phir samne se hi heyarkat katana hai",
-   "translation": "I'll tell you my haircut rate. It's 10% of the price you pay for a haircut.",
+   "translation": "I'll tell you my cut rate. It's 10% of the price you pay for a haircut.",
    "source_text": "ओके ठीक है उसकी फीस बता देती हूँ मैं यह मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उस एकॉर्डिंग ही कटानी है या फिर सामने से ही हेयरकट कटाना है",
    "changed": false,
    "uncertain": true,
@@ -304,7 +305,7 @@
    "end": 59.423,
    "text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "hinglish": "haan variety to dher hai aap aake dekh sakte ho jaise aapko kisi cheej ki jarurat matlab kisi alag tarike ki jarurat hai to hum use bahar se bulva ke bhi aapko de sakte hain",
-   "translation": "You can see the price of any item you want. We have a wide range of products.",
+   "translation": "You can see the price of any item you want. We can also get it for you.",
    "source_text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": false,
    "uncertain": true,
@@ -343,7 +344,7 @@
    "end": 62.791,
    "text": "ग्यारह खिलाड़ी होते हैं",
    "hinglish": "gyarah khiladi hote hain",
-   "translation": "There are many players.",
+   "translation": "There are a lot of players.",
    "source_text": "ग्यारह खिलाड़ी होते हैं",
    "changed": false,
    "uncertain": true,
@@ -356,7 +357,6 @@
   3,
   4,
   5,
-  6,
   9,
   13,
   14,
@@ -373,9 +373,9 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 580.691,
-  "prompt_tokens": 2992,
-  "completion_tokens": 1423,
+  "llm_seconds": 234.408,
+  "prompt_tokens": 2987,
+  "completion_tokens": 1376,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -385,7 +385,7 @@
   "lines_reverted": 18,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 7,
+  "lines_flagged_by_llm": 6,
   "missing_translations": 0,
   "unknown_line_ids": 0,
   "keywords_dropped": 3,
@@ -397,8 +397,10 @@
   "source_sha256": "071c431a6048a77711c65d27ac1342a784ecff49e23178ba1cdefff9e727f4b8",
   "source_line_count": 24,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:41:38Z",
+  "generated_at_utc": "2026-11-10T21:26:35Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 63.31
+  "source_audio_duration_s": 63.31,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

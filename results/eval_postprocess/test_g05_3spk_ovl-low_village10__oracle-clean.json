@@ -1,16 +1,16 @@
 {
- "title": "Wedding and Photography Shoot",
- "topic": "Wedding and Photography Shoot",
- "executive_summary": "A conversation between two people about a wedding and a photography shoot.",
+ "title": "Lost ID Card and Pre-wedding Photography Shoot",
+ "topic": "Lost ID Card and Pre-wedding Photography Shoot",
+ "executive_summary": "A conversation between two people about a doctor's visit and a pre-wedding photography shoot.",
  "key_points": [
-  "wedding",
-  "photography shoot",
-  "unanswerable question",
-  "S3",
-  "S2"
+  "Lost ID Card",
+  "Pre-wedding Photography Shoot",
+  "Doctor's Visit",
+  "Photography Shoot"
  ],
  "keywords": [
-  "wedding"
+  "Pre-wedding Photography Shoot",
+  "Photography Shoot"
  ],
  "action_items": [],
  "speakers": [
@@ -80,7 +80,7 @@
    "end": 22.67,
    "text": "जी मेरी गिरफ़्फ़ बात फोटोग्राफर से हो रही है जी सर है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
    "hinglish": "ji meri giraff baat photographer se ho rahi hai ji sir hai mere yahan das joon ki shadi hai to mere ko pri wedding fotoshut karana tha",
-   "translation": "Gee, my photography is happening with the photographer. I have a wedding in June, so I wanted to get pre-wedding photoshoot done.",
+   "translation": "Gee, my photography is happening with the photographer. I have a pre-wedding photography shoot scheduled.",
    "source_text": "जी मेरी गिरफ़्फ़ बात फोटोग्राफर से हो रही है जी सर है मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटोशूट कराना था",
    "changed": false,
    "uncertain": true,
@@ -93,7 +93,7 @@
    "end": 26.52,
    "text": "हाँ सबका इलाज है मैम आप कब से हो रहा है आपको यह सब",
    "hinglish": "haan sabka ilaj hai ma'am aap kab se ho raha hai aapko yeh sab",
-   "translation": "Yes, everyone is getting treated. When are you going to be treated?",
+   "translation": "Yes, everyone is getting treated. When do you plan to start?",
    "source_text": "हाँ सबका इलाज है मैम आप कब से हो रहा है आपको यह सब",
    "changed": false,
    "uncertain": true,
@@ -106,7 +106,7 @@
    "end": 36.79,
    "text": "तो सर उसका कैसा क्या रहता है चून को मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगा आप तो कब टाइम है मतलब फ़ोटोशूट करने के लिए आप दूसरी डेटें आप",
    "hinglish": "to sir uska kaisa kya rahta hai choon ko matlab meri jo pri wedding fotoshut usse pahle hoga aap to kab time hai matlab fotoshut karne ke liye aap dusri deten aap",
-   "translation": "So, how is my boyfriend? When is he going to be photographed?",
+   "translation": "So, how does he feel? When do you want to take photos?",
    "source_text": "तो सर उसका कैसा क्या रहता है चून को मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगा आप तो कब टाइम है मतलब फ़ोटोशूट करने के लिए आप दूसरी डेटें आप",
    "changed": false,
    "uncertain": true,
@@ -193,9 +193,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 41.492,
-  "prompt_tokens": 1829,
-  "completion_tokens": 872,
+  "llm_seconds": 158.561,
+  "prompt_tokens": 1816,
+  "completion_tokens": 901,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -208,7 +208,7 @@
   "lines_flagged_by_llm": 6,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -217,8 +217,10 @@
   "source_sha256": "2d856730bcf6d07bf3f8f75f7d9e94f55cec800eb7c093223b4b0cee9094089d",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:50:17Z",
+  "generated_at_utc": "2026-11-11T05:08:31Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 61.66
+  "source_audio_duration_s": 61.66,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

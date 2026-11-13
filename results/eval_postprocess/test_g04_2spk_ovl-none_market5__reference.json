@@ -1,19 +1,18 @@
 {
- "title": "Transcript of a conversation between two people",
- "topic": "buying boxes of pens",
- "executive_summary": "The speaker is talking about buying a box and getting a special discount.",
+ "title": "Hindi and Hinglish Conversation in Noisy Place",
+ "topic": "Buying a Box and Getting a Special Discount",
+ "executive_summary": "A conversation between two people in Hindi and Hinglish, with the speaker mentioning buying a box and getting a special discount.",
  "key_points": [
-  "He studies in class 10.",
-  "He was sent to school in the morning by you and after coming here he fell sick and got a fever, his body temperature rose.",
-  "He said that it would be better if there was more heat.",
-  "He said that it would be better if there was a shortage of water, because he got sick."
+  "He sent him to school in the morning and he got sick and his fever rose, his body temperature rose",
+  "Am I talking at Jain Brothers Stenery and Book Shop?",
+  "After coming here, it seems that there is too much heat.",
+  "Because of her, there may have been a shortage of water, and she got sick.",
+  "We need two boxes of pens."
  ],
  "keywords": [
   "hello",
   "namaste",
-  "class",
-  "boxes",
-  "pen"
+  "sent"
  ],
  "action_items": [],
  "speakers": [
@@ -64,11 +63,11 @@
    "end": 5.296,
    "text": "हेलो",
    "hinglish": "hello",
-   "translation": "Yes",
+   "translation": "Hello",
    "source_text": "हेलो",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model replaced English words spoken in the line; ASR wording kept."
   },
   {
    "line_id": 4,
@@ -77,11 +76,11 @@
    "end": 8.803,
    "text": "हाँ और वो कक्षा दस में पढ़ता है",
    "hinglish": "haan aur wo kaksha das mein padhta hai",
-   "translation": "And he studies in class 10.",
+   "translation": "Yes",
    "source_text": "हाँ और वो कक्षा दस में पढ़ता है",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 5,
@@ -90,7 +89,7 @@
    "end": 19.097,
    "text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
    "hinglish": "wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
-   "translation": "He was sent to school in the morning by you and after coming here he fell sick and got a fever, his body temperature rose.",
+   "translation": "He sent him to school in the morning and he got sick and his fever rose, his body temperature rose",
    "source_text": "वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
    "changed": false,
    "uncertain": true,
@@ -103,7 +102,7 @@
    "end": 22.55,
    "text": "क्या मैं जैन ब्रदर्स स्टेसनरी एण्ड बुक शॉप में बात कर रही हूँ",
    "hinglish": "kya main jain bradars stesanri and book shop mein baat kar rahi hoon",
-   "translation": "Am I talking in Jain Brothers Stenery and Book Shop?",
+   "translation": "Am I talking at Jain Brothers Stenery and Book Shop?",
    "source_text": "क्या मैं जैन ब्रदर्स स्टेसनरी एण्ड बुक शॉप में बात कर रही हूँ",
    "changed": false,
    "uncertain": true,
@@ -129,7 +128,7 @@
    "end": 29.028,
    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज्यादा गर्मी हो रही है",
    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
-   "translation": "After coming here, he said that it would be better if there was more heat.",
+   "translation": "After coming here, it seems that there is too much heat.",
    "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज्यादा गर्मी हो रही है",
    "changed": false,
    "uncertain": true,
@@ -140,11 +139,11 @@
    "speaker": "S1",
    "start": 29.222,
    "end": 34.552,
-   "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
-   "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
-   "translation": "He said that it would be better if there was a shortage of water, because he got sick.",
+   "text": "उसकी वजह से पानी की कमी वगैरह हो रही होगी तो उसकी वजह से वो बीमार हो गया है",
+   "hinglish": "uski wajah se pani ki kami wagairah ho rahi hogi to uski wajah se wo bimar ho gaya hai",
+   "translation": "Because of her, there may have been a shortage of water, and she got sick.",
    "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
    "note": "The model found this line hard to understand."
   },
@@ -155,7 +154,7 @@
    "end": 38.516,
    "text": "हमें क्या कहते हैं पेन के बोक्सेस चाहिए थे छः बॉक्स",
    "hinglish": "hamen kya kahte hain pen ke boxes chahiye the chhah box",
-   "translation": "We should have bought boxes of pens.",
+   "translation": "What do we say, boxes of pens?",
    "source_text": "हमें क्या कहते हैं पेन के बोक्सेस चाहिए थे छः बॉक्स",
    "changed": false,
    "uncertain": true,
@@ -168,7 +167,7 @@
    "end": 40.322,
    "text": "हाँ जी हमें",
    "hinglish": "haan ji hamen",
-   "translation": "Yes, we should.",
+   "translation": "Yes, we need them.",
    "source_text": "हाँ जी हमें",
    "changed": false,
    "uncertain": true,
@@ -181,7 +180,7 @@
    "end": 45.395,
    "text": "हमें दो बोक्सेस के रेड के दो ब्लू के और दो ब्लैक चाहिए हैं",
    "hinglish": "hamen do boxes ke red ke do blue ke aur do black chahiye hain",
-   "translation": "We need two boxes of red, two boxes of blue, and two boxes of black.",
+   "translation": "We need two boxes of red, two boxes of blue, and two blanks.",
    "source_text": "हमें दो बोक्सेस के रेड के दो ब्लू के और दो ब्लैक चाहिए हैं",
    "changed": false,
    "uncertain": true,
@@ -192,39 +191,39 @@
    "speaker": "S1",
    "start": 45.838,
    "end": 57.717,
-   "text": "हाँ दवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
-   "hinglish": "haan dava to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega",
-   "translation": "Yes, we will give medicine but if you are, come and take your child home. It will be restful. Then you will send him to school.",
+   "text": "हां दवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तो स्वास्थ्य उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
+   "hinglish": "haan dava to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega to svaasthy uski theek ho jaegi to phir aap dobara se usko school bhejiega",
+   "translation": "Yes, we will give medicine but if you are, come and take your child home for a few days. Then you will send him to school.",
    "source_text": "हाँ दवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 14,
    "speaker": "S2",
    "start": 58.503,
    "end": 60.533,
-   "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा।",
-   "hinglish": "to ek box ka kitna price padega.",
-   "translation": "So, how much will a box cost.",
+   "text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
+   "hinglish": "to ek box ka kitna price padega",
+   "translation": "How much will a box cost?",
    "source_text": "तो एक बॉक्स का कितना प्राइस पड़ेगा",
-   "changed": true,
-   "uncertain": false,
-   "note": ""
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 15,
    "speaker": "S2",
    "start": 60.831,
    "end": 65.721,
-   "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा।",
-   "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega.",
-   "translation": "So, if you want a box, it will cost two hundred rupees and I will also give some special discount.",
+   "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
+   "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega",
+   "translation": "So, if you want a box, it will cost two hundred rupees and I will give you some special discount.",
    "source_text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
-   "changed": true,
-   "uncertain": false,
-   "note": ""
+   "changed": false,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -238,26 +237,28 @@
   10,
   11,
   12,
-  13
+  13,
+  14,
+  15
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 56.991,
-  "prompt_tokens": 2390,
-  "completion_tokens": 1221,
+  "llm_seconds": 212.497,
+  "prompt_tokens": 2369,
+  "completion_tokens": 1260,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 2,
-  "lines_reverted": 5,
+  "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 7,
+  "lines_flagged_by_llm": 10,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 5,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -266,8 +267,10 @@
   "source_sha256": "2088ccc3db263cc1c9ff0af184fc314cc4b065e864c1a7a730b9bc23c6c8350c",
   "source_line_count": 15,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:11:37Z",
+  "generated_at_utc": "2026-11-11T02:47:37Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 66.16
+  "source_audio_duration_s": 66.16,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

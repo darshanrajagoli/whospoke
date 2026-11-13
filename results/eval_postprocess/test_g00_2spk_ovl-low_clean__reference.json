@@ -1,15 +1,18 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation between two people in Hindi and English, with a focus on the main topic of the conversation and the key points discussed.",
+ "title": "Hindi and Hinglish Conversation Transcript",
+ "topic": "Hindi and Hinglish Conversation",
+ "executive_summary": "This report summarizes a conversation between two people in Hindi and Hinglish, with a focus on budget, prize, and engine problems.",
  "key_points": [
   "Hello",
-  "Yes",
-  "Yay, speak",
-  "Good, where do you pay? Achha achha aapki car mein kya kharabi ho gayi hai jaise"
+  "Namaste",
+  "Budget",
+  "Pay",
+  "Engine problem"
  ],
  "keywords": [
-  "हैलो"
+  "हैलो",
+  "नमस्ते",
+  "बजट"
  ],
  "action_items": [],
  "speakers": [
@@ -86,7 +89,7 @@
    "end": 9.54,
    "text": "यश यश बोलिए",
    "hinglish": "yash yash bolie",
-   "translation": "Yay, speak",
+   "translation": "Yash, Yash",
    "source_text": "यश यश बोलिए",
    "changed": false,
    "uncertain": false,
@@ -99,7 +102,7 @@
    "end": 11.627,
    "text": "अच्छा अच्छा कहाँ पे",
    "hinglish": "achha achha kahan pe",
-   "translation": "Good, where do you pay?",
+   "translation": "Good, good, where do you pay?",
    "source_text": "अच्छा अच्छा कहाँ पे",
    "changed": false,
    "uncertain": true,
@@ -112,11 +115,11 @@
    "end": 15.077,
    "text": "अच्छा अच्छा आपकी कार में क्या खराबी हो गई है जैसे",
    "hinglish": "achha achha aapki car mein kya kharabi ho gayi hai jaise",
-   "translation": "",
+   "translation": "Your car has a problem like",
    "source_text": "अच्छा अच्छा आपकी कार में क्या खराबी हो गई है जैसे",
    "changed": false,
    "uncertain": true,
-   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model replaced English words spoken in the line; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 8,
@@ -125,11 +128,11 @@
    "end": 16.368,
    "text": "मैम आपको क्या चाहिए ये बताइए",
    "hinglish": "ma'am aapko kya chahiye ye bataie",
-   "translation": "Mam, tell me what you want",
+   "translation": "",
    "source_text": "मैम आपको क्या क्या चाहिए ये बताइए",
    "changed": true,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model found this line hard to understand; the same English was returned for different lines."
   },
   {
    "line_id": 9,
@@ -138,7 +141,7 @@
    "end": 25.132,
    "text": "मैम आपको बहुत सारे प्राइज़ में मिल जाएंगे आपको किस प्राइज़ में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइज़ में अवेबल करवा देंगे",
    "hinglish": "ma'am aapko bahut sare prize mein mil jaenge aapko kis prize mein aapko chahiye kis tarike ka to aap bataie hum aapko us prize mein avebal karva denge",
-   "translation": "Mam, you will get a lot of prizes in which you will get what you want, in which you will get the kind of prize you want, and we will make it available to you in the furniture drying room",
+   "translation": "Mam, you will get a lot of prizes in which you will get the prizes in which you will get the prizes in which you will get the prizes in which you will get the prizes in which you will get the prizes in which you will get the prizes in which you will get the prizes in which you will get the prizes in which",
    "source_text": "मैम आपको बहुत सारे प्राइज़ में मिल जाएंगे आपको किस प्राइज़ में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइज़ में अवेबल करवा देंगे",
    "changed": false,
    "uncertain": true,
@@ -151,7 +154,7 @@
    "end": 43.214,
    "text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक पीस सोफा मिलेगा डाइनिंग टेबल मिलेगी आपको और सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस",
    "hinglish": "ma'am aapko achha hi saman milega aapko milega divan bed milega ek piece sofa milega daining table milegi aapko aur sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo us",
-   "translation": "Mam, you will get good stuff, you will get a divan bed, a piece of sofa, a dining table, and you will get a dining table and a mattress bed, and then you will get a furniture drying room",
+   "translation": "Mam, you will get good stuff like a bed, a sofa, a dining table, and a bed and mattress, and then you will get furniture in the dining room, which is",
    "source_text": "मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक पीस सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको और सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो उस",
    "changed": true,
    "uncertain": true,
@@ -164,7 +167,7 @@
    "end": 42.244,
    "text": "अच्छा",
    "hinglish": "achha",
-   "translation": "The engine has gone out",
+   "translation": "The engine is gone",
    "source_text": "अच्छा",
    "changed": false,
    "uncertain": true,
@@ -266,9 +269,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 639.389,
-  "prompt_tokens": 2655,
-  "completion_tokens": 1535,
+  "llm_seconds": 258.705,
+  "prompt_tokens": 2645,
+  "completion_tokens": 1497,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -281,7 +284,7 @@
   "lines_flagged_by_llm": 13,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -290,8 +293,10 @@
   "source_sha256": "be47e997cc995e0d27f9f6c6cea6a1d8570a03ff326407c176e52e1a44d3931a",
   "source_line_count": 17,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T01:41:22Z",
+  "generated_at_utc": "2026-11-10T18:52:47Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 74.06
+  "source_audio_duration_s": 74.06,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

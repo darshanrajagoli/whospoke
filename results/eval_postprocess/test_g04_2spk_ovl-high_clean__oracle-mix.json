@@ -1,19 +1,19 @@
 {
- "title": "Transcript of a conversation about Vaibhav, Class 10, Health, box, red, blue, black, price",
- "topic": "Vaibhav, Class 10, Health, box, red, blue, black, price",
- "executive_summary": "A conversation about Vaibhav, Class 10, Health, box, red, blue, black, price.",
+ "title": "Conversation about Vaibhav and his health issues",
+ "topic": "Vaibhav's health issues",
+ "executive_summary": "The speaker talks about Vaibhav, who is in Class 10 and has health issues. They want to buy two boxes of red, two boxes of blue, and two boxes of black, and they are willing to pay two hundred rupees in their ambos and also get some special discount. They also mention that Vaibhav can come here whenever he wants, but it will be because of the heat and water shortage. The speaker asks if the price of one box will be two hundred rupees, and they want to get some special discount. The speaker mentions that they need two boxes of his red, two boxes of blue, and two boxes of black.",
  "key_points": [
   "Vaibhav",
   "Class 10",
-  "Health",
+  "Health Issues",
   "box",
-  "red, blue, black, price"
+  "red, blue, black, price, boxes"
  ],
  "keywords": [
   "Vaibhav",
   "Class 10",
   "box",
-  "red, blue, black, price"
+  "red, blue, black, price, boxes"
  ],
  "action_items": [],
  "speakers": [
@@ -77,7 +77,7 @@
    "end": 26.86,
    "text": "हाँ और वो कक्षा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
    "hinglish": "haan aur wo kaksha das mein padhta hai wo aapne usko subah school bheja tha yahan aane ke baad woh bimar pad gaya hai aur usko bukhar ho gaya hai uske sharir ka taap badh gaya hai",
-   "translation": "Yes and he studies in Class 10",
+   "translation": "Yes and he is in Class 10",
    "source_text": "हाँ और वो कक्षा दस में पढ़ता है वो आपने उसको सुबह स्कूल भेजा था यहाँ आने के बाद वह बीमार पड़ गया है और उसको बुखार हो गया है उसके शरीर का ताप बढ़ गया है",
    "changed": false,
    "uncertain": true,
@@ -103,7 +103,7 @@
    "end": 50.97,
    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर तो हम दिला देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबेयता उसकी ठीक हो जाएगी तो फिर दो बॉक्स उसके रेट के",
    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai har to hum dila denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabeyta uski theek ho jaegi to phir do box uske rate ke",
-   "translation": "Now, George, he can come here whenever he wants, but it will be because of the heat, and it will be because of the water shortage. Then, he will get better, and then, we will get him some boxes.",
+   "translation": "Now, George, he can come here whenever he wants, but it will be because of the heat, and it will be because of the water shortage. Then, he will get better, and then, he will get two boxes.",
    "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज़्यादा गर्मी हो रही है उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है हर तो हम दिला देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबीयत उसकी ठीक हो जाएगी तो फिर दो बॉक्स उसके रेट के",
    "changed": true,
    "uncertain": true,
@@ -162,9 +162,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 42.655,
-  "prompt_tokens": 1793,
-  "completion_tokens": 913,
+  "llm_seconds": 178.347,
+  "prompt_tokens": 1820,
+  "completion_tokens": 1037,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -186,8 +186,10 @@
   "source_sha256": "7f754bb373728acaa38c63d035cb402b49ea04ae2d794146bdb4b637600f4071",
   "source_line_count": 9,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:26:23Z",
+  "generated_at_utc": "2026-11-11T03:40:52Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 62.59
+  "source_audio_duration_s": 62.59,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

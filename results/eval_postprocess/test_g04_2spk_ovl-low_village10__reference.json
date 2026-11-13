@@ -1,19 +1,16 @@
 {
- "title": "Transcript of a conversation about buying boxes of books",
- "topic": "buying boxes of books",
- "executive_summary": "A conversation between two people about buying boxes of books.",
+ "title": "Transcript of a conversation between two people",
+ "topic": "Books and boxes",
+ "executive_summary": "A conversation about buying boxes of books.",
  "key_points": [
   "Hello",
   "Am I talking at Jain Brothers Stennerry & Book Shop?",
-  "We want Pen's boxes."
+  "We want Pencil Boxes."
  ],
  "keywords": [
-  "boxes",
-  "price",
-  "discount",
-  "medication",
-  "sick",
-  "child"
+  "Hello",
+  "Am I talking at Jain Brothers Stennerry&",
+  "We want Pencil Boxes."
  ],
  "action_items": [],
  "speakers": [
@@ -90,7 +87,7 @@
    "end": 12.071,
    "text": "हमें क्या कहते हैं पेन के बोक्सेस चाहिए थे छः बॉक्स",
    "hinglish": "hamen kya kahte hain pen ke boxes chahiye the chhah box",
-   "translation": "We want Pen's boxes.",
+   "translation": "We want Pencil Boxes",
    "source_text": "हमें क्या कहते हैं पेन के बोक्सेस चाहिए थे छः बॉक्स",
    "changed": false,
    "uncertain": true,
@@ -103,7 +100,7 @@
    "end": 15.534,
    "text": "हाँ और वो कक्षा दस में पढ़ता है",
    "hinglish": "haan aur wo kaksha das mein padhta hai",
-   "translation": "Yes, and he studies in Class 10.",
+   "translation": "Yes, and he studies in Class 10",
    "source_text": "हाँ और वो कक्षा दस में पढ़ता है",
    "changed": false,
    "uncertain": true,
@@ -132,8 +129,8 @@
    "translation": "Yes, we need",
    "source_text": "हाँ जी हमें",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 9,
@@ -171,8 +168,8 @@
    "translation": "Yes",
    "source_text": "हाँ",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 12,
@@ -194,7 +191,7 @@
    "end": 45.017,
    "text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज्यादा गर्मी हो रही है",
    "hinglish": "ab jo bhi ho yahan aane ke baad ho sakta hai ki itni zyada garmi ho rahi hai",
-   "translation": "It's too hot here",
+   "translation": "It seems that the heat is causing a lot of trouble.",
    "source_text": "अब जो भी हो यहाँ आने के बाद हो सकता है कि इतनी ज्यादा गर्मी हो रही है",
    "changed": false,
    "uncertain": true,
@@ -207,7 +204,7 @@
    "end": 50.776,
    "text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे इनके प्राइस बताते जाइए",
    "hinglish": "haan ji to aap mera ek kaam karie item note kar lijie aur mujhe inke price batate jaie",
-   "translation": "Please take a note of the prices of these items and tell me.",
+   "translation": "Please take a note of the prices of the items and let me know.",
    "source_text": "हाँ जी तो आप मेरा एक काम करिए आइटम नोट कर लीजिए और मुझे इनके प्राइस बताते जाइए",
    "changed": false,
    "uncertain": true,
@@ -220,7 +217,7 @@
    "end": 54.297,
    "text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
    "hinglish": "uski wajah se pani ki kami wagairah ho gayi hogi to uski wajah se wo bimar ho gaya hai",
-   "translation": "It seems that the water shortage may have been caused by her, and she is now sick.",
+   "translation": "It seems that the lack of water may have caused his illness.",
    "source_text": "उसकी वजह से पानी की कमी वगैरह हो गई होगी तो उसकी वजह से वो बीमार हो गया है",
    "changed": false,
    "uncertain": true,
@@ -233,7 +230,7 @@
    "end": 66.353,
    "text": "हाँ दवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
    "hinglish": "haan dava to hum dilva denge lekin aap agar hain to aa jaie to apne bacche ko ghar le jaie kuch din aaram kar lega tabiyat uski theek ho jaegi to phir aap dobara se usko school bhejiega",
-   "translation": "We will provide medication, but if you are willing, come and take your child home for a few days.",
+   "translation": "We will provide medicine, but if you are willing, come and take your child home for a few days.",
    "source_text": "हाँ दवा तो हम दिलवा देंगे लेकिन आप अगर हैं तो आ जाइए तो अपने बच्चे को घर ले जाइए कुछ दिन आराम कर लेगा तबियत उसकी ठीक हो जाएगी तो फिर आप दोबारा से उसको स्कूल भेजिएगा",
    "changed": false,
    "uncertain": true,
@@ -246,7 +243,7 @@
    "end": 68.813,
    "text": "अच्छा तो कब तक आएँगे",
    "hinglish": "achha to kab tak aaenge",
-   "translation": "When will you be coming?",
+   "translation": "When will you come?",
    "source_text": "अच्छा तो कब तक आएँगे",
    "changed": false,
    "uncertain": true,
@@ -260,8 +257,10 @@
   5,
   6,
   7,
+  8,
   9,
   10,
+  11,
   12,
   13,
   14,
@@ -271,9 +270,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 58.936,
-  "prompt_tokens": 2460,
-  "completion_tokens": 1279,
+  "llm_seconds": 217.323,
+  "prompt_tokens": 2466,
+  "completion_tokens": 1273,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -283,10 +282,10 @@
   "lines_reverted": 7,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 12,
+  "lines_flagged_by_llm": 14,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -295,8 +294,10 @@
   "source_sha256": "3d45a2161f3727d92fb63b180b16c5127f1a54cb1e0282d8e612d005a962c1d8",
   "source_line_count": 17,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:17:51Z",
+  "generated_at_utc": "2026-11-11T03:09:49Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 69.37
+  "source_audio_duration_s": 69.37,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

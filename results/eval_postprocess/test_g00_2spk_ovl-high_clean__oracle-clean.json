@@ -1,13 +1,11 @@
 {
- "title": "Buying Furniture",
- "topic": "Furniture",
- "executive_summary": "A conversation about buying furniture.",
+ "title": "Car Repairs",
+ "topic": "Car Repairs",
+ "executive_summary": "A conversation about car repairs.",
  "key_points": [
-  "Furniture is a type of furniture."
+  "Car repairs are needed"
  ],
- "keywords": [
-  "Furniture"
- ],
+ "keywords": [],
  "action_items": [],
  "speakers": [
   {
@@ -70,7 +68,7 @@
    "end": 26.72,
    "text": "मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "hinglish": "ma'am aapko kya kya chahiye ye bataie ma'am aapko bahut sare price mein mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge",
-   "translation": "I will come to your location",
+   "translation": "I will come to your location.",
    "source_text": "मैम आपको क्या क्या चाहिए ये बताइए मैम आपको बहुत सारे प्राइस में मिल जाएँगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे",
    "changed": false,
    "uncertain": true,
@@ -113,9 +111,9 @@
  ],
  "diagnostics": {
   "llm_calls": 2,
-  "llm_seconds": 209.162,
-  "prompt_tokens": 1438,
-  "completion_tokens": 443,
+  "llm_seconds": 83.43,
+  "prompt_tokens": 1433,
+  "completion_tokens": 362,
   "chunks": 1,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -128,7 +126,7 @@
   "lines_flagged_by_llm": 5,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 6,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -137,8 +135,10 @@
   "source_sha256": "3da75c08a95e6b097e99397fdb0bf09209368945b8f3ef16a69cc8a27feaf975",
   "source_line_count": 6,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T02:09:03Z",
+  "generated_at_utc": "2026-11-10T19:32:11Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 70.59
+  "source_audio_duration_s": 70.59,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

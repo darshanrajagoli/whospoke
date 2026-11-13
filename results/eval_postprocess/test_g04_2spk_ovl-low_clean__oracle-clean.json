@@ -1,18 +1,18 @@
 {
- "title": "Transcript of a conversation about Vaibhav's health and school",
- "topic": "Health and School",
- "executive_summary": "A conversation about Vaibhav's health and school.",
+ "title": "Transcript of a conversation about Vaibhav and his health",
+ "topic": "Health",
+ "executive_summary": "The speaker is asking when the other speaker will arrive. The speaker is also asking for a box of two hundred rupees and a special discount.",
  "key_points": [
-  "Vaibhav's health is a concern.",
-  "The speaker is asking when the other speaker will come.",
-  "The speaker is asking for a box of water."
+  "Vaibhav",
+  "health",
+  "school",
+  "water",
+  "good"
  ],
  "keywords": [
   "Vaibhav",
-  "School",
-  "Good",
-  "When",
-  "Come, Box, Two Hundred"
+  "school",
+  "good"
  ],
  "action_items": [],
  "speakers": [
@@ -128,7 +128,7 @@
    "end": 62.75,
    "text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
    "hinglish": "to ma'am ek box do sau rupye ka padega to main chhah le rahi hoon to kuch special discount bhi milega",
-   "translation": "So Mam will charge two hundred rupees for a box and also give some special discount.",
+   "translation": "So Mam will pay for a box of two hundred rupees and I will give some special discount.",
    "source_text": "तो मैम एक बॉक्स दो सौ रुपये का पड़ेगा तो मैं छः ले रही हूँ तो कुछ स्पेशल डिस्काउंट भी मिलेगा",
    "changed": false,
    "uncertain": true,
@@ -146,9 +146,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 35.678,
+  "llm_seconds": 129.425,
   "prompt_tokens": 1822,
-  "completion_tokens": 725,
+  "completion_tokens": 698,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -161,7 +161,7 @@
   "lines_flagged_by_llm": 5,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -170,8 +170,10 @@
   "source_sha256": "926b2b295c28f340c5084bb11fc706d46b050d1170c185628185e64fcdb7b1a9",
   "source_line_count": 8,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:15:28Z",
+  "generated_at_utc": "2026-11-11T03:00:56Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 63.39
+  "source_audio_duration_s": 63.39,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

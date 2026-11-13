@@ -377,6 +377,69 @@ def test_pipeline_without_postprocessor_is_unchanged():
     assert res.report is None and "llm" not in res.timings
 
 
+# ---------------------------------------------------------------- prompt/schema revision (Stage-4 cache identity, D33/F8)
+def test_prompt_schema_revision_is_stable_and_recorded():
+    rev = lp.PROMPT_SCHEMA_REVISION
+    assert isinstance(rev, str) and len(rev) == 12 and all(c in "0123456789abcdef" for c in rev)
+    assert lp.prompt_schema_revision() == rev                                # deterministic on recompute
+    report, _ = run(chunk_reply(), synthesis_reply())
+    assert report.to_dict()["provenance"]["prompt_schema_revision"] == rev   # every report records it
+    assert f"Prompt/schema revision: `{rev}`" in report.markdown()           # ...and states it in the readable report
+
+
+def test_revision_changes_when_output_affecting_config_changes(monkeypatch):
+    base = lp.prompt_schema_revision()
+    monkeypatch.setattr(lp, "MAX_LINES_PER_CHUNK", lp.MAX_LINES_PER_CHUNK + 1)
+    monkeypatch.setattr(lp, "MAX_EDIT_RATIO", min(1.0, lp.MAX_EDIT_RATIO + 0.1))
+    monkeypatch.setattr(lp, "CHUNK_PROMPT", lp.CHUNK_PROMPT + " extra instruction.")
+    assert lp.prompt_schema_revision() != base    # editing prompts/constants must invalidate the eval cache
+
+
+def test_revision_matches_gates_cache_reuse():
+    rev = lp.PROMPT_SCHEMA_REVISION
+    assert lp.revision_matches(None)          # a pre-revision (legacy) report is grandfathered, not mass-regenerated
+    assert lp.revision_matches(rev)           # same revision is reused
+    assert not lp.revision_matches("0" * 12)  # a different recorded revision must be remade, never silently reused
+
+
+def test_cache_compatible_requires_matching_model_context_and_revision():
+    rev = lp.PROMPT_SCHEMA_REVISION
+    cur = {"prompt_schema_revision": rev, "llm_model": "ai4bharat/Airavata", "context_tokens": 4096}
+    assert lp.cache_compatible(cur, model="ai4bharat/Airavata", context=4096)
+    assert not lp.cache_compatible(cur, model="other/model", context=4096)           # different model -> stale
+    assert not lp.cache_compatible(cur, model="ai4bharat/Airavata", context=2048)    # different context -> stale
+    assert not lp.cache_compatible(dict(cur, prompt_schema_revision="deadbeef0000"),
+                                   model="ai4bharat/Airavata", context=4096)         # different revision -> stale
+
+
+def test_cache_compatible_grandfathers_legacy_only_at_default_context_and_same_model():
+    # A report written before these fields were recorded (None) is reused only at the setting it was certainly
+    # made with: same model, default context. A non-default context or a different model must NOT reuse it.
+    legacy = {"llm_model": "ai4bharat/Airavata"}                 # no revision, no context recorded
+    assert lp.cache_compatible(legacy, model="ai4bharat/Airavata", context=lp.DEFAULT_CONTEXT)
+    assert not lp.cache_compatible(legacy, model="ai4bharat/Airavata", context=lp.DEFAULT_CONTEXT + 1024)
+    assert not lp.cache_compatible(legacy, model="other/model", context=lp.DEFAULT_CONTEXT)
+    assert lp.cache_compatible({}, model="ai4bharat/Airavata", context=lp.DEFAULT_CONTEXT)   # nothing recorded
+
+
+def test_cache_compatible_rejects_a_changed_transcript():
+    # A report made from a DIFFERENT transcript is stale even when id/system/model/context/revision all match:
+    # the transcript fingerprint (provenance.source_sha256) must be compared.
+    rev = lp.PROMPT_SCHEMA_REVISION
+    cur = {"prompt_schema_revision": rev, "llm_model": lp.DEFAULT_MODEL,
+           "context_tokens": lp.DEFAULT_CONTEXT, "source_sha256": "aaaa"}
+    assert lp.cache_compatible(cur, sha256="aaaa", model=lp.DEFAULT_MODEL, context=lp.DEFAULT_CONTEXT)
+    assert not lp.cache_compatible(cur, sha256="bbbb", model=lp.DEFAULT_MODEL, context=lp.DEFAULT_CONTEXT)  # changed
+
+
+def test_cache_compatible_legacy_missing_model_only_for_the_default_model():
+    # A report that never recorded its model (None) must NOT be accepted for an arbitrary model; it is
+    # grandfathered only for the model such reports were made with (DEFAULT_MODEL).
+    legacy = {"source_sha256": "aaaa"}          # no revision, no llm_model, no context recorded
+    assert lp.cache_compatible(legacy, sha256="aaaa", model=lp.DEFAULT_MODEL, context=lp.DEFAULT_CONTEXT)
+    assert not lp.cache_compatible(legacy, sha256="aaaa", model="some/other-model", context=lp.DEFAULT_CONTEXT)
+
+
 # ---------------------------------------------------------------- the real model (pytest -m slow)
 @pytest.mark.slow
 def test_real_llm_on_demo_transcript(tmp_path):
@@ -512,6 +575,52 @@ def test_action_must_share_a_word_with_its_evidence():
         {"owner": "Speaker_A", "action": "Bring the Aadhaar photocopy", "lines": [2]}])
     report, _ = run(chunk_reply(), synth)
     assert [a.action for a in report.action_items] == ["Bring the Aadhaar photocopy"]
+
+
+def test_action_prompts_allow_only_explicit_requests_not_suggestions_or_questions():
+    # The Python gate checks owner/evidence/overlap but cannot tell a request from a question; the PROMPTS are
+    # what exclude suggestions, questions and topics from action items (F2, D37). Guard that wording so a
+    # future change cannot silently broaden actions to non-commitments. Explicit requests / instructions /
+    # promises only; owner is a speaker label or "unspecified".
+    for p in (lp.CHUNK_PROMPT, lp.SYNTHESIS_PROMPT):
+        low = p.lower()
+        assert "explicit requests, instructions or promises" in low
+        assert "\"actions\"" in low and "unspecified" in low
+        assert "suggestion" not in low and "topics" not in low and "questions" not in low
+
+
+def test_actions_reject_information_questions_suggestions_and_wishes():
+    # Well-formed on every other axis (valid owner, real line, tokens overlap with the cited line) but NOT an
+    # explicit request/instruction/promise (D38). Each is crafted to pass owner/line/overlap, so only the new
+    # rule drops it; chunk_reply carries no actions so nothing is pulled in as a fallback.
+    synth = synthesis_reply(actions=[
+        {"owner": "Speaker_A", "action": "Aadhaar card, what is it used for?", "lines": [2]},   # information question
+        {"owner": "Speaker_B", "action": "Aadhaar card, what should I do?", "lines": [2]},      # wh-question
+        {"owner": "unspecified", "action": "I want a photocopy of the Aadhaar card", "lines": [2]},  # first-person wish
+        {"owner": "Speaker_A", "action": "Maybe bring the Aadhaar photocopy", "lines": [2]},    # suggestion/hypothetical
+    ])
+    report, _ = run(chunk_reply(actions=[]), synth)
+    assert report.action_items == []
+    assert report.diagnostics.actions_dropped == 4
+
+
+def test_actions_keep_explicit_requests_commitments_and_polite_questions():
+    # Instructions, promises, unspecified-owner requests and a polite ("Will you ...?") request all survive the
+    # new check: it drops questions/suggestions/wishes, not legitimate actions.
+    synth = synthesis_reply(actions=[
+        {"owner": "Speaker_A", "action": "Bring the Aadhaar photocopy", "lines": [2]},               # instruction
+        {"owner": "unspecified", "action": "Bring a photocopy of the Aadhaar card", "lines": [2]},   # unspecified owner
+        {"owner": "Speaker_A", "action": "Speaker_A will bring the photocopy tomorrow", "lines": [2]},   # promise
+        {"owner": "unspecified", "action": "Will you bring the Aadhaar photocopy?", "lines": [2]},   # polite request kept
+    ])
+    report, _ = run(chunk_reply(actions=[]), synth)
+    assert [(a.owner, a.action) for a in report.action_items] == [
+        ("Speaker_A", "Bring the Aadhaar photocopy"),
+        ("unspecified", "Bring a photocopy of the Aadhaar card"),
+        ("Speaker_A", "Speaker_A will bring the photocopy tomorrow"),
+        ("unspecified", "Will you bring the Aadhaar photocopy?"),
+    ]
+    assert report.diagnostics.actions_dropped == 0
 
 
 def test_long_recording_synthesis_fits_the_context():

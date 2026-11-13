@@ -1,20 +1,21 @@
 {
- "title": "Lakhnavi Style Biryanis and a Photographer",
- "topic": "Lakhnavi style biryanis and a photographer",
- "executive_summary": "A conversation about Lakhnavi style biryanis and a photographer.",
+ "title": "Lakhnavi Style Biryanis and a Pre-Wedding Photoshoot",
+ "topic": "Lakhnavi style biryanis and a pre-wedding photoshoot",
+ "executive_summary": "A conversation about Lakhnavi style biryanis and a pre-wedding photoshoot.",
  "key_points": [
-  "Lakhnavi style biryanis",
-  "Photographer",
-  "Pre wedding photoshoot",
-  "Doctor",
-  "Pre-wedding photoshoot"
+  "Part 1: The speaker is talking about Lakhnavi style biryanis that they wanted",
+  "Part 2: A conversation about a doctor's appointment and a pre-wedding photoshoot.",
+  "Part 3: A conversation about a roseberry and its price.",
+  "Part 4: A conversation about a photographer who was taking pre wedding photoshoot.",
+  "Part 5: A conversation about a doctor's visit and a pre-wedding photoshoot."
  ],
  "keywords": [
-  "Lakhnavi style biryanis",
-  "Photographer",
-  "Pre wedding photoshoot",
-  "Doctor",
-  "Pre-wedding photoshoot"
+  "biryanis",
+  "photographer",
+  "pre wedding photoshoot",
+  "photoshoot",
+  "pre-wedding",
+  "roseberry"
  ],
  "action_items": [],
  "speakers": [
@@ -175,7 +176,7 @@
    "end": 48.83,
    "text": "कब से आपको दिक्कत आ रहा है पैर",
    "hinglish": "kab se aapko dikkat aa raha hai pair",
-   "translation": "When is the doctor coming to visit you?",
+   "translation": "When is the doctor's visit?",
    "source_text": "कब से आपको दिक्कत आ रहा है पैर",
    "changed": false,
    "uncertain": true,
@@ -201,7 +202,7 @@
    "end": 57.61,
    "text": "आपके पैर में सूजन है क्या दिक्कत है पैर में",
    "hinglish": "aapke pair mein sujan hai kya dikkat hai pair mein",
-   "translation": "Your leg is swollen is it a joint?",
+   "translation": "Your leg is swollen is it a fungus?",
    "source_text": "आपके पैर में सूजन है क्या क्या दिक्कत है पैर में",
    "changed": true,
    "uncertain": true,
@@ -235,9 +236,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 64.429,
+  "llm_seconds": 243.313,
   "prompt_tokens": 2497,
-  "completion_tokens": 1343,
+  "completion_tokens": 1437,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -250,7 +251,7 @@
   "lines_flagged_by_llm": 10,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 0,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -259,8 +260,10 @@
   "source_sha256": "f5e761a92be64a6ab803dd6abd4f2bd9a8d48007a92ce6feefe692f8769b8161",
   "source_line_count": 14,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:02:02Z",
+  "generated_at_utc": "2026-11-11T05:51:41Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 67.37
+  "source_audio_duration_s": 67.37,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

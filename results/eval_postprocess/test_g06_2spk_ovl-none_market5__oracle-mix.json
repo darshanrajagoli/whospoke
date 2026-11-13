@@ -3,11 +3,10 @@
  "topic": "Fashion and Banarasi Sarees",
  "executive_summary": "A conversation between Didi and others about fashion and Banarasi sarees.",
  "key_points": [
-  "Didi wants to buy a saree",
-  "Saree is a new fashion",
-  "Two people will stay and I will be there",
-  "Fashion in Banarasi sarees",
-  "Red color should be red color"
+  "Didi asks if anyone wants to buy a saree.",
+  "Saree is a red color.",
+  "Two people will stay and I will be there.",
+  "Fashion is not possible in Banarasi sarees."
  ],
  "keywords": [
   "Didi",
@@ -155,7 +154,7 @@
    "end": 64.77,
    "text": "हाँ हाँ साधी है ना ना सादी",
    "hinglish": "haan haan sadhi hai na na sadi",
-   "translation": "Yes, it is said.",
+   "translation": "Yes, it is said that it is not possible to get a good result.",
    "source_text": "हाँ हाँ साधी है ना ना सादी",
    "changed": false,
    "uncertain": false,
@@ -171,9 +170,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 37.341,
-  "prompt_tokens": 1613,
-  "completion_tokens": 805,
+  "llm_seconds": 138.89,
+  "prompt_tokens": 1618,
+  "completion_tokens": 811,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -195,8 +194,10 @@
   "source_sha256": "f4cc0d3d913b8bd78a754f4d72a30173575729293b1a18ee616c76fa7533c2a9",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:17:14Z",
+  "generated_at_utc": "2026-11-11T06:48:53Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 65.46
+  "source_audio_duration_s": 65.46,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

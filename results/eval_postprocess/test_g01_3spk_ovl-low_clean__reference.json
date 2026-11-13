@@ -1,17 +1,19 @@
 {
  "title": "Transcript of Hindi and Hinglish Conversations",
- "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes the evidence from a transcribed conversation, including summaries of its parts, lines translated into English, and candidate keywords and actions.",
+ "topic": "Taxi Ride and Vegetable Vendor",
+ "executive_summary": "Speaker talks about getting a haircut and the price.",
  "key_points": [
+  "Speaker talks about getting a haircut and the price.",
+  "Speaker mentions a taxi ride and a vegetable vendor.",
+  "Speaker asks for a price for a haircut."
+ ],
+ "keywords": [
   "Hello",
   "Speak",
   "Yes",
-  "Our ispansion is Sir. Priyans. Will show. Speak. car repair, foam, step, vegetable, saadi, haircut, price"
- ],
- "keywords": [
-  "हैलो",
-  "बोलो",
-  "आ जाना"
+  "Priyans",
+  "Two days will be needed.",
+  "Yes, speak."
  ],
  "action_items": [],
  "speakers": [
@@ -118,13 +120,13 @@
    "speaker": "S2",
    "start": 4.564,
    "end": 7.072,
-   "text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप",
-   "hinglish": "namaskar main sir restaurant se baat kar raha hoon aap",
-   "translation": "Hello, I am speaking from Sir's restaurant.",
+   "text": "नमस्ते मैं सर रेस्टोरेंट से बात कर रहा हूँ आप",
+   "hinglish": "namaste main sir restaurant se baat kar raha hoon aap",
+   "translation": "Hello I am talking to Sir's restaurant you",
    "source_text": "नमस्कार मैं सर रेस्टोरेंट से बात कर रहा हूँ आप",
-   "changed": false,
+   "changed": true,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 8,
@@ -133,11 +135,11 @@
    "end": 7.346,
    "text": "हाँ हैलो",
    "hinglish": "haan hello",
-   "translation": "Hello.",
+   "translation": "Hello",
    "source_text": "हाँ हैलो",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 9,
@@ -146,7 +148,7 @@
    "end": 9.921,
    "text": "जी जी ये तो हमारी इस्पेशिलिटी है सर",
    "hinglish": "ji ji ye to hamari ispeshiliti hai sir",
-   "translation": "Our ispansion is Sir.",
+   "translation": "Yes our ispciality is Sir",
    "source_text": "जी जी ये तो हमारी इस्पेशिलिटी है सर",
    "changed": false,
    "uncertain": true,
@@ -159,7 +161,7 @@
    "end": 11.478,
    "text": "प्रियंस",
    "hinglish": "priyans",
-   "translation": "Priyans.",
+   "translation": "Priyans",
    "source_text": "प्रियांस",
    "changed": true,
    "uncertain": true,
@@ -172,7 +174,7 @@
    "end": 13.495,
    "text": "हाँ दिखा देंगे",
    "hinglish": "haan dikha denge",
-   "translation": "Will show.",
+   "translation": "Yes will show",
    "source_text": "हाँ दिखा देंगे",
    "changed": false,
    "uncertain": true,
@@ -185,7 +187,7 @@
    "end": 14.17,
    "text": "हाँ बोलिए",
    "hinglish": "haan bolie",
-   "translation": "Speak.",
+   "translation": "Yes speak",
    "source_text": "हाँ बोलिए",
    "changed": false,
    "uncertain": true,
@@ -224,7 +226,7 @@
    "end": 24.95,
    "text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है",
    "hinglish": "mere parlour mein mein three istep hote hain four istep off hoti hain aur phaizal hoti hai V V shebh hai aur yu shape bhi hai",
-   "translation": "Three steps are required in my car for the step to be installed and the step is a foam.",
+   "translation": "Three steps are required in my car for the step to be installed and the step is made of steel and the step is also shaped like a shovel and you also have a shovel.",
    "source_text": "मेरे पार्लर में में थ्री इस्टेप होते हैं फ़ोर इस्टेप ऑफ होती हैं और फैज़ल होती है वी वी शेभ है और यू शेप भी है",
    "changed": false,
    "uncertain": true,
@@ -261,13 +263,13 @@
    "speaker": "S2",
    "start": 25.292,
    "end": 36.298,
-   "text": "आपको बता दें अगर आप सादी ले जाएँगे तो तीन सौ रुपए मिलेंगे आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाएँगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
-   "hinglish": "aapko bata den agar aap sadi le jaenge to teen sau rupae milenge aapko aur agar aap use ye frai karva ke ya sabji banva ke le jaenge to aapko sadhe chaar sau rupae ki pad jaegi to",
-   "translation": "If you take a saadi, you will get three hundred rupees. If you take a saadi and a vegetable, you will get four hundred rupees.",
+   "text": "आपको बता दें अगर आप सादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
+   "hinglish": "aapko bata den agar aap sadi le jaoge to teen sau rupae milegi aapko aur agar aap use ye frai karva ke ya sabji banva ke le jaoge to aapko sadhe chaar sau rupae ki pad jaegi to",
+   "translation": "If you take a taxi, you will get three hundred rupees. If you take a vegetable vendor, you will get four hundred rupees.",
    "source_text": "आपको बता दें अगर आप सादी ले जाओगे तो तीन सौ रुपए मिलेगी आपको और अगर आप उसे ये फ़्राई करवा के या सब्जी बनवा के ले जाओगे तो आपको साढ़े चार सौ रुपए की पड़ जाएगी तो",
-   "changed": true,
+   "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 19,
@@ -279,8 +281,8 @@
    "translation": "Yes, the queue is long. You can see it. We can also get you a cut from outside, if you want.",
    "source_text": "हाँ वेराइटी तो ढेर है आप आके देख सकते हो जैसे आपको किसी चीज की जरूरत मतलब किसी अलग तरीके की जरूरत है तो हम उसे बाहर से बुलवा के भी आपको दे सकते हैं",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 20,
@@ -289,11 +291,11 @@
    "end": 56.484,
    "text": "ओके ठीक है उसकी फीस बता देती हूँ मैं यह मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उस एकॉर्डिंग ही कटानी है या फिर सामने से ही हेयरकट कटाना है",
    "hinglish": "okay theek hai uski phees bata deti hoon main yeh meri yu cutting ke liye jo aapko saam matlab face us ekording hi katani hai ya phir samne se hi heyarkat katana hai",
-   "translation": "Okay, let me know the price for my haircut. I want to cut my face, or else I'll cut it from the front.",
+   "translation": "Okay, let me know the price for my haircut. I want to cut your face or just the front of your hair.",
    "source_text": "ओके ठीक है उसकी फीस बता देती हूँ मैं यह मेरी यू कटिंग के लिए जो आपको साम मतलब फेस उस एकॉर्डिंग ही कटानी है या फिर सामने से ही हेयरकट कटाना है",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 21,
@@ -305,8 +307,8 @@
    "translation": "Okay, three hundred and three hundred.",
    "source_text": "ओके हाँ तो फिर थ्री हंड्रेड तीन सौ समथिंग",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
@@ -314,7 +316,6 @@
   2,
   5,
   7,
-  8,
   9,
   10,
   11,
@@ -324,13 +325,16 @@
   15,
   16,
   17,
-  18
+  18,
+  19,
+  20,
+  21
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 636.083,
-  "prompt_tokens": 2969,
-  "completion_tokens": 1522,
+  "llm_seconds": 281.491,
+  "prompt_tokens": 2959,
+  "completion_tokens": 1490,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -340,10 +344,10 @@
   "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 12,
+  "lines_flagged_by_llm": 14,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 4,
+  "keywords_dropped": 0,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -352,8 +356,10 @@
   "source_sha256": "37018cd67dcdcd147fd6195ad6a4a3b8d6030ec674f247532f452fece4aa08c3",
   "source_line_count": 21,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T03:17:33Z",
+  "generated_at_utc": "2026-11-10T20:58:16Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 60.58
+  "source_audio_duration_s": 60.58,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

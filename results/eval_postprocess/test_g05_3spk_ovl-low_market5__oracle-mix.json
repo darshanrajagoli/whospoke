@@ -1,14 +1,17 @@
 {
- "title": "Wedding and Photographer",
- "topic": "Wedding and Photographer",
+ "title": "Wedding and Photographer Request",
+ "topic": "Wedding and Photographer Request",
  "executive_summary": "A conversation about a wedding and a photographer.",
  "key_points": [
   "wedding",
-  "photographer"
+  "photographer",
+  "request",
+  "count"
  ],
  "keywords": [
   "wedding",
-  "photographer"
+  "photographer",
+  "count"
  ],
  "action_items": [],
  "speakers": [
@@ -39,11 +42,11 @@
    "end": 0.68,
    "text": "हलो",
    "hinglish": "hello",
-   "translation": "Hello sir sir sir we were talking",
+   "translation": "",
    "source_text": "हलो",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
   },
   {
    "line_id": 2,
@@ -65,11 +68,11 @@
    "end": 9.44,
    "text": "हलोर सर नमस्कार मैं एजीट से बोला था",
    "hinglish": "halor sir namaskar main ejit se bola tha",
-   "translation": "",
+   "translation": "Hello sir sir sir sir sir sir sir sir sir sir sir sir sir sir sir sir sir sir sir sir sir sir sir",
    "source_text": "हलोर सर नमस्कार मैं एजीट से बोला था",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 4,
@@ -78,11 +81,11 @@
    "end": 18.9,
    "text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
    "hinglish": "namaste ma'am bataie kya dikkat hai aapko namaste namaste ma'am bataie kya dikkat hai aapko kya ma'am aapki aavaz saaph nahi aa rahi hai",
-   "translation": "Hello ma'am, what is the dijkat?",
+   "translation": "Hello ma'am tell me what is the",
    "source_text": "नमस्ते मैम बताइए क्या दिक्कत है आपको नमस्ते नमस्ते मैम बताइए क्या दिक्कत है आपको क्या मैम आपकी आवाज़ साफ नहीं आ रही है",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 5,
@@ -91,11 +94,11 @@
    "end": 27.31,
    "text": "जी मेरी ग्राफ़ बात फोटोग्राफर की हो रही है जी सही है मेरे यहाँ दस की शादी है तो मेरे को प्री वेडिंग फोटोशूट कराना था",
    "hinglish": "ji meri graaf baat photographer ki ho rahi hai ji sahi hai mere yahan das ki shadi hai to mere ko pri wedding photoshoot karana tha",
-   "translation": "G my graphic is being photographed by a photographer, right ma'am my marriage is ten and I had to do pre wedding photography",
+   "translation": "G my graphic is being photographed by a photographer and it's right I had ten weddings to do before my wedding",
    "source_text": "जी मेरी ग्राफ़ बात फोटोग्राफर की हो रही है जी सही है मेरे यहाँ दस की शादी है तो मेरे को प्री वेडिंग फोटोशूट कराना था",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 6,
@@ -104,11 +107,11 @@
    "end": 30.38,
    "text": "पाँच लोगों के लिए चाहिए था सब हो पाएगा",
    "hinglish": "paanch logon ke liye chahiye tha sab ho paega",
-   "translation": "Five people were needed, all done",
+   "translation": "Five people",
    "source_text": "पाँच लोगों के लिए चाहिए था सब हो पाएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 7,
@@ -143,7 +146,7 @@
    "end": 39.94,
    "text": "कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना",
    "hinglish": "kuch mitha mein bhi chahiye tha jaise gulab jamun barphi khena wana",
-   "translation": "He also wanted something sweet like rose berries and snowy kheencha vana.",
+   "translation": "He also wanted something sweet like rose berries and snowballs.",
    "source_text": "कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन बर्फी खेना वना",
    "changed": false,
    "uncertain": true,
@@ -159,8 +162,8 @@
    "translation": "Yes.",
    "source_text": "हाँ",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 11,
@@ -181,32 +184,30 @@
   2,
   3,
   4,
-  5,
   6,
   7,
   8,
   9,
-  10,
   11
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 38.217,
-  "prompt_tokens": 1790,
-  "completion_tokens": 806,
+  "llm_seconds": 153.046,
+  "prompt_tokens": 1797,
+  "completion_tokens": 869,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 1,
-  "lines_reverted": 4,
+  "lines_reverted": 5,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 8,
+  "lines_flagged_by_llm": 4,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 0,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -215,8 +216,10 @@
   "source_sha256": "3807c84d9d76b4d93528c84f75309ba637df5a38bd8f7d8ac3ab1f088aed5b92",
   "source_line_count": 11,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:54:27Z",
+  "generated_at_utc": "2026-11-11T05:23:57Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 61.57
+  "source_audio_duration_s": 61.57,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

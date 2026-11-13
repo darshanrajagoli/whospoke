@@ -1,20 +1,19 @@
 {
- "title": "Hindi and Hinglish Conversations",
- "topic": "Furniture and Prices",
+ "title": "Furniture Prices and Problems in a Conversation",
+ "topic": "Furniture prices and problems",
  "executive_summary": "A conversation between two people about furniture and prices.",
  "key_points": [
-  "Furniture and prices",
-  "What do you want, sir?",
-  "Yash, Yash, Yash",
-  "We will get you the best price in the market, sir.",
-  "We will get you the best quality furniture in the market, sir."
+  "Furniture prices and problems are discussed in a conversation.",
+  "The speaker mentions a place where they work and the quality of their work.",
+  "The speaker mentions a problem with their car."
  ],
  "keywords": [
   "furniture",
   "car",
   "problem",
-  "Good",
-  "closed"
+  "Aam",
+  "lakdi",
+  "maam"
  ],
  "action_items": [],
  "speakers": [
@@ -104,7 +103,7 @@
    "end": 23.52,
    "text": "अच्छा अच्छा कहाँ पे अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
    "hinglish": "achha achha kahan pe achha achha aapki car mein kya kharabi ho gayi hai jaise",
-   "translation": "What is the problem with your car?",
+   "translation": "What is the problem with your car, sir?",
    "source_text": "अच्छा अच्छा कहाँ पे अच्छा अच्छा आपकी कार में क्या ख़राबी हो गई है जैसे",
    "changed": false,
    "uncertain": true,
@@ -117,11 +116,11 @@
    "end": 44.51,
    "text": "अच्छा बंद हो गई है ना तो आपने उसका इंजन देखा अच्छा अच्छा अच्छा तो आप ऐसा करिए",
    "hinglish": "achha band ho gayi hai na to aapne uska engine dekha achha achha achha to aap aisa karie",
-   "translation": "Good has closed",
+   "translation": "Good closed",
    "source_text": "अच्छा बंद हो गई है ना तो आपने उसका इंजन देखा अच्छा अच्छा अच्छा तो आप ऐसा करिए",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 8,
@@ -130,11 +129,11 @@
    "end": 61.27,
    "text": "आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
    "hinglish": "aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi shisham ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hain achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaega",
-   "translation": "Aam ki lakdi maam maam",
+   "translation": "Aam ki lakdi maam maam here every single thing good",
    "source_text": "आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी शीशम की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर हैं अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   }
  ],
  "uncertain_lines": [
@@ -145,9 +144,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 394.329,
-  "prompt_tokens": 1864,
-  "completion_tokens": 924,
+  "llm_seconds": 164.737,
+  "prompt_tokens": 1885,
+  "completion_tokens": 949,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -157,10 +156,10 @@
   "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 3,
+  "lines_flagged_by_llm": 1,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -169,8 +168,10 @@
   "source_sha256": "82f9a9cc7ebad44b02f2c95da71c56e521b25dc9749568fd3cf13bf0168b9de9",
   "source_line_count": 8,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-02T02:18:24Z",
+  "generated_at_utc": "2026-11-10T19:45:30Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 61.99
+  "source_audio_duration_s": 61.99,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

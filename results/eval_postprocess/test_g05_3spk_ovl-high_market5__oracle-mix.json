@@ -1,19 +1,15 @@
 {
- "title": "Marriage Ceremony",
- "topic": "Ten-Year-Old Wedding Ceremony",
- "executive_summary": "A conversation about a marriage ceremony.",
+ "title": "Wedding Pre-Shoot",
+ "topic": "Wedding",
+ "executive_summary": "The conversation is about a wedding pre-shoot and the speaker wants to know if the photographer can shoot in a good location.",
  "key_points": [
-  "Ten-Year-Old Wedding Ceremony",
-  "Photoshoot",
-  "Pre-wedding Shoot",
-  "Wedding"
+  "Wedding",
+  "Pre-Shoot",
+  "Location"
  ],
  "keywords": [
-  "marriage",
-  "ceremony",
-  "ten-year-old",
-  "photoshoot",
-  "wedding"
+  "Wedding",
+  "Location"
  ],
  "action_items": [],
  "speakers": [
@@ -70,7 +66,7 @@
    "end": 16.49,
    "text": "हेलो हेलो सर नमस्कार मैं अजीत बोल रहा था जी मेरे ग्राफ बात फोटो",
    "hinglish": "hello hello sir namaskar main ajit bol raha tha ji mere graaph baat photo",
-   "translation": "Hello sir, I was speaking about my graph and my photo",
+   "translation": "Hello hello sir hello hello ma'am I was speaking about my graph photo",
    "source_text": "हेलो हेलो सर नमस्कार मैं अजीत बोल रहा था जी मेरे ग्राफ बात फोटो",
    "changed": false,
    "uncertain": false,
@@ -83,7 +79,7 @@
    "end": 17.37,
    "text": "लखनऊ में है",
    "hinglish": "lakhnau mein hai",
-   "translation": "There is a place called Lucknow",
+   "translation": "In Lucknow",
    "source_text": "लखनऊ में है",
    "changed": false,
    "uncertain": false,
@@ -109,7 +105,7 @@
    "end": 25.56,
    "text": "जी सर ये मेरे यहाँ दस दूर की शादी है",
    "hinglish": "ji sir ye mere yahan das door ki shadi hai",
-   "translation": "Sir, there is a ten-year-old marriage ceremony here",
+   "translation": "Sir, this is ten far away wedding",
    "source_text": "जी सर ये मेरे यहाँ दस दूर की शादी है",
    "changed": false,
    "uncertain": true,
@@ -207,9 +203,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 35.037,
-  "prompt_tokens": 1728,
-  "completion_tokens": 746,
+  "llm_seconds": 130.56,
+  "prompt_tokens": 1736,
+  "completion_tokens": 729,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -231,8 +227,10 @@
   "source_sha256": "d86155f7950ede8a29ffc3aee9dd72b4a4f08ebb2d7d17fb5c4c49902eb91bd6",
   "source_line_count": 13,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:06:44Z",
+  "generated_at_utc": "2026-11-11T06:09:18Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 65.67
+  "source_audio_duration_s": 65.67,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,14 +1,13 @@
 {
  "title": "Hindi and Hinglish Conversation",
- "topic": "Elections",
- "executive_summary": "A conversation in Hindi and Hinglish about the upcoming elections and the importance of voting.",
+ "topic": "Voting and Government Support",
+ "executive_summary": "A conversation in Hindi and Hinglish about voting and government support.",
  "key_points": [
-  "Hindi and Hinglish are the languages spoken in the conversation.",
-  "The speaker asks for a print of the conversation.",
-  "The speaker mentions that the government is not willing to listen to the people's voice."
+  "Voting is important to the government.",
+  "Supporting the government is important for the people."
  ],
  "keywords": [
-  "Print"
+  "vote"
  ],
  "action_items": [],
  "speakers": [
@@ -78,7 +77,7 @@
    "end": 27.58,
    "text": "हेलो हाँ हेलो सर हम ठीक है है हाँ जी",
    "hinglish": "hello haan hello sir hum theek hai hai haan ji",
-   "translation": "Hello Sir, are you okay?",
+   "translation": "Hello Sir, hello Sir, we are fine.",
    "source_text": "हेलो हाँ हेलो सर हम ठीक है हाँ जी",
    "changed": true,
    "uncertain": false,
@@ -104,24 +103,25 @@
    "end": 61.03,
    "text": "देखते है की बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं ये",
    "hinglish": "dekhte hai ki bahut achha se dekhte hain aur kitna achha banate hain ye",
-   "translation": "Look at how good they are and how good they make us.",
+   "translation": "Look at how good we are and how good we make it.",
    "source_text": "देखते है की बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं ये",
    "changed": false,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
   1,
   2,
   3,
-  5
+  5,
+  6
  ],
  "diagnostics": {
   "llm_calls": 2,
-  "llm_seconds": 29.209,
-  "prompt_tokens": 1281,
-  "completion_tokens": 628,
+  "llm_seconds": 100.411,
+  "prompt_tokens": 1273,
+  "completion_tokens": 520,
   "chunks": 1,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -131,10 +131,10 @@
   "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 2,
+  "lines_flagged_by_llm": 3,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 6,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -143,8 +143,10 @@
   "source_sha256": "dc03c6d8b1b9c5495912292bf3459b5acdc8ed11c69d9b3c78ba85d0aec59450",
   "source_line_count": 6,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:46:51Z",
+  "generated_at_utc": "2026-11-11T01:36:43Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 61.35
+  "source_audio_duration_s": 61.35,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

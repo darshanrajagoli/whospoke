@@ -1,15 +1,18 @@
 {
  "title": "Lakshmi Style Biryani",
- "topic": "Wedding and Pre-Wedding Photoshoot",
- "executive_summary": "Speaker A and B are talking about Lakshmi Style Biryani and a pre-wedding photoshoot.",
+ "topic": "Wedding",
+ "executive_summary": "Speaker A and B discuss a pre-wedding photoshoot.",
  "key_points": [
-  "Lakshmi Style Biryani",
-  "Wedding and Pre-Wedding Photoshoot",
-  "Speaker A and B are talking about Lakshmi Style Biryani and a pre-wedding photoshoot."
+  "lakshmi style biryani",
+  "biryanis",
+  "lucknowi style",
+  "wedding",
+  "photographer"
  ],
  "keywords": [
-  "Lakshmi Style Biryani",
-  "Wedding and Pre-Wedding Photoshoot"
+  "lakshmi style biryani",
+  "wedding",
+  "photographer"
  ],
  "action_items": [],
  "speakers": [
@@ -47,7 +50,7 @@
    "end": 10.0,
    "text": "बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर्व हो पाएगा",
    "hinglish": "bol rahe the ki lakhanvi style biryani jo thi hamen chahiye thi paanch logon ke liye chahiye tha sarv ho paega",
-   "translation": "They were talking about Lakshmi Style Biryani which was for five people and would be available.",
+   "translation": "They were talking about Lakshmi Style Biryani which would be good for five people.",
    "source_text": "बोल रहे थे कि लखनवी स्टाइल बिरयानी जो थी हमें चाहिए थी पाँच लोगों के लिए चाहिए था सर्व हो पाएगा",
    "changed": false,
    "uncertain": true,
@@ -60,7 +63,7 @@
    "end": 10.7,
    "text": "नम",
    "hinglish": "nam",
-   "translation": "Hello Sir Sir",
+   "translation": "Hello",
    "source_text": "नम",
    "changed": false,
    "uncertain": true,
@@ -86,7 +89,7 @@
    "end": 14.25,
    "text": "बताय क्या दिक्कत है आपको",
    "hinglish": "batay kya dikkat hai aapko",
-   "translation": "Tell me what the dijkat is.",
+   "translation": "Tell me what the deal is.",
    "source_text": "बताइए क्या दिक्कत है आपको",
    "changed": true,
    "uncertain": true,
@@ -99,7 +102,7 @@
    "end": 17.5,
    "text": "हलो हेलो सर नमस्कार मैं अभी जी बोल रहा था",
    "hinglish": "hello hello sir namaskar main abhi ji bol raha tha",
-   "translation": "Hello Hello Sir hello I was just saying",
+   "translation": "Hello Hello Sir hello I was just talking.",
    "source_text": "हलो हेलो सर नमस्कार मैं अभी जी बोल रहा था",
    "changed": false,
    "uncertain": true,
@@ -138,7 +141,7 @@
    "end": 31.45,
    "text": "क्या मैम आपकी बात साफ नहीं आ रही है",
    "hinglish": "kya ma'am aapki baat saaph nahi aa rahi hai",
-   "translation": "Isn't Mam's talking to you?",
+   "translation": "Isn't Mam's listening to you?",
    "source_text": "क्या मैम आपकी बात साफ नहीं आ रही है",
    "changed": false,
    "uncertain": true,
@@ -164,7 +167,7 @@
    "end": 40.25,
    "text": "खेना वना से मुटापा ये सब तो सर वो कर",
    "hinglish": "khena wana se mutapa ye sab to sir wo kar",
-   "translation": "Khena Vana is a place where they do it all, Sir.",
+   "translation": "Khena vana se mutap ye sab to sir woh kar.",
    "source_text": "खेना वना से मुटापा ये सब तो सर वो कर",
    "changed": false,
    "uncertain": true,
@@ -177,7 +180,7 @@
    "end": 41.65,
    "text": "हम",
    "hinglish": "hum",
-   "translation": "Us",
+   "translation": "Us.",
    "source_text": "हम",
    "changed": false,
    "uncertain": true,
@@ -229,7 +232,7 @@
    "end": 61.0,
    "text": "तो उनको मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगी आप",
    "hinglish": "to unko matlab meri jo pri wedding fotoshut usse pahle hogi aap",
-   "translation": "So, sir, will you take my pre-wedding photoshoot before you?",
+   "translation": "So, sir, will you take my pre-wedding photoshoot before you go?",
    "source_text": "तो उनको मतलब मेरी जो प्री वेडिंग फ़ोटोशूट उससे पहले होगा आप",
    "changed": true,
    "uncertain": true,
@@ -268,9 +271,9 @@
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 61.066,
-  "prompt_tokens": 2496,
-  "completion_tokens": 1313,
+  "llm_seconds": 214.389,
+  "prompt_tokens": 2481,
+  "completion_tokens": 1249,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -283,7 +286,7 @@
   "lines_flagged_by_llm": 13,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 1,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -292,8 +295,10 @@
   "source_sha256": "aca0dc694285756710b60d7e2428487ede890f875b97af00f6095b3e16344146",
   "source_line_count": 17,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:40:46Z",
+  "generated_at_utc": "2026-11-11T04:33:58Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 65.83
+  "source_audio_duration_s": 65.83,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

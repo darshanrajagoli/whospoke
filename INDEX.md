@@ -9,7 +9,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | 1 | [README.md](README.md) | What the project does, the headline numbers, how to install and run it |
 | 2 | [docs/RESULTS.md](docs/RESULTS.md) | Every result, explained in plain English, with the evidence for each design choice |
 | 3 | [DEVIATIONS.md](DEVIATIONS.md) | Every place we differ from the professor's proposal, and why |
-| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D37), recorded as it was made |
+| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D42), recorded as it was made |
 | 5 | [docs/PIPELINE.md](docs/PIPELINE.md) | Technical reference: how each stage works, stage by stage |
 | 6 | [docs/MILESTONE4.md](docs/MILESTONE4.md) | Stage 4 in full: running the LLM, the report, the prompts, the guardrails, settings |
 | 7 | [docs/RESULTS_TABLES.md](docs/RESULTS_TABLES.md) | Raw result tables with 95 % confidence intervals (generated, not hand-written) |
@@ -32,6 +32,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | [docs/team/WHATSAPP_MESSAGE.md](docs/team/WHATSAPP_MESSAGE.md) | The message that split the mid-sem review tasks (sent; kept as written) |
 | [docs/team/RED_TEAM_AUDIT_PROMPT.md](docs/team/RED_TEAM_AUDIT_PROMPT.md) | Prompt for the independent audit (output → `audit/RED_TEAM_AUDIT.md`) |
 | [docs/team/EMAIL_TO_PROFESSOR.md](docs/team/EMAIL_TO_PROFESSOR.md) | Draft email flagging the two design decisions before the review |
+| [docs/team/STAGE4_WORKFLOW.md](docs/team/STAGE4_WORKFLOW.md), [STAGE4_AGENT_PROMPT.md](docs/team/STAGE4_AGENT_PROMPT.md) | The plan and instructions the November Stage-4 work followed (D36–D39); kept for the record |
 | [audit/RED_TEAM_AUDIT.md](audit/RED_TEAM_AUDIT.md) | The red-team audit: every finding with its evidence and status, and the 10 hardest examiner questions |
 | [notebooks/02_walkthrough.ipynb](notebooks/02_walkthrough.ipynb) | Run all four stages on one conversation, in Colab or locally |
 | [notebooks/01_benchmark.ipynb](notebooks/01_benchmark.ipynb) | Speed, memory and model-size benchmark of every stage (the proposal's "benchmarking notebook") |
@@ -61,7 +62,8 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `diarization.py` | 2 | Voice fingerprints → clusters → a who-spoke-when timeline (both orders) |
 | `clustering.py` | 2 | Custom spectral/GMM workflows and cluster clean-up using SciPy and scikit-learn components |
 | `asr_backends.py` | 3 | IndicConformer and IndicWav2Vec speech recognisers |
-| `hinglish.py` | 3 | Devanagari → Hinglish (Latin) romaniser with an English-loanword lexicon |
+| `hinglish.py` | 3 | Devanagari → Hinglish (Latin) romaniser with an English-loanword lexicon; other Indic scripts → Latin (D40) |
+| `languages.py` | — | The 22 languages `--language` accepts: model codes, IndicVoices folders, scripts (only Hindi is evaluated, D40) |
 | `resources/loanwords.tsv` | 3 | 2,600 Devanagari → English spellings (hand-made + mined from Vaani *train*) |
 | `llm_postprocess.py` | 4 | LLM client, prompts, chunking, guardrails, and the report (`report.md`, `report.json`) |
 | `resources/airavata_chat_template.jinja` | 4 | Airavata's chat format, for llama-server |
@@ -81,7 +83,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `mine_loanwords.py` | The mined part of `loanwords.tsv` |
 | `eval_separation.py` | `results/separation_{split}.csv` — Stage 1 |
 | `tune_diarization.py` | `results/tuned_params.json` — Stage 2 settings, chosen on **dev** only |
-| `tune_separation_policy.py` | `results/separation_policy_dev.csv` — how Order B feeds separated audio to the ASR (**dev** only); `--policies ... splice-0.5+second` gives `results/separation_policy_dev_second.csv` + `results/second_voice_candidates_dev.csv` (D36, rejected) |
+| `tune_separation_policy.py` | `results/separation_policy_dev.csv` — how Order B feeds separated audio to the ASR (**dev** only); `--policies ... splice-0.5+second` gives `results/separation_policy_dev_second.csv` + `results/second_voice_candidates_dev.csv` (D41, rejected) |
 | `eval_asr.py` | `results/asr_comparison.*` — Stage 3 model choice (on Vaani) |
 | `eval_asr_nirantar.py` | `results/asr_nirantar.*` — Stage 3 cross-check on a Nirantar Hindi sample (D7) |
 | `eval_speaker_count.py` | `results/speaker_count_test.*` — Stage 2 with the number of speakers given vs found automatically |
@@ -113,12 +115,13 @@ to end, including the Stage-4 LLM if its server is running.
 | `eval_test_indicconformer.csv` | Every system × every test conversation |
 | `eval_test_indicconformer/*.json` | Every system's full transcript for every test conversation |
 | `figures/` | Figures used in RESULTS.md and the slides |
-| `eval_postprocess.csv`, `eval_postprocess/*.json`, `eval_postprocess_summary_g*.json` | Stage 4 on the 63 test conversations: scores per conversation, every report, and the settings, machine and cost of each run |
+| `eval_postprocess.csv`, `eval_postprocess/*.json`, `eval_postprocess_summary_g*.json` | Stage 4 on the 63 test conversations: scores per conversation, every report, and the settings, machine and cost of the run (D39) |
+| `stage4_probe/` | Evidence for D37–D39: the full run's command and log, two real end-to-end report runs, and the group-7 action-item probe |
 | `LAPTOP_RUN_REPORT.md` | How the Stage-4 runs on the laptop GPU went: GPU layers, speed, what went wrong |
-| `crosscheck_g00_gpu/` | Test group 0's Stage-4 reports made again on the GPU and compared with the CPU-made ones: the conclusions do not depend on the machine (D33, audit F12) |
-| `separation_{dev,test}_music*.csv`, `music_diarization_{dev,test}.csv` | Music extension (D37): separation and who-plays-when on the voice + mridangam sets |
+| `crosscheck_g00_gpu/` | Test group 0's October Stage-4 reports made again on the GPU and compared with the CPU-made ones (both kept there): the conclusions do not depend on the machine (D33, audit F12) |
+| `separation_{dev,test}_music*.csv`, `music_diarization_{dev,test}.csv` | Music extension (D42): separation and who-plays-when on the voice + mridangam sets |
 | `demo_music/` | Playable music examples: mixture, true voice and drum, every separator's outputs (WAVs local only; READMEs with scores) |
-| `separation_policy_dev_second.csv`, `second_voice_candidates_dev.csv` | Dev only, CPU run: the second-voice experiment (D36, rejected), with one row per conversation × timeline × policy, and every candidate extra turn with its score and recognised text |
+| `separation_policy_dev_second.csv`, `second_voice_candidates_dev.csv` | Dev only, CPU run: the second-voice experiment (D41, rejected), with one row per conversation × timeline × policy, and every candidate extra turn with its score and recognised text |
 | `speaker_count_test.{csv,json}` | Diarization error with the speaker count found automatically, given, or given only when the automatic count differs (the live demo's setting) |
 | `benchmark_{stages,scaling,llm}.csv` | Speed and memory per stage (from the benchmark notebook) |
 | `demo/` | Example output of one full run (timeline, transcripts, subtitles, Stage-4 report) |

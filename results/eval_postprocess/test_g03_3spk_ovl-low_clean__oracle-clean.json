@@ -1,20 +1,18 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversation in Noisy Places",
+ "title": "Transcript of Hindi and Hinglish Conversation",
  "topic": "Benefits for the Government",
- "executive_summary": "Speaker requests the government to provide benefits and increase development of the country.",
+ "executive_summary": "The speaker is asking the government to provide benefits.",
  "key_points": [
   "vote",
   "chhach puja",
-  "new",
-  "vastu",
-  "vote for government benefits"
+  "government",
+  "benefits"
  ],
  "keywords": [
-  "वोट",
-  "छछ पूजा",
-  "नया",
-  "सरकार",
-  "लाभ"
+  "hello",
+  "vote",
+  "government",
+  "benefits"
  ],
  "action_items": [],
  "speakers": [
@@ -58,7 +56,7 @@
    "end": 8.35,
    "text": "हाँ वोट एक बार तो देना है ना कोई छापड़ भी देना है अब तो वोट अच्छी हो गया तो",
    "hinglish": "haan vote ek baar to dena hai na koi chhapad bhi dena hai ab to vote achhi ho gaya to",
-   "translation": "Yes, vote once and no copying.",
+   "translation": "Yes, vote once and not even a single vote is given, it is good now",
    "source_text": "हाँ वोट एक बार तो देना है ना कोई छापड़ भी देना है अब तो वोट अच्छी हो गया तो",
    "changed": false,
    "uncertain": false,
@@ -71,7 +69,7 @@
    "end": 20.46,
    "text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
    "hinglish": "hum bihar se bol rahe hain hamare desh mein chhath puja manaya jata hai aur hamare desh mein dipavli bhi manaya jata hai aur haan bolie chhath",
-   "translation": "We are from Bihar and celebrate Chhath Puja and Deepavali in our country.",
+   "translation": "We are speaking from Bihar and celebrate Chhath Puja and Deepavali in our country and say Yes",
    "source_text": "हम बिहार से बोल रहे हैं हमारे देश में छठ पूजा मनाया जाता है और हमारे देश में दीपावली भी मनाया जाता है और हाँ बोलिए छठ",
    "changed": false,
    "uncertain": true,
@@ -84,7 +82,7 @@
    "end": 30.65,
    "text": "सरकार भोट देना है वोट देना है अब देना है देखिए ना इच्छा खूब इच्छा पर देना है भोट",
    "hinglish": "sarkar bhot dena hai vote dena hai ab dena hai dekhie na ichha khoob ichha par dena hai bhot",
-   "translation": "The government should give bhut and vote, but not to see if you want it, but to give it on a wishful desire.",
+   "translation": "The government is giving bhoot and vote and say Yes",
    "source_text": "सरकार भोट देना है वोट देना है अब देना है देखिए ना इच्छा खूब इच्छा पर देना है भोट",
    "changed": false,
    "uncertain": true,
@@ -97,7 +95,7 @@
    "end": 46.98,
    "text": "छछ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
    "hinglish": "chhachh puja chhath puja mein hum log naya sab saman late hain jo vrat karte hain uske liye naya wastr kharid ke late hain pahante hain usmen aur thakua banate hain kasar banate hain ye sab banate hain puja karne ke liye",
-   "translation": "In Chhath Puja, we bring new items for the fast, such as new clothes and makeup.",
+   "translation": "In Chhath Puja, we bring new clothes for fasting and wear them, make cushions and cushions, and make cushions for worship.",
    "source_text": "छठ पूजा छठ पूजा में हम लोग नया सब सामान लाते हैं जो व्रत करते हैं उसके लिए नया वस्त्र खरीद के लाते हैं पहनते हैं उसमें और ठकुआ बनाते हैं कसार बनाते हैं ये सब बनाते हैं पूजा करने के लिए",
    "changed": true,
    "uncertain": true,
@@ -110,7 +108,7 @@
    "end": 59.63,
    "text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
    "hinglish": "hello haan hello sir namas theek hai haan ji ji dekhte hain ki bahut achha se dekhte hain aur kitna achha banate hain",
-   "translation": "Hello, sir, how are you? It's nice to see you and how well you do.",
+   "translation": "Hello, hello, hello, sir, it is good to see you and how good you make.",
    "source_text": "हलो हाँ हेलो सर नमस् ठीक है हाँ जी जी देखते हैं कि बहुत अच्छा से देखते हैं और कितना अच्छा बनाते हैं",
    "changed": false,
    "uncertain": true,
@@ -140,9 +138,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 39.305,
-  "prompt_tokens": 1707,
-  "completion_tokens": 861,
+  "llm_seconds": 148.265,
+  "prompt_tokens": 1703,
+  "completion_tokens": 848,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -155,7 +153,7 @@
   "lines_flagged_by_llm": 5,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 2,
+  "keywords_dropped": 1,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -164,8 +162,10 @@
   "source_sha256": "0f9e66c83426802b335ac2b30ca9d01db61550f0dfda92b8f83468c6e17eae05",
   "source_line_count": 7,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:39:55Z",
+  "generated_at_utc": "2026-11-11T01:10:04Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 79.8
+  "source_audio_duration_s": 79.8,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

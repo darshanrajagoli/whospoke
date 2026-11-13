@@ -4,19 +4,14 @@
  "executive_summary": "This report summarizes the evidence from a transcribed conversation between two speakers.",
  "key_points": [
   "Part 1: A conversation between two speakers.",
-  "Part 2: A conversation between two speakers.",
-  "Part 3: Speaker B is asking about discounts.",
+  "Part 2: The speaker is asking about the doctor's well-being, typing a line for the doctor in Lucknow, and taking a photo of the bride before the wedding.",
+  "Part 3: Speaker B is asking about the cost of roseberries.",
   "Part 4: Speaker A is asking about the speaker's well-being.",
-  "Part 5: Speaker A is asking the listener to take a picture of the speaker before the wedding."
+  "Part 5: Speaker A is asking the speaker to take a photo of the bride before the wedding."
  ],
  "keywords": [
-  "Hello, Sir",
-  "Pre-wedding ceremony",
-  "Photos",
-  "Pre wedding",
-  "Photoshoot",
-  "Wedding",
-  "Discount"
+  "Hello, Sir, Pre-wedding photo, Wedding,",
+  "June 10th, doctor, Lucknow, pre wedding,"
  ],
  "action_items": [],
  "speakers": [
@@ -106,7 +101,7 @@
    "end": 21.1,
    "text": "जी सर ये मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटो क्लिक कराना था",
    "hinglish": "ji sir ye mere yahan das joon ki shadi hai to mere ko pri wedding photo click karana tha",
-   "translation": "Hello, sir, I was at a wedding on June 10th and had to take photos of the pre-wedding ceremony.",
+   "translation": "Hello, sir, I was at a wedding on June 10th and wanted to take a pre-wedding photo.",
    "source_text": "जी सर ये मेरे यहाँ दस जून की शादी है तो मेरे को प्री वेडिंग फ़ोटो क्लिक कराना था",
    "changed": false,
    "uncertain": true,
@@ -145,7 +140,7 @@
    "end": 38.25,
    "text": "बोला तो कि लखनऊ टाइप की लाइन के लिए भी चाहिए पाँच लोगों के लिए चाहिए था कब हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन",
    "hinglish": "bola to ki lakhnau type ki line ke liye bhi chahiye paanch logon ke liye chahiye tha kab ho paega haan aur kuch mitha mein bhi chahiye tha jaise gulab jamun",
-   "translation": "The speaker is saying that the line should be typed for the typewriter and that the five people should be able to type it when it is ready.",
+   "translation": "The speaker is talking about typing a line for the doctor in Lucknow.",
    "source_text": "बोला तो कि लखनऊ टाइप की लाइन के लिए भी चाहिए पाँच लोगों के लिए चाहिए था कब हो पाएगा हाँ और कुछ मीठा में भी चाहिए था जैसे गुलाब जामुन",
    "changed": false,
    "uncertain": false,
@@ -161,8 +156,8 @@
    "translation": "The speaker is asking about the speaker's well-being.",
    "source_text": "तो सर उसका कैसा क्या रहता है",
    "changed": false,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 14,
@@ -171,11 +166,11 @@
    "end": 48.35,
    "text": "चुन को मतलब मेरी जो प्री वेडिंग फोटोशूट उससे पहले होगी आपको",
    "hinglish": "chun ko matlab meri jo pri wedding photoshoot usse pahle hogi aapko",
-   "translation": "The speaker is asking the listener to take a picture of the speaker before the wedding.",
+   "translation": "The speaker is asking the speaker to take a photo of the bride before the wedding.",
    "source_text": "चून को मतलब मेरी जो प्री वेडिंग फोटोशूट उससे पहले होगा आपको",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 15,
@@ -184,11 +179,11 @@
    "end": 50.1,
    "text": "तु सर वो करे",
    "hinglish": "tu sir wo kare",
-   "translation": "The speaker is saying that the speaker will do what he",
+   "translation": "The speaker is asking the speaker to do something.",
    "source_text": "तू सर वो करे",
    "changed": true,
-   "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 16,
@@ -223,7 +218,7 @@
    "end": 69.0,
    "text": "तो अगर मतलब तो वो पूछ रहे थे कि अगर सभी कुछ डिस्काउंट उकाउंट तो पूछ सकता है",
    "hinglish": "to agar matlab to wo poochh rahe the ki agar sabhi kuch discount ukaunt to poochh sakta hai",
-   "translation": "So if he meant to ask if everyone can get discounts.",
+   "translation": "So if he meant to ask if everyone can count the discounts.",
    "source_text": "तो अगर मतलब तो वो पूछ रहे थे कि अगर सभी कुछ डिस्काउंट उकाउंट तो पूछ सकता है",
    "changed": false,
    "uncertain": false,
@@ -233,16 +228,13 @@
  "uncertain_lines": [
   2,
   6,
-  7,
-  13,
-  14,
-  15
+  7
  ],
  "diagnostics": {
   "llm_calls": 4,
-  "llm_seconds": 54.216,
-  "prompt_tokens": 2384,
-  "completion_tokens": 1167,
+  "llm_seconds": 212.541,
+  "prompt_tokens": 2409,
+  "completion_tokens": 1228,
   "chunks": 3,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -252,7 +244,7 @@
   "lines_reverted": 2,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 4,
+  "lines_flagged_by_llm": 1,
   "missing_translations": 0,
   "unknown_line_ids": 0,
   "keywords_dropped": 1,
@@ -264,8 +256,10 @@
   "source_sha256": "920302af469cc862cf27530e0863e38c9ae5a228cc5a482e4a1ca17735e4535f",
   "source_line_count": 18,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T13:44:00Z",
+  "generated_at_utc": "2026-11-11T04:46:25Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 69.5
+  "source_audio_duration_s": 69.5,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

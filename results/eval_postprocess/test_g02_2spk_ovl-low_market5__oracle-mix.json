@@ -5,9 +5,9 @@
  "key_points": [
   "Part 1: A conversation about a lost poket.",
   "Part 2: A conversation about a photocopying service.",
-  "Part 3: A conversation about a lost poket.",
+  "Part 3: A conversation about a photocopying service.",
   "Part 4: A conversation about a photocopying service.",
-  "Part 5: A conversation about a lost poket."
+  "Part 5: A conversation about a photocopying service."
  ],
  "keywords": [
   "stolen poket",
@@ -39,8 +39,8 @@
    "translation": "Hello, they were speaking to you. You are Babu Manshankar Inter College.",
    "source_text": "नमस्ते बोल रहे थे आप आप बाबू मशंकर इंटर कॉलेज",
    "changed": true,
-   "uncertain": false,
-   "note": ""
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
   },
   {
    "line_id": 2,
@@ -114,7 +114,7 @@
    "end": 43.64,
    "text": "कुर्क फोटो आधार कार्ड योग अन्नी पड़ेगी",
    "hinglish": "kurk photo aadhar card yog anni padegi",
-   "translation": "Kurk Fototo Base Card Yog Anni Pade",
+   "translation": "Kurk Fototo Base Card Yog Anni Padegi",
    "source_text": "कुर्क फोटो आधार कार्ड योग अन्नी पड़ेगी",
    "changed": false,
    "uncertain": true,
@@ -166,11 +166,11 @@
    "end": 57.92,
    "text": "आईडी गान लूंगा तो हमें सबसे पहले किसके पास जाना पड़ेगा ये फोन बनाएगा अच्छा उसके बाद एप्लीकेशन भी लिखनी पड़ेगी",
    "hinglish": "aaidi gaan lunga to hamen sabse pahle kiske paas jana padega ye phone banaega achha uske baad eplikeshan bhi likhni padegi",
-   "translation": "ID Gaan Layenge To Whom We Have To Go First To Make The Phone Then Write The Application After That",
+   "translation": "ID Gaan Layenge To Whom We Have To Go First To Whom We Have To Go First To Whom We Have To Go First To Whom We Have To Go First To Whom We Have To Go",
    "source_text": "आईडी गान लूंगा तो हमें सबसे पहले किसके पास जाना पड़ेगा ये फोन बनाएगा अच्छा उसके बाद एप्लीकेशन भी लिखनी पड़ेगी",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   },
   {
    "line_id": 13,
@@ -183,10 +183,11 @@
    "source_text": "चेक करवा लीजिए",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
   }
  ],
  "uncertain_lines": [
+  1,
   2,
   4,
   5,
@@ -201,9 +202,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 38.925,
-  "prompt_tokens": 1720,
-  "completion_tokens": 880,
+  "llm_seconds": 164.234,
+  "prompt_tokens": 1744,
+  "completion_tokens": 959,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -213,10 +214,10 @@
   "lines_reverted": 6,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 5,
+  "lines_flagged_by_llm": 8,
   "missing_translations": 0,
   "unknown_line_ids": 0,
-  "keywords_dropped": 3,
+  "keywords_dropped": 4,
   "actions_dropped": 0,
   "empty_lines_skipped": 1,
   "schema_enforced": true
@@ -225,8 +226,10 @@
   "source_sha256": "da892af02629423b24509145eb71343d9ac11c06fe79e51b652becc6dd9b63f6",
   "source_line_count": 13,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:16:21Z",
+  "generated_at_utc": "2026-11-10T23:41:04Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 61.28
+  "source_audio_duration_s": 61.28,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

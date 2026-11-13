@@ -1,16 +1,18 @@
 {
- "title": "Transcript of Hindi and Hinglish Conversation",
- "topic": "System and Computer",
- "executive_summary": "The speaker mentions a system and asks if the computer can be hit.",
+ "title": "Lost ID Card",
+ "topic": "Lost ID Card",
+ "executive_summary": "A conversation between two people about a lost ID card.",
  "key_points": [
   "System",
-  "Computer",
-  "Hit"
+  "Trust computer is hit",
+  "Do you mean to go to the city by road and also to the city?",
+  "Yes, I will call up Punam Shaadi",
+  "Yes, Yes"
  ],
  "keywords": [
   "System",
-  "Computer",
-  "Hit"
+  "Trust computer is hit",
+  "Do you mean to go to the city by road, P"
  ],
  "action_items": [],
  "speakers": [
@@ -61,7 +63,7 @@
    "end": 11.81,
    "text": "और सब तो ठीक है अपना बताइए",
    "hinglish": "aur sab to theek hai apna bataie",
-   "translation": "And everything else is fine, tell me",
+   "translation": "And everything is fine, tell me",
    "source_text": "और सब तो ठीक है अपना बताइए",
    "changed": false,
    "uncertain": false,
@@ -139,7 +141,7 @@
    "end": 57.4,
    "text": "हाँ नहीं यही पास में बस मैंने दिला भी अगर हो तो बताओ",
    "hinglish": "haan nahi yahi paas mein bas mainne dila bhi agar ho to batao",
-   "translation": "Yes, No, I also told her nearby if you want to know",
+   "translation": "Yes, No, I also told her nearby if you know",
    "source_text": "हाँ नहीं यही पास में बस मैंने दिला भी अगर हो तो बताओ",
    "changed": false,
    "uncertain": false,
@@ -181,9 +183,9 @@
  ],
  "diagnostics": {
   "llm_calls": 3,
-  "llm_seconds": 33.814,
-  "prompt_tokens": 1588,
-  "completion_tokens": 730,
+  "llm_seconds": 147.634,
+  "prompt_tokens": 1599,
+  "completion_tokens": 776,
   "chunks": 2,
   "chunk_splits": 0,
   "invalid_replies": 0,
@@ -205,8 +207,10 @@
   "source_sha256": "db246b445f94926939198cd20f3ef2a7467ef81112b9b3a5258a61cbc1eab6cc",
   "source_line_count": 13,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:24:00Z",
+  "generated_at_utc": "2026-11-11T07:15:30Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 83.94
+  "source_audio_duration_s": 83.94,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

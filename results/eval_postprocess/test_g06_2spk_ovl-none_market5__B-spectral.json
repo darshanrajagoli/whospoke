@@ -1,16 +1,20 @@
 {
  "title": "Hindi and Hinglish Conversations",
  "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes the evidence from a transcribed conversation that includes summaries of its parts, lines translated into English, and candidate keywords and actions.",
+ "executive_summary": "This report summarizes a conversation between two speakers in Hindi and Hinglish, with a focus on topics such as rooms, sarees, test, computer, TV, meaning, Hindi, fashion, Banarasi saree, red Kilo, red color, and say something.",
  "key_points": [
-  "Hindi and Hinglish Conversations"
+  "rooms",
+  "sarees",
+  "test",
+  "computer",
+  "TV, meaning, Hindi, fashion, Banarasi saree, red Kilo, red color, say something"
  ],
  "keywords": [
-  "saree",
-  "test computer",
-  "fashion",
-  "Red Kilo",
-  "yes yes yes"
+  "rooms",
+  "test",
+  "computer",
+  "red Kilo",
+  "red color"
  ],
  "action_items": [],
  "speakers": [
@@ -275,11 +279,11 @@
    "end": 49.6,
    "text": "रेड कलर का चाहिएगा",
    "hinglish": "red colour ka chahiega",
-   "translation": "Should be red",
+   "translation": "Speaker_A wants red color",
    "source_text": "रेड कलर का चाहिएगा",
    "changed": false,
    "uncertain": true,
-   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   },
   {
    "line_id": 20,
@@ -288,11 +292,11 @@
    "end": 51.2,
    "text": "हम्म",
    "hinglish": "hamm",
-   "translation": "Hmm",
+   "translation": "",
    "source_text": "हम्म",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
   },
   {
    "line_id": 21,
@@ -305,7 +309,7 @@
    "source_text": "हाँ दो लोग रहेंड नाम लोग",
    "changed": false,
    "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
   },
   {
    "line_id": 22,
@@ -318,7 +322,7 @@
    "source_text": "हाँ दो लोग रहेंगे और",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand; the same English was returned for different lines."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the same English was returned for different lines."
   },
   {
    "line_id": 23,
@@ -327,11 +331,11 @@
    "end": 64.95,
    "text": "हाँ हाँ साधी है ना ना सा",
    "hinglish": "haan haan sadhi hai na na sa",
-   "translation": "Yes yes yes yes",
+   "translation": "Speaker_A says something",
    "source_text": "हाँ हाँ साधी है ना ना सा",
    "changed": false,
    "uncertain": true,
-   "note": "The model found this line hard to understand."
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
   }
  ],
  "uncertain_lines": [
@@ -355,22 +359,22 @@
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 64.293,
-  "prompt_tokens": 2934,
-  "completion_tokens": 1392,
+  "llm_seconds": 242.853,
+  "prompt_tokens": 2968,
+  "completion_tokens": 1440,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
   "lines_changed": 2,
-  "lines_reverted": 4,
+  "lines_reverted": 7,
   "lines_restored": 0,
   "translations_too_long": 0,
-  "lines_flagged_by_llm": 17,
-  "missing_translations": 2,
+  "lines_flagged_by_llm": 12,
+  "missing_translations": 3,
   "unknown_line_ids": 0,
-  "keywords_dropped": 7,
+  "keywords_dropped": 3,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -379,8 +383,10 @@
   "source_sha256": "5e9a2bbf8ad6fc1c974d867487af4b4ac01c8a3131db3e0638493128aafefb52",
   "source_line_count": 23,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T14:18:18Z",
+  "generated_at_utc": "2026-11-11T06:52:55Z",
   "pipeline_order": "B",
-  "source_audio_duration_s": 65.46
+  "source_audio_duration_s": 65.46,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

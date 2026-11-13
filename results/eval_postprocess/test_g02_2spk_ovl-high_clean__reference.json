@@ -1,23 +1,18 @@
 {
- "title": "Hindi and Hinglish Conversations",
+ "title": "Transcript of Hindi and Hinglish Conversations",
  "topic": "Hindi and Hinglish Conversations",
- "executive_summary": "This report summarizes a conversation between two people in Hindi and Hinglish, with a focus on the main topic of the conversation and the key points discussed.",
+ "executive_summary": "This report summarizes the evidence from a transcribed conversation between two people. The conversation is about Babu Mann Sainy Inter College, a principal, a check, a discount, a photo, a base card, a camera, a document, money, an office, a paper, a press paper, and more. The evidence supports the following facts, keywords, and actions: Babu Mann Sainy Inter College, Principal, Check, Discount, हां, नहीं, photo, base card, camera, document, money, office, paper, press paper. The report is written in English and includes a summary of the parts, translated lines, keywords, and actions.",
  "key_points": [
-  "Hello",
-  "Hello Sir",
-  "They were speaking about the principal of Babu Mann Saincy Inter College.",
-  "They were asking for a check from their Karma Chari to pay for the paper.",
-  "The room was discounted in the third number."
+  "Babu Mann Sainy Inter College",
+  "Principal",
+  "Check",
+  "Discount",
+  "नहीं, नहीं, फोटो, आधार कार्ड, कैमरा, दस्तावेज, पैसा, कार्यालय, पेपर, प्रेस पेपर"
  ],
  "keywords": [
-  "नमस्ते",
-  "बोल रहे हैं",
-  "photo",
-  "base card",
-  "camera",
-  "document",
-  "money",
-  "paper"
+  "Babu Mann Sainy Inter College",
+  "Principal",
+  "Check"
  ],
  "action_items": [],
  "speakers": [
@@ -68,7 +63,7 @@
    "end": 10.529,
    "text": "बोल रहे थे के आप बाबू मान संकई इंटर कालेज के जो प्रधानाचार्य हैं",
    "hinglish": "bol rahe the ke aap babu maan sankai intar kalej ke jo pradhanachary hain",
-   "translation": "They were speaking about the principal of Babu Mann Saincy Inter College.",
+   "translation": "They were speaking about the principal of Babu Mann Sainy Inter College.",
    "source_text": "बोल रहे थे के आप आप बाबू मान संकई इंटर कालेज के जो प्रधानाचार्य हैं",
    "changed": true,
    "uncertain": false,
@@ -287,13 +282,13 @@
    "speaker": "S2",
    "start": 52.034,
    "end": 55.594,
-   "text": "ऑफिस तो अब तो ऑफिस आप कब तक कितने बजे तक ऑफिस खुला है सर अपना",
-   "hinglish": "office to ab to office aap kab tak kitne baje tak office khula hai sir apna",
-   "translation": "The office was open until what time the owner said it was.",
+   "text": "ऑफिस तो अब तो ऑफिस आप कब तक केतने बजे तक ऑफिस खुला है सर अपना",
+   "hinglish": "office to ab to office aap kab tak ketne baje tak office khula hai sir apna",
+   "translation": "The office was open until what time the office was open, Sir.",
    "source_text": "ऑफिस तो अब तो ऑफिस आप कब तक कितने बजे तक ऑफिस खुला है सर अपना",
-   "changed": false,
-   "uncertain": true,
-   "note": "The model dropped words that the ASR line contains; ASR wording kept."
+   "changed": true,
+   "uncertain": false,
+   "note": ""
   },
   {
    "line_id": 21,
@@ -302,7 +297,7 @@
    "end": 62.284,
    "text": "तीन हजार था और अधार काड था और उसमें पेपर देने वाला जो होता है जो मिलता है प्रेस पत्र था",
    "hinglish": "teen hajar tha aur adhar kaad tha aur usmen paper dene wala jo hota hai jo milta hai press patr tha",
-   "translation": "The three thousand was given and the paper was given to the person who was there.",
+   "translation": "The three thousand was and the document was and the paper was and the press paper was.",
    "source_text": "तीन हजार था और अधार काड था और उसमें पेपर देने वाला जो होता है जो मिलता है प्रेस पत्र था",
    "changed": false,
    "uncertain": false,
@@ -321,27 +316,26 @@
   15,
   16,
   17,
-  18,
-  20
+  18
  ],
  "diagnostics": {
   "llm_calls": 5,
-  "llm_seconds": 65.809,
+  "llm_seconds": 270.091,
   "prompt_tokens": 2973,
-  "completion_tokens": 1497,
+  "completion_tokens": 1623,
   "chunks": 4,
   "chunk_splits": 0,
   "invalid_replies": 0,
   "failed_chunks": 0,
   "synthesis_failed": false,
-  "lines_changed": 3,
-  "lines_reverted": 5,
+  "lines_changed": 4,
+  "lines_reverted": 4,
   "lines_restored": 0,
   "translations_too_long": 0,
   "lines_flagged_by_llm": 12,
   "missing_translations": 2,
   "unknown_line_ids": 0,
-  "keywords_dropped": 8,
+  "keywords_dropped": 2,
   "actions_dropped": 0,
   "empty_lines_skipped": 0,
   "schema_enforced": true
@@ -350,8 +344,10 @@
   "source_sha256": "53f6faf90cd1282ff39ddc81d1412ef2514ab737a7cc983416fbbc90d6992c65",
   "source_line_count": 21,
   "llm_model": "ai4bharat/Airavata",
-  "generated_at_utc": "2026-10-03T12:18:14Z",
+  "generated_at_utc": "2026-11-10T23:48:27Z",
   "pipeline_order": "oracle",
-  "source_audio_duration_s": 62.93
+  "source_audio_duration_s": 62.93,
+  "prompt_schema_revision": "b03fa93a833a",
+  "context_tokens": 4096
  }
 }

@@ -1,0 +1,158 @@
+{
+ "title": "Searching for Furniture in Noisy Places",
+ "topic": "Furniture",
+ "executive_summary": "Speaker A is looking for a sofa, mattress bed, and furniture drying room in a noisy place.",
+ "key_points": [
+  "Speaker A is looking for a sofa, mattress bed, and furniture drying room in a noisy place.",
+  "Speaker A is talking about common trees and their use in various products.",
+  "Speaker A is asking for a price for the furniture drying room.",
+  "Speaker A is asking for a price for the sofa dining table and mattress bed.",
+  "Speaker A is asking for a price for the common tree wood."
+ ],
+ "keywords": [
+  "sofa",
+  "mattress bed",
+  "furniture drying room",
+  "common tree",
+  "good"
+ ],
+ "action_items": [],
+ "speakers": [
+  {
+   "speaker": "Speaker_A",
+   "talk_time_s": 58.65,
+   "turns": 7,
+   "share": 1.0
+  }
+ ],
+ "cleaned_dialogue": [
+  {
+   "line_id": 1,
+   "speaker": "Speaker_A",
+   "start": 0.55,
+   "end": 2.7,
+   "text": "नमस्ते मैम हाँ मैम हाँ मैम",
+   "hinglish": "namaste ma'am haan ma'am haan ma'am",
+   "translation": "Hello Ma'am",
+   "source_text": "नमस्ते मैम हाँ मैम हाँ मैम",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept."
+  },
+  {
+   "line_id": 2,
+   "speaker": "Speaker_A",
+   "start": 2.85,
+   "end": 6.9,
+   "text": "मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+   "hinglish": "mil jaega ma'am aapko kis budget mein chahiye kitna budget hai aapka",
+   "translation": "What budget would you like?",
+   "source_text": "मिल जाएगा मैम आपको किस बजट में चाहिए कितना बजट है आपका",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model dropped words that the ASR line contains; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 3,
+   "speaker": "Speaker_A",
+   "start": 7.35,
+   "end": 9.85,
+   "text": "हलो मैम आपको क्या क्या चाहिए ये बताइए",
+   "hinglish": "hello ma'am aapko kya kya chahiye ye bataie",
+   "translation": "Can you please tell me what you want?",
+   "source_text": "हलो मैम आपको क्या क्या चाहिए ये बताइए",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 4,
+   "speaker": "Speaker_A",
+   "start": 10.15,
+   "end": 11.6,
+   "text": "यास यास बोलिए",
+   "hinglish": "yaas yaas bolie",
+   "translation": "Yas yas",
+   "source_text": "यास यास बोलिए",
+   "changed": false,
+   "uncertain": false,
+   "note": ""
+  },
+  {
+   "line_id": 5,
+   "speaker": "Speaker_A",
+   "start": 12.25,
+   "end": 30.4,
+   "text": "मैम आपको बहुत सारे प्राइस मिल जाएंगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको और",
+   "hinglish": "ma'am aapko bahut sare price mil jaenge aapko kis price mein aapko chahiye kis tarike ka to aap bataie hum aapko us price mein available karva denge ma'am aapko achha hi saman milega aapko milega divan bed milega ek sofa milega daining table milega aapko aur",
+   "translation": "You will get a lot of prices, what price would you like?",
+   "source_text": "मैम आपको बहुत सारे प्राइस मिल जाएंगे आपको किस प्राइस में आपको चाहिए किस तरीके का तो आप बताइए हम आपको उस प्राइस में अवेलेबल करवा देंगे मैम आपको अच्छा ही सामान मिलेगा आपको मिलेगा दीवान बेड मिलेगा एक सोफा मिलेगा डाइनिंग टेबल मिलेगा आपको और",
+   "changed": false,
+   "uncertain": true,
+   "note": "The model rewrote this line instead of repairing it; ASR wording kept; the model found this line hard to understand."
+  },
+  {
+   "line_id": 6,
+   "speaker": "Speaker_A",
+   "start": 30.8,
+   "end": 44.4,
+   "text": "सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो तो आपने उसका इंजन देखा अच्छा अच्छा तो आप ऐसा करिए",
+   "hinglish": "sofa daining table aur matlab bed milenge aur phir aapko furniture dressing room mein jo to aapne uska engine dekha achha achha to aap aisa karie",
+   "translation": "The sofa dining table and mattress bed will be available and then you will get furniture drying room, what engine did you see?",
+   "source_text": "सोफा डाइनिंग टेबल और मतलब बेड मिलेंगे और फिर आपको फर्नीचर ड्रेसिंग रूम में जो तो आपने उसका इंजन देखा अच्छा अच्छा अच्छा तो आप ऐसा करिए",
+   "changed": true,
+   "uncertain": true,
+   "note": "The model found this line hard to understand."
+  },
+  {
+   "line_id": 7,
+   "speaker": "Speaker_A",
+   "start": 44.6,
+   "end": 61.35,
+   "text": "आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी सीशन की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर है अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगी",
+   "hinglish": "aam ki lakdi ka ma'am ma'am yahan par har ek cheez achha milta hai aam ki lakdi sagvan ki lakdi sishan ki lakdi har ek ek cheez achha milta hai hum log ke yahan par worker hai achhe se kaam karte hain unki haath ki finishing bhi bahut hi achhi hai aur aapko har ek cheez available mil jaegi",
+   "translation": "The wood of the common tree is good for everything. It is found in the forest of Sagwan, the forest of Seon, and the forest of Seon. We have workers here who work well. Their workmanship is also good and you will find everything you want.",
+   "source_text": "आम की लकड़ी का मैम मैम यहाँ पर हर एक चीज़ अच्छा मिलता है आम की लकड़ी सागवान की लकड़ी सीशन की लकड़ी हर एक एक चीज़ अच्छा मिलता है हम लोग के यहाँ पर वर्कर है अच्छे से काम करते हैं उनकी हाथ की फिनिशिंग भी बहुत ही अच्छी है और आपको हर एक चीज़ अवेलेबल मिल जाएगा",
+   "changed": true,
+   "uncertain": false,
+   "note": ""
+  }
+ ],
+ "uncertain_lines": [
+  1,
+  2,
+  3,
+  5,
+  6
+ ],
+ "diagnostics": {
+  "llm_calls": 3,
+  "llm_seconds": 342.673,
+  "prompt_tokens": 1718,
+  "completion_tokens": 847,
+  "chunks": 2,
+  "chunk_splits": 0,
+  "invalid_replies": 0,
+  "failed_chunks": 0,
+  "synthesis_failed": false,
+  "lines_changed": 2,
+  "lines_reverted": 4,
+  "lines_restored": 0,
+  "translations_too_long": 0,
+  "lines_flagged_by_llm": 4,
+  "missing_translations": 0,
+  "unknown_line_ids": 0,
+  "keywords_dropped": 1,
+  "actions_dropped": 0,
+  "empty_lines_skipped": 0,
+  "schema_enforced": true
+ },
+ "provenance": {
+  "source_sha256": "c94922c6058d22431f579329c91316c9117beb7cf2e70b912ad94b2f349ee585",
+  "source_line_count": 7,
+  "llm_model": "ai4bharat/Airavata",
+  "generated_at_utc": "2026-10-02T02:24:07Z",
+  "pipeline_order": "B",
+  "source_audio_duration_s": 61.99
+ }
+}
