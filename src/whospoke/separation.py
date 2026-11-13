@@ -23,6 +23,11 @@ SEPARATORS = {
     "convtasnet-clean": "JorisCos/ConvTasNet_Libri2Mix_sepclean_16k",
     "sepformer": "speechbrain/sepformer-whamr16k",
 }
+# Checkpoints made in this project (not downloadable): path relative to the project folder.
+# ``convtasnet-hindi`` = ``convtasnet`` fine-tuned on Hindi mixtures by scripts/finetune_convtasnet.py (A3).
+LOCAL_SEPARATORS = {
+    "convtasnet-hindi": "models/convtasnet_hindi.pth",
+}
 
 
 def _similarity(a: np.ndarray, b: np.ndarray) -> float:
@@ -39,15 +44,23 @@ class Separator:
 
     def __init__(self, name: str = "convtasnet", device: str | None = None,
                  window_s: float = 8.0, hop_s: float = 6.0):
-        if name not in SEPARATORS:
-            raise ValueError(f"unknown separator {name!r}; choose from {list(SEPARATORS)}")
+        if name not in SEPARATORS and name not in LOCAL_SEPARATORS:
+            raise ValueError(f"unknown separator {name!r}; choose from {list(SEPARATORS) + list(LOCAL_SEPARATORS)}")
         self.name = name
         self.device = torch.device(device or ("cuda" if torch.cuda.is_available() else "cpu"))
         self.window, self.hop = int(window_s * SR), int(hop_s * SR)
         if name.startswith("convtasnet"):
+            from pathlib import Path
+
             from asteroid.models import ConvTasNet
 
-            self._model = ConvTasNet.from_pretrained(SEPARATORS[name]).to(self.device).eval()
+            source = SEPARATORS.get(name)
+            if source is None:
+                source = Path(__file__).resolve().parents[2] / LOCAL_SEPARATORS[name]
+                if not source.exists():
+                    raise FileNotFoundError(f"{source} not found: make it with scripts/finetune_convtasnet.py")
+                source = str(source)
+            self._model = ConvTasNet.from_pretrained(source).to(self.device).eval()
             self._run = self._run_asteroid
         else:
             from pathlib import Path

@@ -34,7 +34,7 @@ class Line:
     end: float
     text: str                 # Devanagari, as recognised
     hinglish: str             # romanised (Latin) version
-    audio: str = "mixture"    # which audio was transcribed: mixture | separated | track-<k>
+    audio: str = "mixture"    # which audio was transcribed: mixture | separated | second | track-<k>
 
     def render(self, hinglish: bool = False) -> str:
         return f"[{fmt_ts(self.start)} - {fmt_ts(self.end)}] {self.speaker}: {self.hinglish if hinglish else self.text}"
@@ -176,7 +176,8 @@ class Pipeline:
     def __init__(self, order: str = "B", separator: str | None = "convtasnet",
                  diarizer: Diarizer | PyannoteDiarizer | None = None, asr: str = "indicconformer",
                  max_segment_s: float = 25.0, device: str | None = None, asr_model=None,
-                 sep_mode: str = "splice", sep_context_s: float = 0.5, postprocessor=None):
+                 sep_mode: str = "splice", sep_context_s: float = 0.5, postprocessor=None,
+                 second_voice: float | None = None, second_min_s: float = 0.3):
         if order not in ("A", "B"):
             raise ValueError("order must be 'A' or 'B'")
         if order == "A" and separator is None:
@@ -191,6 +192,11 @@ class Pipeline:
             raise ValueError("sep_mode must be 'splice' or 'turn'")
         self.sep_mode = sep_mode
         self.sep_context_s = sep_context_s
+        # Splice mode only: also give the *other* separated output of a region to the speaker it sounds like, as an
+        # extra turn, when that speaker has no turn there. ``second_voice`` is the minimum contrastive score
+        # (None = off); ``second_min_s`` the shortest region worth transcribing.
+        self.second_voice = second_voice
+        self.second_min_s = second_min_s
         self.postprocessor = postprocessor
 
     @property
@@ -269,23 +275,35 @@ class Pipeline:
         on both sides), and inside the region the turn's speaker is replaced by the separated voice that sounds
         most like them; outside overlap regions the turn keeps the original mixture.
         ``sep_mode="turn"``: the whole turn is replaced by its separated voice (earlier design, kept for comparison).
+
+        With ``second_voice`` set (splice mode), the output that no turn used is also kept when it sounds like a
+        speaker who has no turn in that region: it becomes an extra turn over the region (source ``"second"``).
         """
+        units, candidates = self._separate_units(wav, diar)
+        if self.second_voice is not None:
+            units += [(t, track, "second") for score, t, track in candidates if score >= self.second_voice]
+        return units
+
+    def _separate_units(self, wav: np.ndarray, diar: Diarization):
+        """``_targeted_separation`` before the second-voice threshold: (units, [(score, extra turn, audio)])."""
         turns = diar.turns
         regions = self._overlap_regions(diar)
         if self.separator is None or not regions or not turns:
-            return [(t, wav, "mixture") for t in turns]
+            return [(t, wav, "mixture") for t in turns], []
         centroids = self._centroids(wav, turns, regions, diar)
         n = len(wav)
 
-        def pick(est: np.ndarray, span_s: float, t: Turn, others: list[Turn]) -> np.ndarray:
-            # Keep the separated voice that sounds most like this speaker (and least like the other one).
+        def fingerprints(est: np.ndarray, span_s: float) -> np.ndarray:
             fp = np.concatenate([embed(est[k], [(0.0, span_s)], self.device) for k in range(2)])
-            fp /= np.linalg.norm(fp, axis=1, keepdims=True) + 1e-9
+            return fp / (np.linalg.norm(fp, axis=1, keepdims=True) + 1e-9)
+
+        def pick(fp: np.ndarray, t: Turn, others: list[Turn]) -> int:
+            # Keep the separated voice that sounds most like this speaker (and least like the other one).
             score = fp @ centroids[t.speaker]
             other = max(others, key=lambda o: min(o.end, t.end) - max(o.start, t.start)).speaker if others else None
             if other in centroids:
                 score = score - fp @ centroids[other]
-            return est[int(np.argmax(score))]
+            return int(np.argmax(score))
 
         units = []
         if self.sep_mode == "turn":
@@ -297,17 +315,30 @@ class Pipeline:
                 est = self.separator.separate(wav[a:b])
                 others = [o for o in turns if o.speaker != t.speaker and o.start < t.end and o.end > t.start]
                 track = np.zeros_like(wav)
-                track[a:b] = pick(est, (b - a) / SR, t, others)
+                track[a:b] = est[pick(fingerprints(est, (b - a) / SR), t, others)]
                 units.append((t, track, "separated"))
-            return units
+            return units, []
 
         # splice mode: separate each region once, with context
         ctx = int(self.sep_context_s * SR)
         separated = {}
         for r0, r1 in regions:
             a, b = max(0, int(r0 * SR) - ctx), min(n, int(r1 * SR) + ctx)
-            separated[(r0, r1)] = (a, b, self.separator.separate(wav[a:b]))
+            est = self.separator.separate(wav[a:b])
+            separated[(r0, r1)] = (a, b, est, fingerprints(est, (b - a) / SR))
         fade = int(0.02 * SR)
+
+        def splice(track: np.ndarray, voice: np.ndarray, a: int, r0: float, r1: float) -> None:
+            s0, s1 = int(r0 * SR), int(r1 * SR)               # replace only the overlapped stretch ...
+            seg = voice[s0 - a: s1 - a]
+            w = np.ones(len(seg), np.float32)                 # ... with 20 ms cross-fades at both edges
+            k = min(fade, len(seg) // 2)
+            if k:
+                w[:k] = np.linspace(0, 1, k, dtype=np.float32)
+                w[-k:] = np.linspace(1, 0, k, dtype=np.float32)
+            track[s0:s1] = w * seg + (1 - w) * track[s0:s1]
+
+        used: dict[tuple[float, float], dict[str, int]] = {}  # region -> {speaker: output index it was given}
         for t in turns:
             hits = [(r0, r1) for r0, r1 in regions if r0 < t.end and r1 > t.start]
             if not hits or t.speaker not in centroids:
@@ -315,19 +346,31 @@ class Pipeline:
                 continue
             track = wav.copy()
             for r0, r1 in hits:
-                a, b, est = separated[(r0, r1)]
+                a, b, est, fp = separated[(r0, r1)]
                 others = [o for o in turns if o.speaker != t.speaker and o.start < r1 and o.end > r0]
-                voice = pick(est, (b - a) / SR, t, others)
-                s0, s1 = int(r0 * SR), int(r1 * SR)           # replace only the overlapped stretch ...
-                seg = voice[s0 - a: s1 - a]
-                w = np.ones(len(seg), np.float32)             # ... with 20 ms cross-fades at both edges
-                k = min(fade, len(seg) // 2)
-                if k:
-                    w[:k] = np.linspace(0, 1, k, dtype=np.float32)
-                    w[-k:] = np.linspace(1, 0, k, dtype=np.float32)
-                track[s0:s1] = w * seg + (1 - w) * track[s0:s1]
+                k = pick(fp, t, others)
+                used.setdefault((r0, r1), {})[t.speaker] = k
+                splice(track, est[k], a, r0, r1)
             units.append((t, track, "separated"))
-        return units
+
+        # Second voice: the output nobody was given, offered to a speaker with no turn in the region. Score it
+        # contrastively as in ``pick``: like that speaker minus like the speaker(s) who already have the region.
+        candidates = []
+        for (r0, r1), taken in used.items():
+            if len(set(taken.values())) != 1 or r1 - r0 < self.second_min_s:
+                continue
+            a, b, est, fp = separated[(r0, r1)]
+            j = 1 - next(iter(taken.values()))
+            rest = [s for s in centroids if s not in taken]
+            if not rest:
+                continue
+            own = max(float(fp[j] @ centroids[p]) for p in taken)
+            scores = {s: float(fp[j] @ centroids[s]) - own for s in rest}
+            spk = max(scores, key=scores.get)
+            track = np.zeros_like(wav)
+            splice(track, est[j], a, r0, r1)
+            candidates.append((scores[spk], Turn(r0, r1, spk), track))
+        return units, candidates
 
     def _centroids(self, wav, turns, overlaps, diar) -> dict[str, np.ndarray]:
         """Mean voice fingerprint per speaker from their *non-overlapped* speech."""

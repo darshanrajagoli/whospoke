@@ -415,3 +415,54 @@ saved as safetensors under the data folder. Community safetensors uploads are no
 **Why:** the English line lets everyone follow a Hindi or Kannada take without waiting for the report. Keeping it
 off the GPU and off the pipeline's critical path costs the live passes about half a second. In a rehearsal take,
 9 of 15 lines had English before Stop and all 16 by the end of the final pass.
+
+## D36 · The interrupter's separated voice (the second output) is not used: it lost on dev
+**Decided:** 2026-11-12
+**Evidence that motivated it:** with the true timeline, splicing separated overlaps lowers dev cpWER by 3.5 points
+(35.0 → 31.4 %); with our Order-B diarization by nothing (46.4 → 46.4 %). The tuned Order-B diarizer has
+`overlap_aware=False` (D22), so an overlap region usually lies inside one turn only, of the speaker already talking.
+`_targeted_separation` gives that speaker the separated output that matches them and **discards the other output**,
+so the interrupting speaker's overlapped words never reach the transcript. On dev, 19.5 % of turns get separated
+audio with our diarization vs 50.2 % with the true timeline.
+**Change tried:** `Pipeline(second_voice=<threshold>)` (`_separate_units` in `pipeline.py`). Per region, the output
+that no turn used is scored contrastively, as in `pick`: cosine to a speaker's centroid minus cosine to the centroid
+of the speaker who already has the region. If the best-scoring speaker has **no turn in that region**, the region
+(≥ 0.3 s) becomes an extra turn for them, transcribed from that output; a speaker who already has a turn there never
+gets one, so no words are counted twice. Unit tests: `tests/test_second_voice.py`.
+**Dev result** (36 conversations, 5,687 reference words, cpWER; `scripts/tune_separation_policy.py --policies mixture
+splice-0.5 splice-0.5+second --out separation_policy_dev_second.csv` → `results/separation_policy_dev_second.csv`;
+every candidate turn with its score and text in `results/second_voice_candidates_dev.csv`). Run on the CPU (Ryzen 7
+5700U); the mixture and splice-0.5 rows reproduce D26's GPU numbers to 0.1 point:
+
+| policy | our diarization (B-spectral) | extra turns added | true timeline | extra turns added |
+|---|---|---|---|---|
+| mixture (no separation) | 46.40 % | — | 34.97 % | — |
+| **splice-0.5 (current)** | **46.42 %** | — | **31.44 %** | — |
+| + second voice, threshold −1 (all candidates) | 46.98 % | 76 | 32.04 % | 37 |
+| + second voice, threshold 0.0 | 46.70 % | 51 | 31.55 % | 7 |
+| + second voice, threshold 0.1 | 46.62 % | 35 | 31.49 % | 3 |
+| + second voice, threshold 0.2 | 46.49 % | 22 | 31.46 % | 1 |
+| + second voice, threshold 0.3 | 46.46 % | 9 | 31.44 % | 0 |
+| + second voice, threshold 0.4 | 46.46 % | 2 | 31.44 % | 0 |
+
+With our diarization, every threshold is worse than splice-0.5, and the higher the threshold the closer it gets to
+splice-0.5, because fewer extra turns are added. At threshold −1 it is worse in 18 conversations and better in 5
+(+32 errors). At 0.3 it is worse in 3 and better in 2 (+2 errors). By overlap level, at 0.3: heavy overlap
+50.07 → 50.02 %, low 46.02 → 46.07 %, none 42.10 → 42.22 %.
+**Why it does not help (from the candidates file, checked against the true overlaps in `reference.json`):**
+- the candidates are tiny: median 0.58 s, median **one** recognised word, 9 of the 76 empty. A detected region is a
+  fragment of the interrupter's speech, often starting or ending mid-word, so the ASR gets little to work with;
+- **33 of the 76** (B-spectral) contain no true overlap at all: the detector fired on single-speaker speech, so the
+  "second voice" is leakage or artefact, and its words are insertions;
+- only 55 % of candidate time is true overlap; for the highest-scoring candidates (score ≥ 0.2) it is 68 %, so the
+  score does pick better candidates but not well enough to win;
+- with the true timeline the interrupter already has a turn in almost every real overlap, so the candidates that
+  remain are nearly all false detections (19 % true-overlap time): adding them can only hurt there, and it does
+  (worse in 15 conversations, better in 0, at threshold −1).
+**Choice:** keep splice-0.5 as it is. `second_voice` stays in the code **off by default** (`None`), so this dev
+experiment can be re-run, but no pipeline, script or demo turns it on. **The test set was not run**, as planned: the
+rule was to run it once only if the change won on dev.
+**What would be needed to make the idea work** (not done): longer extra turns, joined to the interrupter's adjacent turn
+when there is one, so the ASR hears whole words; and a better overlap detector, or the true overlap count, since 43 %
+of candidates are false detections. The bigger lever remains the diarization itself (RESULTS.md, "What limits the system", item 1:
+the speaker count).

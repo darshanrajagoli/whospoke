@@ -57,8 +57,11 @@ def two_speaker_overlaps(segs: list[Segment], min_len: float = 0.3) -> list[tupl
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--split", default="dev")
-    ap.add_argument("--models", nargs="+", default=list(SEPARATORS))
+    ap.add_argument("--models", nargs="+", default=list(SEPARATORS),
+                    help="released models by default; add convtasnet-hindi after scripts/finetune_convtasnet.py")
     ap.add_argument("--context", type=float, default=1.0)
+    ap.add_argument("--tag", default=None,
+                    help="write results/separation_<split>_<tag>.csv instead of the published separation_<split>.csv")
     args = ap.parse_args()
 
     index = pd.read_csv(SYNTH / args.split / "index.csv")
@@ -94,7 +97,8 @@ def main() -> None:
         print(f"{r.id}: done", flush=True)
 
     df = pd.DataFrame(rows)
-    out = PROJECT / "results" / f"separation_{args.split}.csv"
+    stem = f"separation_{args.split}" + (f"_{args.tag}" if args.tag else "")
+    out = PROJECT / "results" / f"{stem}.csv"
     out.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(out, index=False)
     summary = df.groupby(["view", "model", "noise"]).si_sdri.mean().unstack("noise").round(2)
@@ -102,7 +106,7 @@ def main() -> None:
     summary["n"] = df.groupby(["view", "model"]).size()
     summary["rtf"] = df.groupby(["view", "model"]).rtf.mean().round(4)
     print(summary.to_string())
-    summary.to_csv(PROJECT / "results" / f"separation_{args.split}_summary.csv")
+    summary.to_csv(PROJECT / "results" / f"{stem}_summary.csv")
 
 
 if __name__ == "__main__":

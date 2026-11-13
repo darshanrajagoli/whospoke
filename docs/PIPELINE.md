@@ -103,7 +103,9 @@ training (IndicConformer was trained on IndicVoices, which our simulated data is
   only the overlapped stretch is replaced by the separated voice that sounds most like *this* speaker (highest cosine
   to their voice fingerprint, lowest to the other speaker's), with 20 ms cross-fades. The rest of the turn, and every
   turn without overlap, is transcribed straight from the mixture. Replacing the whole turn instead was worse on dev,
-  because separator artefacts spread over speech that was never overlapped (D26).
+  because separator artefacts spread over speech that was never overlapped (D26). The region's other separated
+  output is not used: turning it into an extra turn for the interrupting speaker (`Pipeline(second_voice=...)`, off
+  by default) was worse on dev (D36).
 - Order A: every turn is transcribed from the separated track it was found on.
 Turns longer than 25 s are split at the quietest 50 ms near the cut.
 

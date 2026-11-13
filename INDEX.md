@@ -9,7 +9,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | 1 | [README.md](README.md) | What the project does, the headline numbers, how to install and run it |
 | 2 | [docs/RESULTS.md](docs/RESULTS.md) | Every result, explained in plain English, with the evidence for each design choice |
 | 3 | [DEVIATIONS.md](DEVIATIONS.md) | Every place we differ from the professor's proposal, and why |
-| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D35), recorded as it was made |
+| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D36), recorded as it was made |
 | 5 | [docs/PIPELINE.md](docs/PIPELINE.md) | Technical reference: how each stage works, stage by stage |
 | 6 | [docs/MILESTONE4.md](docs/MILESTONE4.md) | Stage 4 in full: running the LLM, the report, the prompts, the guardrails, settings |
 | 7 | [docs/RESULTS_TABLES.md](docs/RESULTS_TABLES.md) | Raw result tables with 95 % confidence intervals (generated, not hand-written) |
@@ -35,6 +35,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | [audit/RED_TEAM_AUDIT.md](audit/RED_TEAM_AUDIT.md) | The red-team audit: every finding with its evidence and status, and the 10 hardest examiner questions |
 | [notebooks/02_walkthrough.ipynb](notebooks/02_walkthrough.ipynb) | Run all four stages on one conversation, in Colab or locally |
 | [notebooks/01_benchmark.ipynb](notebooks/01_benchmark.ipynb) | Speed, memory and model-size benchmark of every stage (the proposal's "benchmarking notebook") |
+| [notebooks/03_finetune_convtasnet_colab.ipynb](notebooks/03_finetune_convtasnet_colab.ipynb) | Colab (T4): improvement A3, fine-tune Conv-TasNet on Hindi mixtures, judge it on dev, run test once only if it wins |
 
 ## Local only — not on GitHub
 
@@ -48,6 +49,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `docs/explainers/stage4_llm_report.md` | Stage 4: the LLM report, its guardrails, and what it really achieves |
 | `docs/explainers/order_a_vs_b.md` | Why the order of the stages matters |
 | `docs/explainers/testing_and_metrics.md` | How we test and what the numbers mean |
+| `docs/explainers/task1_separation/` | Task 1 (separation) from scratch, for a reader with school maths only: 10 short files, start at `00_START_HERE.md` |
 
 ## Code — `src/whospoke/`
 
@@ -79,7 +81,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `mine_loanwords.py` | The mined part of `loanwords.tsv` |
 | `eval_separation.py` | `results/separation_{split}.csv` — Stage 1 |
 | `tune_diarization.py` | `results/tuned_params.json` — Stage 2 settings, chosen on **dev** only |
-| `tune_separation_policy.py` | `results/separation_policy_dev.csv` — how Order B feeds separated audio to the ASR (**dev** only) |
+| `tune_separation_policy.py` | `results/separation_policy_dev.csv` — how Order B feeds separated audio to the ASR (**dev** only); `--policies ... splice-0.5+second` gives `results/separation_policy_dev_second.csv` + `results/second_voice_candidates_dev.csv` (D36, rejected) |
 | `eval_asr.py` | `results/asr_comparison.*` — Stage 3 model choice (on Vaani) |
 | `eval_asr_nirantar.py` | `results/asr_nirantar.*` — Stage 3 cross-check on a Nirantar Hindi sample (D7) |
 | `eval_speaker_count.py` | `results/speaker_count_test.*` — Stage 2 with the number of speakers given vs found automatically |
@@ -89,6 +91,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `make_report.py` | `docs/RESULTS_TABLES.md` + `results/figures/*.png` |
 | `build_notebooks.py` | `notebooks/*.ipynb` (executed); `--stage4-only` re-measures only the Stage-4 benchmark |
 | `bench_asr_backends.py` | `results/asr_backend_bench.json` — ASR decoding-mode benchmark |
+| `finetune_convtasnet.py` | `models/convtasnet_hindi.pth` + `results/finetune_convtasnet/` — A3: Conv-TasNet fine-tuned on speaker-disjoint Hindi mixtures with dev noise, checkpoint chosen on **dev** (GPU; run via notebook 03) |
 | `postprocess.py` | Same as `python -m whospoke postprocess`: `transcript.json` → `report.md` + `report.json` |
 
 ## Tests — `tests/`
@@ -110,6 +113,7 @@ to end, including the Stage-4 LLM if its server is running.
 | `eval_postprocess.csv`, `eval_postprocess/*.json`, `eval_postprocess_summary_g*.json` | Stage 4 on the 63 test conversations: scores per conversation, every report, and the settings, machine and cost of each run |
 | `LAPTOP_RUN_REPORT.md` | How the Stage-4 runs on the laptop GPU went: GPU layers, speed, what went wrong |
 | `crosscheck_g00_gpu/` | Test group 0's Stage-4 reports made again on the GPU and compared with the CPU-made ones: the conclusions do not depend on the machine (D33, audit F12) |
+| `separation_policy_dev_second.csv`, `second_voice_candidates_dev.csv` | Dev only, CPU run: the second-voice experiment (D36, rejected), with one row per conversation × timeline × policy, and every candidate extra turn with its score and recognised text |
 | `speaker_count_test.{csv,json}` | Diarization error with the speaker count found automatically, given, or given only when the automatic count differs (the live demo's setting) |
 | `benchmark_{stages,scaling,llm}.csv` | Speed and memory per stage (from the benchmark notebook) |
 | `demo/` | Example output of one full run (timeline, transcripts, subtitles, Stage-4 report) |
