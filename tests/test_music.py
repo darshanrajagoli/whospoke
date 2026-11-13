@@ -37,6 +37,17 @@ def test_timbre_fingerprint_tells_a_sustained_tone_from_a_drum():
     assert (b @ b.T).min() > (a @ b.T).max() + 0.2
 
 
+def test_hpss_outputs_have_a_fixed_meaning():
+    """Output 0 is the melody and output 1 the percussion, which the "direct" who-plays-when relies on (D41)."""
+    from whospoke.metrics import si_sdr
+    from whospoke.separation import Separator
+
+    drum = strokes(6 * SR, 0.3)
+    melody, perc = Separator("hpss", device="cpu").separate(TONE + drum)
+    assert si_sdr(melody, TONE) > si_sdr(melody, drum) + 10
+    assert si_sdr(perc, drum) > si_sdr(perc, TONE) + 10
+
+
 def test_tonic_matching():
     assert pitch_class(138.59) == 1 and nearest_stroke_tonic(138.59) == "C#"   # C#3
     assert nearest_stroke_tonic(149.4) == "D"

@@ -1,7 +1,7 @@
 # Extending WhoSpoke to music: three datasets and the experiments they allow
 
-The professor asked for the pipeline to be extended to music datasets. This page picks **three** from our music list
-([MUSIC_EMOTION_DATASETS.md](MUSIC_EMOTION_DATASETS.md)) and says, for each one, what experiment it supports, which
+The professor asked for the pipeline to be extended to music datasets. This page picks **three** from the team's list of music
+datasets and says, for each one, what experiment it supports, which
 stage it exercises, and how it is scored. The guiding rule is the same one the speech work follows: **an experiment is
 only worth running if we can build or obtain an exact reference to score it against**, and every choice is made on a
 dev split before a test split is scored once.
@@ -15,7 +15,9 @@ Facts marked † come from the dataset's own pages and should be checked against
 > the singer's annotated beats. The Mridangam Stroke licence is **CC BY-NC 4.0** on Zenodo (not CC BY 3.0 as `mirdata`
 > says); our copy has all 7,162 strokes. Code: `src/whospoke/synth_music.py`, `scripts/build_music_dataset.py`,
 > `scripts/eval_music_diarization.py`, HPSS and Demucs in `src/whospoke/separation.py`. Results: DECISIONS.md D41
-> and RESULTS.md. Experiment 1 (DEAM) has not been run.
+> and RESULTS.md. Experiment 1 (DEAM) has not been run. Two more changes from the plan below: dev and test are split
+> by singer and by stroke take (odd vs even), not by drum tonic (the drum follows the singer's tonic);
+> and the instrument fingerprint is a hand-made timbre feature (`timbre_embed`), not a pretrained audio embedding.
 
 ## The choice in one table
 
@@ -91,7 +93,7 @@ voice-vs-voice (the sources sound very different); the diarizer needs instrument
 | Dataset | Why not first |
 |---|---|
 | **Saraga Hindustani** | Real concerts, but its multitrack recordings are Carnatic only, so there are no Hindustani stems to score separation against†. Its annotations (sections, sama, phrases, tonic, mixed-track pitch) suit rhythm/melody work rather than this pipeline. A good **qualitative** test of the duo experiment's winner on real music |
-| **Carnatic Varnam** | Small (28 recordings); raga and tala labels, no stems |
+| **Carnatic Varnam** | Small (28 recordings); raga and tala labels, no stems. *Later used in place of RaagaDhvani (status note above): the recordings are solo singing, so they serve as the voice stem* |
 | **PMEmo, MERGE** (have lyrics) | Lyrics are English/Chinese; our Stage-3 recogniser is for Indian languages, so a lyrics experiment would need a different ASR model first |
 | **MagnaTagATune, CAL500, Emotify, MEMO2496, MERP** | Tag or emotion labels only: nothing that scores "who" or "when" |
 | **NRC-VAD, EmoBank** | Text lexicons, no audio |

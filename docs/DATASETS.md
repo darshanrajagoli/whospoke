@@ -13,6 +13,8 @@ model (D5), so each dataset is used to build test audio, to choose between model
 | **ESC-50** | [GitHub](https://github.com/karolpiczak/ESC-50) (CC-BY-NC-3.0) | Clips from 17 sound categories (animals, horns, engines, bells …) | Noise events on top of the bed |
 | **Nirantar** (AI4Bharat) | Hindi extracted by a teammate on Colab (the full release is one ~198 GB archive) | A random 800-clip Hindi sample; 406 clips after removing our test speakers | Stage-3 cross-check only |
 | AIR-RS-DB | — | Not used: no public source exists under this name (the proposal's citation is blank) | — |
+| **Carnatic Varnam** (CompMusic) | [Zenodo 7726167](https://zenodo.org/records/7726167) (audio CC-BY-3.0) | The 27 of 28 solo sung varnams that have tala annotations (6 singers) | The voice in the music extension's voice + mridangam pieces (D41) |
+| **Mridangam Stroke** (CompMusic) | [Zenodo 1265188](https://zenodo.org/records/1265188) (CC-BY-NC-4.0) | All 7,162 single strokes (10 stroke types, 6 tonics) | The drum in the same pieces (D41) |
 
 Why Nirantar and AIR-RS-DB are not used more is in [DEVIATIONS.md](../DEVIATIONS.md) (row 2) and
 [DECISIONS.md](../DECISIONS.md) D7. Vaani's main corpus and its Noise-Event release were also tried as a noise source and
@@ -95,6 +97,7 @@ keeping train and test apart (D20):
 | The lexicon has seen the test words | Mined from Vaani *train*; scored on Vaani *test* (D20) |
 | Nirantar overlaps our test speakers | 165 of the 514 test-split speakers are also in Nirantar, and 923 of its clips are exact IndicVoices *valid* files. Every test speaker was removed before scoring (D7) |
 | Tuning the LLM prompts on scored data | Test group 7 was used for prompt work and is never scored (D32) |
+| Tuning the music systems on the test singers | Dev and test music pieces never share a singer (2 dev, 4 test), a stroke take (odd vs even) or a noise recording (D41) |
 
 ## 5. Data inside the pretrained models
 
@@ -106,6 +109,7 @@ We use these models as they are. What they were trained on matters for how far t
 | WeSpeaker ResNet-34 (`pyannote/wespeaker-voxceleb-resnet34-LM`) | 2 | VoxCeleb (celebrity interviews, mostly English) |
 | IndicConformer | 3 | Thousands of hours of Indian-language speech, including IndicVoices (hence D19) |
 | IndicWav2Vec-Hindi | 3 | Self-supervised on 40 Indian languages, then fine-tuned on Hindi |
+| Demucs `htdemucs` | music (D41) | Music stems: MUSDB18-HQ plus 800 extra songs (vocals, drums, bass, other) |
 
 ## 6. Getting the data
 
@@ -121,3 +125,7 @@ python scripts/mine_loanwords.py      # Hinglish lexicon from Vaani train
 
 The Nirantar sample (`<data>/raw/nirantar/`) is not downloadable by script: it comes from the teammate's Colab
 extraction (D7).
+
+The music extension (D41) needs its two datasets unzipped by hand from Zenodo into
+`<data>/raw/carnatic_varnam/carnatic_varnam_1.1/` and `<data>/raw/mridangam_stroke/mridangam_stroke_1.0/`; then
+`python scripts/build_music_dataset.py` builds the 36 dev and 72 test pieces (seed 407).

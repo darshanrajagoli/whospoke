@@ -16,6 +16,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | 8 | [Audio_Engineering_AI_Project_Proposal.docx](Audio_Engineering_AI_Project_Proposal.docx) | The original brief |
 | — | [docs/DATASETS.md](docs/DATASETS.md) | Every dataset: where it comes from, how big it is, what it is used for, and how test data is kept apart |
 | — | [docs/notes_asr_backends.md](docs/notes_asr_backends.md) | Notes on the ASR decoding modes and their benchmark |
+| — | [docs/MUSIC_EXTENSION_PLAN.md](docs/MUSIC_EXTENSION_PLAN.md) | The music extension: which datasets, which experiments, and what was run (D41) |
 
 ## For the team
 
@@ -80,7 +81,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `fetch_data.py` | DEMAND, ESC-50 and Vaani downloads (IndicVoices comes with the next step) |
 | `build_dataset.py` | Dev and test conversations (`<data>/synth/{dev,test}/`) |
 | `mine_loanwords.py` | The mined part of `loanwords.tsv` |
-| `eval_separation.py` | `results/separation_{split}.csv` — Stage 1 |
+| `eval_separation.py` | `results/separation_{split}.csv` — Stage 1; `--set synth_music --tag music --models convtasnet hpss demucs` gives `separation_{split}_music.csv` |
 | `tune_diarization.py` | `results/tuned_params.json` — Stage 2 settings, chosen on **dev** only |
 | `tune_separation_policy.py` | `results/separation_policy_dev.csv` — how Order B feeds separated audio to the ASR (**dev** only) |
 | `eval_asr.py` | `results/asr_comparison.*` — Stage 3 model choice (on Vaani) |
@@ -100,7 +101,8 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 ## Tests — `tests/`
 
 `pytest` runs the fast suite (metrics, simulation, clustering, timeline logic, separation stitching, romaniser, and
-every Stage-4 guardrail with scripted LLM replies and a fake server, and the command line); `pytest -m slow` also runs the real models end
+every Stage-4 guardrail with scripted LLM replies and a fake server, the command line, and the music extension's activity,
+timbre fingerprint and HPSS output order); `pytest -m slow` also runs the real models end
 to end, including the Stage-4 LLM if its server is running.
 
 ## Results — `results/`
