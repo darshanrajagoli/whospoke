@@ -35,7 +35,6 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | [audit/RED_TEAM_AUDIT.md](audit/RED_TEAM_AUDIT.md) | The red-team audit: every finding with its evidence and status, and the 10 hardest examiner questions |
 | [notebooks/02_walkthrough.ipynb](notebooks/02_walkthrough.ipynb) | Run all four stages on one conversation, in Colab or locally |
 | [notebooks/01_benchmark.ipynb](notebooks/01_benchmark.ipynb) | Speed, memory and model-size benchmark of every stage (the proposal's "benchmarking notebook") |
-| [notebooks/03_finetune_convtasnet_colab.ipynb](notebooks/03_finetune_convtasnet_colab.ipynb) | Colab (T4): improvement A3, fine-tune Conv-TasNet on Hindi mixtures, judge it on dev, run test once only if it wins |
 
 ## Local only — not on GitHub
 
@@ -92,8 +91,6 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `make_report.py` | `docs/RESULTS_TABLES.md` + `results/figures/*.png` |
 | `build_notebooks.py` | `notebooks/*.ipynb` (executed); `--stage4-only` re-measures only the Stage-4 benchmark |
 | `bench_asr_backends.py` | `results/asr_backend_bench.json` — ASR decoding-mode benchmark |
-| `finetune_convtasnet.py` | `models/convtasnet_hindi.pth` + `results/finetune_convtasnet/` — A3: Conv-TasNet fine-tuned on speaker-disjoint Hindi mixtures with dev noise, checkpoint chosen on **dev** (GPU; run via notebook 03) |
-| `make_colab_bundle.py` | `../whospoke_colab_bundle.zip` (~350 MB): everything notebook 03 needs, audio as lossless FLAC |
 | `build_music_dataset.py` | `<data>/synth_music/{dev,test}/` — the music sets (36 dev, 72 test pieces) |
 | `eval_music_diarization.py` | `results/music_diarization_{split}.csv` — who plays when on the music sets (DER) |
 | `export_music_demo.py` | `results/demo_music/` — playable separated audio for one typical test piece per condition |

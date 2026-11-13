@@ -23,11 +23,6 @@ SEPARATORS = {
     "convtasnet-clean": "JorisCos/ConvTasNet_Libri2Mix_sepclean_16k",
     "sepformer": "speechbrain/sepformer-whamr16k",
 }
-# Checkpoints made in this project (not downloadable): path relative to the project folder.
-# ``convtasnet-hindi`` = ``convtasnet`` fine-tuned on Hindi mixtures by scripts/finetune_convtasnet.py (A3).
-LOCAL_SEPARATORS = {
-    "convtasnet-hindi": "models/convtasnet_hindi.pth",
-}
 # Music separators (the voice + mridangam duo, docs/MUSIC_EXTENSION_PLAN.md). Unlike the speech models, their two
 # outputs have a fixed meaning: output 0 = melody (voice, drone), output 1 = percussion (mridangam).
 MUSIC_SEPARATORS = {
@@ -50,7 +45,7 @@ class Separator:
 
     def __init__(self, name: str = "convtasnet", device: str | None = None,
                  window_s: float = 8.0, hop_s: float = 6.0):
-        known = {**SEPARATORS, **LOCAL_SEPARATORS, **MUSIC_SEPARATORS}
+        known = {**SEPARATORS, **MUSIC_SEPARATORS}
         if name not in known:
             raise ValueError(f"unknown separator {name!r}; choose from {list(known)}")
         self.name = name
@@ -64,17 +59,9 @@ class Separator:
             self._model = get_model("htdemucs").to(self.device).eval()
             self._run = self._run_demucs
         elif name.startswith("convtasnet"):
-            from pathlib import Path
-
             from asteroid.models import ConvTasNet
 
-            source = SEPARATORS.get(name)
-            if source is None:
-                source = Path(__file__).resolve().parents[2] / LOCAL_SEPARATORS[name]
-                if not source.exists():
-                    raise FileNotFoundError(f"{source} not found: make it with scripts/finetune_convtasnet.py")
-                source = str(source)
-            self._model = ConvTasNet.from_pretrained(source).to(self.device).eval()
+            self._model = ConvTasNet.from_pretrained(SEPARATORS[name]).to(self.device).eval()
             self._run = self._run_asteroid
         else:
             from pathlib import Path

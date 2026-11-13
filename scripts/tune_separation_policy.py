@@ -64,7 +64,7 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--out", default=None, help="CSV name in results/ (default separation_policy_<split>.csv)")
     ap.add_argument("--separator", default="convtasnet",
-                    help="separator for the overlap regions, e.g. convtasnet-hindi (scripts/finetune_convtasnet.py)")
+                    help="separator for the overlap regions (default: the released Conv-TasNet)")
     args = ap.parse_args()
 
     tuned = json.loads((RESULTS / "tuned_params.json").read_text(encoding="utf-8"))
