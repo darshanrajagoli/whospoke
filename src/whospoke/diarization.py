@@ -108,6 +108,58 @@ def embed(wav: np.ndarray, windows: list[tuple[float, float]], device: str | Non
     return np.nan_to_num(emb)
 
 
+def frame_db(wav: np.ndarray, frame_s: float = 0.02) -> np.ndarray:
+    hop = int(frame_s * SR)
+    n = len(wav) // hop
+    return 10 * np.log10(np.mean(wav[: n * hop].reshape(n, hop).astype(np.float64) ** 2, axis=1) + 1e-12)
+
+
+def energy_regions(wav: np.ndarray, top_db: float = 40.0, fill_gap_s: float = 0.6, min_island_s: float = 0.1,
+                   frame_s: float = 0.02, ref_db: float | None = None) -> list[tuple[float, float]]:
+    """Where anything is sounding: frames within ``top_db`` of the loudest frame (or of ``ref_db``), short gaps bridged.
+
+    The music counterpart of the speech detector (it cannot tell a voice from a drum or from loud noise).
+    """
+    e = frame_db(wav, frame_s)
+    if len(e) == 0:
+        return []
+    on = np.r_[False, e > (e.max() if ref_db is None else ref_db) - top_db, False]
+    starts, ends = np.flatnonzero(np.diff(on.astype(int)) == 1), np.flatnonzero(np.diff(on.astype(int)) == -1)
+    runs: list[list[int]] = []
+    for s, t in zip(starts, ends):
+        if runs and (s - runs[-1][1]) * frame_s < fill_gap_s:
+            runs[-1][1] = t
+        else:
+            runs.append([s, t])
+    return [(round(s * frame_s, 3), round(t * frame_s, 3)) for s, t in runs if (t - s) * frame_s >= min_island_s]
+
+
+def timbre_embed(wav: np.ndarray, windows: list[tuple[float, float]]) -> np.ndarray:
+    """A from-scratch "sound colour" fingerprint per window, for instruments (no trained model).
+
+    Per window: the average log-mel spectrum (which frequencies are strong) and how much each band changes over time
+    (a drum's energy comes and goes, a sustained voice's does not), each with its own mean removed so loudness does not
+    matter, plus spectral flatness (noisy vs tonal). Computed per window only, so fingerprints from different
+    recordings or separated tracks are comparable.
+    """
+    import librosa
+
+    out = []
+    for s, e in windows:
+        x = wav[int(s * SR): int(e * SR)]
+        if len(x) < 1024:
+            x = np.pad(x, (0, 1024 - len(x)))
+        mel = librosa.power_to_db(librosa.feature.melspectrogram(y=x, sr=SR, n_fft=1024, hop_length=256, n_mels=48)
+                                  + 1e-10)
+        shape = mel.mean(1) - mel.mean()
+        change = mel.std(1) - mel.std(1).mean()
+        flat = librosa.feature.spectral_flatness(y=x, n_fft=1024, hop_length=256)
+        out.append(np.r_[shape / 10.0, change / 3.0, 10 * np.log10(flat.mean() + 1e-10) / 10.0])
+    if not out:
+        return np.zeros((0, 97), np.float32)
+    return np.nan_to_num(np.asarray(out, np.float32))
+
+
 def sliding_windows(regions: list[tuple[float, float]], win: float = 1.5, hop: float = 0.75,
                     min_len: float = 0.4) -> list[tuple[float, float]]:
     """Cover each speech region with windows; regions shorter than ``win`` get one window."""
@@ -235,6 +287,10 @@ class Diarizer:
     leak_db: float = 6.0               # Order A: a track this much quieter than another is leakage
     cluster_kwargs: dict = field(default_factory=dict)
     device: str | None = None
+    # Music (who *plays* when): "energy" finds any sound instead of speech; "timbre" fingerprints sound colour
+    # instead of voices. The speech defaults leave every published result unchanged.
+    activity: str = "speech"           # "speech" (pyannote) | "energy"
+    fingerprint: str = "voice"         # "voice" (WeSpeaker) | "timbre"
 
     @property
     def name(self) -> str:
@@ -243,10 +299,11 @@ class Diarizer:
     # --- step 1: neural analysis (slow part) -------------------------------------------------
     def analyse(self, wav: np.ndarray, overlaps: bool = True) -> Features:
         dur = len(wav) / SR
-        speech = vad.speech_regions(wav, self.device)
+        speech = vad.speech_regions(wav, self.device) if self.activity == "speech" else energy_regions(wav)
         wins = sliding_windows(speech, self.window, self.hop)
-        emb = embed(wav, wins, self.device)
-        ovl = vad.overlap_regions(wav, self.device) if overlaps else []
+        emb = embed(wav, wins, self.device) if self.fingerprint == "voice" else timbre_embed(wav, wins)
+        # pyannote's overlap detector is trained on speech; with energy activity there is no overlap detection
+        ovl = vad.overlap_regions(wav, self.device) if overlaps and self.activity == "speech" else []
         return Features(dur, speech, wins, emb, ovl, _frame_energy(wav, int(np.ceil(dur / FRAME)) + 1))
 
     # --- step 2: clustering + timeline (fast part) -------------------------------------------

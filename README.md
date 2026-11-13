@@ -55,6 +55,11 @@ that, and also an Order B: diarize first, then separate only the stretches where
 on identical audio. Order B makes fewer errors in 50 of the 72 test conversations: on average 6.7 cpWER points less per conversation (95 % CI 4.0 to 9.4). Every difference from the proposal is listed in [DEVIATIONS.md](DEVIATIONS.md),
 and every judgement call in [DECISIONS.md](DECISIONS.md).
 
+**Extension: music.** On simulated voice + mridangam duos (real Carnatic singing with real mridangam strokes on its
+beats), the best order flips: separating first with a music separator (Demucs) gives DER 11.7 %, against 30.5 % for
+the best system that diarizes the mixture (72 test pieces; Stages 1–2 only, no transcripts). See D41 and
+[RESULTS.md](docs/RESULTS.md#extension-music-voice--mridangam-d41).
+
 ## How it works
 
 ```

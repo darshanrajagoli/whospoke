@@ -23,6 +23,12 @@ SEPARATORS = {
     "convtasnet-clean": "JorisCos/ConvTasNet_Libri2Mix_sepclean_16k",
     "sepformer": "speechbrain/sepformer-whamr16k",
 }
+# Music separators (the voice + mridangam duo, docs/MUSIC_EXTENSION_PLAN.md). Unlike the speech models, their two
+# outputs have a fixed meaning: output 0 = melody (voice, drone), output 1 = percussion (mridangam).
+MUSIC_SEPARATORS = {
+    "hpss": "harmonic-percussive separation (librosa median filtering; no training)",
+    "demucs": "htdemucs (Meta, music stems): vocals+other -> output 0, drums+bass -> output 1",
+}
 
 
 def _similarity(a: np.ndarray, b: np.ndarray) -> float:
@@ -39,12 +45,20 @@ class Separator:
 
     def __init__(self, name: str = "convtasnet", device: str | None = None,
                  window_s: float = 8.0, hop_s: float = 6.0):
-        if name not in SEPARATORS:
-            raise ValueError(f"unknown separator {name!r}; choose from {list(SEPARATORS)}")
+        known = {**SEPARATORS, **MUSIC_SEPARATORS}
+        if name not in known:
+            raise ValueError(f"unknown separator {name!r}; choose from {list(known)}")
         self.name = name
         self.device = torch.device(device or ("cuda" if torch.cuda.is_available() else "cpu"))
         self.window, self.hop = int(window_s * SR), int(hop_s * SR)
-        if name.startswith("convtasnet"):
+        if name == "hpss":
+            self._run = self._run_hpss
+        elif name == "demucs":
+            from demucs.pretrained import get_model
+
+            self._model = get_model("htdemucs").to(self.device).eval()
+            self._run = self._run_demucs
+        elif name.startswith("convtasnet"):
             from asteroid.models import ConvTasNet
 
             self._model = ConvTasNet.from_pretrained(SEPARATORS[name]).to(self.device).eval()
@@ -63,6 +77,27 @@ class Separator:
     def _run_asteroid(self, x: np.ndarray) -> np.ndarray:
         y = self._model(torch.from_numpy(x)[None].to(self.device))[0]
         return y.float().cpu().numpy()
+
+    @staticmethod
+    def _run_hpss(x: np.ndarray) -> np.ndarray:
+        import librosa
+
+        spec = librosa.stft(x, n_fft=1024, hop_length=256)
+        harm, perc = librosa.decompose.hpss(spec)
+        return np.stack([librosa.istft(m, hop_length=256, length=len(x)) for m in (harm, perc)])
+
+    @torch.inference_mode()
+    def _run_demucs(self, x: np.ndarray) -> np.ndarray:
+        import torchaudio.functional as AF
+        from demucs.apply import apply_model
+
+        sr = self._model.samplerate                                  # 44.1 kHz stereo model
+        wav = AF.resample(torch.from_numpy(x), SR, sr)
+        stems = apply_model(self._model, wav.expand(2, -1)[None].to(self.device), device=self.device,
+                            progress=False)[0].mean(1)               # (4 stems, T), mono
+        idx = {s: i for i, s in enumerate(self._model.sources)}
+        out = torch.stack([stems[idx["vocals"]] + stems[idx["other"]], stems[idx["drums"]] + stems[idx["bass"]]])
+        return AF.resample(out.cpu(), sr, SR).numpy()
 
     @torch.inference_mode()
     def _run_speechbrain(self, x: np.ndarray) -> np.ndarray:

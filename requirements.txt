@@ -4,6 +4,7 @@
 #   pip install -r requirements.txt
 #   pip install --no-deps asteroid==0.7.0        # its pinned deps conflict with modern torch; the model code needs none of them
 #   pip install --no-deps onnxruntime-gpu==1.19.2  # GPU ASR; newer builds need CUDA 13 or are ~15x slower with torch cu121
+#   pip install demucs==4.0.1                     # music extension only (D41): the htdemucs separator; leaves torch as it is
 numpy==2.2.6
 scipy==1.16.2
 scikit-learn==1.7.2

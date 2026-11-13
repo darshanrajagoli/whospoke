@@ -264,6 +264,28 @@ of its own memory (plus the 4 GB model file, memory-mapped). The scored evaluati
 reports. Per-run times of the evaluation are in
 [RESULTS_TABLES.md](RESULTS_TABLES.md), by machine.
 
+## Extension: music (voice + mridangam, D41)
+
+The pipeline's Stages 1–2 were run on music built like the speech set: real solo Carnatic singing (Carnatic Varnam) with
+real mridangam strokes (Mridangam Stroke) placed on the singer's annotated beats, in 3 overlap levels × 3 noise
+conditions; 36 dev and 72 test pieces, singers never shared. Test numbers (settings chosen on dev):
+
+| | Conv-TasNet (our speech separator) | HPSS (no training) | **Demucs (music separator)** |
+|---|---|---|---|
+| SI-SDRi, overlaps | −0.6 dB | +4.4 dB | **+8.9 dB** |
+| SI-SDRi, whole pieces | −2.5 dB | +4.1 dB | **+9.5 dB** |
+
+| who plays when (DER) | |
+|---|---|
+| **separate with Demucs, each output = one player (Order A)** | **11.7 %** |
+| diarize the mixture with timbre fingerprints (Order B) | 30.5 % |
+| the speech diarizer as is | 46.0 % |
+
+The speech separator does not transfer to music, and the best order flips: for speech, diarizing first and separating
+only overlaps wins; for music, separating first wins by 18.8 DER points (95 % CI −22.8 to −14.8), because overlap is the
+norm and a music separator's outputs already say who is playing. Simulated duets only; no transcripts. Playable examples:
+`scripts/export_music_demo.py` → `results/demo_music/`.
+
 ## What limits the system (and what we will do next)
 
 1. **Diarization errors dominate** (23 of the ~50 cpWER points). Next steps: a better speaker-count estimate for

@@ -44,6 +44,10 @@ predicts one *mask* per speaker, and a *decoder* turns each masked feature map b
 
 **Metric.** SI-SDR improvement (dB): how much cleaner each separated voice is than the raw mixture.
 
+**Music (D41).** `Separator("hpss")` (librosa's harmonic–percussive split, no training) and `Separator("demucs")`
+(htdemucs; vocals + other → output 0, drums + bass → output 1) are for the voice + mridangam pieces. Unlike the speech
+models, their outputs have a fixed meaning: 0 is the melody, 1 the percussion. Demucs needs `pip install demucs`.
+
 ---
 
 ## Stage 2 — Speaker diarization (`vad.py`, `diarization.py`, `clustering.py`)
@@ -82,6 +86,12 @@ how our from-scratch clustering compares with an industry tool.
 **Metrics.** DER — the fraction of speech time that is *missed*, *falsely detected* or given to the
 *wrong speaker* (0.25 s forgiveness collar at turn edges, overlapped speech included). JER — the same
 idea averaged per speaker. Speaker-count error — found vs true number of speakers.
+
+**Music (D41).** `Diarizer(activity="energy", fingerprint="timbre")` takes any sound within 40 dB of the loudest frame
+as activity instead of speech (with no overlap detection), and fingerprints sound colour instead of voices
+(`timbre_embed`: the mel-band shape, how much each band changes over time, spectral flatness). The defaults
+(`"speech"`, `"voice"`) leave every speech result unchanged. On music the best system skips clustering: separate with
+Demucs and take each output's activity as one player's (`scripts/eval_music_diarization.py`, "direct").
 
 ---
 
