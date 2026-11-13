@@ -466,3 +466,49 @@ rule was to run it once only if the change won on dev.
 when there is one, so the ASR hears whole words; and a better overlap detector, or the true overlap count, since 43 %
 of candidates are false detections. The bigger lever remains the diarization itself (RESULTS.md, "What limits the system", item 1:
 the speaker count).
+
+## D37 · Extension to music: a voice + mridangam duo, where separating first wins
+**Decided:** 2026-11-13
+**Why:** the professor asked for the pipeline to be extended to music datasets. As for speech, only material that lets
+us build mixtures with an exact answer key can be scored, so the extension uses two *solo* datasets from our music list
+(docs/MUSIC_EXTENSION_PLAN.md): **Carnatic Varnam** (28 sung varnams, 6 singers, adi tala, tala-cycle annotations; audio
+CC BY 3.0, Zenodo 7726167) and **Mridangam Stroke** (7,162 single strokes, 10 types, 6 tonics; CC BY-NC 4.0, Zenodo
+1265188). RaagaDhvani v3, the first choice, lists no files and is CC BY-ND 4.0.
+**Data** (`src/whospoke/synth_music.py`, `scripts/build_music_dataset.py`): phrases of 1–2 annotated tala cycles; strokes
+placed on those cycles' beats (resonant strokes on beats 1, 5, 7; 2 or 4 per beat; rests, fills); drum tuned to the tonic
+nearest the singer's; accompaniment probability sets the overlap level (none / low / high); the speech set's noise.
+Paired design as in D12: 4 dev groups (36 pieces, singers Vignesh and Dharini) and 8 test groups (72 pieces, the other
+4 singers); odd vs even stroke takes and dev vs test noise halves also kept apart.
+**Systems:** Stage 1: Conv-TasNet, HPSS (librosa median-filter separation), Demucs `htdemucs` (vocals+other → melody,
+drums+bass → drum), behind the existing `Separator`. Stage 2: the speech diarizer as is; with `activity="energy"` and
+`fingerprint="timbre"` (new options, off by default); Order A with joint clustering; and Order A "direct", where a music
+separator's fixed outputs give each player's activity. One setting (the direct systems' activity threshold) was chosen on
+dev from 20–40 dB: 20 dB for both, the edge of the grid. Test was run once.
+**Test result, Stage 1** (SI-SDRi; `results/separation_test_music*.csv`; 143 overlap regions, 48 whole pieces):
+
+| separator | overlaps | whole pieces | overlaps improved |
+|---|---|---|---|
+| **Demucs** | **+8.86 dB** | **+9.50 dB** | 100 % |
+| HPSS | +4.43 dB | +4.08 dB | 99 % |
+| Conv-TasNet | −0.62 dB | −2.50 dB | 46 % |
+
+Demucs − HPSS +4.42 dB (95 % CI +3.86 to +5.00, paired over regions). Dev gave the same ranking (+6.30 / +3.54 / +0.75).
+**Test result, Stage 2** (DER; `results/music_diarization_test.csv`):
+
+| system | DER | missed | false alarm | wrong player | 2 players found |
+|---|---|---|---|---|---|
+| **Order A, Demucs, direct** | **11.7 %** | 5.3 % | 5.6 % | 0.8 % | 100 % |
+| Order B, timbre fingerprints | 30.5 % | 16.1 % | 4.2 % | 10.2 % | 0 % |
+| Order A, Demucs + timbre clustering | 37.5 % | 28.3 % | 3.9 % | 5.2 % | 8 % |
+| Order A, HPSS, direct | 38.0 % | 8.6 % | 28.7 % | 0.7 % | 100 % |
+| Order B, speech diarizer as is | 46.0 % | 40.0 % | 0.3 % | 5.7 % | 14 % |
+
+Demucs-direct − Order-B timbre: −18.8 points (95 % CI −22.8 to −14.8 over pieces; −23.1 to −13.2 resampling groups).
+Dev: 15.4 % vs 28.2 %.
+**Conclusions:** (1) the music separator is right for music as the speech separator is for speech (D8 from the other
+side); (2) for music the best order is the opposite of speech: **separate first**. Overlap is the norm in a concert and a
+one-label-per-frame timeline cannot hold two players (Order-B DER rises from 17.5 % with no overlap to 46.6 % with heavy
+overlap), while a music separator's outputs already say who is playing; (3) the from-scratch timbre fingerprint beats the
+voice-trained WeSpeaker on the mixture. **Limits:** simulated, rule-based drumming, voice-led in no/low overlap; 6 singers;
+the threshold sits at the grid's edge; the separator wrapper's window stitching can swap fixed outputs (rare: 0.8 % wrong
+player); no transcript (cpWER) for music. No speech result changes.

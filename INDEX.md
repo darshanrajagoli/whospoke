@@ -9,7 +9,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | 1 | [README.md](README.md) | What the project does, the headline numbers, how to install and run it |
 | 2 | [docs/RESULTS.md](docs/RESULTS.md) | Every result, explained in plain English, with the evidence for each design choice |
 | 3 | [DEVIATIONS.md](DEVIATIONS.md) | Every place we differ from the professor's proposal, and why |
-| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D36), recorded as it was made |
+| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D37), recorded as it was made |
 | 5 | [docs/PIPELINE.md](docs/PIPELINE.md) | Technical reference: how each stage works, stage by stage |
 | 6 | [docs/MILESTONE4.md](docs/MILESTONE4.md) | Stage 4 in full: running the LLM, the report, the prompts, the guardrails, settings |
 | 7 | [docs/RESULTS_TABLES.md](docs/RESULTS_TABLES.md) | Raw result tables with 95 % confidence intervals (generated, not hand-written) |
@@ -68,6 +68,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `resources/airavata_chat_template.jinja` | 4 | Airavata's chat format, for llama-server |
 | `metrics.py` | eval | SI-SDR, DER, JER, WER/CER, cpWER (who-said-what error) |
 | `synth.py` | eval | Builds test conversations from real speech with exact labels |
+| `synth_music.py` | music | Builds voice + mridangam duos (Carnatic Varnam + Mridangam Stroke) with exact stems and "who plays when" |
 | `noise.py` | eval | Village and market background noise (DEMAND + ESC-50) |
 | `corpora.py` | data | Downloads and reads IndicVoices, Vaani, DEMAND, ESC-50 |
 | `audio.py`, `paths.py` | — | Audio helpers; where the data folder is |
@@ -92,6 +93,11 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `build_notebooks.py` | `notebooks/*.ipynb` (executed); `--stage4-only` re-measures only the Stage-4 benchmark |
 | `bench_asr_backends.py` | `results/asr_backend_bench.json` — ASR decoding-mode benchmark |
 | `finetune_convtasnet.py` | `models/convtasnet_hindi.pth` + `results/finetune_convtasnet/` — A3: Conv-TasNet fine-tuned on speaker-disjoint Hindi mixtures with dev noise, checkpoint chosen on **dev** (GPU; run via notebook 03) |
+| `make_colab_bundle.py` | `../whospoke_colab_bundle.zip` (~350 MB): everything notebook 03 needs, audio as lossless FLAC |
+| `build_music_dataset.py` | `<data>/synth_music/{dev,test}/` — the music sets (36 dev, 72 test pieces) |
+| `eval_music_diarization.py` | `results/music_diarization_{split}.csv` — who plays when on the music sets (DER) |
+| `export_music_demo.py` | `results/demo_music/` — playable separated audio for one typical test piece per condition |
+| `check_environment.py` | One-minute check that every model loads and runs (and whether speech-to-text is on the GPU) |
 | `postprocess.py` | Same as `python -m whospoke postprocess`: `transcript.json` → `report.md` + `report.json` |
 
 ## Tests — `tests/`
@@ -113,6 +119,8 @@ to end, including the Stage-4 LLM if its server is running.
 | `eval_postprocess.csv`, `eval_postprocess/*.json`, `eval_postprocess_summary_g*.json` | Stage 4 on the 63 test conversations: scores per conversation, every report, and the settings, machine and cost of each run |
 | `LAPTOP_RUN_REPORT.md` | How the Stage-4 runs on the laptop GPU went: GPU layers, speed, what went wrong |
 | `crosscheck_g00_gpu/` | Test group 0's Stage-4 reports made again on the GPU and compared with the CPU-made ones: the conclusions do not depend on the machine (D33, audit F12) |
+| `separation_{dev,test}_music*.csv`, `music_diarization_{dev,test}.csv` | Music extension (D37): separation and who-plays-when on the voice + mridangam sets |
+| `demo_music/` | Playable music examples: mixture, true voice and drum, every separator's outputs (WAVs local only; READMEs with scores) |
 | `separation_policy_dev_second.csv`, `second_voice_candidates_dev.csv` | Dev only, CPU run: the second-voice experiment (D36, rejected), with one row per conversation × timeline × policy, and every candidate extra turn with its score and recognised text |
 | `speaker_count_test.{csv,json}` | Diarization error with the speaker count found automatically, given, or given only when the automatic count differs (the live demo's setting) |
 | `benchmark_{stages,scaling,llm}.csv` | Speed and memory per stage (from the benchmark notebook) |

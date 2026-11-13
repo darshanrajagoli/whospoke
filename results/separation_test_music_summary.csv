@@ -1,0 +1,7 @@
+view,model,clean,market5,village10,all,n,rtf
+overlap-region,convtasnet,-0.97,-0.81,-0.13,-0.62,143,2.2302
+overlap-region,demucs,11.31,7.65,7.88,8.86,143,1.6969
+overlap-region,hpss,5.27,3.71,4.41,4.43,143,0.0781
+whole-recording,convtasnet,-3.35,-2.07,-2.09,-2.5,48,0.4579
+whole-recording,demucs,12.3,7.17,9.02,9.5,48,1.9364
+whole-recording,hpss,4.7,3.47,4.08,4.08,48,0.084

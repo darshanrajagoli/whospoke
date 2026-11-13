@@ -28,7 +28,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from whospoke.paths import SYNTH, conversation  # noqa: E402
 from whospoke.audio import SR, load  # noqa: E402
 from whospoke.metrics import pit_si_sdr, si_sdr  # noqa: E402
-from whospoke.separation import SEPARATORS, Separator  # noqa: E402
+from whospoke.separation import SEPARATORS, Separator  # noqa: E402  (also accepts LOCAL_ and MUSIC_SEPARATORS)
 from whospoke.synth import Segment, overlap_stats  # noqa: E402
 
 PROJECT = Path(__file__).resolve().parents[1]
@@ -60,11 +60,12 @@ def main() -> None:
     ap.add_argument("--models", nargs="+", default=list(SEPARATORS),
                     help="released models by default; add convtasnet-hindi after scripts/finetune_convtasnet.py")
     ap.add_argument("--context", type=float, default=1.0)
+    ap.add_argument("--set", default="synth", help="synth (speech conversations) or synth_music (voice + mridangam)")
     ap.add_argument("--tag", default=None,
                     help="write results/separation_<split>_<tag>.csv instead of the published separation_<split>.csv")
     args = ap.parse_args()
 
-    index = pd.read_csv(SYNTH / args.split / "index.csv")
+    index = pd.read_csv(SYNTH.parent / args.set / args.split / "index.csv")
     models = {m: Separator(m) for m in args.models}
     rows = []
     for r in index.itertuples():

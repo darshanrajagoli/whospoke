@@ -61,6 +61,8 @@ def held_out_speakers() -> set[str]:
             meta = json.loads((conversation(p) / "reference.json").read_text(encoding="utf-8"))
             out |= set(meta["speaker_ids"].values())
     valid = RAW / "indicvoices" / "hindi" / "valid-00000-of-00001.parquet"
+    if not valid.exists():                                   # e.g. the light Colab bundle: download it there
+        valid = fetch("ai4bharat/IndicVoices", "hindi/valid-00000-of-00001.parquet", "indicvoices")
     out |= set(read_indicvoices(valid).speaker_id)
     return out
 
