@@ -46,7 +46,8 @@ predicts one *mask* per speaker, and a *decoder* turns each masked feature map b
 
 **Music (D41).** `Separator("hpss")` (librosa's harmonic–percussive split, no training) and `Separator("demucs")`
 (htdemucs; vocals + other → output 0, drums + bass → output 1) are for the voice + mridangam pieces. Unlike the speech
-models, their outputs have a fixed meaning: 0 is the melody, 1 the percussion. Demucs needs `pip install demucs`.
+models, their outputs have a fixed meaning: 0 is the melody, 1 the percussion, so the long-audio stitching never swaps
+them, and Demucs's random input shift is seeded so runs are repeatable (D42). Demucs needs `pip install demucs`.
 
 ---
 

@@ -88,9 +88,14 @@ class Separator:
 
     @torch.inference_mode()
     def _run_demucs(self, x: np.ndarray) -> np.ndarray:
+        import random
+
         import torchaudio.functional as AF
         from demucs.apply import apply_model
 
+        # Demucs's default inference ("shift trick", shifts=1) shifts the input by a random 0-0.5 s drawn from Python's
+        # global `random`. Seed it per call so the same input always gives the same output (the method is unchanged).
+        random.seed(0)
         sr = self._model.samplerate                                  # 44.1 kHz stereo model
         wav = AF.resample(torch.from_numpy(x), SR, sr)
         stems = apply_model(self._model, wav.expand(2, -1)[None].to(self.device), device=self.device,
@@ -133,10 +138,12 @@ class Separator:
             w = np.ones(b - a, np.float32)
             if k > 0:
                 # [a, a+ov) was already estimated by the previous window: keep the output order
-                # that best continues it, then crossfade.
-                prev = out[:, a: a + ov] / np.maximum(weight[a: a + ov], 1e-6)
-                if _similarity(prev, y[::-1, :ov]) > _similarity(prev, y[:, :ov]):
-                    y = y[::-1]
+                # that best continues it, then crossfade. Music separators' outputs have a fixed meaning
+                # (0 = melody, 1 = percussion), so their order is never changed: a swap there would mislabel them.
+                if self.name not in MUSIC_SEPARATORS:
+                    prev = out[:, a: a + ov] / np.maximum(weight[a: a + ov], 1e-6)
+                    if _similarity(prev, y[::-1, :ov]) > _similarity(prev, y[:, :ov]):
+                        y = y[::-1]
                 w[:ov] = fade_in
             if b < n:
                 w[-ov:] = np.minimum(w[-ov:], fade_in[::-1])
