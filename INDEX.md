@@ -95,7 +95,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `bench_asr_backends.py` | `results/asr_backend_bench.json` — ASR decoding-mode benchmark |
 | `build_music_dataset.py` | `<data>/synth_music/{dev,test}/` — the music sets (36 dev, 72 test pieces) |
 | `eval_music_diarization.py` | `results/music_diarization_{split}.csv` — who plays when on the music sets (DER) |
-| `export_music_demo.py` | `results/demo_music/` — playable separated audio for one typical test piece per condition |
+| `export_music_demo.py` | `results/demo_music/` — playable separated audio for one typical test piece per condition; `--page` adds a one-page listening demo (`demo.html`, not committed) |
 | `postprocess.py` | Same as `python -m whospoke postprocess`: `transcript.json` → `report.md` + `report.json` |
 
 ## Tests — `tests/`

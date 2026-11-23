@@ -24,6 +24,7 @@ results/cache/
 ~$*
 results/log_*.txt
 results/runs/
+results/demo_music/demo.html
 
 # Local Claude Code state
 .claude/

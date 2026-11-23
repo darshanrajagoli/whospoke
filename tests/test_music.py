@@ -87,15 +87,21 @@ def test_long_audio_never_swaps_music_outputs(monkeypatch):
 
 @pytest.mark.slow
 def test_demucs_is_repeatable():
-    """Demucs's random "shift trick" is seeded, so the same input always gives the same separation."""
+    """Demucs's random "shift trick" is seeded, so the same input always gives the same separation, and the global
+    generator is left as it was."""
     import random
 
+    pytest.importorskip("demucs")                     # optional install (requirements.txt), music extension only
     from whospoke.separation import Separator
 
     x = (RNG.standard_normal(5 * SR) * 0.05).astype(np.float32)
-    first = Separator("demucs", device="cpu").separate(x)
-    random.random()                                   # other code using the global generator must not matter
-    assert np.array_equal(first, Separator("demucs", device="cpu").separate(x))
+    sep = Separator("demucs", device="cpu")
+    random.seed(123)
+    first = sep.separate(x)
+    after = random.random()
+    random.seed(123)
+    assert random.random() == after                   # separating did not touch the global generator
+    assert np.array_equal(first, sep.separate(x))
 
 
 def test_tonic_matching():

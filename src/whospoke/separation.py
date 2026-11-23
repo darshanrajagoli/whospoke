@@ -93,13 +93,18 @@ class Separator:
         import torchaudio.functional as AF
         from demucs.apply import apply_model
 
-        # Demucs's default inference ("shift trick", shifts=1) shifts the input by a random 0-0.5 s drawn from Python's
-        # global `random`. Seed it per call so the same input always gives the same output (the method is unchanged).
-        random.seed(0)
         sr = self._model.samplerate                                  # 44.1 kHz stereo model
         wav = AF.resample(torch.from_numpy(x), SR, sr)
-        stems = apply_model(self._model, wav.expand(2, -1)[None].to(self.device), device=self.device,
-                            progress=False)[0].mean(1)               # (4 stems, T), mono
+        # Demucs's default inference ("shift trick", shifts=1) shifts the input by a random 0-0.5 s drawn from Python's
+        # global `random`. Seed it per call so the same input always gives the same output (the method is unchanged),
+        # then put the generator back so other code using `random` is not affected.
+        state = random.getstate()
+        random.seed(0)
+        try:
+            stems = apply_model(self._model, wav.expand(2, -1)[None].to(self.device), device=self.device,
+                                progress=False)[0].mean(1)           # (4 stems, T), mono
+        finally:
+            random.setstate(state)
         idx = {s: i for i, s in enumerate(self._model.sources)}
         out = torch.stack([stems[idx["vocals"]] + stems[idx["other"]], stems[idx["drums"]] + stems[idx["bass"]]])
         return AF.resample(out.cpu(), sr, SR).numpy()
