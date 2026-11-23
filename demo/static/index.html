@@ -232,7 +232,7 @@ button:disabled { cursor: not-allowed; opacity: .45; }
     <section aria-label="Separated voices" id="voicesCard" hidden>
       <h2>Hear each voice</h2>
       <div class="vbtns" id="vbtns"></div>
-      <p class="fine">The whole recording through Conv-TasNet (M1). Each track is named after the speaker whose voice fingerprint it matches.</p>
+      <p class="fine" id="voicesNote"></p>
     </section>
     <section aria-label="Report">
       <h2>Report</h2>
@@ -357,6 +357,9 @@ function renderState() {
 
   const v = S.voices || [];
   $("#voicesCard").hidden = !v.length;
+  $("#voicesNote").textContent = S.voice_mode === "whole"
+    ? "The whole recording through Conv-TasNet (M1). Each track is named after the speaker whose voice fingerprint it matches."
+    : "Each speaker's own turns. Only where two people talk at once does Conv-TasNet (M1) pull the voices apart, as in the pipeline.";
   const vb = $("#vbtns");
   if (vb.dataset.key !== `${take}:${v.join()}`) {
     vb.dataset.key = `${take}:${v.join()}`; vb.replaceChildren();
