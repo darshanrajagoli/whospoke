@@ -356,7 +356,9 @@ function renderState() {
   $("#status").className = err ? "status err" : "status";
 
   const v = S.voices || [];
-  $("#voicesCard").hidden = !v.length;
+  const vcard = $("#voicesCard"), vfirst = vcard.hidden && v.length;
+  vcard.hidden = !v.length;
+  if (vfirst) requestAnimationFrame(() => vcard.scrollIntoView({ block: "nearest", behavior: "smooth" }));   // the voices just arrived: show them
   $("#voicesNote").textContent = S.voice_mode === "whole"
     ? "The whole recording through Conv-TasNet (M1). Each track is named after the speaker whose voice fingerprint it matches."
     : "Each speaker's own turns. Only where two people talk at once does Conv-TasNet (M1) pull the voices apart, as in the pipeline.";
@@ -469,10 +471,15 @@ function renderResult() {
   }
 }
 
+let reportShown = null;
 function renderReport() {
   const box = $("#report");
   box.hidden = !REP;
-  if (!REP) return;
+  if (!REP) { reportShown = null; return; }
+  const key = `${take}:${REP.seconds}:${REP.title}`;
+  const fresh = reportShown !== key;             // a new report: bring it into view once (it sits above the lines)
+  reportShown = key;
+  if (fresh) requestAnimationFrame(() => $("#scroll").scrollTo({ top: 0, behavior: "smooth" }));
   const h = document.createElement("h3"); h.textContent = REP.title || "Report";
   const by = document.createElement("span"); by.className = "byline"; const live = R && R.lines.some(l => l.english);
   by.textContent = `Written by Airavata 7B (4-bit) in ${REP.seconds} s.` + (live ? "" : " Its English for each line is in the transcript below.");
