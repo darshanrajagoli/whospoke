@@ -1,15 +1,15 @@
-# test_m00_ovl-high_clean
+# test_m02_ovl-high_clean
 
-saveri-sreevidya (raga saveri, singer sreevidya), mridangam tuned to B; overlap level ovl-high (49% of playing time both play), noise clean, 50 s. Picked as the **median** Demucs piece of this condition on the test set (a typical example, not the best).
+sri-ramakrishnamurthy (raga sri, singer ramakrishnamurthy), mridangam tuned to D; overlap level ovl-high (65% of playing time both play), noise clean, 55 s. Picked as the **median** Demucs piece of this condition on the test set (a typical example, not the best).
 
 SI-SDR of each output against the source it should match (higher is better):
 
 | audio | vs true voice | vs true mridangam |
 |---|---|---|
-| mixture (no separation) | +4.9 dB | -4.9 dB |
-| demucs | +17.2 dB | +11.9 dB |
-| hpss | +7.9 dB | +2.1 dB |
-| convtasnet (out0 = voice, out1 = drum) | -3.5 dB | -7.7 dB |
+| mixture (no separation) | +1.1 dB | -1.1 dB |
+| demucs | +14.3 dB | +12.8 dB |
+| hpss | +4.1 dB | +2.8 dB |
+| convtasnet (out1 = voice, out0 = drum) | -1.9 dB | -9.5 dB |
 
 Audio sources (licences require attribution):
 - Singing: Carnatic Varnam dataset (Koduri, Ishwar, Serrà & Serra, 2014, "Intonation analysis of ragas in Carnatic

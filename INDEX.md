@@ -9,7 +9,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | 1 | [README.md](README.md) | What the project does, the headline numbers, how to install and run it |
 | 2 | [docs/RESULTS.md](docs/RESULTS.md) | Every result, explained in plain English, with the evidence for each design choice |
 | 3 | [DEVIATIONS.md](DEVIATIONS.md) | Every place we differ from the professor's proposal, and why |
-| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D41), recorded as it was made |
+| 4 | [DECISIONS.md](DECISIONS.md) | Every judgement call (D1–D42), recorded as it was made |
 | 5 | [docs/PIPELINE.md](docs/PIPELINE.md) | Technical reference: how each stage works, stage by stage |
 | 6 | [docs/MILESTONE4.md](docs/MILESTONE4.md) | Stage 4 in full: running the LLM, the report, the prompts, the guardrails, settings |
 | 7 | [docs/RESULTS_TABLES.md](docs/RESULTS_TABLES.md) | Raw result tables with 95 % confidence intervals (generated, not hand-written) |
@@ -95,7 +95,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `bench_asr_backends.py` | `results/asr_backend_bench.json` — ASR decoding-mode benchmark |
 | `build_music_dataset.py` | `<data>/synth_music/{dev,test}/` — the music sets (36 dev, 72 test pieces) |
 | `eval_music_diarization.py` | `results/music_diarization_{split}.csv` — who plays when on the music sets (DER) |
-| `export_music_demo.py` | `results/demo_music/` — playable separated audio for one typical test piece per condition |
+| `export_music_demo.py` | `results/demo_music/` — playable separated audio for one typical test piece per condition; `--page` adds a one-page listening demo (`demo.html`, not committed) |
 | `postprocess.py` | Same as `python -m whospoke postprocess`: `transcript.json` → `report.md` + `report.json` |
 
 ## Tests — `tests/`
@@ -120,6 +120,7 @@ to end, including the Stage-4 LLM if its server is running.
 | `LAPTOP_RUN_REPORT.md` | How the Stage-4 runs on the laptop GPU went: GPU layers, speed, what went wrong |
 | `crosscheck_g00_gpu/` | Test group 0's October Stage-4 reports made again on the GPU and compared with the CPU-made ones (both kept there): the conclusions do not depend on the machine (D33, audit F12) |
 | `separation_{dev,test}_music*.csv`, `music_diarization_{dev,test}.csv` | Music extension (D41): separation and who-plays-when on the voice + mridangam sets |
+| `music_swap_check.csv` | How often the old window stitching swapped melody and drum, per piece (Demucs: 2 dev, 2 test pieces; HPSS: none) — D42 |
 | `demo_music/` | Playable music examples: mixture, true voice and drum, every separator's outputs (WAVs local only; READMEs with scores) |
 | `speaker_count_test.{csv,json}` | Diarization error with the speaker count found automatically, given, or given only when the automatic count differs (the live demo's setting) |
 | `benchmark_{stages,scaling,llm}.csv` | Speed and memory per stage (from the benchmark notebook) |

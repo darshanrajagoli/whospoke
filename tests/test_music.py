@@ -1,5 +1,6 @@
 """Music extension: activity, timbre fingerprints, tonic matching and the separators' fixed output meaning."""
 import numpy as np
+import pytest
 
 from whospoke.audio import SR
 from whospoke.diarization import energy_regions, timbre_embed
@@ -46,6 +47,61 @@ def test_hpss_outputs_have_a_fixed_meaning():
     melody, perc = Separator("hpss", device="cpu").separate(TONE + drum)
     assert si_sdr(melody, TONE) > si_sdr(melody, drum) + 10
     assert si_sdr(perc, drum) > si_sdr(perc, TONE) + 10
+
+
+def test_long_audio_never_swaps_music_outputs(monkeypatch):
+    """Window stitching may reorder a speech separator's outputs, but never a music separator's (output 0 stays melody).
+
+    The keep-or-swap check is forced to prefer "swap" in every window: a speech separator then swaps, while HPSS and
+    Demucs must keep their fixed order (0 = melody, 1 = percussion) for the whole recording.
+    """
+    import whospoke.separation as sep_mod
+    from whospoke.metrics import si_sdr
+
+    n = 30 * SR
+    t = np.arange(n) / SR
+    melody = (0.3 * np.sin(2 * np.pi * 220 * t)).astype(np.float32)
+    drum = strokes(n, 0.3)
+    calls = {"k": 0}
+
+    def prefer_swap(a, b):                          # called (swapped, kept) per window: make "swapped" win
+        calls["k"] += 1
+        return 1.0 if calls["k"] % 2 else 0.0
+
+    monkeypatch.setattr(sep_mod, "_similarity", prefer_swap)
+
+    class FixedOrder(sep_mod.Separator):             # returns the true sources of each window, in order
+        def __init__(self, name):
+            self.name, self.window, self.hop = name, 8 * SR, 6 * SR
+
+        def _run(self, x):
+            a = next(k for k in range(0, n - len(x) + 1, SR) if np.allclose((melody + drum)[k:k + len(x)], x))
+            return np.stack([melody[a:a + len(x)], drum[a:a + len(x)]])
+
+    for name in ("hpss", "demucs"):
+        out = FixedOrder(name).separate(melody + drum)
+        assert si_sdr(out[0], melody) > 30 and si_sdr(out[1], drum) > 30, f"{name}: outputs were swapped"
+    out = FixedOrder("convtasnet").separate(melody + drum)   # speech separator: the forced swap does happen
+    assert si_sdr(out[0], melody) < 0
+
+
+@pytest.mark.slow
+def test_demucs_is_repeatable():
+    """Demucs's random "shift trick" is seeded, so the same input always gives the same separation, and the global
+    generator is left as it was."""
+    import random
+
+    pytest.importorskip("demucs")                     # optional install (requirements.txt), music extension only
+    from whospoke.separation import Separator
+
+    x = (RNG.standard_normal(5 * SR) * 0.05).astype(np.float32)
+    sep = Separator("demucs", device="cpu")
+    random.seed(123)
+    first = sep.separate(x)
+    after = random.random()
+    random.seed(123)
+    assert random.random() == after                   # separating did not touch the global generator
+    assert np.array_equal(first, sep.separate(x))
 
 
 def test_tonic_matching():

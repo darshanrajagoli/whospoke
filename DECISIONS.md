@@ -551,4 +551,42 @@ one-label-per-frame timeline cannot hold two players (Order-B DER rises from 17.
 overlap), while a music separator's outputs already say who is playing; (3) the from-scratch timbre fingerprint beats the
 voice-trained WeSpeaker on the mixture. **Limits:** simulated, rule-based drumming, voice-led in no/low overlap; 6 singers;
 the threshold sits at the grid's edge; the separator wrapper's window stitching can swap fixed outputs (rare: 0.8 % wrong
-player); no transcript (cpWER) for music. No speech result changes.
+player; **fixed in D42**, which also replaces the numbers above); no transcript (cpWER) for music. No speech result changes.
+
+## D42 · Music separators keep their output order across windows; Demucs is seeded
+**Decided:** 2026-11-22
+**Problem (D41's listed limit, raised in review of PR #16):** `Separator.separate` processes long audio in 8 s windows and,
+before crossfading, may swap a window's two outputs if the swapped order matches the previous window better. That is
+right for the speech separators, whose output order is arbitrary, but wrong for HPSS and Demucs, whose outputs have a
+fixed meaning (0 = melody, 1 = percussion) that the "direct" who-plays-when system relies on. A swap there labels the
+drum as the singer for the rest of the piece.
+**Second problem, found while re-running:** Demucs's default inference ("shift trick", `shifts=1`) shifts the input by a
+random 0–0.5 s drawn from Python's unseeded `random`, so the same audio gave different outputs on each run (dev, regions
+≤ 8 s that are never stitched: run-to-run difference SD 1.2 dB, at most 4.7 dB). HPSS was exactly repeatable.
+**Fix:** the keep-or-swap check is skipped for `MUSIC_SEPARATORS` (the crossfade stays); `_run_demucs` seeds `random`
+before each call and restores its state afterwards (same method, now repeatable; other code using `random` is not
+affected). Tests: `tests/test_music.py::test_long_audio_never_swaps_music_outputs`
+(forces the check to prefer swapping: the speech separator swaps, HPSS and Demucs never do; it fails without the fix) and
+`test_demucs_is_repeatable` (slow).
+**How often the old code swapped** (`results/music_swap_check.csv`, old vs new separated tracks per 6 s window; a
+one-off comparison of the D41 and D42 tracks, whose script was not kept): Demucs
+only, in 2 dev pieces (34.7 s, 1.8 % of dev audio) and 2 test pieces (16.2 s, 0.4 %: `test_m04_ovl-low_village10`,
+`test_m06_ovl-none_clean`); HPSS never. On the worst one, `test_m04_ovl-low_village10` (14.8 s swapped, and the low-overlap demo piece
+before D42), Demucs's whole-piece output went from drum −5.3 dB / voice +3.6 dB to drum +7.1 dB / voice +9.0 dB.
+**Re-run** (HPSS and Demucs on dev, then test once; Conv-TasNet is unaffected and its rows are kept). The dev choice of
+the direct systems' threshold is again 20 dB for both (Demucs dev DER 14.4 %, was 15.4 %; wrong player 0.4 %, was 1.5 %).
+Test, before → after:
+
+| | before (D41) | **after** |
+|---|---|---|
+| Demucs SI-SDRi, overlaps / whole pieces | +8.86 / +9.50 dB | **+8.84 / +9.61 dB** |
+| HPSS SI-SDRi, overlaps / whole pieces | +4.43 / +4.08 dB | +4.43 / +4.08 dB (identical) |
+| Order A, Demucs, direct: DER | 11.7 % | **12.0 %** |
+| … of which wrong player | 0.8 % | **0.5 %** |
+| Order A, HPSS, direct: DER | 38.0 % | 38.0 % |
+| Demucs-direct − best mixture-only system (30.5 %) | −18.8 points | **−18.6** (95 % CI −22.6 to −14.6; groups −23.0 to −13.1) |
+
+Separation scores barely move because SI-SDR is scored with the best pairing of outputs to sources, which already ignored
+a swap. The direct system's wrong-player time falls by a third; its total DER rises by 0.3 points because seeding replaces
+one random draw of the shift with another (33 pieces worse by more than 0.1 points, 18 better, 21 within 0.1), which is within the
+run-to-run noise. **No conclusion of D41 changes.** RESULTS.md, README and the demo use the new numbers.
