@@ -78,6 +78,18 @@ with the true timeline:
 
 Per conversation, splicing removes on average 3.0 points of error (paired CI +1.8 to +4.3).
 
+### The live demo's "Speaker X alone"
+
+The demo builds each speaker's voice from their own turns, with Conv-TasNet run only on the overlapping stretches
+(Order B's method). Scored against the true voices on the 36 two-speaker test conversations, with the demo's own
+pipeline (2 people given), by SI-SDR (`scripts/eval_live_voices.py`, `results/live_voices_test.csv`):
+
+| each speaker's voice | SI-SDR vs the true voice |
+|---|---|
+| the recording itself | -1.4 dB |
+| whole recording through Conv-TasNet (`--voices whole`) | +1.3 dB |
+| **own turns, separated only where they overlap** | **+5.9 dB** (better in 29 of 36) |
+
 ## Stage 2 — diarization
 
 | system (all Order B unless stated) | DER | missed | false alarm | wrong speaker | speaker-count error |
