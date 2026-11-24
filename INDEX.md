@@ -113,9 +113,9 @@ The 4-page report and the 3-minute video report the numbers below; each comes fr
 
 ## Tests: `tests/`
 
-`pytest` runs the fast suite (metrics, simulation, clustering, timeline logic, separation stitching, romaniser, and
-every Stage-4 guardrail with scripted LLM replies and a fake server, the command line, and the music extension's activity,
-timbre fingerprint and HPSS output order); `pytest -m slow` also runs the real models end
+`pytest -m "not slow"` runs the fast suite in about 30 s (metrics, simulation, clustering, timeline logic, separation
+stitching, romaniser, and every Stage-4 guardrail with scripted LLM replies and a fake server, the command line, and the
+music extension's activity, timbre fingerprint and HPSS output order); plain `pytest` also runs the real models end
 to end, including the Stage-4 LLM if its server is running.
 
 ## Results: `results/`

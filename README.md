@@ -154,7 +154,7 @@ python scripts/eval_postprocess.py                    # Stage 4 on the test tran
 python -m whospoke postprocess results/demo/transcript.json   # the demo report
 python scripts/make_report.py                         # tables + figures
 python scripts/build_notebooks.py                     # executed notebooks
-pytest                                                # fast tests; `pytest -m slow` runs the real models too
+pytest -m "not slow"                                  # fast tests (~30 s); plain `pytest` runs the real models too
 ```
 
 ## Limitations (honest list)
