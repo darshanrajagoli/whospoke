@@ -1,12 +1,13 @@
-# whospoke — who spoke what, and when
+# whospoke: who spoke what, and when
 
 **Speech separation, speaker diarization, Hindi/Hinglish transcription and an LLM-written report, for noisy,
 overlapping, code-switched audio.**
-CS F407 (Artificial Intelligence), BITS Pilani · Prof. Tirtharaj Dash
-Team: Darshan Rajagoli · Vismay · Abhinav Padhi · Shrivaths Prabhu
+CS F407 (Artificial Intelligence), BITS Pilani, K.K. Birla Goa Campus · Prof. Tirtharaj Dash
+Team vismAI: Darshan Prakash Rajagoli · Vismay Vinayak Shanbhag · Abhinav Padhi · Shrivaths S Prabhu
 
-**Presentation on 16 October 2026, 11:00 AM:** [current deck, script and individual prep guides](docs/presentation/2026-10-16/README.md).
-For earlier versions, see the [presentation archive and index](docs/presentation/README.md).
+**Final submission (25 November 2026):** a 4-page report and a 3-minute demo video. Every number in them comes from
+this repository ([docs/RESULTS.md](docs/RESULTS.md)), and the live demo in the video is [demo/live.py](demo/README.md).
+Earlier presentations are archived in [docs/presentation/](docs/presentation/README.md).
 
 Give it a recording of people talking over each other in Hindi and English, with a market or a village in the
 background, and it produces:
@@ -37,9 +38,9 @@ are in [docs/RESULTS.md](docs/RESULTS.md).
 
 | | our pipeline (Order B) | proposal's order (Order A) |
 |---|---|---|
-| **who said what** — cpWER (words wrong or given to the wrong speaker) | **49.5 %** | 55.8 % |
-| **who spoke when** — DER | **20.3 %** | 26.2 % |
-| **separation quality** — SI-SDR improvement where people overlap | **+9.6 dB** (overlaps only) | +4.5 dB (whole recording) |
+| **who said what**: cpWER (words wrong or given to the wrong speaker) | **49.5 %** | 55.8 % |
+| **who spoke when**: DER | **20.3 %** | 26.2 % |
+| **separation quality**: SI-SDR improvement where people overlap | **+9.6 dB** (overlaps only) | +4.5 dB (whole recording) |
 
 | stage | result |
 |---|---|
@@ -52,13 +53,14 @@ are in [docs/RESULTS.md](docs/RESULTS.md).
 
 **The one design change.** The proposal separates the whole recording first and then diarizes it (Order A). We built
 that, and also an Order B: diarize first, then separate only the stretches where two people overlap. We ran both
-on identical audio. Order B makes fewer errors in 50 of the 72 test conversations: on average 6.7 cpWER points less per conversation (95 % CI 4.0 to 9.4). Every difference from the proposal is listed in [DEVIATIONS.md](DEVIATIONS.md),
+on identical audio. Order B makes fewer errors in 50 of the 72 test conversations: on average 6.7 cpWER points less per conversation (95 % CI 4.0 to 9.4; 3.2 to 10.4 when whole speaker groups are
+resampled). Every difference from the proposal is listed in [DEVIATIONS.md](DEVIATIONS.md),
 and every judgement call in [DECISIONS.md](DECISIONS.md).
 
 **Extension: music.** On simulated voice + mridangam duos (real Carnatic singing with real mridangam strokes on its
 beats), the best order flips: separating first with a music separator (Demucs) gives DER 12.0 %, against 30.5 % for
 the best system that diarizes the mixture (72 test pieces; Stages 1–2 only, no transcripts). See D41, D42 and
-[RESULTS.md](docs/RESULTS.md#extension-music-voice--mridangam-d41).
+[RESULTS.md](docs/RESULTS.md#extension-music-voice--mridangam-d41-d42).
 
 ## How it works
 
@@ -125,6 +127,14 @@ python -m whospoke run my_recording.wav --language kn    # another Indian langua
 ```
 
 Outputs go to `results/runs/<file>/`. An example is in [results/demo/](results/demo/): a two-speaker test conversation with heavy overlap in 5 dB market noise, picked because its error is close to the test-set median (a typical case, not the best one).
+
+## Live demo
+
+`python demo/live.py` opens a page in the browser. Two people talk into one laptop microphone: the timeline of who
+speaks when and the transcript fill in while they talk; after Stop, each voice can be played on its own and the LLM
+writes its report. Splicing separated overlaps into each speaker's turns gives +5.9 dB SI-SDR against the true voices
+on the 36 two-speaker test conversations, vs +1.3 dB for separating the whole recording
+([scripts/eval_live_voices.py](scripts/eval_live_voices.py)). Setup and what is on screen: [demo/README.md](demo/README.md).
 
 ## Reproduce every number
 

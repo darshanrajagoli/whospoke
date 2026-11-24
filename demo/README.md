@@ -5,10 +5,8 @@ transcript build up while they talk. When they stop, the final result appears, e
 and (for Hindi) the LLM writes its report.
 
 ```powershell
-# from C:\whospoke-stage4 (that copy has the 4-bit LLM in models\, so the report works with no extra flags)
-C:\whospoke-data\venv\Scripts\python.exe demo\live.py
-# from any other copy of the repo, point it at the LLM file:
-C:\whospoke-data\venv\Scripts\python.exe demo\live.py --gguf C:\whospoke-stage4\models\airavata-q4_k_m.gguf
+python demo\live.py                                       # the report uses models\airavata-q4_k_m.gguf (scripts/serve_llm.py builds it)
+python demo\live.py --gguf path\to\airavata-q4_k_m.gguf   # or point it at the 4-bit LLM file
 ```
 
 The browser opens at http://127.0.0.1:8765. Press F11 for full screen. The speech models take about half a minute

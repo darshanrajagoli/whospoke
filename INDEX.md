@@ -1,6 +1,18 @@
-# Index — where everything is
+# Index: where everything is
 
 Start with [README.md](README.md) (what this is, headline results, how to run it). This page is the map.
+
+## Final submission (25 November 2026)
+
+The 4-page report and the 3-minute video report the numbers below; each comes from a script in this repository.
+
+| In the report | Where it comes from |
+|---|---|
+| Order A vs Order B, each stage vs its baseline, the error cascade | [docs/RESULTS.md](docs/RESULTS.md), [docs/RESULTS_TABLES.md](docs/RESULTS_TABLES.md) (`scripts/evaluate.py`, `scripts/make_report.py`) |
+| The LLM report | [docs/RESULTS.md, Stage 4](docs/RESULTS.md#stage-4--llm-post-processing) (`scripts/eval_postprocess.py`) |
+| Music extension | [docs/RESULTS.md, music](docs/RESULTS.md#extension-music-voice--mridangam-d41-d42) (`scripts/eval_separation.py --set synth_music`, `scripts/eval_music_diarization.py`) |
+| Live demo and its voices | [demo/README.md](demo/README.md), `results/live_voices_test.csv` (`scripts/eval_live_voices.py`) |
+| Every design decision | [DECISIONS.md](DECISIONS.md) (D1 to D42) |
 
 ## Read in this order
 
@@ -14,17 +26,17 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | 6 | [docs/MILESTONE4.md](docs/MILESTONE4.md) | Stage 4 in full: running the LLM, the report, the prompts, the guardrails, settings |
 | 7 | [docs/RESULTS_TABLES.md](docs/RESULTS_TABLES.md) | Raw result tables with 95 % confidence intervals (generated, not hand-written) |
 | 8 | [Audio_Engineering_AI_Project_Proposal.docx](Audio_Engineering_AI_Project_Proposal.docx) | The original brief |
-| — | [docs/DATASETS.md](docs/DATASETS.md) | Every dataset: where it comes from, how big it is, what it is used for, and how test data is kept apart |
-| — | [docs/notes_asr_backends.md](docs/notes_asr_backends.md) | Notes on the ASR decoding modes and their benchmark |
-| — | [docs/MUSIC_EXTENSION_PLAN.md](docs/MUSIC_EXTENSION_PLAN.md) | The music extension: which datasets, which experiments, and what was run (D41) |
+| + | [docs/DATASETS.md](docs/DATASETS.md) | Every dataset: where it comes from, how big it is, what it is used for, and how test data is kept apart |
+| + | [docs/notes_asr_backends.md](docs/notes_asr_backends.md) | Notes on the ASR decoding modes and their benchmark |
+| + | [docs/MUSIC_EXTENSION_PLAN.md](docs/MUSIC_EXTENSION_PLAN.md) | The music extension: which datasets, which experiments, and what was run (D41) |
 
-## For the team
+## Presentations and team notes (archive)
 
 | File | Purpose |
 |---|---|
-| [Current presentation package](docs/presentation/2026-10-16/README.md) | **16 October, 11:00 AM:** three-slide PPT, PDF, script, individual preparation and phone-audio fallback |
+| [16 October review package](docs/presentation/2026-10-16/README.md) | Three-slide PPT, PDF, script, individual preparation and phone-audio fallback |
 | [Data and slide sources](docs/presentation/2026-10-16/DATA_AND_SOURCES.md) | Plain-language provenance of clips, outputs, metrics, datasets and models |
-| [Presentation index and archive](docs/presentation/README.md) | Current package and preserved October 6 presentation versions |
+| [Presentation index and archive](docs/presentation/README.md) | The 16 October package and the preserved 6 October versions |
 | [Live demo](demo/README.md) | Two people talk into one laptop mic; the timeline, transcript, separated voices and report build up on screen (`python demo/live.py`) |
 | [Vismay: M1 preparation](docs/presentation/2026-10-16/M1_PREP_VISMAY.md) | Separation, board explanation, questions and phone-audio responsibility |
 | [Darshan: M2 preparation](docs/presentation/2026-10-16/M2_PREP.md) | Diarization, exact selected settings, board explanation and questions |
@@ -38,7 +50,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | [notebooks/02_walkthrough.ipynb](notebooks/02_walkthrough.ipynb) | Run all four stages on one conversation, in Colab or locally |
 | [notebooks/01_benchmark.ipynb](notebooks/01_benchmark.ipynb) | Speed, memory and model-size benchmark of every stage (the proposal's "benchmarking notebook") |
 
-## Local only — not on GitHub
+## Local only (not on GitHub)
 
 `docs/explainers/` is git-ignored and stays on this machine only. It has plain-English explainers, one for each part of the pipeline:
 
@@ -51,7 +63,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `docs/explainers/order_a_vs_b.md` | Why the order of the stages matters |
 | `docs/explainers/testing_and_metrics.md` | How we test and what the numbers mean |
 
-## Code — `src/whospoke/`
+## Code: `src/whospoke/`
 
 | Module | Stage | What it does |
 |---|---|---|
@@ -63,7 +75,7 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `clustering.py` | 2 | Custom spectral/GMM workflows and cluster clean-up using SciPy and scikit-learn components |
 | `asr_backends.py` | 3 | IndicConformer and IndicWav2Vec speech recognisers |
 | `hinglish.py` | 3 | Devanagari → Hinglish (Latin) romaniser with an English-loanword lexicon; other Indic scripts → Latin (D40) |
-| `languages.py` | — | The 22 languages `--language` accepts: model codes, IndicVoices folders, scripts (only Hindi is evaluated, D40) |
+| `languages.py` | all | The 22 languages `--language` accepts: model codes, IndicVoices folders, scripts (only Hindi is evaluated, D40) |
 | `resources/loanwords.tsv` | 3 | 2,600 Devanagari → English spellings (hand-made + mined from Vaani *train*) |
 | `llm_postprocess.py` | 4 | LLM client, prompts, chunking, guardrails, and the report (`report.md`, `report.json`) |
 | `resources/airavata_chat_template.jinja` | 4 | Airavata's chat format, for llama-server |
@@ -72,40 +84,41 @@ Start with [README.md](README.md) (what this is, headline results, how to run it
 | `synth_music.py` | music | Builds voice + mridangam duos (Carnatic Varnam + Mridangam Stroke) with exact stems and "who plays when" |
 | `noise.py` | eval | Village and market background noise (DEMAND + ESC-50) |
 | `corpora.py` | data | Downloads and reads IndicVoices, Vaani, DEMAND, ESC-50 |
-| `audio.py`, `paths.py` | — | Audio helpers; where the data folder is |
+| `audio.py`, `paths.py` | all | Audio helpers; where the data folder is |
 
-## Scripts — `scripts/` (run in this order to reproduce everything)
+## Scripts: `scripts/` (run in this order to reproduce everything)
 
 | Script | Produces |
 |---|---|
 | `fetch_data.py` | DEMAND, ESC-50 and Vaani downloads (IndicVoices comes with the next step) |
 | `build_dataset.py` | Dev and test conversations (`<data>/synth/{dev,test}/`) |
 | `mine_loanwords.py` | The mined part of `loanwords.tsv` |
-| `eval_separation.py` | `results/separation_{split}.csv` — Stage 1; `--set synth_music --tag music --models convtasnet hpss demucs` gives `separation_{split}_music.csv` |
-| `tune_diarization.py` | `results/tuned_params.json` — Stage 2 settings, chosen on **dev** only |
-| `tune_separation_policy.py` | `results/separation_policy_dev.csv` — how Order B feeds separated audio to the ASR (**dev** only) |
-| `eval_asr.py` | `results/asr_comparison.*` — Stage 3 model choice (on Vaani) |
-| `eval_asr_nirantar.py` | `results/asr_nirantar.*` — Stage 3 cross-check on a Nirantar Hindi sample (D7) |
-| `eval_speaker_count.py` | `results/speaker_count_test.*` — Stage 2 with the number of speakers given vs found automatically |
-| `evaluate.py` | `results/eval_test_*.csv` — every system end to end on the **test** set |
+| `eval_separation.py` | `results/separation_{split}.csv`: Stage 1; `--set synth_music --tag music --models convtasnet hpss demucs` gives `separation_{split}_music.csv` |
+| `tune_diarization.py` | `results/tuned_params.json`: Stage 2 settings, chosen on **dev** only |
+| `tune_separation_policy.py` | `results/separation_policy_dev.csv`: how Order B feeds separated audio to the ASR (**dev** only) |
+| `eval_asr.py` | `results/asr_comparison.*`: Stage 3 model choice (on Vaani) |
+| `eval_asr_nirantar.py` | `results/asr_nirantar.*`: Stage 3 cross-check on a Nirantar Hindi sample (D7) |
+| `eval_speaker_count.py` | `results/speaker_count_test.*`: Stage 2 with the number of speakers given vs found automatically |
+| `eval_live_voices.py` | `results/live_voices_test.csv`: the live demo's per-speaker voices vs the true ones (36 two-speaker test conversations) |
+| `evaluate.py` | `results/eval_test_*.csv`: every system end to end on the **test** set |
 | `serve_llm.py` | Starts the Stage-4 LLM server (builds llama-server and the 4-bit Airavata on first use) |
-| `eval_postprocess.py` | `results/eval_postprocess.csv` — Stage 4 on the **test** transcripts (D31) |
+| `eval_postprocess.py` | `results/eval_postprocess.csv`: Stage 4 on the **test** transcripts (D31) |
 | `make_report.py` | `docs/RESULTS_TABLES.md` + `results/figures/*.png` |
 | `build_notebooks.py` | `notebooks/*.ipynb` (executed); `--stage4-only` re-measures only the Stage-4 benchmark |
-| `bench_asr_backends.py` | `results/asr_backend_bench.json` — ASR decoding-mode benchmark |
-| `build_music_dataset.py` | `<data>/synth_music/{dev,test}/` — the music sets (36 dev, 72 test pieces) |
-| `eval_music_diarization.py` | `results/music_diarization_{split}.csv` — who plays when on the music sets (DER) |
-| `export_music_demo.py` | `results/demo_music/` — playable separated audio for one typical test piece per condition; `--page` adds a one-page listening demo (`demo.html`, not committed) |
+| `bench_asr_backends.py` | `results/asr_backend_bench.json`: ASR decoding-mode benchmark |
+| `build_music_dataset.py` | `<data>/synth_music/{dev,test}/`: the music sets (36 dev, 72 test pieces) |
+| `eval_music_diarization.py` | `results/music_diarization_{split}.csv`: who plays when on the music sets (DER) |
+| `export_music_demo.py` | `results/demo_music/`: playable separated audio for one typical test piece per condition; `--page` adds a one-page listening demo (`demo.html`, not committed) |
 | `postprocess.py` | Same as `python -m whospoke postprocess`: `transcript.json` → `report.md` + `report.json` |
 
-## Tests — `tests/`
+## Tests: `tests/`
 
 `pytest` runs the fast suite (metrics, simulation, clustering, timeline logic, separation stitching, romaniser, and
 every Stage-4 guardrail with scripted LLM replies and a fake server, the command line, and the music extension's activity,
 timbre fingerprint and HPSS output order); `pytest -m slow` also runs the real models end
 to end, including the Stage-4 LLM if its server is running.
 
-## Results — `results/`
+## Results: `results/`
 
 | File | Contents |
 |---|---|
@@ -120,8 +133,9 @@ to end, including the Stage-4 LLM if its server is running.
 | `LAPTOP_RUN_REPORT.md` | How the Stage-4 runs on the laptop GPU went: GPU layers, speed, what went wrong |
 | `crosscheck_g00_gpu/` | Test group 0's October Stage-4 reports made again on the GPU and compared with the CPU-made ones (both kept there): the conclusions do not depend on the machine (D33, audit F12) |
 | `separation_{dev,test}_music*.csv`, `music_diarization_{dev,test}.csv` | Music extension (D41): separation and who-plays-when on the voice + mridangam sets |
-| `music_swap_check.csv` | How often the old window stitching swapped melody and drum, per piece (Demucs: 2 dev, 2 test pieces; HPSS: none) — D42 |
+| `music_swap_check.csv` | How often the old window stitching swapped melody and drum, per piece (Demucs: 2 dev, 2 test pieces; HPSS: none); D42 |
 | `demo_music/` | Playable music examples: mixture, true voice and drum, every separator's outputs (WAVs local only; READMEs with scores) |
+| `live_voices_test.csv` | The live demo's voices: SI-SDR of each speaker's spliced turns vs the whole recording through Conv-TasNet |
 | `speaker_count_test.{csv,json}` | Diarization error with the speaker count found automatically, given, or given only when the automatic count differs (the live demo's setting) |
 | `benchmark_{stages,scaling,llm}.csv` | Speed and memory per stage (from the benchmark notebook) |
 | `demo/` | Example output of one full run (timeline, transcripts, subtitles, Stage-4 report) |
