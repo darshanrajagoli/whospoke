@@ -391,7 +391,7 @@ function renderState() {
   $("#reportNote").textContent = rp.state === "error" ? `The report failed: ${rp.error}` :
     rp.state === "running" ? "Stages 1 to 3 and the LLM do not fit on the 6 GB GPU together, so the speech models step aside while Airavata writes." :
     !rp.available && rp.reason ? rp.reason :
-    "Airavata (7B, 4-bit, on this laptop) writes a summary, key points and an English line for every line. About a minute per minute of speech.";
+    "Airavata (7B, 4-bit, on this laptop) writes a summary, key points and an English line for every line. About 1.5 minutes per minute of speech when nothing else is using the GPU.";
   $("#ms-llm").textContent = REP ? sec(REP.seconds) : rp.state === "running" ? "writing" : "after Stop";
 }
 

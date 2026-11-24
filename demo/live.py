@@ -25,7 +25,9 @@ import io
 import json
 import multiprocessing as mp
 import os
+import re
 import shutil
+import socket
 import subprocess
 import sys
 import threading
@@ -54,6 +56,23 @@ REFRESH_S = 1.5            # then whenever this much new audio has arrived (and 
 ENV_BIN_S = 0.05           # waveform resolution sent to the page
 LLM_LOG = Path(os.getenv("TEMP", "/tmp")) / "whospoke_live_llm.log"   # llama-server's output, for when it fails
 REPORT_STEPS = ["Free the GPU for the LLM", "Start Airavata 7B (4-bit)", "Write the report", "Reload the speech models"]
+
+
+def _key_points(points: list[str]) -> list[str]:
+    """Key points without the "Part N:" label Airavata copies from its prompt, each one once."""
+    out: list[str] = []
+    for k in points:
+        k = re.sub(r"^\s*Part\s+\d+\s*:\s*", "", k).strip()
+        if k and k.lower() not in {x.lower() for x in out}:
+            out.append(k)
+    return out
+
+
+def _free_port() -> int:
+    """A port nothing listens on. A fixed 8080 let another local server answer in Airavata's place."""
+    with socket.socket() as s:
+        s.bind(("127.0.0.1", 0))
+        return s.getsockname()[1]
 
 
 # ====================================================================== engine (child process)
@@ -632,18 +651,22 @@ class Hub:
             step(0)
             self._stop_engine()
             step(1)
+            port = _free_port()
             log = open(LLM_LOG, "wb")
-            server = subprocess.Popen(self._llm_cmd(), stdout=log, stderr=subprocess.STDOUT)
-            pp = PostProcessor()
+            server = subprocess.Popen(self._llm_cmd(port), stdout=log, stderr=subprocess.STDOUT)
+            pp = PostProcessor(base_url=f"http://127.0.0.1:{port}/v1")
             self._wait_for_llm(server, pp)
             step(2)
             res = self.result
             rep = pp.process_transcript({"order": "B", "duration_s": res["duration"], "lines": [
                 {"speaker": x["speaker"], "start": x["start"], "end": x["end"], "text": x["text"], "hinglish": x["latin"]}
                 for x in res["lines"]]}).to_dict()
+            if not rep["executive_summary"] and not rep["key_points"]:
+                raise RuntimeError(f"Airavata returned an empty report (its log: {LLM_LOG})")
             with self.lock:
                 self.report = {k: rep[k] for k in ("title", "topic", "executive_summary", "key_points", "keywords",
                                                     "action_items")}
+                self.report["key_points"] = _key_points(rep["key_points"])
                 self.report["dialogue"] = [{"speaker": d["speaker"], "start": d["start"], "english": d["translation"],
                                             "uncertain": d["uncertain"]} for d in rep["cleaned_dialogue"]]
                 self.report["seconds"] = round(time.time() - self.report_t0, 1)
@@ -689,9 +712,9 @@ class Hub:
                     raise
                 time.sleep(1.0)
 
-    def _llm_cmd(self) -> list[str]:
+    def _llm_cmd(self, port: int) -> list[str]:
         # The same server command as scripts/serve_llm.py, with the whole model on the GPU (D33).
-        return [str(self.llama), "-m", str(self.gguf), "--host", "127.0.0.1", "--port", "8080", "-np", "1",
+        return [str(self.llama), "-m", str(self.gguf), "--host", "127.0.0.1", "--port", str(port), "-np", "1",
                 "-c", "4096", "-ngl", str(self.args.gpu_layers), "--jinja", "--chat-template-file", str(TEMPLATE),
                 "--alias", "ai4bharat/Airavata", "--cache-ram", "0"]
 
