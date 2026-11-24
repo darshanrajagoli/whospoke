@@ -232,7 +232,7 @@ button:disabled { cursor: not-allowed; opacity: .45; }
     <section aria-label="Separated voices" id="voicesCard" hidden>
       <h2>Hear each voice</h2>
       <div class="vbtns" id="vbtns"></div>
-      <p class="fine">The whole recording through Conv-TasNet (M1). Each track is named after the speaker whose voice fingerprint it matches.</p>
+      <p class="fine" id="voicesNote"></p>
     </section>
     <section aria-label="Report">
       <h2>Report</h2>
@@ -356,7 +356,12 @@ function renderState() {
   $("#status").className = err ? "status err" : "status";
 
   const v = S.voices || [];
-  $("#voicesCard").hidden = !v.length;
+  const vcard = $("#voicesCard"), vfirst = vcard.hidden && v.length;
+  vcard.hidden = !v.length;
+  if (vfirst) requestAnimationFrame(() => vcard.scrollIntoView({ block: "nearest", behavior: "smooth" }));   // the voices just arrived: show them
+  $("#voicesNote").textContent = S.voice_mode === "whole"
+    ? "The whole recording through Conv-TasNet (M1). Each track is named after the speaker whose voice fingerprint it matches."
+    : "Each speaker's own turns. Only where two people talk at once does Conv-TasNet (M1) pull the voices apart, as in the pipeline.";
   const vb = $("#vbtns");
   if (vb.dataset.key !== `${take}:${v.join()}`) {
     vb.dataset.key = `${take}:${v.join()}`; vb.replaceChildren();
@@ -386,7 +391,7 @@ function renderState() {
   $("#reportNote").textContent = rp.state === "error" ? `The report failed: ${rp.error}` :
     rp.state === "running" ? "Stages 1 to 3 and the LLM do not fit on the 6 GB GPU together, so the speech models step aside while Airavata writes." :
     !rp.available && rp.reason ? rp.reason :
-    "Airavata (7B, 4-bit, on this laptop) writes a summary, key points and an English line for every line. About a minute per minute of speech.";
+    "Airavata (7B, 4-bit, on this laptop) writes a summary, key points and an English line for every line. About 1.5 minutes per minute of speech when nothing else is using the GPU.";
   $("#ms-llm").textContent = REP ? sec(REP.seconds) : rp.state === "running" ? "writing" : "after Stop";
 }
 
@@ -466,10 +471,15 @@ function renderResult() {
   }
 }
 
+let reportShown = null;
 function renderReport() {
   const box = $("#report");
   box.hidden = !REP;
-  if (!REP) return;
+  if (!REP) { reportShown = null; return; }
+  const key = `${take}:${REP.seconds}:${REP.title}`;
+  const fresh = reportShown !== key;             // a new report: bring it into view once (it sits above the lines)
+  reportShown = key;
+  if (fresh) requestAnimationFrame(() => $("#scroll").scrollTo({ top: 0, behavior: "smooth" }));
   const h = document.createElement("h3"); h.textContent = REP.title || "Report";
   const by = document.createElement("span"); by.className = "byline"; const live = R && R.lines.some(l => l.english);
   by.textContent = `Written by Airavata 7B (4-bit) in ${REP.seconds} s.` + (live ? "" : " Its English for each line is in the transcript below.");

@@ -5,14 +5,16 @@ transcript build up while they talk. When they stop, the final result appears, e
 and (for Hindi) the LLM writes its report.
 
 ```powershell
-# from C:\whospoke-stage4 (that copy has the 4-bit LLM in models\, so the report works with no extra flags)
-C:\whospoke-data\venv\Scripts\python.exe demo\live.py
-# from any other copy of the repo, point it at the LLM file:
-C:\whospoke-data\venv\Scripts\python.exe demo\live.py --gguf C:\whospoke-stage4\models\airavata-q4_k_m.gguf
+python demo\live.py                                       # the report uses models\airavata-q4_k_m.gguf (scripts/serve_llm.py builds it)
+python demo\live.py --gguf path\to\airavata-q4_k_m.gguf   # or point it at the 4-bit LLM file
 ```
 
 The browser opens at http://127.0.0.1:8765. Press F11 for full screen. The speech models take about half a minute
 to load the first time. No internet is needed: every model loads from the local cache (`--allow-downloads` lifts that).
+
+`--save-take takes` keeps every take in `takes/take-<n>-<time>/`: `mic.wav` (the microphone exactly as captured),
+`timeline.json` (the final result with its English lines, every intermediate pass with the second it appeared, and
+the take's start time for lining it up with a screen recording), `voice_*.wav` and, once written, `report.json`.
 
 ## What happens on screen
 
@@ -22,7 +24,7 @@ to load the first time. No internet is needed: every model loads from the local 
 | A / B lanes | M2: who speaks when. Hatched stripes are stretches with two voices at once. M1 separates those before transcription. |
 | Transcript | M3: Devanagari (or Kannada), then Hinglish, then an English line (see below). The "separated" tag means the line was transcribed from the separated voice. |
 | Last pass | Time per stage, in pipeline order, and how much faster than real time it ran (about 20× on this GPU). |
-| Hear each voice | After Stop: the whole recording through Conv-TasNet, each track matched to a speaker by voice fingerprint. |
+| Hear each voice | After Stop: each speaker's own turns, with Conv-TasNet pulling the voices apart only where two people overlap (Order B's method). On the 36 two-speaker test conversations: +5.9 dB SI-SDR against the true voices, vs +1.3 dB for the whole recording through Conv-TasNet (`--voices whole`, the flash-talk version). |
 | Report | M4, Hindi only: Airavata 7B writes a summary, key points and an English line for every line. |
 
 While you talk, the recording so far goes through the whole pipeline again whenever ~1.5 s of new audio has arrived
@@ -69,11 +71,11 @@ report and loads the speech models again: about 2 minutes in all (on a 1-minute 
 4. Then talk normally for 20 to 30 seconds. **Talk over each other twice, for 2 or 3 seconds each**: hatched
    stripes appear, and those lines get the "separated" tag.
 5. **Stop** at 45 to 60 seconds. The final pass takes about 3 seconds.
-6. Play **Speaker A alone**, then **Speaker B alone**.
+6. Play **Speaker A alone**, then **Speaker B alone**. Where you talked over each other, you hear only one of you.
 7. Optional: **Write the report** (Hindi).
 8. Optional second take in **Kannada**: switching language reloads the recogniser (about 10 seconds). Kannada lines
-   appear in Kannada script with the English line, but with no romanised line yet (the romaniser is Hindi-only until
-   Abhinav's languages PR is merged) and no report (Airavata reads Hindi only).
+   appear in Kannada script, then in Latin letters (D40), then the English line. There is no report: Airavata reads
+   Hindi only. Only Hindi is evaluated (D40).
 
 Pure English also goes through the Hindi model. English words inside Hindi come out well, but whole English
 sentences come out as Devanagari spellings of English. Keep it Hinglish.

@@ -2,6 +2,7 @@
 
     python demo/live.py                   # opens http://127.0.0.1:8765 in the browser
     python demo/live.py --list-mics       # then pick one with --mic <number>
+    python demo/live.py --save-take takes # also keep every take on disk (audio, timeline, voices, report)
 
 While people talk, the recording so far goes through the pipeline again whenever ~1.5 s of new audio has arrived
 (Order B: diarize, separate the overlaps, transcribe), so the timeline and the transcript fill in and settle as speech
@@ -24,7 +25,9 @@ import io
 import json
 import multiprocessing as mp
 import os
+import re
 import shutil
+import socket
 import subprocess
 import sys
 import threading
@@ -55,8 +58,25 @@ LLM_LOG = Path(os.getenv("TEMP", "/tmp")) / "whospoke_live_llm.log"   # llama-se
 REPORT_STEPS = ["Free the GPU for the LLM", "Start Airavata 7B (4-bit)", "Write the report", "Reload the speech models"]
 
 
+def _key_points(points: list[str]) -> list[str]:
+    """Key points without the "Part N:" label Airavata copies from its prompt, each one once."""
+    out: list[str] = []
+    for k in points:
+        k = re.sub(r"^\s*Part\s+\d+\s*:\s*", "", k).strip()
+        if k and k.lower() not in {x.lower() for x in out}:
+            out.append(k)
+    return out
+
+
+def _free_port() -> int:
+    """A port nothing listens on. A fixed 8080 let another local server answer in Airavata's place."""
+    with socket.socket() as s:
+        s.bind(("127.0.0.1", 0))
+        return s.getsockname()[1]
+
+
 # ====================================================================== engine (child process)
-def engine_main(conn, language: str) -> None:
+def engine_main(conn, language: str, voice_mode: str = "turns") -> None:
     """Holds the speech models on the GPU and answers ("run", (wav, people)) | ("voices", None) |
     ("language", code) | ("quit", None)."""
     sys.path.insert(0, str(PROJECT / "src"))
@@ -90,7 +110,8 @@ def engine_main(conn, language: str) -> None:
                     last = (wav, res)
                     conn.send(("result", _payload(pipe, res, time.perf_counter() - t0)))
                 elif kind == "voices":
-                    conn.send(("voices", _voices(pipe, *last, embed) if last else {}))
+                    fn = _voices if voice_mode == "whole" else _turn_voices
+                    conn.send(("voices", fn(pipe, *last, embed) if last else {}))
             except Exception as exc:                       # keep the engine alive; the page shows the message
                 conn.send(("error", f"{type(exc).__name__}: {exc}"))
     except Exception:
@@ -126,6 +147,57 @@ def _payload(pipe, res, seconds: float) -> dict:
         "timings": {k: round(v, 3) for k, v in res.timings.items()},
         "seconds": round(seconds, 2),
     }
+
+
+def _turn_voices(pipe, wav: np.ndarray, res, embed) -> dict[str, np.ndarray]:
+    """Each speaker on their own, the Order-B way: the recording during their turns, and inside every stretch where
+    two people overlap, the separated voice that sounds like them (separation runs only there). Silence elsewhere.
+
+    Every overlap stretch goes to both voices nearby, not only to the speaker whose turn it is: the diarizer usually
+    gives an overlap to one speaker, and the interrupted speaker's words would otherwise be missing from their track.
+    On the 36 two-speaker test conversations this scores +5.9 dB SI-SDR against the true voices, vs +1.3 dB for
+    separating the whole take (_voices) and -1.5 dB for the recording itself; it is better in 29 of the 36."""
+    diar = res.diarization
+    out = {t.speaker: np.zeros_like(wav) for t in diar.turns}
+    if not out:
+        return {}
+
+    def splice(y: np.ndarray, a: int, b: int, seg: np.ndarray) -> None:
+        w = np.ones(b - a, np.float32)                     # 20 ms fades so the edges do not click
+        k = min(int(0.02 * SR), (b - a) // 2)
+        if k:
+            w[:k], w[len(w) - k:] = np.linspace(0, 1, k), np.linspace(1, 0, k)
+        y[a:b] = w * seg + (1 - w) * y[a:b]
+
+    for t in diar.turns:                                   # 1. each speaker's turns, as recorded
+        a, b = int(t.start * SR), min(len(wav), int(t.end * SR))
+        if b - a > 1:
+            splice(out[t.speaker], a, b, wav[a:b])
+    regions = pipe._overlap_regions(diar)
+    if pipe.separator is None or not regions:
+        return {spk: _level(y) for spk, y in out.items()}
+    cents = pipe._centroids(wav, diar.turns, regions, diar)
+    talk: dict[str, float] = {}
+    for t in diar.turns:
+        talk[t.speaker] = talk.get(t.speaker, 0.0) + t.duration
+    ctx = int(pipe.sep_context_s * SR)
+    for r0, r1 in regions:                                 # 2. each overlap stretch, separated once
+        near = sorted({t.speaker for t in diar.turns if t.start < r1 + 1.0 and t.end > r0 - 1.0 and t.speaker in cents},
+                      key=talk.get, reverse=True)
+        near += [s for s in sorted(talk, key=talk.get, reverse=True) if s in cents and s not in near]
+        if len(near) < 2:
+            continue
+        pair = near[:2]                                    # Conv-TasNet gives two voices
+        a, b = max(0, int(r0 * SR) - ctx), min(len(wav), int(r1 * SR) + ctx)
+        est = pipe.separator.separate(wav[a:b])
+        fp = np.concatenate([embed(est[k], [(0.0, (b - a) / SR)]) for k in range(2)])
+        fp /= np.linalg.norm(fp, axis=1, keepdims=True) + 1e-9
+        score = fp @ np.stack([cents[s] for s in pair]).T  # voice x speaker
+        k = 0 if score[0, 0] + score[1, 1] >= score[0, 1] + score[1, 0] else 1
+        s0, s1 = int(r0 * SR), int(r1 * SR)
+        for spk, track in ((pair[0], est[k]), (pair[1], est[1 - k])):
+            splice(out[spk], s0, s1, track[s0 - a: s1 - a])
+    return {spk: _level(y) for spk, y in out.items()}
 
 
 def _voices(pipe, wav: np.ndarray, res, embed) -> dict[str, np.ndarray]:
@@ -183,6 +255,8 @@ class Hub:
 
     # ------------------------------------------------------------------ take state
     def _new_take(self) -> None:
+        if self.take:
+            self._save_take()                            # last chance: English lines may have arrived since
         self.take += 1
         self.recording, self.source, self.stream = False, "mic", None
         self.chunks: list[np.ndarray] = []
@@ -195,6 +269,7 @@ class Hub:
         self.voices: dict[str, bytes] = {}
         self.report = self.report_error = None
         self.report_state, self.report_step, self.report_t0 = "idle", -1, None
+        self.t_start, self.passes = None, []             # for --save-take: when the take started, every pass
 
     def _append(self, block: np.ndarray) -> None:
         """Audio from the mic or the test recording (capture rate, mono)."""
@@ -242,7 +317,7 @@ class Hub:
                     else self._open_mic()
             except Exception as exc:
                 return False, f"Could not open the {'speakers' if source == 'test' else 'microphone'}: {exc}"
-            self.recording = True
+            self.recording, self.t_start = True, time.time()
             self.status, self.message, self.error = "recording", "Listening", None
             return True, "Recording."
 
@@ -411,7 +486,7 @@ class Hub:
     def _start_engine(self, language: str) -> None:
         ctx = mp.get_context("spawn")
         self.conn, child = ctx.Pipe()
-        self.proc = ctx.Process(target=engine_main, args=(child, language), daemon=True)
+        self.proc = ctx.Process(target=engine_main, args=(child, language, self.args.voices), daemon=True)
         self.proc.start()
         self._expect("ready")
         with self.lock:
@@ -510,6 +585,7 @@ class Hub:
                     self.voices = {spk: _wav_bytes(x) for spk, x in voices.items()}
                     self.voices["original"] = _wav_bytes(self._audio16k())
                     self.status, self.message = "done", "Done"
+            self._save_take()
             return True
         if live:
             with self.lock:
@@ -529,6 +605,38 @@ class Hub:
             self.result, self.updated_at = res, time.time()
             self.result_version += 1
             self.runs += 1
+            self.passes.append({"wall_s": round(self.updated_at - self.t_start, 2), "audio_s": round(n / self.capture_sr, 2),
+                                "final": not self.recording, **res})
+
+    # ------------------------------------------------------------------ --save-take
+    def _save_take(self) -> None:
+        """Write the take to <save-take>/take-<n>-<start time>/: mic.wav (the microphone exactly as captured),
+        timeline.json (the final result with its English lines, and every pass with when it appeared), the separated
+        voices and the report. Called when the take is done, after the report, and before the next take starts."""
+        if not self.args.save_take:
+            return
+        with self.lock:
+            if self.t_start is None or self.result is None or self.recording:
+                return
+            audio = np.concatenate(self.chunks) if self.chunks else np.zeros(0, np.float32)
+            stamp = time.strftime("%Y%m%d-%H%M%S", time.localtime(self.t_start))
+            out = Path(self.args.save_take) / f"take-{self.take:02d}-{stamp}"
+            info = {"take": self.take, "started_at": self.t_start, "capture_sr": self.capture_sr,
+                    "source": self.source, "language": self.language, "people": self.people,
+                    "translator": self.translator_name if self.english else None,
+                    "result": self.result_payload()["result"], "passes": self.passes, "report": self.report}
+            voices = dict(self.voices)
+        try:
+            out.mkdir(parents=True, exist_ok=True)
+            if not (out / "mic.wav").exists():
+                sf.write(out / "mic.wav", audio, self.capture_sr, subtype="FLOAT")
+            (out / "timeline.json").write_text(json.dumps(info, ensure_ascii=False, indent=1), encoding="utf-8")
+            for name, data in voices.items():
+                (out / f"voice_{name}.wav").write_bytes(data)
+            if info["report"]:
+                (out / "report.json").write_text(json.dumps(info["report"], ensure_ascii=False, indent=1), encoding="utf-8")
+        except Exception as exc:                          # never let saving break the demo
+            print(f"--save-take: could not save take {info['take']}: {exc}", flush=True)
 
     # ------------------------------------------------------------------ Stage 4
     def _write_report(self) -> None:
@@ -543,23 +651,28 @@ class Hub:
             step(0)
             self._stop_engine()
             step(1)
+            port = _free_port()
             log = open(LLM_LOG, "wb")
-            server = subprocess.Popen(self._llm_cmd(), stdout=log, stderr=subprocess.STDOUT)
-            pp = PostProcessor()
+            server = subprocess.Popen(self._llm_cmd(port), stdout=log, stderr=subprocess.STDOUT)
+            pp = PostProcessor(base_url=f"http://127.0.0.1:{port}/v1")
             self._wait_for_llm(server, pp)
             step(2)
             res = self.result
             rep = pp.process_transcript({"order": "B", "duration_s": res["duration"], "lines": [
                 {"speaker": x["speaker"], "start": x["start"], "end": x["end"], "text": x["text"], "hinglish": x["latin"]}
                 for x in res["lines"]]}).to_dict()
+            if not rep["executive_summary"] and not rep["key_points"]:
+                raise RuntimeError(f"Airavata returned an empty report (its log: {LLM_LOG})")
             with self.lock:
                 self.report = {k: rep[k] for k in ("title", "topic", "executive_summary", "key_points", "keywords",
                                                     "action_items")}
+                self.report["key_points"] = _key_points(rep["key_points"])
                 self.report["dialogue"] = [{"speaker": d["speaker"], "start": d["start"], "english": d["translation"],
                                             "uncertain": d["uncertain"]} for d in rep["cleaned_dialogue"]]
                 self.report["seconds"] = round(time.time() - self.report_t0, 1)
                 self.report_state = "done"
                 self.result_version += 1
+            self._save_take()
         except Exception as exc:
             with self.lock:
                 self.report_state, self.report_error = "error", f"{type(exc).__name__}: {exc}"
@@ -599,9 +712,9 @@ class Hub:
                     raise
                 time.sleep(1.0)
 
-    def _llm_cmd(self) -> list[str]:
+    def _llm_cmd(self, port: int) -> list[str]:
         # The same server command as scripts/serve_llm.py, with the whole model on the GPU (D33).
-        return [str(self.llama), "-m", str(self.gguf), "--host", "127.0.0.1", "--port", "8080", "-np", "1",
+        return [str(self.llama), "-m", str(self.gguf), "--host", "127.0.0.1", "--port", str(port), "-np", "1",
                 "-c", "4096", "-ngl", str(self.args.gpu_layers), "--jinja", "--chat-template-file", str(TEMPLATE),
                 "--alias", "ai4bharat/Airavata", "--cache-ram", "0"]
 
@@ -637,7 +750,7 @@ class Hub:
                 "level": round(self.level, 4), "env_from": env_from, "env": self.env[env_from:],
                 "env_bin_s": ENV_BIN_S, "result_version": self.result_version, "runs": self.runs,
                 "updated_ago": round(time.time() - self.updated_at, 1) if self.updated_at else None,
-                "test_available": self.test_wav is not None,
+                "test_available": self.test_wav is not None, "voice_mode": self.args.voices,
                 "voices": sorted(k for k in self.voices if k != "original") + (["original"] if "original" in self.voices else []),
                 "report": {"available": ok, "reason": why, "state": self.report_state, "step": self.report_step,
                            "steps": REPORT_STEPS, "error": self.report_error,
@@ -729,6 +842,11 @@ def main() -> None:
     ap.add_argument("--gpu-layers", type=int, default=99, help="LLM layers on the GPU (99 = all, as in D33)")
     ap.add_argument("--no-english", action="store_true", help="start with the IndicTrans2 English line switched off")
     ap.add_argument("--no-browser", action="store_true")
+    ap.add_argument("--save-take", default=None, metavar="DIR",
+                    help="keep every take in DIR: mic.wav as captured, timeline.json, separated voices, report")
+    ap.add_argument("--voices", choices=("turns", "whole"), default="turns",
+                    help="'Speaker X alone': each speaker's turns with only the overlaps separated (default), "
+                         "or the whole take through the separator (the flash-talk version)")
     ap.add_argument("--allow-downloads", action="store_true",
                     help="let the models check Hugging Face for updates (default: cached models only, no internet)")
     args = ap.parse_args()
